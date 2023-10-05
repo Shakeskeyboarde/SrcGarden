@@ -17,7 +17,7 @@ export const markedMath = (): MarkedExtension => {
         level: 'inline',
         start: (src) => src.match(/\$(?!\$)/u)?.index,
         tokenizer: (src) => {
-          const rule = /\$(?!\$)(?:(`)(.*?)\1|(\S*))\$/u;
+          const rule = /^\$(?!\$)(?:(`)(.*?)\1|(\S*))\$/u;
           const match = src.match(rule);
 
           if (!match) return undefined;
@@ -25,7 +25,7 @@ export const markedMath = (): MarkedExtension => {
           const text = match[2]?.trim() || match[3]?.trim() || '';
           const html = `<code class="language-math mathspan">${encodeHtmlSpecials(text)}</code>`;
 
-          return { type: 'mathspan', raw: match[0], text, html };
+          return { type: 'mathspan', raw: match[0], html };
         },
         renderer: (token) => {
           return token.html;
@@ -34,17 +34,17 @@ export const markedMath = (): MarkedExtension => {
       {
         name: 'mathblock',
         level: 'block',
-        start: (src) => src.match(/^\${2}/u)?.index,
+        start: (src) => src.match(/^\${2}(?!\$)/mu)?.index,
         tokenizer: (src) => {
-          const rule = /^\${2}(.*?)\${2}\s*$/msu;
+          const rule = /^\${2}(?!\$)(.*?)\${2}\s*(?:\n|$)/su;
           const match = src.match(rule);
 
           if (!match) return undefined;
 
           const text = match[1]!.trim();
-          const html = `<pre><code class="language-math mathblock">${encodeHtmlSpecials(text)}</code></pre>`;
+          const html = `<pre><code class="language-math">${encodeHtmlSpecials(text)}</code></pre>`;
 
-          return { type: 'math', raw: match[0], text, html };
+          return { type: 'mathblock', raw: match[0], html };
         },
         renderer: (token) => {
           return token.html;

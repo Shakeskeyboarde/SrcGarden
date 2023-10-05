@@ -43,7 +43,7 @@ export const Root: FC = () => {
               border: `1px solid ${palette.border}`,
               paddingInline: '0.5em',
             },
-            'tbody > tr:nth-child(odd)': {
+            'tbody > tr:nth-of-type(odd)': {
               backgroundColor: palette.backgroundAlt,
             },
             'code.mathspan .katex': {

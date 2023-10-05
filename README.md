@@ -19,7 +19,7 @@ Beautiful, zero configuration, project homepages.
   - [(Planned) Shared footer.](#planned-shared-footer)
   - [(Planned) Shared sitemap.](#planned-shared-sitemap)
   - [(Planned) Reverse proxy caching.](#planned-reverse-proxy-caching)
-  - [Paid plans.](#paid-plans)
+  - [(Planned) Paid plans.](#planned-paid-plans)
 
 ## Overview
 
@@ -109,13 +109,15 @@ pie title What Voldemort doesn't have?
 <!-- sg:tab(v=true) -->
 #### Math
 
-Inline math: $e^{i\pi}+1=0$
+Inline math with `$` delimiters (no spaces): $e^{i\pi}+1=0$
 
-Block math using double dollar signs (`$$`) or `math` language code blocks.
+Inline with with `` $` `` and `` `$ `` delimiters (allows spaces): $`e^{i\pi} + 1 = 0`$
 
-$$
-e^{i\pi} + 1 = 0
-$$
+Block math using double dollar signs (`$$`)
+
+$$e^{i\pi} + 1 = 0$$
+
+Block math using `math` language code fences.
 
 ```math
 e^{i\pi} + 1 = 0
@@ -175,6 +177,6 @@ A shared sitemap will be a free feature which uses a single markdown file, proba
 
 Currently, repository files are fetched directly from your browser by calling the `raw.githubusercontent.com` API. There is a theoretical request limit on this API, though I have not been able to confirm it in practice. In the future, a reverse proxy will be used to cache these files, to reduce the upstream workload, and to improve reliability and performance.
 
-### Paid plans.
+### (Planned) Paid plans.
 
 Some planned features will require infrastructure or separate licensing and support. These features will be available to paying customers only.

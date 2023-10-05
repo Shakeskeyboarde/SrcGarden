@@ -6,7 +6,7 @@ interface Options {
 
 export const useKatex = (source: string | undefined, { inline = false }: Options = {}): string | undefined => {
   const result = useQuery(['katex', source, inline], async () => {
-    if (!source) return undefined;
+    if (!source) return null;
 
     const [{ default: katex }] = await Promise.all([import('katex'), import('katex/dist/katex.min.css')]);
     const html = katex.renderToString(source, { displayMode: !inline, output: 'html' });
@@ -14,5 +14,5 @@ export const useKatex = (source: string | undefined, { inline = false }: Options
     return html;
   });
 
-  return result.data;
+  return result.data ?? undefined;
 };
