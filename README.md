@@ -113,9 +113,9 @@ pie title What Voldemort doesn't have?
 <!-- sg:tab(v=true) -->
 #### Math
 
-Inline math with `$` delimiters (no spaces): $e^{i\pi}+1=0$
+Inline with `$` delimiters (no spaces): $e^{i\pi}+1=0$
 
-Inline with with `` $` `` and `` `$ `` delimiters (allows spaces): $`e^{i\pi} + 1 = 0`$
+Inline with `` $` `` and `` `$ `` delimiters (allows spaces): $`e^{i\pi} + 1 = 0`$
 
 Blocks using `$$` delimiters:
 
