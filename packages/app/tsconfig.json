@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "lib",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "jsx": "react-jsx",
+  },
+  "include": ["src"],
+  "exclude": ["**/__**/*", "*.test.*", "*.spec.*", "*.stories.*"]
+}

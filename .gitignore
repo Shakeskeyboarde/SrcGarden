@@ -1,0 +1,14 @@
+.vscode
+.terraform
+node_modules
+lib
+out
+dist
+coverage
+
+.creds*
+*.log
+*.tar
+*.gz
+*.tgz
+*.zip

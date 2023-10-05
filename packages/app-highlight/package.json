@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "app-highlight",
+  "description": "Lazy loaded app package for markdown code syntax highlighting.",
+  "version": "1.0.0",
+  "license": "AGPL-3.0",
+  "author": "Chris Ackerman <chris@topher.land>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shakeskeyboarde/SrcGarden",
+    "directory": "packages/highlight"
+  },
+  "homepage": "https://github.com/Shakeskeyboarde/SrcGarden/blob/main/packages/highlight/README.md",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "peerDependencies": {
+    "highlight.js": "^11.8.0"
+  },
+  "devDependencies": {
+    "@werk/command-build": "*",
+    "vite": "^4.4.10",
+    "vite-plugin-checker": "^0.6.2",
+    "vite-plugin-dts": "^3.6.0"
+  }
+}

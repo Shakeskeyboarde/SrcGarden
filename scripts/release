@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+
+source .creds-aws
+werk build
+npm test
+terraform -chdir=terraform init
