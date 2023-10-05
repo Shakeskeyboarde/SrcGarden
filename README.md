@@ -11,14 +11,17 @@ Beautiful, zero configuration, project homepages.
     - [Highlighted code](#highlighted-code)
     - [Diagrams](#diagrams)
     - [Math](#math)
-    - [Task lists](#task-lists)
-    - [Alert boxes](#alert-boxes)
-    - [Emojis](#emojis)
+    - [(Planned) Task lists](#planned-task-lists)
+    - [(Planned) Alert boxes](#planned-alert-boxes)
+    - [(Planned) Emojis](#planned-emojis)
   - [(Planned) Inline layout configuration comments.](#planned-inline-layout-configuration-comments)
   - [(Planned) Shared header.](#planned-shared-header)
   - [(Planned) Shared footer.](#planned-shared-footer)
   - [(Planned) Shared sitemap.](#planned-shared-sitemap)
   - [(Planned) Reverse proxy caching.](#planned-reverse-proxy-caching)
+  - [(Planned) Support non-main branches.](#planned-support-non-main-branches)
+  - [(Planned) Support other git hosts.](#planned-support-other-git-hosts)
+  - [(Planned) Support offline mode.](#planned-support-offline-mode)
   - [(Planned) Paid plans.](#planned-paid-plans)
 
 ## Overview
@@ -61,6 +64,7 @@ Here are some examples of home/documentation pages that will be possible in the 
 - [ ] Reverse proxy caching.
 - [ ] Support non-main branches.
 - [ ] Support other git hosts (eg. GitLab, BitBucket).
+- [ ] Support offline mode (PWA).
 - [ ] Paid plans.
   - [ ] Custom domain names.
   - [ ] Custom theming.
@@ -113,24 +117,24 @@ Inline math with `$` delimiters (no spaces): $e^{i\pi}+1=0$
 
 Inline with with `` $` `` and `` `$ `` delimiters (allows spaces): $`e^{i\pi} + 1 = 0`$
 
-Block math using double dollar signs (`$$`)
+Blocks using `$$` delimiters:
 
 $$e^{i\pi} + 1 = 0$$
 
-Block math using `math` language code fences.
+Blocks using ` ```math ` code fences:
 
 ```math
 e^{i\pi} + 1 = 0
 ```
 
 <!-- sg:tab(v=true) -->
-#### Task lists
+#### (Planned) Task lists
 
 - [x] Complete.
 - [ ] Incomplete.
 
 <!-- sg:tab(v=true) -->
-#### Alert boxes
+#### (Planned) Alert boxes
 
 > **Note:**
 > Noted.
@@ -142,7 +146,7 @@ e^{i\pi} + 1 = 0
 > Let this be a warning to you.
 
 <!-- sg:tab(v=true) -->
-#### Emojis
+#### (Planned) Emojis
 
 :smile: :+1: :rocket:
 
@@ -176,6 +180,19 @@ A shared sitemap will be a free feature which uses a single markdown file, proba
 ### (Planned) Reverse proxy caching.
 
 Currently, repository files are fetched directly from your browser by calling the `raw.githubusercontent.com` API. There is a theoretical request limit on this API, though I have not been able to confirm it in practice. In the future, a reverse proxy will be used to cache these files, to reduce the upstream workload, and to improve reliability and performance.
+
+### (Planned) Support non-main branches.
+
+> [!NOTE]
+> This may actually require that repositories be cloned by a backend service. Cloning isn't subject to rate limits, and nearly every other way to get source code from Github is.
+
+### (Planned) Support other git hosts.
+
+GitHub is definitely not the only place people host code. They should get nice web pages too. It may require a domain prefix to differentiate between hosts (eg. `https://bb.src.garden/...` for BitBucket).
+
+### (Planned) Support offline mode.
+
+Sure would be nice if your documentation were still available offline. At least after loading it once.
 
 ### (Planned) Paid plans.
 
