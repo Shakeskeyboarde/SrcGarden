@@ -1,13 +1,13 @@
 import { Global, ThemeProvider } from '@emotion/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { type FC, lazy, StrictMode, Suspense } from 'react';
+import { type FC, StrictMode, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import GithubRoute from './pages/github.js';
+import NotFound from './pages/not-found.js';
 import { theme } from './theme.js';
+import { Redirect } from './widgets/redirect.js';
 
-const Home = lazy(() => import('./pages/home.js'));
-const Github = lazy(() => import('./pages/github.js'));
-const NotFound = lazy(() => import('./pages/not-found.js'));
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -58,8 +58,8 @@ export const Root: FC = () => {
           <Suspense fallback={null}>
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/:user/:repo/*" element={<Github />} />
+                <Route path="/" element={<Redirect to={'/Shakeskeyboarde/SrcGarden'} />} />
+                <Route path="/:user/:repo/*" element={<GithubRoute />} />
                 <Route path="/*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>

@@ -33,24 +33,29 @@ const GithubMarkdown: FC<{ user: string; repo: string; dir: string; file: string
   return <Markdown>{data}</Markdown>;
 };
 
-const Github: FC = () => {
-  const { user = '', repo = '', '*': splat = '' } = useParams();
-  const [, dir = '', file = ''] = splat.match(/^(.*?)(?:\/([^/]*))?$/u)!;
+const GithubRoute: FC = () => {
+  const { user = '', repo = '', '*': path } = useParams();
+
+  return <Github user={user} repo={repo} path={path} />;
+};
+
+export const Github: FC<{ user: string; repo: string; path?: string }> = ({ user, repo, path = '' }) => {
+  const [, dir = '', file = ''] = path.match(/^(.*?)(?:\/([^/]*))?$/u)!;
 
   // Redirect to Github for non-markdown files.
   if (file.includes('.') && !file.endsWith('.md')) {
-    const to = `https://github.com/${user}/${repo}/blob/HEAD/${splat}`;
-    return <Redirect replace to={to} />;
+    const to = `https://github.com/${user}/${repo}/blob/HEAD/${path}`;
+    return <Redirect to={to} />;
   }
 
   // Add trailing slash to directories.
   if (/\/[^./]+$/u.test(window.location.pathname)) {
     const to = new URL(window.location.href);
     to.pathname += '/';
-    return <Redirect replace to={to} />;
+    return <Redirect to={to} />;
   }
 
   return <GithubMarkdown user={user} repo={repo} dir={dir} file={file} />;
 };
 
-export default Github;
+export default GithubRoute;

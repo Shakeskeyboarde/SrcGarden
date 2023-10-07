@@ -2,21 +2,16 @@ import { type FC, useEffect } from 'react';
 
 interface Props {
   readonly to: string | URL;
-  readonly replace?: boolean;
 }
 
-export const Redirect: FC<Props> = ({ to, replace = false }) => {
+export const Redirect: FC<Props> = ({ to }) => {
   const { href } = new URL(to, window.location.href);
 
   useEffect(() => {
     if (href !== window.location.href) {
-      if (replace) {
-        window.location.replace(href);
-      } else {
-        window.location.assign(href);
-      }
+      window.location.replace(href);
     }
-  }, [href, replace]);
+  }, [href]);
 
   return (
     <p>
