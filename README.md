@@ -181,7 +181,7 @@ The React Icons library includes multiple versions of some icon sets (eg. Font A
 
 `:fa/FaHeart:` also renders the version 5 icon: :fa/FaHeart:
 
-`:fa6/FaHeart` renders the version 6 icon: :fa6/FaHeart:
+`:fa6/FaHeart:` renders the version 6 icon: :fa6/FaHeart:
 
 ### (Planned) Inline layout configuration comments.
 
