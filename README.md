@@ -3,6 +3,7 @@
 Beautiful, zero configuration, project homepages.
 
 <!-- sg:toc(global) -->
+
 - [Overview](#overview)
 - [Features](#features)
   - [Render markdown files from GitHub.](#render-markdown-files-from-github)
@@ -14,6 +15,7 @@ Beautiful, zero configuration, project homepages.
     - [Task lists](#task-lists)
     - [(Planned) Alert boxes](#planned-alert-boxes)
     - [(Planned) Emojis](#planned-emojis)
+    - [(Planned) Icon tags](#planned-icon-tags)
   - [(Planned) Inline layout configuration comments.](#planned-inline-layout-configuration-comments)
   - [(Planned) Shared header.](#planned-shared-header)
   - [(Planned) Shared footer.](#planned-shared-footer)
@@ -38,6 +40,7 @@ Here are some examples of home/documentation pages that will be possible in the 
 - [Render Docs](https://render.com/docs)
 
 <!-- sg:page -->
+
 ## Features
 
 - [x] Render markdown files from GitHub.
@@ -47,8 +50,9 @@ Here are some examples of home/documentation pages that will be possible in the 
   - [x] Diagrams using [Mermaid](https://mermaid.js.org).
   - [x] Math (TeX) using [KaTeX](https://katex.org/).
   - [x] Task lists.
-  - [ ] Alert boxes.
   - [ ] Emoji tags (eg. `:smile:`) using [GitHub Emoji Images](https://api.github.com/emojis).
+  - [ ] Icon tags (eg. `:FaHeart:`) using [react-icons](https://react-icons.github.io/react-icons).
+  - [ ] Alert boxes.
 - [ ] Inline layout configuration comments.
   - [ ] Hero banner.
   - [ ] Breadcrumb.
@@ -84,6 +88,7 @@ Navigate to `https://src.garden/<ghuser>/<ghrepo>/<path?>` to see the rendered v
 Source garden supports a number of extended markdown features, including tables, highlighted code, diagrams, and math. Additional support for alert boxes and emoji tags is planned.
 
 <!-- sg:tab(v=true) -->
+
 #### Tables
 
 | Name | Age | Height |
@@ -92,6 +97,7 @@ Source garden supports a number of extended markdown features, including tables,
 | Sue  | 30  | 5'5"   |
 
 <!-- sg:tab(v=true) -->
+
 #### Highlighted code
 
 ```ts
@@ -101,6 +107,7 @@ function hello(name: string) {
 ```
 
 <!-- sg:tab(v=true) -->
+
 #### Diagrams
 
 ```mermaid
@@ -111,6 +118,7 @@ pie title What Voldemort doesn't have?
 ```
 
 <!-- sg:tab(v=true) -->
+
 #### Math
 
 Inline with `$` delimiters (no spaces): $e^{i\pi}+1=0$
@@ -128,13 +136,19 @@ e^{i\pi} + 1 = 0
 ```
 
 <!-- sg:tab(v=true) -->
+
 #### Task lists
+
+Task lists are unordered lists with special bullets that indicate whether the item is "complete" or "incomplete".
 
 - [x] Complete.
 - [ ] Incomplete.
 
 <!-- sg:tab(v=true) -->
+
 #### (Planned) Alert boxes
+
+Alerts are specialized block quotes which render with emphasis.
 
 > **Note:**
 > Noted.
@@ -146,9 +160,28 @@ e^{i\pi} + 1 = 0
 > Let this be a warning to you.
 
 <!-- sg:tab(v=true) -->
+
 #### (Planned) Emojis
 
+These will be rendered using [GitHub Emoji Images](https://api.github.com/emojis).
+
 :smile: :+1: :rocket:
+
+<!-- sg:tab(v=true) -->
+
+#### (Planned) Icon tags
+
+These will be rendered using [react-icons](https://react-icons.github.io/react-icons).
+
+:FiSmile: :FaThumbsUp: :TbRocket:
+
+The React Icons library includes multiple versions of some icon sets (eg. Font Awesome 5 and 6). If the tag includes only the icon name, then the lowest version is implied. To use a specific version, use the import path for the icon set version. For example.
+
+`:FaHeart:` renders the version 5 icon: :FaHeart:
+
+`:fa/FaHeart:` also renders the version 5 icon: :fa/FaHeart:
+
+`:fa6/FaHeart` renders the version 6 icon: :fa6/FaHeart:
 
 ### (Planned) Inline layout configuration comments.
 
@@ -167,15 +200,15 @@ Layout possibilities are endless, but some planned examples include:
 
 ### (Planned) Shared header.
 
-A shared header will be a free feature which uses a single markdown file, probably named `HEADER.md`, from your repository root, and renders it on all pages as a header bar. It should contain a logo, title, and some links which provide "broad" navigation.
+A shared header will be a free feature which uses a single markdown file, probably named `HEADER.md`, from your repository root. It is rendered on all pages as a header bar. It should contain a logo, title, and some links which provide "broad" navigation.
 
 ### (Planned) Shared footer.
 
-A shared footer will be a free feature which uses a single markdown file, probably named `FOOTER.md`, from your repository root, and renders it on all pages as a footer section. It should contain a copyright notice, links to legal documents, and social links.
+A shared footer will be a free feature which uses a single markdown file, probably named `FOOTER.md`, from your repository root. It is rendered on all pages as a footer section. It should contain a copyright notice, links to legal documents, and social links.
 
 ### (Planned) Shared sitemap.
 
-A shared sitemap will be a free feature which uses a single markdown file, probably named `SITEMAP.md`, from your repository root, and renders it as the top part of the footer section. It should contain a comprehensive list of links to all pages in your site.
+A shared sitemap will be a free feature which uses a single markdown file, probably named `SITEMAP.md`, from your repository root. It is rendered on all pages as the top part of the footer section. It should contain a comprehensive list of links to all pages in your site.
 
 ### (Planned) Reverse proxy caching.
 
