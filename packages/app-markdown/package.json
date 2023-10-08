@@ -1,20 +1,18 @@
 {
   "private": true,
-  "name": "app-highlight",
-  "description": "Lazy loaded app package for markdown code syntax highlighting.",
+  "name": "app-markdown",
+  "description": "Lazy loaded app package for markdown parsing.",
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "author": "Chris Ackerman <chris@topher.land>",
   "repository": {
     "type": "git",
     "url": "https://github.com/Shakeskeyboarde/SrcGarden",
-    "directory": "packages/app-highlight"
+    "directory": "packages/app-markdown"
   },
-  "homepage": "https://github.com/Shakeskeyboarde/SrcGarden/blob/main/packages/app-highlight/README.md",
+  "homepage": "https://github.com/Shakeskeyboarde/SrcGarden/blob/main/packages/app-markdown/README.md",
   "type": "module",
-  "scripts": {
-    "postinstall": "node ./scripts/postinstall.js"
-  },
+  "scripts": {},
   "files": [
     "lib"
   ],
@@ -26,7 +24,10 @@
     }
   },
   "dependencies": {
-    "highlight.js": "^11.8.0"
+    "marked": "^9.1.0",
+    "marked-gfm-heading-id": "^3.1.0",
+    "marked-math": "*",
+    "marked-tasks": "*"
   },
   "devDependencies": {
     "@werk/command-build": "*",

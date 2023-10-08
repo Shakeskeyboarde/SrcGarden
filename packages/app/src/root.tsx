@@ -46,11 +46,23 @@ export const Root: FC = () => {
             'tbody > tr:nth-of-type(odd)': {
               backgroundColor: palette.backgroundAlt,
             },
-            'code.mathspan .katex': {
-              fontSize: '1.1em',
+            li: {
+              paddingBlock: '0.25em',
             },
-            'pre > code .katex-display': {
-              margin: 'unset',
+            'li > ul, li > ol, li > dl': {
+              paddingBlockStart: '0.25em',
+            },
+            'li.task': {
+              listStyleType: '"\u2610 "',
+
+              '&::marker': {
+                fontSize: '1.25em',
+                lineHeight: 1,
+              },
+
+              '&.checked': {
+                listStyleType: '"\u2611 "',
+              },
             },
           })}
         />

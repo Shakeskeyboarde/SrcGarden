@@ -11,7 +11,7 @@ Beautiful, zero configuration, project homepages.
     - [Highlighted code](#highlighted-code)
     - [Diagrams](#diagrams)
     - [Math](#math)
-    - [(Planned) Task lists](#planned-task-lists)
+    - [Task lists](#task-lists)
     - [(Planned) Alert boxes](#planned-alert-boxes)
     - [(Planned) Emojis](#planned-emojis)
   - [(Planned) Inline layout configuration comments.](#planned-inline-layout-configuration-comments)
@@ -46,7 +46,7 @@ Here are some examples of home/documentation pages that will be possible in the 
   - [x] Highlighted code using [Highlight.js](https://highlightjs.org/) (all languages).
   - [x] Diagrams using [Mermaid](https://mermaid.js.org).
   - [x] Math (TeX) using [KaTeX](https://katex.org/).
-  - [ ] Task lists.
+  - [x] Task lists.
   - [ ] Alert boxes.
   - [ ] Emoji tags (eg. `:smile:`) using [GitHub Emoji Images](https://api.github.com/emojis).
 - [ ] Inline layout configuration comments.
@@ -128,7 +128,7 @@ e^{i\pi} + 1 = 0
 ```
 
 <!-- sg:tab(v=true) -->
-#### (Planned) Task lists
+#### Task lists
 
 - [x] Complete.
 - [ ] Incomplete.

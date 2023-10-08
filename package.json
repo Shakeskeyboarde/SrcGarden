@@ -21,9 +21,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@werk/command-build": "^2.1.5",
-    "@werk/command-depcheck": "^1.0.4",
-    "eslint": "^8.50.0",
+    "@werk/command-build": "^2.1.6",
+    "@werk/command-depcheck": "^1.0.5",
+    "eslint": "^8.51.0",
     "eslint-config-rational": "^3.0.9",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"

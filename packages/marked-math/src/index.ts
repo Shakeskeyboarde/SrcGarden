@@ -1,13 +1,5 @@
+import escape from 'escape-html';
 import { type MarkedExtension } from 'marked';
-
-const encodeHtmlSpecials = (text: string): string => {
-  return text
-    .replace(/&/gu, '&amp;')
-    .replace(/>/gu, '&gt;')
-    .replace(/</gu, '&lt;')
-    .replace(/"/gu, '&quot;')
-    .replace(/'/gu, '&#039;');
-};
 
 export const markedMath = (): MarkedExtension => {
   return {
@@ -23,7 +15,7 @@ export const markedMath = (): MarkedExtension => {
           if (!match) return undefined;
 
           const text = match[2]?.trim() || match[3]?.trim() || '';
-          const html = `<code class="language-math mathspan">${encodeHtmlSpecials(text)}</code>`;
+          const html = `<code class="language-math mathspan">${escape(text)}</code>`;
 
           return { type: 'mathspan', raw: match[0], html };
         },
@@ -42,7 +34,7 @@ export const markedMath = (): MarkedExtension => {
           if (!match) return undefined;
 
           const text = match[1]!.trim();
-          const html = `<pre><code class="language-math">${encodeHtmlSpecials(text)}</code></pre>`;
+          const html = `<pre><code class="language-math">${escape(text)}</code></pre>`;
 
           return { type: 'mathblock', raw: match[0], html };
         },

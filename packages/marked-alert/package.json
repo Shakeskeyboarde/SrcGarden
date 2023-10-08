@@ -1,20 +1,18 @@
 {
   "private": true,
-  "name": "app-highlight",
-  "description": "Lazy loaded app package for markdown code syntax highlighting.",
+  "name": "marked-alert",
+  "description": "Display block quotes with specific prefixes as alert boxes.",
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "author": "Chris Ackerman <chris@topher.land>",
   "repository": {
     "type": "git",
     "url": "https://github.com/Shakeskeyboarde/SrcGarden",
-    "directory": "packages/app-highlight"
+    "directory": "packages/marked-alert"
   },
-  "homepage": "https://github.com/Shakeskeyboarde/SrcGarden/blob/main/packages/app-highlight/README.md",
+  "homepage": "https://github.com/Shakeskeyboarde/SrcGarden/blob/main/packages/marked-alert/README.md",
   "type": "module",
-  "scripts": {
-    "postinstall": "node ./scripts/postinstall.js"
-  },
+  "scripts": {},
   "files": [
     "lib"
   ],
@@ -25,11 +23,10 @@
       "default": "./lib/index.js"
     }
   },
-  "dependencies": {
-    "highlight.js": "^11.8.0"
+  "peerDependencies": {
+    "marked": "^9.0.3"
   },
   "devDependencies": {
-    "@werk/command-build": "*",
     "vite": "^4.4.11",
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-dts": "^3.6.0"
