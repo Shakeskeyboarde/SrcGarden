@@ -52,7 +52,7 @@ Here are some examples of home/documentation pages that will be possible in the 
   - [x] Task lists.
   - [x] Alert boxes.
   - [ ] Emoji tags (eg. `:smile:`) using [GitHub Emoji Images](https://api.github.com/emojis).
-  - [ ] Icon tags (eg. `:FaHeart:`) using [react-icons](https://react-icons.github.io/react-icons).
+  - [ ] Icon tags (eg. `:icon/smile:`) using [Tabler Icons](https://tabler-icons.io/).
 - [ ] Inline layout configuration comments.
   - [ ] Hero banner.
   - [ ] Breadcrumb.
