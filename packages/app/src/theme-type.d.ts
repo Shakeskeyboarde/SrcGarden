@@ -15,6 +15,12 @@ declare module '@emotion/react' {
       readonly text: string;
       readonly paper: string;
       readonly border: string;
+      readonly note: string;
+      readonly noteBackground: string;
+      readonly important: string;
+      readonly importantBackground: string;
+      readonly warning: string;
+      readonly warningBackground: string;
     };
     readonly shape: {
       readonly borderRadius: Numeric<'px' | 'rem'>;

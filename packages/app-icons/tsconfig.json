@@ -2,7 +2,9 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "lib"
+    "outDir": "lib",
+    "types": ["vite-plugin-svgr/client"],
+    "jsx": "react-jsx"
   },
   "include": ["src"],
   "exclude": ["**/__**/*", "*.test.*", "*.spec.*", "*.stories.*"]

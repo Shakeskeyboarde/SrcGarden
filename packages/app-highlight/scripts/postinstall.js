@@ -10,13 +10,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
 const highlightPackage = require.resolve('highlight.js/package.json');
 const highlightRoot = dirname(highlightPackage);
-/**
- * @type {import('highlight.js').LanguageFn[]}
- */
 const languageFiles = readdirSync(join(highlightRoot, 'lib', 'languages')).filter(
   (value) => value.endsWith('.js') && !value.endsWith('.js.js'),
 );
-
 const keys = new Set();
 const entries = [];
 

@@ -13,7 +13,7 @@ Beautiful, zero configuration, project homepages.
     - [Diagrams](#diagrams)
     - [Math](#math)
     - [Task lists](#task-lists)
-    - [(Planned) Alert boxes](#planned-alert-boxes)
+    - [Alert boxes](#alert-boxes)
     - [(Planned) Emojis](#planned-emojis)
     - [(Planned) Icon tags](#planned-icon-tags)
   - [(Planned) Inline layout configuration comments.](#planned-inline-layout-configuration-comments)
@@ -50,9 +50,9 @@ Here are some examples of home/documentation pages that will be possible in the 
   - [x] Diagrams using [Mermaid](https://mermaid.js.org).
   - [x] Math (TeX) using [KaTeX](https://katex.org/).
   - [x] Task lists.
+  - [x] Alert boxes.
   - [ ] Emoji tags (eg. `:smile:`) using [GitHub Emoji Images](https://api.github.com/emojis).
   - [ ] Icon tags (eg. `:FaHeart:`) using [react-icons](https://react-icons.github.io/react-icons).
-  - [ ] Alert boxes.
 - [ ] Inline layout configuration comments.
   - [ ] Hero banner.
   - [ ] Breadcrumb.
@@ -146,7 +146,7 @@ Task lists are unordered lists with special bullets that indicate whether the it
 
 <!-- sg:tab(v=true) -->
 
-#### (Planned) Alert boxes
+#### Alert boxes
 
 Alerts are specialized block quotes which render with emphasis.
 
@@ -171,17 +171,9 @@ These will be rendered using [GitHub Emoji Images](https://api.github.com/emojis
 
 #### (Planned) Icon tags
 
-These will be rendered using [react-icons](https://react-icons.github.io/react-icons).
+These will be rendered using [Tabler Icons](https://tabler-icons.io/).
 
-:FiSmile: :FaThumbsUp: :TbRocket:
-
-The React Icons library includes multiple versions of some icon sets (eg. Font Awesome 5 and 6). If the tag includes only the icon name, then the lowest version is implied. To use a specific version, use the import path for the icon set version. For example.
-
-`:FaHeart:` renders the version 5 icon: :FaHeart:
-
-`:fa/FaHeart:` also renders the version 5 icon: :fa/FaHeart:
-
-`:fa6/FaHeart:` renders the version 6 icon: :fa6/FaHeart:
+:icon/smile: :icon/thumb-up: :icon/rocket:
 
 ### (Planned) Inline layout configuration comments.
 

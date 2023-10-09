@@ -2,7 +2,7 @@ import { attributesToProps, Comment, Element, htmlToDOM, Text } from 'html-react
 import { type ComponentType, createElement, Fragment, useMemo } from 'react';
 
 interface Options {
-  readonly overrides?: Readonly<Record<string, ComponentType | true>>;
+  readonly replace?: (node: Element) => ComponentType | string | true | null | undefined;
   readonly allowUnsafe?: boolean;
 }
 
@@ -20,7 +20,7 @@ const UNSAFE_TAG_NAMES = new Set([
 ]) satisfies ReadonlySet<string>;
 
 const getJsx = (nodes: (Comment | Text | Element | {})[], options: Options): (JSX.Element | string | null)[] => {
-  const { overrides = {}, allowUnsafe = false } = options;
+  const { replace, allowUnsafe = false } = options;
 
   return [...nodes].flatMap((node) => {
     if (node instanceof Comment) {
@@ -33,14 +33,16 @@ const getJsx = (nodes: (Comment | Text | Element | {})[], options: Options): (JS
     }
 
     if (!(node instanceof Element)) return [];
-    if (!allowUnsafe && !(node.tagName in overrides) && UNSAFE_TAG_NAMES.has(node.tagName)) return [];
 
-    const override = node.tagName in overrides ? overrides[node.tagName] : undefined;
+    const replacement = replace?.(node);
+
+    if (!allowUnsafe && !replacement && UNSAFE_TAG_NAMES.has(node.tagName)) return [];
+
     const attributes = Object.fromEntries([...node.attributes].map((attr) => [attr.name, attr.value]));
     const props: Record<string, any> = attributesToProps(attributes);
     const children = getJsx(node.children, options);
 
-    return createElement(override && override !== true ? override : node.tagName, props, ...children);
+    return createElement(replacement && replacement !== true ? replacement : node.tagName, props, ...children);
   });
 };
 

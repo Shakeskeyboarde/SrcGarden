@@ -12,6 +12,12 @@ export const theme: Theme = {
     text: '#111',
     paper: '#eee',
     border: '#ccc',
+    note: '#48f',
+    noteBackground: '#f0f5ff',
+    important: '#a6f',
+    importantBackground: '#f7f0ff',
+    warning: '#e80',
+    warningBackground: '#fff6eb',
   },
   shape: {
     borderRadius: `4px`,
