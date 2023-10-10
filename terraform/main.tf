@@ -15,9 +15,10 @@ provider "aws" {
 }
 
 module "homepage" {
-  source       = "./modules/cloudfront"
-  enabled      = true
-  production   = true
-  s3-bucket    = "cloudfront-src-garden-homepage"
-  route53-zone = "src.garden"
+  source          = "./modules/cloudfront"
+  enabled         = true
+  production      = true
+  s3-bucket       = "cloudfront-src-garden-homepage"
+  route53-zone    = "src.garden"
+  csp-connect-src = "https://raw.githubusercontent.com/"
 }

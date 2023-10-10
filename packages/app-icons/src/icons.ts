@@ -1,14381 +1,4793 @@
-/* eslint-disable max-lines, import/no-extraneous-dependencies */
-/* Updated: 10/9/2023, 2:11:39 PM */
-import { type FC, lazy, type LazyExoticComponent, type SVGProps } from 'react';
-
-type Icon = LazyExoticComponent<FC<SVGProps<SVGSVGElement> & { title?: string | undefined }>>;
-
-export const icons: Record<string, Icon> = {
-  '12-hours': lazy(() => {
-    return import('@tabler/icons/12-hours.svg?react');
-  }),
-  '123': lazy(() => {
-    return import('@tabler/icons/123.svg?react');
-  }),
-  '24-hours': lazy(() => {
-    return import('@tabler/icons/24-hours.svg?react');
-  }),
-  '2fa': lazy(() => {
-    return import('@tabler/icons/2fa.svg?react');
-  }),
-  '360-view': lazy(() => {
-    return import('@tabler/icons/360-view.svg?react');
-  }),
-  '360': lazy(() => {
-    return import('@tabler/icons/360.svg?react');
-  }),
-  '3d-cube-sphere-off': lazy(() => {
-    return import('@tabler/icons/3d-cube-sphere-off.svg?react');
-  }),
-  '3d-cube-sphere': lazy(() => {
-    return import('@tabler/icons/3d-cube-sphere.svg?react');
-  }),
-  '3d-rotate': lazy(() => {
-    return import('@tabler/icons/3d-rotate.svg?react');
-  }),
-  'a-b-2': lazy(() => {
-    return import('@tabler/icons/a-b-2.svg?react');
-  }),
-  'a-b-off': lazy(() => {
-    return import('@tabler/icons/a-b-off.svg?react');
-  }),
-  'a-b': lazy(() => {
-    return import('@tabler/icons/a-b.svg?react');
-  }),
-  'abacus-off': lazy(() => {
-    return import('@tabler/icons/abacus-off.svg?react');
-  }),
-  abacus: lazy(() => {
-    return import('@tabler/icons/abacus.svg?react');
-  }),
-  abc: lazy(() => {
-    return import('@tabler/icons/abc.svg?react');
-  }),
-  'access-point-off': lazy(() => {
-    return import('@tabler/icons/access-point-off.svg?react');
-  }),
-  'access-point': lazy(() => {
-    return import('@tabler/icons/access-point.svg?react');
-  }),
-  'accessible-off-filled': lazy(() => {
-    return import('@tabler/icons/accessible-off-filled.svg?react');
-  }),
-  'accessible-off': lazy(() => {
-    return import('@tabler/icons/accessible-off.svg?react');
-  }),
-  accessible: lazy(() => {
-    return import('@tabler/icons/accessible.svg?react');
-  }),
-  'activity-heartbeat': lazy(() => {
-    return import('@tabler/icons/activity-heartbeat.svg?react');
-  }),
-  activity: lazy(() => {
-    return import('@tabler/icons/activity.svg?react');
-  }),
-  'ad-2': lazy(() => {
-    return import('@tabler/icons/ad-2.svg?react');
-  }),
-  'ad-circle-filled': lazy(() => {
-    return import('@tabler/icons/ad-circle-filled.svg?react');
-  }),
-  'ad-circle-off': lazy(() => {
-    return import('@tabler/icons/ad-circle-off.svg?react');
-  }),
-  'ad-circle': lazy(() => {
-    return import('@tabler/icons/ad-circle.svg?react');
-  }),
-  'ad-filled': lazy(() => {
-    return import('@tabler/icons/ad-filled.svg?react');
-  }),
-  'ad-off': lazy(() => {
-    return import('@tabler/icons/ad-off.svg?react');
-  }),
-  ad: lazy(() => {
-    return import('@tabler/icons/ad.svg?react');
-  }),
-  'address-book-off': lazy(() => {
-    return import('@tabler/icons/address-book-off.svg?react');
-  }),
-  'address-book': lazy(() => {
-    return import('@tabler/icons/address-book.svg?react');
-  }),
-  'adjustments-alt': lazy(() => {
-    return import('@tabler/icons/adjustments-alt.svg?react');
-  }),
-  'adjustments-bolt': lazy(() => {
-    return import('@tabler/icons/adjustments-bolt.svg?react');
-  }),
-  'adjustments-cancel': lazy(() => {
-    return import('@tabler/icons/adjustments-cancel.svg?react');
-  }),
-  'adjustments-check': lazy(() => {
-    return import('@tabler/icons/adjustments-check.svg?react');
-  }),
-  'adjustments-code': lazy(() => {
-    return import('@tabler/icons/adjustments-code.svg?react');
-  }),
-  'adjustments-cog': lazy(() => {
-    return import('@tabler/icons/adjustments-cog.svg?react');
-  }),
-  'adjustments-dollar': lazy(() => {
-    return import('@tabler/icons/adjustments-dollar.svg?react');
-  }),
-  'adjustments-down': lazy(() => {
-    return import('@tabler/icons/adjustments-down.svg?react');
-  }),
-  'adjustments-exclamation': lazy(() => {
-    return import('@tabler/icons/adjustments-exclamation.svg?react');
-  }),
-  'adjustments-filled': lazy(() => {
-    return import('@tabler/icons/adjustments-filled.svg?react');
-  }),
-  'adjustments-heart': lazy(() => {
-    return import('@tabler/icons/adjustments-heart.svg?react');
-  }),
-  'adjustments-horizontal': lazy(() => {
-    return import('@tabler/icons/adjustments-horizontal.svg?react');
-  }),
-  'adjustments-minus': lazy(() => {
-    return import('@tabler/icons/adjustments-minus.svg?react');
-  }),
-  'adjustments-off': lazy(() => {
-    return import('@tabler/icons/adjustments-off.svg?react');
-  }),
-  'adjustments-pause': lazy(() => {
-    return import('@tabler/icons/adjustments-pause.svg?react');
-  }),
-  'adjustments-pin': lazy(() => {
-    return import('@tabler/icons/adjustments-pin.svg?react');
-  }),
-  'adjustments-plus': lazy(() => {
-    return import('@tabler/icons/adjustments-plus.svg?react');
-  }),
-  'adjustments-question': lazy(() => {
-    return import('@tabler/icons/adjustments-question.svg?react');
-  }),
-  'adjustments-search': lazy(() => {
-    return import('@tabler/icons/adjustments-search.svg?react');
-  }),
-  'adjustments-share': lazy(() => {
-    return import('@tabler/icons/adjustments-share.svg?react');
-  }),
-  'adjustments-star': lazy(() => {
-    return import('@tabler/icons/adjustments-star.svg?react');
-  }),
-  'adjustments-up': lazy(() => {
-    return import('@tabler/icons/adjustments-up.svg?react');
-  }),
-  'adjustments-x': lazy(() => {
-    return import('@tabler/icons/adjustments-x.svg?react');
-  }),
-  adjustments: lazy(() => {
-    return import('@tabler/icons/adjustments.svg?react');
-  }),
-  'aerial-lift': lazy(() => {
-    return import('@tabler/icons/aerial-lift.svg?react');
-  }),
-  'affiliate-filled': lazy(() => {
-    return import('@tabler/icons/affiliate-filled.svg?react');
-  }),
-  affiliate: lazy(() => {
-    return import('@tabler/icons/affiliate.svg?react');
-  }),
-  'air-balloon': lazy(() => {
-    return import('@tabler/icons/air-balloon.svg?react');
-  }),
-  'air-conditioning-disabled': lazy(() => {
-    return import('@tabler/icons/air-conditioning-disabled.svg?react');
-  }),
-  'air-conditioning': lazy(() => {
-    return import('@tabler/icons/air-conditioning.svg?react');
-  }),
-  'air-traffic-control': lazy(() => {
-    return import('@tabler/icons/air-traffic-control.svg?react');
-  }),
-  'alarm-average': lazy(() => {
-    return import('@tabler/icons/alarm-average.svg?react');
-  }),
-  'alarm-filled': lazy(() => {
-    return import('@tabler/icons/alarm-filled.svg?react');
-  }),
-  'alarm-minus-filled': lazy(() => {
-    return import('@tabler/icons/alarm-minus-filled.svg?react');
-  }),
-  'alarm-minus': lazy(() => {
-    return import('@tabler/icons/alarm-minus.svg?react');
-  }),
-  'alarm-off': lazy(() => {
-    return import('@tabler/icons/alarm-off.svg?react');
-  }),
-  'alarm-plus-filled': lazy(() => {
-    return import('@tabler/icons/alarm-plus-filled.svg?react');
-  }),
-  'alarm-plus': lazy(() => {
-    return import('@tabler/icons/alarm-plus.svg?react');
-  }),
-  'alarm-snooze-filled': lazy(() => {
-    return import('@tabler/icons/alarm-snooze-filled.svg?react');
-  }),
-  'alarm-snooze': lazy(() => {
-    return import('@tabler/icons/alarm-snooze.svg?react');
-  }),
-  alarm: lazy(() => {
-    return import('@tabler/icons/alarm.svg?react');
-  }),
-  'album-off': lazy(() => {
-    return import('@tabler/icons/album-off.svg?react');
-  }),
-  album: lazy(() => {
-    return import('@tabler/icons/album.svg?react');
-  }),
-  'alert-circle-filled': lazy(() => {
-    return import('@tabler/icons/alert-circle-filled.svg?react');
-  }),
-  'alert-circle-off': lazy(() => {
-    return import('@tabler/icons/alert-circle-off.svg?react');
-  }),
-  'alert-circle': lazy(() => {
-    return import('@tabler/icons/alert-circle.svg?react');
-  }),
-  'alert-hexagon-filled': lazy(() => {
-    return import('@tabler/icons/alert-hexagon-filled.svg?react');
-  }),
-  'alert-hexagon-off': lazy(() => {
-    return import('@tabler/icons/alert-hexagon-off.svg?react');
-  }),
-  'alert-hexagon': lazy(() => {
-    return import('@tabler/icons/alert-hexagon.svg?react');
-  }),
-  'alert-octagon-filled': lazy(() => {
-    return import('@tabler/icons/alert-octagon-filled.svg?react');
-  }),
-  'alert-octagon': lazy(() => {
-    return import('@tabler/icons/alert-octagon.svg?react');
-  }),
-  'alert-small-off': lazy(() => {
-    return import('@tabler/icons/alert-small-off.svg?react');
-  }),
-  'alert-small': lazy(() => {
-    return import('@tabler/icons/alert-small.svg?react');
-  }),
-  'alert-square-filled': lazy(() => {
-    return import('@tabler/icons/alert-square-filled.svg?react');
-  }),
-  'alert-square-rounded-filled': lazy(() => {
-    return import('@tabler/icons/alert-square-rounded-filled.svg?react');
-  }),
-  'alert-square-rounded-off': lazy(() => {
-    return import('@tabler/icons/alert-square-rounded-off.svg?react');
-  }),
-  'alert-square-rounded': lazy(() => {
-    return import('@tabler/icons/alert-square-rounded.svg?react');
-  }),
-  'alert-square': lazy(() => {
-    return import('@tabler/icons/alert-square.svg?react');
-  }),
-  'alert-triangle-filled': lazy(() => {
-    return import('@tabler/icons/alert-triangle-filled.svg?react');
-  }),
-  'alert-triangle-off': lazy(() => {
-    return import('@tabler/icons/alert-triangle-off.svg?react');
-  }),
-  'alert-triangle': lazy(() => {
-    return import('@tabler/icons/alert-triangle.svg?react');
-  }),
-  'alien-filled': lazy(() => {
-    return import('@tabler/icons/alien-filled.svg?react');
-  }),
-  alien: lazy(() => {
-    return import('@tabler/icons/alien.svg?react');
-  }),
-  'align-box-bottom-center-filled': lazy(() => {
-    return import('@tabler/icons/align-box-bottom-center-filled.svg?react');
-  }),
-  'align-box-bottom-center': lazy(() => {
-    return import('@tabler/icons/align-box-bottom-center.svg?react');
-  }),
-  'align-box-bottom-left-filled': lazy(() => {
-    return import('@tabler/icons/align-box-bottom-left-filled.svg?react');
-  }),
-  'align-box-bottom-left': lazy(() => {
-    return import('@tabler/icons/align-box-bottom-left.svg?react');
-  }),
-  'align-box-bottom-right-filled': lazy(() => {
-    return import('@tabler/icons/align-box-bottom-right-filled.svg?react');
-  }),
-  'align-box-bottom-right': lazy(() => {
-    return import('@tabler/icons/align-box-bottom-right.svg?react');
-  }),
-  'align-box-center-bottom': lazy(() => {
-    return import('@tabler/icons/align-box-center-bottom.svg?react');
-  }),
-  'align-box-center-middle-filled': lazy(() => {
-    return import('@tabler/icons/align-box-center-middle-filled.svg?react');
-  }),
-  'align-box-center-middle': lazy(() => {
-    return import('@tabler/icons/align-box-center-middle.svg?react');
-  }),
-  'align-box-center-stretch': lazy(() => {
-    return import('@tabler/icons/align-box-center-stretch.svg?react');
-  }),
-  'align-box-center-top': lazy(() => {
-    return import('@tabler/icons/align-box-center-top.svg?react');
-  }),
-  'align-box-left-bottom-filled': lazy(() => {
-    return import('@tabler/icons/align-box-left-bottom-filled.svg?react');
-  }),
-  'align-box-left-bottom': lazy(() => {
-    return import('@tabler/icons/align-box-left-bottom.svg?react');
-  }),
-  'align-box-left-middle-filled': lazy(() => {
-    return import('@tabler/icons/align-box-left-middle-filled.svg?react');
-  }),
-  'align-box-left-middle': lazy(() => {
-    return import('@tabler/icons/align-box-left-middle.svg?react');
-  }),
-  'align-box-left-stretch': lazy(() => {
-    return import('@tabler/icons/align-box-left-stretch.svg?react');
-  }),
-  'align-box-left-top-filled': lazy(() => {
-    return import('@tabler/icons/align-box-left-top-filled.svg?react');
-  }),
-  'align-box-left-top': lazy(() => {
-    return import('@tabler/icons/align-box-left-top.svg?react');
-  }),
-  'align-box-right-bottom-filled': lazy(() => {
-    return import('@tabler/icons/align-box-right-bottom-filled.svg?react');
-  }),
-  'align-box-right-bottom': lazy(() => {
-    return import('@tabler/icons/align-box-right-bottom.svg?react');
-  }),
-  'align-box-right-middle-filled': lazy(() => {
-    return import('@tabler/icons/align-box-right-middle-filled.svg?react');
-  }),
-  'align-box-right-middle': lazy(() => {
-    return import('@tabler/icons/align-box-right-middle.svg?react');
-  }),
-  'align-box-right-stretch': lazy(() => {
-    return import('@tabler/icons/align-box-right-stretch.svg?react');
-  }),
-  'align-box-right-top-filled': lazy(() => {
-    return import('@tabler/icons/align-box-right-top-filled.svg?react');
-  }),
-  'align-box-right-top': lazy(() => {
-    return import('@tabler/icons/align-box-right-top.svg?react');
-  }),
-  'align-box-top-center-filled': lazy(() => {
-    return import('@tabler/icons/align-box-top-center-filled.svg?react');
-  }),
-  'align-box-top-center': lazy(() => {
-    return import('@tabler/icons/align-box-top-center.svg?react');
-  }),
-  'align-box-top-left-filled': lazy(() => {
-    return import('@tabler/icons/align-box-top-left-filled.svg?react');
-  }),
-  'align-box-top-left': lazy(() => {
-    return import('@tabler/icons/align-box-top-left.svg?react');
-  }),
-  'align-box-top-right-filled': lazy(() => {
-    return import('@tabler/icons/align-box-top-right-filled.svg?react');
-  }),
-  'align-box-top-right': lazy(() => {
-    return import('@tabler/icons/align-box-top-right.svg?react');
-  }),
-  'align-center': lazy(() => {
-    return import('@tabler/icons/align-center.svg?react');
-  }),
-  'align-justified': lazy(() => {
-    return import('@tabler/icons/align-justified.svg?react');
-  }),
-  'align-left': lazy(() => {
-    return import('@tabler/icons/align-left.svg?react');
-  }),
-  'align-right': lazy(() => {
-    return import('@tabler/icons/align-right.svg?react');
-  }),
-  alpha: lazy(() => {
-    return import('@tabler/icons/alpha.svg?react');
-  }),
-  'alphabet-cyrillic': lazy(() => {
-    return import('@tabler/icons/alphabet-cyrillic.svg?react');
-  }),
-  'alphabet-greek': lazy(() => {
-    return import('@tabler/icons/alphabet-greek.svg?react');
-  }),
-  'alphabet-latin': lazy(() => {
-    return import('@tabler/icons/alphabet-latin.svg?react');
-  }),
-  alt: lazy(() => {
-    return import('@tabler/icons/alt.svg?react');
-  }),
-  ambulance: lazy(() => {
-    return import('@tabler/icons/ambulance.svg?react');
-  }),
-  ampersand: lazy(() => {
-    return import('@tabler/icons/ampersand.svg?react');
-  }),
-  'analyze-filled': lazy(() => {
-    return import('@tabler/icons/analyze-filled.svg?react');
-  }),
-  'analyze-off': lazy(() => {
-    return import('@tabler/icons/analyze-off.svg?react');
-  }),
-  analyze: lazy(() => {
-    return import('@tabler/icons/analyze.svg?react');
-  }),
-  'anchor-off': lazy(() => {
-    return import('@tabler/icons/anchor-off.svg?react');
-  }),
-  anchor: lazy(() => {
-    return import('@tabler/icons/anchor.svg?react');
-  }),
-  angle: lazy(() => {
-    return import('@tabler/icons/angle.svg?react');
-  }),
-  ankh: lazy(() => {
-    return import('@tabler/icons/ankh.svg?react');
-  }),
-  'antenna-bars-1': lazy(() => {
-    return import('@tabler/icons/antenna-bars-1.svg?react');
-  }),
-  'antenna-bars-2': lazy(() => {
-    return import('@tabler/icons/antenna-bars-2.svg?react');
-  }),
-  'antenna-bars-3': lazy(() => {
-    return import('@tabler/icons/antenna-bars-3.svg?react');
-  }),
-  'antenna-bars-4': lazy(() => {
-    return import('@tabler/icons/antenna-bars-4.svg?react');
-  }),
-  'antenna-bars-5': lazy(() => {
-    return import('@tabler/icons/antenna-bars-5.svg?react');
-  }),
-  'antenna-bars-off': lazy(() => {
-    return import('@tabler/icons/antenna-bars-off.svg?react');
-  }),
-  'antenna-off': lazy(() => {
-    return import('@tabler/icons/antenna-off.svg?react');
-  }),
-  antenna: lazy(() => {
-    return import('@tabler/icons/antenna.svg?react');
-  }),
-  'aperture-off': lazy(() => {
-    return import('@tabler/icons/aperture-off.svg?react');
-  }),
-  aperture: lazy(() => {
-    return import('@tabler/icons/aperture.svg?react');
-  }),
-  'api-app-off': lazy(() => {
-    return import('@tabler/icons/api-app-off.svg?react');
-  }),
-  'api-app': lazy(() => {
-    return import('@tabler/icons/api-app.svg?react');
-  }),
-  'api-off': lazy(() => {
-    return import('@tabler/icons/api-off.svg?react');
-  }),
-  api: lazy(() => {
-    return import('@tabler/icons/api.svg?react');
-  }),
-  'app-window-filled': lazy(() => {
-    return import('@tabler/icons/app-window-filled.svg?react');
-  }),
-  'app-window': lazy(() => {
-    return import('@tabler/icons/app-window.svg?react');
-  }),
-  apple: lazy(() => {
-    return import('@tabler/icons/apple.svg?react');
-  }),
-  'apps-filled': lazy(() => {
-    return import('@tabler/icons/apps-filled.svg?react');
-  }),
-  'apps-off': lazy(() => {
-    return import('@tabler/icons/apps-off.svg?react');
-  }),
-  apps: lazy(() => {
-    return import('@tabler/icons/apps.svg?react');
-  }),
-  'archery-arrow': lazy(() => {
-    return import('@tabler/icons/archery-arrow.svg?react');
-  }),
-  'archive-filled': lazy(() => {
-    return import('@tabler/icons/archive-filled.svg?react');
-  }),
-  'archive-off': lazy(() => {
-    return import('@tabler/icons/archive-off.svg?react');
-  }),
-  archive: lazy(() => {
-    return import('@tabler/icons/archive.svg?react');
-  }),
-  'armchair-2-off': lazy(() => {
-    return import('@tabler/icons/armchair-2-off.svg?react');
-  }),
-  'armchair-2': lazy(() => {
-    return import('@tabler/icons/armchair-2.svg?react');
-  }),
-  'armchair-off': lazy(() => {
-    return import('@tabler/icons/armchair-off.svg?react');
-  }),
-  armchair: lazy(() => {
-    return import('@tabler/icons/armchair.svg?react');
-  }),
-  'arrow-autofit-content-filled': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-content-filled.svg?react');
-  }),
-  'arrow-autofit-content': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-content.svg?react');
-  }),
-  'arrow-autofit-down': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-down.svg?react');
-  }),
-  'arrow-autofit-height': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-height.svg?react');
-  }),
-  'arrow-autofit-left': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-left.svg?react');
-  }),
-  'arrow-autofit-right': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-right.svg?react');
-  }),
-  'arrow-autofit-up': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-up.svg?react');
-  }),
-  'arrow-autofit-width': lazy(() => {
-    return import('@tabler/icons/arrow-autofit-width.svg?react');
-  }),
-  'arrow-back-up-double': lazy(() => {
-    return import('@tabler/icons/arrow-back-up-double.svg?react');
-  }),
-  'arrow-back-up': lazy(() => {
-    return import('@tabler/icons/arrow-back-up.svg?react');
-  }),
-  'arrow-back': lazy(() => {
-    return import('@tabler/icons/arrow-back.svg?react');
-  }),
-  'arrow-badge-down-filled': lazy(() => {
-    return import('@tabler/icons/arrow-badge-down-filled.svg?react');
-  }),
-  'arrow-badge-down': lazy(() => {
-    return import('@tabler/icons/arrow-badge-down.svg?react');
-  }),
-  'arrow-badge-left-filled': lazy(() => {
-    return import('@tabler/icons/arrow-badge-left-filled.svg?react');
-  }),
-  'arrow-badge-left': lazy(() => {
-    return import('@tabler/icons/arrow-badge-left.svg?react');
-  }),
-  'arrow-badge-right-filled': lazy(() => {
-    return import('@tabler/icons/arrow-badge-right-filled.svg?react');
-  }),
-  'arrow-badge-right': lazy(() => {
-    return import('@tabler/icons/arrow-badge-right.svg?react');
-  }),
-  'arrow-badge-up-filled': lazy(() => {
-    return import('@tabler/icons/arrow-badge-up-filled.svg?react');
-  }),
-  'arrow-badge-up': lazy(() => {
-    return import('@tabler/icons/arrow-badge-up.svg?react');
-  }),
-  'arrow-bar-both': lazy(() => {
-    return import('@tabler/icons/arrow-bar-both.svg?react');
-  }),
-  'arrow-bar-down': lazy(() => {
-    return import('@tabler/icons/arrow-bar-down.svg?react');
-  }),
-  'arrow-bar-left': lazy(() => {
-    return import('@tabler/icons/arrow-bar-left.svg?react');
-  }),
-  'arrow-bar-right': lazy(() => {
-    return import('@tabler/icons/arrow-bar-right.svg?react');
-  }),
-  'arrow-bar-to-down': lazy(() => {
-    return import('@tabler/icons/arrow-bar-to-down.svg?react');
-  }),
-  'arrow-bar-to-left': lazy(() => {
-    return import('@tabler/icons/arrow-bar-to-left.svg?react');
-  }),
-  'arrow-bar-to-right': lazy(() => {
-    return import('@tabler/icons/arrow-bar-to-right.svg?react');
-  }),
-  'arrow-bar-to-up': lazy(() => {
-    return import('@tabler/icons/arrow-bar-to-up.svg?react');
-  }),
-  'arrow-bar-up': lazy(() => {
-    return import('@tabler/icons/arrow-bar-up.svg?react');
-  }),
-  'arrow-bear-left-2': lazy(() => {
-    return import('@tabler/icons/arrow-bear-left-2.svg?react');
-  }),
-  'arrow-bear-left': lazy(() => {
-    return import('@tabler/icons/arrow-bear-left.svg?react');
-  }),
-  'arrow-bear-right-2': lazy(() => {
-    return import('@tabler/icons/arrow-bear-right-2.svg?react');
-  }),
-  'arrow-bear-right': lazy(() => {
-    return import('@tabler/icons/arrow-bear-right.svg?react');
-  }),
-  'arrow-big-down-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-down-filled.svg?react');
-  }),
-  'arrow-big-down-line-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-down-line-filled.svg?react');
-  }),
-  'arrow-big-down-line': lazy(() => {
-    return import('@tabler/icons/arrow-big-down-line.svg?react');
-  }),
-  'arrow-big-down-lines-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-down-lines-filled.svg?react');
-  }),
-  'arrow-big-down-lines': lazy(() => {
-    return import('@tabler/icons/arrow-big-down-lines.svg?react');
-  }),
-  'arrow-big-down': lazy(() => {
-    return import('@tabler/icons/arrow-big-down.svg?react');
-  }),
-  'arrow-big-left-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-left-filled.svg?react');
-  }),
-  'arrow-big-left-line-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-left-line-filled.svg?react');
-  }),
-  'arrow-big-left-line': lazy(() => {
-    return import('@tabler/icons/arrow-big-left-line.svg?react');
-  }),
-  'arrow-big-left-lines-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-left-lines-filled.svg?react');
-  }),
-  'arrow-big-left-lines': lazy(() => {
-    return import('@tabler/icons/arrow-big-left-lines.svg?react');
-  }),
-  'arrow-big-left': lazy(() => {
-    return import('@tabler/icons/arrow-big-left.svg?react');
-  }),
-  'arrow-big-right-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-right-filled.svg?react');
-  }),
-  'arrow-big-right-line-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-right-line-filled.svg?react');
-  }),
-  'arrow-big-right-line': lazy(() => {
-    return import('@tabler/icons/arrow-big-right-line.svg?react');
-  }),
-  'arrow-big-right-lines-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-right-lines-filled.svg?react');
-  }),
-  'arrow-big-right-lines': lazy(() => {
-    return import('@tabler/icons/arrow-big-right-lines.svg?react');
-  }),
-  'arrow-big-right': lazy(() => {
-    return import('@tabler/icons/arrow-big-right.svg?react');
-  }),
-  'arrow-big-up-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-up-filled.svg?react');
-  }),
-  'arrow-big-up-line-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-up-line-filled.svg?react');
-  }),
-  'arrow-big-up-line': lazy(() => {
-    return import('@tabler/icons/arrow-big-up-line.svg?react');
-  }),
-  'arrow-big-up-lines-filled': lazy(() => {
-    return import('@tabler/icons/arrow-big-up-lines-filled.svg?react');
-  }),
-  'arrow-big-up-lines': lazy(() => {
-    return import('@tabler/icons/arrow-big-up-lines.svg?react');
-  }),
-  'arrow-big-up': lazy(() => {
-    return import('@tabler/icons/arrow-big-up.svg?react');
-  }),
-  'arrow-bounce': lazy(() => {
-    return import('@tabler/icons/arrow-bounce.svg?react');
-  }),
-  'arrow-capsule': lazy(() => {
-    return import('@tabler/icons/arrow-capsule.svg?react');
-  }),
-  'arrow-curve-left': lazy(() => {
-    return import('@tabler/icons/arrow-curve-left.svg?react');
-  }),
-  'arrow-curve-right': lazy(() => {
-    return import('@tabler/icons/arrow-curve-right.svg?react');
-  }),
-  'arrow-down-bar': lazy(() => {
-    return import('@tabler/icons/arrow-down-bar.svg?react');
-  }),
-  'arrow-down-circle': lazy(() => {
-    return import('@tabler/icons/arrow-down-circle.svg?react');
-  }),
-  'arrow-down-left-circle': lazy(() => {
-    return import('@tabler/icons/arrow-down-left-circle.svg?react');
-  }),
-  'arrow-down-left': lazy(() => {
-    return import('@tabler/icons/arrow-down-left.svg?react');
-  }),
-  'arrow-down-rhombus': lazy(() => {
-    return import('@tabler/icons/arrow-down-rhombus.svg?react');
-  }),
-  'arrow-down-right-circle': lazy(() => {
-    return import('@tabler/icons/arrow-down-right-circle.svg?react');
-  }),
-  'arrow-down-right': lazy(() => {
-    return import('@tabler/icons/arrow-down-right.svg?react');
-  }),
-  'arrow-down-square': lazy(() => {
-    return import('@tabler/icons/arrow-down-square.svg?react');
-  }),
-  'arrow-down-tail': lazy(() => {
-    return import('@tabler/icons/arrow-down-tail.svg?react');
-  }),
-  'arrow-down': lazy(() => {
-    return import('@tabler/icons/arrow-down.svg?react');
-  }),
-  'arrow-elbow-left': lazy(() => {
-    return import('@tabler/icons/arrow-elbow-left.svg?react');
-  }),
-  'arrow-elbow-right': lazy(() => {
-    return import('@tabler/icons/arrow-elbow-right.svg?react');
-  }),
-  'arrow-fork': lazy(() => {
-    return import('@tabler/icons/arrow-fork.svg?react');
-  }),
-  'arrow-forward-up-double': lazy(() => {
-    return import('@tabler/icons/arrow-forward-up-double.svg?react');
-  }),
-  'arrow-forward-up': lazy(() => {
-    return import('@tabler/icons/arrow-forward-up.svg?react');
-  }),
-  'arrow-forward': lazy(() => {
-    return import('@tabler/icons/arrow-forward.svg?react');
-  }),
-  'arrow-guide': lazy(() => {
-    return import('@tabler/icons/arrow-guide.svg?react');
-  }),
-  'arrow-iteration': lazy(() => {
-    return import('@tabler/icons/arrow-iteration.svg?react');
-  }),
-  'arrow-left-bar': lazy(() => {
-    return import('@tabler/icons/arrow-left-bar.svg?react');
-  }),
-  'arrow-left-circle': lazy(() => {
-    return import('@tabler/icons/arrow-left-circle.svg?react');
-  }),
-  'arrow-left-rhombus': lazy(() => {
-    return import('@tabler/icons/arrow-left-rhombus.svg?react');
-  }),
-  'arrow-left-right': lazy(() => {
-    return import('@tabler/icons/arrow-left-right.svg?react');
-  }),
-  'arrow-left-square': lazy(() => {
-    return import('@tabler/icons/arrow-left-square.svg?react');
-  }),
-  'arrow-left-tail': lazy(() => {
-    return import('@tabler/icons/arrow-left-tail.svg?react');
-  }),
-  'arrow-left': lazy(() => {
-    return import('@tabler/icons/arrow-left.svg?react');
-  }),
-  'arrow-loop-left-2': lazy(() => {
-    return import('@tabler/icons/arrow-loop-left-2.svg?react');
-  }),
-  'arrow-loop-left': lazy(() => {
-    return import('@tabler/icons/arrow-loop-left.svg?react');
-  }),
-  'arrow-loop-right-2': lazy(() => {
-    return import('@tabler/icons/arrow-loop-right-2.svg?react');
-  }),
-  'arrow-loop-right': lazy(() => {
-    return import('@tabler/icons/arrow-loop-right.svg?react');
-  }),
-  'arrow-merge-alt-left': lazy(() => {
-    return import('@tabler/icons/arrow-merge-alt-left.svg?react');
-  }),
-  'arrow-merge-alt-right': lazy(() => {
-    return import('@tabler/icons/arrow-merge-alt-right.svg?react');
-  }),
-  'arrow-merge-both': lazy(() => {
-    return import('@tabler/icons/arrow-merge-both.svg?react');
-  }),
-  'arrow-merge-left': lazy(() => {
-    return import('@tabler/icons/arrow-merge-left.svg?react');
-  }),
-  'arrow-merge-right': lazy(() => {
-    return import('@tabler/icons/arrow-merge-right.svg?react');
-  }),
-  'arrow-merge': lazy(() => {
-    return import('@tabler/icons/arrow-merge.svg?react');
-  }),
-  'arrow-move-down': lazy(() => {
-    return import('@tabler/icons/arrow-move-down.svg?react');
-  }),
-  'arrow-move-left': lazy(() => {
-    return import('@tabler/icons/arrow-move-left.svg?react');
-  }),
-  'arrow-move-right': lazy(() => {
-    return import('@tabler/icons/arrow-move-right.svg?react');
-  }),
-  'arrow-move-up': lazy(() => {
-    return import('@tabler/icons/arrow-move-up.svg?react');
-  }),
-  'arrow-narrow-down': lazy(() => {
-    return import('@tabler/icons/arrow-narrow-down.svg?react');
-  }),
-  'arrow-narrow-left': lazy(() => {
-    return import('@tabler/icons/arrow-narrow-left.svg?react');
-  }),
-  'arrow-narrow-right': lazy(() => {
-    return import('@tabler/icons/arrow-narrow-right.svg?react');
-  }),
-  'arrow-narrow-up': lazy(() => {
-    return import('@tabler/icons/arrow-narrow-up.svg?react');
-  }),
-  'arrow-ramp-left-2': lazy(() => {
-    return import('@tabler/icons/arrow-ramp-left-2.svg?react');
-  }),
-  'arrow-ramp-left-3': lazy(() => {
-    return import('@tabler/icons/arrow-ramp-left-3.svg?react');
-  }),
-  'arrow-ramp-left': lazy(() => {
-    return import('@tabler/icons/arrow-ramp-left.svg?react');
-  }),
-  'arrow-ramp-right-2': lazy(() => {
-    return import('@tabler/icons/arrow-ramp-right-2.svg?react');
-  }),
-  'arrow-ramp-right-3': lazy(() => {
-    return import('@tabler/icons/arrow-ramp-right-3.svg?react');
-  }),
-  'arrow-ramp-right': lazy(() => {
-    return import('@tabler/icons/arrow-ramp-right.svg?react');
-  }),
-  'arrow-right-bar': lazy(() => {
-    return import('@tabler/icons/arrow-right-bar.svg?react');
-  }),
-  'arrow-right-circle': lazy(() => {
-    return import('@tabler/icons/arrow-right-circle.svg?react');
-  }),
-  'arrow-right-rhombus': lazy(() => {
-    return import('@tabler/icons/arrow-right-rhombus.svg?react');
-  }),
-  'arrow-right-square': lazy(() => {
-    return import('@tabler/icons/arrow-right-square.svg?react');
-  }),
-  'arrow-right-tail': lazy(() => {
-    return import('@tabler/icons/arrow-right-tail.svg?react');
-  }),
-  'arrow-right': lazy(() => {
-    return import('@tabler/icons/arrow-right.svg?react');
-  }),
-  'arrow-rotary-first-left': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-first-left.svg?react');
-  }),
-  'arrow-rotary-first-right': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-first-right.svg?react');
-  }),
-  'arrow-rotary-last-left': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-last-left.svg?react');
-  }),
-  'arrow-rotary-last-right': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-last-right.svg?react');
-  }),
-  'arrow-rotary-left': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-left.svg?react');
-  }),
-  'arrow-rotary-right': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-right.svg?react');
-  }),
-  'arrow-rotary-straight': lazy(() => {
-    return import('@tabler/icons/arrow-rotary-straight.svg?react');
-  }),
-  'arrow-roundabout-left': lazy(() => {
-    return import('@tabler/icons/arrow-roundabout-left.svg?react');
-  }),
-  'arrow-roundabout-right': lazy(() => {
-    return import('@tabler/icons/arrow-roundabout-right.svg?react');
-  }),
-  'arrow-sharp-turn-left': lazy(() => {
-    return import('@tabler/icons/arrow-sharp-turn-left.svg?react');
-  }),
-  'arrow-sharp-turn-right': lazy(() => {
-    return import('@tabler/icons/arrow-sharp-turn-right.svg?react');
-  }),
-  'arrow-up-bar': lazy(() => {
-    return import('@tabler/icons/arrow-up-bar.svg?react');
-  }),
-  'arrow-up-circle': lazy(() => {
-    return import('@tabler/icons/arrow-up-circle.svg?react');
-  }),
-  'arrow-up-left-circle': lazy(() => {
-    return import('@tabler/icons/arrow-up-left-circle.svg?react');
-  }),
-  'arrow-up-left': lazy(() => {
-    return import('@tabler/icons/arrow-up-left.svg?react');
-  }),
-  'arrow-up-rhombus': lazy(() => {
-    return import('@tabler/icons/arrow-up-rhombus.svg?react');
-  }),
-  'arrow-up-right-circle': lazy(() => {
-    return import('@tabler/icons/arrow-up-right-circle.svg?react');
-  }),
-  'arrow-up-right': lazy(() => {
-    return import('@tabler/icons/arrow-up-right.svg?react');
-  }),
-  'arrow-up-square': lazy(() => {
-    return import('@tabler/icons/arrow-up-square.svg?react');
-  }),
-  'arrow-up-tail': lazy(() => {
-    return import('@tabler/icons/arrow-up-tail.svg?react');
-  }),
-  'arrow-up': lazy(() => {
-    return import('@tabler/icons/arrow-up.svg?react');
-  }),
-  'arrow-wave-left-down': lazy(() => {
-    return import('@tabler/icons/arrow-wave-left-down.svg?react');
-  }),
-  'arrow-wave-left-up': lazy(() => {
-    return import('@tabler/icons/arrow-wave-left-up.svg?react');
-  }),
-  'arrow-wave-right-down': lazy(() => {
-    return import('@tabler/icons/arrow-wave-right-down.svg?react');
-  }),
-  'arrow-wave-right-up': lazy(() => {
-    return import('@tabler/icons/arrow-wave-right-up.svg?react');
-  }),
-  'arrow-zig-zag': lazy(() => {
-    return import('@tabler/icons/arrow-zig-zag.svg?react');
-  }),
-  'arrows-cross': lazy(() => {
-    return import('@tabler/icons/arrows-cross.svg?react');
-  }),
-  'arrows-diagonal-2': lazy(() => {
-    return import('@tabler/icons/arrows-diagonal-2.svg?react');
-  }),
-  'arrows-diagonal-minimize-2': lazy(() => {
-    return import('@tabler/icons/arrows-diagonal-minimize-2.svg?react');
-  }),
-  'arrows-diagonal-minimize': lazy(() => {
-    return import('@tabler/icons/arrows-diagonal-minimize.svg?react');
-  }),
-  'arrows-diagonal': lazy(() => {
-    return import('@tabler/icons/arrows-diagonal.svg?react');
-  }),
-  'arrows-diff': lazy(() => {
-    return import('@tabler/icons/arrows-diff.svg?react');
-  }),
-  'arrows-double-ne-sw': lazy(() => {
-    return import('@tabler/icons/arrows-double-ne-sw.svg?react');
-  }),
-  'arrows-double-nw-se': lazy(() => {
-    return import('@tabler/icons/arrows-double-nw-se.svg?react');
-  }),
-  'arrows-double-se-nw': lazy(() => {
-    return import('@tabler/icons/arrows-double-se-nw.svg?react');
-  }),
-  'arrows-double-sw-ne': lazy(() => {
-    return import('@tabler/icons/arrows-double-sw-ne.svg?react');
-  }),
-  'arrows-down-up': lazy(() => {
-    return import('@tabler/icons/arrows-down-up.svg?react');
-  }),
-  'arrows-down': lazy(() => {
-    return import('@tabler/icons/arrows-down.svg?react');
-  }),
-  'arrows-exchange-2': lazy(() => {
-    return import('@tabler/icons/arrows-exchange-2.svg?react');
-  }),
-  'arrows-exchange': lazy(() => {
-    return import('@tabler/icons/arrows-exchange.svg?react');
-  }),
-  'arrows-horizontal': lazy(() => {
-    return import('@tabler/icons/arrows-horizontal.svg?react');
-  }),
-  'arrows-join-2': lazy(() => {
-    return import('@tabler/icons/arrows-join-2.svg?react');
-  }),
-  'arrows-join': lazy(() => {
-    return import('@tabler/icons/arrows-join.svg?react');
-  }),
-  'arrows-left-down': lazy(() => {
-    return import('@tabler/icons/arrows-left-down.svg?react');
-  }),
-  'arrows-left-right': lazy(() => {
-    return import('@tabler/icons/arrows-left-right.svg?react');
-  }),
-  'arrows-left': lazy(() => {
-    return import('@tabler/icons/arrows-left.svg?react');
-  }),
-  'arrows-maximize': lazy(() => {
-    return import('@tabler/icons/arrows-maximize.svg?react');
-  }),
-  'arrows-minimize': lazy(() => {
-    return import('@tabler/icons/arrows-minimize.svg?react');
-  }),
-  'arrows-move-horizontal': lazy(() => {
-    return import('@tabler/icons/arrows-move-horizontal.svg?react');
-  }),
-  'arrows-move-vertical': lazy(() => {
-    return import('@tabler/icons/arrows-move-vertical.svg?react');
-  }),
-  'arrows-move': lazy(() => {
-    return import('@tabler/icons/arrows-move.svg?react');
-  }),
-  'arrows-random': lazy(() => {
-    return import('@tabler/icons/arrows-random.svg?react');
-  }),
-  'arrows-right-down': lazy(() => {
-    return import('@tabler/icons/arrows-right-down.svg?react');
-  }),
-  'arrows-right-left': lazy(() => {
-    return import('@tabler/icons/arrows-right-left.svg?react');
-  }),
-  'arrows-right': lazy(() => {
-    return import('@tabler/icons/arrows-right.svg?react');
-  }),
-  'arrows-shuffle-2': lazy(() => {
-    return import('@tabler/icons/arrows-shuffle-2.svg?react');
-  }),
-  'arrows-shuffle': lazy(() => {
-    return import('@tabler/icons/arrows-shuffle.svg?react');
-  }),
-  'arrows-sort': lazy(() => {
-    return import('@tabler/icons/arrows-sort.svg?react');
-  }),
-  'arrows-split-2': lazy(() => {
-    return import('@tabler/icons/arrows-split-2.svg?react');
-  }),
-  'arrows-split': lazy(() => {
-    return import('@tabler/icons/arrows-split.svg?react');
-  }),
-  'arrows-transfer-down': lazy(() => {
-    return import('@tabler/icons/arrows-transfer-down.svg?react');
-  }),
-  'arrows-transfer-up': lazy(() => {
-    return import('@tabler/icons/arrows-transfer-up.svg?react');
-  }),
-  'arrows-up-down': lazy(() => {
-    return import('@tabler/icons/arrows-up-down.svg?react');
-  }),
-  'arrows-up-left': lazy(() => {
-    return import('@tabler/icons/arrows-up-left.svg?react');
-  }),
-  'arrows-up-right': lazy(() => {
-    return import('@tabler/icons/arrows-up-right.svg?react');
-  }),
-  'arrows-up': lazy(() => {
-    return import('@tabler/icons/arrows-up.svg?react');
-  }),
-  'arrows-vertical': lazy(() => {
-    return import('@tabler/icons/arrows-vertical.svg?react');
-  }),
-  'artboard-filled': lazy(() => {
-    return import('@tabler/icons/artboard-filled.svg?react');
-  }),
-  'artboard-off': lazy(() => {
-    return import('@tabler/icons/artboard-off.svg?react');
-  }),
-  artboard: lazy(() => {
-    return import('@tabler/icons/artboard.svg?react');
-  }),
-  'article-filled-filled': lazy(() => {
-    return import('@tabler/icons/article-filled-filled.svg?react');
-  }),
-  'article-off': lazy(() => {
-    return import('@tabler/icons/article-off.svg?react');
-  }),
-  article: lazy(() => {
-    return import('@tabler/icons/article.svg?react');
-  }),
-  'aspect-ratio-filled': lazy(() => {
-    return import('@tabler/icons/aspect-ratio-filled.svg?react');
-  }),
-  'aspect-ratio-off': lazy(() => {
-    return import('@tabler/icons/aspect-ratio-off.svg?react');
-  }),
-  'aspect-ratio': lazy(() => {
-    return import('@tabler/icons/aspect-ratio.svg?react');
-  }),
-  'assembly-off': lazy(() => {
-    return import('@tabler/icons/assembly-off.svg?react');
-  }),
-  assembly: lazy(() => {
-    return import('@tabler/icons/assembly.svg?react');
-  }),
-  asset: lazy(() => {
-    return import('@tabler/icons/asset.svg?react');
-  }),
-  'asterisk-simple': lazy(() => {
-    return import('@tabler/icons/asterisk-simple.svg?react');
-  }),
-  asterisk: lazy(() => {
-    return import('@tabler/icons/asterisk.svg?react');
-  }),
-  'at-off': lazy(() => {
-    return import('@tabler/icons/at-off.svg?react');
-  }),
-  at: lazy(() => {
-    return import('@tabler/icons/at.svg?react');
-  }),
-  'atom-2-filled': lazy(() => {
-    return import('@tabler/icons/atom-2-filled.svg?react');
-  }),
-  'atom-2': lazy(() => {
-    return import('@tabler/icons/atom-2.svg?react');
-  }),
-  'atom-off': lazy(() => {
-    return import('@tabler/icons/atom-off.svg?react');
-  }),
-  atom: lazy(() => {
-    return import('@tabler/icons/atom.svg?react');
-  }),
-  'augmented-reality-2': lazy(() => {
-    return import('@tabler/icons/augmented-reality-2.svg?react');
-  }),
-  'augmented-reality-off': lazy(() => {
-    return import('@tabler/icons/augmented-reality-off.svg?react');
-  }),
-  'augmented-reality': lazy(() => {
-    return import('@tabler/icons/augmented-reality.svg?react');
-  }),
-  'automatic-gearbox': lazy(() => {
-    return import('@tabler/icons/automatic-gearbox.svg?react');
-  }),
-  'award-filled': lazy(() => {
-    return import('@tabler/icons/award-filled.svg?react');
-  }),
-  'award-off': lazy(() => {
-    return import('@tabler/icons/award-off.svg?react');
-  }),
-  award: lazy(() => {
-    return import('@tabler/icons/award.svg?react');
-  }),
-  axe: lazy(() => {
-    return import('@tabler/icons/axe.svg?react');
-  }),
-  'axis-x': lazy(() => {
-    return import('@tabler/icons/axis-x.svg?react');
-  }),
-  'axis-y': lazy(() => {
-    return import('@tabler/icons/axis-y.svg?react');
-  }),
-  'baby-bottle': lazy(() => {
-    return import('@tabler/icons/baby-bottle.svg?react');
-  }),
-  'baby-carriage': lazy(() => {
-    return import('@tabler/icons/baby-carriage.svg?react');
-  }),
-  backhoe: lazy(() => {
-    return import('@tabler/icons/backhoe.svg?react');
-  }),
-  'backpack-off': lazy(() => {
-    return import('@tabler/icons/backpack-off.svg?react');
-  }),
-  backpack: lazy(() => {
-    return import('@tabler/icons/backpack.svg?react');
-  }),
-  backslash: lazy(() => {
-    return import('@tabler/icons/backslash.svg?react');
-  }),
-  'backspace-filled': lazy(() => {
-    return import('@tabler/icons/backspace-filled.svg?react');
-  }),
-  backspace: lazy(() => {
-    return import('@tabler/icons/backspace.svg?react');
-  }),
-  'badge-3d': lazy(() => {
-    return import('@tabler/icons/badge-3d.svg?react');
-  }),
-  'badge-4k': lazy(() => {
-    return import('@tabler/icons/badge-4k.svg?react');
-  }),
-  'badge-8k': lazy(() => {
-    return import('@tabler/icons/badge-8k.svg?react');
-  }),
-  'badge-ad': lazy(() => {
-    return import('@tabler/icons/badge-ad.svg?react');
-  }),
-  'badge-ar': lazy(() => {
-    return import('@tabler/icons/badge-ar.svg?react');
-  }),
-  'badge-cc': lazy(() => {
-    return import('@tabler/icons/badge-cc.svg?react');
-  }),
-  'badge-filled': lazy(() => {
-    return import('@tabler/icons/badge-filled.svg?react');
-  }),
-  'badge-hd': lazy(() => {
-    return import('@tabler/icons/badge-hd.svg?react');
-  }),
-  'badge-off': lazy(() => {
-    return import('@tabler/icons/badge-off.svg?react');
-  }),
-  'badge-sd': lazy(() => {
-    return import('@tabler/icons/badge-sd.svg?react');
-  }),
-  'badge-tm': lazy(() => {
-    return import('@tabler/icons/badge-tm.svg?react');
-  }),
-  'badge-vo': lazy(() => {
-    return import('@tabler/icons/badge-vo.svg?react');
-  }),
-  'badge-vr': lazy(() => {
-    return import('@tabler/icons/badge-vr.svg?react');
-  }),
-  'badge-wc': lazy(() => {
-    return import('@tabler/icons/badge-wc.svg?react');
-  }),
-  badge: lazy(() => {
-    return import('@tabler/icons/badge.svg?react');
-  }),
-  'badges-filled': lazy(() => {
-    return import('@tabler/icons/badges-filled.svg?react');
-  }),
-  'badges-off': lazy(() => {
-    return import('@tabler/icons/badges-off.svg?react');
-  }),
-  badges: lazy(() => {
-    return import('@tabler/icons/badges.svg?react');
-  }),
-  baguette: lazy(() => {
-    return import('@tabler/icons/baguette.svg?react');
-  }),
-  'ball-american-football-off': lazy(() => {
-    return import('@tabler/icons/ball-american-football-off.svg?react');
-  }),
-  'ball-american-football': lazy(() => {
-    return import('@tabler/icons/ball-american-football.svg?react');
-  }),
-  'ball-baseball': lazy(() => {
-    return import('@tabler/icons/ball-baseball.svg?react');
-  }),
-  'ball-basketball': lazy(() => {
-    return import('@tabler/icons/ball-basketball.svg?react');
-  }),
-  'ball-bowling': lazy(() => {
-    return import('@tabler/icons/ball-bowling.svg?react');
-  }),
-  'ball-football-off': lazy(() => {
-    return import('@tabler/icons/ball-football-off.svg?react');
-  }),
-  'ball-football': lazy(() => {
-    return import('@tabler/icons/ball-football.svg?react');
-  }),
-  'ball-tennis': lazy(() => {
-    return import('@tabler/icons/ball-tennis.svg?react');
-  }),
-  'ball-volleyball': lazy(() => {
-    return import('@tabler/icons/ball-volleyball.svg?react');
-  }),
-  'balloon-filled': lazy(() => {
-    return import('@tabler/icons/balloon-filled.svg?react');
-  }),
-  'balloon-off': lazy(() => {
-    return import('@tabler/icons/balloon-off.svg?react');
-  }),
-  balloon: lazy(() => {
-    return import('@tabler/icons/balloon.svg?react');
-  }),
-  'ballpen-filled': lazy(() => {
-    return import('@tabler/icons/ballpen-filled.svg?react');
-  }),
-  'ballpen-off': lazy(() => {
-    return import('@tabler/icons/ballpen-off.svg?react');
-  }),
-  ballpen: lazy(() => {
-    return import('@tabler/icons/ballpen.svg?react');
-  }),
-  ban: lazy(() => {
-    return import('@tabler/icons/ban.svg?react');
-  }),
-  'bandage-filled': lazy(() => {
-    return import('@tabler/icons/bandage-filled.svg?react');
-  }),
-  'bandage-off': lazy(() => {
-    return import('@tabler/icons/bandage-off.svg?react');
-  }),
-  bandage: lazy(() => {
-    return import('@tabler/icons/bandage.svg?react');
-  }),
-  'barbell-off': lazy(() => {
-    return import('@tabler/icons/barbell-off.svg?react');
-  }),
-  barbell: lazy(() => {
-    return import('@tabler/icons/barbell.svg?react');
-  }),
-  'barcode-off': lazy(() => {
-    return import('@tabler/icons/barcode-off.svg?react');
-  }),
-  barcode: lazy(() => {
-    return import('@tabler/icons/barcode.svg?react');
-  }),
-  'barrel-off': lazy(() => {
-    return import('@tabler/icons/barrel-off.svg?react');
-  }),
-  barrel: lazy(() => {
-    return import('@tabler/icons/barrel.svg?react');
-  }),
-  'barrier-block-off': lazy(() => {
-    return import('@tabler/icons/barrier-block-off.svg?react');
-  }),
-  'barrier-block': lazy(() => {
-    return import('@tabler/icons/barrier-block.svg?react');
-  }),
-  'baseline-density-large': lazy(() => {
-    return import('@tabler/icons/baseline-density-large.svg?react');
-  }),
-  'baseline-density-medium': lazy(() => {
-    return import('@tabler/icons/baseline-density-medium.svg?react');
-  }),
-  'baseline-density-small': lazy(() => {
-    return import('@tabler/icons/baseline-density-small.svg?react');
-  }),
-  baseline: lazy(() => {
-    return import('@tabler/icons/baseline.svg?react');
-  }),
-  'basket-bolt': lazy(() => {
-    return import('@tabler/icons/basket-bolt.svg?react');
-  }),
-  'basket-cancel': lazy(() => {
-    return import('@tabler/icons/basket-cancel.svg?react');
-  }),
-  'basket-check': lazy(() => {
-    return import('@tabler/icons/basket-check.svg?react');
-  }),
-  'basket-code': lazy(() => {
-    return import('@tabler/icons/basket-code.svg?react');
-  }),
-  'basket-cog': lazy(() => {
-    return import('@tabler/icons/basket-cog.svg?react');
-  }),
-  'basket-discount': lazy(() => {
-    return import('@tabler/icons/basket-discount.svg?react');
-  }),
-  'basket-dollar': lazy(() => {
-    return import('@tabler/icons/basket-dollar.svg?react');
-  }),
-  'basket-down': lazy(() => {
-    return import('@tabler/icons/basket-down.svg?react');
-  }),
-  'basket-exclamation': lazy(() => {
-    return import('@tabler/icons/basket-exclamation.svg?react');
-  }),
-  'basket-filled': lazy(() => {
-    return import('@tabler/icons/basket-filled.svg?react');
-  }),
-  'basket-heart': lazy(() => {
-    return import('@tabler/icons/basket-heart.svg?react');
-  }),
-  'basket-minus': lazy(() => {
-    return import('@tabler/icons/basket-minus.svg?react');
-  }),
-  'basket-off': lazy(() => {
-    return import('@tabler/icons/basket-off.svg?react');
-  }),
-  'basket-pause': lazy(() => {
-    return import('@tabler/icons/basket-pause.svg?react');
-  }),
-  'basket-pin': lazy(() => {
-    return import('@tabler/icons/basket-pin.svg?react');
-  }),
-  'basket-plus': lazy(() => {
-    return import('@tabler/icons/basket-plus.svg?react');
-  }),
-  'basket-question': lazy(() => {
-    return import('@tabler/icons/basket-question.svg?react');
-  }),
-  'basket-search': lazy(() => {
-    return import('@tabler/icons/basket-search.svg?react');
-  }),
-  'basket-share': lazy(() => {
-    return import('@tabler/icons/basket-share.svg?react');
-  }),
-  'basket-star': lazy(() => {
-    return import('@tabler/icons/basket-star.svg?react');
-  }),
-  'basket-up': lazy(() => {
-    return import('@tabler/icons/basket-up.svg?react');
-  }),
-  'basket-x': lazy(() => {
-    return import('@tabler/icons/basket-x.svg?react');
-  }),
-  basket: lazy(() => {
-    return import('@tabler/icons/basket.svg?react');
-  }),
-  bat: lazy(() => {
-    return import('@tabler/icons/bat.svg?react');
-  }),
-  'bath-filled': lazy(() => {
-    return import('@tabler/icons/bath-filled.svg?react');
-  }),
-  'bath-off': lazy(() => {
-    return import('@tabler/icons/bath-off.svg?react');
-  }),
-  bath: lazy(() => {
-    return import('@tabler/icons/bath.svg?react');
-  }),
-  'battery-1-filled': lazy(() => {
-    return import('@tabler/icons/battery-1-filled.svg?react');
-  }),
-  'battery-1': lazy(() => {
-    return import('@tabler/icons/battery-1.svg?react');
-  }),
-  'battery-2-filled': lazy(() => {
-    return import('@tabler/icons/battery-2-filled.svg?react');
-  }),
-  'battery-2': lazy(() => {
-    return import('@tabler/icons/battery-2.svg?react');
-  }),
-  'battery-3-filled': lazy(() => {
-    return import('@tabler/icons/battery-3-filled.svg?react');
-  }),
-  'battery-3': lazy(() => {
-    return import('@tabler/icons/battery-3.svg?react');
-  }),
-  'battery-4-filled': lazy(() => {
-    return import('@tabler/icons/battery-4-filled.svg?react');
-  }),
-  'battery-4': lazy(() => {
-    return import('@tabler/icons/battery-4.svg?react');
-  }),
-  'battery-automotive': lazy(() => {
-    return import('@tabler/icons/battery-automotive.svg?react');
-  }),
-  'battery-charging-2': lazy(() => {
-    return import('@tabler/icons/battery-charging-2.svg?react');
-  }),
-  'battery-charging': lazy(() => {
-    return import('@tabler/icons/battery-charging.svg?react');
-  }),
-  'battery-eco': lazy(() => {
-    return import('@tabler/icons/battery-eco.svg?react');
-  }),
-  'battery-filled': lazy(() => {
-    return import('@tabler/icons/battery-filled.svg?react');
-  }),
-  'battery-off': lazy(() => {
-    return import('@tabler/icons/battery-off.svg?react');
-  }),
-  battery: lazy(() => {
-    return import('@tabler/icons/battery.svg?react');
-  }),
-  'beach-off': lazy(() => {
-    return import('@tabler/icons/beach-off.svg?react');
-  }),
-  beach: lazy(() => {
-    return import('@tabler/icons/beach.svg?react');
-  }),
-  'bed-filled': lazy(() => {
-    return import('@tabler/icons/bed-filled.svg?react');
-  }),
-  'bed-flat': lazy(() => {
-    return import('@tabler/icons/bed-flat.svg?react');
-  }),
-  'bed-off': lazy(() => {
-    return import('@tabler/icons/bed-off.svg?react');
-  }),
-  bed: lazy(() => {
-    return import('@tabler/icons/bed.svg?react');
-  }),
-  'beer-filled': lazy(() => {
-    return import('@tabler/icons/beer-filled.svg?react');
-  }),
-  'beer-off': lazy(() => {
-    return import('@tabler/icons/beer-off.svg?react');
-  }),
-  beer: lazy(() => {
-    return import('@tabler/icons/beer.svg?react');
-  }),
-  'bell-bolt': lazy(() => {
-    return import('@tabler/icons/bell-bolt.svg?react');
-  }),
-  'bell-cancel': lazy(() => {
-    return import('@tabler/icons/bell-cancel.svg?react');
-  }),
-  'bell-check': lazy(() => {
-    return import('@tabler/icons/bell-check.svg?react');
-  }),
-  'bell-code': lazy(() => {
-    return import('@tabler/icons/bell-code.svg?react');
-  }),
-  'bell-cog': lazy(() => {
-    return import('@tabler/icons/bell-cog.svg?react');
-  }),
-  'bell-dollar': lazy(() => {
-    return import('@tabler/icons/bell-dollar.svg?react');
-  }),
-  'bell-down': lazy(() => {
-    return import('@tabler/icons/bell-down.svg?react');
-  }),
-  'bell-exclamation': lazy(() => {
-    return import('@tabler/icons/bell-exclamation.svg?react');
-  }),
-  'bell-filled': lazy(() => {
-    return import('@tabler/icons/bell-filled.svg?react');
-  }),
-  'bell-heart': lazy(() => {
-    return import('@tabler/icons/bell-heart.svg?react');
-  }),
-  'bell-minus-filled': lazy(() => {
-    return import('@tabler/icons/bell-minus-filled.svg?react');
-  }),
-  'bell-minus': lazy(() => {
-    return import('@tabler/icons/bell-minus.svg?react');
-  }),
-  'bell-off': lazy(() => {
-    return import('@tabler/icons/bell-off.svg?react');
-  }),
-  'bell-pause': lazy(() => {
-    return import('@tabler/icons/bell-pause.svg?react');
-  }),
-  'bell-pin': lazy(() => {
-    return import('@tabler/icons/bell-pin.svg?react');
-  }),
-  'bell-plus-filled': lazy(() => {
-    return import('@tabler/icons/bell-plus-filled.svg?react');
-  }),
-  'bell-plus': lazy(() => {
-    return import('@tabler/icons/bell-plus.svg?react');
-  }),
-  'bell-question': lazy(() => {
-    return import('@tabler/icons/bell-question.svg?react');
-  }),
-  'bell-ringing-2-filled': lazy(() => {
-    return import('@tabler/icons/bell-ringing-2-filled.svg?react');
-  }),
-  'bell-ringing-2': lazy(() => {
-    return import('@tabler/icons/bell-ringing-2.svg?react');
-  }),
-  'bell-ringing-filled': lazy(() => {
-    return import('@tabler/icons/bell-ringing-filled.svg?react');
-  }),
-  'bell-ringing': lazy(() => {
-    return import('@tabler/icons/bell-ringing.svg?react');
-  }),
-  'bell-school': lazy(() => {
-    return import('@tabler/icons/bell-school.svg?react');
-  }),
-  'bell-search': lazy(() => {
-    return import('@tabler/icons/bell-search.svg?react');
-  }),
-  'bell-share': lazy(() => {
-    return import('@tabler/icons/bell-share.svg?react');
-  }),
-  'bell-star': lazy(() => {
-    return import('@tabler/icons/bell-star.svg?react');
-  }),
-  'bell-up': lazy(() => {
-    return import('@tabler/icons/bell-up.svg?react');
-  }),
-  'bell-x-filled': lazy(() => {
-    return import('@tabler/icons/bell-x-filled.svg?react');
-  }),
-  'bell-x': lazy(() => {
-    return import('@tabler/icons/bell-x.svg?react');
-  }),
-  'bell-z-filled': lazy(() => {
-    return import('@tabler/icons/bell-z-filled.svg?react');
-  }),
-  'bell-z': lazy(() => {
-    return import('@tabler/icons/bell-z.svg?react');
-  }),
-  bell: lazy(() => {
-    return import('@tabler/icons/bell.svg?react');
-  }),
-  beta: lazy(() => {
-    return import('@tabler/icons/beta.svg?react');
-  }),
-  bible: lazy(() => {
-    return import('@tabler/icons/bible.svg?react');
-  }),
-  'bike-off': lazy(() => {
-    return import('@tabler/icons/bike-off.svg?react');
-  }),
-  bike: lazy(() => {
-    return import('@tabler/icons/bike.svg?react');
-  }),
-  'binary-off': lazy(() => {
-    return import('@tabler/icons/binary-off.svg?react');
-  }),
-  'binary-tree-2': lazy(() => {
-    return import('@tabler/icons/binary-tree-2.svg?react');
-  }),
-  'binary-tree': lazy(() => {
-    return import('@tabler/icons/binary-tree.svg?react');
-  }),
-  binary: lazy(() => {
-    return import('@tabler/icons/binary.svg?react');
-  }),
-  'biohazard-off': lazy(() => {
-    return import('@tabler/icons/biohazard-off.svg?react');
-  }),
-  biohazard: lazy(() => {
-    return import('@tabler/icons/biohazard.svg?react');
-  }),
-  'blade-filled': lazy(() => {
-    return import('@tabler/icons/blade-filled.svg?react');
-  }),
-  blade: lazy(() => {
-    return import('@tabler/icons/blade.svg?react');
-  }),
-  'bleach-chlorine': lazy(() => {
-    return import('@tabler/icons/bleach-chlorine.svg?react');
-  }),
-  'bleach-no-chlorine': lazy(() => {
-    return import('@tabler/icons/bleach-no-chlorine.svg?react');
-  }),
-  'bleach-off': lazy(() => {
-    return import('@tabler/icons/bleach-off.svg?react');
-  }),
-  bleach: lazy(() => {
-    return import('@tabler/icons/bleach.svg?react');
-  }),
-  blender: lazy(() => {
-    return import('@tabler/icons/blender.svg?react');
-  }),
-  blockquote: lazy(() => {
-    return import('@tabler/icons/blockquote.svg?react');
-  }),
-  'bluetooth-connected': lazy(() => {
-    return import('@tabler/icons/bluetooth-connected.svg?react');
-  }),
-  'bluetooth-off': lazy(() => {
-    return import('@tabler/icons/bluetooth-off.svg?react');
-  }),
-  'bluetooth-x': lazy(() => {
-    return import('@tabler/icons/bluetooth-x.svg?react');
-  }),
-  bluetooth: lazy(() => {
-    return import('@tabler/icons/bluetooth.svg?react');
-  }),
-  'blur-off': lazy(() => {
-    return import('@tabler/icons/blur-off.svg?react');
-  }),
-  blur: lazy(() => {
-    return import('@tabler/icons/blur.svg?react');
-  }),
-  bmp: lazy(() => {
-    return import('@tabler/icons/bmp.svg?react');
-  }),
-  'body-scan': lazy(() => {
-    return import('@tabler/icons/body-scan.svg?react');
-  }),
-  'bold-off': lazy(() => {
-    return import('@tabler/icons/bold-off.svg?react');
-  }),
-  bold: lazy(() => {
-    return import('@tabler/icons/bold.svg?react');
-  }),
-  'bolt-off': lazy(() => {
-    return import('@tabler/icons/bolt-off.svg?react');
-  }),
-  bolt: lazy(() => {
-    return import('@tabler/icons/bolt.svg?react');
-  }),
-  'bomb-filled': lazy(() => {
-    return import('@tabler/icons/bomb-filled.svg?react');
-  }),
-  bomb: lazy(() => {
-    return import('@tabler/icons/bomb.svg?react');
-  }),
-  'bone-off': lazy(() => {
-    return import('@tabler/icons/bone-off.svg?react');
-  }),
-  bone: lazy(() => {
-    return import('@tabler/icons/bone.svg?react');
-  }),
-  'bong-off': lazy(() => {
-    return import('@tabler/icons/bong-off.svg?react');
-  }),
-  bong: lazy(() => {
-    return import('@tabler/icons/bong.svg?react');
-  }),
-  'book-2': lazy(() => {
-    return import('@tabler/icons/book-2.svg?react');
-  }),
-  'book-download': lazy(() => {
-    return import('@tabler/icons/book-download.svg?react');
-  }),
-  'book-filled': lazy(() => {
-    return import('@tabler/icons/book-filled.svg?react');
-  }),
-  'book-off': lazy(() => {
-    return import('@tabler/icons/book-off.svg?react');
-  }),
-  'book-upload': lazy(() => {
-    return import('@tabler/icons/book-upload.svg?react');
-  }),
-  book: lazy(() => {
-    return import('@tabler/icons/book.svg?react');
-  }),
-  'bookmark-ai': lazy(() => {
-    return import('@tabler/icons/bookmark-ai.svg?react');
-  }),
-  'bookmark-edit': lazy(() => {
-    return import('@tabler/icons/bookmark-edit.svg?react');
-  }),
-  'bookmark-filled': lazy(() => {
-    return import('@tabler/icons/bookmark-filled.svg?react');
-  }),
-  'bookmark-minus': lazy(() => {
-    return import('@tabler/icons/bookmark-minus.svg?react');
-  }),
-  'bookmark-off': lazy(() => {
-    return import('@tabler/icons/bookmark-off.svg?react');
-  }),
-  'bookmark-plus': lazy(() => {
-    return import('@tabler/icons/bookmark-plus.svg?react');
-  }),
-  'bookmark-question': lazy(() => {
-    return import('@tabler/icons/bookmark-question.svg?react');
-  }),
-  bookmark: lazy(() => {
-    return import('@tabler/icons/bookmark.svg?react');
-  }),
-  'bookmarks-filled': lazy(() => {
-    return import('@tabler/icons/bookmarks-filled.svg?react');
-  }),
-  'bookmarks-off': lazy(() => {
-    return import('@tabler/icons/bookmarks-off.svg?react');
-  }),
-  bookmarks: lazy(() => {
-    return import('@tabler/icons/bookmarks.svg?react');
-  }),
-  'books-off': lazy(() => {
-    return import('@tabler/icons/books-off.svg?react');
-  }),
-  books: lazy(() => {
-    return import('@tabler/icons/books.svg?react');
-  }),
-  'border-all': lazy(() => {
-    return import('@tabler/icons/border-all.svg?react');
-  }),
-  'border-bottom': lazy(() => {
-    return import('@tabler/icons/border-bottom.svg?react');
-  }),
-  'border-corners': lazy(() => {
-    return import('@tabler/icons/border-corners.svg?react');
-  }),
-  'border-horizontal': lazy(() => {
-    return import('@tabler/icons/border-horizontal.svg?react');
-  }),
-  'border-inner': lazy(() => {
-    return import('@tabler/icons/border-inner.svg?react');
-  }),
-  'border-left': lazy(() => {
-    return import('@tabler/icons/border-left.svg?react');
-  }),
-  'border-none': lazy(() => {
-    return import('@tabler/icons/border-none.svg?react');
-  }),
-  'border-outer': lazy(() => {
-    return import('@tabler/icons/border-outer.svg?react');
-  }),
-  'border-radius': lazy(() => {
-    return import('@tabler/icons/border-radius.svg?react');
-  }),
-  'border-right': lazy(() => {
-    return import('@tabler/icons/border-right.svg?react');
-  }),
-  'border-sides': lazy(() => {
-    return import('@tabler/icons/border-sides.svg?react');
-  }),
-  'border-style-2': lazy(() => {
-    return import('@tabler/icons/border-style-2.svg?react');
-  }),
-  'border-style': lazy(() => {
-    return import('@tabler/icons/border-style.svg?react');
-  }),
-  'border-top': lazy(() => {
-    return import('@tabler/icons/border-top.svg?react');
-  }),
-  'border-vertical': lazy(() => {
-    return import('@tabler/icons/border-vertical.svg?react');
-  }),
-  'bottle-filled': lazy(() => {
-    return import('@tabler/icons/bottle-filled.svg?react');
-  }),
-  'bottle-off': lazy(() => {
-    return import('@tabler/icons/bottle-off.svg?react');
-  }),
-  bottle: lazy(() => {
-    return import('@tabler/icons/bottle.svg?react');
-  }),
-  'bounce-left-filled': lazy(() => {
-    return import('@tabler/icons/bounce-left-filled.svg?react');
-  }),
-  'bounce-left': lazy(() => {
-    return import('@tabler/icons/bounce-left.svg?react');
-  }),
-  'bounce-right-filled': lazy(() => {
-    return import('@tabler/icons/bounce-right-filled.svg?react');
-  }),
-  'bounce-right': lazy(() => {
-    return import('@tabler/icons/bounce-right.svg?react');
-  }),
-  bow: lazy(() => {
-    return import('@tabler/icons/bow.svg?react');
-  }),
-  'bowl-filled': lazy(() => {
-    return import('@tabler/icons/bowl-filled.svg?react');
-  }),
-  bowl: lazy(() => {
-    return import('@tabler/icons/bowl.svg?react');
-  }),
-  'box-align-bottom-filled': lazy(() => {
-    return import('@tabler/icons/box-align-bottom-filled.svg?react');
-  }),
-  'box-align-bottom-left-filled': lazy(() => {
-    return import('@tabler/icons/box-align-bottom-left-filled.svg?react');
-  }),
-  'box-align-bottom-left': lazy(() => {
-    return import('@tabler/icons/box-align-bottom-left.svg?react');
-  }),
-  'box-align-bottom-right-filled': lazy(() => {
-    return import('@tabler/icons/box-align-bottom-right-filled.svg?react');
-  }),
-  'box-align-bottom-right': lazy(() => {
-    return import('@tabler/icons/box-align-bottom-right.svg?react');
-  }),
-  'box-align-bottom': lazy(() => {
-    return import('@tabler/icons/box-align-bottom.svg?react');
-  }),
-  'box-align-left-filled': lazy(() => {
-    return import('@tabler/icons/box-align-left-filled.svg?react');
-  }),
-  'box-align-left': lazy(() => {
-    return import('@tabler/icons/box-align-left.svg?react');
-  }),
-  'box-align-right-filled': lazy(() => {
-    return import('@tabler/icons/box-align-right-filled.svg?react');
-  }),
-  'box-align-right': lazy(() => {
-    return import('@tabler/icons/box-align-right.svg?react');
-  }),
-  'box-align-top-filled': lazy(() => {
-    return import('@tabler/icons/box-align-top-filled.svg?react');
-  }),
-  'box-align-top-left-filled': lazy(() => {
-    return import('@tabler/icons/box-align-top-left-filled.svg?react');
-  }),
-  'box-align-top-left': lazy(() => {
-    return import('@tabler/icons/box-align-top-left.svg?react');
-  }),
-  'box-align-top-right-filled': lazy(() => {
-    return import('@tabler/icons/box-align-top-right-filled.svg?react');
-  }),
-  'box-align-top-right': lazy(() => {
-    return import('@tabler/icons/box-align-top-right.svg?react');
-  }),
-  'box-align-top': lazy(() => {
-    return import('@tabler/icons/box-align-top.svg?react');
-  }),
-  'box-margin': lazy(() => {
-    return import('@tabler/icons/box-margin.svg?react');
-  }),
-  'box-model-2-off': lazy(() => {
-    return import('@tabler/icons/box-model-2-off.svg?react');
-  }),
-  'box-model-2': lazy(() => {
-    return import('@tabler/icons/box-model-2.svg?react');
-  }),
-  'box-model-off': lazy(() => {
-    return import('@tabler/icons/box-model-off.svg?react');
-  }),
-  'box-model': lazy(() => {
-    return import('@tabler/icons/box-model.svg?react');
-  }),
-  'box-multiple-0': lazy(() => {
-    return import('@tabler/icons/box-multiple-0.svg?react');
-  }),
-  'box-multiple-1': lazy(() => {
-    return import('@tabler/icons/box-multiple-1.svg?react');
-  }),
-  'box-multiple-2': lazy(() => {
-    return import('@tabler/icons/box-multiple-2.svg?react');
-  }),
-  'box-multiple-3': lazy(() => {
-    return import('@tabler/icons/box-multiple-3.svg?react');
-  }),
-  'box-multiple-4': lazy(() => {
-    return import('@tabler/icons/box-multiple-4.svg?react');
-  }),
-  'box-multiple-5': lazy(() => {
-    return import('@tabler/icons/box-multiple-5.svg?react');
-  }),
-  'box-multiple-6': lazy(() => {
-    return import('@tabler/icons/box-multiple-6.svg?react');
-  }),
-  'box-multiple-7': lazy(() => {
-    return import('@tabler/icons/box-multiple-7.svg?react');
-  }),
-  'box-multiple-8': lazy(() => {
-    return import('@tabler/icons/box-multiple-8.svg?react');
-  }),
-  'box-multiple-9': lazy(() => {
-    return import('@tabler/icons/box-multiple-9.svg?react');
-  }),
-  'box-multiple': lazy(() => {
-    return import('@tabler/icons/box-multiple.svg?react');
-  }),
-  'box-off': lazy(() => {
-    return import('@tabler/icons/box-off.svg?react');
-  }),
-  'box-padding': lazy(() => {
-    return import('@tabler/icons/box-padding.svg?react');
-  }),
-  'box-seam': lazy(() => {
-    return import('@tabler/icons/box-seam.svg?react');
-  }),
-  box: lazy(() => {
-    return import('@tabler/icons/box.svg?react');
-  }),
-  'braces-off': lazy(() => {
-    return import('@tabler/icons/braces-off.svg?react');
-  }),
-  braces: lazy(() => {
-    return import('@tabler/icons/braces.svg?react');
-  }),
-  'brackets-angle-off': lazy(() => {
-    return import('@tabler/icons/brackets-angle-off.svg?react');
-  }),
-  'brackets-angle': lazy(() => {
-    return import('@tabler/icons/brackets-angle.svg?react');
-  }),
-  'brackets-contain-end': lazy(() => {
-    return import('@tabler/icons/brackets-contain-end.svg?react');
-  }),
-  'brackets-contain-start': lazy(() => {
-    return import('@tabler/icons/brackets-contain-start.svg?react');
-  }),
-  'brackets-contain': lazy(() => {
-    return import('@tabler/icons/brackets-contain.svg?react');
-  }),
-  'brackets-off': lazy(() => {
-    return import('@tabler/icons/brackets-off.svg?react');
-  }),
-  brackets: lazy(() => {
-    return import('@tabler/icons/brackets.svg?react');
-  }),
-  braille: lazy(() => {
-    return import('@tabler/icons/braille.svg?react');
-  }),
-  brain: lazy(() => {
-    return import('@tabler/icons/brain.svg?react');
-  }),
-  'brand-4chan': lazy(() => {
-    return import('@tabler/icons/brand-4chan.svg?react');
-  }),
-  'brand-abstract': lazy(() => {
-    return import('@tabler/icons/brand-abstract.svg?react');
-  }),
-  'brand-adobe': lazy(() => {
-    return import('@tabler/icons/brand-adobe.svg?react');
-  }),
-  'brand-adonis-js': lazy(() => {
-    return import('@tabler/icons/brand-adonis-js.svg?react');
-  }),
-  'brand-airbnb': lazy(() => {
-    return import('@tabler/icons/brand-airbnb.svg?react');
-  }),
-  'brand-airtable': lazy(() => {
-    return import('@tabler/icons/brand-airtable.svg?react');
-  }),
-  'brand-algolia': lazy(() => {
-    return import('@tabler/icons/brand-algolia.svg?react');
-  }),
-  'brand-alipay': lazy(() => {
-    return import('@tabler/icons/brand-alipay.svg?react');
-  }),
-  'brand-alpine-js': lazy(() => {
-    return import('@tabler/icons/brand-alpine-js.svg?react');
-  }),
-  'brand-amazon': lazy(() => {
-    return import('@tabler/icons/brand-amazon.svg?react');
-  }),
-  'brand-amd': lazy(() => {
-    return import('@tabler/icons/brand-amd.svg?react');
-  }),
-  'brand-amigo': lazy(() => {
-    return import('@tabler/icons/brand-amigo.svg?react');
-  }),
-  'brand-among-us': lazy(() => {
-    return import('@tabler/icons/brand-among-us.svg?react');
-  }),
-  'brand-android': lazy(() => {
-    return import('@tabler/icons/brand-android.svg?react');
-  }),
-  'brand-angular': lazy(() => {
-    return import('@tabler/icons/brand-angular.svg?react');
-  }),
-  'brand-ansible': lazy(() => {
-    return import('@tabler/icons/brand-ansible.svg?react');
-  }),
-  'brand-ao3': lazy(() => {
-    return import('@tabler/icons/brand-ao3.svg?react');
-  }),
-  'brand-appgallery': lazy(() => {
-    return import('@tabler/icons/brand-appgallery.svg?react');
-  }),
-  'brand-apple-arcade': lazy(() => {
-    return import('@tabler/icons/brand-apple-arcade.svg?react');
-  }),
-  'brand-apple-podcast': lazy(() => {
-    return import('@tabler/icons/brand-apple-podcast.svg?react');
-  }),
-  'brand-apple': lazy(() => {
-    return import('@tabler/icons/brand-apple.svg?react');
-  }),
-  'brand-appstore': lazy(() => {
-    return import('@tabler/icons/brand-appstore.svg?react');
-  }),
-  'brand-asana': lazy(() => {
-    return import('@tabler/icons/brand-asana.svg?react');
-  }),
-  'brand-auth0': lazy(() => {
-    return import('@tabler/icons/brand-auth0.svg?react');
-  }),
-  'brand-aws': lazy(() => {
-    return import('@tabler/icons/brand-aws.svg?react');
-  }),
-  'brand-azure': lazy(() => {
-    return import('@tabler/icons/brand-azure.svg?react');
-  }),
-  'brand-backbone': lazy(() => {
-    return import('@tabler/icons/brand-backbone.svg?react');
-  }),
-  'brand-badoo': lazy(() => {
-    return import('@tabler/icons/brand-badoo.svg?react');
-  }),
-  'brand-baidu': lazy(() => {
-    return import('@tabler/icons/brand-baidu.svg?react');
-  }),
-  'brand-bandcamp': lazy(() => {
-    return import('@tabler/icons/brand-bandcamp.svg?react');
-  }),
-  'brand-bandlab': lazy(() => {
-    return import('@tabler/icons/brand-bandlab.svg?react');
-  }),
-  'brand-beats': lazy(() => {
-    return import('@tabler/icons/brand-beats.svg?react');
-  }),
-  'brand-behance': lazy(() => {
-    return import('@tabler/icons/brand-behance.svg?react');
-  }),
-  'brand-bilibili': lazy(() => {
-    return import('@tabler/icons/brand-bilibili.svg?react');
-  }),
-  'brand-binance': lazy(() => {
-    return import('@tabler/icons/brand-binance.svg?react');
-  }),
-  'brand-bing': lazy(() => {
-    return import('@tabler/icons/brand-bing.svg?react');
-  }),
-  'brand-bitbucket': lazy(() => {
-    return import('@tabler/icons/brand-bitbucket.svg?react');
-  }),
-  'brand-blackberry': lazy(() => {
-    return import('@tabler/icons/brand-blackberry.svg?react');
-  }),
-  'brand-blender': lazy(() => {
-    return import('@tabler/icons/brand-blender.svg?react');
-  }),
-  'brand-blogger': lazy(() => {
-    return import('@tabler/icons/brand-blogger.svg?react');
-  }),
-  'brand-booking': lazy(() => {
-    return import('@tabler/icons/brand-booking.svg?react');
-  }),
-  'brand-bootstrap': lazy(() => {
-    return import('@tabler/icons/brand-bootstrap.svg?react');
-  }),
-  'brand-bulma': lazy(() => {
-    return import('@tabler/icons/brand-bulma.svg?react');
-  }),
-  'brand-bumble': lazy(() => {
-    return import('@tabler/icons/brand-bumble.svg?react');
-  }),
-  'brand-bunpo': lazy(() => {
-    return import('@tabler/icons/brand-bunpo.svg?react');
-  }),
-  'brand-c-sharp': lazy(() => {
-    return import('@tabler/icons/brand-c-sharp.svg?react');
-  }),
-  'brand-cake': lazy(() => {
-    return import('@tabler/icons/brand-cake.svg?react');
-  }),
-  'brand-cakephp': lazy(() => {
-    return import('@tabler/icons/brand-cakephp.svg?react');
-  }),
-  'brand-campaignmonitor': lazy(() => {
-    return import('@tabler/icons/brand-campaignmonitor.svg?react');
-  }),
-  'brand-carbon': lazy(() => {
-    return import('@tabler/icons/brand-carbon.svg?react');
-  }),
-  'brand-cashapp': lazy(() => {
-    return import('@tabler/icons/brand-cashapp.svg?react');
-  }),
-  'brand-chrome': lazy(() => {
-    return import('@tabler/icons/brand-chrome.svg?react');
-  }),
-  'brand-cinema-4d': lazy(() => {
-    return import('@tabler/icons/brand-cinema-4d.svg?react');
-  }),
-  'brand-citymapper': lazy(() => {
-    return import('@tabler/icons/brand-citymapper.svg?react');
-  }),
-  'brand-cloudflare': lazy(() => {
-    return import('@tabler/icons/brand-cloudflare.svg?react');
-  }),
-  'brand-codecov': lazy(() => {
-    return import('@tabler/icons/brand-codecov.svg?react');
-  }),
-  'brand-codepen': lazy(() => {
-    return import('@tabler/icons/brand-codepen.svg?react');
-  }),
-  'brand-codesandbox': lazy(() => {
-    return import('@tabler/icons/brand-codesandbox.svg?react');
-  }),
-  'brand-cohost': lazy(() => {
-    return import('@tabler/icons/brand-cohost.svg?react');
-  }),
-  'brand-coinbase': lazy(() => {
-    return import('@tabler/icons/brand-coinbase.svg?react');
-  }),
-  'brand-comedy-central': lazy(() => {
-    return import('@tabler/icons/brand-comedy-central.svg?react');
-  }),
-  'brand-coreos': lazy(() => {
-    return import('@tabler/icons/brand-coreos.svg?react');
-  }),
-  'brand-couchdb': lazy(() => {
-    return import('@tabler/icons/brand-couchdb.svg?react');
-  }),
-  'brand-couchsurfing': lazy(() => {
-    return import('@tabler/icons/brand-couchsurfing.svg?react');
-  }),
-  'brand-cpp': lazy(() => {
-    return import('@tabler/icons/brand-cpp.svg?react');
-  }),
-  'brand-craft': lazy(() => {
-    return import('@tabler/icons/brand-craft.svg?react');
-  }),
-  'brand-crunchbase': lazy(() => {
-    return import('@tabler/icons/brand-crunchbase.svg?react');
-  }),
-  'brand-css3': lazy(() => {
-    return import('@tabler/icons/brand-css3.svg?react');
-  }),
-  'brand-ctemplar': lazy(() => {
-    return import('@tabler/icons/brand-ctemplar.svg?react');
-  }),
-  'brand-cucumber': lazy(() => {
-    return import('@tabler/icons/brand-cucumber.svg?react');
-  }),
-  'brand-cupra': lazy(() => {
-    return import('@tabler/icons/brand-cupra.svg?react');
-  }),
-  'brand-cypress': lazy(() => {
-    return import('@tabler/icons/brand-cypress.svg?react');
-  }),
-  'brand-d3': lazy(() => {
-    return import('@tabler/icons/brand-d3.svg?react');
-  }),
-  'brand-databricks': lazy(() => {
-    return import('@tabler/icons/brand-databricks.svg?react');
-  }),
-  'brand-days-counter': lazy(() => {
-    return import('@tabler/icons/brand-days-counter.svg?react');
-  }),
-  'brand-dcos': lazy(() => {
-    return import('@tabler/icons/brand-dcos.svg?react');
-  }),
-  'brand-debian': lazy(() => {
-    return import('@tabler/icons/brand-debian.svg?react');
-  }),
-  'brand-deezer': lazy(() => {
-    return import('@tabler/icons/brand-deezer.svg?react');
-  }),
-  'brand-deliveroo': lazy(() => {
-    return import('@tabler/icons/brand-deliveroo.svg?react');
-  }),
-  'brand-deno': lazy(() => {
-    return import('@tabler/icons/brand-deno.svg?react');
-  }),
-  'brand-denodo': lazy(() => {
-    return import('@tabler/icons/brand-denodo.svg?react');
-  }),
-  'brand-deviantart': lazy(() => {
-    return import('@tabler/icons/brand-deviantart.svg?react');
-  }),
-  'brand-digg': lazy(() => {
-    return import('@tabler/icons/brand-digg.svg?react');
-  }),
-  'brand-dingtalk': lazy(() => {
-    return import('@tabler/icons/brand-dingtalk.svg?react');
-  }),
-  'brand-discord-filled': lazy(() => {
-    return import('@tabler/icons/brand-discord-filled.svg?react');
-  }),
-  'brand-discord': lazy(() => {
-    return import('@tabler/icons/brand-discord.svg?react');
-  }),
-  'brand-disney': lazy(() => {
-    return import('@tabler/icons/brand-disney.svg?react');
-  }),
-  'brand-disqus': lazy(() => {
-    return import('@tabler/icons/brand-disqus.svg?react');
-  }),
-  'brand-django': lazy(() => {
-    return import('@tabler/icons/brand-django.svg?react');
-  }),
-  'brand-docker': lazy(() => {
-    return import('@tabler/icons/brand-docker.svg?react');
-  }),
-  'brand-doctrine': lazy(() => {
-    return import('@tabler/icons/brand-doctrine.svg?react');
-  }),
-  'brand-dolby-digital': lazy(() => {
-    return import('@tabler/icons/brand-dolby-digital.svg?react');
-  }),
-  'brand-douban': lazy(() => {
-    return import('@tabler/icons/brand-douban.svg?react');
-  }),
-  'brand-dribbble-filled': lazy(() => {
-    return import('@tabler/icons/brand-dribbble-filled.svg?react');
-  }),
-  'brand-dribbble': lazy(() => {
-    return import('@tabler/icons/brand-dribbble.svg?react');
-  }),
-  'brand-drops': lazy(() => {
-    return import('@tabler/icons/brand-drops.svg?react');
-  }),
-  'brand-drupal': lazy(() => {
-    return import('@tabler/icons/brand-drupal.svg?react');
-  }),
-  'brand-edge': lazy(() => {
-    return import('@tabler/icons/brand-edge.svg?react');
-  }),
-  'brand-elastic': lazy(() => {
-    return import('@tabler/icons/brand-elastic.svg?react');
-  }),
-  'brand-electronic-arts': lazy(() => {
-    return import('@tabler/icons/brand-electronic-arts.svg?react');
-  }),
-  'brand-ember': lazy(() => {
-    return import('@tabler/icons/brand-ember.svg?react');
-  }),
-  'brand-envato': lazy(() => {
-    return import('@tabler/icons/brand-envato.svg?react');
-  }),
-  'brand-etsy': lazy(() => {
-    return import('@tabler/icons/brand-etsy.svg?react');
-  }),
-  'brand-evernote': lazy(() => {
-    return import('@tabler/icons/brand-evernote.svg?react');
-  }),
-  'brand-facebook-filled': lazy(() => {
-    return import('@tabler/icons/brand-facebook-filled.svg?react');
-  }),
-  'brand-facebook': lazy(() => {
-    return import('@tabler/icons/brand-facebook.svg?react');
-  }),
-  'brand-feedly': lazy(() => {
-    return import('@tabler/icons/brand-feedly.svg?react');
-  }),
-  'brand-figma': lazy(() => {
-    return import('@tabler/icons/brand-figma.svg?react');
-  }),
-  'brand-filezilla': lazy(() => {
-    return import('@tabler/icons/brand-filezilla.svg?react');
-  }),
-  'brand-finder': lazy(() => {
-    return import('@tabler/icons/brand-finder.svg?react');
-  }),
-  'brand-firebase': lazy(() => {
-    return import('@tabler/icons/brand-firebase.svg?react');
-  }),
-  'brand-firefox': lazy(() => {
-    return import('@tabler/icons/brand-firefox.svg?react');
-  }),
-  'brand-fiverr': lazy(() => {
-    return import('@tabler/icons/brand-fiverr.svg?react');
-  }),
-  'brand-flickr': lazy(() => {
-    return import('@tabler/icons/brand-flickr.svg?react');
-  }),
-  'brand-flightradar24': lazy(() => {
-    return import('@tabler/icons/brand-flightradar24.svg?react');
-  }),
-  'brand-flipboard': lazy(() => {
-    return import('@tabler/icons/brand-flipboard.svg?react');
-  }),
-  'brand-flutter': lazy(() => {
-    return import('@tabler/icons/brand-flutter.svg?react');
-  }),
-  'brand-fortnite': lazy(() => {
-    return import('@tabler/icons/brand-fortnite.svg?react');
-  }),
-  'brand-foursquare': lazy(() => {
-    return import('@tabler/icons/brand-foursquare.svg?react');
-  }),
-  'brand-framer-motion': lazy(() => {
-    return import('@tabler/icons/brand-framer-motion.svg?react');
-  }),
-  'brand-framer': lazy(() => {
-    return import('@tabler/icons/brand-framer.svg?react');
-  }),
-  'brand-funimation': lazy(() => {
-    return import('@tabler/icons/brand-funimation.svg?react');
-  }),
-  'brand-gatsby': lazy(() => {
-    return import('@tabler/icons/brand-gatsby.svg?react');
-  }),
-  'brand-git': lazy(() => {
-    return import('@tabler/icons/brand-git.svg?react');
-  }),
-  'brand-github-copilot': lazy(() => {
-    return import('@tabler/icons/brand-github-copilot.svg?react');
-  }),
-  'brand-github-filled': lazy(() => {
-    return import('@tabler/icons/brand-github-filled.svg?react');
-  }),
-  'brand-github': lazy(() => {
-    return import('@tabler/icons/brand-github.svg?react');
-  }),
-  'brand-gitlab': lazy(() => {
-    return import('@tabler/icons/brand-gitlab.svg?react');
-  }),
-  'brand-gmail': lazy(() => {
-    return import('@tabler/icons/brand-gmail.svg?react');
-  }),
-  'brand-golang': lazy(() => {
-    return import('@tabler/icons/brand-golang.svg?react');
-  }),
-  'brand-google-analytics': lazy(() => {
-    return import('@tabler/icons/brand-google-analytics.svg?react');
-  }),
-  'brand-google-big-query': lazy(() => {
-    return import('@tabler/icons/brand-google-big-query.svg?react');
-  }),
-  'brand-google-drive': lazy(() => {
-    return import('@tabler/icons/brand-google-drive.svg?react');
-  }),
-  'brand-google-fit': lazy(() => {
-    return import('@tabler/icons/brand-google-fit.svg?react');
-  }),
-  'brand-google-home': lazy(() => {
-    return import('@tabler/icons/brand-google-home.svg?react');
-  }),
-  'brand-google-maps': lazy(() => {
-    return import('@tabler/icons/brand-google-maps.svg?react');
-  }),
-  'brand-google-one': lazy(() => {
-    return import('@tabler/icons/brand-google-one.svg?react');
-  }),
-  'brand-google-photos': lazy(() => {
-    return import('@tabler/icons/brand-google-photos.svg?react');
-  }),
-  'brand-google-play': lazy(() => {
-    return import('@tabler/icons/brand-google-play.svg?react');
-  }),
-  'brand-google-podcasts': lazy(() => {
-    return import('@tabler/icons/brand-google-podcasts.svg?react');
-  }),
-  'brand-google': lazy(() => {
-    return import('@tabler/icons/brand-google.svg?react');
-  }),
-  'brand-grammarly': lazy(() => {
-    return import('@tabler/icons/brand-grammarly.svg?react');
-  }),
-  'brand-graphql': lazy(() => {
-    return import('@tabler/icons/brand-graphql.svg?react');
-  }),
-  'brand-gravatar': lazy(() => {
-    return import('@tabler/icons/brand-gravatar.svg?react');
-  }),
-  'brand-grindr': lazy(() => {
-    return import('@tabler/icons/brand-grindr.svg?react');
-  }),
-  'brand-guardian': lazy(() => {
-    return import('@tabler/icons/brand-guardian.svg?react');
-  }),
-  'brand-gumroad': lazy(() => {
-    return import('@tabler/icons/brand-gumroad.svg?react');
-  }),
-  'brand-hbo': lazy(() => {
-    return import('@tabler/icons/brand-hbo.svg?react');
-  }),
-  'brand-headlessui': lazy(() => {
-    return import('@tabler/icons/brand-headlessui.svg?react');
-  }),
-  'brand-hexo': lazy(() => {
-    return import('@tabler/icons/brand-hexo.svg?react');
-  }),
-  'brand-hipchat': lazy(() => {
-    return import('@tabler/icons/brand-hipchat.svg?react');
-  }),
-  'brand-html5': lazy(() => {
-    return import('@tabler/icons/brand-html5.svg?react');
-  }),
-  'brand-inertia': lazy(() => {
-    return import('@tabler/icons/brand-inertia.svg?react');
-  }),
-  'brand-instagram': lazy(() => {
-    return import('@tabler/icons/brand-instagram.svg?react');
-  }),
-  'brand-intercom': lazy(() => {
-    return import('@tabler/icons/brand-intercom.svg?react');
-  }),
-  'brand-itch': lazy(() => {
-    return import('@tabler/icons/brand-itch.svg?react');
-  }),
-  'brand-javascript': lazy(() => {
-    return import('@tabler/icons/brand-javascript.svg?react');
-  }),
-  'brand-juejin': lazy(() => {
-    return import('@tabler/icons/brand-juejin.svg?react');
-  }),
-  'brand-kbin': lazy(() => {
-    return import('@tabler/icons/brand-kbin.svg?react');
-  }),
-  'brand-kick': lazy(() => {
-    return import('@tabler/icons/brand-kick.svg?react');
-  }),
-  'brand-kickstarter': lazy(() => {
-    return import('@tabler/icons/brand-kickstarter.svg?react');
-  }),
-  'brand-kotlin': lazy(() => {
-    return import('@tabler/icons/brand-kotlin.svg?react');
-  }),
-  'brand-laravel': lazy(() => {
-    return import('@tabler/icons/brand-laravel.svg?react');
-  }),
-  'brand-lastfm': lazy(() => {
-    return import('@tabler/icons/brand-lastfm.svg?react');
-  }),
-  'brand-leetcode': lazy(() => {
-    return import('@tabler/icons/brand-leetcode.svg?react');
-  }),
-  'brand-letterboxd': lazy(() => {
-    return import('@tabler/icons/brand-letterboxd.svg?react');
-  }),
-  'brand-line': lazy(() => {
-    return import('@tabler/icons/brand-line.svg?react');
-  }),
-  'brand-linkedin': lazy(() => {
-    return import('@tabler/icons/brand-linkedin.svg?react');
-  }),
-  'brand-linktree': lazy(() => {
-    return import('@tabler/icons/brand-linktree.svg?react');
-  }),
-  'brand-linqpad': lazy(() => {
-    return import('@tabler/icons/brand-linqpad.svg?react');
-  }),
-  'brand-loom': lazy(() => {
-    return import('@tabler/icons/brand-loom.svg?react');
-  }),
-  'brand-mailgun': lazy(() => {
-    return import('@tabler/icons/brand-mailgun.svg?react');
-  }),
-  'brand-mantine': lazy(() => {
-    return import('@tabler/icons/brand-mantine.svg?react');
-  }),
-  'brand-mastercard': lazy(() => {
-    return import('@tabler/icons/brand-mastercard.svg?react');
-  }),
-  'brand-mastodon': lazy(() => {
-    return import('@tabler/icons/brand-mastodon.svg?react');
-  }),
-  'brand-matrix': lazy(() => {
-    return import('@tabler/icons/brand-matrix.svg?react');
-  }),
-  'brand-mcdonalds': lazy(() => {
-    return import('@tabler/icons/brand-mcdonalds.svg?react');
-  }),
-  'brand-medium': lazy(() => {
-    return import('@tabler/icons/brand-medium.svg?react');
-  }),
-  'brand-meetup': lazy(() => {
-    return import('@tabler/icons/brand-meetup.svg?react');
-  }),
-  'brand-mercedes': lazy(() => {
-    return import('@tabler/icons/brand-mercedes.svg?react');
-  }),
-  'brand-messenger': lazy(() => {
-    return import('@tabler/icons/brand-messenger.svg?react');
-  }),
-  'brand-meta': lazy(() => {
-    return import('@tabler/icons/brand-meta.svg?react');
-  }),
-  'brand-minecraft': lazy(() => {
-    return import('@tabler/icons/brand-minecraft.svg?react');
-  }),
-  'brand-miniprogram': lazy(() => {
-    return import('@tabler/icons/brand-miniprogram.svg?react');
-  }),
-  'brand-mixpanel': lazy(() => {
-    return import('@tabler/icons/brand-mixpanel.svg?react');
-  }),
-  'brand-monday': lazy(() => {
-    return import('@tabler/icons/brand-monday.svg?react');
-  }),
-  'brand-mongodb': lazy(() => {
-    return import('@tabler/icons/brand-mongodb.svg?react');
-  }),
-  'brand-my-oppo': lazy(() => {
-    return import('@tabler/icons/brand-my-oppo.svg?react');
-  }),
-  'brand-mysql': lazy(() => {
-    return import('@tabler/icons/brand-mysql.svg?react');
-  }),
-  'brand-national-geographic': lazy(() => {
-    return import('@tabler/icons/brand-national-geographic.svg?react');
-  }),
-  'brand-nem': lazy(() => {
-    return import('@tabler/icons/brand-nem.svg?react');
-  }),
-  'brand-netbeans': lazy(() => {
-    return import('@tabler/icons/brand-netbeans.svg?react');
-  }),
-  'brand-netease-music': lazy(() => {
-    return import('@tabler/icons/brand-netease-music.svg?react');
-  }),
-  'brand-netflix': lazy(() => {
-    return import('@tabler/icons/brand-netflix.svg?react');
-  }),
-  'brand-nexo': lazy(() => {
-    return import('@tabler/icons/brand-nexo.svg?react');
-  }),
-  'brand-nextcloud': lazy(() => {
-    return import('@tabler/icons/brand-nextcloud.svg?react');
-  }),
-  'brand-nextjs': lazy(() => {
-    return import('@tabler/icons/brand-nextjs.svg?react');
-  }),
-  'brand-nodejs': lazy(() => {
-    return import('@tabler/icons/brand-nodejs.svg?react');
-  }),
-  'brand-nord-vpn': lazy(() => {
-    return import('@tabler/icons/brand-nord-vpn.svg?react');
-  }),
-  'brand-notion': lazy(() => {
-    return import('@tabler/icons/brand-notion.svg?react');
-  }),
-  'brand-npm': lazy(() => {
-    return import('@tabler/icons/brand-npm.svg?react');
-  }),
-  'brand-nuxt': lazy(() => {
-    return import('@tabler/icons/brand-nuxt.svg?react');
-  }),
-  'brand-nytimes': lazy(() => {
-    return import('@tabler/icons/brand-nytimes.svg?react');
-  }),
-  'brand-oauth': lazy(() => {
-    return import('@tabler/icons/brand-oauth.svg?react');
-  }),
-  'brand-office': lazy(() => {
-    return import('@tabler/icons/brand-office.svg?react');
-  }),
-  'brand-ok-ru': lazy(() => {
-    return import('@tabler/icons/brand-ok-ru.svg?react');
-  }),
-  'brand-onedrive': lazy(() => {
-    return import('@tabler/icons/brand-onedrive.svg?react');
-  }),
-  'brand-onlyfans': lazy(() => {
-    return import('@tabler/icons/brand-onlyfans.svg?react');
-  }),
-  'brand-open-source': lazy(() => {
-    return import('@tabler/icons/brand-open-source.svg?react');
-  }),
-  'brand-openai': lazy(() => {
-    return import('@tabler/icons/brand-openai.svg?react');
-  }),
-  'brand-openvpn': lazy(() => {
-    return import('@tabler/icons/brand-openvpn.svg?react');
-  }),
-  'brand-opera': lazy(() => {
-    return import('@tabler/icons/brand-opera.svg?react');
-  }),
-  'brand-pagekit': lazy(() => {
-    return import('@tabler/icons/brand-pagekit.svg?react');
-  }),
-  'brand-parsinta': lazy(() => {
-    return import('@tabler/icons/brand-parsinta.svg?react');
-  }),
-  'brand-patreon': lazy(() => {
-    return import('@tabler/icons/brand-patreon.svg?react');
-  }),
-  'brand-paypal-filled': lazy(() => {
-    return import('@tabler/icons/brand-paypal-filled.svg?react');
-  }),
-  'brand-paypal': lazy(() => {
-    return import('@tabler/icons/brand-paypal.svg?react');
-  }),
-  'brand-paypay': lazy(() => {
-    return import('@tabler/icons/brand-paypay.svg?react');
-  }),
-  'brand-peanut': lazy(() => {
-    return import('@tabler/icons/brand-peanut.svg?react');
-  }),
-  'brand-pepsi': lazy(() => {
-    return import('@tabler/icons/brand-pepsi.svg?react');
-  }),
-  'brand-php': lazy(() => {
-    return import('@tabler/icons/brand-php.svg?react');
-  }),
-  'brand-picsart': lazy(() => {
-    return import('@tabler/icons/brand-picsart.svg?react');
-  }),
-  'brand-pinterest': lazy(() => {
-    return import('@tabler/icons/brand-pinterest.svg?react');
-  }),
-  'brand-planetscale': lazy(() => {
-    return import('@tabler/icons/brand-planetscale.svg?react');
-  }),
-  'brand-pocket': lazy(() => {
-    return import('@tabler/icons/brand-pocket.svg?react');
-  }),
-  'brand-polymer': lazy(() => {
-    return import('@tabler/icons/brand-polymer.svg?react');
-  }),
-  'brand-powershell': lazy(() => {
-    return import('@tabler/icons/brand-powershell.svg?react');
-  }),
-  'brand-prisma': lazy(() => {
-    return import('@tabler/icons/brand-prisma.svg?react');
-  }),
-  'brand-producthunt': lazy(() => {
-    return import('@tabler/icons/brand-producthunt.svg?react');
-  }),
-  'brand-pushbullet': lazy(() => {
-    return import('@tabler/icons/brand-pushbullet.svg?react');
-  }),
-  'brand-pushover': lazy(() => {
-    return import('@tabler/icons/brand-pushover.svg?react');
-  }),
-  'brand-python': lazy(() => {
-    return import('@tabler/icons/brand-python.svg?react');
-  }),
-  'brand-qq': lazy(() => {
-    return import('@tabler/icons/brand-qq.svg?react');
-  }),
-  'brand-radix-ui': lazy(() => {
-    return import('@tabler/icons/brand-radix-ui.svg?react');
-  }),
-  'brand-react-native': lazy(() => {
-    return import('@tabler/icons/brand-react-native.svg?react');
-  }),
-  'brand-react': lazy(() => {
-    return import('@tabler/icons/brand-react.svg?react');
-  }),
-  'brand-reason': lazy(() => {
-    return import('@tabler/icons/brand-reason.svg?react');
-  }),
-  'brand-reddit': lazy(() => {
-    return import('@tabler/icons/brand-reddit.svg?react');
-  }),
-  'brand-redhat': lazy(() => {
-    return import('@tabler/icons/brand-redhat.svg?react');
-  }),
-  'brand-redux': lazy(() => {
-    return import('@tabler/icons/brand-redux.svg?react');
-  }),
-  'brand-revolut': lazy(() => {
-    return import('@tabler/icons/brand-revolut.svg?react');
-  }),
-  'brand-rumble': lazy(() => {
-    return import('@tabler/icons/brand-rumble.svg?react');
-  }),
-  'brand-rust': lazy(() => {
-    return import('@tabler/icons/brand-rust.svg?react');
-  }),
-  'brand-safari': lazy(() => {
-    return import('@tabler/icons/brand-safari.svg?react');
-  }),
-  'brand-samsungpass': lazy(() => {
-    return import('@tabler/icons/brand-samsungpass.svg?react');
-  }),
-  'brand-sass': lazy(() => {
-    return import('@tabler/icons/brand-sass.svg?react');
-  }),
-  'brand-sentry': lazy(() => {
-    return import('@tabler/icons/brand-sentry.svg?react');
-  }),
-  'brand-sharik': lazy(() => {
-    return import('@tabler/icons/brand-sharik.svg?react');
-  }),
-  'brand-shazam': lazy(() => {
-    return import('@tabler/icons/brand-shazam.svg?react');
-  }),
-  'brand-shopee': lazy(() => {
-    return import('@tabler/icons/brand-shopee.svg?react');
-  }),
-  'brand-sketch': lazy(() => {
-    return import('@tabler/icons/brand-sketch.svg?react');
-  }),
-  'brand-skype': lazy(() => {
-    return import('@tabler/icons/brand-skype.svg?react');
-  }),
-  'brand-slack': lazy(() => {
-    return import('@tabler/icons/brand-slack.svg?react');
-  }),
-  'brand-snapchat': lazy(() => {
-    return import('@tabler/icons/brand-snapchat.svg?react');
-  }),
-  'brand-snapseed': lazy(() => {
-    return import('@tabler/icons/brand-snapseed.svg?react');
-  }),
-  'brand-snowflake': lazy(() => {
-    return import('@tabler/icons/brand-snowflake.svg?react');
-  }),
-  'brand-socket-io': lazy(() => {
-    return import('@tabler/icons/brand-socket-io.svg?react');
-  }),
-  'brand-solidjs': lazy(() => {
-    return import('@tabler/icons/brand-solidjs.svg?react');
-  }),
-  'brand-soundcloud': lazy(() => {
-    return import('@tabler/icons/brand-soundcloud.svg?react');
-  }),
-  'brand-spacehey': lazy(() => {
-    return import('@tabler/icons/brand-spacehey.svg?react');
-  }),
-  'brand-speedtest': lazy(() => {
-    return import('@tabler/icons/brand-speedtest.svg?react');
-  }),
-  'brand-spotify': lazy(() => {
-    return import('@tabler/icons/brand-spotify.svg?react');
-  }),
-  'brand-stackoverflow': lazy(() => {
-    return import('@tabler/icons/brand-stackoverflow.svg?react');
-  }),
-  'brand-stackshare': lazy(() => {
-    return import('@tabler/icons/brand-stackshare.svg?react');
-  }),
-  'brand-steam': lazy(() => {
-    return import('@tabler/icons/brand-steam.svg?react');
-  }),
-  'brand-storj': lazy(() => {
-    return import('@tabler/icons/brand-storj.svg?react');
-  }),
-  'brand-storybook': lazy(() => {
-    return import('@tabler/icons/brand-storybook.svg?react');
-  }),
-  'brand-storytel': lazy(() => {
-    return import('@tabler/icons/brand-storytel.svg?react');
-  }),
-  'brand-strava': lazy(() => {
-    return import('@tabler/icons/brand-strava.svg?react');
-  }),
-  'brand-stripe': lazy(() => {
-    return import('@tabler/icons/brand-stripe.svg?react');
-  }),
-  'brand-sublime-text': lazy(() => {
-    return import('@tabler/icons/brand-sublime-text.svg?react');
-  }),
-  'brand-sugarizer': lazy(() => {
-    return import('@tabler/icons/brand-sugarizer.svg?react');
-  }),
-  'brand-supabase': lazy(() => {
-    return import('@tabler/icons/brand-supabase.svg?react');
-  }),
-  'brand-superhuman': lazy(() => {
-    return import('@tabler/icons/brand-superhuman.svg?react');
-  }),
-  'brand-supernova': lazy(() => {
-    return import('@tabler/icons/brand-supernova.svg?react');
-  }),
-  'brand-surfshark': lazy(() => {
-    return import('@tabler/icons/brand-surfshark.svg?react');
-  }),
-  'brand-svelte': lazy(() => {
-    return import('@tabler/icons/brand-svelte.svg?react');
-  }),
-  'brand-swift': lazy(() => {
-    return import('@tabler/icons/brand-swift.svg?react');
-  }),
-  'brand-symfony': lazy(() => {
-    return import('@tabler/icons/brand-symfony.svg?react');
-  }),
-  'brand-tabler': lazy(() => {
-    return import('@tabler/icons/brand-tabler.svg?react');
-  }),
-  'brand-tailwind': lazy(() => {
-    return import('@tabler/icons/brand-tailwind.svg?react');
-  }),
-  'brand-taobao': lazy(() => {
-    return import('@tabler/icons/brand-taobao.svg?react');
-  }),
-  'brand-teams': lazy(() => {
-    return import('@tabler/icons/brand-teams.svg?react');
-  }),
-  'brand-ted': lazy(() => {
-    return import('@tabler/icons/brand-ted.svg?react');
-  }),
-  'brand-telegram': lazy(() => {
-    return import('@tabler/icons/brand-telegram.svg?react');
-  }),
-  'brand-terraform': lazy(() => {
-    return import('@tabler/icons/brand-terraform.svg?react');
-  }),
-  'brand-tether': lazy(() => {
-    return import('@tabler/icons/brand-tether.svg?react');
-  }),
-  'brand-threads': lazy(() => {
-    return import('@tabler/icons/brand-threads.svg?react');
-  }),
-  'brand-threejs': lazy(() => {
-    return import('@tabler/icons/brand-threejs.svg?react');
-  }),
-  'brand-tidal': lazy(() => {
-    return import('@tabler/icons/brand-tidal.svg?react');
-  }),
-  'brand-tiktok-filled': lazy(() => {
-    return import('@tabler/icons/brand-tiktok-filled.svg?react');
-  }),
-  'brand-tiktok': lazy(() => {
-    return import('@tabler/icons/brand-tiktok.svg?react');
-  }),
-  'brand-tinder': lazy(() => {
-    return import('@tabler/icons/brand-tinder.svg?react');
-  }),
-  'brand-topbuzz': lazy(() => {
-    return import('@tabler/icons/brand-topbuzz.svg?react');
-  }),
-  'brand-torchain': lazy(() => {
-    return import('@tabler/icons/brand-torchain.svg?react');
-  }),
-  'brand-toyota': lazy(() => {
-    return import('@tabler/icons/brand-toyota.svg?react');
-  }),
-  'brand-trello': lazy(() => {
-    return import('@tabler/icons/brand-trello.svg?react');
-  }),
-  'brand-tripadvisor': lazy(() => {
-    return import('@tabler/icons/brand-tripadvisor.svg?react');
-  }),
-  'brand-tumblr': lazy(() => {
-    return import('@tabler/icons/brand-tumblr.svg?react');
-  }),
-  'brand-twilio': lazy(() => {
-    return import('@tabler/icons/brand-twilio.svg?react');
-  }),
-  'brand-twitch': lazy(() => {
-    return import('@tabler/icons/brand-twitch.svg?react');
-  }),
-  'brand-twitter-filled': lazy(() => {
-    return import('@tabler/icons/brand-twitter-filled.svg?react');
-  }),
-  'brand-twitter': lazy(() => {
-    return import('@tabler/icons/brand-twitter.svg?react');
-  }),
-  'brand-typescript': lazy(() => {
-    return import('@tabler/icons/brand-typescript.svg?react');
-  }),
-  'brand-uber': lazy(() => {
-    return import('@tabler/icons/brand-uber.svg?react');
-  }),
-  'brand-ubuntu': lazy(() => {
-    return import('@tabler/icons/brand-ubuntu.svg?react');
-  }),
-  'brand-unity': lazy(() => {
-    return import('@tabler/icons/brand-unity.svg?react');
-  }),
-  'brand-unsplash': lazy(() => {
-    return import('@tabler/icons/brand-unsplash.svg?react');
-  }),
-  'brand-upwork': lazy(() => {
-    return import('@tabler/icons/brand-upwork.svg?react');
-  }),
-  'brand-valorant': lazy(() => {
-    return import('@tabler/icons/brand-valorant.svg?react');
-  }),
-  'brand-vercel': lazy(() => {
-    return import('@tabler/icons/brand-vercel.svg?react');
-  }),
-  'brand-vimeo': lazy(() => {
-    return import('@tabler/icons/brand-vimeo.svg?react');
-  }),
-  'brand-vinted': lazy(() => {
-    return import('@tabler/icons/brand-vinted.svg?react');
-  }),
-  'brand-visa': lazy(() => {
-    return import('@tabler/icons/brand-visa.svg?react');
-  }),
-  'brand-visual-studio': lazy(() => {
-    return import('@tabler/icons/brand-visual-studio.svg?react');
-  }),
-  'brand-vite': lazy(() => {
-    return import('@tabler/icons/brand-vite.svg?react');
-  }),
-  'brand-vivaldi': lazy(() => {
-    return import('@tabler/icons/brand-vivaldi.svg?react');
-  }),
-  'brand-vk': lazy(() => {
-    return import('@tabler/icons/brand-vk.svg?react');
-  }),
-  'brand-vlc': lazy(() => {
-    return import('@tabler/icons/brand-vlc.svg?react');
-  }),
-  'brand-volkswagen': lazy(() => {
-    return import('@tabler/icons/brand-volkswagen.svg?react');
-  }),
-  'brand-vsco': lazy(() => {
-    return import('@tabler/icons/brand-vsco.svg?react');
-  }),
-  'brand-vscode': lazy(() => {
-    return import('@tabler/icons/brand-vscode.svg?react');
-  }),
-  'brand-vue': lazy(() => {
-    return import('@tabler/icons/brand-vue.svg?react');
-  }),
-  'brand-walmart': lazy(() => {
-    return import('@tabler/icons/brand-walmart.svg?react');
-  }),
-  'brand-waze': lazy(() => {
-    return import('@tabler/icons/brand-waze.svg?react');
-  }),
-  'brand-webflow': lazy(() => {
-    return import('@tabler/icons/brand-webflow.svg?react');
-  }),
-  'brand-wechat': lazy(() => {
-    return import('@tabler/icons/brand-wechat.svg?react');
-  }),
-  'brand-weibo': lazy(() => {
-    return import('@tabler/icons/brand-weibo.svg?react');
-  }),
-  'brand-whatsapp': lazy(() => {
-    return import('@tabler/icons/brand-whatsapp.svg?react');
-  }),
-  'brand-wikipedia': lazy(() => {
-    return import('@tabler/icons/brand-wikipedia.svg?react');
-  }),
-  'brand-windows': lazy(() => {
-    return import('@tabler/icons/brand-windows.svg?react');
-  }),
-  'brand-windy': lazy(() => {
-    return import('@tabler/icons/brand-windy.svg?react');
-  }),
-  'brand-wish': lazy(() => {
-    return import('@tabler/icons/brand-wish.svg?react');
-  }),
-  'brand-wix': lazy(() => {
-    return import('@tabler/icons/brand-wix.svg?react');
-  }),
-  'brand-wordpress': lazy(() => {
-    return import('@tabler/icons/brand-wordpress.svg?react');
-  }),
-  'brand-x-filled': lazy(() => {
-    return import('@tabler/icons/brand-x-filled.svg?react');
-  }),
-  'brand-x': lazy(() => {
-    return import('@tabler/icons/brand-x.svg?react');
-  }),
-  'brand-xamarin': lazy(() => {
-    return import('@tabler/icons/brand-xamarin.svg?react');
-  }),
-  'brand-xbox': lazy(() => {
-    return import('@tabler/icons/brand-xbox.svg?react');
-  }),
-  'brand-xdeep': lazy(() => {
-    return import('@tabler/icons/brand-xdeep.svg?react');
-  }),
-  'brand-xing': lazy(() => {
-    return import('@tabler/icons/brand-xing.svg?react');
-  }),
-  'brand-yahoo': lazy(() => {
-    return import('@tabler/icons/brand-yahoo.svg?react');
-  }),
-  'brand-yandex': lazy(() => {
-    return import('@tabler/icons/brand-yandex.svg?react');
-  }),
-  'brand-yatse': lazy(() => {
-    return import('@tabler/icons/brand-yatse.svg?react');
-  }),
-  'brand-ycombinator': lazy(() => {
-    return import('@tabler/icons/brand-ycombinator.svg?react');
-  }),
-  'brand-youtube-filled': lazy(() => {
-    return import('@tabler/icons/brand-youtube-filled.svg?react');
-  }),
-  'brand-youtube-kids': lazy(() => {
-    return import('@tabler/icons/brand-youtube-kids.svg?react');
-  }),
-  'brand-youtube': lazy(() => {
-    return import('@tabler/icons/brand-youtube.svg?react');
-  }),
-  'brand-zalando': lazy(() => {
-    return import('@tabler/icons/brand-zalando.svg?react');
-  }),
-  'brand-zapier': lazy(() => {
-    return import('@tabler/icons/brand-zapier.svg?react');
-  }),
-  'brand-zeit': lazy(() => {
-    return import('@tabler/icons/brand-zeit.svg?react');
-  }),
-  'brand-zhihu': lazy(() => {
-    return import('@tabler/icons/brand-zhihu.svg?react');
-  }),
-  'brand-zoom': lazy(() => {
-    return import('@tabler/icons/brand-zoom.svg?react');
-  }),
-  'brand-zulip': lazy(() => {
-    return import('@tabler/icons/brand-zulip.svg?react');
-  }),
-  'brand-zwift': lazy(() => {
-    return import('@tabler/icons/brand-zwift.svg?react');
-  }),
-  'bread-off': lazy(() => {
-    return import('@tabler/icons/bread-off.svg?react');
-  }),
-  bread: lazy(() => {
-    return import('@tabler/icons/bread.svg?react');
-  }),
-  'briefcase-2': lazy(() => {
-    return import('@tabler/icons/briefcase-2.svg?react');
-  }),
-  'briefcase-off': lazy(() => {
-    return import('@tabler/icons/briefcase-off.svg?react');
-  }),
-  briefcase: lazy(() => {
-    return import('@tabler/icons/briefcase.svg?react');
-  }),
-  'brightness-2': lazy(() => {
-    return import('@tabler/icons/brightness-2.svg?react');
-  }),
-  'brightness-down-filled': lazy(() => {
-    return import('@tabler/icons/brightness-down-filled.svg?react');
-  }),
-  'brightness-down': lazy(() => {
-    return import('@tabler/icons/brightness-down.svg?react');
-  }),
-  'brightness-half': lazy(() => {
-    return import('@tabler/icons/brightness-half.svg?react');
-  }),
-  'brightness-off': lazy(() => {
-    return import('@tabler/icons/brightness-off.svg?react');
-  }),
-  'brightness-up-filled': lazy(() => {
-    return import('@tabler/icons/brightness-up-filled.svg?react');
-  }),
-  'brightness-up': lazy(() => {
-    return import('@tabler/icons/brightness-up.svg?react');
-  }),
-  brightness: lazy(() => {
-    return import('@tabler/icons/brightness.svg?react');
-  }),
-  'broadcast-off': lazy(() => {
-    return import('@tabler/icons/broadcast-off.svg?react');
-  }),
-  broadcast: lazy(() => {
-    return import('@tabler/icons/broadcast.svg?react');
-  }),
-  'browser-check': lazy(() => {
-    return import('@tabler/icons/browser-check.svg?react');
-  }),
-  'browser-off': lazy(() => {
-    return import('@tabler/icons/browser-off.svg?react');
-  }),
-  'browser-plus': lazy(() => {
-    return import('@tabler/icons/browser-plus.svg?react');
-  }),
-  'browser-x': lazy(() => {
-    return import('@tabler/icons/browser-x.svg?react');
-  }),
-  browser: lazy(() => {
-    return import('@tabler/icons/browser.svg?react');
-  }),
-  'brush-off': lazy(() => {
-    return import('@tabler/icons/brush-off.svg?react');
-  }),
-  brush: lazy(() => {
-    return import('@tabler/icons/brush.svg?react');
-  }),
-  'bucket-droplet': lazy(() => {
-    return import('@tabler/icons/bucket-droplet.svg?react');
-  }),
-  'bucket-off': lazy(() => {
-    return import('@tabler/icons/bucket-off.svg?react');
-  }),
-  bucket: lazy(() => {
-    return import('@tabler/icons/bucket.svg?react');
-  }),
-  'bug-off': lazy(() => {
-    return import('@tabler/icons/bug-off.svg?react');
-  }),
-  bug: lazy(() => {
-    return import('@tabler/icons/bug.svg?react');
-  }),
-  'building-arch': lazy(() => {
-    return import('@tabler/icons/building-arch.svg?react');
-  }),
-  'building-bank': lazy(() => {
-    return import('@tabler/icons/building-bank.svg?react');
-  }),
-  'building-bridge-2': lazy(() => {
-    return import('@tabler/icons/building-bridge-2.svg?react');
-  }),
-  'building-bridge': lazy(() => {
-    return import('@tabler/icons/building-bridge.svg?react');
-  }),
-  'building-broadcast-tower': lazy(() => {
-    return import('@tabler/icons/building-broadcast-tower.svg?react');
-  }),
-  'building-carousel': lazy(() => {
-    return import('@tabler/icons/building-carousel.svg?react');
-  }),
-  'building-castle': lazy(() => {
-    return import('@tabler/icons/building-castle.svg?react');
-  }),
-  'building-church': lazy(() => {
-    return import('@tabler/icons/building-church.svg?react');
-  }),
-  'building-circus': lazy(() => {
-    return import('@tabler/icons/building-circus.svg?react');
-  }),
-  'building-community': lazy(() => {
-    return import('@tabler/icons/building-community.svg?react');
-  }),
-  'building-cottage': lazy(() => {
-    return import('@tabler/icons/building-cottage.svg?react');
-  }),
-  'building-estate': lazy(() => {
-    return import('@tabler/icons/building-estate.svg?react');
-  }),
-  'building-factory-2': lazy(() => {
-    return import('@tabler/icons/building-factory-2.svg?react');
-  }),
-  'building-factory': lazy(() => {
-    return import('@tabler/icons/building-factory.svg?react');
-  }),
-  'building-fortress': lazy(() => {
-    return import('@tabler/icons/building-fortress.svg?react');
-  }),
-  'building-hospital': lazy(() => {
-    return import('@tabler/icons/building-hospital.svg?react');
-  }),
-  'building-lighthouse': lazy(() => {
-    return import('@tabler/icons/building-lighthouse.svg?react');
-  }),
-  'building-monument': lazy(() => {
-    return import('@tabler/icons/building-monument.svg?react');
-  }),
-  'building-mosque': lazy(() => {
-    return import('@tabler/icons/building-mosque.svg?react');
-  }),
-  'building-pavilion': lazy(() => {
-    return import('@tabler/icons/building-pavilion.svg?react');
-  }),
-  'building-skyscraper': lazy(() => {
-    return import('@tabler/icons/building-skyscraper.svg?react');
-  }),
-  'building-stadium': lazy(() => {
-    return import('@tabler/icons/building-stadium.svg?react');
-  }),
-  'building-store': lazy(() => {
-    return import('@tabler/icons/building-store.svg?react');
-  }),
-  'building-tunnel': lazy(() => {
-    return import('@tabler/icons/building-tunnel.svg?react');
-  }),
-  'building-warehouse': lazy(() => {
-    return import('@tabler/icons/building-warehouse.svg?react');
-  }),
-  'building-wind-turbine': lazy(() => {
-    return import('@tabler/icons/building-wind-turbine.svg?react');
-  }),
-  building: lazy(() => {
-    return import('@tabler/icons/building.svg?react');
-  }),
-  'bulb-filled': lazy(() => {
-    return import('@tabler/icons/bulb-filled.svg?react');
-  }),
-  'bulb-off': lazy(() => {
-    return import('@tabler/icons/bulb-off.svg?react');
-  }),
-  bulb: lazy(() => {
-    return import('@tabler/icons/bulb.svg?react');
-  }),
-  bulldozer: lazy(() => {
-    return import('@tabler/icons/bulldozer.svg?react');
-  }),
-  burger: lazy(() => {
-    return import('@tabler/icons/burger.svg?react');
-  }),
-  'bus-off': lazy(() => {
-    return import('@tabler/icons/bus-off.svg?react');
-  }),
-  'bus-stop': lazy(() => {
-    return import('@tabler/icons/bus-stop.svg?react');
-  }),
-  bus: lazy(() => {
-    return import('@tabler/icons/bus.svg?react');
-  }),
-  businessplan: lazy(() => {
-    return import('@tabler/icons/businessplan.svg?react');
-  }),
-  butterfly: lazy(() => {
-    return import('@tabler/icons/butterfly.svg?react');
-  }),
-  'cactus-filled': lazy(() => {
-    return import('@tabler/icons/cactus-filled.svg?react');
-  }),
-  'cactus-off': lazy(() => {
-    return import('@tabler/icons/cactus-off.svg?react');
-  }),
-  cactus: lazy(() => {
-    return import('@tabler/icons/cactus.svg?react');
-  }),
-  'cake-off': lazy(() => {
-    return import('@tabler/icons/cake-off.svg?react');
-  }),
-  cake: lazy(() => {
-    return import('@tabler/icons/cake.svg?react');
-  }),
-  'calculator-filled': lazy(() => {
-    return import('@tabler/icons/calculator-filled.svg?react');
-  }),
-  'calculator-off': lazy(() => {
-    return import('@tabler/icons/calculator-off.svg?react');
-  }),
-  calculator: lazy(() => {
-    return import('@tabler/icons/calculator.svg?react');
-  }),
-  'calendar-bolt': lazy(() => {
-    return import('@tabler/icons/calendar-bolt.svg?react');
-  }),
-  'calendar-cancel': lazy(() => {
-    return import('@tabler/icons/calendar-cancel.svg?react');
-  }),
-  'calendar-check': lazy(() => {
-    return import('@tabler/icons/calendar-check.svg?react');
-  }),
-  'calendar-code': lazy(() => {
-    return import('@tabler/icons/calendar-code.svg?react');
-  }),
-  'calendar-cog': lazy(() => {
-    return import('@tabler/icons/calendar-cog.svg?react');
-  }),
-  'calendar-dollar': lazy(() => {
-    return import('@tabler/icons/calendar-dollar.svg?react');
-  }),
-  'calendar-down': lazy(() => {
-    return import('@tabler/icons/calendar-down.svg?react');
-  }),
-  'calendar-due': lazy(() => {
-    return import('@tabler/icons/calendar-due.svg?react');
-  }),
-  'calendar-event': lazy(() => {
-    return import('@tabler/icons/calendar-event.svg?react');
-  }),
-  'calendar-exclamation': lazy(() => {
-    return import('@tabler/icons/calendar-exclamation.svg?react');
-  }),
-  'calendar-filled': lazy(() => {
-    return import('@tabler/icons/calendar-filled.svg?react');
-  }),
-  'calendar-heart': lazy(() => {
-    return import('@tabler/icons/calendar-heart.svg?react');
-  }),
-  'calendar-minus': lazy(() => {
-    return import('@tabler/icons/calendar-minus.svg?react');
-  }),
-  'calendar-off': lazy(() => {
-    return import('@tabler/icons/calendar-off.svg?react');
-  }),
-  'calendar-pause': lazy(() => {
-    return import('@tabler/icons/calendar-pause.svg?react');
-  }),
-  'calendar-pin': lazy(() => {
-    return import('@tabler/icons/calendar-pin.svg?react');
-  }),
-  'calendar-plus': lazy(() => {
-    return import('@tabler/icons/calendar-plus.svg?react');
-  }),
-  'calendar-question': lazy(() => {
-    return import('@tabler/icons/calendar-question.svg?react');
-  }),
-  'calendar-repeat': lazy(() => {
-    return import('@tabler/icons/calendar-repeat.svg?react');
-  }),
-  'calendar-search': lazy(() => {
-    return import('@tabler/icons/calendar-search.svg?react');
-  }),
-  'calendar-share': lazy(() => {
-    return import('@tabler/icons/calendar-share.svg?react');
-  }),
-  'calendar-star': lazy(() => {
-    return import('@tabler/icons/calendar-star.svg?react');
-  }),
-  'calendar-stats': lazy(() => {
-    return import('@tabler/icons/calendar-stats.svg?react');
-  }),
-  'calendar-time': lazy(() => {
-    return import('@tabler/icons/calendar-time.svg?react');
-  }),
-  'calendar-up': lazy(() => {
-    return import('@tabler/icons/calendar-up.svg?react');
-  }),
-  'calendar-x': lazy(() => {
-    return import('@tabler/icons/calendar-x.svg?react');
-  }),
-  calendar: lazy(() => {
-    return import('@tabler/icons/calendar.svg?react');
-  }),
-  'camera-bolt': lazy(() => {
-    return import('@tabler/icons/camera-bolt.svg?react');
-  }),
-  'camera-cancel': lazy(() => {
-    return import('@tabler/icons/camera-cancel.svg?react');
-  }),
-  'camera-check': lazy(() => {
-    return import('@tabler/icons/camera-check.svg?react');
-  }),
-  'camera-code': lazy(() => {
-    return import('@tabler/icons/camera-code.svg?react');
-  }),
-  'camera-cog': lazy(() => {
-    return import('@tabler/icons/camera-cog.svg?react');
-  }),
-  'camera-dollar': lazy(() => {
-    return import('@tabler/icons/camera-dollar.svg?react');
-  }),
-  'camera-down': lazy(() => {
-    return import('@tabler/icons/camera-down.svg?react');
-  }),
-  'camera-exclamation': lazy(() => {
-    return import('@tabler/icons/camera-exclamation.svg?react');
-  }),
-  'camera-filled': lazy(() => {
-    return import('@tabler/icons/camera-filled.svg?react');
-  }),
-  'camera-heart': lazy(() => {
-    return import('@tabler/icons/camera-heart.svg?react');
-  }),
-  'camera-minus': lazy(() => {
-    return import('@tabler/icons/camera-minus.svg?react');
-  }),
-  'camera-off': lazy(() => {
-    return import('@tabler/icons/camera-off.svg?react');
-  }),
-  'camera-pause': lazy(() => {
-    return import('@tabler/icons/camera-pause.svg?react');
-  }),
-  'camera-pin': lazy(() => {
-    return import('@tabler/icons/camera-pin.svg?react');
-  }),
-  'camera-plus': lazy(() => {
-    return import('@tabler/icons/camera-plus.svg?react');
-  }),
-  'camera-question': lazy(() => {
-    return import('@tabler/icons/camera-question.svg?react');
-  }),
-  'camera-rotate': lazy(() => {
-    return import('@tabler/icons/camera-rotate.svg?react');
-  }),
-  'camera-search': lazy(() => {
-    return import('@tabler/icons/camera-search.svg?react');
-  }),
-  'camera-selfie': lazy(() => {
-    return import('@tabler/icons/camera-selfie.svg?react');
-  }),
-  'camera-share': lazy(() => {
-    return import('@tabler/icons/camera-share.svg?react');
-  }),
-  'camera-star': lazy(() => {
-    return import('@tabler/icons/camera-star.svg?react');
-  }),
-  'camera-up': lazy(() => {
-    return import('@tabler/icons/camera-up.svg?react');
-  }),
-  'camera-x': lazy(() => {
-    return import('@tabler/icons/camera-x.svg?react');
-  }),
-  camera: lazy(() => {
-    return import('@tabler/icons/camera.svg?react');
-  }),
-  camper: lazy(() => {
-    return import('@tabler/icons/camper.svg?react');
-  }),
-  'campfire-filled': lazy(() => {
-    return import('@tabler/icons/campfire-filled.svg?react');
-  }),
-  campfire: lazy(() => {
-    return import('@tabler/icons/campfire.svg?react');
-  }),
-  'candle-filled': lazy(() => {
-    return import('@tabler/icons/candle-filled.svg?react');
-  }),
-  candle: lazy(() => {
-    return import('@tabler/icons/candle.svg?react');
-  }),
-  'candy-off': lazy(() => {
-    return import('@tabler/icons/candy-off.svg?react');
-  }),
-  candy: lazy(() => {
-    return import('@tabler/icons/candy.svg?react');
-  }),
-  cane: lazy(() => {
-    return import('@tabler/icons/cane.svg?react');
-  }),
-  cannabis: lazy(() => {
-    return import('@tabler/icons/cannabis.svg?react');
-  }),
-  'capsule-filled': lazy(() => {
-    return import('@tabler/icons/capsule-filled.svg?react');
-  }),
-  'capsule-horizontal-filled': lazy(() => {
-    return import('@tabler/icons/capsule-horizontal-filled.svg?react');
-  }),
-  'capsule-horizontal': lazy(() => {
-    return import('@tabler/icons/capsule-horizontal.svg?react');
-  }),
-  capsule: lazy(() => {
-    return import('@tabler/icons/capsule.svg?react');
-  }),
-  'capture-filled': lazy(() => {
-    return import('@tabler/icons/capture-filled.svg?react');
-  }),
-  'capture-off': lazy(() => {
-    return import('@tabler/icons/capture-off.svg?react');
-  }),
-  capture: lazy(() => {
-    return import('@tabler/icons/capture.svg?react');
-  }),
-  'car-crane': lazy(() => {
-    return import('@tabler/icons/car-crane.svg?react');
-  }),
-  'car-crash': lazy(() => {
-    return import('@tabler/icons/car-crash.svg?react');
-  }),
-  'car-garage': lazy(() => {
-    return import('@tabler/icons/car-garage.svg?react');
-  }),
-  'car-off': lazy(() => {
-    return import('@tabler/icons/car-off.svg?react');
-  }),
-  'car-suv': lazy(() => {
-    return import('@tabler/icons/car-suv.svg?react');
-  }),
-  'car-turbine': lazy(() => {
-    return import('@tabler/icons/car-turbine.svg?react');
-  }),
-  car: lazy(() => {
-    return import('@tabler/icons/car.svg?react');
-  }),
-  caravan: lazy(() => {
-    return import('@tabler/icons/caravan.svg?react');
-  }),
-  'cardboards-off': lazy(() => {
-    return import('@tabler/icons/cardboards-off.svg?react');
-  }),
-  cardboards: lazy(() => {
-    return import('@tabler/icons/cardboards.svg?react');
-  }),
-  'cards-filled': lazy(() => {
-    return import('@tabler/icons/cards-filled.svg?react');
-  }),
-  cards: lazy(() => {
-    return import('@tabler/icons/cards.svg?react');
-  }),
-  'caret-down-filled': lazy(() => {
-    return import('@tabler/icons/caret-down-filled.svg?react');
-  }),
-  'caret-down': lazy(() => {
-    return import('@tabler/icons/caret-down.svg?react');
-  }),
-  'caret-left-filled': lazy(() => {
-    return import('@tabler/icons/caret-left-filled.svg?react');
-  }),
-  'caret-left-right': lazy(() => {
-    return import('@tabler/icons/caret-left-right.svg?react');
-  }),
-  'caret-left': lazy(() => {
-    return import('@tabler/icons/caret-left.svg?react');
-  }),
-  'caret-right-filled': lazy(() => {
-    return import('@tabler/icons/caret-right-filled.svg?react');
-  }),
-  'caret-right': lazy(() => {
-    return import('@tabler/icons/caret-right.svg?react');
-  }),
-  'caret-up-down': lazy(() => {
-    return import('@tabler/icons/caret-up-down.svg?react');
-  }),
-  'caret-up-filled': lazy(() => {
-    return import('@tabler/icons/caret-up-filled.svg?react');
-  }),
-  'caret-up': lazy(() => {
-    return import('@tabler/icons/caret-up.svg?react');
-  }),
-  'carousel-horizontal-filled': lazy(() => {
-    return import('@tabler/icons/carousel-horizontal-filled.svg?react');
-  }),
-  'carousel-horizontal': lazy(() => {
-    return import('@tabler/icons/carousel-horizontal.svg?react');
-  }),
-  'carousel-vertical-filled': lazy(() => {
-    return import('@tabler/icons/carousel-vertical-filled.svg?react');
-  }),
-  'carousel-vertical': lazy(() => {
-    return import('@tabler/icons/carousel-vertical.svg?react');
-  }),
-  'carrot-off': lazy(() => {
-    return import('@tabler/icons/carrot-off.svg?react');
-  }),
-  carrot: lazy(() => {
-    return import('@tabler/icons/carrot.svg?react');
-  }),
-  'cash-banknote-off': lazy(() => {
-    return import('@tabler/icons/cash-banknote-off.svg?react');
-  }),
-  'cash-banknote': lazy(() => {
-    return import('@tabler/icons/cash-banknote.svg?react');
-  }),
-  'cash-off': lazy(() => {
-    return import('@tabler/icons/cash-off.svg?react');
-  }),
-  cash: lazy(() => {
-    return import('@tabler/icons/cash.svg?react');
-  }),
-  'cast-off': lazy(() => {
-    return import('@tabler/icons/cast-off.svg?react');
-  }),
-  cast: lazy(() => {
-    return import('@tabler/icons/cast.svg?react');
-  }),
-  cat: lazy(() => {
-    return import('@tabler/icons/cat.svg?react');
-  }),
-  'category-2': lazy(() => {
-    return import('@tabler/icons/category-2.svg?react');
-  }),
-  'category-filled': lazy(() => {
-    return import('@tabler/icons/category-filled.svg?react');
-  }),
-  category: lazy(() => {
-    return import('@tabler/icons/category.svg?react');
-  }),
-  'ce-off': lazy(() => {
-    return import('@tabler/icons/ce-off.svg?react');
-  }),
-  ce: lazy(() => {
-    return import('@tabler/icons/ce.svg?react');
-  }),
-  'cell-signal-1': lazy(() => {
-    return import('@tabler/icons/cell-signal-1.svg?react');
-  }),
-  'cell-signal-2': lazy(() => {
-    return import('@tabler/icons/cell-signal-2.svg?react');
-  }),
-  'cell-signal-3': lazy(() => {
-    return import('@tabler/icons/cell-signal-3.svg?react');
-  }),
-  'cell-signal-4': lazy(() => {
-    return import('@tabler/icons/cell-signal-4.svg?react');
-  }),
-  'cell-signal-5': lazy(() => {
-    return import('@tabler/icons/cell-signal-5.svg?react');
-  }),
-  'cell-signal-off': lazy(() => {
-    return import('@tabler/icons/cell-signal-off.svg?react');
-  }),
-  cell: lazy(() => {
-    return import('@tabler/icons/cell.svg?react');
-  }),
-  'certificate-2-off': lazy(() => {
-    return import('@tabler/icons/certificate-2-off.svg?react');
-  }),
-  'certificate-2': lazy(() => {
-    return import('@tabler/icons/certificate-2.svg?react');
-  }),
-  'certificate-off': lazy(() => {
-    return import('@tabler/icons/certificate-off.svg?react');
-  }),
-  certificate: lazy(() => {
-    return import('@tabler/icons/certificate.svg?react');
-  }),
-  'chair-director': lazy(() => {
-    return import('@tabler/icons/chair-director.svg?react');
-  }),
-  'chalkboard-off': lazy(() => {
-    return import('@tabler/icons/chalkboard-off.svg?react');
-  }),
-  chalkboard: lazy(() => {
-    return import('@tabler/icons/chalkboard.svg?react');
-  }),
-  'charging-pile': lazy(() => {
-    return import('@tabler/icons/charging-pile.svg?react');
-  }),
-  'chart-arcs-3': lazy(() => {
-    return import('@tabler/icons/chart-arcs-3.svg?react');
-  }),
-  'chart-arcs': lazy(() => {
-    return import('@tabler/icons/chart-arcs.svg?react');
-  }),
-  'chart-area-filled': lazy(() => {
-    return import('@tabler/icons/chart-area-filled.svg?react');
-  }),
-  'chart-area-line-filled': lazy(() => {
-    return import('@tabler/icons/chart-area-line-filled.svg?react');
-  }),
-  'chart-area-line': lazy(() => {
-    return import('@tabler/icons/chart-area-line.svg?react');
-  }),
-  'chart-area': lazy(() => {
-    return import('@tabler/icons/chart-area.svg?react');
-  }),
-  'chart-arrows-vertical': lazy(() => {
-    return import('@tabler/icons/chart-arrows-vertical.svg?react');
-  }),
-  'chart-arrows': lazy(() => {
-    return import('@tabler/icons/chart-arrows.svg?react');
-  }),
-  'chart-bar-off': lazy(() => {
-    return import('@tabler/icons/chart-bar-off.svg?react');
-  }),
-  'chart-bar': lazy(() => {
-    return import('@tabler/icons/chart-bar.svg?react');
-  }),
-  'chart-bubble-filled': lazy(() => {
-    return import('@tabler/icons/chart-bubble-filled.svg?react');
-  }),
-  'chart-bubble': lazy(() => {
-    return import('@tabler/icons/chart-bubble.svg?react');
-  }),
-  'chart-candle-filled': lazy(() => {
-    return import('@tabler/icons/chart-candle-filled.svg?react');
-  }),
-  'chart-candle': lazy(() => {
-    return import('@tabler/icons/chart-candle.svg?react');
-  }),
-  'chart-circles': lazy(() => {
-    return import('@tabler/icons/chart-circles.svg?react');
-  }),
-  'chart-donut-2': lazy(() => {
-    return import('@tabler/icons/chart-donut-2.svg?react');
-  }),
-  'chart-donut-3': lazy(() => {
-    return import('@tabler/icons/chart-donut-3.svg?react');
-  }),
-  'chart-donut-4': lazy(() => {
-    return import('@tabler/icons/chart-donut-4.svg?react');
-  }),
-  'chart-donut-filled': lazy(() => {
-    return import('@tabler/icons/chart-donut-filled.svg?react');
-  }),
-  'chart-donut': lazy(() => {
-    return import('@tabler/icons/chart-donut.svg?react');
-  }),
-  'chart-dots-2': lazy(() => {
-    return import('@tabler/icons/chart-dots-2.svg?react');
-  }),
-  'chart-dots-3': lazy(() => {
-    return import('@tabler/icons/chart-dots-3.svg?react');
-  }),
-  'chart-dots': lazy(() => {
-    return import('@tabler/icons/chart-dots.svg?react');
-  }),
-  'chart-grid-dots': lazy(() => {
-    return import('@tabler/icons/chart-grid-dots.svg?react');
-  }),
-  'chart-histogram': lazy(() => {
-    return import('@tabler/icons/chart-histogram.svg?react');
-  }),
-  'chart-infographic': lazy(() => {
-    return import('@tabler/icons/chart-infographic.svg?react');
-  }),
-  'chart-line': lazy(() => {
-    return import('@tabler/icons/chart-line.svg?react');
-  }),
-  'chart-pie-2': lazy(() => {
-    return import('@tabler/icons/chart-pie-2.svg?react');
-  }),
-  'chart-pie-3': lazy(() => {
-    return import('@tabler/icons/chart-pie-3.svg?react');
-  }),
-  'chart-pie-4': lazy(() => {
-    return import('@tabler/icons/chart-pie-4.svg?react');
-  }),
-  'chart-pie-filled': lazy(() => {
-    return import('@tabler/icons/chart-pie-filled.svg?react');
-  }),
-  'chart-pie-off': lazy(() => {
-    return import('@tabler/icons/chart-pie-off.svg?react');
-  }),
-  'chart-pie': lazy(() => {
-    return import('@tabler/icons/chart-pie.svg?react');
-  }),
-  'chart-ppf': lazy(() => {
-    return import('@tabler/icons/chart-ppf.svg?react');
-  }),
-  'chart-radar': lazy(() => {
-    return import('@tabler/icons/chart-radar.svg?react');
-  }),
-  'chart-sankey': lazy(() => {
-    return import('@tabler/icons/chart-sankey.svg?react');
-  }),
-  'chart-treemap': lazy(() => {
-    return import('@tabler/icons/chart-treemap.svg?react');
-  }),
-  check: lazy(() => {
-    return import('@tabler/icons/check.svg?react');
-  }),
-  checkbox: lazy(() => {
-    return import('@tabler/icons/checkbox.svg?react');
-  }),
-  checklist: lazy(() => {
-    return import('@tabler/icons/checklist.svg?react');
-  }),
-  checks: lazy(() => {
-    return import('@tabler/icons/checks.svg?react');
-  }),
-  'checkup-list': lazy(() => {
-    return import('@tabler/icons/checkup-list.svg?react');
-  }),
-  cheese: lazy(() => {
-    return import('@tabler/icons/cheese.svg?react');
-  }),
-  'chef-hat-off': lazy(() => {
-    return import('@tabler/icons/chef-hat-off.svg?react');
-  }),
-  'chef-hat': lazy(() => {
-    return import('@tabler/icons/chef-hat.svg?react');
-  }),
-  'cherry-filled': lazy(() => {
-    return import('@tabler/icons/cherry-filled.svg?react');
-  }),
-  cherry: lazy(() => {
-    return import('@tabler/icons/cherry.svg?react');
-  }),
-  'chess-bishop-filled': lazy(() => {
-    return import('@tabler/icons/chess-bishop-filled.svg?react');
-  }),
-  'chess-bishop': lazy(() => {
-    return import('@tabler/icons/chess-bishop.svg?react');
-  }),
-  'chess-filled': lazy(() => {
-    return import('@tabler/icons/chess-filled.svg?react');
-  }),
-  'chess-king-filled': lazy(() => {
-    return import('@tabler/icons/chess-king-filled.svg?react');
-  }),
-  'chess-king': lazy(() => {
-    return import('@tabler/icons/chess-king.svg?react');
-  }),
-  'chess-knight-filled': lazy(() => {
-    return import('@tabler/icons/chess-knight-filled.svg?react');
-  }),
-  'chess-knight': lazy(() => {
-    return import('@tabler/icons/chess-knight.svg?react');
-  }),
-  'chess-queen-filled': lazy(() => {
-    return import('@tabler/icons/chess-queen-filled.svg?react');
-  }),
-  'chess-queen': lazy(() => {
-    return import('@tabler/icons/chess-queen.svg?react');
-  }),
-  'chess-rook-filled': lazy(() => {
-    return import('@tabler/icons/chess-rook-filled.svg?react');
-  }),
-  'chess-rook': lazy(() => {
-    return import('@tabler/icons/chess-rook.svg?react');
-  }),
-  chess: lazy(() => {
-    return import('@tabler/icons/chess.svg?react');
-  }),
-  'chevron-compact-down': lazy(() => {
-    return import('@tabler/icons/chevron-compact-down.svg?react');
-  }),
-  'chevron-compact-left': lazy(() => {
-    return import('@tabler/icons/chevron-compact-left.svg?react');
-  }),
-  'chevron-compact-right': lazy(() => {
-    return import('@tabler/icons/chevron-compact-right.svg?react');
-  }),
-  'chevron-compact-up': lazy(() => {
-    return import('@tabler/icons/chevron-compact-up.svg?react');
-  }),
-  'chevron-down-left': lazy(() => {
-    return import('@tabler/icons/chevron-down-left.svg?react');
-  }),
-  'chevron-down-right': lazy(() => {
-    return import('@tabler/icons/chevron-down-right.svg?react');
-  }),
-  'chevron-down': lazy(() => {
-    return import('@tabler/icons/chevron-down.svg?react');
-  }),
-  'chevron-left-pipe': lazy(() => {
-    return import('@tabler/icons/chevron-left-pipe.svg?react');
-  }),
-  'chevron-left': lazy(() => {
-    return import('@tabler/icons/chevron-left.svg?react');
-  }),
-  'chevron-right-pipe': lazy(() => {
-    return import('@tabler/icons/chevron-right-pipe.svg?react');
-  }),
-  'chevron-right': lazy(() => {
-    return import('@tabler/icons/chevron-right.svg?react');
-  }),
-  'chevron-up-left': lazy(() => {
-    return import('@tabler/icons/chevron-up-left.svg?react');
-  }),
-  'chevron-up-right': lazy(() => {
-    return import('@tabler/icons/chevron-up-right.svg?react');
-  }),
-  'chevron-up': lazy(() => {
-    return import('@tabler/icons/chevron-up.svg?react');
-  }),
-  'chevrons-down-left': lazy(() => {
-    return import('@tabler/icons/chevrons-down-left.svg?react');
-  }),
-  'chevrons-down-right': lazy(() => {
-    return import('@tabler/icons/chevrons-down-right.svg?react');
-  }),
-  'chevrons-down': lazy(() => {
-    return import('@tabler/icons/chevrons-down.svg?react');
-  }),
-  'chevrons-left': lazy(() => {
-    return import('@tabler/icons/chevrons-left.svg?react');
-  }),
-  'chevrons-right': lazy(() => {
-    return import('@tabler/icons/chevrons-right.svg?react');
-  }),
-  'chevrons-up-left': lazy(() => {
-    return import('@tabler/icons/chevrons-up-left.svg?react');
-  }),
-  'chevrons-up-right': lazy(() => {
-    return import('@tabler/icons/chevrons-up-right.svg?react');
-  }),
-  'chevrons-up': lazy(() => {
-    return import('@tabler/icons/chevrons-up.svg?react');
-  }),
-  chisel: lazy(() => {
-    return import('@tabler/icons/chisel.svg?react');
-  }),
-  'christmas-tree-off': lazy(() => {
-    return import('@tabler/icons/christmas-tree-off.svg?react');
-  }),
-  'christmas-tree': lazy(() => {
-    return import('@tabler/icons/christmas-tree.svg?react');
-  }),
-  'circle-0-filled': lazy(() => {
-    return import('@tabler/icons/circle-0-filled.svg?react');
-  }),
-  'circle-1-filled': lazy(() => {
-    return import('@tabler/icons/circle-1-filled.svg?react');
-  }),
-  'circle-2-filled': lazy(() => {
-    return import('@tabler/icons/circle-2-filled.svg?react');
-  }),
-  'circle-3-filled': lazy(() => {
-    return import('@tabler/icons/circle-3-filled.svg?react');
-  }),
-  'circle-4-filled': lazy(() => {
-    return import('@tabler/icons/circle-4-filled.svg?react');
-  }),
-  'circle-5-filled': lazy(() => {
-    return import('@tabler/icons/circle-5-filled.svg?react');
-  }),
-  'circle-6-filled': lazy(() => {
-    return import('@tabler/icons/circle-6-filled.svg?react');
-  }),
-  'circle-7-filled': lazy(() => {
-    return import('@tabler/icons/circle-7-filled.svg?react');
-  }),
-  'circle-8-filled': lazy(() => {
-    return import('@tabler/icons/circle-8-filled.svg?react');
-  }),
-  'circle-9-filled': lazy(() => {
-    return import('@tabler/icons/circle-9-filled.svg?react');
-  }),
-  'circle-arrow-down-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-down-filled.svg?react');
-  }),
-  'circle-arrow-down-left-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-down-left-filled.svg?react');
-  }),
-  'circle-arrow-down-left': lazy(() => {
-    return import('@tabler/icons/circle-arrow-down-left.svg?react');
-  }),
-  'circle-arrow-down-right-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-down-right-filled.svg?react');
-  }),
-  'circle-arrow-down-right': lazy(() => {
-    return import('@tabler/icons/circle-arrow-down-right.svg?react');
-  }),
-  'circle-arrow-down': lazy(() => {
-    return import('@tabler/icons/circle-arrow-down.svg?react');
-  }),
-  'circle-arrow-left-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-left-filled.svg?react');
-  }),
-  'circle-arrow-left': lazy(() => {
-    return import('@tabler/icons/circle-arrow-left.svg?react');
-  }),
-  'circle-arrow-right-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-right-filled.svg?react');
-  }),
-  'circle-arrow-right': lazy(() => {
-    return import('@tabler/icons/circle-arrow-right.svg?react');
-  }),
-  'circle-arrow-up-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-up-filled.svg?react');
-  }),
-  'circle-arrow-up-left-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-up-left-filled.svg?react');
-  }),
-  'circle-arrow-up-left': lazy(() => {
-    return import('@tabler/icons/circle-arrow-up-left.svg?react');
-  }),
-  'circle-arrow-up-right-filled': lazy(() => {
-    return import('@tabler/icons/circle-arrow-up-right-filled.svg?react');
-  }),
-  'circle-arrow-up-right': lazy(() => {
-    return import('@tabler/icons/circle-arrow-up-right.svg?react');
-  }),
-  'circle-arrow-up': lazy(() => {
-    return import('@tabler/icons/circle-arrow-up.svg?react');
-  }),
-  'circle-caret-down': lazy(() => {
-    return import('@tabler/icons/circle-caret-down.svg?react');
-  }),
-  'circle-caret-left': lazy(() => {
-    return import('@tabler/icons/circle-caret-left.svg?react');
-  }),
-  'circle-caret-right': lazy(() => {
-    return import('@tabler/icons/circle-caret-right.svg?react');
-  }),
-  'circle-caret-up': lazy(() => {
-    return import('@tabler/icons/circle-caret-up.svg?react');
-  }),
-  'circle-check-filled': lazy(() => {
-    return import('@tabler/icons/circle-check-filled.svg?react');
-  }),
-  'circle-check': lazy(() => {
-    return import('@tabler/icons/circle-check.svg?react');
-  }),
-  'circle-chevron-down': lazy(() => {
-    return import('@tabler/icons/circle-chevron-down.svg?react');
-  }),
-  'circle-chevron-left': lazy(() => {
-    return import('@tabler/icons/circle-chevron-left.svg?react');
-  }),
-  'circle-chevron-right': lazy(() => {
-    return import('@tabler/icons/circle-chevron-right.svg?react');
-  }),
-  'circle-chevron-up': lazy(() => {
-    return import('@tabler/icons/circle-chevron-up.svg?react');
-  }),
-  'circle-chevrons-down': lazy(() => {
-    return import('@tabler/icons/circle-chevrons-down.svg?react');
-  }),
-  'circle-chevrons-left': lazy(() => {
-    return import('@tabler/icons/circle-chevrons-left.svg?react');
-  }),
-  'circle-chevrons-right': lazy(() => {
-    return import('@tabler/icons/circle-chevrons-right.svg?react');
-  }),
-  'circle-chevrons-up': lazy(() => {
-    return import('@tabler/icons/circle-chevrons-up.svg?react');
-  }),
-  'circle-dashed-number-0': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-0.svg?react');
-  }),
-  'circle-dashed-number-1': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-1.svg?react');
-  }),
-  'circle-dashed-number-2': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-2.svg?react');
-  }),
-  'circle-dashed-number-3': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-3.svg?react');
-  }),
-  'circle-dashed-number-4': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-4.svg?react');
-  }),
-  'circle-dashed-number-5': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-5.svg?react');
-  }),
-  'circle-dashed-number-6': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-6.svg?react');
-  }),
-  'circle-dashed-number-7': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-7.svg?react');
-  }),
-  'circle-dashed-number-8': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-8.svg?react');
-  }),
-  'circle-dashed-number-9': lazy(() => {
-    return import('@tabler/icons/circle-dashed-number-9.svg?react');
-  }),
-  'circle-dashed-x': lazy(() => {
-    return import('@tabler/icons/circle-dashed-x.svg?react');
-  }),
-  'circle-dashed': lazy(() => {
-    return import('@tabler/icons/circle-dashed.svg?react');
-  }),
-  'circle-dot-filled': lazy(() => {
-    return import('@tabler/icons/circle-dot-filled.svg?react');
-  }),
-  'circle-dot': lazy(() => {
-    return import('@tabler/icons/circle-dot.svg?react');
-  }),
-  'circle-dotted': lazy(() => {
-    return import('@tabler/icons/circle-dotted.svg?react');
-  }),
-  'circle-filled': lazy(() => {
-    return import('@tabler/icons/circle-filled.svg?react');
-  }),
-  'circle-half-2': lazy(() => {
-    return import('@tabler/icons/circle-half-2.svg?react');
-  }),
-  'circle-half-vertical': lazy(() => {
-    return import('@tabler/icons/circle-half-vertical.svg?react');
-  }),
-  'circle-half': lazy(() => {
-    return import('@tabler/icons/circle-half.svg?react');
-  }),
-  'circle-key-filled': lazy(() => {
-    return import('@tabler/icons/circle-key-filled.svg?react');
-  }),
-  'circle-key': lazy(() => {
-    return import('@tabler/icons/circle-key.svg?react');
-  }),
-  'circle-letter-a': lazy(() => {
-    return import('@tabler/icons/circle-letter-a.svg?react');
-  }),
-  'circle-letter-b': lazy(() => {
-    return import('@tabler/icons/circle-letter-b.svg?react');
-  }),
-  'circle-letter-c': lazy(() => {
-    return import('@tabler/icons/circle-letter-c.svg?react');
-  }),
-  'circle-letter-d': lazy(() => {
-    return import('@tabler/icons/circle-letter-d.svg?react');
-  }),
-  'circle-letter-e': lazy(() => {
-    return import('@tabler/icons/circle-letter-e.svg?react');
-  }),
-  'circle-letter-f': lazy(() => {
-    return import('@tabler/icons/circle-letter-f.svg?react');
-  }),
-  'circle-letter-g': lazy(() => {
-    return import('@tabler/icons/circle-letter-g.svg?react');
-  }),
-  'circle-letter-h': lazy(() => {
-    return import('@tabler/icons/circle-letter-h.svg?react');
-  }),
-  'circle-letter-i': lazy(() => {
-    return import('@tabler/icons/circle-letter-i.svg?react');
-  }),
-  'circle-letter-j': lazy(() => {
-    return import('@tabler/icons/circle-letter-j.svg?react');
-  }),
-  'circle-letter-k': lazy(() => {
-    return import('@tabler/icons/circle-letter-k.svg?react');
-  }),
-  'circle-letter-l': lazy(() => {
-    return import('@tabler/icons/circle-letter-l.svg?react');
-  }),
-  'circle-letter-m': lazy(() => {
-    return import('@tabler/icons/circle-letter-m.svg?react');
-  }),
-  'circle-letter-n': lazy(() => {
-    return import('@tabler/icons/circle-letter-n.svg?react');
-  }),
-  'circle-letter-o': lazy(() => {
-    return import('@tabler/icons/circle-letter-o.svg?react');
-  }),
-  'circle-letter-p': lazy(() => {
-    return import('@tabler/icons/circle-letter-p.svg?react');
-  }),
-  'circle-letter-q': lazy(() => {
-    return import('@tabler/icons/circle-letter-q.svg?react');
-  }),
-  'circle-letter-r': lazy(() => {
-    return import('@tabler/icons/circle-letter-r.svg?react');
-  }),
-  'circle-letter-s': lazy(() => {
-    return import('@tabler/icons/circle-letter-s.svg?react');
-  }),
-  'circle-letter-t': lazy(() => {
-    return import('@tabler/icons/circle-letter-t.svg?react');
-  }),
-  'circle-letter-u': lazy(() => {
-    return import('@tabler/icons/circle-letter-u.svg?react');
-  }),
-  'circle-letter-v': lazy(() => {
-    return import('@tabler/icons/circle-letter-v.svg?react');
-  }),
-  'circle-letter-w': lazy(() => {
-    return import('@tabler/icons/circle-letter-w.svg?react');
-  }),
-  'circle-letter-x': lazy(() => {
-    return import('@tabler/icons/circle-letter-x.svg?react');
-  }),
-  'circle-letter-y': lazy(() => {
-    return import('@tabler/icons/circle-letter-y.svg?react');
-  }),
-  'circle-letter-z': lazy(() => {
-    return import('@tabler/icons/circle-letter-z.svg?react');
-  }),
-  'circle-minus-2': lazy(() => {
-    return import('@tabler/icons/circle-minus-2.svg?react');
-  }),
-  'circle-minus': lazy(() => {
-    return import('@tabler/icons/circle-minus.svg?react');
-  }),
-  'circle-number-0': lazy(() => {
-    return import('@tabler/icons/circle-number-0.svg?react');
-  }),
-  'circle-number-1': lazy(() => {
-    return import('@tabler/icons/circle-number-1.svg?react');
-  }),
-  'circle-number-2': lazy(() => {
-    return import('@tabler/icons/circle-number-2.svg?react');
-  }),
-  'circle-number-3': lazy(() => {
-    return import('@tabler/icons/circle-number-3.svg?react');
-  }),
-  'circle-number-4': lazy(() => {
-    return import('@tabler/icons/circle-number-4.svg?react');
-  }),
-  'circle-number-5': lazy(() => {
-    return import('@tabler/icons/circle-number-5.svg?react');
-  }),
-  'circle-number-6': lazy(() => {
-    return import('@tabler/icons/circle-number-6.svg?react');
-  }),
-  'circle-number-7': lazy(() => {
-    return import('@tabler/icons/circle-number-7.svg?react');
-  }),
-  'circle-number-8': lazy(() => {
-    return import('@tabler/icons/circle-number-8.svg?react');
-  }),
-  'circle-number-9': lazy(() => {
-    return import('@tabler/icons/circle-number-9.svg?react');
-  }),
-  'circle-off': lazy(() => {
-    return import('@tabler/icons/circle-off.svg?react');
-  }),
-  'circle-plus-2': lazy(() => {
-    return import('@tabler/icons/circle-plus-2.svg?react');
-  }),
-  'circle-plus': lazy(() => {
-    return import('@tabler/icons/circle-plus.svg?react');
-  }),
-  'circle-rectangle-off': lazy(() => {
-    return import('@tabler/icons/circle-rectangle-off.svg?react');
-  }),
-  'circle-rectangle': lazy(() => {
-    return import('@tabler/icons/circle-rectangle.svg?react');
-  }),
-  'circle-square': lazy(() => {
-    return import('@tabler/icons/circle-square.svg?react');
-  }),
-  'circle-triangle': lazy(() => {
-    return import('@tabler/icons/circle-triangle.svg?react');
-  }),
-  'circle-x-filled': lazy(() => {
-    return import('@tabler/icons/circle-x-filled.svg?react');
-  }),
-  'circle-x': lazy(() => {
-    return import('@tabler/icons/circle-x.svg?react');
-  }),
-  circle: lazy(() => {
-    return import('@tabler/icons/circle.svg?react');
-  }),
-  'circles-filled': lazy(() => {
-    return import('@tabler/icons/circles-filled.svg?react');
-  }),
-  'circles-relation': lazy(() => {
-    return import('@tabler/icons/circles-relation.svg?react');
-  }),
-  circles: lazy(() => {
-    return import('@tabler/icons/circles.svg?react');
-  }),
-  'circuit-ammeter': lazy(() => {
-    return import('@tabler/icons/circuit-ammeter.svg?react');
-  }),
-  'circuit-battery': lazy(() => {
-    return import('@tabler/icons/circuit-battery.svg?react');
-  }),
-  'circuit-bulb': lazy(() => {
-    return import('@tabler/icons/circuit-bulb.svg?react');
-  }),
-  'circuit-capacitor-polarized': lazy(() => {
-    return import('@tabler/icons/circuit-capacitor-polarized.svg?react');
-  }),
-  'circuit-capacitor': lazy(() => {
-    return import('@tabler/icons/circuit-capacitor.svg?react');
-  }),
-  'circuit-cell-plus': lazy(() => {
-    return import('@tabler/icons/circuit-cell-plus.svg?react');
-  }),
-  'circuit-cell': lazy(() => {
-    return import('@tabler/icons/circuit-cell.svg?react');
-  }),
-  'circuit-changeover': lazy(() => {
-    return import('@tabler/icons/circuit-changeover.svg?react');
-  }),
-  'circuit-diode-zener': lazy(() => {
-    return import('@tabler/icons/circuit-diode-zener.svg?react');
-  }),
-  'circuit-diode': lazy(() => {
-    return import('@tabler/icons/circuit-diode.svg?react');
-  }),
-  'circuit-ground-digital': lazy(() => {
-    return import('@tabler/icons/circuit-ground-digital.svg?react');
-  }),
-  'circuit-ground': lazy(() => {
-    return import('@tabler/icons/circuit-ground.svg?react');
-  }),
-  'circuit-inductor': lazy(() => {
-    return import('@tabler/icons/circuit-inductor.svg?react');
-  }),
-  'circuit-motor': lazy(() => {
-    return import('@tabler/icons/circuit-motor.svg?react');
-  }),
-  'circuit-pushbutton': lazy(() => {
-    return import('@tabler/icons/circuit-pushbutton.svg?react');
-  }),
-  'circuit-resistor': lazy(() => {
-    return import('@tabler/icons/circuit-resistor.svg?react');
-  }),
-  'circuit-switch-closed': lazy(() => {
-    return import('@tabler/icons/circuit-switch-closed.svg?react');
-  }),
-  'circuit-switch-open': lazy(() => {
-    return import('@tabler/icons/circuit-switch-open.svg?react');
-  }),
-  'circuit-voltmeter': lazy(() => {
-    return import('@tabler/icons/circuit-voltmeter.svg?react');
-  }),
-  'clear-all': lazy(() => {
-    return import('@tabler/icons/clear-all.svg?react');
-  }),
-  'clear-formatting': lazy(() => {
-    return import('@tabler/icons/clear-formatting.svg?react');
-  }),
-  click: lazy(() => {
-    return import('@tabler/icons/click.svg?react');
-  }),
-  'clipboard-check': lazy(() => {
-    return import('@tabler/icons/clipboard-check.svg?react');
-  }),
-  'clipboard-copy': lazy(() => {
-    return import('@tabler/icons/clipboard-copy.svg?react');
-  }),
-  'clipboard-data': lazy(() => {
-    return import('@tabler/icons/clipboard-data.svg?react');
-  }),
-  'clipboard-heart': lazy(() => {
-    return import('@tabler/icons/clipboard-heart.svg?react');
-  }),
-  'clipboard-list': lazy(() => {
-    return import('@tabler/icons/clipboard-list.svg?react');
-  }),
-  'clipboard-off': lazy(() => {
-    return import('@tabler/icons/clipboard-off.svg?react');
-  }),
-  'clipboard-plus': lazy(() => {
-    return import('@tabler/icons/clipboard-plus.svg?react');
-  }),
-  'clipboard-text': lazy(() => {
-    return import('@tabler/icons/clipboard-text.svg?react');
-  }),
-  'clipboard-typography': lazy(() => {
-    return import('@tabler/icons/clipboard-typography.svg?react');
-  }),
-  'clipboard-x': lazy(() => {
-    return import('@tabler/icons/clipboard-x.svg?react');
-  }),
-  clipboard: lazy(() => {
-    return import('@tabler/icons/clipboard.svg?react');
-  }),
-  'clock-12': lazy(() => {
-    return import('@tabler/icons/clock-12.svg?react');
-  }),
-  'clock-2': lazy(() => {
-    return import('@tabler/icons/clock-2.svg?react');
-  }),
-  'clock-24': lazy(() => {
-    return import('@tabler/icons/clock-24.svg?react');
-  }),
-  'clock-bolt': lazy(() => {
-    return import('@tabler/icons/clock-bolt.svg?react');
-  }),
-  'clock-cancel': lazy(() => {
-    return import('@tabler/icons/clock-cancel.svg?react');
-  }),
-  'clock-check': lazy(() => {
-    return import('@tabler/icons/clock-check.svg?react');
-  }),
-  'clock-code': lazy(() => {
-    return import('@tabler/icons/clock-code.svg?react');
-  }),
-  'clock-cog': lazy(() => {
-    return import('@tabler/icons/clock-cog.svg?react');
-  }),
-  'clock-dollar': lazy(() => {
-    return import('@tabler/icons/clock-dollar.svg?react');
-  }),
-  'clock-down': lazy(() => {
-    return import('@tabler/icons/clock-down.svg?react');
-  }),
-  'clock-edit': lazy(() => {
-    return import('@tabler/icons/clock-edit.svg?react');
-  }),
-  'clock-exclamation': lazy(() => {
-    return import('@tabler/icons/clock-exclamation.svg?react');
-  }),
-  'clock-filled': lazy(() => {
-    return import('@tabler/icons/clock-filled.svg?react');
-  }),
-  'clock-heart': lazy(() => {
-    return import('@tabler/icons/clock-heart.svg?react');
-  }),
-  'clock-hour-1': lazy(() => {
-    return import('@tabler/icons/clock-hour-1.svg?react');
-  }),
-  'clock-hour-10': lazy(() => {
-    return import('@tabler/icons/clock-hour-10.svg?react');
-  }),
-  'clock-hour-11': lazy(() => {
-    return import('@tabler/icons/clock-hour-11.svg?react');
-  }),
-  'clock-hour-12': lazy(() => {
-    return import('@tabler/icons/clock-hour-12.svg?react');
-  }),
-  'clock-hour-2': lazy(() => {
-    return import('@tabler/icons/clock-hour-2.svg?react');
-  }),
-  'clock-hour-3': lazy(() => {
-    return import('@tabler/icons/clock-hour-3.svg?react');
-  }),
-  'clock-hour-4': lazy(() => {
-    return import('@tabler/icons/clock-hour-4.svg?react');
-  }),
-  'clock-hour-5': lazy(() => {
-    return import('@tabler/icons/clock-hour-5.svg?react');
-  }),
-  'clock-hour-6': lazy(() => {
-    return import('@tabler/icons/clock-hour-6.svg?react');
-  }),
-  'clock-hour-7': lazy(() => {
-    return import('@tabler/icons/clock-hour-7.svg?react');
-  }),
-  'clock-hour-8': lazy(() => {
-    return import('@tabler/icons/clock-hour-8.svg?react');
-  }),
-  'clock-hour-9': lazy(() => {
-    return import('@tabler/icons/clock-hour-9.svg?react');
-  }),
-  'clock-minus': lazy(() => {
-    return import('@tabler/icons/clock-minus.svg?react');
-  }),
-  'clock-off': lazy(() => {
-    return import('@tabler/icons/clock-off.svg?react');
-  }),
-  'clock-pause': lazy(() => {
-    return import('@tabler/icons/clock-pause.svg?react');
-  }),
-  'clock-pin': lazy(() => {
-    return import('@tabler/icons/clock-pin.svg?react');
-  }),
-  'clock-play': lazy(() => {
-    return import('@tabler/icons/clock-play.svg?react');
-  }),
-  'clock-plus': lazy(() => {
-    return import('@tabler/icons/clock-plus.svg?react');
-  }),
-  'clock-question': lazy(() => {
-    return import('@tabler/icons/clock-question.svg?react');
-  }),
-  'clock-record': lazy(() => {
-    return import('@tabler/icons/clock-record.svg?react');
-  }),
-  'clock-search': lazy(() => {
-    return import('@tabler/icons/clock-search.svg?react');
-  }),
-  'clock-share': lazy(() => {
-    return import('@tabler/icons/clock-share.svg?react');
-  }),
-  'clock-shield': lazy(() => {
-    return import('@tabler/icons/clock-shield.svg?react');
-  }),
-  'clock-star': lazy(() => {
-    return import('@tabler/icons/clock-star.svg?react');
-  }),
-  'clock-stop': lazy(() => {
-    return import('@tabler/icons/clock-stop.svg?react');
-  }),
-  'clock-up': lazy(() => {
-    return import('@tabler/icons/clock-up.svg?react');
-  }),
-  'clock-x': lazy(() => {
-    return import('@tabler/icons/clock-x.svg?react');
-  }),
-  clock: lazy(() => {
-    return import('@tabler/icons/clock.svg?react');
-  }),
-  'clothes-rack-off': lazy(() => {
-    return import('@tabler/icons/clothes-rack-off.svg?react');
-  }),
-  'clothes-rack': lazy(() => {
-    return import('@tabler/icons/clothes-rack.svg?react');
-  }),
-  'cloud-bolt': lazy(() => {
-    return import('@tabler/icons/cloud-bolt.svg?react');
-  }),
-  'cloud-cancel': lazy(() => {
-    return import('@tabler/icons/cloud-cancel.svg?react');
-  }),
-  'cloud-check': lazy(() => {
-    return import('@tabler/icons/cloud-check.svg?react');
-  }),
-  'cloud-code': lazy(() => {
-    return import('@tabler/icons/cloud-code.svg?react');
-  }),
-  'cloud-cog': lazy(() => {
-    return import('@tabler/icons/cloud-cog.svg?react');
-  }),
-  'cloud-computing': lazy(() => {
-    return import('@tabler/icons/cloud-computing.svg?react');
-  }),
-  'cloud-data-connection': lazy(() => {
-    return import('@tabler/icons/cloud-data-connection.svg?react');
-  }),
-  'cloud-dollar': lazy(() => {
-    return import('@tabler/icons/cloud-dollar.svg?react');
-  }),
-  'cloud-down': lazy(() => {
-    return import('@tabler/icons/cloud-down.svg?react');
-  }),
-  'cloud-download': lazy(() => {
-    return import('@tabler/icons/cloud-download.svg?react');
-  }),
-  'cloud-exclamation': lazy(() => {
-    return import('@tabler/icons/cloud-exclamation.svg?react');
-  }),
-  'cloud-filled': lazy(() => {
-    return import('@tabler/icons/cloud-filled.svg?react');
-  }),
-  'cloud-fog': lazy(() => {
-    return import('@tabler/icons/cloud-fog.svg?react');
-  }),
-  'cloud-heart': lazy(() => {
-    return import('@tabler/icons/cloud-heart.svg?react');
-  }),
-  'cloud-lock-open': lazy(() => {
-    return import('@tabler/icons/cloud-lock-open.svg?react');
-  }),
-  'cloud-lock': lazy(() => {
-    return import('@tabler/icons/cloud-lock.svg?react');
-  }),
-  'cloud-minus': lazy(() => {
-    return import('@tabler/icons/cloud-minus.svg?react');
-  }),
-  'cloud-network': lazy(() => {
-    return import('@tabler/icons/cloud-network.svg?react');
-  }),
-  'cloud-off': lazy(() => {
-    return import('@tabler/icons/cloud-off.svg?react');
-  }),
-  'cloud-pause': lazy(() => {
-    return import('@tabler/icons/cloud-pause.svg?react');
-  }),
-  'cloud-pin': lazy(() => {
-    return import('@tabler/icons/cloud-pin.svg?react');
-  }),
-  'cloud-plus': lazy(() => {
-    return import('@tabler/icons/cloud-plus.svg?react');
-  }),
-  'cloud-question': lazy(() => {
-    return import('@tabler/icons/cloud-question.svg?react');
-  }),
-  'cloud-rain': lazy(() => {
-    return import('@tabler/icons/cloud-rain.svg?react');
-  }),
-  'cloud-search': lazy(() => {
-    return import('@tabler/icons/cloud-search.svg?react');
-  }),
-  'cloud-share': lazy(() => {
-    return import('@tabler/icons/cloud-share.svg?react');
-  }),
-  'cloud-snow': lazy(() => {
-    return import('@tabler/icons/cloud-snow.svg?react');
-  }),
-  'cloud-star': lazy(() => {
-    return import('@tabler/icons/cloud-star.svg?react');
-  }),
-  'cloud-storm': lazy(() => {
-    return import('@tabler/icons/cloud-storm.svg?react');
-  }),
-  'cloud-up': lazy(() => {
-    return import('@tabler/icons/cloud-up.svg?react');
-  }),
-  'cloud-upload': lazy(() => {
-    return import('@tabler/icons/cloud-upload.svg?react');
-  }),
-  'cloud-x': lazy(() => {
-    return import('@tabler/icons/cloud-x.svg?react');
-  }),
-  cloud: lazy(() => {
-    return import('@tabler/icons/cloud.svg?react');
-  }),
-  'clover-2': lazy(() => {
-    return import('@tabler/icons/clover-2.svg?react');
-  }),
-  clover: lazy(() => {
-    return import('@tabler/icons/clover.svg?react');
-  }),
-  'clubs-filled': lazy(() => {
-    return import('@tabler/icons/clubs-filled.svg?react');
-  }),
-  clubs: lazy(() => {
-    return import('@tabler/icons/clubs.svg?react');
-  }),
-  'code-asterix': lazy(() => {
-    return import('@tabler/icons/code-asterix.svg?react');
-  }),
-  'code-circle-2': lazy(() => {
-    return import('@tabler/icons/code-circle-2.svg?react');
-  }),
-  'code-circle': lazy(() => {
-    return import('@tabler/icons/code-circle.svg?react');
-  }),
-  'code-dots': lazy(() => {
-    return import('@tabler/icons/code-dots.svg?react');
-  }),
-  'code-minus': lazy(() => {
-    return import('@tabler/icons/code-minus.svg?react');
-  }),
-  'code-off': lazy(() => {
-    return import('@tabler/icons/code-off.svg?react');
-  }),
-  'code-plus': lazy(() => {
-    return import('@tabler/icons/code-plus.svg?react');
-  }),
-  code: lazy(() => {
-    return import('@tabler/icons/code.svg?react');
-  }),
-  'coffee-off': lazy(() => {
-    return import('@tabler/icons/coffee-off.svg?react');
-  }),
-  coffee: lazy(() => {
-    return import('@tabler/icons/coffee.svg?react');
-  }),
-  coffin: lazy(() => {
-    return import('@tabler/icons/coffin.svg?react');
-  }),
-  'coin-bitcoin': lazy(() => {
-    return import('@tabler/icons/coin-bitcoin.svg?react');
-  }),
-  'coin-euro': lazy(() => {
-    return import('@tabler/icons/coin-euro.svg?react');
-  }),
-  'coin-monero': lazy(() => {
-    return import('@tabler/icons/coin-monero.svg?react');
-  }),
-  'coin-off': lazy(() => {
-    return import('@tabler/icons/coin-off.svg?react');
-  }),
-  'coin-pound': lazy(() => {
-    return import('@tabler/icons/coin-pound.svg?react');
-  }),
-  'coin-rupee': lazy(() => {
-    return import('@tabler/icons/coin-rupee.svg?react');
-  }),
-  'coin-yen': lazy(() => {
-    return import('@tabler/icons/coin-yen.svg?react');
-  }),
-  'coin-yuan': lazy(() => {
-    return import('@tabler/icons/coin-yuan.svg?react');
-  }),
-  coin: lazy(() => {
-    return import('@tabler/icons/coin.svg?react');
-  }),
-  coins: lazy(() => {
-    return import('@tabler/icons/coins.svg?react');
-  }),
-  'color-filter': lazy(() => {
-    return import('@tabler/icons/color-filter.svg?react');
-  }),
-  'color-picker-off': lazy(() => {
-    return import('@tabler/icons/color-picker-off.svg?react');
-  }),
-  'color-picker': lazy(() => {
-    return import('@tabler/icons/color-picker.svg?react');
-  }),
-  'color-swatch-off': lazy(() => {
-    return import('@tabler/icons/color-swatch-off.svg?react');
-  }),
-  'color-swatch': lazy(() => {
-    return import('@tabler/icons/color-swatch.svg?react');
-  }),
-  'column-insert-left': lazy(() => {
-    return import('@tabler/icons/column-insert-left.svg?react');
-  }),
-  'column-insert-right': lazy(() => {
-    return import('@tabler/icons/column-insert-right.svg?react');
-  }),
-  'column-remove': lazy(() => {
-    return import('@tabler/icons/column-remove.svg?react');
-  }),
-  'columns-1': lazy(() => {
-    return import('@tabler/icons/columns-1.svg?react');
-  }),
-  'columns-2': lazy(() => {
-    return import('@tabler/icons/columns-2.svg?react');
-  }),
-  'columns-3': lazy(() => {
-    return import('@tabler/icons/columns-3.svg?react');
-  }),
-  'columns-off': lazy(() => {
-    return import('@tabler/icons/columns-off.svg?react');
-  }),
-  columns: lazy(() => {
-    return import('@tabler/icons/columns.svg?react');
-  }),
-  comet: lazy(() => {
-    return import('@tabler/icons/comet.svg?react');
-  }),
-  'command-off': lazy(() => {
-    return import('@tabler/icons/command-off.svg?react');
-  }),
-  command: lazy(() => {
-    return import('@tabler/icons/command.svg?react');
-  }),
-  'compass-off': lazy(() => {
-    return import('@tabler/icons/compass-off.svg?react');
-  }),
-  compass: lazy(() => {
-    return import('@tabler/icons/compass.svg?react');
-  }),
-  'components-off': lazy(() => {
-    return import('@tabler/icons/components-off.svg?react');
-  }),
-  components: lazy(() => {
-    return import('@tabler/icons/components.svg?react');
-  }),
-  'cone-2': lazy(() => {
-    return import('@tabler/icons/cone-2.svg?react');
-  }),
-  'cone-off': lazy(() => {
-    return import('@tabler/icons/cone-off.svg?react');
-  }),
-  'cone-plus': lazy(() => {
-    return import('@tabler/icons/cone-plus.svg?react');
-  }),
-  cone: lazy(() => {
-    return import('@tabler/icons/cone.svg?react');
-  }),
-  'confetti-off': lazy(() => {
-    return import('@tabler/icons/confetti-off.svg?react');
-  }),
-  confetti: lazy(() => {
-    return import('@tabler/icons/confetti.svg?react');
-  }),
-  confucius: lazy(() => {
-    return import('@tabler/icons/confucius.svg?react');
-  }),
-  'container-off': lazy(() => {
-    return import('@tabler/icons/container-off.svg?react');
-  }),
-  container: lazy(() => {
-    return import('@tabler/icons/container.svg?react');
-  }),
-  'contrast-2-off': lazy(() => {
-    return import('@tabler/icons/contrast-2-off.svg?react');
-  }),
-  'contrast-2': lazy(() => {
-    return import('@tabler/icons/contrast-2.svg?react');
-  }),
-  'contrast-off': lazy(() => {
-    return import('@tabler/icons/contrast-off.svg?react');
-  }),
-  contrast: lazy(() => {
-    return import('@tabler/icons/contrast.svg?react');
-  }),
-  cooker: lazy(() => {
-    return import('@tabler/icons/cooker.svg?react');
-  }),
-  'cookie-man': lazy(() => {
-    return import('@tabler/icons/cookie-man.svg?react');
-  }),
-  'cookie-off': lazy(() => {
-    return import('@tabler/icons/cookie-off.svg?react');
-  }),
-  cookie: lazy(() => {
-    return import('@tabler/icons/cookie.svg?react');
-  }),
-  'copy-off': lazy(() => {
-    return import('@tabler/icons/copy-off.svg?react');
-  }),
-  copy: lazy(() => {
-    return import('@tabler/icons/copy.svg?react');
-  }),
-  'copyleft-filled': lazy(() => {
-    return import('@tabler/icons/copyleft-filled.svg?react');
-  }),
-  'copyleft-off': lazy(() => {
-    return import('@tabler/icons/copyleft-off.svg?react');
-  }),
-  copyleft: lazy(() => {
-    return import('@tabler/icons/copyleft.svg?react');
-  }),
-  'copyright-filled': lazy(() => {
-    return import('@tabler/icons/copyright-filled.svg?react');
-  }),
-  'copyright-off': lazy(() => {
-    return import('@tabler/icons/copyright-off.svg?react');
-  }),
-  copyright: lazy(() => {
-    return import('@tabler/icons/copyright.svg?react');
-  }),
-  'corner-down-left-double': lazy(() => {
-    return import('@tabler/icons/corner-down-left-double.svg?react');
-  }),
-  'corner-down-left': lazy(() => {
-    return import('@tabler/icons/corner-down-left.svg?react');
-  }),
-  'corner-down-right-double': lazy(() => {
-    return import('@tabler/icons/corner-down-right-double.svg?react');
-  }),
-  'corner-down-right': lazy(() => {
-    return import('@tabler/icons/corner-down-right.svg?react');
-  }),
-  'corner-left-down-double': lazy(() => {
-    return import('@tabler/icons/corner-left-down-double.svg?react');
-  }),
-  'corner-left-down': lazy(() => {
-    return import('@tabler/icons/corner-left-down.svg?react');
-  }),
-  'corner-left-up-double': lazy(() => {
-    return import('@tabler/icons/corner-left-up-double.svg?react');
-  }),
-  'corner-left-up': lazy(() => {
-    return import('@tabler/icons/corner-left-up.svg?react');
-  }),
-  'corner-right-down-double': lazy(() => {
-    return import('@tabler/icons/corner-right-down-double.svg?react');
-  }),
-  'corner-right-down': lazy(() => {
-    return import('@tabler/icons/corner-right-down.svg?react');
-  }),
-  'corner-right-up-double': lazy(() => {
-    return import('@tabler/icons/corner-right-up-double.svg?react');
-  }),
-  'corner-right-up': lazy(() => {
-    return import('@tabler/icons/corner-right-up.svg?react');
-  }),
-  'corner-up-left-double': lazy(() => {
-    return import('@tabler/icons/corner-up-left-double.svg?react');
-  }),
-  'corner-up-left': lazy(() => {
-    return import('@tabler/icons/corner-up-left.svg?react');
-  }),
-  'corner-up-right-double': lazy(() => {
-    return import('@tabler/icons/corner-up-right-double.svg?react');
-  }),
-  'corner-up-right': lazy(() => {
-    return import('@tabler/icons/corner-up-right.svg?react');
-  }),
-  'cpu-2': lazy(() => {
-    return import('@tabler/icons/cpu-2.svg?react');
-  }),
-  'cpu-off': lazy(() => {
-    return import('@tabler/icons/cpu-off.svg?react');
-  }),
-  cpu: lazy(() => {
-    return import('@tabler/icons/cpu.svg?react');
-  }),
-  'crane-off': lazy(() => {
-    return import('@tabler/icons/crane-off.svg?react');
-  }),
-  crane: lazy(() => {
-    return import('@tabler/icons/crane.svg?react');
-  }),
-  'creative-commons-by': lazy(() => {
-    return import('@tabler/icons/creative-commons-by.svg?react');
-  }),
-  'creative-commons-nc': lazy(() => {
-    return import('@tabler/icons/creative-commons-nc.svg?react');
-  }),
-  'creative-commons-nd': lazy(() => {
-    return import('@tabler/icons/creative-commons-nd.svg?react');
-  }),
-  'creative-commons-off': lazy(() => {
-    return import('@tabler/icons/creative-commons-off.svg?react');
-  }),
-  'creative-commons-sa': lazy(() => {
-    return import('@tabler/icons/creative-commons-sa.svg?react');
-  }),
-  'creative-commons-zero': lazy(() => {
-    return import('@tabler/icons/creative-commons-zero.svg?react');
-  }),
-  'creative-commons': lazy(() => {
-    return import('@tabler/icons/creative-commons.svg?react');
-  }),
-  'credit-card-off': lazy(() => {
-    return import('@tabler/icons/credit-card-off.svg?react');
-  }),
-  'credit-card': lazy(() => {
-    return import('@tabler/icons/credit-card.svg?react');
-  }),
-  cricket: lazy(() => {
-    return import('@tabler/icons/cricket.svg?react');
-  }),
-  crop: lazy(() => {
-    return import('@tabler/icons/crop.svg?react');
-  }),
-  'cross-filled': lazy(() => {
-    return import('@tabler/icons/cross-filled.svg?react');
-  }),
-  'cross-off': lazy(() => {
-    return import('@tabler/icons/cross-off.svg?react');
-  }),
-  cross: lazy(() => {
-    return import('@tabler/icons/cross.svg?react');
-  }),
-  crosshair: lazy(() => {
-    return import('@tabler/icons/crosshair.svg?react');
-  }),
-  'crown-off': lazy(() => {
-    return import('@tabler/icons/crown-off.svg?react');
-  }),
-  crown: lazy(() => {
-    return import('@tabler/icons/crown.svg?react');
-  }),
-  'crutches-off': lazy(() => {
-    return import('@tabler/icons/crutches-off.svg?react');
-  }),
-  crutches: lazy(() => {
-    return import('@tabler/icons/crutches.svg?react');
-  }),
-  'crystal-ball': lazy(() => {
-    return import('@tabler/icons/crystal-ball.svg?react');
-  }),
-  csv: lazy(() => {
-    return import('@tabler/icons/csv.svg?react');
-  }),
-  'cube-off': lazy(() => {
-    return import('@tabler/icons/cube-off.svg?react');
-  }),
-  'cube-plus': lazy(() => {
-    return import('@tabler/icons/cube-plus.svg?react');
-  }),
-  'cube-send': lazy(() => {
-    return import('@tabler/icons/cube-send.svg?react');
-  }),
-  'cube-unfolded': lazy(() => {
-    return import('@tabler/icons/cube-unfolded.svg?react');
-  }),
-  cube: lazy(() => {
-    return import('@tabler/icons/cube.svg?react');
-  }),
-  'cup-off': lazy(() => {
-    return import('@tabler/icons/cup-off.svg?react');
-  }),
-  cup: lazy(() => {
-    return import('@tabler/icons/cup.svg?react');
-  }),
-  curling: lazy(() => {
-    return import('@tabler/icons/curling.svg?react');
-  }),
-  'curly-loop': lazy(() => {
-    return import('@tabler/icons/curly-loop.svg?react');
-  }),
-  'currency-afghani': lazy(() => {
-    return import('@tabler/icons/currency-afghani.svg?react');
-  }),
-  'currency-bahraini': lazy(() => {
-    return import('@tabler/icons/currency-bahraini.svg?react');
-  }),
-  'currency-baht': lazy(() => {
-    return import('@tabler/icons/currency-baht.svg?react');
-  }),
-  'currency-bitcoin': lazy(() => {
-    return import('@tabler/icons/currency-bitcoin.svg?react');
-  }),
-  'currency-cent': lazy(() => {
-    return import('@tabler/icons/currency-cent.svg?react');
-  }),
-  'currency-dinar': lazy(() => {
-    return import('@tabler/icons/currency-dinar.svg?react');
-  }),
-  'currency-dirham': lazy(() => {
-    return import('@tabler/icons/currency-dirham.svg?react');
-  }),
-  'currency-dogecoin': lazy(() => {
-    return import('@tabler/icons/currency-dogecoin.svg?react');
-  }),
-  'currency-dollar-australian': lazy(() => {
-    return import('@tabler/icons/currency-dollar-australian.svg?react');
-  }),
-  'currency-dollar-brunei': lazy(() => {
-    return import('@tabler/icons/currency-dollar-brunei.svg?react');
-  }),
-  'currency-dollar-canadian': lazy(() => {
-    return import('@tabler/icons/currency-dollar-canadian.svg?react');
-  }),
-  'currency-dollar-guyanese': lazy(() => {
-    return import('@tabler/icons/currency-dollar-guyanese.svg?react');
-  }),
-  'currency-dollar-off': lazy(() => {
-    return import('@tabler/icons/currency-dollar-off.svg?react');
-  }),
-  'currency-dollar-singapore': lazy(() => {
-    return import('@tabler/icons/currency-dollar-singapore.svg?react');
-  }),
-  'currency-dollar-zimbabwean': lazy(() => {
-    return import('@tabler/icons/currency-dollar-zimbabwean.svg?react');
-  }),
-  'currency-dollar': lazy(() => {
-    return import('@tabler/icons/currency-dollar.svg?react');
-  }),
-  'currency-dong': lazy(() => {
-    return import('@tabler/icons/currency-dong.svg?react');
-  }),
-  'currency-dram': lazy(() => {
-    return import('@tabler/icons/currency-dram.svg?react');
-  }),
-  'currency-ethereum': lazy(() => {
-    return import('@tabler/icons/currency-ethereum.svg?react');
-  }),
-  'currency-euro-off': lazy(() => {
-    return import('@tabler/icons/currency-euro-off.svg?react');
-  }),
-  'currency-euro': lazy(() => {
-    return import('@tabler/icons/currency-euro.svg?react');
-  }),
-  'currency-florin': lazy(() => {
-    return import('@tabler/icons/currency-florin.svg?react');
-  }),
-  'currency-forint': lazy(() => {
-    return import('@tabler/icons/currency-forint.svg?react');
-  }),
-  'currency-frank': lazy(() => {
-    return import('@tabler/icons/currency-frank.svg?react');
-  }),
-  'currency-guarani': lazy(() => {
-    return import('@tabler/icons/currency-guarani.svg?react');
-  }),
-  'currency-hryvnia': lazy(() => {
-    return import('@tabler/icons/currency-hryvnia.svg?react');
-  }),
-  'currency-iranian-rial': lazy(() => {
-    return import('@tabler/icons/currency-iranian-rial.svg?react');
-  }),
-  'currency-kip': lazy(() => {
-    return import('@tabler/icons/currency-kip.svg?react');
-  }),
-  'currency-krone-czech': lazy(() => {
-    return import('@tabler/icons/currency-krone-czech.svg?react');
-  }),
-  'currency-krone-danish': lazy(() => {
-    return import('@tabler/icons/currency-krone-danish.svg?react');
-  }),
-  'currency-krone-swedish': lazy(() => {
-    return import('@tabler/icons/currency-krone-swedish.svg?react');
-  }),
-  'currency-lari': lazy(() => {
-    return import('@tabler/icons/currency-lari.svg?react');
-  }),
-  'currency-leu': lazy(() => {
-    return import('@tabler/icons/currency-leu.svg?react');
-  }),
-  'currency-lira': lazy(() => {
-    return import('@tabler/icons/currency-lira.svg?react');
-  }),
-  'currency-litecoin': lazy(() => {
-    return import('@tabler/icons/currency-litecoin.svg?react');
-  }),
-  'currency-lyd': lazy(() => {
-    return import('@tabler/icons/currency-lyd.svg?react');
-  }),
-  'currency-manat': lazy(() => {
-    return import('@tabler/icons/currency-manat.svg?react');
-  }),
-  'currency-monero': lazy(() => {
-    return import('@tabler/icons/currency-monero.svg?react');
-  }),
-  'currency-naira': lazy(() => {
-    return import('@tabler/icons/currency-naira.svg?react');
-  }),
-  'currency-nano': lazy(() => {
-    return import('@tabler/icons/currency-nano.svg?react');
-  }),
-  'currency-off': lazy(() => {
-    return import('@tabler/icons/currency-off.svg?react');
-  }),
-  'currency-paanga': lazy(() => {
-    return import('@tabler/icons/currency-paanga.svg?react');
-  }),
-  'currency-peso': lazy(() => {
-    return import('@tabler/icons/currency-peso.svg?react');
-  }),
-  'currency-pound-off': lazy(() => {
-    return import('@tabler/icons/currency-pound-off.svg?react');
-  }),
-  'currency-pound': lazy(() => {
-    return import('@tabler/icons/currency-pound.svg?react');
-  }),
-  'currency-quetzal': lazy(() => {
-    return import('@tabler/icons/currency-quetzal.svg?react');
-  }),
-  'currency-real': lazy(() => {
-    return import('@tabler/icons/currency-real.svg?react');
-  }),
-  'currency-renminbi': lazy(() => {
-    return import('@tabler/icons/currency-renminbi.svg?react');
-  }),
-  'currency-ripple': lazy(() => {
-    return import('@tabler/icons/currency-ripple.svg?react');
-  }),
-  'currency-riyal': lazy(() => {
-    return import('@tabler/icons/currency-riyal.svg?react');
-  }),
-  'currency-rubel': lazy(() => {
-    return import('@tabler/icons/currency-rubel.svg?react');
-  }),
-  'currency-rufiyaa': lazy(() => {
-    return import('@tabler/icons/currency-rufiyaa.svg?react');
-  }),
-  'currency-rupee-nepalese': lazy(() => {
-    return import('@tabler/icons/currency-rupee-nepalese.svg?react');
-  }),
-  'currency-rupee': lazy(() => {
-    return import('@tabler/icons/currency-rupee.svg?react');
-  }),
-  'currency-shekel': lazy(() => {
-    return import('@tabler/icons/currency-shekel.svg?react');
-  }),
-  'currency-solana': lazy(() => {
-    return import('@tabler/icons/currency-solana.svg?react');
-  }),
-  'currency-som': lazy(() => {
-    return import('@tabler/icons/currency-som.svg?react');
-  }),
-  'currency-taka': lazy(() => {
-    return import('@tabler/icons/currency-taka.svg?react');
-  }),
-  'currency-tenge': lazy(() => {
-    return import('@tabler/icons/currency-tenge.svg?react');
-  }),
-  'currency-tugrik': lazy(() => {
-    return import('@tabler/icons/currency-tugrik.svg?react');
-  }),
-  'currency-won': lazy(() => {
-    return import('@tabler/icons/currency-won.svg?react');
-  }),
-  'currency-yen-off': lazy(() => {
-    return import('@tabler/icons/currency-yen-off.svg?react');
-  }),
-  'currency-yen': lazy(() => {
-    return import('@tabler/icons/currency-yen.svg?react');
-  }),
-  'currency-yuan': lazy(() => {
-    return import('@tabler/icons/currency-yuan.svg?react');
-  }),
-  'currency-zloty': lazy(() => {
-    return import('@tabler/icons/currency-zloty.svg?react');
-  }),
-  currency: lazy(() => {
-    return import('@tabler/icons/currency.svg?react');
-  }),
-  'current-location-off': lazy(() => {
-    return import('@tabler/icons/current-location-off.svg?react');
-  }),
-  'current-location': lazy(() => {
-    return import('@tabler/icons/current-location.svg?react');
-  }),
-  'cursor-off': lazy(() => {
-    return import('@tabler/icons/cursor-off.svg?react');
-  }),
-  'cursor-text': lazy(() => {
-    return import('@tabler/icons/cursor-text.svg?react');
-  }),
-  cut: lazy(() => {
-    return import('@tabler/icons/cut.svg?react');
-  }),
-  'cylinder-off': lazy(() => {
-    return import('@tabler/icons/cylinder-off.svg?react');
-  }),
-  'cylinder-plus': lazy(() => {
-    return import('@tabler/icons/cylinder-plus.svg?react');
-  }),
-  cylinder: lazy(() => {
-    return import('@tabler/icons/cylinder.svg?react');
-  }),
-  'dashboard-off': lazy(() => {
-    return import('@tabler/icons/dashboard-off.svg?react');
-  }),
-  dashboard: lazy(() => {
-    return import('@tabler/icons/dashboard.svg?react');
-  }),
-  'database-cog': lazy(() => {
-    return import('@tabler/icons/database-cog.svg?react');
-  }),
-  'database-dollar': lazy(() => {
-    return import('@tabler/icons/database-dollar.svg?react');
-  }),
-  'database-edit': lazy(() => {
-    return import('@tabler/icons/database-edit.svg?react');
-  }),
-  'database-exclamation': lazy(() => {
-    return import('@tabler/icons/database-exclamation.svg?react');
-  }),
-  'database-export': lazy(() => {
-    return import('@tabler/icons/database-export.svg?react');
-  }),
-  'database-heart': lazy(() => {
-    return import('@tabler/icons/database-heart.svg?react');
-  }),
-  'database-import': lazy(() => {
-    return import('@tabler/icons/database-import.svg?react');
-  }),
-  'database-leak': lazy(() => {
-    return import('@tabler/icons/database-leak.svg?react');
-  }),
-  'database-minus': lazy(() => {
-    return import('@tabler/icons/database-minus.svg?react');
-  }),
-  'database-off': lazy(() => {
-    return import('@tabler/icons/database-off.svg?react');
-  }),
-  'database-plus': lazy(() => {
-    return import('@tabler/icons/database-plus.svg?react');
-  }),
-  'database-search': lazy(() => {
-    return import('@tabler/icons/database-search.svg?react');
-  }),
-  'database-share': lazy(() => {
-    return import('@tabler/icons/database-share.svg?react');
-  }),
-  'database-star': lazy(() => {
-    return import('@tabler/icons/database-star.svg?react');
-  }),
-  'database-x': lazy(() => {
-    return import('@tabler/icons/database-x.svg?react');
-  }),
-  database: lazy(() => {
-    return import('@tabler/icons/database.svg?react');
-  }),
-  decimal: lazy(() => {
-    return import('@tabler/icons/decimal.svg?react');
-  }),
-  deer: lazy(() => {
-    return import('@tabler/icons/deer.svg?react');
-  }),
-  delta: lazy(() => {
-    return import('@tabler/icons/delta.svg?react');
-  }),
-  'dental-broken': lazy(() => {
-    return import('@tabler/icons/dental-broken.svg?react');
-  }),
-  'dental-off': lazy(() => {
-    return import('@tabler/icons/dental-off.svg?react');
-  }),
-  dental: lazy(() => {
-    return import('@tabler/icons/dental.svg?react');
-  }),
-  deselect: lazy(() => {
-    return import('@tabler/icons/deselect.svg?react');
-  }),
-  'details-off': lazy(() => {
-    return import('@tabler/icons/details-off.svg?react');
-  }),
-  details: lazy(() => {
-    return import('@tabler/icons/details.svg?react');
-  }),
-  'device-airpods-case': lazy(() => {
-    return import('@tabler/icons/device-airpods-case.svg?react');
-  }),
-  'device-airpods': lazy(() => {
-    return import('@tabler/icons/device-airpods.svg?react');
-  }),
-  'device-airtag': lazy(() => {
-    return import('@tabler/icons/device-airtag.svg?react');
-  }),
-  'device-analytics': lazy(() => {
-    return import('@tabler/icons/device-analytics.svg?react');
-  }),
-  'device-audio-tape': lazy(() => {
-    return import('@tabler/icons/device-audio-tape.svg?react');
-  }),
-  'device-camera-phone': lazy(() => {
-    return import('@tabler/icons/device-camera-phone.svg?react');
-  }),
-  'device-cctv-off': lazy(() => {
-    return import('@tabler/icons/device-cctv-off.svg?react');
-  }),
-  'device-cctv': lazy(() => {
-    return import('@tabler/icons/device-cctv.svg?react');
-  }),
-  'device-computer-camera-off': lazy(() => {
-    return import('@tabler/icons/device-computer-camera-off.svg?react');
-  }),
-  'device-computer-camera': lazy(() => {
-    return import('@tabler/icons/device-computer-camera.svg?react');
-  }),
-  'device-desktop-analytics': lazy(() => {
-    return import('@tabler/icons/device-desktop-analytics.svg?react');
-  }),
-  'device-desktop-bolt': lazy(() => {
-    return import('@tabler/icons/device-desktop-bolt.svg?react');
-  }),
-  'device-desktop-cancel': lazy(() => {
-    return import('@tabler/icons/device-desktop-cancel.svg?react');
-  }),
-  'device-desktop-check': lazy(() => {
-    return import('@tabler/icons/device-desktop-check.svg?react');
-  }),
-  'device-desktop-code': lazy(() => {
-    return import('@tabler/icons/device-desktop-code.svg?react');
-  }),
-  'device-desktop-cog': lazy(() => {
-    return import('@tabler/icons/device-desktop-cog.svg?react');
-  }),
-  'device-desktop-dollar': lazy(() => {
-    return import('@tabler/icons/device-desktop-dollar.svg?react');
-  }),
-  'device-desktop-down': lazy(() => {
-    return import('@tabler/icons/device-desktop-down.svg?react');
-  }),
-  'device-desktop-exclamation': lazy(() => {
-    return import('@tabler/icons/device-desktop-exclamation.svg?react');
-  }),
-  'device-desktop-heart': lazy(() => {
-    return import('@tabler/icons/device-desktop-heart.svg?react');
-  }),
-  'device-desktop-minus': lazy(() => {
-    return import('@tabler/icons/device-desktop-minus.svg?react');
-  }),
-  'device-desktop-off': lazy(() => {
-    return import('@tabler/icons/device-desktop-off.svg?react');
-  }),
-  'device-desktop-pause': lazy(() => {
-    return import('@tabler/icons/device-desktop-pause.svg?react');
-  }),
-  'device-desktop-pin': lazy(() => {
-    return import('@tabler/icons/device-desktop-pin.svg?react');
-  }),
-  'device-desktop-plus': lazy(() => {
-    return import('@tabler/icons/device-desktop-plus.svg?react');
-  }),
-  'device-desktop-question': lazy(() => {
-    return import('@tabler/icons/device-desktop-question.svg?react');
-  }),
-  'device-desktop-search': lazy(() => {
-    return import('@tabler/icons/device-desktop-search.svg?react');
-  }),
-  'device-desktop-share': lazy(() => {
-    return import('@tabler/icons/device-desktop-share.svg?react');
-  }),
-  'device-desktop-star': lazy(() => {
-    return import('@tabler/icons/device-desktop-star.svg?react');
-  }),
-  'device-desktop-up': lazy(() => {
-    return import('@tabler/icons/device-desktop-up.svg?react');
-  }),
-  'device-desktop-x': lazy(() => {
-    return import('@tabler/icons/device-desktop-x.svg?react');
-  }),
-  'device-desktop': lazy(() => {
-    return import('@tabler/icons/device-desktop.svg?react');
-  }),
-  'device-floppy': lazy(() => {
-    return import('@tabler/icons/device-floppy.svg?react');
-  }),
-  'device-gamepad-2': lazy(() => {
-    return import('@tabler/icons/device-gamepad-2.svg?react');
-  }),
-  'device-gamepad-3': lazy(() => {
-    return import('@tabler/icons/device-gamepad-3.svg?react');
-  }),
-  'device-gamepad': lazy(() => {
-    return import('@tabler/icons/device-gamepad.svg?react');
-  }),
-  'device-heart-monitor-filled': lazy(() => {
-    return import('@tabler/icons/device-heart-monitor-filled.svg?react');
-  }),
-  'device-heart-monitor': lazy(() => {
-    return import('@tabler/icons/device-heart-monitor.svg?react');
-  }),
-  'device-imac-bolt': lazy(() => {
-    return import('@tabler/icons/device-imac-bolt.svg?react');
-  }),
-  'device-imac-cancel': lazy(() => {
-    return import('@tabler/icons/device-imac-cancel.svg?react');
-  }),
-  'device-imac-check': lazy(() => {
-    return import('@tabler/icons/device-imac-check.svg?react');
-  }),
-  'device-imac-code': lazy(() => {
-    return import('@tabler/icons/device-imac-code.svg?react');
-  }),
-  'device-imac-cog': lazy(() => {
-    return import('@tabler/icons/device-imac-cog.svg?react');
-  }),
-  'device-imac-dollar': lazy(() => {
-    return import('@tabler/icons/device-imac-dollar.svg?react');
-  }),
-  'device-imac-down': lazy(() => {
-    return import('@tabler/icons/device-imac-down.svg?react');
-  }),
-  'device-imac-exclamation': lazy(() => {
-    return import('@tabler/icons/device-imac-exclamation.svg?react');
-  }),
-  'device-imac-heart': lazy(() => {
-    return import('@tabler/icons/device-imac-heart.svg?react');
-  }),
-  'device-imac-minus': lazy(() => {
-    return import('@tabler/icons/device-imac-minus.svg?react');
-  }),
-  'device-imac-off': lazy(() => {
-    return import('@tabler/icons/device-imac-off.svg?react');
-  }),
-  'device-imac-pause': lazy(() => {
-    return import('@tabler/icons/device-imac-pause.svg?react');
-  }),
-  'device-imac-pin': lazy(() => {
-    return import('@tabler/icons/device-imac-pin.svg?react');
-  }),
-  'device-imac-plus': lazy(() => {
-    return import('@tabler/icons/device-imac-plus.svg?react');
-  }),
-  'device-imac-question': lazy(() => {
-    return import('@tabler/icons/device-imac-question.svg?react');
-  }),
-  'device-imac-search': lazy(() => {
-    return import('@tabler/icons/device-imac-search.svg?react');
-  }),
-  'device-imac-share': lazy(() => {
-    return import('@tabler/icons/device-imac-share.svg?react');
-  }),
-  'device-imac-star': lazy(() => {
-    return import('@tabler/icons/device-imac-star.svg?react');
-  }),
-  'device-imac-up': lazy(() => {
-    return import('@tabler/icons/device-imac-up.svg?react');
-  }),
-  'device-imac-x': lazy(() => {
-    return import('@tabler/icons/device-imac-x.svg?react');
-  }),
-  'device-imac': lazy(() => {
-    return import('@tabler/icons/device-imac.svg?react');
-  }),
-  'device-ipad-bolt': lazy(() => {
-    return import('@tabler/icons/device-ipad-bolt.svg?react');
-  }),
-  'device-ipad-cancel': lazy(() => {
-    return import('@tabler/icons/device-ipad-cancel.svg?react');
-  }),
-  'device-ipad-check': lazy(() => {
-    return import('@tabler/icons/device-ipad-check.svg?react');
-  }),
-  'device-ipad-code': lazy(() => {
-    return import('@tabler/icons/device-ipad-code.svg?react');
-  }),
-  'device-ipad-cog': lazy(() => {
-    return import('@tabler/icons/device-ipad-cog.svg?react');
-  }),
-  'device-ipad-dollar': lazy(() => {
-    return import('@tabler/icons/device-ipad-dollar.svg?react');
-  }),
-  'device-ipad-down': lazy(() => {
-    return import('@tabler/icons/device-ipad-down.svg?react');
-  }),
-  'device-ipad-exclamation': lazy(() => {
-    return import('@tabler/icons/device-ipad-exclamation.svg?react');
-  }),
-  'device-ipad-heart': lazy(() => {
-    return import('@tabler/icons/device-ipad-heart.svg?react');
-  }),
-  'device-ipad-horizontal-bolt': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-bolt.svg?react');
-  }),
-  'device-ipad-horizontal-cancel': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-cancel.svg?react');
-  }),
-  'device-ipad-horizontal-check': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-check.svg?react');
-  }),
-  'device-ipad-horizontal-code': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-code.svg?react');
-  }),
-  'device-ipad-horizontal-cog': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-cog.svg?react');
-  }),
-  'device-ipad-horizontal-dollar': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-dollar.svg?react');
-  }),
-  'device-ipad-horizontal-down': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-down.svg?react');
-  }),
-  'device-ipad-horizontal-exclamation': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-exclamation.svg?react');
-  }),
-  'device-ipad-horizontal-heart': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-heart.svg?react');
-  }),
-  'device-ipad-horizontal-minus': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-minus.svg?react');
-  }),
-  'device-ipad-horizontal-off': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-off.svg?react');
-  }),
-  'device-ipad-horizontal-pause': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-pause.svg?react');
-  }),
-  'device-ipad-horizontal-pin': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-pin.svg?react');
-  }),
-  'device-ipad-horizontal-plus': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-plus.svg?react');
-  }),
-  'device-ipad-horizontal-question': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-question.svg?react');
-  }),
-  'device-ipad-horizontal-search': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-search.svg?react');
-  }),
-  'device-ipad-horizontal-share': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-share.svg?react');
-  }),
-  'device-ipad-horizontal-star': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-star.svg?react');
-  }),
-  'device-ipad-horizontal-up': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-up.svg?react');
-  }),
-  'device-ipad-horizontal-x': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal-x.svg?react');
-  }),
-  'device-ipad-horizontal': lazy(() => {
-    return import('@tabler/icons/device-ipad-horizontal.svg?react');
-  }),
-  'device-ipad-minus': lazy(() => {
-    return import('@tabler/icons/device-ipad-minus.svg?react');
-  }),
-  'device-ipad-off': lazy(() => {
-    return import('@tabler/icons/device-ipad-off.svg?react');
-  }),
-  'device-ipad-pause': lazy(() => {
-    return import('@tabler/icons/device-ipad-pause.svg?react');
-  }),
-  'device-ipad-pin': lazy(() => {
-    return import('@tabler/icons/device-ipad-pin.svg?react');
-  }),
-  'device-ipad-plus': lazy(() => {
-    return import('@tabler/icons/device-ipad-plus.svg?react');
-  }),
-  'device-ipad-question': lazy(() => {
-    return import('@tabler/icons/device-ipad-question.svg?react');
-  }),
-  'device-ipad-search': lazy(() => {
-    return import('@tabler/icons/device-ipad-search.svg?react');
-  }),
-  'device-ipad-share': lazy(() => {
-    return import('@tabler/icons/device-ipad-share.svg?react');
-  }),
-  'device-ipad-star': lazy(() => {
-    return import('@tabler/icons/device-ipad-star.svg?react');
-  }),
-  'device-ipad-up': lazy(() => {
-    return import('@tabler/icons/device-ipad-up.svg?react');
-  }),
-  'device-ipad-x': lazy(() => {
-    return import('@tabler/icons/device-ipad-x.svg?react');
-  }),
-  'device-ipad': lazy(() => {
-    return import('@tabler/icons/device-ipad.svg?react');
-  }),
-  'device-landline-phone': lazy(() => {
-    return import('@tabler/icons/device-landline-phone.svg?react');
-  }),
-  'device-laptop-off': lazy(() => {
-    return import('@tabler/icons/device-laptop-off.svg?react');
-  }),
-  'device-laptop': lazy(() => {
-    return import('@tabler/icons/device-laptop.svg?react');
-  }),
-  'device-mobile-bolt': lazy(() => {
-    return import('@tabler/icons/device-mobile-bolt.svg?react');
-  }),
-  'device-mobile-cancel': lazy(() => {
-    return import('@tabler/icons/device-mobile-cancel.svg?react');
-  }),
-  'device-mobile-charging': lazy(() => {
-    return import('@tabler/icons/device-mobile-charging.svg?react');
-  }),
-  'device-mobile-check': lazy(() => {
-    return import('@tabler/icons/device-mobile-check.svg?react');
-  }),
-  'device-mobile-code': lazy(() => {
-    return import('@tabler/icons/device-mobile-code.svg?react');
-  }),
-  'device-mobile-cog': lazy(() => {
-    return import('@tabler/icons/device-mobile-cog.svg?react');
-  }),
-  'device-mobile-dollar': lazy(() => {
-    return import('@tabler/icons/device-mobile-dollar.svg?react');
-  }),
-  'device-mobile-down': lazy(() => {
-    return import('@tabler/icons/device-mobile-down.svg?react');
-  }),
-  'device-mobile-exclamation': lazy(() => {
-    return import('@tabler/icons/device-mobile-exclamation.svg?react');
-  }),
-  'device-mobile-filled': lazy(() => {
-    return import('@tabler/icons/device-mobile-filled.svg?react');
-  }),
-  'device-mobile-heart': lazy(() => {
-    return import('@tabler/icons/device-mobile-heart.svg?react');
-  }),
-  'device-mobile-message': lazy(() => {
-    return import('@tabler/icons/device-mobile-message.svg?react');
-  }),
-  'device-mobile-minus': lazy(() => {
-    return import('@tabler/icons/device-mobile-minus.svg?react');
-  }),
-  'device-mobile-off': lazy(() => {
-    return import('@tabler/icons/device-mobile-off.svg?react');
-  }),
-  'device-mobile-pause': lazy(() => {
-    return import('@tabler/icons/device-mobile-pause.svg?react');
-  }),
-  'device-mobile-pin': lazy(() => {
-    return import('@tabler/icons/device-mobile-pin.svg?react');
-  }),
-  'device-mobile-plus': lazy(() => {
-    return import('@tabler/icons/device-mobile-plus.svg?react');
-  }),
-  'device-mobile-question': lazy(() => {
-    return import('@tabler/icons/device-mobile-question.svg?react');
-  }),
-  'device-mobile-rotated': lazy(() => {
-    return import('@tabler/icons/device-mobile-rotated.svg?react');
-  }),
-  'device-mobile-search': lazy(() => {
-    return import('@tabler/icons/device-mobile-search.svg?react');
-  }),
-  'device-mobile-share': lazy(() => {
-    return import('@tabler/icons/device-mobile-share.svg?react');
-  }),
-  'device-mobile-star': lazy(() => {
-    return import('@tabler/icons/device-mobile-star.svg?react');
-  }),
-  'device-mobile-up': lazy(() => {
-    return import('@tabler/icons/device-mobile-up.svg?react');
-  }),
-  'device-mobile-vibration': lazy(() => {
-    return import('@tabler/icons/device-mobile-vibration.svg?react');
-  }),
-  'device-mobile-x': lazy(() => {
-    return import('@tabler/icons/device-mobile-x.svg?react');
-  }),
-  'device-mobile': lazy(() => {
-    return import('@tabler/icons/device-mobile.svg?react');
-  }),
-  'device-nintendo-off': lazy(() => {
-    return import('@tabler/icons/device-nintendo-off.svg?react');
-  }),
-  'device-nintendo': lazy(() => {
-    return import('@tabler/icons/device-nintendo.svg?react');
-  }),
-  'device-projector': lazy(() => {
-    return import('@tabler/icons/device-projector.svg?react');
-  }),
-  'device-remote': lazy(() => {
-    return import('@tabler/icons/device-remote.svg?react');
-  }),
-  'device-sd-card': lazy(() => {
-    return import('@tabler/icons/device-sd-card.svg?react');
-  }),
-  'device-sim-1': lazy(() => {
-    return import('@tabler/icons/device-sim-1.svg?react');
-  }),
-  'device-sim-2': lazy(() => {
-    return import('@tabler/icons/device-sim-2.svg?react');
-  }),
-  'device-sim-3': lazy(() => {
-    return import('@tabler/icons/device-sim-3.svg?react');
-  }),
-  'device-sim': lazy(() => {
-    return import('@tabler/icons/device-sim.svg?react');
-  }),
-  'device-speaker-off': lazy(() => {
-    return import('@tabler/icons/device-speaker-off.svg?react');
-  }),
-  'device-speaker': lazy(() => {
-    return import('@tabler/icons/device-speaker.svg?react');
-  }),
-  'device-tablet-bolt': lazy(() => {
-    return import('@tabler/icons/device-tablet-bolt.svg?react');
-  }),
-  'device-tablet-cancel': lazy(() => {
-    return import('@tabler/icons/device-tablet-cancel.svg?react');
-  }),
-  'device-tablet-check': lazy(() => {
-    return import('@tabler/icons/device-tablet-check.svg?react');
-  }),
-  'device-tablet-code': lazy(() => {
-    return import('@tabler/icons/device-tablet-code.svg?react');
-  }),
-  'device-tablet-cog': lazy(() => {
-    return import('@tabler/icons/device-tablet-cog.svg?react');
-  }),
-  'device-tablet-dollar': lazy(() => {
-    return import('@tabler/icons/device-tablet-dollar.svg?react');
-  }),
-  'device-tablet-down': lazy(() => {
-    return import('@tabler/icons/device-tablet-down.svg?react');
-  }),
-  'device-tablet-exclamation': lazy(() => {
-    return import('@tabler/icons/device-tablet-exclamation.svg?react');
-  }),
-  'device-tablet-filled': lazy(() => {
-    return import('@tabler/icons/device-tablet-filled.svg?react');
-  }),
-  'device-tablet-heart': lazy(() => {
-    return import('@tabler/icons/device-tablet-heart.svg?react');
-  }),
-  'device-tablet-minus': lazy(() => {
-    return import('@tabler/icons/device-tablet-minus.svg?react');
-  }),
-  'device-tablet-off': lazy(() => {
-    return import('@tabler/icons/device-tablet-off.svg?react');
-  }),
-  'device-tablet-pause': lazy(() => {
-    return import('@tabler/icons/device-tablet-pause.svg?react');
-  }),
-  'device-tablet-pin': lazy(() => {
-    return import('@tabler/icons/device-tablet-pin.svg?react');
-  }),
-  'device-tablet-plus': lazy(() => {
-    return import('@tabler/icons/device-tablet-plus.svg?react');
-  }),
-  'device-tablet-question': lazy(() => {
-    return import('@tabler/icons/device-tablet-question.svg?react');
-  }),
-  'device-tablet-search': lazy(() => {
-    return import('@tabler/icons/device-tablet-search.svg?react');
-  }),
-  'device-tablet-share': lazy(() => {
-    return import('@tabler/icons/device-tablet-share.svg?react');
-  }),
-  'device-tablet-star': lazy(() => {
-    return import('@tabler/icons/device-tablet-star.svg?react');
-  }),
-  'device-tablet-up': lazy(() => {
-    return import('@tabler/icons/device-tablet-up.svg?react');
-  }),
-  'device-tablet-x': lazy(() => {
-    return import('@tabler/icons/device-tablet-x.svg?react');
-  }),
-  'device-tablet': lazy(() => {
-    return import('@tabler/icons/device-tablet.svg?react');
-  }),
-  'device-tv-off': lazy(() => {
-    return import('@tabler/icons/device-tv-off.svg?react');
-  }),
-  'device-tv-old': lazy(() => {
-    return import('@tabler/icons/device-tv-old.svg?react');
-  }),
-  'device-tv': lazy(() => {
-    return import('@tabler/icons/device-tv.svg?react');
-  }),
-  'device-usb': lazy(() => {
-    return import('@tabler/icons/device-usb.svg?react');
-  }),
-  'device-vision-pro': lazy(() => {
-    return import('@tabler/icons/device-vision-pro.svg?react');
-  }),
-  'device-watch-bolt': lazy(() => {
-    return import('@tabler/icons/device-watch-bolt.svg?react');
-  }),
-  'device-watch-cancel': lazy(() => {
-    return import('@tabler/icons/device-watch-cancel.svg?react');
-  }),
-  'device-watch-check': lazy(() => {
-    return import('@tabler/icons/device-watch-check.svg?react');
-  }),
-  'device-watch-code': lazy(() => {
-    return import('@tabler/icons/device-watch-code.svg?react');
-  }),
-  'device-watch-cog': lazy(() => {
-    return import('@tabler/icons/device-watch-cog.svg?react');
-  }),
-  'device-watch-dollar': lazy(() => {
-    return import('@tabler/icons/device-watch-dollar.svg?react');
-  }),
-  'device-watch-down': lazy(() => {
-    return import('@tabler/icons/device-watch-down.svg?react');
-  }),
-  'device-watch-exclamation': lazy(() => {
-    return import('@tabler/icons/device-watch-exclamation.svg?react');
-  }),
-  'device-watch-heart': lazy(() => {
-    return import('@tabler/icons/device-watch-heart.svg?react');
-  }),
-  'device-watch-minus': lazy(() => {
-    return import('@tabler/icons/device-watch-minus.svg?react');
-  }),
-  'device-watch-off': lazy(() => {
-    return import('@tabler/icons/device-watch-off.svg?react');
-  }),
-  'device-watch-pause': lazy(() => {
-    return import('@tabler/icons/device-watch-pause.svg?react');
-  }),
-  'device-watch-pin': lazy(() => {
-    return import('@tabler/icons/device-watch-pin.svg?react');
-  }),
-  'device-watch-plus': lazy(() => {
-    return import('@tabler/icons/device-watch-plus.svg?react');
-  }),
-  'device-watch-question': lazy(() => {
-    return import('@tabler/icons/device-watch-question.svg?react');
-  }),
-  'device-watch-search': lazy(() => {
-    return import('@tabler/icons/device-watch-search.svg?react');
-  }),
-  'device-watch-share': lazy(() => {
-    return import('@tabler/icons/device-watch-share.svg?react');
-  }),
-  'device-watch-star': lazy(() => {
-    return import('@tabler/icons/device-watch-star.svg?react');
-  }),
-  'device-watch-stats-2': lazy(() => {
-    return import('@tabler/icons/device-watch-stats-2.svg?react');
-  }),
-  'device-watch-stats': lazy(() => {
-    return import('@tabler/icons/device-watch-stats.svg?react');
-  }),
-  'device-watch-up': lazy(() => {
-    return import('@tabler/icons/device-watch-up.svg?react');
-  }),
-  'device-watch-x': lazy(() => {
-    return import('@tabler/icons/device-watch-x.svg?react');
-  }),
-  'device-watch': lazy(() => {
-    return import('@tabler/icons/device-watch.svg?react');
-  }),
-  'devices-2': lazy(() => {
-    return import('@tabler/icons/devices-2.svg?react');
-  }),
-  'devices-bolt': lazy(() => {
-    return import('@tabler/icons/devices-bolt.svg?react');
-  }),
-  'devices-cancel': lazy(() => {
-    return import('@tabler/icons/devices-cancel.svg?react');
-  }),
-  'devices-check': lazy(() => {
-    return import('@tabler/icons/devices-check.svg?react');
-  }),
-  'devices-code': lazy(() => {
-    return import('@tabler/icons/devices-code.svg?react');
-  }),
-  'devices-cog': lazy(() => {
-    return import('@tabler/icons/devices-cog.svg?react');
-  }),
-  'devices-dollar': lazy(() => {
-    return import('@tabler/icons/devices-dollar.svg?react');
-  }),
-  'devices-down': lazy(() => {
-    return import('@tabler/icons/devices-down.svg?react');
-  }),
-  'devices-exclamation': lazy(() => {
-    return import('@tabler/icons/devices-exclamation.svg?react');
-  }),
-  'devices-heart': lazy(() => {
-    return import('@tabler/icons/devices-heart.svg?react');
-  }),
-  'devices-minus': lazy(() => {
-    return import('@tabler/icons/devices-minus.svg?react');
-  }),
-  'devices-off': lazy(() => {
-    return import('@tabler/icons/devices-off.svg?react');
-  }),
-  'devices-pause': lazy(() => {
-    return import('@tabler/icons/devices-pause.svg?react');
-  }),
-  'devices-pc-off': lazy(() => {
-    return import('@tabler/icons/devices-pc-off.svg?react');
-  }),
-  'devices-pc': lazy(() => {
-    return import('@tabler/icons/devices-pc.svg?react');
-  }),
-  'devices-pin': lazy(() => {
-    return import('@tabler/icons/devices-pin.svg?react');
-  }),
-  'devices-plus': lazy(() => {
-    return import('@tabler/icons/devices-plus.svg?react');
-  }),
-  'devices-question': lazy(() => {
-    return import('@tabler/icons/devices-question.svg?react');
-  }),
-  'devices-search': lazy(() => {
-    return import('@tabler/icons/devices-search.svg?react');
-  }),
-  'devices-share': lazy(() => {
-    return import('@tabler/icons/devices-share.svg?react');
-  }),
-  'devices-star': lazy(() => {
-    return import('@tabler/icons/devices-star.svg?react');
-  }),
-  'devices-up': lazy(() => {
-    return import('@tabler/icons/devices-up.svg?react');
-  }),
-  'devices-x': lazy(() => {
-    return import('@tabler/icons/devices-x.svg?react');
-  }),
-  devices: lazy(() => {
-    return import('@tabler/icons/devices.svg?react');
-  }),
-  'diabolo-off': lazy(() => {
-    return import('@tabler/icons/diabolo-off.svg?react');
-  }),
-  'diabolo-plus': lazy(() => {
-    return import('@tabler/icons/diabolo-plus.svg?react');
-  }),
-  diabolo: lazy(() => {
-    return import('@tabler/icons/diabolo.svg?react');
-  }),
-  'dialpad-filled': lazy(() => {
-    return import('@tabler/icons/dialpad-filled.svg?react');
-  }),
-  'dialpad-off': lazy(() => {
-    return import('@tabler/icons/dialpad-off.svg?react');
-  }),
-  dialpad: lazy(() => {
-    return import('@tabler/icons/dialpad.svg?react');
-  }),
-  'diamond-filled': lazy(() => {
-    return import('@tabler/icons/diamond-filled.svg?react');
-  }),
-  'diamond-off': lazy(() => {
-    return import('@tabler/icons/diamond-off.svg?react');
-  }),
-  diamond: lazy(() => {
-    return import('@tabler/icons/diamond.svg?react');
-  }),
-  'diamonds-filled': lazy(() => {
-    return import('@tabler/icons/diamonds-filled.svg?react');
-  }),
-  diamonds: lazy(() => {
-    return import('@tabler/icons/diamonds.svg?react');
-  }),
-  'dice-1-filled': lazy(() => {
-    return import('@tabler/icons/dice-1-filled.svg?react');
-  }),
-  'dice-1': lazy(() => {
-    return import('@tabler/icons/dice-1.svg?react');
-  }),
-  'dice-2-filled': lazy(() => {
-    return import('@tabler/icons/dice-2-filled.svg?react');
-  }),
-  'dice-2': lazy(() => {
-    return import('@tabler/icons/dice-2.svg?react');
-  }),
-  'dice-3-filled': lazy(() => {
-    return import('@tabler/icons/dice-3-filled.svg?react');
-  }),
-  'dice-3': lazy(() => {
-    return import('@tabler/icons/dice-3.svg?react');
-  }),
-  'dice-4-filled': lazy(() => {
-    return import('@tabler/icons/dice-4-filled.svg?react');
-  }),
-  'dice-4': lazy(() => {
-    return import('@tabler/icons/dice-4.svg?react');
-  }),
-  'dice-5-filled': lazy(() => {
-    return import('@tabler/icons/dice-5-filled.svg?react');
-  }),
-  'dice-5': lazy(() => {
-    return import('@tabler/icons/dice-5.svg?react');
-  }),
-  'dice-6-filled': lazy(() => {
-    return import('@tabler/icons/dice-6-filled.svg?react');
-  }),
-  'dice-6': lazy(() => {
-    return import('@tabler/icons/dice-6.svg?react');
-  }),
-  'dice-filled': lazy(() => {
-    return import('@tabler/icons/dice-filled.svg?react');
-  }),
-  dice: lazy(() => {
-    return import('@tabler/icons/dice.svg?react');
-  }),
-  dimensions: lazy(() => {
-    return import('@tabler/icons/dimensions.svg?react');
-  }),
-  'direction-horizontal': lazy(() => {
-    return import('@tabler/icons/direction-horizontal.svg?react');
-  }),
-  'direction-sign-filled': lazy(() => {
-    return import('@tabler/icons/direction-sign-filled.svg?react');
-  }),
-  'direction-sign-off': lazy(() => {
-    return import('@tabler/icons/direction-sign-off.svg?react');
-  }),
-  'direction-sign': lazy(() => {
-    return import('@tabler/icons/direction-sign.svg?react');
-  }),
-  direction: lazy(() => {
-    return import('@tabler/icons/direction.svg?react');
-  }),
-  'directions-off': lazy(() => {
-    return import('@tabler/icons/directions-off.svg?react');
-  }),
-  directions: lazy(() => {
-    return import('@tabler/icons/directions.svg?react');
-  }),
-  'disabled-2': lazy(() => {
-    return import('@tabler/icons/disabled-2.svg?react');
-  }),
-  'disabled-off': lazy(() => {
-    return import('@tabler/icons/disabled-off.svg?react');
-  }),
-  disabled: lazy(() => {
-    return import('@tabler/icons/disabled.svg?react');
-  }),
-  'disc-golf': lazy(() => {
-    return import('@tabler/icons/disc-golf.svg?react');
-  }),
-  'disc-off': lazy(() => {
-    return import('@tabler/icons/disc-off.svg?react');
-  }),
-  disc: lazy(() => {
-    return import('@tabler/icons/disc.svg?react');
-  }),
-  'discount-2-off': lazy(() => {
-    return import('@tabler/icons/discount-2-off.svg?react');
-  }),
-  'discount-2': lazy(() => {
-    return import('@tabler/icons/discount-2.svg?react');
-  }),
-  'discount-check-filled': lazy(() => {
-    return import('@tabler/icons/discount-check-filled.svg?react');
-  }),
-  'discount-check': lazy(() => {
-    return import('@tabler/icons/discount-check.svg?react');
-  }),
-  'discount-off': lazy(() => {
-    return import('@tabler/icons/discount-off.svg?react');
-  }),
-  discount: lazy(() => {
-    return import('@tabler/icons/discount.svg?react');
-  }),
-  divide: lazy(() => {
-    return import('@tabler/icons/divide.svg?react');
-  }),
-  'dna-2-off': lazy(() => {
-    return import('@tabler/icons/dna-2-off.svg?react');
-  }),
-  'dna-2': lazy(() => {
-    return import('@tabler/icons/dna-2.svg?react');
-  }),
-  'dna-off': lazy(() => {
-    return import('@tabler/icons/dna-off.svg?react');
-  }),
-  dna: lazy(() => {
-    return import('@tabler/icons/dna.svg?react');
-  }),
-  'dog-bowl': lazy(() => {
-    return import('@tabler/icons/dog-bowl.svg?react');
-  }),
-  dog: lazy(() => {
-    return import('@tabler/icons/dog.svg?react');
-  }),
-  'door-enter': lazy(() => {
-    return import('@tabler/icons/door-enter.svg?react');
-  }),
-  'door-exit': lazy(() => {
-    return import('@tabler/icons/door-exit.svg?react');
-  }),
-  'door-off': lazy(() => {
-    return import('@tabler/icons/door-off.svg?react');
-  }),
-  door: lazy(() => {
-    return import('@tabler/icons/door.svg?react');
-  }),
-  'dots-circle-horizontal': lazy(() => {
-    return import('@tabler/icons/dots-circle-horizontal.svg?react');
-  }),
-  'dots-diagonal-2': lazy(() => {
-    return import('@tabler/icons/dots-diagonal-2.svg?react');
-  }),
-  'dots-diagonal': lazy(() => {
-    return import('@tabler/icons/dots-diagonal.svg?react');
-  }),
-  'dots-vertical': lazy(() => {
-    return import('@tabler/icons/dots-vertical.svg?react');
-  }),
-  dots: lazy(() => {
-    return import('@tabler/icons/dots.svg?react');
-  }),
-  'download-off': lazy(() => {
-    return import('@tabler/icons/download-off.svg?react');
-  }),
-  download: lazy(() => {
-    return import('@tabler/icons/download.svg?react');
-  }),
-  'drag-drop-2': lazy(() => {
-    return import('@tabler/icons/drag-drop-2.svg?react');
-  }),
-  'drag-drop': lazy(() => {
-    return import('@tabler/icons/drag-drop.svg?react');
-  }),
-  'drone-off': lazy(() => {
-    return import('@tabler/icons/drone-off.svg?react');
-  }),
-  drone: lazy(() => {
-    return import('@tabler/icons/drone.svg?react');
-  }),
-  'drop-circle': lazy(() => {
-    return import('@tabler/icons/drop-circle.svg?react');
-  }),
-  'droplet-bolt': lazy(() => {
-    return import('@tabler/icons/droplet-bolt.svg?react');
-  }),
-  'droplet-cancel': lazy(() => {
-    return import('@tabler/icons/droplet-cancel.svg?react');
-  }),
-  'droplet-check': lazy(() => {
-    return import('@tabler/icons/droplet-check.svg?react');
-  }),
-  'droplet-code': lazy(() => {
-    return import('@tabler/icons/droplet-code.svg?react');
-  }),
-  'droplet-cog': lazy(() => {
-    return import('@tabler/icons/droplet-cog.svg?react');
-  }),
-  'droplet-dollar': lazy(() => {
-    return import('@tabler/icons/droplet-dollar.svg?react');
-  }),
-  'droplet-down': lazy(() => {
-    return import('@tabler/icons/droplet-down.svg?react');
-  }),
-  'droplet-exclamation': lazy(() => {
-    return import('@tabler/icons/droplet-exclamation.svg?react');
-  }),
-  'droplet-filled': lazy(() => {
-    return import('@tabler/icons/droplet-filled.svg?react');
-  }),
-  'droplet-half-2-filled': lazy(() => {
-    return import('@tabler/icons/droplet-half-2-filled.svg?react');
-  }),
-  'droplet-half-2': lazy(() => {
-    return import('@tabler/icons/droplet-half-2.svg?react');
-  }),
-  'droplet-half-filled': lazy(() => {
-    return import('@tabler/icons/droplet-half-filled.svg?react');
-  }),
-  'droplet-half': lazy(() => {
-    return import('@tabler/icons/droplet-half.svg?react');
-  }),
-  'droplet-heart': lazy(() => {
-    return import('@tabler/icons/droplet-heart.svg?react');
-  }),
-  'droplet-minus': lazy(() => {
-    return import('@tabler/icons/droplet-minus.svg?react');
-  }),
-  'droplet-off': lazy(() => {
-    return import('@tabler/icons/droplet-off.svg?react');
-  }),
-  'droplet-pause': lazy(() => {
-    return import('@tabler/icons/droplet-pause.svg?react');
-  }),
-  'droplet-pin': lazy(() => {
-    return import('@tabler/icons/droplet-pin.svg?react');
-  }),
-  'droplet-plus': lazy(() => {
-    return import('@tabler/icons/droplet-plus.svg?react');
-  }),
-  'droplet-question': lazy(() => {
-    return import('@tabler/icons/droplet-question.svg?react');
-  }),
-  'droplet-search': lazy(() => {
-    return import('@tabler/icons/droplet-search.svg?react');
-  }),
-  'droplet-share': lazy(() => {
-    return import('@tabler/icons/droplet-share.svg?react');
-  }),
-  'droplet-star': lazy(() => {
-    return import('@tabler/icons/droplet-star.svg?react');
-  }),
-  'droplet-up': lazy(() => {
-    return import('@tabler/icons/droplet-up.svg?react');
-  }),
-  'droplet-x': lazy(() => {
-    return import('@tabler/icons/droplet-x.svg?react');
-  }),
-  droplet: lazy(() => {
-    return import('@tabler/icons/droplet.svg?react');
-  }),
-  droplets: lazy(() => {
-    return import('@tabler/icons/droplets.svg?react');
-  }),
-  'dual-screen': lazy(() => {
-    return import('@tabler/icons/dual-screen.svg?react');
-  }),
-  'e-passport': lazy(() => {
-    return import('@tabler/icons/e-passport.svg?react');
-  }),
-  'ear-off': lazy(() => {
-    return import('@tabler/icons/ear-off.svg?react');
-  }),
-  ear: lazy(() => {
-    return import('@tabler/icons/ear.svg?react');
-  }),
-  'ease-in-control-point': lazy(() => {
-    return import('@tabler/icons/ease-in-control-point.svg?react');
-  }),
-  'ease-in-out-control-points': lazy(() => {
-    return import('@tabler/icons/ease-in-out-control-points.svg?react');
-  }),
-  'ease-in-out': lazy(() => {
-    return import('@tabler/icons/ease-in-out.svg?react');
-  }),
-  'ease-in': lazy(() => {
-    return import('@tabler/icons/ease-in.svg?react');
-  }),
-  'ease-out-control-point': lazy(() => {
-    return import('@tabler/icons/ease-out-control-point.svg?react');
-  }),
-  'ease-out': lazy(() => {
-    return import('@tabler/icons/ease-out.svg?react');
-  }),
-  'edit-circle-off': lazy(() => {
-    return import('@tabler/icons/edit-circle-off.svg?react');
-  }),
-  'edit-circle': lazy(() => {
-    return import('@tabler/icons/edit-circle.svg?react');
-  }),
-  'edit-off': lazy(() => {
-    return import('@tabler/icons/edit-off.svg?react');
-  }),
-  edit: lazy(() => {
-    return import('@tabler/icons/edit.svg?react');
-  }),
-  'egg-cracked': lazy(() => {
-    return import('@tabler/icons/egg-cracked.svg?react');
-  }),
-  'egg-filled': lazy(() => {
-    return import('@tabler/icons/egg-filled.svg?react');
-  }),
-  'egg-fried': lazy(() => {
-    return import('@tabler/icons/egg-fried.svg?react');
-  }),
-  'egg-off': lazy(() => {
-    return import('@tabler/icons/egg-off.svg?react');
-  }),
-  egg: lazy(() => {
-    return import('@tabler/icons/egg.svg?react');
-  }),
-  eggs: lazy(() => {
-    return import('@tabler/icons/eggs.svg?react');
-  }),
-  'elevator-off': lazy(() => {
-    return import('@tabler/icons/elevator-off.svg?react');
-  }),
-  elevator: lazy(() => {
-    return import('@tabler/icons/elevator.svg?react');
-  }),
-  'emergency-bed': lazy(() => {
-    return import('@tabler/icons/emergency-bed.svg?react');
-  }),
-  'empathize-off': lazy(() => {
-    return import('@tabler/icons/empathize-off.svg?react');
-  }),
-  empathize: lazy(() => {
-    return import('@tabler/icons/empathize.svg?react');
-  }),
-  emphasis: lazy(() => {
-    return import('@tabler/icons/emphasis.svg?react');
-  }),
-  'engine-off': lazy(() => {
-    return import('@tabler/icons/engine-off.svg?react');
-  }),
-  engine: lazy(() => {
-    return import('@tabler/icons/engine.svg?react');
-  }),
-  'equal-double': lazy(() => {
-    return import('@tabler/icons/equal-double.svg?react');
-  }),
-  'equal-not': lazy(() => {
-    return import('@tabler/icons/equal-not.svg?react');
-  }),
-  equal: lazy(() => {
-    return import('@tabler/icons/equal.svg?react');
-  }),
-  'eraser-off': lazy(() => {
-    return import('@tabler/icons/eraser-off.svg?react');
-  }),
-  eraser: lazy(() => {
-    return import('@tabler/icons/eraser.svg?react');
-  }),
-  'error-404-off': lazy(() => {
-    return import('@tabler/icons/error-404-off.svg?react');
-  }),
-  'error-404': lazy(() => {
-    return import('@tabler/icons/error-404.svg?react');
-  }),
-  'escalator-down': lazy(() => {
-    return import('@tabler/icons/escalator-down.svg?react');
-  }),
-  'escalator-up': lazy(() => {
-    return import('@tabler/icons/escalator-up.svg?react');
-  }),
-  escalator: lazy(() => {
-    return import('@tabler/icons/escalator.svg?react');
-  }),
-  'exchange-off': lazy(() => {
-    return import('@tabler/icons/exchange-off.svg?react');
-  }),
-  exchange: lazy(() => {
-    return import('@tabler/icons/exchange.svg?react');
-  }),
-  'exclamation-circle': lazy(() => {
-    return import('@tabler/icons/exclamation-circle.svg?react');
-  }),
-  'exclamation-mark-off': lazy(() => {
-    return import('@tabler/icons/exclamation-mark-off.svg?react');
-  }),
-  'exclamation-mark': lazy(() => {
-    return import('@tabler/icons/exclamation-mark.svg?react');
-  }),
-  'explicit-off': lazy(() => {
-    return import('@tabler/icons/explicit-off.svg?react');
-  }),
-  explicit: lazy(() => {
-    return import('@tabler/icons/explicit.svg?react');
-  }),
-  'exposure-0': lazy(() => {
-    return import('@tabler/icons/exposure-0.svg?react');
-  }),
-  'exposure-minus-1': lazy(() => {
-    return import('@tabler/icons/exposure-minus-1.svg?react');
-  }),
-  'exposure-minus-2': lazy(() => {
-    return import('@tabler/icons/exposure-minus-2.svg?react');
-  }),
-  'exposure-off': lazy(() => {
-    return import('@tabler/icons/exposure-off.svg?react');
-  }),
-  'exposure-plus-1': lazy(() => {
-    return import('@tabler/icons/exposure-plus-1.svg?react');
-  }),
-  'exposure-plus-2': lazy(() => {
-    return import('@tabler/icons/exposure-plus-2.svg?react');
-  }),
-  exposure: lazy(() => {
-    return import('@tabler/icons/exposure.svg?react');
-  }),
-  'external-link-off': lazy(() => {
-    return import('@tabler/icons/external-link-off.svg?react');
-  }),
-  'external-link': lazy(() => {
-    return import('@tabler/icons/external-link.svg?react');
-  }),
-  'eye-bolt': lazy(() => {
-    return import('@tabler/icons/eye-bolt.svg?react');
-  }),
-  'eye-cancel': lazy(() => {
-    return import('@tabler/icons/eye-cancel.svg?react');
-  }),
-  'eye-check': lazy(() => {
-    return import('@tabler/icons/eye-check.svg?react');
-  }),
-  'eye-closed': lazy(() => {
-    return import('@tabler/icons/eye-closed.svg?react');
-  }),
-  'eye-code': lazy(() => {
-    return import('@tabler/icons/eye-code.svg?react');
-  }),
-  'eye-cog': lazy(() => {
-    return import('@tabler/icons/eye-cog.svg?react');
-  }),
-  'eye-discount': lazy(() => {
-    return import('@tabler/icons/eye-discount.svg?react');
-  }),
-  'eye-dollar': lazy(() => {
-    return import('@tabler/icons/eye-dollar.svg?react');
-  }),
-  'eye-down': lazy(() => {
-    return import('@tabler/icons/eye-down.svg?react');
-  }),
-  'eye-edit': lazy(() => {
-    return import('@tabler/icons/eye-edit.svg?react');
-  }),
-  'eye-exclamation': lazy(() => {
-    return import('@tabler/icons/eye-exclamation.svg?react');
-  }),
-  'eye-filled': lazy(() => {
-    return import('@tabler/icons/eye-filled.svg?react');
-  }),
-  'eye-heart': lazy(() => {
-    return import('@tabler/icons/eye-heart.svg?react');
-  }),
-  'eye-minus': lazy(() => {
-    return import('@tabler/icons/eye-minus.svg?react');
-  }),
-  'eye-off': lazy(() => {
-    return import('@tabler/icons/eye-off.svg?react');
-  }),
-  'eye-pause': lazy(() => {
-    return import('@tabler/icons/eye-pause.svg?react');
-  }),
-  'eye-pin': lazy(() => {
-    return import('@tabler/icons/eye-pin.svg?react');
-  }),
-  'eye-plus': lazy(() => {
-    return import('@tabler/icons/eye-plus.svg?react');
-  }),
-  'eye-question': lazy(() => {
-    return import('@tabler/icons/eye-question.svg?react');
-  }),
-  'eye-search': lazy(() => {
-    return import('@tabler/icons/eye-search.svg?react');
-  }),
-  'eye-share': lazy(() => {
-    return import('@tabler/icons/eye-share.svg?react');
-  }),
-  'eye-star': lazy(() => {
-    return import('@tabler/icons/eye-star.svg?react');
-  }),
-  'eye-table': lazy(() => {
-    return import('@tabler/icons/eye-table.svg?react');
-  }),
-  'eye-up': lazy(() => {
-    return import('@tabler/icons/eye-up.svg?react');
-  }),
-  'eye-x': lazy(() => {
-    return import('@tabler/icons/eye-x.svg?react');
-  }),
-  eye: lazy(() => {
-    return import('@tabler/icons/eye.svg?react');
-  }),
-  'eyeglass-2': lazy(() => {
-    return import('@tabler/icons/eyeglass-2.svg?react');
-  }),
-  'eyeglass-off': lazy(() => {
-    return import('@tabler/icons/eyeglass-off.svg?react');
-  }),
-  eyeglass: lazy(() => {
-    return import('@tabler/icons/eyeglass.svg?react');
-  }),
-  'face-id-error': lazy(() => {
-    return import('@tabler/icons/face-id-error.svg?react');
-  }),
-  'face-id': lazy(() => {
-    return import('@tabler/icons/face-id.svg?react');
-  }),
-  'face-mask-off': lazy(() => {
-    return import('@tabler/icons/face-mask-off.svg?react');
-  }),
-  'face-mask': lazy(() => {
-    return import('@tabler/icons/face-mask.svg?react');
-  }),
-  fall: lazy(() => {
-    return import('@tabler/icons/fall.svg?react');
-  }),
-  'feather-off': lazy(() => {
-    return import('@tabler/icons/feather-off.svg?react');
-  }),
-  feather: lazy(() => {
-    return import('@tabler/icons/feather.svg?react');
-  }),
-  'fence-off': lazy(() => {
-    return import('@tabler/icons/fence-off.svg?react');
-  }),
-  fence: lazy(() => {
-    return import('@tabler/icons/fence.svg?react');
-  }),
-  'fidget-spinner': lazy(() => {
-    return import('@tabler/icons/fidget-spinner.svg?react');
-  }),
-  'file-3d': lazy(() => {
-    return import('@tabler/icons/file-3d.svg?react');
-  }),
-  'file-alert': lazy(() => {
-    return import('@tabler/icons/file-alert.svg?react');
-  }),
-  'file-analytics': lazy(() => {
-    return import('@tabler/icons/file-analytics.svg?react');
-  }),
-  'file-arrow-left': lazy(() => {
-    return import('@tabler/icons/file-arrow-left.svg?react');
-  }),
-  'file-arrow-right': lazy(() => {
-    return import('@tabler/icons/file-arrow-right.svg?react');
-  }),
-  'file-barcode': lazy(() => {
-    return import('@tabler/icons/file-barcode.svg?react');
-  }),
-  'file-broken': lazy(() => {
-    return import('@tabler/icons/file-broken.svg?react');
-  }),
-  'file-certificate': lazy(() => {
-    return import('@tabler/icons/file-certificate.svg?react');
-  }),
-  'file-chart': lazy(() => {
-    return import('@tabler/icons/file-chart.svg?react');
-  }),
-  'file-check': lazy(() => {
-    return import('@tabler/icons/file-check.svg?react');
-  }),
-  'file-code-2': lazy(() => {
-    return import('@tabler/icons/file-code-2.svg?react');
-  }),
-  'file-code': lazy(() => {
-    return import('@tabler/icons/file-code.svg?react');
-  }),
-  'file-cv': lazy(() => {
-    return import('@tabler/icons/file-cv.svg?react');
-  }),
-  'file-database': lazy(() => {
-    return import('@tabler/icons/file-database.svg?react');
-  }),
-  'file-delta': lazy(() => {
-    return import('@tabler/icons/file-delta.svg?react');
-  }),
-  'file-description': lazy(() => {
-    return import('@tabler/icons/file-description.svg?react');
-  }),
-  'file-diff': lazy(() => {
-    return import('@tabler/icons/file-diff.svg?react');
-  }),
-  'file-digit': lazy(() => {
-    return import('@tabler/icons/file-digit.svg?react');
-  }),
-  'file-dislike': lazy(() => {
-    return import('@tabler/icons/file-dislike.svg?react');
-  }),
-  'file-dollar': lazy(() => {
-    return import('@tabler/icons/file-dollar.svg?react');
-  }),
-  'file-dots': lazy(() => {
-    return import('@tabler/icons/file-dots.svg?react');
-  }),
-  'file-download': lazy(() => {
-    return import('@tabler/icons/file-download.svg?react');
-  }),
-  'file-euro': lazy(() => {
-    return import('@tabler/icons/file-euro.svg?react');
-  }),
-  'file-export': lazy(() => {
-    return import('@tabler/icons/file-export.svg?react');
-  }),
-  'file-filled': lazy(() => {
-    return import('@tabler/icons/file-filled.svg?react');
-  }),
-  'file-function': lazy(() => {
-    return import('@tabler/icons/file-function.svg?react');
-  }),
-  'file-horizontal': lazy(() => {
-    return import('@tabler/icons/file-horizontal.svg?react');
-  }),
-  'file-import': lazy(() => {
-    return import('@tabler/icons/file-import.svg?react');
-  }),
-  'file-infinity': lazy(() => {
-    return import('@tabler/icons/file-infinity.svg?react');
-  }),
-  'file-info': lazy(() => {
-    return import('@tabler/icons/file-info.svg?react');
-  }),
-  'file-invoice': lazy(() => {
-    return import('@tabler/icons/file-invoice.svg?react');
-  }),
-  'file-lambda': lazy(() => {
-    return import('@tabler/icons/file-lambda.svg?react');
-  }),
-  'file-like': lazy(() => {
-    return import('@tabler/icons/file-like.svg?react');
-  }),
-  'file-minus': lazy(() => {
-    return import('@tabler/icons/file-minus.svg?react');
-  }),
-  'file-music': lazy(() => {
-    return import('@tabler/icons/file-music.svg?react');
-  }),
-  'file-off': lazy(() => {
-    return import('@tabler/icons/file-off.svg?react');
-  }),
-  'file-orientation': lazy(() => {
-    return import('@tabler/icons/file-orientation.svg?react');
-  }),
-  'file-pencil': lazy(() => {
-    return import('@tabler/icons/file-pencil.svg?react');
-  }),
-  'file-percent': lazy(() => {
-    return import('@tabler/icons/file-percent.svg?react');
-  }),
-  'file-phone': lazy(() => {
-    return import('@tabler/icons/file-phone.svg?react');
-  }),
-  'file-plus': lazy(() => {
-    return import('@tabler/icons/file-plus.svg?react');
-  }),
-  'file-power': lazy(() => {
-    return import('@tabler/icons/file-power.svg?react');
-  }),
-  'file-report': lazy(() => {
-    return import('@tabler/icons/file-report.svg?react');
-  }),
-  'file-rss': lazy(() => {
-    return import('@tabler/icons/file-rss.svg?react');
-  }),
-  'file-scissors': lazy(() => {
-    return import('@tabler/icons/file-scissors.svg?react');
-  }),
-  'file-search': lazy(() => {
-    return import('@tabler/icons/file-search.svg?react');
-  }),
-  'file-settings': lazy(() => {
-    return import('@tabler/icons/file-settings.svg?react');
-  }),
-  'file-shredder': lazy(() => {
-    return import('@tabler/icons/file-shredder.svg?react');
-  }),
-  'file-signal': lazy(() => {
-    return import('@tabler/icons/file-signal.svg?react');
-  }),
-  'file-spreadsheet': lazy(() => {
-    return import('@tabler/icons/file-spreadsheet.svg?react');
-  }),
-  'file-stack': lazy(() => {
-    return import('@tabler/icons/file-stack.svg?react');
-  }),
-  'file-star': lazy(() => {
-    return import('@tabler/icons/file-star.svg?react');
-  }),
-  'file-symlink': lazy(() => {
-    return import('@tabler/icons/file-symlink.svg?react');
-  }),
-  'file-text-ai': lazy(() => {
-    return import('@tabler/icons/file-text-ai.svg?react');
-  }),
-  'file-text': lazy(() => {
-    return import('@tabler/icons/file-text.svg?react');
-  }),
-  'file-time': lazy(() => {
-    return import('@tabler/icons/file-time.svg?react');
-  }),
-  'file-type-bmp': lazy(() => {
-    return import('@tabler/icons/file-type-bmp.svg?react');
-  }),
-  'file-type-css': lazy(() => {
-    return import('@tabler/icons/file-type-css.svg?react');
-  }),
-  'file-type-csv': lazy(() => {
-    return import('@tabler/icons/file-type-csv.svg?react');
-  }),
-  'file-type-doc': lazy(() => {
-    return import('@tabler/icons/file-type-doc.svg?react');
-  }),
-  'file-type-docx': lazy(() => {
-    return import('@tabler/icons/file-type-docx.svg?react');
-  }),
-  'file-type-html': lazy(() => {
-    return import('@tabler/icons/file-type-html.svg?react');
-  }),
-  'file-type-jpg': lazy(() => {
-    return import('@tabler/icons/file-type-jpg.svg?react');
-  }),
-  'file-type-js': lazy(() => {
-    return import('@tabler/icons/file-type-js.svg?react');
-  }),
-  'file-type-jsx': lazy(() => {
-    return import('@tabler/icons/file-type-jsx.svg?react');
-  }),
-  'file-type-pdf': lazy(() => {
-    return import('@tabler/icons/file-type-pdf.svg?react');
-  }),
-  'file-type-php': lazy(() => {
-    return import('@tabler/icons/file-type-php.svg?react');
-  }),
-  'file-type-png': lazy(() => {
-    return import('@tabler/icons/file-type-png.svg?react');
-  }),
-  'file-type-ppt': lazy(() => {
-    return import('@tabler/icons/file-type-ppt.svg?react');
-  }),
-  'file-type-rs': lazy(() => {
-    return import('@tabler/icons/file-type-rs.svg?react');
-  }),
-  'file-type-sql': lazy(() => {
-    return import('@tabler/icons/file-type-sql.svg?react');
-  }),
-  'file-type-svg': lazy(() => {
-    return import('@tabler/icons/file-type-svg.svg?react');
-  }),
-  'file-type-ts': lazy(() => {
-    return import('@tabler/icons/file-type-ts.svg?react');
-  }),
-  'file-type-tsx': lazy(() => {
-    return import('@tabler/icons/file-type-tsx.svg?react');
-  }),
-  'file-type-txt': lazy(() => {
-    return import('@tabler/icons/file-type-txt.svg?react');
-  }),
-  'file-type-vue': lazy(() => {
-    return import('@tabler/icons/file-type-vue.svg?react');
-  }),
-  'file-type-xls': lazy(() => {
-    return import('@tabler/icons/file-type-xls.svg?react');
-  }),
-  'file-type-xml': lazy(() => {
-    return import('@tabler/icons/file-type-xml.svg?react');
-  }),
-  'file-type-zip': lazy(() => {
-    return import('@tabler/icons/file-type-zip.svg?react');
-  }),
-  'file-typography': lazy(() => {
-    return import('@tabler/icons/file-typography.svg?react');
-  }),
-  'file-unknown': lazy(() => {
-    return import('@tabler/icons/file-unknown.svg?react');
-  }),
-  'file-upload': lazy(() => {
-    return import('@tabler/icons/file-upload.svg?react');
-  }),
-  'file-vector': lazy(() => {
-    return import('@tabler/icons/file-vector.svg?react');
-  }),
-  'file-x-filled': lazy(() => {
-    return import('@tabler/icons/file-x-filled.svg?react');
-  }),
-  'file-x': lazy(() => {
-    return import('@tabler/icons/file-x.svg?react');
-  }),
-  'file-zip': lazy(() => {
-    return import('@tabler/icons/file-zip.svg?react');
-  }),
-  file: lazy(() => {
-    return import('@tabler/icons/file.svg?react');
-  }),
-  'files-off': lazy(() => {
-    return import('@tabler/icons/files-off.svg?react');
-  }),
-  files: lazy(() => {
-    return import('@tabler/icons/files.svg?react');
-  }),
-  'filter-bolt': lazy(() => {
-    return import('@tabler/icons/filter-bolt.svg?react');
-  }),
-  'filter-cancel': lazy(() => {
-    return import('@tabler/icons/filter-cancel.svg?react');
-  }),
-  'filter-check': lazy(() => {
-    return import('@tabler/icons/filter-check.svg?react');
-  }),
-  'filter-code': lazy(() => {
-    return import('@tabler/icons/filter-code.svg?react');
-  }),
-  'filter-cog': lazy(() => {
-    return import('@tabler/icons/filter-cog.svg?react');
-  }),
-  'filter-discount': lazy(() => {
-    return import('@tabler/icons/filter-discount.svg?react');
-  }),
-  'filter-dollar': lazy(() => {
-    return import('@tabler/icons/filter-dollar.svg?react');
-  }),
-  'filter-down': lazy(() => {
-    return import('@tabler/icons/filter-down.svg?react');
-  }),
-  'filter-edit': lazy(() => {
-    return import('@tabler/icons/filter-edit.svg?react');
-  }),
-  'filter-exclamation': lazy(() => {
-    return import('@tabler/icons/filter-exclamation.svg?react');
-  }),
-  'filter-filled': lazy(() => {
-    return import('@tabler/icons/filter-filled.svg?react');
-  }),
-  'filter-heart': lazy(() => {
-    return import('@tabler/icons/filter-heart.svg?react');
-  }),
-  'filter-minus': lazy(() => {
-    return import('@tabler/icons/filter-minus.svg?react');
-  }),
-  'filter-off': lazy(() => {
-    return import('@tabler/icons/filter-off.svg?react');
-  }),
-  'filter-pause': lazy(() => {
-    return import('@tabler/icons/filter-pause.svg?react');
-  }),
-  'filter-pin': lazy(() => {
-    return import('@tabler/icons/filter-pin.svg?react');
-  }),
-  'filter-plus': lazy(() => {
-    return import('@tabler/icons/filter-plus.svg?react');
-  }),
-  'filter-question': lazy(() => {
-    return import('@tabler/icons/filter-question.svg?react');
-  }),
-  'filter-search': lazy(() => {
-    return import('@tabler/icons/filter-search.svg?react');
-  }),
-  'filter-share': lazy(() => {
-    return import('@tabler/icons/filter-share.svg?react');
-  }),
-  'filter-star': lazy(() => {
-    return import('@tabler/icons/filter-star.svg?react');
-  }),
-  'filter-up': lazy(() => {
-    return import('@tabler/icons/filter-up.svg?react');
-  }),
-  'filter-x': lazy(() => {
-    return import('@tabler/icons/filter-x.svg?react');
-  }),
-  filter: lazy(() => {
-    return import('@tabler/icons/filter.svg?react');
-  }),
-  filters: lazy(() => {
-    return import('@tabler/icons/filters.svg?react');
-  }),
-  'fingerprint-off': lazy(() => {
-    return import('@tabler/icons/fingerprint-off.svg?react');
-  }),
-  'fingerprint-scan': lazy(() => {
-    return import('@tabler/icons/fingerprint-scan.svg?react');
-  }),
-  fingerprint: lazy(() => {
-    return import('@tabler/icons/fingerprint.svg?react');
-  }),
-  'fire-extinguisher': lazy(() => {
-    return import('@tabler/icons/fire-extinguisher.svg?react');
-  }),
-  'fire-hydrant-off': lazy(() => {
-    return import('@tabler/icons/fire-hydrant-off.svg?react');
-  }),
-  'fire-hydrant': lazy(() => {
-    return import('@tabler/icons/fire-hydrant.svg?react');
-  }),
-  firetruck: lazy(() => {
-    return import('@tabler/icons/firetruck.svg?react');
-  }),
-  'first-aid-kit-off': lazy(() => {
-    return import('@tabler/icons/first-aid-kit-off.svg?react');
-  }),
-  'first-aid-kit': lazy(() => {
-    return import('@tabler/icons/first-aid-kit.svg?react');
-  }),
-  'fish-bone': lazy(() => {
-    return import('@tabler/icons/fish-bone.svg?react');
-  }),
-  'fish-christianity': lazy(() => {
-    return import('@tabler/icons/fish-christianity.svg?react');
-  }),
-  'fish-hook-off': lazy(() => {
-    return import('@tabler/icons/fish-hook-off.svg?react');
-  }),
-  'fish-hook': lazy(() => {
-    return import('@tabler/icons/fish-hook.svg?react');
-  }),
-  'fish-off': lazy(() => {
-    return import('@tabler/icons/fish-off.svg?react');
-  }),
-  fish: lazy(() => {
-    return import('@tabler/icons/fish.svg?react');
-  }),
-  'flag-2-filled': lazy(() => {
-    return import('@tabler/icons/flag-2-filled.svg?react');
-  }),
-  'flag-2-off': lazy(() => {
-    return import('@tabler/icons/flag-2-off.svg?react');
-  }),
-  'flag-2': lazy(() => {
-    return import('@tabler/icons/flag-2.svg?react');
-  }),
-  'flag-3-filled': lazy(() => {
-    return import('@tabler/icons/flag-3-filled.svg?react');
-  }),
-  'flag-3': lazy(() => {
-    return import('@tabler/icons/flag-3.svg?react');
-  }),
-  'flag-bolt': lazy(() => {
-    return import('@tabler/icons/flag-bolt.svg?react');
-  }),
-  'flag-cancel': lazy(() => {
-    return import('@tabler/icons/flag-cancel.svg?react');
-  }),
-  'flag-check': lazy(() => {
-    return import('@tabler/icons/flag-check.svg?react');
-  }),
-  'flag-code': lazy(() => {
-    return import('@tabler/icons/flag-code.svg?react');
-  }),
-  'flag-cog': lazy(() => {
-    return import('@tabler/icons/flag-cog.svg?react');
-  }),
-  'flag-discount': lazy(() => {
-    return import('@tabler/icons/flag-discount.svg?react');
-  }),
-  'flag-dollar': lazy(() => {
-    return import('@tabler/icons/flag-dollar.svg?react');
-  }),
-  'flag-down': lazy(() => {
-    return import('@tabler/icons/flag-down.svg?react');
-  }),
-  'flag-exclamation': lazy(() => {
-    return import('@tabler/icons/flag-exclamation.svg?react');
-  }),
-  'flag-filled': lazy(() => {
-    return import('@tabler/icons/flag-filled.svg?react');
-  }),
-  'flag-heart': lazy(() => {
-    return import('@tabler/icons/flag-heart.svg?react');
-  }),
-  'flag-minus': lazy(() => {
-    return import('@tabler/icons/flag-minus.svg?react');
-  }),
-  'flag-off': lazy(() => {
-    return import('@tabler/icons/flag-off.svg?react');
-  }),
-  'flag-pause': lazy(() => {
-    return import('@tabler/icons/flag-pause.svg?react');
-  }),
-  'flag-pin': lazy(() => {
-    return import('@tabler/icons/flag-pin.svg?react');
-  }),
-  'flag-plus': lazy(() => {
-    return import('@tabler/icons/flag-plus.svg?react');
-  }),
-  'flag-question': lazy(() => {
-    return import('@tabler/icons/flag-question.svg?react');
-  }),
-  'flag-search': lazy(() => {
-    return import('@tabler/icons/flag-search.svg?react');
-  }),
-  'flag-share': lazy(() => {
-    return import('@tabler/icons/flag-share.svg?react');
-  }),
-  'flag-star': lazy(() => {
-    return import('@tabler/icons/flag-star.svg?react');
-  }),
-  'flag-up': lazy(() => {
-    return import('@tabler/icons/flag-up.svg?react');
-  }),
-  'flag-x': lazy(() => {
-    return import('@tabler/icons/flag-x.svg?react');
-  }),
-  flag: lazy(() => {
-    return import('@tabler/icons/flag.svg?react');
-  }),
-  'flame-off': lazy(() => {
-    return import('@tabler/icons/flame-off.svg?react');
-  }),
-  flame: lazy(() => {
-    return import('@tabler/icons/flame.svg?react');
-  }),
-  flare: lazy(() => {
-    return import('@tabler/icons/flare.svg?react');
-  }),
-  'flask-2-off': lazy(() => {
-    return import('@tabler/icons/flask-2-off.svg?react');
-  }),
-  'flask-2': lazy(() => {
-    return import('@tabler/icons/flask-2.svg?react');
-  }),
-  'flask-off': lazy(() => {
-    return import('@tabler/icons/flask-off.svg?react');
-  }),
-  flask: lazy(() => {
-    return import('@tabler/icons/flask.svg?react');
-  }),
-  'flip-flops': lazy(() => {
-    return import('@tabler/icons/flip-flops.svg?react');
-  }),
-  'flip-horizontal': lazy(() => {
-    return import('@tabler/icons/flip-horizontal.svg?react');
-  }),
-  'flip-vertical': lazy(() => {
-    return import('@tabler/icons/flip-vertical.svg?react');
-  }),
-  'float-center': lazy(() => {
-    return import('@tabler/icons/float-center.svg?react');
-  }),
-  'float-left': lazy(() => {
-    return import('@tabler/icons/float-left.svg?react');
-  }),
-  'float-none': lazy(() => {
-    return import('@tabler/icons/float-none.svg?react');
-  }),
-  'float-right': lazy(() => {
-    return import('@tabler/icons/float-right.svg?react');
-  }),
-  'flower-off': lazy(() => {
-    return import('@tabler/icons/flower-off.svg?react');
-  }),
-  flower: lazy(() => {
-    return import('@tabler/icons/flower.svg?react');
-  }),
-  'focus-2': lazy(() => {
-    return import('@tabler/icons/focus-2.svg?react');
-  }),
-  'focus-auto': lazy(() => {
-    return import('@tabler/icons/focus-auto.svg?react');
-  }),
-  'focus-centered': lazy(() => {
-    return import('@tabler/icons/focus-centered.svg?react');
-  }),
-  focus: lazy(() => {
-    return import('@tabler/icons/focus.svg?react');
-  }),
-  'fold-down': lazy(() => {
-    return import('@tabler/icons/fold-down.svg?react');
-  }),
-  'fold-up': lazy(() => {
-    return import('@tabler/icons/fold-up.svg?react');
-  }),
-  fold: lazy(() => {
-    return import('@tabler/icons/fold.svg?react');
-  }),
-  'folder-bolt': lazy(() => {
-    return import('@tabler/icons/folder-bolt.svg?react');
-  }),
-  'folder-cancel': lazy(() => {
-    return import('@tabler/icons/folder-cancel.svg?react');
-  }),
-  'folder-check': lazy(() => {
-    return import('@tabler/icons/folder-check.svg?react');
-  }),
-  'folder-code': lazy(() => {
-    return import('@tabler/icons/folder-code.svg?react');
-  }),
-  'folder-cog': lazy(() => {
-    return import('@tabler/icons/folder-cog.svg?react');
-  }),
-  'folder-dollar': lazy(() => {
-    return import('@tabler/icons/folder-dollar.svg?react');
-  }),
-  'folder-down': lazy(() => {
-    return import('@tabler/icons/folder-down.svg?react');
-  }),
-  'folder-exclamation': lazy(() => {
-    return import('@tabler/icons/folder-exclamation.svg?react');
-  }),
-  'folder-filled': lazy(() => {
-    return import('@tabler/icons/folder-filled.svg?react');
-  }),
-  'folder-heart': lazy(() => {
-    return import('@tabler/icons/folder-heart.svg?react');
-  }),
-  'folder-minus': lazy(() => {
-    return import('@tabler/icons/folder-minus.svg?react');
-  }),
-  'folder-off': lazy(() => {
-    return import('@tabler/icons/folder-off.svg?react');
-  }),
-  'folder-open': lazy(() => {
-    return import('@tabler/icons/folder-open.svg?react');
-  }),
-  'folder-pause': lazy(() => {
-    return import('@tabler/icons/folder-pause.svg?react');
-  }),
-  'folder-pin': lazy(() => {
-    return import('@tabler/icons/folder-pin.svg?react');
-  }),
-  'folder-plus': lazy(() => {
-    return import('@tabler/icons/folder-plus.svg?react');
-  }),
-  'folder-question': lazy(() => {
-    return import('@tabler/icons/folder-question.svg?react');
-  }),
-  'folder-search': lazy(() => {
-    return import('@tabler/icons/folder-search.svg?react');
-  }),
-  'folder-share': lazy(() => {
-    return import('@tabler/icons/folder-share.svg?react');
-  }),
-  'folder-star': lazy(() => {
-    return import('@tabler/icons/folder-star.svg?react');
-  }),
-  'folder-symlink': lazy(() => {
-    return import('@tabler/icons/folder-symlink.svg?react');
-  }),
-  'folder-up': lazy(() => {
-    return import('@tabler/icons/folder-up.svg?react');
-  }),
-  'folder-x': lazy(() => {
-    return import('@tabler/icons/folder-x.svg?react');
-  }),
-  folder: lazy(() => {
-    return import('@tabler/icons/folder.svg?react');
-  }),
-  'folders-off': lazy(() => {
-    return import('@tabler/icons/folders-off.svg?react');
-  }),
-  folders: lazy(() => {
-    return import('@tabler/icons/folders.svg?react');
-  }),
-  'forbid-2-filled': lazy(() => {
-    return import('@tabler/icons/forbid-2-filled.svg?react');
-  }),
-  'forbid-2': lazy(() => {
-    return import('@tabler/icons/forbid-2.svg?react');
-  }),
-  'forbid-filled': lazy(() => {
-    return import('@tabler/icons/forbid-filled.svg?react');
-  }),
-  forbid: lazy(() => {
-    return import('@tabler/icons/forbid.svg?react');
-  }),
-  forklift: lazy(() => {
-    return import('@tabler/icons/forklift.svg?react');
-  }),
-  forms: lazy(() => {
-    return import('@tabler/icons/forms.svg?react');
-  }),
-  'fountain-filled': lazy(() => {
-    return import('@tabler/icons/fountain-filled.svg?react');
-  }),
-  'fountain-off': lazy(() => {
-    return import('@tabler/icons/fountain-off.svg?react');
-  }),
-  fountain: lazy(() => {
-    return import('@tabler/icons/fountain.svg?react');
-  }),
-  'frame-off': lazy(() => {
-    return import('@tabler/icons/frame-off.svg?react');
-  }),
-  frame: lazy(() => {
-    return import('@tabler/icons/frame.svg?react');
-  }),
-  'free-rights': lazy(() => {
-    return import('@tabler/icons/free-rights.svg?react');
-  }),
-  'freeze-column': lazy(() => {
-    return import('@tabler/icons/freeze-column.svg?react');
-  }),
-  'freeze-row-column': lazy(() => {
-    return import('@tabler/icons/freeze-row-column.svg?react');
-  }),
-  'freeze-row': lazy(() => {
-    return import('@tabler/icons/freeze-row.svg?react');
-  }),
-  'fridge-off': lazy(() => {
-    return import('@tabler/icons/fridge-off.svg?react');
-  }),
-  fridge: lazy(() => {
-    return import('@tabler/icons/fridge.svg?react');
-  }),
-  'friends-off': lazy(() => {
-    return import('@tabler/icons/friends-off.svg?react');
-  }),
-  friends: lazy(() => {
-    return import('@tabler/icons/friends.svg?react');
-  }),
-  'frustum-off': lazy(() => {
-    return import('@tabler/icons/frustum-off.svg?react');
-  }),
-  'frustum-plus': lazy(() => {
-    return import('@tabler/icons/frustum-plus.svg?react');
-  }),
-  frustum: lazy(() => {
-    return import('@tabler/icons/frustum.svg?react');
-  }),
-  'function-filled': lazy(() => {
-    return import('@tabler/icons/function-filled.svg?react');
-  }),
-  'function-off': lazy(() => {
-    return import('@tabler/icons/function-off.svg?react');
-  }),
-  function: lazy(() => {
-    return import('@tabler/icons/function.svg?react');
-  }),
-  galaxy: lazy(() => {
-    return import('@tabler/icons/galaxy.svg?react');
-  }),
-  'garden-cart-off': lazy(() => {
-    return import('@tabler/icons/garden-cart-off.svg?react');
-  }),
-  'garden-cart': lazy(() => {
-    return import('@tabler/icons/garden-cart.svg?react');
-  }),
-  'gas-station-off': lazy(() => {
-    return import('@tabler/icons/gas-station-off.svg?react');
-  }),
-  'gas-station': lazy(() => {
-    return import('@tabler/icons/gas-station.svg?react');
-  }),
-  'gauge-filled': lazy(() => {
-    return import('@tabler/icons/gauge-filled.svg?react');
-  }),
-  'gauge-off': lazy(() => {
-    return import('@tabler/icons/gauge-off.svg?react');
-  }),
-  gauge: lazy(() => {
-    return import('@tabler/icons/gauge.svg?react');
-  }),
-  gavel: lazy(() => {
-    return import('@tabler/icons/gavel.svg?react');
-  }),
-  'gender-agender': lazy(() => {
-    return import('@tabler/icons/gender-agender.svg?react');
-  }),
-  'gender-androgyne': lazy(() => {
-    return import('@tabler/icons/gender-androgyne.svg?react');
-  }),
-  'gender-bigender': lazy(() => {
-    return import('@tabler/icons/gender-bigender.svg?react');
-  }),
-  'gender-demiboy': lazy(() => {
-    return import('@tabler/icons/gender-demiboy.svg?react');
-  }),
-  'gender-demigirl': lazy(() => {
-    return import('@tabler/icons/gender-demigirl.svg?react');
-  }),
-  'gender-epicene': lazy(() => {
-    return import('@tabler/icons/gender-epicene.svg?react');
-  }),
-  'gender-female': lazy(() => {
-    return import('@tabler/icons/gender-female.svg?react');
-  }),
-  'gender-femme': lazy(() => {
-    return import('@tabler/icons/gender-femme.svg?react');
-  }),
-  'gender-genderfluid': lazy(() => {
-    return import('@tabler/icons/gender-genderfluid.svg?react');
-  }),
-  'gender-genderless': lazy(() => {
-    return import('@tabler/icons/gender-genderless.svg?react');
-  }),
-  'gender-genderqueer': lazy(() => {
-    return import('@tabler/icons/gender-genderqueer.svg?react');
-  }),
-  'gender-hermaphrodite': lazy(() => {
-    return import('@tabler/icons/gender-hermaphrodite.svg?react');
-  }),
-  'gender-intergender': lazy(() => {
-    return import('@tabler/icons/gender-intergender.svg?react');
-  }),
-  'gender-male': lazy(() => {
-    return import('@tabler/icons/gender-male.svg?react');
-  }),
-  'gender-neutrois': lazy(() => {
-    return import('@tabler/icons/gender-neutrois.svg?react');
-  }),
-  'gender-third': lazy(() => {
-    return import('@tabler/icons/gender-third.svg?react');
-  }),
-  'gender-transgender': lazy(() => {
-    return import('@tabler/icons/gender-transgender.svg?react');
-  }),
-  'gender-trasvesti': lazy(() => {
-    return import('@tabler/icons/gender-trasvesti.svg?react');
-  }),
-  geometry: lazy(() => {
-    return import('@tabler/icons/geometry.svg?react');
-  }),
-  'ghost-2-filled': lazy(() => {
-    return import('@tabler/icons/ghost-2-filled.svg?react');
-  }),
-  'ghost-2': lazy(() => {
-    return import('@tabler/icons/ghost-2.svg?react');
-  }),
-  'ghost-3': lazy(() => {
-    return import('@tabler/icons/ghost-3.svg?react');
-  }),
-  'ghost-filled': lazy(() => {
-    return import('@tabler/icons/ghost-filled.svg?react');
-  }),
-  'ghost-off': lazy(() => {
-    return import('@tabler/icons/ghost-off.svg?react');
-  }),
-  ghost: lazy(() => {
-    return import('@tabler/icons/ghost.svg?react');
-  }),
-  gif: lazy(() => {
-    return import('@tabler/icons/gif.svg?react');
-  }),
-  'gift-card-filled': lazy(() => {
-    return import('@tabler/icons/gift-card-filled.svg?react');
-  }),
-  'gift-card': lazy(() => {
-    return import('@tabler/icons/gift-card.svg?react');
-  }),
-  'gift-off': lazy(() => {
-    return import('@tabler/icons/gift-off.svg?react');
-  }),
-  gift: lazy(() => {
-    return import('@tabler/icons/gift.svg?react');
-  }),
-  'git-branch-deleted': lazy(() => {
-    return import('@tabler/icons/git-branch-deleted.svg?react');
-  }),
-  'git-branch': lazy(() => {
-    return import('@tabler/icons/git-branch.svg?react');
-  }),
-  'git-cherry-pick': lazy(() => {
-    return import('@tabler/icons/git-cherry-pick.svg?react');
-  }),
-  'git-commit': lazy(() => {
-    return import('@tabler/icons/git-commit.svg?react');
-  }),
-  'git-compare': lazy(() => {
-    return import('@tabler/icons/git-compare.svg?react');
-  }),
-  'git-fork': lazy(() => {
-    return import('@tabler/icons/git-fork.svg?react');
-  }),
-  'git-merge': lazy(() => {
-    return import('@tabler/icons/git-merge.svg?react');
-  }),
-  'git-pull-request-closed': lazy(() => {
-    return import('@tabler/icons/git-pull-request-closed.svg?react');
-  }),
-  'git-pull-request-draft': lazy(() => {
-    return import('@tabler/icons/git-pull-request-draft.svg?react');
-  }),
-  'git-pull-request': lazy(() => {
-    return import('@tabler/icons/git-pull-request.svg?react');
-  }),
-  gizmo: lazy(() => {
-    return import('@tabler/icons/gizmo.svg?react');
-  }),
-  'glass-full-filled': lazy(() => {
-    return import('@tabler/icons/glass-full-filled.svg?react');
-  }),
-  'glass-full': lazy(() => {
-    return import('@tabler/icons/glass-full.svg?react');
-  }),
-  'glass-off': lazy(() => {
-    return import('@tabler/icons/glass-off.svg?react');
-  }),
-  glass: lazy(() => {
-    return import('@tabler/icons/glass.svg?react');
-  }),
-  'globe-filled': lazy(() => {
-    return import('@tabler/icons/globe-filled.svg?react');
-  }),
-  'globe-off': lazy(() => {
-    return import('@tabler/icons/globe-off.svg?react');
-  }),
-  globe: lazy(() => {
-    return import('@tabler/icons/globe.svg?react');
-  }),
-  'go-game': lazy(() => {
-    return import('@tabler/icons/go-game.svg?react');
-  }),
-  'golf-off': lazy(() => {
-    return import('@tabler/icons/golf-off.svg?react');
-  }),
-  golf: lazy(() => {
-    return import('@tabler/icons/golf.svg?react');
-  }),
-  gps: lazy(() => {
-    return import('@tabler/icons/gps.svg?react');
-  }),
-  gradienter: lazy(() => {
-    return import('@tabler/icons/gradienter.svg?react');
-  }),
-  grain: lazy(() => {
-    return import('@tabler/icons/grain.svg?react');
-  }),
-  'graph-off': lazy(() => {
-    return import('@tabler/icons/graph-off.svg?react');
-  }),
-  graph: lazy(() => {
-    return import('@tabler/icons/graph.svg?react');
-  }),
-  'grave-2': lazy(() => {
-    return import('@tabler/icons/grave-2.svg?react');
-  }),
-  grave: lazy(() => {
-    return import('@tabler/icons/grave.svg?react');
-  }),
-  'grid-3x3': lazy(() => {
-    return import('@tabler/icons/grid-3x3.svg?react');
-  }),
-  'grid-4x4': lazy(() => {
-    return import('@tabler/icons/grid-4x4.svg?react');
-  }),
-  'grid-dots': lazy(() => {
-    return import('@tabler/icons/grid-dots.svg?react');
-  }),
-  'grid-goldenratio': lazy(() => {
-    return import('@tabler/icons/grid-goldenratio.svg?react');
-  }),
-  'grid-pattern': lazy(() => {
-    return import('@tabler/icons/grid-pattern.svg?react');
-  }),
-  'grid-scan': lazy(() => {
-    return import('@tabler/icons/grid-scan.svg?react');
-  }),
-  'grill-fork': lazy(() => {
-    return import('@tabler/icons/grill-fork.svg?react');
-  }),
-  'grill-off': lazy(() => {
-    return import('@tabler/icons/grill-off.svg?react');
-  }),
-  'grill-spatula': lazy(() => {
-    return import('@tabler/icons/grill-spatula.svg?react');
-  }),
-  grill: lazy(() => {
-    return import('@tabler/icons/grill.svg?react');
-  }),
-  'grip-horizontal': lazy(() => {
-    return import('@tabler/icons/grip-horizontal.svg?react');
-  }),
-  'grip-vertical': lazy(() => {
-    return import('@tabler/icons/grip-vertical.svg?react');
-  }),
-  growth: lazy(() => {
-    return import('@tabler/icons/growth.svg?react');
-  }),
-  'guitar-pick-filled': lazy(() => {
-    return import('@tabler/icons/guitar-pick-filled.svg?react');
-  }),
-  'guitar-pick': lazy(() => {
-    return import('@tabler/icons/guitar-pick.svg?react');
-  }),
-  'h-1': lazy(() => {
-    return import('@tabler/icons/h-1.svg?react');
-  }),
-  'h-2': lazy(() => {
-    return import('@tabler/icons/h-2.svg?react');
-  }),
-  'h-3': lazy(() => {
-    return import('@tabler/icons/h-3.svg?react');
-  }),
-  'h-4': lazy(() => {
-    return import('@tabler/icons/h-4.svg?react');
-  }),
-  'h-5': lazy(() => {
-    return import('@tabler/icons/h-5.svg?react');
-  }),
-  'h-6': lazy(() => {
-    return import('@tabler/icons/h-6.svg?react');
-  }),
-  'hammer-off': lazy(() => {
-    return import('@tabler/icons/hammer-off.svg?react');
-  }),
-  hammer: lazy(() => {
-    return import('@tabler/icons/hammer.svg?react');
-  }),
-  'hand-click': lazy(() => {
-    return import('@tabler/icons/hand-click.svg?react');
-  }),
-  'hand-finger-off': lazy(() => {
-    return import('@tabler/icons/hand-finger-off.svg?react');
-  }),
-  'hand-finger': lazy(() => {
-    return import('@tabler/icons/hand-finger.svg?react');
-  }),
-  'hand-grab': lazy(() => {
-    return import('@tabler/icons/hand-grab.svg?react');
-  }),
-  'hand-little-finger': lazy(() => {
-    return import('@tabler/icons/hand-little-finger.svg?react');
-  }),
-  'hand-middle-finger': lazy(() => {
-    return import('@tabler/icons/hand-middle-finger.svg?react');
-  }),
-  'hand-move': lazy(() => {
-    return import('@tabler/icons/hand-move.svg?react');
-  }),
-  'hand-off': lazy(() => {
-    return import('@tabler/icons/hand-off.svg?react');
-  }),
-  'hand-ring-finger': lazy(() => {
-    return import('@tabler/icons/hand-ring-finger.svg?react');
-  }),
-  'hand-rock': lazy(() => {
-    return import('@tabler/icons/hand-rock.svg?react');
-  }),
-  'hand-sanitizer': lazy(() => {
-    return import('@tabler/icons/hand-sanitizer.svg?react');
-  }),
-  'hand-stop': lazy(() => {
-    return import('@tabler/icons/hand-stop.svg?react');
-  }),
-  'hand-three-fingers': lazy(() => {
-    return import('@tabler/icons/hand-three-fingers.svg?react');
-  }),
-  'hand-two-fingers': lazy(() => {
-    return import('@tabler/icons/hand-two-fingers.svg?react');
-  }),
-  'hanger-2': lazy(() => {
-    return import('@tabler/icons/hanger-2.svg?react');
-  }),
-  'hanger-off': lazy(() => {
-    return import('@tabler/icons/hanger-off.svg?react');
-  }),
-  hanger: lazy(() => {
-    return import('@tabler/icons/hanger.svg?react');
-  }),
-  hash: lazy(() => {
-    return import('@tabler/icons/hash.svg?react');
-  }),
-  'haze-moon': lazy(() => {
-    return import('@tabler/icons/haze-moon.svg?react');
-  }),
-  haze: lazy(() => {
-    return import('@tabler/icons/haze.svg?react');
-  }),
-  hdr: lazy(() => {
-    return import('@tabler/icons/hdr.svg?react');
-  }),
-  'heading-off': lazy(() => {
-    return import('@tabler/icons/heading-off.svg?react');
-  }),
-  heading: lazy(() => {
-    return import('@tabler/icons/heading.svg?react');
-  }),
-  'headphones-filled': lazy(() => {
-    return import('@tabler/icons/headphones-filled.svg?react');
-  }),
-  'headphones-off': lazy(() => {
-    return import('@tabler/icons/headphones-off.svg?react');
-  }),
-  headphones: lazy(() => {
-    return import('@tabler/icons/headphones.svg?react');
-  }),
-  'headset-off': lazy(() => {
-    return import('@tabler/icons/headset-off.svg?react');
-  }),
-  headset: lazy(() => {
-    return import('@tabler/icons/headset.svg?react');
-  }),
-  'health-recognition': lazy(() => {
-    return import('@tabler/icons/health-recognition.svg?react');
-  }),
-  'heart-bolt': lazy(() => {
-    return import('@tabler/icons/heart-bolt.svg?react');
-  }),
-  'heart-broken': lazy(() => {
-    return import('@tabler/icons/heart-broken.svg?react');
-  }),
-  'heart-cancel': lazy(() => {
-    return import('@tabler/icons/heart-cancel.svg?react');
-  }),
-  'heart-check': lazy(() => {
-    return import('@tabler/icons/heart-check.svg?react');
-  }),
-  'heart-code': lazy(() => {
-    return import('@tabler/icons/heart-code.svg?react');
-  }),
-  'heart-cog': lazy(() => {
-    return import('@tabler/icons/heart-cog.svg?react');
-  }),
-  'heart-discount': lazy(() => {
-    return import('@tabler/icons/heart-discount.svg?react');
-  }),
-  'heart-dollar': lazy(() => {
-    return import('@tabler/icons/heart-dollar.svg?react');
-  }),
-  'heart-down': lazy(() => {
-    return import('@tabler/icons/heart-down.svg?react');
-  }),
-  'heart-exclamation': lazy(() => {
-    return import('@tabler/icons/heart-exclamation.svg?react');
-  }),
-  'heart-filled': lazy(() => {
-    return import('@tabler/icons/heart-filled.svg?react');
-  }),
-  'heart-handshake': lazy(() => {
-    return import('@tabler/icons/heart-handshake.svg?react');
-  }),
-  'heart-minus': lazy(() => {
-    return import('@tabler/icons/heart-minus.svg?react');
-  }),
-  'heart-off': lazy(() => {
-    return import('@tabler/icons/heart-off.svg?react');
-  }),
-  'heart-pause': lazy(() => {
-    return import('@tabler/icons/heart-pause.svg?react');
-  }),
-  'heart-pin': lazy(() => {
-    return import('@tabler/icons/heart-pin.svg?react');
-  }),
-  'heart-plus': lazy(() => {
-    return import('@tabler/icons/heart-plus.svg?react');
-  }),
-  'heart-question': lazy(() => {
-    return import('@tabler/icons/heart-question.svg?react');
-  }),
-  'heart-rate-monitor': lazy(() => {
-    return import('@tabler/icons/heart-rate-monitor.svg?react');
-  }),
-  'heart-search': lazy(() => {
-    return import('@tabler/icons/heart-search.svg?react');
-  }),
-  'heart-share': lazy(() => {
-    return import('@tabler/icons/heart-share.svg?react');
-  }),
-  'heart-star': lazy(() => {
-    return import('@tabler/icons/heart-star.svg?react');
-  }),
-  'heart-up': lazy(() => {
-    return import('@tabler/icons/heart-up.svg?react');
-  }),
-  'heart-x': lazy(() => {
-    return import('@tabler/icons/heart-x.svg?react');
-  }),
-  heart: lazy(() => {
-    return import('@tabler/icons/heart.svg?react');
-  }),
-  heartbeat: lazy(() => {
-    return import('@tabler/icons/heartbeat.svg?react');
-  }),
-  'hearts-off': lazy(() => {
-    return import('@tabler/icons/hearts-off.svg?react');
-  }),
-  hearts: lazy(() => {
-    return import('@tabler/icons/hearts.svg?react');
-  }),
-  'helicopter-landing': lazy(() => {
-    return import('@tabler/icons/helicopter-landing.svg?react');
-  }),
-  helicopter: lazy(() => {
-    return import('@tabler/icons/helicopter.svg?react');
-  }),
-  'helmet-off': lazy(() => {
-    return import('@tabler/icons/helmet-off.svg?react');
-  }),
-  helmet: lazy(() => {
-    return import('@tabler/icons/helmet.svg?react');
-  }),
-  'help-circle-filled': lazy(() => {
-    return import('@tabler/icons/help-circle-filled.svg?react');
-  }),
-  'help-circle': lazy(() => {
-    return import('@tabler/icons/help-circle.svg?react');
-  }),
-  'help-hexagon-filled': lazy(() => {
-    return import('@tabler/icons/help-hexagon-filled.svg?react');
-  }),
-  'help-hexagon': lazy(() => {
-    return import('@tabler/icons/help-hexagon.svg?react');
-  }),
-  'help-octagon-filled': lazy(() => {
-    return import('@tabler/icons/help-octagon-filled.svg?react');
-  }),
-  'help-octagon': lazy(() => {
-    return import('@tabler/icons/help-octagon.svg?react');
-  }),
-  'help-off': lazy(() => {
-    return import('@tabler/icons/help-off.svg?react');
-  }),
-  'help-small': lazy(() => {
-    return import('@tabler/icons/help-small.svg?react');
-  }),
-  'help-square-filled': lazy(() => {
-    return import('@tabler/icons/help-square-filled.svg?react');
-  }),
-  'help-square-rounded-filled': lazy(() => {
-    return import('@tabler/icons/help-square-rounded-filled.svg?react');
-  }),
-  'help-square-rounded': lazy(() => {
-    return import('@tabler/icons/help-square-rounded.svg?react');
-  }),
-  'help-square': lazy(() => {
-    return import('@tabler/icons/help-square.svg?react');
-  }),
-  'help-triangle-filled': lazy(() => {
-    return import('@tabler/icons/help-triangle-filled.svg?react');
-  }),
-  'help-triangle': lazy(() => {
-    return import('@tabler/icons/help-triangle.svg?react');
-  }),
-  help: lazy(() => {
-    return import('@tabler/icons/help.svg?react');
-  }),
-  'hemisphere-off': lazy(() => {
-    return import('@tabler/icons/hemisphere-off.svg?react');
-  }),
-  'hemisphere-plus': lazy(() => {
-    return import('@tabler/icons/hemisphere-plus.svg?react');
-  }),
-  hemisphere: lazy(() => {
-    return import('@tabler/icons/hemisphere.svg?react');
-  }),
-  'hexagon-0-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-0-filled.svg?react');
-  }),
-  'hexagon-1-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-1-filled.svg?react');
-  }),
-  'hexagon-2-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-2-filled.svg?react');
-  }),
-  'hexagon-3-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-3-filled.svg?react');
-  }),
-  'hexagon-3d': lazy(() => {
-    return import('@tabler/icons/hexagon-3d.svg?react');
-  }),
-  'hexagon-4-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-4-filled.svg?react');
-  }),
-  'hexagon-5-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-5-filled.svg?react');
-  }),
-  'hexagon-6-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-6-filled.svg?react');
-  }),
-  'hexagon-7-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-7-filled.svg?react');
-  }),
-  'hexagon-8-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-8-filled.svg?react');
-  }),
-  'hexagon-9-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-9-filled.svg?react');
-  }),
-  'hexagon-filled': lazy(() => {
-    return import('@tabler/icons/hexagon-filled.svg?react');
-  }),
-  'hexagon-letter-a': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-a.svg?react');
-  }),
-  'hexagon-letter-b': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-b.svg?react');
-  }),
-  'hexagon-letter-c': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-c.svg?react');
-  }),
-  'hexagon-letter-d': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-d.svg?react');
-  }),
-  'hexagon-letter-e': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-e.svg?react');
-  }),
-  'hexagon-letter-f': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-f.svg?react');
-  }),
-  'hexagon-letter-g': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-g.svg?react');
-  }),
-  'hexagon-letter-h': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-h.svg?react');
-  }),
-  'hexagon-letter-i': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-i.svg?react');
-  }),
-  'hexagon-letter-j': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-j.svg?react');
-  }),
-  'hexagon-letter-k': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-k.svg?react');
-  }),
-  'hexagon-letter-l': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-l.svg?react');
-  }),
-  'hexagon-letter-m': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-m.svg?react');
-  }),
-  'hexagon-letter-n': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-n.svg?react');
-  }),
-  'hexagon-letter-o': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-o.svg?react');
-  }),
-  'hexagon-letter-p': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-p.svg?react');
-  }),
-  'hexagon-letter-q': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-q.svg?react');
-  }),
-  'hexagon-letter-r': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-r.svg?react');
-  }),
-  'hexagon-letter-s': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-s.svg?react');
-  }),
-  'hexagon-letter-t': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-t.svg?react');
-  }),
-  'hexagon-letter-u': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-u.svg?react');
-  }),
-  'hexagon-letter-v': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-v.svg?react');
-  }),
-  'hexagon-letter-w': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-w.svg?react');
-  }),
-  'hexagon-letter-x': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-x.svg?react');
-  }),
-  'hexagon-letter-y': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-y.svg?react');
-  }),
-  'hexagon-letter-z': lazy(() => {
-    return import('@tabler/icons/hexagon-letter-z.svg?react');
-  }),
-  'hexagon-minus-2': lazy(() => {
-    return import('@tabler/icons/hexagon-minus-2.svg?react');
-  }),
-  'hexagon-minus': lazy(() => {
-    return import('@tabler/icons/hexagon-minus.svg?react');
-  }),
-  'hexagon-number-0': lazy(() => {
-    return import('@tabler/icons/hexagon-number-0.svg?react');
-  }),
-  'hexagon-number-1': lazy(() => {
-    return import('@tabler/icons/hexagon-number-1.svg?react');
-  }),
-  'hexagon-number-2': lazy(() => {
-    return import('@tabler/icons/hexagon-number-2.svg?react');
-  }),
-  'hexagon-number-3': lazy(() => {
-    return import('@tabler/icons/hexagon-number-3.svg?react');
-  }),
-  'hexagon-number-4': lazy(() => {
-    return import('@tabler/icons/hexagon-number-4.svg?react');
-  }),
-  'hexagon-number-5': lazy(() => {
-    return import('@tabler/icons/hexagon-number-5.svg?react');
-  }),
-  'hexagon-number-6': lazy(() => {
-    return import('@tabler/icons/hexagon-number-6.svg?react');
-  }),
-  'hexagon-number-7': lazy(() => {
-    return import('@tabler/icons/hexagon-number-7.svg?react');
-  }),
-  'hexagon-number-8': lazy(() => {
-    return import('@tabler/icons/hexagon-number-8.svg?react');
-  }),
-  'hexagon-number-9': lazy(() => {
-    return import('@tabler/icons/hexagon-number-9.svg?react');
-  }),
-  'hexagon-off': lazy(() => {
-    return import('@tabler/icons/hexagon-off.svg?react');
-  }),
-  'hexagon-plus-2': lazy(() => {
-    return import('@tabler/icons/hexagon-plus-2.svg?react');
-  }),
-  'hexagon-plus': lazy(() => {
-    return import('@tabler/icons/hexagon-plus.svg?react');
-  }),
-  hexagon: lazy(() => {
-    return import('@tabler/icons/hexagon.svg?react');
-  }),
-  'hexagonal-prism-off': lazy(() => {
-    return import('@tabler/icons/hexagonal-prism-off.svg?react');
-  }),
-  'hexagonal-prism-plus': lazy(() => {
-    return import('@tabler/icons/hexagonal-prism-plus.svg?react');
-  }),
-  'hexagonal-prism': lazy(() => {
-    return import('@tabler/icons/hexagonal-prism.svg?react');
-  }),
-  'hexagonal-pyramid-off': lazy(() => {
-    return import('@tabler/icons/hexagonal-pyramid-off.svg?react');
-  }),
-  'hexagonal-pyramid-plus': lazy(() => {
-    return import('@tabler/icons/hexagonal-pyramid-plus.svg?react');
-  }),
-  'hexagonal-pyramid': lazy(() => {
-    return import('@tabler/icons/hexagonal-pyramid.svg?react');
-  }),
-  'hexagons-off': lazy(() => {
-    return import('@tabler/icons/hexagons-off.svg?react');
-  }),
-  hexagons: lazy(() => {
-    return import('@tabler/icons/hexagons.svg?react');
-  }),
-  'hierarchy-2': lazy(() => {
-    return import('@tabler/icons/hierarchy-2.svg?react');
-  }),
-  'hierarchy-3': lazy(() => {
-    return import('@tabler/icons/hierarchy-3.svg?react');
-  }),
-  'hierarchy-off': lazy(() => {
-    return import('@tabler/icons/hierarchy-off.svg?react');
-  }),
-  hierarchy: lazy(() => {
-    return import('@tabler/icons/hierarchy.svg?react');
-  }),
-  'highlight-off': lazy(() => {
-    return import('@tabler/icons/highlight-off.svg?react');
-  }),
-  highlight: lazy(() => {
-    return import('@tabler/icons/highlight.svg?react');
-  }),
-  'history-off': lazy(() => {
-    return import('@tabler/icons/history-off.svg?react');
-  }),
-  'history-toggle': lazy(() => {
-    return import('@tabler/icons/history-toggle.svg?react');
-  }),
-  history: lazy(() => {
-    return import('@tabler/icons/history.svg?react');
-  }),
-  'home-2': lazy(() => {
-    return import('@tabler/icons/home-2.svg?react');
-  }),
-  'home-bolt': lazy(() => {
-    return import('@tabler/icons/home-bolt.svg?react');
-  }),
-  'home-cancel': lazy(() => {
-    return import('@tabler/icons/home-cancel.svg?react');
-  }),
-  'home-check': lazy(() => {
-    return import('@tabler/icons/home-check.svg?react');
-  }),
-  'home-cog': lazy(() => {
-    return import('@tabler/icons/home-cog.svg?react');
-  }),
-  'home-dollar': lazy(() => {
-    return import('@tabler/icons/home-dollar.svg?react');
-  }),
-  'home-dot': lazy(() => {
-    return import('@tabler/icons/home-dot.svg?react');
-  }),
-  'home-down': lazy(() => {
-    return import('@tabler/icons/home-down.svg?react');
-  }),
-  'home-eco': lazy(() => {
-    return import('@tabler/icons/home-eco.svg?react');
-  }),
-  'home-edit': lazy(() => {
-    return import('@tabler/icons/home-edit.svg?react');
-  }),
-  'home-exclamation': lazy(() => {
-    return import('@tabler/icons/home-exclamation.svg?react');
-  }),
-  'home-hand': lazy(() => {
-    return import('@tabler/icons/home-hand.svg?react');
-  }),
-  'home-heart': lazy(() => {
-    return import('@tabler/icons/home-heart.svg?react');
-  }),
-  'home-infinity': lazy(() => {
-    return import('@tabler/icons/home-infinity.svg?react');
-  }),
-  'home-link': lazy(() => {
-    return import('@tabler/icons/home-link.svg?react');
-  }),
-  'home-minus': lazy(() => {
-    return import('@tabler/icons/home-minus.svg?react');
-  }),
-  'home-move': lazy(() => {
-    return import('@tabler/icons/home-move.svg?react');
-  }),
-  'home-off': lazy(() => {
-    return import('@tabler/icons/home-off.svg?react');
-  }),
-  'home-plus': lazy(() => {
-    return import('@tabler/icons/home-plus.svg?react');
-  }),
-  'home-question': lazy(() => {
-    return import('@tabler/icons/home-question.svg?react');
-  }),
-  'home-ribbon': lazy(() => {
-    return import('@tabler/icons/home-ribbon.svg?react');
-  }),
-  'home-search': lazy(() => {
-    return import('@tabler/icons/home-search.svg?react');
-  }),
-  'home-share': lazy(() => {
-    return import('@tabler/icons/home-share.svg?react');
-  }),
-  'home-shield': lazy(() => {
-    return import('@tabler/icons/home-shield.svg?react');
-  }),
-  'home-signal': lazy(() => {
-    return import('@tabler/icons/home-signal.svg?react');
-  }),
-  'home-star': lazy(() => {
-    return import('@tabler/icons/home-star.svg?react');
-  }),
-  'home-stats': lazy(() => {
-    return import('@tabler/icons/home-stats.svg?react');
-  }),
-  'home-up': lazy(() => {
-    return import('@tabler/icons/home-up.svg?react');
-  }),
-  'home-x': lazy(() => {
-    return import('@tabler/icons/home-x.svg?react');
-  }),
-  home: lazy(() => {
-    return import('@tabler/icons/home.svg?react');
-  }),
-  'horse-toy': lazy(() => {
-    return import('@tabler/icons/horse-toy.svg?react');
-  }),
-  horse: lazy(() => {
-    return import('@tabler/icons/horse.svg?react');
-  }),
-  horseshoe: lazy(() => {
-    return import('@tabler/icons/horseshoe.svg?react');
-  }),
-  'hotel-service': lazy(() => {
-    return import('@tabler/icons/hotel-service.svg?react');
-  }),
-  'hourglass-empty': lazy(() => {
-    return import('@tabler/icons/hourglass-empty.svg?react');
-  }),
-  'hourglass-filled': lazy(() => {
-    return import('@tabler/icons/hourglass-filled.svg?react');
-  }),
-  'hourglass-high': lazy(() => {
-    return import('@tabler/icons/hourglass-high.svg?react');
-  }),
-  'hourglass-low': lazy(() => {
-    return import('@tabler/icons/hourglass-low.svg?react');
-  }),
-  'hourglass-off': lazy(() => {
-    return import('@tabler/icons/hourglass-off.svg?react');
-  }),
-  hourglass: lazy(() => {
-    return import('@tabler/icons/hourglass.svg?react');
-  }),
-  html: lazy(() => {
-    return import('@tabler/icons/html.svg?react');
-  }),
-  'http-connect': lazy(() => {
-    return import('@tabler/icons/http-connect.svg?react');
-  }),
-  'http-delete': lazy(() => {
-    return import('@tabler/icons/http-delete.svg?react');
-  }),
-  'http-get': lazy(() => {
-    return import('@tabler/icons/http-get.svg?react');
-  }),
-  'http-head': lazy(() => {
-    return import('@tabler/icons/http-head.svg?react');
-  }),
-  'http-options': lazy(() => {
-    return import('@tabler/icons/http-options.svg?react');
-  }),
-  'http-patch': lazy(() => {
-    return import('@tabler/icons/http-patch.svg?react');
-  }),
-  'http-post': lazy(() => {
-    return import('@tabler/icons/http-post.svg?react');
-  }),
-  'http-put': lazy(() => {
-    return import('@tabler/icons/http-put.svg?react');
-  }),
-  'http-que': lazy(() => {
-    return import('@tabler/icons/http-que.svg?react');
-  }),
-  'http-trace': lazy(() => {
-    return import('@tabler/icons/http-trace.svg?react');
-  }),
-  'ice-cream-2': lazy(() => {
-    return import('@tabler/icons/ice-cream-2.svg?react');
-  }),
-  'ice-cream-off': lazy(() => {
-    return import('@tabler/icons/ice-cream-off.svg?react');
-  }),
-  'ice-cream': lazy(() => {
-    return import('@tabler/icons/ice-cream.svg?react');
-  }),
-  'ice-skating': lazy(() => {
-    return import('@tabler/icons/ice-skating.svg?react');
-  }),
-  'icons-off': lazy(() => {
-    return import('@tabler/icons/icons-off.svg?react');
-  }),
-  icons: lazy(() => {
-    return import('@tabler/icons/icons.svg?react');
-  }),
-  'id-badge-2': lazy(() => {
-    return import('@tabler/icons/id-badge-2.svg?react');
-  }),
-  'id-badge-off': lazy(() => {
-    return import('@tabler/icons/id-badge-off.svg?react');
-  }),
-  'id-badge': lazy(() => {
-    return import('@tabler/icons/id-badge.svg?react');
-  }),
-  'id-off': lazy(() => {
-    return import('@tabler/icons/id-off.svg?react');
-  }),
-  id: lazy(() => {
-    return import('@tabler/icons/id.svg?react');
-  }),
-  'inbox-off': lazy(() => {
-    return import('@tabler/icons/inbox-off.svg?react');
-  }),
-  inbox: lazy(() => {
-    return import('@tabler/icons/inbox.svg?react');
-  }),
-  'indent-decrease': lazy(() => {
-    return import('@tabler/icons/indent-decrease.svg?react');
-  }),
-  'indent-increase': lazy(() => {
-    return import('@tabler/icons/indent-increase.svg?react');
-  }),
-  'infinity-off': lazy(() => {
-    return import('@tabler/icons/infinity-off.svg?react');
-  }),
-  infinity: lazy(() => {
-    return import('@tabler/icons/infinity.svg?react');
-  }),
-  'info-circle-filled': lazy(() => {
-    return import('@tabler/icons/info-circle-filled.svg?react');
-  }),
-  'info-circle': lazy(() => {
-    return import('@tabler/icons/info-circle.svg?react');
-  }),
-  'info-hexagon-filled': lazy(() => {
-    return import('@tabler/icons/info-hexagon-filled.svg?react');
-  }),
-  'info-hexagon': lazy(() => {
-    return import('@tabler/icons/info-hexagon.svg?react');
-  }),
-  'info-octagon-filled': lazy(() => {
-    return import('@tabler/icons/info-octagon-filled.svg?react');
-  }),
-  'info-octagon': lazy(() => {
-    return import('@tabler/icons/info-octagon.svg?react');
-  }),
-  'info-small': lazy(() => {
-    return import('@tabler/icons/info-small.svg?react');
-  }),
-  'info-square-filled': lazy(() => {
-    return import('@tabler/icons/info-square-filled.svg?react');
-  }),
-  'info-square-rounded-filled': lazy(() => {
-    return import('@tabler/icons/info-square-rounded-filled.svg?react');
-  }),
-  'info-square-rounded': lazy(() => {
-    return import('@tabler/icons/info-square-rounded.svg?react');
-  }),
-  'info-square': lazy(() => {
-    return import('@tabler/icons/info-square.svg?react');
-  }),
-  'info-triangle-filled': lazy(() => {
-    return import('@tabler/icons/info-triangle-filled.svg?react');
-  }),
-  'info-triangle': lazy(() => {
-    return import('@tabler/icons/info-triangle.svg?react');
-  }),
-  'inner-shadow-bottom-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-bottom-filled.svg?react');
-  }),
-  'inner-shadow-bottom-left-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-bottom-left-filled.svg?react');
-  }),
-  'inner-shadow-bottom-left': lazy(() => {
-    return import('@tabler/icons/inner-shadow-bottom-left.svg?react');
-  }),
-  'inner-shadow-bottom-right-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-bottom-right-filled.svg?react');
-  }),
-  'inner-shadow-bottom-right': lazy(() => {
-    return import('@tabler/icons/inner-shadow-bottom-right.svg?react');
-  }),
-  'inner-shadow-bottom': lazy(() => {
-    return import('@tabler/icons/inner-shadow-bottom.svg?react');
-  }),
-  'inner-shadow-left-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-left-filled.svg?react');
-  }),
-  'inner-shadow-left': lazy(() => {
-    return import('@tabler/icons/inner-shadow-left.svg?react');
-  }),
-  'inner-shadow-right-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-right-filled.svg?react');
-  }),
-  'inner-shadow-right': lazy(() => {
-    return import('@tabler/icons/inner-shadow-right.svg?react');
-  }),
-  'inner-shadow-top-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-top-filled.svg?react');
-  }),
-  'inner-shadow-top-left-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-top-left-filled.svg?react');
-  }),
-  'inner-shadow-top-left': lazy(() => {
-    return import('@tabler/icons/inner-shadow-top-left.svg?react');
-  }),
-  'inner-shadow-top-right-filled': lazy(() => {
-    return import('@tabler/icons/inner-shadow-top-right-filled.svg?react');
-  }),
-  'inner-shadow-top-right': lazy(() => {
-    return import('@tabler/icons/inner-shadow-top-right.svg?react');
-  }),
-  'inner-shadow-top': lazy(() => {
-    return import('@tabler/icons/inner-shadow-top.svg?react');
-  }),
-  'input-ai': lazy(() => {
-    return import('@tabler/icons/input-ai.svg?react');
-  }),
-  'input-check': lazy(() => {
-    return import('@tabler/icons/input-check.svg?react');
-  }),
-  'input-search': lazy(() => {
-    return import('@tabler/icons/input-search.svg?react');
-  }),
-  'input-x': lazy(() => {
-    return import('@tabler/icons/input-x.svg?react');
-  }),
-  'ironing-1': lazy(() => {
-    return import('@tabler/icons/ironing-1.svg?react');
-  }),
-  'ironing-2': lazy(() => {
-    return import('@tabler/icons/ironing-2.svg?react');
-  }),
-  'ironing-3': lazy(() => {
-    return import('@tabler/icons/ironing-3.svg?react');
-  }),
-  'ironing-off': lazy(() => {
-    return import('@tabler/icons/ironing-off.svg?react');
-  }),
-  'ironing-steam-off': lazy(() => {
-    return import('@tabler/icons/ironing-steam-off.svg?react');
-  }),
-  'ironing-steam': lazy(() => {
-    return import('@tabler/icons/ironing-steam.svg?react');
-  }),
-  ironing: lazy(() => {
-    return import('@tabler/icons/ironing.svg?react');
-  }),
-  'irregular-polyhedron-off': lazy(() => {
-    return import('@tabler/icons/irregular-polyhedron-off.svg?react');
-  }),
-  'irregular-polyhedron-plus': lazy(() => {
-    return import('@tabler/icons/irregular-polyhedron-plus.svg?react');
-  }),
-  'irregular-polyhedron': lazy(() => {
-    return import('@tabler/icons/irregular-polyhedron.svg?react');
-  }),
-  italic: lazy(() => {
-    return import('@tabler/icons/italic.svg?react');
-  }),
-  jacket: lazy(() => {
-    return import('@tabler/icons/jacket.svg?react');
-  }),
-  jetpack: lazy(() => {
-    return import('@tabler/icons/jetpack.svg?react');
-  }),
-  'jewish-star-filled': lazy(() => {
-    return import('@tabler/icons/jewish-star-filled.svg?react');
-  }),
-  'jewish-star': lazy(() => {
-    return import('@tabler/icons/jewish-star.svg?react');
-  }),
-  jpg: lazy(() => {
-    return import('@tabler/icons/jpg.svg?react');
-  }),
-  json: lazy(() => {
-    return import('@tabler/icons/json.svg?react');
-  }),
-  'jump-rope': lazy(() => {
-    return import('@tabler/icons/jump-rope.svg?react');
-  }),
-  karate: lazy(() => {
-    return import('@tabler/icons/karate.svg?react');
-  }),
-  kayak: lazy(() => {
-    return import('@tabler/icons/kayak.svg?react');
-  }),
-  kering: lazy(() => {
-    return import('@tabler/icons/kering.svg?react');
-  }),
-  'key-off': lazy(() => {
-    return import('@tabler/icons/key-off.svg?react');
-  }),
-  key: lazy(() => {
-    return import('@tabler/icons/key.svg?react');
-  }),
-  'keyboard-hide': lazy(() => {
-    return import('@tabler/icons/keyboard-hide.svg?react');
-  }),
-  'keyboard-off': lazy(() => {
-    return import('@tabler/icons/keyboard-off.svg?react');
-  }),
-  'keyboard-show': lazy(() => {
-    return import('@tabler/icons/keyboard-show.svg?react');
-  }),
-  keyboard: lazy(() => {
-    return import('@tabler/icons/keyboard.svg?react');
-  }),
-  'keyframe-align-center-filled': lazy(() => {
-    return import('@tabler/icons/keyframe-align-center-filled.svg?react');
-  }),
-  'keyframe-align-center': lazy(() => {
-    return import('@tabler/icons/keyframe-align-center.svg?react');
-  }),
-  'keyframe-align-horizontal-filled': lazy(() => {
-    return import('@tabler/icons/keyframe-align-horizontal-filled.svg?react');
-  }),
-  'keyframe-align-horizontal': lazy(() => {
-    return import('@tabler/icons/keyframe-align-horizontal.svg?react');
-  }),
-  'keyframe-align-vertical-filled': lazy(() => {
-    return import('@tabler/icons/keyframe-align-vertical-filled.svg?react');
-  }),
-  'keyframe-align-vertical': lazy(() => {
-    return import('@tabler/icons/keyframe-align-vertical.svg?react');
-  }),
-  'keyframe-filled': lazy(() => {
-    return import('@tabler/icons/keyframe-filled.svg?react');
-  }),
-  keyframe: lazy(() => {
-    return import('@tabler/icons/keyframe.svg?react');
-  }),
-  'keyframes-filled': lazy(() => {
-    return import('@tabler/icons/keyframes-filled.svg?react');
-  }),
-  keyframes: lazy(() => {
-    return import('@tabler/icons/keyframes.svg?react');
-  }),
-  'ladder-off': lazy(() => {
-    return import('@tabler/icons/ladder-off.svg?react');
-  }),
-  ladder: lazy(() => {
-    return import('@tabler/icons/ladder.svg?react');
-  }),
-  ladle: lazy(() => {
-    return import('@tabler/icons/ladle.svg?react');
-  }),
-  lambda: lazy(() => {
-    return import('@tabler/icons/lambda.svg?react');
-  }),
-  'lamp-2': lazy(() => {
-    return import('@tabler/icons/lamp-2.svg?react');
-  }),
-  'lamp-off': lazy(() => {
-    return import('@tabler/icons/lamp-off.svg?react');
-  }),
-  lamp: lazy(() => {
-    return import('@tabler/icons/lamp.svg?react');
-  }),
-  lane: lazy(() => {
-    return import('@tabler/icons/lane.svg?react');
-  }),
-  'language-hiragana': lazy(() => {
-    return import('@tabler/icons/language-hiragana.svg?react');
-  }),
-  'language-katakana': lazy(() => {
-    return import('@tabler/icons/language-katakana.svg?react');
-  }),
-  'language-off': lazy(() => {
-    return import('@tabler/icons/language-off.svg?react');
-  }),
-  language: lazy(() => {
-    return import('@tabler/icons/language.svg?react');
-  }),
-  'lasso-off': lazy(() => {
-    return import('@tabler/icons/lasso-off.svg?react');
-  }),
-  'lasso-polygon': lazy(() => {
-    return import('@tabler/icons/lasso-polygon.svg?react');
-  }),
-  lasso: lazy(() => {
-    return import('@tabler/icons/lasso.svg?react');
-  }),
-  'layers-difference': lazy(() => {
-    return import('@tabler/icons/layers-difference.svg?react');
-  }),
-  'layers-intersect-2': lazy(() => {
-    return import('@tabler/icons/layers-intersect-2.svg?react');
-  }),
-  'layers-intersect': lazy(() => {
-    return import('@tabler/icons/layers-intersect.svg?react');
-  }),
-  'layers-linked': lazy(() => {
-    return import('@tabler/icons/layers-linked.svg?react');
-  }),
-  'layers-off': lazy(() => {
-    return import('@tabler/icons/layers-off.svg?react');
-  }),
-  'layers-subtract': lazy(() => {
-    return import('@tabler/icons/layers-subtract.svg?react');
-  }),
-  'layers-union': lazy(() => {
-    return import('@tabler/icons/layers-union.svg?react');
-  }),
-  'layout-2': lazy(() => {
-    return import('@tabler/icons/layout-2.svg?react');
-  }),
-  'layout-align-bottom': lazy(() => {
-    return import('@tabler/icons/layout-align-bottom.svg?react');
-  }),
-  'layout-align-center': lazy(() => {
-    return import('@tabler/icons/layout-align-center.svg?react');
-  }),
-  'layout-align-left': lazy(() => {
-    return import('@tabler/icons/layout-align-left.svg?react');
-  }),
-  'layout-align-middle': lazy(() => {
-    return import('@tabler/icons/layout-align-middle.svg?react');
-  }),
-  'layout-align-right': lazy(() => {
-    return import('@tabler/icons/layout-align-right.svg?react');
-  }),
-  'layout-align-top': lazy(() => {
-    return import('@tabler/icons/layout-align-top.svg?react');
-  }),
-  'layout-board-split': lazy(() => {
-    return import('@tabler/icons/layout-board-split.svg?react');
-  }),
-  'layout-board': lazy(() => {
-    return import('@tabler/icons/layout-board.svg?react');
-  }),
-  'layout-bottombar-collapse-filled': lazy(() => {
-    return import('@tabler/icons/layout-bottombar-collapse-filled.svg?react');
-  }),
-  'layout-bottombar-collapse': lazy(() => {
-    return import('@tabler/icons/layout-bottombar-collapse.svg?react');
-  }),
-  'layout-bottombar-expand-filled': lazy(() => {
-    return import('@tabler/icons/layout-bottombar-expand-filled.svg?react');
-  }),
-  'layout-bottombar-expand': lazy(() => {
-    return import('@tabler/icons/layout-bottombar-expand.svg?react');
-  }),
-  'layout-bottombar-filled': lazy(() => {
-    return import('@tabler/icons/layout-bottombar-filled.svg?react');
-  }),
-  'layout-bottombar': lazy(() => {
-    return import('@tabler/icons/layout-bottombar.svg?react');
-  }),
-  'layout-cards': lazy(() => {
-    return import('@tabler/icons/layout-cards.svg?react');
-  }),
-  'layout-collage': lazy(() => {
-    return import('@tabler/icons/layout-collage.svg?react');
-  }),
-  'layout-columns': lazy(() => {
-    return import('@tabler/icons/layout-columns.svg?react');
-  }),
-  'layout-dashboard': lazy(() => {
-    return import('@tabler/icons/layout-dashboard.svg?react');
-  }),
-  'layout-distribute-horizontal': lazy(() => {
-    return import('@tabler/icons/layout-distribute-horizontal.svg?react');
-  }),
-  'layout-distribute-vertical': lazy(() => {
-    return import('@tabler/icons/layout-distribute-vertical.svg?react');
-  }),
-  'layout-grid-add': lazy(() => {
-    return import('@tabler/icons/layout-grid-add.svg?react');
-  }),
-  'layout-grid-remove': lazy(() => {
-    return import('@tabler/icons/layout-grid-remove.svg?react');
-  }),
-  'layout-grid': lazy(() => {
-    return import('@tabler/icons/layout-grid.svg?react');
-  }),
-  'layout-kanban': lazy(() => {
-    return import('@tabler/icons/layout-kanban.svg?react');
-  }),
-  'layout-list': lazy(() => {
-    return import('@tabler/icons/layout-list.svg?react');
-  }),
-  'layout-navbar-collapse-filled': lazy(() => {
-    return import('@tabler/icons/layout-navbar-collapse-filled.svg?react');
-  }),
-  'layout-navbar-collapse': lazy(() => {
-    return import('@tabler/icons/layout-navbar-collapse.svg?react');
-  }),
-  'layout-navbar-expand-filled': lazy(() => {
-    return import('@tabler/icons/layout-navbar-expand-filled.svg?react');
-  }),
-  'layout-navbar-expand': lazy(() => {
-    return import('@tabler/icons/layout-navbar-expand.svg?react');
-  }),
-  'layout-navbar-filled': lazy(() => {
-    return import('@tabler/icons/layout-navbar-filled.svg?react');
-  }),
-  'layout-navbar': lazy(() => {
-    return import('@tabler/icons/layout-navbar.svg?react');
-  }),
-  'layout-off': lazy(() => {
-    return import('@tabler/icons/layout-off.svg?react');
-  }),
-  'layout-rows': lazy(() => {
-    return import('@tabler/icons/layout-rows.svg?react');
-  }),
-  'layout-sidebar-left-collapse-filled': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-left-collapse-filled.svg?react');
-  }),
-  'layout-sidebar-left-collapse': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-left-collapse.svg?react');
-  }),
-  'layout-sidebar-left-expand-filled': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-left-expand-filled.svg?react');
-  }),
-  'layout-sidebar-left-expand': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-left-expand.svg?react');
-  }),
-  'layout-sidebar-right-collapse-filled': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-right-collapse-filled.svg?react');
-  }),
-  'layout-sidebar-right-collapse': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-right-collapse.svg?react');
-  }),
-  'layout-sidebar-right-expand-filled': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-right-expand-filled.svg?react');
-  }),
-  'layout-sidebar-right-expand': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-right-expand.svg?react');
-  }),
-  'layout-sidebar-right': lazy(() => {
-    return import('@tabler/icons/layout-sidebar-right.svg?react');
-  }),
-  'layout-sidebar': lazy(() => {
-    return import('@tabler/icons/layout-sidebar.svg?react');
-  }),
-  layout: lazy(() => {
-    return import('@tabler/icons/layout.svg?react');
-  }),
-  'leaf-off': lazy(() => {
-    return import('@tabler/icons/leaf-off.svg?react');
-  }),
-  leaf: lazy(() => {
-    return import('@tabler/icons/leaf.svg?react');
-  }),
-  'lego-off': lazy(() => {
-    return import('@tabler/icons/lego-off.svg?react');
-  }),
-  lego: lazy(() => {
-    return import('@tabler/icons/lego.svg?react');
-  }),
-  'lemon-2': lazy(() => {
-    return import('@tabler/icons/lemon-2.svg?react');
-  }),
-  lemon: lazy(() => {
-    return import('@tabler/icons/lemon.svg?react');
-  }),
-  'letter-a-small': lazy(() => {
-    return import('@tabler/icons/letter-a-small.svg?react');
-  }),
-  'letter-a': lazy(() => {
-    return import('@tabler/icons/letter-a.svg?react');
-  }),
-  'letter-b-small': lazy(() => {
-    return import('@tabler/icons/letter-b-small.svg?react');
-  }),
-  'letter-b': lazy(() => {
-    return import('@tabler/icons/letter-b.svg?react');
-  }),
-  'letter-c-small': lazy(() => {
-    return import('@tabler/icons/letter-c-small.svg?react');
-  }),
-  'letter-c': lazy(() => {
-    return import('@tabler/icons/letter-c.svg?react');
-  }),
-  'letter-case-lower': lazy(() => {
-    return import('@tabler/icons/letter-case-lower.svg?react');
-  }),
-  'letter-case-toggle': lazy(() => {
-    return import('@tabler/icons/letter-case-toggle.svg?react');
-  }),
-  'letter-case-upper': lazy(() => {
-    return import('@tabler/icons/letter-case-upper.svg?react');
-  }),
-  'letter-case': lazy(() => {
-    return import('@tabler/icons/letter-case.svg?react');
-  }),
-  'letter-d-small': lazy(() => {
-    return import('@tabler/icons/letter-d-small.svg?react');
-  }),
-  'letter-d': lazy(() => {
-    return import('@tabler/icons/letter-d.svg?react');
-  }),
-  'letter-e-small': lazy(() => {
-    return import('@tabler/icons/letter-e-small.svg?react');
-  }),
-  'letter-e': lazy(() => {
-    return import('@tabler/icons/letter-e.svg?react');
-  }),
-  'letter-f-small': lazy(() => {
-    return import('@tabler/icons/letter-f-small.svg?react');
-  }),
-  'letter-f': lazy(() => {
-    return import('@tabler/icons/letter-f.svg?react');
-  }),
-  'letter-g-small': lazy(() => {
-    return import('@tabler/icons/letter-g-small.svg?react');
-  }),
-  'letter-g': lazy(() => {
-    return import('@tabler/icons/letter-g.svg?react');
-  }),
-  'letter-h-small': lazy(() => {
-    return import('@tabler/icons/letter-h-small.svg?react');
-  }),
-  'letter-h': lazy(() => {
-    return import('@tabler/icons/letter-h.svg?react');
-  }),
-  'letter-i-small': lazy(() => {
-    return import('@tabler/icons/letter-i-small.svg?react');
-  }),
-  'letter-i': lazy(() => {
-    return import('@tabler/icons/letter-i.svg?react');
-  }),
-  'letter-j-small': lazy(() => {
-    return import('@tabler/icons/letter-j-small.svg?react');
-  }),
-  'letter-j': lazy(() => {
-    return import('@tabler/icons/letter-j.svg?react');
-  }),
-  'letter-k-small': lazy(() => {
-    return import('@tabler/icons/letter-k-small.svg?react');
-  }),
-  'letter-k': lazy(() => {
-    return import('@tabler/icons/letter-k.svg?react');
-  }),
-  'letter-l-small': lazy(() => {
-    return import('@tabler/icons/letter-l-small.svg?react');
-  }),
-  'letter-l': lazy(() => {
-    return import('@tabler/icons/letter-l.svg?react');
-  }),
-  'letter-m-small': lazy(() => {
-    return import('@tabler/icons/letter-m-small.svg?react');
-  }),
-  'letter-m': lazy(() => {
-    return import('@tabler/icons/letter-m.svg?react');
-  }),
-  'letter-n-small': lazy(() => {
-    return import('@tabler/icons/letter-n-small.svg?react');
-  }),
-  'letter-n': lazy(() => {
-    return import('@tabler/icons/letter-n.svg?react');
-  }),
-  'letter-o-small': lazy(() => {
-    return import('@tabler/icons/letter-o-small.svg?react');
-  }),
-  'letter-o': lazy(() => {
-    return import('@tabler/icons/letter-o.svg?react');
-  }),
-  'letter-p-small': lazy(() => {
-    return import('@tabler/icons/letter-p-small.svg?react');
-  }),
-  'letter-p': lazy(() => {
-    return import('@tabler/icons/letter-p.svg?react');
-  }),
-  'letter-q-small': lazy(() => {
-    return import('@tabler/icons/letter-q-small.svg?react');
-  }),
-  'letter-q': lazy(() => {
-    return import('@tabler/icons/letter-q.svg?react');
-  }),
-  'letter-r-small': lazy(() => {
-    return import('@tabler/icons/letter-r-small.svg?react');
-  }),
-  'letter-r': lazy(() => {
-    return import('@tabler/icons/letter-r.svg?react');
-  }),
-  'letter-s-small': lazy(() => {
-    return import('@tabler/icons/letter-s-small.svg?react');
-  }),
-  'letter-s': lazy(() => {
-    return import('@tabler/icons/letter-s.svg?react');
-  }),
-  'letter-spacing': lazy(() => {
-    return import('@tabler/icons/letter-spacing.svg?react');
-  }),
-  'letter-t-small': lazy(() => {
-    return import('@tabler/icons/letter-t-small.svg?react');
-  }),
-  'letter-t': lazy(() => {
-    return import('@tabler/icons/letter-t.svg?react');
-  }),
-  'letter-u-small': lazy(() => {
-    return import('@tabler/icons/letter-u-small.svg?react');
-  }),
-  'letter-u': lazy(() => {
-    return import('@tabler/icons/letter-u.svg?react');
-  }),
-  'letter-v-small': lazy(() => {
-    return import('@tabler/icons/letter-v-small.svg?react');
-  }),
-  'letter-v': lazy(() => {
-    return import('@tabler/icons/letter-v.svg?react');
-  }),
-  'letter-w-small': lazy(() => {
-    return import('@tabler/icons/letter-w-small.svg?react');
-  }),
-  'letter-w': lazy(() => {
-    return import('@tabler/icons/letter-w.svg?react');
-  }),
-  'letter-x-small': lazy(() => {
-    return import('@tabler/icons/letter-x-small.svg?react');
-  }),
-  'letter-x': lazy(() => {
-    return import('@tabler/icons/letter-x.svg?react');
-  }),
-  'letter-y-small': lazy(() => {
-    return import('@tabler/icons/letter-y-small.svg?react');
-  }),
-  'letter-y': lazy(() => {
-    return import('@tabler/icons/letter-y.svg?react');
-  }),
-  'letter-z-small': lazy(() => {
-    return import('@tabler/icons/letter-z-small.svg?react');
-  }),
-  'letter-z': lazy(() => {
-    return import('@tabler/icons/letter-z.svg?react');
-  }),
-  'license-off': lazy(() => {
-    return import('@tabler/icons/license-off.svg?react');
-  }),
-  license: lazy(() => {
-    return import('@tabler/icons/license.svg?react');
-  }),
-  'lifebuoy-off': lazy(() => {
-    return import('@tabler/icons/lifebuoy-off.svg?react');
-  }),
-  lifebuoy: lazy(() => {
-    return import('@tabler/icons/lifebuoy.svg?react');
-  }),
-  lighter: lazy(() => {
-    return import('@tabler/icons/lighter.svg?react');
-  }),
-  'line-dashed': lazy(() => {
-    return import('@tabler/icons/line-dashed.svg?react');
-  }),
-  'line-dotted': lazy(() => {
-    return import('@tabler/icons/line-dotted.svg?react');
-  }),
-  'line-height': lazy(() => {
-    return import('@tabler/icons/line-height.svg?react');
-  }),
-  'line-scan': lazy(() => {
-    return import('@tabler/icons/line-scan.svg?react');
-  }),
-  line: lazy(() => {
-    return import('@tabler/icons/line.svg?react');
-  }),
-  'link-off': lazy(() => {
-    return import('@tabler/icons/link-off.svg?react');
-  }),
-  link: lazy(() => {
-    return import('@tabler/icons/link.svg?react');
-  }),
-  'list-check': lazy(() => {
-    return import('@tabler/icons/list-check.svg?react');
-  }),
-  'list-details': lazy(() => {
-    return import('@tabler/icons/list-details.svg?react');
-  }),
-  'list-letters': lazy(() => {
-    return import('@tabler/icons/list-letters.svg?react');
-  }),
-  'list-numbers': lazy(() => {
-    return import('@tabler/icons/list-numbers.svg?react');
-  }),
-  'list-search': lazy(() => {
-    return import('@tabler/icons/list-search.svg?react');
-  }),
-  'list-tree': lazy(() => {
-    return import('@tabler/icons/list-tree.svg?react');
-  }),
-  list: lazy(() => {
-    return import('@tabler/icons/list.svg?react');
-  }),
-  'live-photo-off': lazy(() => {
-    return import('@tabler/icons/live-photo-off.svg?react');
-  }),
-  'live-photo': lazy(() => {
-    return import('@tabler/icons/live-photo.svg?react');
-  }),
-  'live-view': lazy(() => {
-    return import('@tabler/icons/live-view.svg?react');
-  }),
-  'load-balancer': lazy(() => {
-    return import('@tabler/icons/load-balancer.svg?react');
-  }),
-  'loader-2': lazy(() => {
-    return import('@tabler/icons/loader-2.svg?react');
-  }),
-  'loader-3': lazy(() => {
-    return import('@tabler/icons/loader-3.svg?react');
-  }),
-  'loader-quarter': lazy(() => {
-    return import('@tabler/icons/loader-quarter.svg?react');
-  }),
-  loader: lazy(() => {
-    return import('@tabler/icons/loader.svg?react');
-  }),
-  'location-bolt': lazy(() => {
-    return import('@tabler/icons/location-bolt.svg?react');
-  }),
-  'location-broken': lazy(() => {
-    return import('@tabler/icons/location-broken.svg?react');
-  }),
-  'location-cancel': lazy(() => {
-    return import('@tabler/icons/location-cancel.svg?react');
-  }),
-  'location-check': lazy(() => {
-    return import('@tabler/icons/location-check.svg?react');
-  }),
-  'location-code': lazy(() => {
-    return import('@tabler/icons/location-code.svg?react');
-  }),
-  'location-cog': lazy(() => {
-    return import('@tabler/icons/location-cog.svg?react');
-  }),
-  'location-discount': lazy(() => {
-    return import('@tabler/icons/location-discount.svg?react');
-  }),
-  'location-dollar': lazy(() => {
-    return import('@tabler/icons/location-dollar.svg?react');
-  }),
-  'location-down': lazy(() => {
-    return import('@tabler/icons/location-down.svg?react');
-  }),
-  'location-exclamation': lazy(() => {
-    return import('@tabler/icons/location-exclamation.svg?react');
-  }),
-  'location-filled': lazy(() => {
-    return import('@tabler/icons/location-filled.svg?react');
-  }),
-  'location-heart': lazy(() => {
-    return import('@tabler/icons/location-heart.svg?react');
-  }),
-  'location-minus': lazy(() => {
-    return import('@tabler/icons/location-minus.svg?react');
-  }),
-  'location-off': lazy(() => {
-    return import('@tabler/icons/location-off.svg?react');
-  }),
-  'location-pause': lazy(() => {
-    return import('@tabler/icons/location-pause.svg?react');
-  }),
-  'location-pin': lazy(() => {
-    return import('@tabler/icons/location-pin.svg?react');
-  }),
-  'location-plus': lazy(() => {
-    return import('@tabler/icons/location-plus.svg?react');
-  }),
-  'location-question': lazy(() => {
-    return import('@tabler/icons/location-question.svg?react');
-  }),
-  'location-search': lazy(() => {
-    return import('@tabler/icons/location-search.svg?react');
-  }),
-  'location-share': lazy(() => {
-    return import('@tabler/icons/location-share.svg?react');
-  }),
-  'location-star': lazy(() => {
-    return import('@tabler/icons/location-star.svg?react');
-  }),
-  'location-up': lazy(() => {
-    return import('@tabler/icons/location-up.svg?react');
-  }),
-  'location-x': lazy(() => {
-    return import('@tabler/icons/location-x.svg?react');
-  }),
-  location: lazy(() => {
-    return import('@tabler/icons/location.svg?react');
-  }),
-  'lock-access-off': lazy(() => {
-    return import('@tabler/icons/lock-access-off.svg?react');
-  }),
-  'lock-access': lazy(() => {
-    return import('@tabler/icons/lock-access.svg?react');
-  }),
-  'lock-bolt': lazy(() => {
-    return import('@tabler/icons/lock-bolt.svg?react');
-  }),
-  'lock-cancel': lazy(() => {
-    return import('@tabler/icons/lock-cancel.svg?react');
-  }),
-  'lock-check': lazy(() => {
-    return import('@tabler/icons/lock-check.svg?react');
-  }),
-  'lock-code': lazy(() => {
-    return import('@tabler/icons/lock-code.svg?react');
-  }),
-  'lock-cog': lazy(() => {
-    return import('@tabler/icons/lock-cog.svg?react');
-  }),
-  'lock-dollar': lazy(() => {
-    return import('@tabler/icons/lock-dollar.svg?react');
-  }),
-  'lock-down': lazy(() => {
-    return import('@tabler/icons/lock-down.svg?react');
-  }),
-  'lock-exclamation': lazy(() => {
-    return import('@tabler/icons/lock-exclamation.svg?react');
-  }),
-  'lock-heart': lazy(() => {
-    return import('@tabler/icons/lock-heart.svg?react');
-  }),
-  'lock-minus': lazy(() => {
-    return import('@tabler/icons/lock-minus.svg?react');
-  }),
-  'lock-off': lazy(() => {
-    return import('@tabler/icons/lock-off.svg?react');
-  }),
-  'lock-open-off': lazy(() => {
-    return import('@tabler/icons/lock-open-off.svg?react');
-  }),
-  'lock-open': lazy(() => {
-    return import('@tabler/icons/lock-open.svg?react');
-  }),
-  'lock-pause': lazy(() => {
-    return import('@tabler/icons/lock-pause.svg?react');
-  }),
-  'lock-pin': lazy(() => {
-    return import('@tabler/icons/lock-pin.svg?react');
-  }),
-  'lock-plus': lazy(() => {
-    return import('@tabler/icons/lock-plus.svg?react');
-  }),
-  'lock-question': lazy(() => {
-    return import('@tabler/icons/lock-question.svg?react');
-  }),
-  'lock-search': lazy(() => {
-    return import('@tabler/icons/lock-search.svg?react');
-  }),
-  'lock-share': lazy(() => {
-    return import('@tabler/icons/lock-share.svg?react');
-  }),
-  'lock-square-rounded-filled': lazy(() => {
-    return import('@tabler/icons/lock-square-rounded-filled.svg?react');
-  }),
-  'lock-square-rounded': lazy(() => {
-    return import('@tabler/icons/lock-square-rounded.svg?react');
-  }),
-  'lock-square': lazy(() => {
-    return import('@tabler/icons/lock-square.svg?react');
-  }),
-  'lock-star': lazy(() => {
-    return import('@tabler/icons/lock-star.svg?react');
-  }),
-  'lock-up': lazy(() => {
-    return import('@tabler/icons/lock-up.svg?react');
-  }),
-  'lock-x': lazy(() => {
-    return import('@tabler/icons/lock-x.svg?react');
-  }),
-  lock: lazy(() => {
-    return import('@tabler/icons/lock.svg?react');
-  }),
-  'logic-and': lazy(() => {
-    return import('@tabler/icons/logic-and.svg?react');
-  }),
-  'logic-buffer': lazy(() => {
-    return import('@tabler/icons/logic-buffer.svg?react');
-  }),
-  'logic-nand': lazy(() => {
-    return import('@tabler/icons/logic-nand.svg?react');
-  }),
-  'logic-nor': lazy(() => {
-    return import('@tabler/icons/logic-nor.svg?react');
-  }),
-  'logic-not': lazy(() => {
-    return import('@tabler/icons/logic-not.svg?react');
-  }),
-  'logic-or': lazy(() => {
-    return import('@tabler/icons/logic-or.svg?react');
-  }),
-  'logic-xnor': lazy(() => {
-    return import('@tabler/icons/logic-xnor.svg?react');
-  }),
-  'logic-xor': lazy(() => {
-    return import('@tabler/icons/logic-xor.svg?react');
-  }),
-  'login-2': lazy(() => {
-    return import('@tabler/icons/login-2.svg?react');
-  }),
-  login: lazy(() => {
-    return import('@tabler/icons/login.svg?react');
-  }),
-  'logout-2': lazy(() => {
-    return import('@tabler/icons/logout-2.svg?react');
-  }),
-  logout: lazy(() => {
-    return import('@tabler/icons/logout.svg?react');
-  }),
-  'lollipop-off': lazy(() => {
-    return import('@tabler/icons/lollipop-off.svg?react');
-  }),
-  lollipop: lazy(() => {
-    return import('@tabler/icons/lollipop.svg?react');
-  }),
-  'luggage-off': lazy(() => {
-    return import('@tabler/icons/luggage-off.svg?react');
-  }),
-  luggage: lazy(() => {
-    return import('@tabler/icons/luggage.svg?react');
-  }),
-  'lungs-off': lazy(() => {
-    return import('@tabler/icons/lungs-off.svg?react');
-  }),
-  lungs: lazy(() => {
-    return import('@tabler/icons/lungs.svg?react');
-  }),
-  'macro-off': lazy(() => {
-    return import('@tabler/icons/macro-off.svg?react');
-  }),
-  macro: lazy(() => {
-    return import('@tabler/icons/macro.svg?react');
-  }),
-  'magnet-off': lazy(() => {
-    return import('@tabler/icons/magnet-off.svg?react');
-  }),
-  magnet: lazy(() => {
-    return import('@tabler/icons/magnet.svg?react');
-  }),
-  magnetic: lazy(() => {
-    return import('@tabler/icons/magnetic.svg?react');
-  }),
-  'mail-ai': lazy(() => {
-    return import('@tabler/icons/mail-ai.svg?react');
-  }),
-  'mail-bolt': lazy(() => {
-    return import('@tabler/icons/mail-bolt.svg?react');
-  }),
-  'mail-cancel': lazy(() => {
-    return import('@tabler/icons/mail-cancel.svg?react');
-  }),
-  'mail-check': lazy(() => {
-    return import('@tabler/icons/mail-check.svg?react');
-  }),
-  'mail-code': lazy(() => {
-    return import('@tabler/icons/mail-code.svg?react');
-  }),
-  'mail-cog': lazy(() => {
-    return import('@tabler/icons/mail-cog.svg?react');
-  }),
-  'mail-dollar': lazy(() => {
-    return import('@tabler/icons/mail-dollar.svg?react');
-  }),
-  'mail-down': lazy(() => {
-    return import('@tabler/icons/mail-down.svg?react');
-  }),
-  'mail-exclamation': lazy(() => {
-    return import('@tabler/icons/mail-exclamation.svg?react');
-  }),
-  'mail-fast': lazy(() => {
-    return import('@tabler/icons/mail-fast.svg?react');
-  }),
-  'mail-filled': lazy(() => {
-    return import('@tabler/icons/mail-filled.svg?react');
-  }),
-  'mail-forward': lazy(() => {
-    return import('@tabler/icons/mail-forward.svg?react');
-  }),
-  'mail-heart': lazy(() => {
-    return import('@tabler/icons/mail-heart.svg?react');
-  }),
-  'mail-minus': lazy(() => {
-    return import('@tabler/icons/mail-minus.svg?react');
-  }),
-  'mail-off': lazy(() => {
-    return import('@tabler/icons/mail-off.svg?react');
-  }),
-  'mail-opened-filled': lazy(() => {
-    return import('@tabler/icons/mail-opened-filled.svg?react');
-  }),
-  'mail-opened': lazy(() => {
-    return import('@tabler/icons/mail-opened.svg?react');
-  }),
-  'mail-pause': lazy(() => {
-    return import('@tabler/icons/mail-pause.svg?react');
-  }),
-  'mail-pin': lazy(() => {
-    return import('@tabler/icons/mail-pin.svg?react');
-  }),
-  'mail-plus': lazy(() => {
-    return import('@tabler/icons/mail-plus.svg?react');
-  }),
-  'mail-question': lazy(() => {
-    return import('@tabler/icons/mail-question.svg?react');
-  }),
-  'mail-search': lazy(() => {
-    return import('@tabler/icons/mail-search.svg?react');
-  }),
-  'mail-share': lazy(() => {
-    return import('@tabler/icons/mail-share.svg?react');
-  }),
-  'mail-star': lazy(() => {
-    return import('@tabler/icons/mail-star.svg?react');
-  }),
-  'mail-up': lazy(() => {
-    return import('@tabler/icons/mail-up.svg?react');
-  }),
-  'mail-x': lazy(() => {
-    return import('@tabler/icons/mail-x.svg?react');
-  }),
-  mail: lazy(() => {
-    return import('@tabler/icons/mail.svg?react');
-  }),
-  'mailbox-off': lazy(() => {
-    return import('@tabler/icons/mailbox-off.svg?react');
-  }),
-  mailbox: lazy(() => {
-    return import('@tabler/icons/mailbox.svg?react');
-  }),
-  man: lazy(() => {
-    return import('@tabler/icons/man.svg?react');
-  }),
-  'manual-gearbox': lazy(() => {
-    return import('@tabler/icons/manual-gearbox.svg?react');
-  }),
-  'map-2': lazy(() => {
-    return import('@tabler/icons/map-2.svg?react');
-  }),
-  'map-bolt': lazy(() => {
-    return import('@tabler/icons/map-bolt.svg?react');
-  }),
-  'map-cancel': lazy(() => {
-    return import('@tabler/icons/map-cancel.svg?react');
-  }),
-  'map-check': lazy(() => {
-    return import('@tabler/icons/map-check.svg?react');
-  }),
-  'map-code': lazy(() => {
-    return import('@tabler/icons/map-code.svg?react');
-  }),
-  'map-cog': lazy(() => {
-    return import('@tabler/icons/map-cog.svg?react');
-  }),
-  'map-discount': lazy(() => {
-    return import('@tabler/icons/map-discount.svg?react');
-  }),
-  'map-dollar': lazy(() => {
-    return import('@tabler/icons/map-dollar.svg?react');
-  }),
-  'map-down': lazy(() => {
-    return import('@tabler/icons/map-down.svg?react');
-  }),
-  'map-east': lazy(() => {
-    return import('@tabler/icons/map-east.svg?react');
-  }),
-  'map-exclamation': lazy(() => {
-    return import('@tabler/icons/map-exclamation.svg?react');
-  }),
-  'map-heart': lazy(() => {
-    return import('@tabler/icons/map-heart.svg?react');
-  }),
-  'map-minus': lazy(() => {
-    return import('@tabler/icons/map-minus.svg?react');
-  }),
-  'map-north': lazy(() => {
-    return import('@tabler/icons/map-north.svg?react');
-  }),
-  'map-off': lazy(() => {
-    return import('@tabler/icons/map-off.svg?react');
-  }),
-  'map-pause': lazy(() => {
-    return import('@tabler/icons/map-pause.svg?react');
-  }),
-  'map-pin-2': lazy(() => {
-    return import('@tabler/icons/map-pin-2.svg?react');
-  }),
-  'map-pin-bolt': lazy(() => {
-    return import('@tabler/icons/map-pin-bolt.svg?react');
-  }),
-  'map-pin-cancel': lazy(() => {
-    return import('@tabler/icons/map-pin-cancel.svg?react');
-  }),
-  'map-pin-check': lazy(() => {
-    return import('@tabler/icons/map-pin-check.svg?react');
-  }),
-  'map-pin-code': lazy(() => {
-    return import('@tabler/icons/map-pin-code.svg?react');
-  }),
-  'map-pin-cog': lazy(() => {
-    return import('@tabler/icons/map-pin-cog.svg?react');
-  }),
-  'map-pin-dollar': lazy(() => {
-    return import('@tabler/icons/map-pin-dollar.svg?react');
-  }),
-  'map-pin-down': lazy(() => {
-    return import('@tabler/icons/map-pin-down.svg?react');
-  }),
-  'map-pin-exclamation': lazy(() => {
-    return import('@tabler/icons/map-pin-exclamation.svg?react');
-  }),
-  'map-pin-filled': lazy(() => {
-    return import('@tabler/icons/map-pin-filled.svg?react');
-  }),
-  'map-pin-heart': lazy(() => {
-    return import('@tabler/icons/map-pin-heart.svg?react');
-  }),
-  'map-pin-minus': lazy(() => {
-    return import('@tabler/icons/map-pin-minus.svg?react');
-  }),
-  'map-pin-off': lazy(() => {
-    return import('@tabler/icons/map-pin-off.svg?react');
-  }),
-  'map-pin-pause': lazy(() => {
-    return import('@tabler/icons/map-pin-pause.svg?react');
-  }),
-  'map-pin-pin': lazy(() => {
-    return import('@tabler/icons/map-pin-pin.svg?react');
-  }),
-  'map-pin-plus': lazy(() => {
-    return import('@tabler/icons/map-pin-plus.svg?react');
-  }),
-  'map-pin-question': lazy(() => {
-    return import('@tabler/icons/map-pin-question.svg?react');
-  }),
-  'map-pin-search': lazy(() => {
-    return import('@tabler/icons/map-pin-search.svg?react');
-  }),
-  'map-pin-share': lazy(() => {
-    return import('@tabler/icons/map-pin-share.svg?react');
-  }),
-  'map-pin-star': lazy(() => {
-    return import('@tabler/icons/map-pin-star.svg?react');
-  }),
-  'map-pin-up': lazy(() => {
-    return import('@tabler/icons/map-pin-up.svg?react');
-  }),
-  'map-pin-x': lazy(() => {
-    return import('@tabler/icons/map-pin-x.svg?react');
-  }),
-  'map-pin': lazy(() => {
-    return import('@tabler/icons/map-pin.svg?react');
-  }),
-  'map-pins': lazy(() => {
-    return import('@tabler/icons/map-pins.svg?react');
-  }),
-  'map-plus': lazy(() => {
-    return import('@tabler/icons/map-plus.svg?react');
-  }),
-  'map-question': lazy(() => {
-    return import('@tabler/icons/map-question.svg?react');
-  }),
-  'map-route': lazy(() => {
-    return import('@tabler/icons/map-route.svg?react');
-  }),
-  'map-search': lazy(() => {
-    return import('@tabler/icons/map-search.svg?react');
-  }),
-  'map-share': lazy(() => {
-    return import('@tabler/icons/map-share.svg?react');
-  }),
-  'map-south': lazy(() => {
-    return import('@tabler/icons/map-south.svg?react');
-  }),
-  'map-star': lazy(() => {
-    return import('@tabler/icons/map-star.svg?react');
-  }),
-  'map-up': lazy(() => {
-    return import('@tabler/icons/map-up.svg?react');
-  }),
-  'map-west': lazy(() => {
-    return import('@tabler/icons/map-west.svg?react');
-  }),
-  'map-x': lazy(() => {
-    return import('@tabler/icons/map-x.svg?react');
-  }),
-  map: lazy(() => {
-    return import('@tabler/icons/map.svg?react');
-  }),
-  'markdown-off': lazy(() => {
-    return import('@tabler/icons/markdown-off.svg?react');
-  }),
-  markdown: lazy(() => {
-    return import('@tabler/icons/markdown.svg?react');
-  }),
-  'marquee-2': lazy(() => {
-    return import('@tabler/icons/marquee-2.svg?react');
-  }),
-  'marquee-off': lazy(() => {
-    return import('@tabler/icons/marquee-off.svg?react');
-  }),
-  marquee: lazy(() => {
-    return import('@tabler/icons/marquee.svg?react');
-  }),
-  mars: lazy(() => {
-    return import('@tabler/icons/mars.svg?react');
-  }),
-  'mask-off': lazy(() => {
-    return import('@tabler/icons/mask-off.svg?react');
-  }),
-  mask: lazy(() => {
-    return import('@tabler/icons/mask.svg?react');
-  }),
-  'masks-theater-off': lazy(() => {
-    return import('@tabler/icons/masks-theater-off.svg?react');
-  }),
-  'masks-theater': lazy(() => {
-    return import('@tabler/icons/masks-theater.svg?react');
-  }),
-  massage: lazy(() => {
-    return import('@tabler/icons/massage.svg?react');
-  }),
-  matchstick: lazy(() => {
-    return import('@tabler/icons/matchstick.svg?react');
-  }),
-  'math-1-divide-2': lazy(() => {
-    return import('@tabler/icons/math-1-divide-2.svg?react');
-  }),
-  'math-1-divide-3': lazy(() => {
-    return import('@tabler/icons/math-1-divide-3.svg?react');
-  }),
-  'math-avg': lazy(() => {
-    return import('@tabler/icons/math-avg.svg?react');
-  }),
-  'math-equal-greater': lazy(() => {
-    return import('@tabler/icons/math-equal-greater.svg?react');
-  }),
-  'math-equal-lower': lazy(() => {
-    return import('@tabler/icons/math-equal-lower.svg?react');
-  }),
-  'math-function-off': lazy(() => {
-    return import('@tabler/icons/math-function-off.svg?react');
-  }),
-  'math-function-y': lazy(() => {
-    return import('@tabler/icons/math-function-y.svg?react');
-  }),
-  'math-function': lazy(() => {
-    return import('@tabler/icons/math-function.svg?react');
-  }),
-  'math-greater': lazy(() => {
-    return import('@tabler/icons/math-greater.svg?react');
-  }),
-  'math-integral-x': lazy(() => {
-    return import('@tabler/icons/math-integral-x.svg?react');
-  }),
-  'math-integral': lazy(() => {
-    return import('@tabler/icons/math-integral.svg?react');
-  }),
-  'math-integrals': lazy(() => {
-    return import('@tabler/icons/math-integrals.svg?react');
-  }),
-  'math-lower': lazy(() => {
-    return import('@tabler/icons/math-lower.svg?react');
-  }),
-  'math-max': lazy(() => {
-    return import('@tabler/icons/math-max.svg?react');
-  }),
-  'math-min': lazy(() => {
-    return import('@tabler/icons/math-min.svg?react');
-  }),
-  'math-not': lazy(() => {
-    return import('@tabler/icons/math-not.svg?react');
-  }),
-  'math-off': lazy(() => {
-    return import('@tabler/icons/math-off.svg?react');
-  }),
-  'math-pi-divide-2': lazy(() => {
-    return import('@tabler/icons/math-pi-divide-2.svg?react');
-  }),
-  'math-pi': lazy(() => {
-    return import('@tabler/icons/math-pi.svg?react');
-  }),
-  'math-symbols': lazy(() => {
-    return import('@tabler/icons/math-symbols.svg?react');
-  }),
-  'math-x-divide-2': lazy(() => {
-    return import('@tabler/icons/math-x-divide-2.svg?react');
-  }),
-  'math-x-divide-y-2': lazy(() => {
-    return import('@tabler/icons/math-x-divide-y-2.svg?react');
-  }),
-  'math-x-divide-y': lazy(() => {
-    return import('@tabler/icons/math-x-divide-y.svg?react');
-  }),
-  'math-x-minus-x': lazy(() => {
-    return import('@tabler/icons/math-x-minus-x.svg?react');
-  }),
-  'math-x-minus-y': lazy(() => {
-    return import('@tabler/icons/math-x-minus-y.svg?react');
-  }),
-  'math-x-plus-x': lazy(() => {
-    return import('@tabler/icons/math-x-plus-x.svg?react');
-  }),
-  'math-x-plus-y': lazy(() => {
-    return import('@tabler/icons/math-x-plus-y.svg?react');
-  }),
-  'math-xy': lazy(() => {
-    return import('@tabler/icons/math-xy.svg?react');
-  }),
-  'math-y-minus-y': lazy(() => {
-    return import('@tabler/icons/math-y-minus-y.svg?react');
-  }),
-  'math-y-plus-y': lazy(() => {
-    return import('@tabler/icons/math-y-plus-y.svg?react');
-  }),
-  math: lazy(() => {
-    return import('@tabler/icons/math.svg?react');
-  }),
-  'maximize-off': lazy(() => {
-    return import('@tabler/icons/maximize-off.svg?react');
-  }),
-  maximize: lazy(() => {
-    return import('@tabler/icons/maximize.svg?react');
-  }),
-  'meat-off': lazy(() => {
-    return import('@tabler/icons/meat-off.svg?react');
-  }),
-  meat: lazy(() => {
-    return import('@tabler/icons/meat.svg?react');
-  }),
-  'medal-2': lazy(() => {
-    return import('@tabler/icons/medal-2.svg?react');
-  }),
-  medal: lazy(() => {
-    return import('@tabler/icons/medal.svg?react');
-  }),
-  'medical-cross-circle': lazy(() => {
-    return import('@tabler/icons/medical-cross-circle.svg?react');
-  }),
-  'medical-cross-filled': lazy(() => {
-    return import('@tabler/icons/medical-cross-filled.svg?react');
-  }),
-  'medical-cross-off': lazy(() => {
-    return import('@tabler/icons/medical-cross-off.svg?react');
-  }),
-  'medical-cross': lazy(() => {
-    return import('@tabler/icons/medical-cross.svg?react');
-  }),
-  'medicine-syrup': lazy(() => {
-    return import('@tabler/icons/medicine-syrup.svg?react');
-  }),
-  meeple: lazy(() => {
-    return import('@tabler/icons/meeple.svg?react');
-  }),
-  melon: lazy(() => {
-    return import('@tabler/icons/melon.svg?react');
-  }),
-  menorah: lazy(() => {
-    return import('@tabler/icons/menorah.svg?react');
-  }),
-  'menu-2': lazy(() => {
-    return import('@tabler/icons/menu-2.svg?react');
-  }),
-  'menu-deep': lazy(() => {
-    return import('@tabler/icons/menu-deep.svg?react');
-  }),
-  'menu-order': lazy(() => {
-    return import('@tabler/icons/menu-order.svg?react');
-  }),
-  menu: lazy(() => {
-    return import('@tabler/icons/menu.svg?react');
-  }),
-  'message-2-bolt': lazy(() => {
-    return import('@tabler/icons/message-2-bolt.svg?react');
-  }),
-  'message-2-cancel': lazy(() => {
-    return import('@tabler/icons/message-2-cancel.svg?react');
-  }),
-  'message-2-check': lazy(() => {
-    return import('@tabler/icons/message-2-check.svg?react');
-  }),
-  'message-2-code': lazy(() => {
-    return import('@tabler/icons/message-2-code.svg?react');
-  }),
-  'message-2-cog': lazy(() => {
-    return import('@tabler/icons/message-2-cog.svg?react');
-  }),
-  'message-2-dollar': lazy(() => {
-    return import('@tabler/icons/message-2-dollar.svg?react');
-  }),
-  'message-2-down': lazy(() => {
-    return import('@tabler/icons/message-2-down.svg?react');
-  }),
-  'message-2-exclamation': lazy(() => {
-    return import('@tabler/icons/message-2-exclamation.svg?react');
-  }),
-  'message-2-heart': lazy(() => {
-    return import('@tabler/icons/message-2-heart.svg?react');
-  }),
-  'message-2-minus': lazy(() => {
-    return import('@tabler/icons/message-2-minus.svg?react');
-  }),
-  'message-2-off': lazy(() => {
-    return import('@tabler/icons/message-2-off.svg?react');
-  }),
-  'message-2-pause': lazy(() => {
-    return import('@tabler/icons/message-2-pause.svg?react');
-  }),
-  'message-2-pin': lazy(() => {
-    return import('@tabler/icons/message-2-pin.svg?react');
-  }),
-  'message-2-plus': lazy(() => {
-    return import('@tabler/icons/message-2-plus.svg?react');
-  }),
-  'message-2-question': lazy(() => {
-    return import('@tabler/icons/message-2-question.svg?react');
-  }),
-  'message-2-search': lazy(() => {
-    return import('@tabler/icons/message-2-search.svg?react');
-  }),
-  'message-2-share': lazy(() => {
-    return import('@tabler/icons/message-2-share.svg?react');
-  }),
-  'message-2-star': lazy(() => {
-    return import('@tabler/icons/message-2-star.svg?react');
-  }),
-  'message-2-up': lazy(() => {
-    return import('@tabler/icons/message-2-up.svg?react');
-  }),
-  'message-2-x': lazy(() => {
-    return import('@tabler/icons/message-2-x.svg?react');
-  }),
-  'message-2': lazy(() => {
-    return import('@tabler/icons/message-2.svg?react');
-  }),
-  'message-bolt': lazy(() => {
-    return import('@tabler/icons/message-bolt.svg?react');
-  }),
-  'message-cancel': lazy(() => {
-    return import('@tabler/icons/message-cancel.svg?react');
-  }),
-  'message-chatbot': lazy(() => {
-    return import('@tabler/icons/message-chatbot.svg?react');
-  }),
-  'message-check': lazy(() => {
-    return import('@tabler/icons/message-check.svg?react');
-  }),
-  'message-circle-2-filled': lazy(() => {
-    return import('@tabler/icons/message-circle-2-filled.svg?react');
-  }),
-  'message-circle-2': lazy(() => {
-    return import('@tabler/icons/message-circle-2.svg?react');
-  }),
-  'message-circle-bolt': lazy(() => {
-    return import('@tabler/icons/message-circle-bolt.svg?react');
-  }),
-  'message-circle-cancel': lazy(() => {
-    return import('@tabler/icons/message-circle-cancel.svg?react');
-  }),
-  'message-circle-check': lazy(() => {
-    return import('@tabler/icons/message-circle-check.svg?react');
-  }),
-  'message-circle-code': lazy(() => {
-    return import('@tabler/icons/message-circle-code.svg?react');
-  }),
-  'message-circle-cog': lazy(() => {
-    return import('@tabler/icons/message-circle-cog.svg?react');
-  }),
-  'message-circle-dollar': lazy(() => {
-    return import('@tabler/icons/message-circle-dollar.svg?react');
-  }),
-  'message-circle-down': lazy(() => {
-    return import('@tabler/icons/message-circle-down.svg?react');
-  }),
-  'message-circle-exclamation': lazy(() => {
-    return import('@tabler/icons/message-circle-exclamation.svg?react');
-  }),
-  'message-circle-heart': lazy(() => {
-    return import('@tabler/icons/message-circle-heart.svg?react');
-  }),
-  'message-circle-minus': lazy(() => {
-    return import('@tabler/icons/message-circle-minus.svg?react');
-  }),
-  'message-circle-off': lazy(() => {
-    return import('@tabler/icons/message-circle-off.svg?react');
-  }),
-  'message-circle-pause': lazy(() => {
-    return import('@tabler/icons/message-circle-pause.svg?react');
-  }),
-  'message-circle-pin': lazy(() => {
-    return import('@tabler/icons/message-circle-pin.svg?react');
-  }),
-  'message-circle-plus': lazy(() => {
-    return import('@tabler/icons/message-circle-plus.svg?react');
-  }),
-  'message-circle-question': lazy(() => {
-    return import('@tabler/icons/message-circle-question.svg?react');
-  }),
-  'message-circle-search': lazy(() => {
-    return import('@tabler/icons/message-circle-search.svg?react');
-  }),
-  'message-circle-share': lazy(() => {
-    return import('@tabler/icons/message-circle-share.svg?react');
-  }),
-  'message-circle-star': lazy(() => {
-    return import('@tabler/icons/message-circle-star.svg?react');
-  }),
-  'message-circle-up': lazy(() => {
-    return import('@tabler/icons/message-circle-up.svg?react');
-  }),
-  'message-circle-x': lazy(() => {
-    return import('@tabler/icons/message-circle-x.svg?react');
-  }),
-  'message-circle': lazy(() => {
-    return import('@tabler/icons/message-circle.svg?react');
-  }),
-  'message-code': lazy(() => {
-    return import('@tabler/icons/message-code.svg?react');
-  }),
-  'message-cog': lazy(() => {
-    return import('@tabler/icons/message-cog.svg?react');
-  }),
-  'message-dollar': lazy(() => {
-    return import('@tabler/icons/message-dollar.svg?react');
-  }),
-  'message-dots': lazy(() => {
-    return import('@tabler/icons/message-dots.svg?react');
-  }),
-  'message-down': lazy(() => {
-    return import('@tabler/icons/message-down.svg?react');
-  }),
-  'message-exclamation': lazy(() => {
-    return import('@tabler/icons/message-exclamation.svg?react');
-  }),
-  'message-forward': lazy(() => {
-    return import('@tabler/icons/message-forward.svg?react');
-  }),
-  'message-heart': lazy(() => {
-    return import('@tabler/icons/message-heart.svg?react');
-  }),
-  'message-language': lazy(() => {
-    return import('@tabler/icons/message-language.svg?react');
-  }),
-  'message-minus': lazy(() => {
-    return import('@tabler/icons/message-minus.svg?react');
-  }),
-  'message-off': lazy(() => {
-    return import('@tabler/icons/message-off.svg?react');
-  }),
-  'message-pause': lazy(() => {
-    return import('@tabler/icons/message-pause.svg?react');
-  }),
-  'message-pin': lazy(() => {
-    return import('@tabler/icons/message-pin.svg?react');
-  }),
-  'message-plus': lazy(() => {
-    return import('@tabler/icons/message-plus.svg?react');
-  }),
-  'message-question': lazy(() => {
-    return import('@tabler/icons/message-question.svg?react');
-  }),
-  'message-report': lazy(() => {
-    return import('@tabler/icons/message-report.svg?react');
-  }),
-  'message-search': lazy(() => {
-    return import('@tabler/icons/message-search.svg?react');
-  }),
-  'message-share': lazy(() => {
-    return import('@tabler/icons/message-share.svg?react');
-  }),
-  'message-star': lazy(() => {
-    return import('@tabler/icons/message-star.svg?react');
-  }),
-  'message-up': lazy(() => {
-    return import('@tabler/icons/message-up.svg?react');
-  }),
-  'message-x': lazy(() => {
-    return import('@tabler/icons/message-x.svg?react');
-  }),
-  message: lazy(() => {
-    return import('@tabler/icons/message.svg?react');
-  }),
-  'messages-off': lazy(() => {
-    return import('@tabler/icons/messages-off.svg?react');
-  }),
-  messages: lazy(() => {
-    return import('@tabler/icons/messages.svg?react');
-  }),
-  'meteor-off': lazy(() => {
-    return import('@tabler/icons/meteor-off.svg?react');
-  }),
-  meteor: lazy(() => {
-    return import('@tabler/icons/meteor.svg?react');
-  }),
-  'michelin-bib-gourmand': lazy(() => {
-    return import('@tabler/icons/michelin-bib-gourmand.svg?react');
-  }),
-  'michelin-star-green': lazy(() => {
-    return import('@tabler/icons/michelin-star-green.svg?react');
-  }),
-  'michelin-star': lazy(() => {
-    return import('@tabler/icons/michelin-star.svg?react');
-  }),
-  'mickey-filled': lazy(() => {
-    return import('@tabler/icons/mickey-filled.svg?react');
-  }),
-  mickey: lazy(() => {
-    return import('@tabler/icons/mickey.svg?react');
-  }),
-  'microphone-2-off': lazy(() => {
-    return import('@tabler/icons/microphone-2-off.svg?react');
-  }),
-  'microphone-2': lazy(() => {
-    return import('@tabler/icons/microphone-2.svg?react');
-  }),
-  'microphone-off': lazy(() => {
-    return import('@tabler/icons/microphone-off.svg?react');
-  }),
-  microphone: lazy(() => {
-    return import('@tabler/icons/microphone.svg?react');
-  }),
-  'microscope-off': lazy(() => {
-    return import('@tabler/icons/microscope-off.svg?react');
-  }),
-  microscope: lazy(() => {
-    return import('@tabler/icons/microscope.svg?react');
-  }),
-  'microwave-off': lazy(() => {
-    return import('@tabler/icons/microwave-off.svg?react');
-  }),
-  microwave: lazy(() => {
-    return import('@tabler/icons/microwave.svg?react');
-  }),
-  'military-award': lazy(() => {
-    return import('@tabler/icons/military-award.svg?react');
-  }),
-  'military-rank': lazy(() => {
-    return import('@tabler/icons/military-rank.svg?react');
-  }),
-  'milk-off': lazy(() => {
-    return import('@tabler/icons/milk-off.svg?react');
-  }),
-  milk: lazy(() => {
-    return import('@tabler/icons/milk.svg?react');
-  }),
-  milkshake: lazy(() => {
-    return import('@tabler/icons/milkshake.svg?react');
-  }),
-  minimize: lazy(() => {
-    return import('@tabler/icons/minimize.svg?react');
-  }),
-  'minus-vertical': lazy(() => {
-    return import('@tabler/icons/minus-vertical.svg?react');
-  }),
-  minus: lazy(() => {
-    return import('@tabler/icons/minus.svg?react');
-  }),
-  'mist-off': lazy(() => {
-    return import('@tabler/icons/mist-off.svg?react');
-  }),
-  mist: lazy(() => {
-    return import('@tabler/icons/mist.svg?react');
-  }),
-  'mobiledata-off': lazy(() => {
-    return import('@tabler/icons/mobiledata-off.svg?react');
-  }),
-  mobiledata: lazy(() => {
-    return import('@tabler/icons/mobiledata.svg?react');
-  }),
-  moneybag: lazy(() => {
-    return import('@tabler/icons/moneybag.svg?react');
-  }),
-  'mood-angry': lazy(() => {
-    return import('@tabler/icons/mood-angry.svg?react');
-  }),
-  'mood-annoyed-2': lazy(() => {
-    return import('@tabler/icons/mood-annoyed-2.svg?react');
-  }),
-  'mood-annoyed': lazy(() => {
-    return import('@tabler/icons/mood-annoyed.svg?react');
-  }),
-  'mood-boy': lazy(() => {
-    return import('@tabler/icons/mood-boy.svg?react');
-  }),
-  'mood-check': lazy(() => {
-    return import('@tabler/icons/mood-check.svg?react');
-  }),
-  'mood-cog': lazy(() => {
-    return import('@tabler/icons/mood-cog.svg?react');
-  }),
-  'mood-confuzed-filled': lazy(() => {
-    return import('@tabler/icons/mood-confuzed-filled.svg?react');
-  }),
-  'mood-confuzed': lazy(() => {
-    return import('@tabler/icons/mood-confuzed.svg?react');
-  }),
-  'mood-crazy-happy': lazy(() => {
-    return import('@tabler/icons/mood-crazy-happy.svg?react');
-  }),
-  'mood-cry': lazy(() => {
-    return import('@tabler/icons/mood-cry.svg?react');
-  }),
-  'mood-dollar': lazy(() => {
-    return import('@tabler/icons/mood-dollar.svg?react');
-  }),
-  'mood-edit': lazy(() => {
-    return import('@tabler/icons/mood-edit.svg?react');
-  }),
-  'mood-empty-filled': lazy(() => {
-    return import('@tabler/icons/mood-empty-filled.svg?react');
-  }),
-  'mood-empty': lazy(() => {
-    return import('@tabler/icons/mood-empty.svg?react');
-  }),
-  'mood-happy-filled': lazy(() => {
-    return import('@tabler/icons/mood-happy-filled.svg?react');
-  }),
-  'mood-happy': lazy(() => {
-    return import('@tabler/icons/mood-happy.svg?react');
-  }),
-  'mood-heart': lazy(() => {
-    return import('@tabler/icons/mood-heart.svg?react');
-  }),
-  'mood-kid-filled': lazy(() => {
-    return import('@tabler/icons/mood-kid-filled.svg?react');
-  }),
-  'mood-kid': lazy(() => {
-    return import('@tabler/icons/mood-kid.svg?react');
-  }),
-  'mood-look-left': lazy(() => {
-    return import('@tabler/icons/mood-look-left.svg?react');
-  }),
-  'mood-look-right': lazy(() => {
-    return import('@tabler/icons/mood-look-right.svg?react');
-  }),
-  'mood-minus': lazy(() => {
-    return import('@tabler/icons/mood-minus.svg?react');
-  }),
-  'mood-nerd': lazy(() => {
-    return import('@tabler/icons/mood-nerd.svg?react');
-  }),
-  'mood-nervous': lazy(() => {
-    return import('@tabler/icons/mood-nervous.svg?react');
-  }),
-  'mood-neutral-filled': lazy(() => {
-    return import('@tabler/icons/mood-neutral-filled.svg?react');
-  }),
-  'mood-neutral': lazy(() => {
-    return import('@tabler/icons/mood-neutral.svg?react');
-  }),
-  'mood-off': lazy(() => {
-    return import('@tabler/icons/mood-off.svg?react');
-  }),
-  'mood-pin': lazy(() => {
-    return import('@tabler/icons/mood-pin.svg?react');
-  }),
-  'mood-plus': lazy(() => {
-    return import('@tabler/icons/mood-plus.svg?react');
-  }),
-  'mood-sad-2': lazy(() => {
-    return import('@tabler/icons/mood-sad-2.svg?react');
-  }),
-  'mood-sad-dizzy': lazy(() => {
-    return import('@tabler/icons/mood-sad-dizzy.svg?react');
-  }),
-  'mood-sad-filled': lazy(() => {
-    return import('@tabler/icons/mood-sad-filled.svg?react');
-  }),
-  'mood-sad-squint': lazy(() => {
-    return import('@tabler/icons/mood-sad-squint.svg?react');
-  }),
-  'mood-sad': lazy(() => {
-    return import('@tabler/icons/mood-sad.svg?react');
-  }),
-  'mood-search': lazy(() => {
-    return import('@tabler/icons/mood-search.svg?react');
-  }),
-  'mood-share': lazy(() => {
-    return import('@tabler/icons/mood-share.svg?react');
-  }),
-  'mood-sick': lazy(() => {
-    return import('@tabler/icons/mood-sick.svg?react');
-  }),
-  'mood-silence': lazy(() => {
-    return import('@tabler/icons/mood-silence.svg?react');
-  }),
-  'mood-sing': lazy(() => {
-    return import('@tabler/icons/mood-sing.svg?react');
-  }),
-  'mood-smile-beam': lazy(() => {
-    return import('@tabler/icons/mood-smile-beam.svg?react');
-  }),
-  'mood-smile-dizzy': lazy(() => {
-    return import('@tabler/icons/mood-smile-dizzy.svg?react');
-  }),
-  'mood-smile-filled': lazy(() => {
-    return import('@tabler/icons/mood-smile-filled.svg?react');
-  }),
-  'mood-smile': lazy(() => {
-    return import('@tabler/icons/mood-smile.svg?react');
-  }),
-  'mood-suprised': lazy(() => {
-    return import('@tabler/icons/mood-suprised.svg?react');
-  }),
-  'mood-tongue-wink-2': lazy(() => {
-    return import('@tabler/icons/mood-tongue-wink-2.svg?react');
-  }),
-  'mood-tongue-wink': lazy(() => {
-    return import('@tabler/icons/mood-tongue-wink.svg?react');
-  }),
-  'mood-tongue': lazy(() => {
-    return import('@tabler/icons/mood-tongue.svg?react');
-  }),
-  'mood-unamused': lazy(() => {
-    return import('@tabler/icons/mood-unamused.svg?react');
-  }),
-  'mood-up': lazy(() => {
-    return import('@tabler/icons/mood-up.svg?react');
-  }),
-  'mood-wink-2': lazy(() => {
-    return import('@tabler/icons/mood-wink-2.svg?react');
-  }),
-  'mood-wink': lazy(() => {
-    return import('@tabler/icons/mood-wink.svg?react');
-  }),
-  'mood-wrrr': lazy(() => {
-    return import('@tabler/icons/mood-wrrr.svg?react');
-  }),
-  'mood-x': lazy(() => {
-    return import('@tabler/icons/mood-x.svg?react');
-  }),
-  'mood-xd': lazy(() => {
-    return import('@tabler/icons/mood-xd.svg?react');
-  }),
-  'moon-2': lazy(() => {
-    return import('@tabler/icons/moon-2.svg?react');
-  }),
-  'moon-filled': lazy(() => {
-    return import('@tabler/icons/moon-filled.svg?react');
-  }),
-  'moon-off': lazy(() => {
-    return import('@tabler/icons/moon-off.svg?react');
-  }),
-  'moon-stars': lazy(() => {
-    return import('@tabler/icons/moon-stars.svg?react');
-  }),
-  moon: lazy(() => {
-    return import('@tabler/icons/moon.svg?react');
-  }),
-  moped: lazy(() => {
-    return import('@tabler/icons/moped.svg?react');
-  }),
-  motorbike: lazy(() => {
-    return import('@tabler/icons/motorbike.svg?react');
-  }),
-  'mountain-off': lazy(() => {
-    return import('@tabler/icons/mountain-off.svg?react');
-  }),
-  mountain: lazy(() => {
-    return import('@tabler/icons/mountain.svg?react');
-  }),
-  'mouse-2': lazy(() => {
-    return import('@tabler/icons/mouse-2.svg?react');
-  }),
-  'mouse-filled': lazy(() => {
-    return import('@tabler/icons/mouse-filled.svg?react');
-  }),
-  'mouse-off': lazy(() => {
-    return import('@tabler/icons/mouse-off.svg?react');
-  }),
-  mouse: lazy(() => {
-    return import('@tabler/icons/mouse.svg?react');
-  }),
-  moustache: lazy(() => {
-    return import('@tabler/icons/moustache.svg?react');
-  }),
-  'movie-off': lazy(() => {
-    return import('@tabler/icons/movie-off.svg?react');
-  }),
-  movie: lazy(() => {
-    return import('@tabler/icons/movie.svg?react');
-  }),
-  'mug-off': lazy(() => {
-    return import('@tabler/icons/mug-off.svg?react');
-  }),
-  mug: lazy(() => {
-    return import('@tabler/icons/mug.svg?react');
-  }),
-  'multiplier-0-5x': lazy(() => {
-    return import('@tabler/icons/multiplier-0-5x.svg?react');
-  }),
-  'multiplier-1-5x': lazy(() => {
-    return import('@tabler/icons/multiplier-1-5x.svg?react');
-  }),
-  'multiplier-1x': lazy(() => {
-    return import('@tabler/icons/multiplier-1x.svg?react');
-  }),
-  'multiplier-2x': lazy(() => {
-    return import('@tabler/icons/multiplier-2x.svg?react');
-  }),
-  'mushroom-filled': lazy(() => {
-    return import('@tabler/icons/mushroom-filled.svg?react');
-  }),
-  'mushroom-off': lazy(() => {
-    return import('@tabler/icons/mushroom-off.svg?react');
-  }),
-  mushroom: lazy(() => {
-    return import('@tabler/icons/mushroom.svg?react');
-  }),
-  'music-bolt': lazy(() => {
-    return import('@tabler/icons/music-bolt.svg?react');
-  }),
-  'music-cancel': lazy(() => {
-    return import('@tabler/icons/music-cancel.svg?react');
-  }),
-  'music-check': lazy(() => {
-    return import('@tabler/icons/music-check.svg?react');
-  }),
-  'music-code': lazy(() => {
-    return import('@tabler/icons/music-code.svg?react');
-  }),
-  'music-cog': lazy(() => {
-    return import('@tabler/icons/music-cog.svg?react');
-  }),
-  'music-discount': lazy(() => {
-    return import('@tabler/icons/music-discount.svg?react');
-  }),
-  'music-dollar': lazy(() => {
-    return import('@tabler/icons/music-dollar.svg?react');
-  }),
-  'music-down': lazy(() => {
-    return import('@tabler/icons/music-down.svg?react');
-  }),
-  'music-exclamation': lazy(() => {
-    return import('@tabler/icons/music-exclamation.svg?react');
-  }),
-  'music-heart': lazy(() => {
-    return import('@tabler/icons/music-heart.svg?react');
-  }),
-  'music-minus': lazy(() => {
-    return import('@tabler/icons/music-minus.svg?react');
-  }),
-  'music-off': lazy(() => {
-    return import('@tabler/icons/music-off.svg?react');
-  }),
-  'music-pause': lazy(() => {
-    return import('@tabler/icons/music-pause.svg?react');
-  }),
-  'music-pin': lazy(() => {
-    return import('@tabler/icons/music-pin.svg?react');
-  }),
-  'music-plus': lazy(() => {
-    return import('@tabler/icons/music-plus.svg?react');
-  }),
-  'music-question': lazy(() => {
-    return import('@tabler/icons/music-question.svg?react');
-  }),
-  'music-search': lazy(() => {
-    return import('@tabler/icons/music-search.svg?react');
-  }),
-  'music-share': lazy(() => {
-    return import('@tabler/icons/music-share.svg?react');
-  }),
-  'music-star': lazy(() => {
-    return import('@tabler/icons/music-star.svg?react');
-  }),
-  'music-up': lazy(() => {
-    return import('@tabler/icons/music-up.svg?react');
-  }),
-  'music-x': lazy(() => {
-    return import('@tabler/icons/music-x.svg?react');
-  }),
-  music: lazy(() => {
-    return import('@tabler/icons/music.svg?react');
-  }),
-  'navigation-bolt': lazy(() => {
-    return import('@tabler/icons/navigation-bolt.svg?react');
-  }),
-  'navigation-cancel': lazy(() => {
-    return import('@tabler/icons/navigation-cancel.svg?react');
-  }),
-  'navigation-check': lazy(() => {
-    return import('@tabler/icons/navigation-check.svg?react');
-  }),
-  'navigation-code': lazy(() => {
-    return import('@tabler/icons/navigation-code.svg?react');
-  }),
-  'navigation-cog': lazy(() => {
-    return import('@tabler/icons/navigation-cog.svg?react');
-  }),
-  'navigation-discount': lazy(() => {
-    return import('@tabler/icons/navigation-discount.svg?react');
-  }),
-  'navigation-dollar': lazy(() => {
-    return import('@tabler/icons/navigation-dollar.svg?react');
-  }),
-  'navigation-down': lazy(() => {
-    return import('@tabler/icons/navigation-down.svg?react');
-  }),
-  'navigation-east': lazy(() => {
-    return import('@tabler/icons/navigation-east.svg?react');
-  }),
-  'navigation-exclamation': lazy(() => {
-    return import('@tabler/icons/navigation-exclamation.svg?react');
-  }),
-  'navigation-filled': lazy(() => {
-    return import('@tabler/icons/navigation-filled.svg?react');
-  }),
-  'navigation-heart': lazy(() => {
-    return import('@tabler/icons/navigation-heart.svg?react');
-  }),
-  'navigation-minus': lazy(() => {
-    return import('@tabler/icons/navigation-minus.svg?react');
-  }),
-  'navigation-north': lazy(() => {
-    return import('@tabler/icons/navigation-north.svg?react');
-  }),
-  'navigation-off': lazy(() => {
-    return import('@tabler/icons/navigation-off.svg?react');
-  }),
-  'navigation-pause': lazy(() => {
-    return import('@tabler/icons/navigation-pause.svg?react');
-  }),
-  'navigation-pin': lazy(() => {
-    return import('@tabler/icons/navigation-pin.svg?react');
-  }),
-  'navigation-plus': lazy(() => {
-    return import('@tabler/icons/navigation-plus.svg?react');
-  }),
-  'navigation-question': lazy(() => {
-    return import('@tabler/icons/navigation-question.svg?react');
-  }),
-  'navigation-search': lazy(() => {
-    return import('@tabler/icons/navigation-search.svg?react');
-  }),
-  'navigation-share': lazy(() => {
-    return import('@tabler/icons/navigation-share.svg?react');
-  }),
-  'navigation-south': lazy(() => {
-    return import('@tabler/icons/navigation-south.svg?react');
-  }),
-  'navigation-star': lazy(() => {
-    return import('@tabler/icons/navigation-star.svg?react');
-  }),
-  'navigation-top': lazy(() => {
-    return import('@tabler/icons/navigation-top.svg?react');
-  }),
-  'navigation-up': lazy(() => {
-    return import('@tabler/icons/navigation-up.svg?react');
-  }),
-  'navigation-west': lazy(() => {
-    return import('@tabler/icons/navigation-west.svg?react');
-  }),
-  'navigation-x': lazy(() => {
-    return import('@tabler/icons/navigation-x.svg?react');
-  }),
-  navigation: lazy(() => {
-    return import('@tabler/icons/navigation.svg?react');
-  }),
-  'needle-thread': lazy(() => {
-    return import('@tabler/icons/needle-thread.svg?react');
-  }),
-  needle: lazy(() => {
-    return import('@tabler/icons/needle.svg?react');
-  }),
-  'network-off': lazy(() => {
-    return import('@tabler/icons/network-off.svg?react');
-  }),
-  network: lazy(() => {
-    return import('@tabler/icons/network.svg?react');
-  }),
-  'new-section': lazy(() => {
-    return import('@tabler/icons/new-section.svg?react');
-  }),
-  'news-off': lazy(() => {
-    return import('@tabler/icons/news-off.svg?react');
-  }),
-  news: lazy(() => {
-    return import('@tabler/icons/news.svg?react');
-  }),
-  'nfc-off': lazy(() => {
-    return import('@tabler/icons/nfc-off.svg?react');
-  }),
-  nfc: lazy(() => {
-    return import('@tabler/icons/nfc.svg?react');
-  }),
-  'no-copyright': lazy(() => {
-    return import('@tabler/icons/no-copyright.svg?react');
-  }),
-  'no-creative-commons': lazy(() => {
-    return import('@tabler/icons/no-creative-commons.svg?react');
-  }),
-  'no-derivatives': lazy(() => {
-    return import('@tabler/icons/no-derivatives.svg?react');
-  }),
-  'north-star': lazy(() => {
-    return import('@tabler/icons/north-star.svg?react');
-  }),
-  'note-off': lazy(() => {
-    return import('@tabler/icons/note-off.svg?react');
-  }),
-  note: lazy(() => {
-    return import('@tabler/icons/note.svg?react');
-  }),
-  'notebook-off': lazy(() => {
-    return import('@tabler/icons/notebook-off.svg?react');
-  }),
-  notebook: lazy(() => {
-    return import('@tabler/icons/notebook.svg?react');
-  }),
-  'notes-off': lazy(() => {
-    return import('@tabler/icons/notes-off.svg?react');
-  }),
-  notes: lazy(() => {
-    return import('@tabler/icons/notes.svg?react');
-  }),
-  'notification-off': lazy(() => {
-    return import('@tabler/icons/notification-off.svg?react');
-  }),
-  notification: lazy(() => {
-    return import('@tabler/icons/notification.svg?react');
-  }),
-  'number-0-small': lazy(() => {
-    return import('@tabler/icons/number-0-small.svg?react');
-  }),
-  'number-0': lazy(() => {
-    return import('@tabler/icons/number-0.svg?react');
-  }),
-  'number-1-small': lazy(() => {
-    return import('@tabler/icons/number-1-small.svg?react');
-  }),
-  'number-1': lazy(() => {
-    return import('@tabler/icons/number-1.svg?react');
-  }),
-  'number-10-small': lazy(() => {
-    return import('@tabler/icons/number-10-small.svg?react');
-  }),
-  'number-11-small': lazy(() => {
-    return import('@tabler/icons/number-11-small.svg?react');
-  }),
-  'number-12-small': lazy(() => {
-    return import('@tabler/icons/number-12-small.svg?react');
-  }),
-  'number-13-small': lazy(() => {
-    return import('@tabler/icons/number-13-small.svg?react');
-  }),
-  'number-14-small': lazy(() => {
-    return import('@tabler/icons/number-14-small.svg?react');
-  }),
-  'number-15-small': lazy(() => {
-    return import('@tabler/icons/number-15-small.svg?react');
-  }),
-  'number-16-small': lazy(() => {
-    return import('@tabler/icons/number-16-small.svg?react');
-  }),
-  'number-17-small': lazy(() => {
-    return import('@tabler/icons/number-17-small.svg?react');
-  }),
-  'number-18-small': lazy(() => {
-    return import('@tabler/icons/number-18-small.svg?react');
-  }),
-  'number-19-small': lazy(() => {
-    return import('@tabler/icons/number-19-small.svg?react');
-  }),
-  'number-2-small': lazy(() => {
-    return import('@tabler/icons/number-2-small.svg?react');
-  }),
-  'number-2': lazy(() => {
-    return import('@tabler/icons/number-2.svg?react');
-  }),
-  'number-20-small': lazy(() => {
-    return import('@tabler/icons/number-20-small.svg?react');
-  }),
-  'number-21-small': lazy(() => {
-    return import('@tabler/icons/number-21-small.svg?react');
-  }),
-  'number-22-small': lazy(() => {
-    return import('@tabler/icons/number-22-small.svg?react');
-  }),
-  'number-23-small': lazy(() => {
-    return import('@tabler/icons/number-23-small.svg?react');
-  }),
-  'number-24-small': lazy(() => {
-    return import('@tabler/icons/number-24-small.svg?react');
-  }),
-  'number-25-small': lazy(() => {
-    return import('@tabler/icons/number-25-small.svg?react');
-  }),
-  'number-26-small': lazy(() => {
-    return import('@tabler/icons/number-26-small.svg?react');
-  }),
-  'number-27-small': lazy(() => {
-    return import('@tabler/icons/number-27-small.svg?react');
-  }),
-  'number-28-small': lazy(() => {
-    return import('@tabler/icons/number-28-small.svg?react');
-  }),
-  'number-29-small': lazy(() => {
-    return import('@tabler/icons/number-29-small.svg?react');
-  }),
-  'number-3-small': lazy(() => {
-    return import('@tabler/icons/number-3-small.svg?react');
-  }),
-  'number-3': lazy(() => {
-    return import('@tabler/icons/number-3.svg?react');
-  }),
-  'number-4-small': lazy(() => {
-    return import('@tabler/icons/number-4-small.svg?react');
-  }),
-  'number-4': lazy(() => {
-    return import('@tabler/icons/number-4.svg?react');
-  }),
-  'number-5-small': lazy(() => {
-    return import('@tabler/icons/number-5-small.svg?react');
-  }),
-  'number-5': lazy(() => {
-    return import('@tabler/icons/number-5.svg?react');
-  }),
-  'number-6-small': lazy(() => {
-    return import('@tabler/icons/number-6-small.svg?react');
-  }),
-  'number-6': lazy(() => {
-    return import('@tabler/icons/number-6.svg?react');
-  }),
-  'number-7-small': lazy(() => {
-    return import('@tabler/icons/number-7-small.svg?react');
-  }),
-  'number-7': lazy(() => {
-    return import('@tabler/icons/number-7.svg?react');
-  }),
-  'number-8-small': lazy(() => {
-    return import('@tabler/icons/number-8-small.svg?react');
-  }),
-  'number-8': lazy(() => {
-    return import('@tabler/icons/number-8.svg?react');
-  }),
-  'number-9-small': lazy(() => {
-    return import('@tabler/icons/number-9-small.svg?react');
-  }),
-  'number-9': lazy(() => {
-    return import('@tabler/icons/number-9.svg?react');
-  }),
-  number: lazy(() => {
-    return import('@tabler/icons/number.svg?react');
-  }),
-  numbers: lazy(() => {
-    return import('@tabler/icons/numbers.svg?react');
-  }),
-  nurse: lazy(() => {
-    return import('@tabler/icons/nurse.svg?react');
-  }),
-  nut: lazy(() => {
-    return import('@tabler/icons/nut.svg?react');
-  }),
-  'octagon-filled': lazy(() => {
-    return import('@tabler/icons/octagon-filled.svg?react');
-  }),
-  'octagon-minus-2': lazy(() => {
-    return import('@tabler/icons/octagon-minus-2.svg?react');
-  }),
-  'octagon-minus': lazy(() => {
-    return import('@tabler/icons/octagon-minus.svg?react');
-  }),
-  'octagon-off': lazy(() => {
-    return import('@tabler/icons/octagon-off.svg?react');
-  }),
-  'octagon-plus-2': lazy(() => {
-    return import('@tabler/icons/octagon-plus-2.svg?react');
-  }),
-  'octagon-plus': lazy(() => {
-    return import('@tabler/icons/octagon-plus.svg?react');
-  }),
-  octagon: lazy(() => {
-    return import('@tabler/icons/octagon.svg?react');
-  }),
-  'octahedron-off': lazy(() => {
-    return import('@tabler/icons/octahedron-off.svg?react');
-  }),
-  'octahedron-plus': lazy(() => {
-    return import('@tabler/icons/octahedron-plus.svg?react');
-  }),
-  octahedron: lazy(() => {
-    return import('@tabler/icons/octahedron.svg?react');
-  }),
-  old: lazy(() => {
-    return import('@tabler/icons/old.svg?react');
-  }),
-  'olympics-off': lazy(() => {
-    return import('@tabler/icons/olympics-off.svg?react');
-  }),
-  olympics: lazy(() => {
-    return import('@tabler/icons/olympics.svg?react');
-  }),
-  om: lazy(() => {
-    return import('@tabler/icons/om.svg?react');
-  }),
-  omega: lazy(() => {
-    return import('@tabler/icons/omega.svg?react');
-  }),
-  outbound: lazy(() => {
-    return import('@tabler/icons/outbound.svg?react');
-  }),
-  outlet: lazy(() => {
-    return import('@tabler/icons/outlet.svg?react');
-  }),
-  'oval-filled': lazy(() => {
-    return import('@tabler/icons/oval-filled.svg?react');
-  }),
-  'oval-vertical-filled': lazy(() => {
-    return import('@tabler/icons/oval-vertical-filled.svg?react');
-  }),
-  'oval-vertical': lazy(() => {
-    return import('@tabler/icons/oval-vertical.svg?react');
-  }),
-  oval: lazy(() => {
-    return import('@tabler/icons/oval.svg?react');
-  }),
-  overline: lazy(() => {
-    return import('@tabler/icons/overline.svg?react');
-  }),
-  'package-export': lazy(() => {
-    return import('@tabler/icons/package-export.svg?react');
-  }),
-  'package-import': lazy(() => {
-    return import('@tabler/icons/package-import.svg?react');
-  }),
-  'package-off': lazy(() => {
-    return import('@tabler/icons/package-off.svg?react');
-  }),
-  package: lazy(() => {
-    return import('@tabler/icons/package.svg?react');
-  }),
-  packages: lazy(() => {
-    return import('@tabler/icons/packages.svg?react');
-  }),
-  pacman: lazy(() => {
-    return import('@tabler/icons/pacman.svg?react');
-  }),
-  'page-break': lazy(() => {
-    return import('@tabler/icons/page-break.svg?react');
-  }),
-  'paint-filled': lazy(() => {
-    return import('@tabler/icons/paint-filled.svg?react');
-  }),
-  'paint-off': lazy(() => {
-    return import('@tabler/icons/paint-off.svg?react');
-  }),
-  paint: lazy(() => {
-    return import('@tabler/icons/paint.svg?react');
-  }),
-  'palette-off': lazy(() => {
-    return import('@tabler/icons/palette-off.svg?react');
-  }),
-  palette: lazy(() => {
-    return import('@tabler/icons/palette.svg?react');
-  }),
-  'panorama-horizontal-off': lazy(() => {
-    return import('@tabler/icons/panorama-horizontal-off.svg?react');
-  }),
-  'panorama-horizontal': lazy(() => {
-    return import('@tabler/icons/panorama-horizontal.svg?react');
-  }),
-  'panorama-vertical-off': lazy(() => {
-    return import('@tabler/icons/panorama-vertical-off.svg?react');
-  }),
-  'panorama-vertical': lazy(() => {
-    return import('@tabler/icons/panorama-vertical.svg?react');
-  }),
-  'paper-bag-off': lazy(() => {
-    return import('@tabler/icons/paper-bag-off.svg?react');
-  }),
-  'paper-bag': lazy(() => {
-    return import('@tabler/icons/paper-bag.svg?react');
-  }),
-  paperclip: lazy(() => {
-    return import('@tabler/icons/paperclip.svg?react');
-  }),
-  'parachute-off': lazy(() => {
-    return import('@tabler/icons/parachute-off.svg?react');
-  }),
-  parachute: lazy(() => {
-    return import('@tabler/icons/parachute.svg?react');
-  }),
-  'parentheses-off': lazy(() => {
-    return import('@tabler/icons/parentheses-off.svg?react');
-  }),
-  parentheses: lazy(() => {
-    return import('@tabler/icons/parentheses.svg?react');
-  }),
-  'parking-off': lazy(() => {
-    return import('@tabler/icons/parking-off.svg?react');
-  }),
-  parking: lazy(() => {
-    return import('@tabler/icons/parking.svg?react');
-  }),
-  'password-fingerprint': lazy(() => {
-    return import('@tabler/icons/password-fingerprint.svg?react');
-  }),
-  'password-mobile-phone': lazy(() => {
-    return import('@tabler/icons/password-mobile-phone.svg?react');
-  }),
-  'password-user': lazy(() => {
-    return import('@tabler/icons/password-user.svg?react');
-  }),
-  password: lazy(() => {
-    return import('@tabler/icons/password.svg?react');
-  }),
-  'paw-filled': lazy(() => {
-    return import('@tabler/icons/paw-filled.svg?react');
-  }),
-  'paw-off': lazy(() => {
-    return import('@tabler/icons/paw-off.svg?react');
-  }),
-  paw: lazy(() => {
-    return import('@tabler/icons/paw.svg?react');
-  }),
-  pdf: lazy(() => {
-    return import('@tabler/icons/pdf.svg?react');
-  }),
-  peace: lazy(() => {
-    return import('@tabler/icons/peace.svg?react');
-  }),
-  'pencil-bolt': lazy(() => {
-    return import('@tabler/icons/pencil-bolt.svg?react');
-  }),
-  'pencil-cancel': lazy(() => {
-    return import('@tabler/icons/pencil-cancel.svg?react');
-  }),
-  'pencil-check': lazy(() => {
-    return import('@tabler/icons/pencil-check.svg?react');
-  }),
-  'pencil-code': lazy(() => {
-    return import('@tabler/icons/pencil-code.svg?react');
-  }),
-  'pencil-cog': lazy(() => {
-    return import('@tabler/icons/pencil-cog.svg?react');
-  }),
-  'pencil-discount': lazy(() => {
-    return import('@tabler/icons/pencil-discount.svg?react');
-  }),
-  'pencil-dollar': lazy(() => {
-    return import('@tabler/icons/pencil-dollar.svg?react');
-  }),
-  'pencil-down': lazy(() => {
-    return import('@tabler/icons/pencil-down.svg?react');
-  }),
-  'pencil-exclamation': lazy(() => {
-    return import('@tabler/icons/pencil-exclamation.svg?react');
-  }),
-  'pencil-heart': lazy(() => {
-    return import('@tabler/icons/pencil-heart.svg?react');
-  }),
-  'pencil-minus': lazy(() => {
-    return import('@tabler/icons/pencil-minus.svg?react');
-  }),
-  'pencil-off': lazy(() => {
-    return import('@tabler/icons/pencil-off.svg?react');
-  }),
-  'pencil-pause': lazy(() => {
-    return import('@tabler/icons/pencil-pause.svg?react');
-  }),
-  'pencil-pin': lazy(() => {
-    return import('@tabler/icons/pencil-pin.svg?react');
-  }),
-  'pencil-plus': lazy(() => {
-    return import('@tabler/icons/pencil-plus.svg?react');
-  }),
-  'pencil-question': lazy(() => {
-    return import('@tabler/icons/pencil-question.svg?react');
-  }),
-  'pencil-search': lazy(() => {
-    return import('@tabler/icons/pencil-search.svg?react');
-  }),
-  'pencil-share': lazy(() => {
-    return import('@tabler/icons/pencil-share.svg?react');
-  }),
-  'pencil-star': lazy(() => {
-    return import('@tabler/icons/pencil-star.svg?react');
-  }),
-  'pencil-up': lazy(() => {
-    return import('@tabler/icons/pencil-up.svg?react');
-  }),
-  'pencil-x': lazy(() => {
-    return import('@tabler/icons/pencil-x.svg?react');
-  }),
-  pencil: lazy(() => {
-    return import('@tabler/icons/pencil.svg?react');
-  }),
-  'pennant-2-filled': lazy(() => {
-    return import('@tabler/icons/pennant-2-filled.svg?react');
-  }),
-  'pennant-2': lazy(() => {
-    return import('@tabler/icons/pennant-2.svg?react');
-  }),
-  'pennant-filled': lazy(() => {
-    return import('@tabler/icons/pennant-filled.svg?react');
-  }),
-  'pennant-off': lazy(() => {
-    return import('@tabler/icons/pennant-off.svg?react');
-  }),
-  pennant: lazy(() => {
-    return import('@tabler/icons/pennant.svg?react');
-  }),
-  'pentagon-filled': lazy(() => {
-    return import('@tabler/icons/pentagon-filled.svg?react');
-  }),
-  'pentagon-number-0': lazy(() => {
-    return import('@tabler/icons/pentagon-number-0.svg?react');
-  }),
-  'pentagon-number-1': lazy(() => {
-    return import('@tabler/icons/pentagon-number-1.svg?react');
-  }),
-  'pentagon-number-2': lazy(() => {
-    return import('@tabler/icons/pentagon-number-2.svg?react');
-  }),
-  'pentagon-number-3': lazy(() => {
-    return import('@tabler/icons/pentagon-number-3.svg?react');
-  }),
-  'pentagon-number-4': lazy(() => {
-    return import('@tabler/icons/pentagon-number-4.svg?react');
-  }),
-  'pentagon-number-5': lazy(() => {
-    return import('@tabler/icons/pentagon-number-5.svg?react');
-  }),
-  'pentagon-number-6': lazy(() => {
-    return import('@tabler/icons/pentagon-number-6.svg?react');
-  }),
-  'pentagon-number-7': lazy(() => {
-    return import('@tabler/icons/pentagon-number-7.svg?react');
-  }),
-  'pentagon-number-8': lazy(() => {
-    return import('@tabler/icons/pentagon-number-8.svg?react');
-  }),
-  'pentagon-number-9': lazy(() => {
-    return import('@tabler/icons/pentagon-number-9.svg?react');
-  }),
-  'pentagon-off': lazy(() => {
-    return import('@tabler/icons/pentagon-off.svg?react');
-  }),
-  'pentagon-plus': lazy(() => {
-    return import('@tabler/icons/pentagon-plus.svg?react');
-  }),
-  'pentagon-x': lazy(() => {
-    return import('@tabler/icons/pentagon-x.svg?react');
-  }),
-  pentagon: lazy(() => {
-    return import('@tabler/icons/pentagon.svg?react');
-  }),
-  pentagram: lazy(() => {
-    return import('@tabler/icons/pentagram.svg?react');
-  }),
-  'pepper-off': lazy(() => {
-    return import('@tabler/icons/pepper-off.svg?react');
-  }),
-  pepper: lazy(() => {
-    return import('@tabler/icons/pepper.svg?react');
-  }),
-  percentage: lazy(() => {
-    return import('@tabler/icons/percentage.svg?react');
-  }),
-  perfume: lazy(() => {
-    return import('@tabler/icons/perfume.svg?react');
-  }),
-  'perspective-off': lazy(() => {
-    return import('@tabler/icons/perspective-off.svg?react');
-  }),
-  perspective: lazy(() => {
-    return import('@tabler/icons/perspective.svg?react');
-  }),
-  'phone-call': lazy(() => {
-    return import('@tabler/icons/phone-call.svg?react');
-  }),
-  'phone-calling': lazy(() => {
-    return import('@tabler/icons/phone-calling.svg?react');
-  }),
-  'phone-check': lazy(() => {
-    return import('@tabler/icons/phone-check.svg?react');
-  }),
-  'phone-filled': lazy(() => {
-    return import('@tabler/icons/phone-filled.svg?react');
-  }),
-  'phone-incoming': lazy(() => {
-    return import('@tabler/icons/phone-incoming.svg?react');
-  }),
-  'phone-off': lazy(() => {
-    return import('@tabler/icons/phone-off.svg?react');
-  }),
-  'phone-outgoing': lazy(() => {
-    return import('@tabler/icons/phone-outgoing.svg?react');
-  }),
-  'phone-pause': lazy(() => {
-    return import('@tabler/icons/phone-pause.svg?react');
-  }),
-  'phone-plus': lazy(() => {
-    return import('@tabler/icons/phone-plus.svg?react');
-  }),
-  'phone-x': lazy(() => {
-    return import('@tabler/icons/phone-x.svg?react');
-  }),
-  phone: lazy(() => {
-    return import('@tabler/icons/phone.svg?react');
-  }),
-  'photo-ai': lazy(() => {
-    return import('@tabler/icons/photo-ai.svg?react');
-  }),
-  'photo-bolt': lazy(() => {
-    return import('@tabler/icons/photo-bolt.svg?react');
-  }),
-  'photo-cancel': lazy(() => {
-    return import('@tabler/icons/photo-cancel.svg?react');
-  }),
-  'photo-check': lazy(() => {
-    return import('@tabler/icons/photo-check.svg?react');
-  }),
-  'photo-circle-minus': lazy(() => {
-    return import('@tabler/icons/photo-circle-minus.svg?react');
-  }),
-  'photo-circle-plus': lazy(() => {
-    return import('@tabler/icons/photo-circle-plus.svg?react');
-  }),
-  'photo-circle': lazy(() => {
-    return import('@tabler/icons/photo-circle.svg?react');
-  }),
-  'photo-code': lazy(() => {
-    return import('@tabler/icons/photo-code.svg?react');
-  }),
-  'photo-cog': lazy(() => {
-    return import('@tabler/icons/photo-cog.svg?react');
-  }),
-  'photo-dollar': lazy(() => {
-    return import('@tabler/icons/photo-dollar.svg?react');
-  }),
-  'photo-down': lazy(() => {
-    return import('@tabler/icons/photo-down.svg?react');
-  }),
-  'photo-edit': lazy(() => {
-    return import('@tabler/icons/photo-edit.svg?react');
-  }),
-  'photo-exclamation': lazy(() => {
-    return import('@tabler/icons/photo-exclamation.svg?react');
-  }),
-  'photo-filled': lazy(() => {
-    return import('@tabler/icons/photo-filled.svg?react');
-  }),
-  'photo-heart': lazy(() => {
-    return import('@tabler/icons/photo-heart.svg?react');
-  }),
-  'photo-hexagon': lazy(() => {
-    return import('@tabler/icons/photo-hexagon.svg?react');
-  }),
-  'photo-minus': lazy(() => {
-    return import('@tabler/icons/photo-minus.svg?react');
-  }),
-  'photo-off': lazy(() => {
-    return import('@tabler/icons/photo-off.svg?react');
-  }),
-  'photo-pause': lazy(() => {
-    return import('@tabler/icons/photo-pause.svg?react');
-  }),
-  'photo-pentagon': lazy(() => {
-    return import('@tabler/icons/photo-pentagon.svg?react');
-  }),
-  'photo-pin': lazy(() => {
-    return import('@tabler/icons/photo-pin.svg?react');
-  }),
-  'photo-plus': lazy(() => {
-    return import('@tabler/icons/photo-plus.svg?react');
-  }),
-  'photo-question': lazy(() => {
-    return import('@tabler/icons/photo-question.svg?react');
-  }),
-  'photo-scan': lazy(() => {
-    return import('@tabler/icons/photo-scan.svg?react');
-  }),
-  'photo-search': lazy(() => {
-    return import('@tabler/icons/photo-search.svg?react');
-  }),
-  'photo-sensor-2': lazy(() => {
-    return import('@tabler/icons/photo-sensor-2.svg?react');
-  }),
-  'photo-sensor-3': lazy(() => {
-    return import('@tabler/icons/photo-sensor-3.svg?react');
-  }),
-  'photo-sensor': lazy(() => {
-    return import('@tabler/icons/photo-sensor.svg?react');
-  }),
-  'photo-share': lazy(() => {
-    return import('@tabler/icons/photo-share.svg?react');
-  }),
-  'photo-shield': lazy(() => {
-    return import('@tabler/icons/photo-shield.svg?react');
-  }),
-  'photo-square-rounded': lazy(() => {
-    return import('@tabler/icons/photo-square-rounded.svg?react');
-  }),
-  'photo-star': lazy(() => {
-    return import('@tabler/icons/photo-star.svg?react');
-  }),
-  'photo-up': lazy(() => {
-    return import('@tabler/icons/photo-up.svg?react');
-  }),
-  'photo-video': lazy(() => {
-    return import('@tabler/icons/photo-video.svg?react');
-  }),
-  'photo-x': lazy(() => {
-    return import('@tabler/icons/photo-x.svg?react');
-  }),
-  photo: lazy(() => {
-    return import('@tabler/icons/photo.svg?react');
-  }),
-  physotherapist: lazy(() => {
-    return import('@tabler/icons/physotherapist.svg?react');
-  }),
-  piano: lazy(() => {
-    return import('@tabler/icons/piano.svg?react');
-  }),
-  pick: lazy(() => {
-    return import('@tabler/icons/pick.svg?react');
-  }),
-  'picture-in-picture-off': lazy(() => {
-    return import('@tabler/icons/picture-in-picture-off.svg?react');
-  }),
-  'picture-in-picture-on': lazy(() => {
-    return import('@tabler/icons/picture-in-picture-on.svg?react');
-  }),
-  'picture-in-picture-top': lazy(() => {
-    return import('@tabler/icons/picture-in-picture-top.svg?react');
-  }),
-  'picture-in-picture': lazy(() => {
-    return import('@tabler/icons/picture-in-picture.svg?react');
-  }),
-  'pig-money': lazy(() => {
-    return import('@tabler/icons/pig-money.svg?react');
-  }),
-  'pig-off': lazy(() => {
-    return import('@tabler/icons/pig-off.svg?react');
-  }),
-  pig: lazy(() => {
-    return import('@tabler/icons/pig.svg?react');
-  }),
-  pilcrow: lazy(() => {
-    return import('@tabler/icons/pilcrow.svg?react');
-  }),
-  'pill-off': lazy(() => {
-    return import('@tabler/icons/pill-off.svg?react');
-  }),
-  pill: lazy(() => {
-    return import('@tabler/icons/pill.svg?react');
-  }),
-  pills: lazy(() => {
-    return import('@tabler/icons/pills.svg?react');
-  }),
-  'pin-filled': lazy(() => {
-    return import('@tabler/icons/pin-filled.svg?react');
-  }),
-  pin: lazy(() => {
-    return import('@tabler/icons/pin.svg?react');
-  }),
-  'ping-pong': lazy(() => {
-    return import('@tabler/icons/ping-pong.svg?react');
-  }),
-  'pinned-filled': lazy(() => {
-    return import('@tabler/icons/pinned-filled.svg?react');
-  }),
-  'pinned-off': lazy(() => {
-    return import('@tabler/icons/pinned-off.svg?react');
-  }),
-  pinned: lazy(() => {
-    return import('@tabler/icons/pinned.svg?react');
-  }),
-  'pizza-off': lazy(() => {
-    return import('@tabler/icons/pizza-off.svg?react');
-  }),
-  pizza: lazy(() => {
-    return import('@tabler/icons/pizza.svg?react');
-  }),
-  placeholder: lazy(() => {
-    return import('@tabler/icons/placeholder.svg?react');
-  }),
-  'plane-arrival': lazy(() => {
-    return import('@tabler/icons/plane-arrival.svg?react');
-  }),
-  'plane-departure': lazy(() => {
-    return import('@tabler/icons/plane-departure.svg?react');
-  }),
-  'plane-inflight': lazy(() => {
-    return import('@tabler/icons/plane-inflight.svg?react');
-  }),
-  'plane-off': lazy(() => {
-    return import('@tabler/icons/plane-off.svg?react');
-  }),
-  'plane-tilt': lazy(() => {
-    return import('@tabler/icons/plane-tilt.svg?react');
-  }),
-  plane: lazy(() => {
-    return import('@tabler/icons/plane.svg?react');
-  }),
-  'planet-off': lazy(() => {
-    return import('@tabler/icons/planet-off.svg?react');
-  }),
-  planet: lazy(() => {
-    return import('@tabler/icons/planet.svg?react');
-  }),
-  'plant-2-off': lazy(() => {
-    return import('@tabler/icons/plant-2-off.svg?react');
-  }),
-  'plant-2': lazy(() => {
-    return import('@tabler/icons/plant-2.svg?react');
-  }),
-  'plant-off': lazy(() => {
-    return import('@tabler/icons/plant-off.svg?react');
-  }),
-  plant: lazy(() => {
-    return import('@tabler/icons/plant.svg?react');
-  }),
-  'play-basketball': lazy(() => {
-    return import('@tabler/icons/play-basketball.svg?react');
-  }),
-  'play-card-off': lazy(() => {
-    return import('@tabler/icons/play-card-off.svg?react');
-  }),
-  'play-card': lazy(() => {
-    return import('@tabler/icons/play-card.svg?react');
-  }),
-  'play-football': lazy(() => {
-    return import('@tabler/icons/play-football.svg?react');
-  }),
-  'play-handball': lazy(() => {
-    return import('@tabler/icons/play-handball.svg?react');
-  }),
-  'play-volleyball': lazy(() => {
-    return import('@tabler/icons/play-volleyball.svg?react');
-  }),
-  'player-eject-filled': lazy(() => {
-    return import('@tabler/icons/player-eject-filled.svg?react');
-  }),
-  'player-eject': lazy(() => {
-    return import('@tabler/icons/player-eject.svg?react');
-  }),
-  'player-pause-filled': lazy(() => {
-    return import('@tabler/icons/player-pause-filled.svg?react');
-  }),
-  'player-pause': lazy(() => {
-    return import('@tabler/icons/player-pause.svg?react');
-  }),
-  'player-play-filled': lazy(() => {
-    return import('@tabler/icons/player-play-filled.svg?react');
-  }),
-  'player-play': lazy(() => {
-    return import('@tabler/icons/player-play.svg?react');
-  }),
-  'player-record-filled': lazy(() => {
-    return import('@tabler/icons/player-record-filled.svg?react');
-  }),
-  'player-record': lazy(() => {
-    return import('@tabler/icons/player-record.svg?react');
-  }),
-  'player-skip-back-filled': lazy(() => {
-    return import('@tabler/icons/player-skip-back-filled.svg?react');
-  }),
-  'player-skip-back': lazy(() => {
-    return import('@tabler/icons/player-skip-back.svg?react');
-  }),
-  'player-skip-forward-filled': lazy(() => {
-    return import('@tabler/icons/player-skip-forward-filled.svg?react');
-  }),
-  'player-skip-forward': lazy(() => {
-    return import('@tabler/icons/player-skip-forward.svg?react');
-  }),
-  'player-stop-filled': lazy(() => {
-    return import('@tabler/icons/player-stop-filled.svg?react');
-  }),
-  'player-stop': lazy(() => {
-    return import('@tabler/icons/player-stop.svg?react');
-  }),
-  'player-track-next-filled': lazy(() => {
-    return import('@tabler/icons/player-track-next-filled.svg?react');
-  }),
-  'player-track-next': lazy(() => {
-    return import('@tabler/icons/player-track-next.svg?react');
-  }),
-  'player-track-prev-filled': lazy(() => {
-    return import('@tabler/icons/player-track-prev-filled.svg?react');
-  }),
-  'player-track-prev': lazy(() => {
-    return import('@tabler/icons/player-track-prev.svg?react');
-  }),
-  'playlist-add': lazy(() => {
-    return import('@tabler/icons/playlist-add.svg?react');
-  }),
-  'playlist-off': lazy(() => {
-    return import('@tabler/icons/playlist-off.svg?react');
-  }),
-  'playlist-x': lazy(() => {
-    return import('@tabler/icons/playlist-x.svg?react');
-  }),
-  playlist: lazy(() => {
-    return import('@tabler/icons/playlist.svg?react');
-  }),
-  'playstation-circle': lazy(() => {
-    return import('@tabler/icons/playstation-circle.svg?react');
-  }),
-  'playstation-square': lazy(() => {
-    return import('@tabler/icons/playstation-square.svg?react');
-  }),
-  'playstation-triangle': lazy(() => {
-    return import('@tabler/icons/playstation-triangle.svg?react');
-  }),
-  'playstation-x': lazy(() => {
-    return import('@tabler/icons/playstation-x.svg?react');
-  }),
-  'plug-connected-x': lazy(() => {
-    return import('@tabler/icons/plug-connected-x.svg?react');
-  }),
-  'plug-connected': lazy(() => {
-    return import('@tabler/icons/plug-connected.svg?react');
-  }),
-  'plug-off': lazy(() => {
-    return import('@tabler/icons/plug-off.svg?react');
-  }),
-  'plug-x': lazy(() => {
-    return import('@tabler/icons/plug-x.svg?react');
-  }),
-  plug: lazy(() => {
-    return import('@tabler/icons/plug.svg?react');
-  }),
-  'plus-equal': lazy(() => {
-    return import('@tabler/icons/plus-equal.svg?react');
-  }),
-  'plus-minus': lazy(() => {
-    return import('@tabler/icons/plus-minus.svg?react');
-  }),
-  plus: lazy(() => {
-    return import('@tabler/icons/plus.svg?react');
-  }),
-  png: lazy(() => {
-    return import('@tabler/icons/png.svg?react');
-  }),
-  'podium-off': lazy(() => {
-    return import('@tabler/icons/podium-off.svg?react');
-  }),
-  podium: lazy(() => {
-    return import('@tabler/icons/podium.svg?react');
-  }),
-  'point-filled': lazy(() => {
-    return import('@tabler/icons/point-filled.svg?react');
-  }),
-  'point-off': lazy(() => {
-    return import('@tabler/icons/point-off.svg?react');
-  }),
-  point: lazy(() => {
-    return import('@tabler/icons/point.svg?react');
-  }),
-  'pointer-bolt': lazy(() => {
-    return import('@tabler/icons/pointer-bolt.svg?react');
-  }),
-  'pointer-cancel': lazy(() => {
-    return import('@tabler/icons/pointer-cancel.svg?react');
-  }),
-  'pointer-check': lazy(() => {
-    return import('@tabler/icons/pointer-check.svg?react');
-  }),
-  'pointer-code': lazy(() => {
-    return import('@tabler/icons/pointer-code.svg?react');
-  }),
-  'pointer-cog': lazy(() => {
-    return import('@tabler/icons/pointer-cog.svg?react');
-  }),
-  'pointer-dollar': lazy(() => {
-    return import('@tabler/icons/pointer-dollar.svg?react');
-  }),
-  'pointer-down': lazy(() => {
-    return import('@tabler/icons/pointer-down.svg?react');
-  }),
-  'pointer-exclamation': lazy(() => {
-    return import('@tabler/icons/pointer-exclamation.svg?react');
-  }),
-  'pointer-filled': lazy(() => {
-    return import('@tabler/icons/pointer-filled.svg?react');
-  }),
-  'pointer-heart': lazy(() => {
-    return import('@tabler/icons/pointer-heart.svg?react');
-  }),
-  'pointer-minus': lazy(() => {
-    return import('@tabler/icons/pointer-minus.svg?react');
-  }),
-  'pointer-off': lazy(() => {
-    return import('@tabler/icons/pointer-off.svg?react');
-  }),
-  'pointer-pause': lazy(() => {
-    return import('@tabler/icons/pointer-pause.svg?react');
-  }),
-  'pointer-pin': lazy(() => {
-    return import('@tabler/icons/pointer-pin.svg?react');
-  }),
-  'pointer-plus': lazy(() => {
-    return import('@tabler/icons/pointer-plus.svg?react');
-  }),
-  'pointer-question': lazy(() => {
-    return import('@tabler/icons/pointer-question.svg?react');
-  }),
-  'pointer-search': lazy(() => {
-    return import('@tabler/icons/pointer-search.svg?react');
-  }),
-  'pointer-share': lazy(() => {
-    return import('@tabler/icons/pointer-share.svg?react');
-  }),
-  'pointer-star': lazy(() => {
-    return import('@tabler/icons/pointer-star.svg?react');
-  }),
-  'pointer-up': lazy(() => {
-    return import('@tabler/icons/pointer-up.svg?react');
-  }),
-  'pointer-x': lazy(() => {
-    return import('@tabler/icons/pointer-x.svg?react');
-  }),
-  pointer: lazy(() => {
-    return import('@tabler/icons/pointer.svg?react');
-  }),
-  'pokeball-off': lazy(() => {
-    return import('@tabler/icons/pokeball-off.svg?react');
-  }),
-  pokeball: lazy(() => {
-    return import('@tabler/icons/pokeball.svg?react');
-  }),
-  'poker-chip': lazy(() => {
-    return import('@tabler/icons/poker-chip.svg?react');
-  }),
-  'polaroid-filled': lazy(() => {
-    return import('@tabler/icons/polaroid-filled.svg?react');
-  }),
-  polaroid: lazy(() => {
-    return import('@tabler/icons/polaroid.svg?react');
-  }),
-  'polygon-off': lazy(() => {
-    return import('@tabler/icons/polygon-off.svg?react');
-  }),
-  polygon: lazy(() => {
-    return import('@tabler/icons/polygon.svg?react');
-  }),
-  poo: lazy(() => {
-    return import('@tabler/icons/poo.svg?react');
-  }),
-  'pool-off': lazy(() => {
-    return import('@tabler/icons/pool-off.svg?react');
-  }),
-  pool: lazy(() => {
-    return import('@tabler/icons/pool.svg?react');
-  }),
-  power: lazy(() => {
-    return import('@tabler/icons/power.svg?react');
-  }),
-  pray: lazy(() => {
-    return import('@tabler/icons/pray.svg?react');
-  }),
-  'premium-rights': lazy(() => {
-    return import('@tabler/icons/premium-rights.svg?react');
-  }),
-  prescription: lazy(() => {
-    return import('@tabler/icons/prescription.svg?react');
-  }),
-  'presentation-analytics': lazy(() => {
-    return import('@tabler/icons/presentation-analytics.svg?react');
-  }),
-  'presentation-off': lazy(() => {
-    return import('@tabler/icons/presentation-off.svg?react');
-  }),
-  presentation: lazy(() => {
-    return import('@tabler/icons/presentation.svg?react');
-  }),
-  'printer-off': lazy(() => {
-    return import('@tabler/icons/printer-off.svg?react');
-  }),
-  printer: lazy(() => {
-    return import('@tabler/icons/printer.svg?react');
-  }),
-  'prism-off': lazy(() => {
-    return import('@tabler/icons/prism-off.svg?react');
-  }),
-  'prism-plus': lazy(() => {
-    return import('@tabler/icons/prism-plus.svg?react');
-  }),
-  prism: lazy(() => {
-    return import('@tabler/icons/prism.svg?react');
-  }),
-  prison: lazy(() => {
-    return import('@tabler/icons/prison.svg?react');
-  }),
-  'progress-alert': lazy(() => {
-    return import('@tabler/icons/progress-alert.svg?react');
-  }),
-  'progress-bolt': lazy(() => {
-    return import('@tabler/icons/progress-bolt.svg?react');
-  }),
-  'progress-check': lazy(() => {
-    return import('@tabler/icons/progress-check.svg?react');
-  }),
-  'progress-down': lazy(() => {
-    return import('@tabler/icons/progress-down.svg?react');
-  }),
-  'progress-help': lazy(() => {
-    return import('@tabler/icons/progress-help.svg?react');
-  }),
-  'progress-x': lazy(() => {
-    return import('@tabler/icons/progress-x.svg?react');
-  }),
-  progress: lazy(() => {
-    return import('@tabler/icons/progress.svg?react');
-  }),
-  prompt: lazy(() => {
-    return import('@tabler/icons/prompt.svg?react');
-  }),
-  'propeller-off': lazy(() => {
-    return import('@tabler/icons/propeller-off.svg?react');
-  }),
-  propeller: lazy(() => {
-    return import('@tabler/icons/propeller.svg?react');
-  }),
-  'pumpkin-scary': lazy(() => {
-    return import('@tabler/icons/pumpkin-scary.svg?react');
-  }),
-  'puzzle-2': lazy(() => {
-    return import('@tabler/icons/puzzle-2.svg?react');
-  }),
-  'puzzle-filled': lazy(() => {
-    return import('@tabler/icons/puzzle-filled.svg?react');
-  }),
-  'puzzle-off': lazy(() => {
-    return import('@tabler/icons/puzzle-off.svg?react');
-  }),
-  puzzle: lazy(() => {
-    return import('@tabler/icons/puzzle.svg?react');
-  }),
-  'pyramid-off': lazy(() => {
-    return import('@tabler/icons/pyramid-off.svg?react');
-  }),
-  'pyramid-plus': lazy(() => {
-    return import('@tabler/icons/pyramid-plus.svg?react');
-  }),
-  pyramid: lazy(() => {
-    return import('@tabler/icons/pyramid.svg?react');
-  }),
-  'qrcode-off': lazy(() => {
-    return import('@tabler/icons/qrcode-off.svg?react');
-  }),
-  qrcode: lazy(() => {
-    return import('@tabler/icons/qrcode.svg?react');
-  }),
-  'question-mark': lazy(() => {
-    return import('@tabler/icons/question-mark.svg?react');
-  }),
-  'quote-off': lazy(() => {
-    return import('@tabler/icons/quote-off.svg?react');
-  }),
-  quote: lazy(() => {
-    return import('@tabler/icons/quote.svg?react');
-  }),
-  quotes: lazy(() => {
-    return import('@tabler/icons/quotes.svg?react');
-  }),
-  'radar-2': lazy(() => {
-    return import('@tabler/icons/radar-2.svg?react');
-  }),
-  'radar-off': lazy(() => {
-    return import('@tabler/icons/radar-off.svg?react');
-  }),
-  radar: lazy(() => {
-    return import('@tabler/icons/radar.svg?react');
-  }),
-  'radio-off': lazy(() => {
-    return import('@tabler/icons/radio-off.svg?react');
-  }),
-  radio: lazy(() => {
-    return import('@tabler/icons/radio.svg?react');
-  }),
-  'radioactive-filled': lazy(() => {
-    return import('@tabler/icons/radioactive-filled.svg?react');
-  }),
-  'radioactive-off': lazy(() => {
-    return import('@tabler/icons/radioactive-off.svg?react');
-  }),
-  radioactive: lazy(() => {
-    return import('@tabler/icons/radioactive.svg?react');
-  }),
-  'radius-bottom-left': lazy(() => {
-    return import('@tabler/icons/radius-bottom-left.svg?react');
-  }),
-  'radius-bottom-right': lazy(() => {
-    return import('@tabler/icons/radius-bottom-right.svg?react');
-  }),
-  'radius-top-left': lazy(() => {
-    return import('@tabler/icons/radius-top-left.svg?react');
-  }),
-  'radius-top-right': lazy(() => {
-    return import('@tabler/icons/radius-top-right.svg?react');
-  }),
-  'rainbow-off': lazy(() => {
-    return import('@tabler/icons/rainbow-off.svg?react');
-  }),
-  rainbow: lazy(() => {
-    return import('@tabler/icons/rainbow.svg?react');
-  }),
-  'rating-12-plus': lazy(() => {
-    return import('@tabler/icons/rating-12-plus.svg?react');
-  }),
-  'rating-14-plus': lazy(() => {
-    return import('@tabler/icons/rating-14-plus.svg?react');
-  }),
-  'rating-16-plus': lazy(() => {
-    return import('@tabler/icons/rating-16-plus.svg?react');
-  }),
-  'rating-18-plus': lazy(() => {
-    return import('@tabler/icons/rating-18-plus.svg?react');
-  }),
-  'rating-21-plus': lazy(() => {
-    return import('@tabler/icons/rating-21-plus.svg?react');
-  }),
-  'razor-electric': lazy(() => {
-    return import('@tabler/icons/razor-electric.svg?react');
-  }),
-  razor: lazy(() => {
-    return import('@tabler/icons/razor.svg?react');
-  }),
-  'receipt-2': lazy(() => {
-    return import('@tabler/icons/receipt-2.svg?react');
-  }),
-  'receipt-off': lazy(() => {
-    return import('@tabler/icons/receipt-off.svg?react');
-  }),
-  'receipt-refund': lazy(() => {
-    return import('@tabler/icons/receipt-refund.svg?react');
-  }),
-  'receipt-tax': lazy(() => {
-    return import('@tabler/icons/receipt-tax.svg?react');
-  }),
-  receipt: lazy(() => {
-    return import('@tabler/icons/receipt.svg?react');
-  }),
-  recharging: lazy(() => {
-    return import('@tabler/icons/recharging.svg?react');
-  }),
-  'record-mail-off': lazy(() => {
-    return import('@tabler/icons/record-mail-off.svg?react');
-  }),
-  'record-mail': lazy(() => {
-    return import('@tabler/icons/record-mail.svg?react');
-  }),
-  'rectangle-filled': lazy(() => {
-    return import('@tabler/icons/rectangle-filled.svg?react');
-  }),
-  'rectangle-rounded-bottom': lazy(() => {
-    return import('@tabler/icons/rectangle-rounded-bottom.svg?react');
-  }),
-  'rectangle-rounded-top': lazy(() => {
-    return import('@tabler/icons/rectangle-rounded-top.svg?react');
-  }),
-  'rectangle-vertical-filled': lazy(() => {
-    return import('@tabler/icons/rectangle-vertical-filled.svg?react');
-  }),
-  'rectangle-vertical': lazy(() => {
-    return import('@tabler/icons/rectangle-vertical.svg?react');
-  }),
-  rectangle: lazy(() => {
-    return import('@tabler/icons/rectangle.svg?react');
-  }),
-  'rectangular-prism-off': lazy(() => {
-    return import('@tabler/icons/rectangular-prism-off.svg?react');
-  }),
-  'rectangular-prism-plus': lazy(() => {
-    return import('@tabler/icons/rectangular-prism-plus.svg?react');
-  }),
-  'rectangular-prism': lazy(() => {
-    return import('@tabler/icons/rectangular-prism.svg?react');
-  }),
-  'recycle-off': lazy(() => {
-    return import('@tabler/icons/recycle-off.svg?react');
-  }),
-  recycle: lazy(() => {
-    return import('@tabler/icons/recycle.svg?react');
-  }),
-  'refresh-alert': lazy(() => {
-    return import('@tabler/icons/refresh-alert.svg?react');
-  }),
-  'refresh-dot': lazy(() => {
-    return import('@tabler/icons/refresh-dot.svg?react');
-  }),
-  'refresh-off': lazy(() => {
-    return import('@tabler/icons/refresh-off.svg?react');
-  }),
-  refresh: lazy(() => {
-    return import('@tabler/icons/refresh.svg?react');
-  }),
-  'regex-off': lazy(() => {
-    return import('@tabler/icons/regex-off.svg?react');
-  }),
-  regex: lazy(() => {
-    return import('@tabler/icons/regex.svg?react');
-  }),
-  registered: lazy(() => {
-    return import('@tabler/icons/registered.svg?react');
-  }),
-  'relation-many-to-many': lazy(() => {
-    return import('@tabler/icons/relation-many-to-many.svg?react');
-  }),
-  'relation-one-to-many': lazy(() => {
-    return import('@tabler/icons/relation-one-to-many.svg?react');
-  }),
-  'relation-one-to-one': lazy(() => {
-    return import('@tabler/icons/relation-one-to-one.svg?react');
-  }),
-  reload: lazy(() => {
-    return import('@tabler/icons/reload.svg?react');
-  }),
-  reorder: lazy(() => {
-    return import('@tabler/icons/reorder.svg?react');
-  }),
-  'repeat-off': lazy(() => {
-    return import('@tabler/icons/repeat-off.svg?react');
-  }),
-  'repeat-once': lazy(() => {
-    return import('@tabler/icons/repeat-once.svg?react');
-  }),
-  repeat: lazy(() => {
-    return import('@tabler/icons/repeat.svg?react');
-  }),
-  'replace-filled': lazy(() => {
-    return import('@tabler/icons/replace-filled.svg?react');
-  }),
-  'replace-off': lazy(() => {
-    return import('@tabler/icons/replace-off.svg?react');
-  }),
-  replace: lazy(() => {
-    return import('@tabler/icons/replace.svg?react');
-  }),
-  'report-analytics': lazy(() => {
-    return import('@tabler/icons/report-analytics.svg?react');
-  }),
-  'report-medical': lazy(() => {
-    return import('@tabler/icons/report-medical.svg?react');
-  }),
-  'report-money': lazy(() => {
-    return import('@tabler/icons/report-money.svg?react');
-  }),
-  'report-off': lazy(() => {
-    return import('@tabler/icons/report-off.svg?react');
-  }),
-  'report-search': lazy(() => {
-    return import('@tabler/icons/report-search.svg?react');
-  }),
-  report: lazy(() => {
-    return import('@tabler/icons/report.svg?react');
-  }),
-  'reserved-line': lazy(() => {
-    return import('@tabler/icons/reserved-line.svg?react');
-  }),
-  resize: lazy(() => {
-    return import('@tabler/icons/resize.svg?react');
-  }),
-  restore: lazy(() => {
-    return import('@tabler/icons/restore.svg?react');
-  }),
-  'rewind-backward-10': lazy(() => {
-    return import('@tabler/icons/rewind-backward-10.svg?react');
-  }),
-  'rewind-backward-15': lazy(() => {
-    return import('@tabler/icons/rewind-backward-15.svg?react');
-  }),
-  'rewind-backward-20': lazy(() => {
-    return import('@tabler/icons/rewind-backward-20.svg?react');
-  }),
-  'rewind-backward-30': lazy(() => {
-    return import('@tabler/icons/rewind-backward-30.svg?react');
-  }),
-  'rewind-backward-40': lazy(() => {
-    return import('@tabler/icons/rewind-backward-40.svg?react');
-  }),
-  'rewind-backward-5': lazy(() => {
-    return import('@tabler/icons/rewind-backward-5.svg?react');
-  }),
-  'rewind-backward-50': lazy(() => {
-    return import('@tabler/icons/rewind-backward-50.svg?react');
-  }),
-  'rewind-backward-60': lazy(() => {
-    return import('@tabler/icons/rewind-backward-60.svg?react');
-  }),
-  'rewind-forward-10': lazy(() => {
-    return import('@tabler/icons/rewind-forward-10.svg?react');
-  }),
-  'rewind-forward-15': lazy(() => {
-    return import('@tabler/icons/rewind-forward-15.svg?react');
-  }),
-  'rewind-forward-20': lazy(() => {
-    return import('@tabler/icons/rewind-forward-20.svg?react');
-  }),
-  'rewind-forward-30': lazy(() => {
-    return import('@tabler/icons/rewind-forward-30.svg?react');
-  }),
-  'rewind-forward-40': lazy(() => {
-    return import('@tabler/icons/rewind-forward-40.svg?react');
-  }),
-  'rewind-forward-5': lazy(() => {
-    return import('@tabler/icons/rewind-forward-5.svg?react');
-  }),
-  'rewind-forward-50': lazy(() => {
-    return import('@tabler/icons/rewind-forward-50.svg?react');
-  }),
-  'rewind-forward-60': lazy(() => {
-    return import('@tabler/icons/rewind-forward-60.svg?react');
-  }),
-  'ribbon-health': lazy(() => {
-    return import('@tabler/icons/ribbon-health.svg?react');
-  }),
-  rings: lazy(() => {
-    return import('@tabler/icons/rings.svg?react');
-  }),
-  'ripple-off': lazy(() => {
-    return import('@tabler/icons/ripple-off.svg?react');
-  }),
-  ripple: lazy(() => {
-    return import('@tabler/icons/ripple.svg?react');
-  }),
-  'road-off': lazy(() => {
-    return import('@tabler/icons/road-off.svg?react');
-  }),
-  'road-sign': lazy(() => {
-    return import('@tabler/icons/road-sign.svg?react');
-  }),
-  road: lazy(() => {
-    return import('@tabler/icons/road.svg?react');
-  }),
-  'robot-face': lazy(() => {
-    return import('@tabler/icons/robot-face.svg?react');
-  }),
-  'robot-off': lazy(() => {
-    return import('@tabler/icons/robot-off.svg?react');
-  }),
-  robot: lazy(() => {
-    return import('@tabler/icons/robot.svg?react');
-  }),
-  'rocket-off': lazy(() => {
-    return import('@tabler/icons/rocket-off.svg?react');
-  }),
-  rocket: lazy(() => {
-    return import('@tabler/icons/rocket.svg?react');
-  }),
-  'roller-skating': lazy(() => {
-    return import('@tabler/icons/roller-skating.svg?react');
-  }),
-  'rollercoaster-off': lazy(() => {
-    return import('@tabler/icons/rollercoaster-off.svg?react');
-  }),
-  rollercoaster: lazy(() => {
-    return import('@tabler/icons/rollercoaster.svg?react');
-  }),
-  'rosette-filled': lazy(() => {
-    return import('@tabler/icons/rosette-filled.svg?react');
-  }),
-  'rosette-number-0': lazy(() => {
-    return import('@tabler/icons/rosette-number-0.svg?react');
-  }),
-  'rosette-number-1': lazy(() => {
-    return import('@tabler/icons/rosette-number-1.svg?react');
-  }),
-  'rosette-number-2': lazy(() => {
-    return import('@tabler/icons/rosette-number-2.svg?react');
-  }),
-  'rosette-number-3': lazy(() => {
-    return import('@tabler/icons/rosette-number-3.svg?react');
-  }),
-  'rosette-number-4': lazy(() => {
-    return import('@tabler/icons/rosette-number-4.svg?react');
-  }),
-  'rosette-number-5': lazy(() => {
-    return import('@tabler/icons/rosette-number-5.svg?react');
-  }),
-  'rosette-number-6': lazy(() => {
-    return import('@tabler/icons/rosette-number-6.svg?react');
-  }),
-  'rosette-number-7': lazy(() => {
-    return import('@tabler/icons/rosette-number-7.svg?react');
-  }),
-  'rosette-number-8': lazy(() => {
-    return import('@tabler/icons/rosette-number-8.svg?react');
-  }),
-  'rosette-number-9': lazy(() => {
-    return import('@tabler/icons/rosette-number-9.svg?react');
-  }),
-  rosette: lazy(() => {
-    return import('@tabler/icons/rosette.svg?react');
-  }),
-  'rotate-2': lazy(() => {
-    return import('@tabler/icons/rotate-2.svg?react');
-  }),
-  'rotate-360': lazy(() => {
-    return import('@tabler/icons/rotate-360.svg?react');
-  }),
-  'rotate-clockwise-2': lazy(() => {
-    return import('@tabler/icons/rotate-clockwise-2.svg?react');
-  }),
-  'rotate-clockwise': lazy(() => {
-    return import('@tabler/icons/rotate-clockwise.svg?react');
-  }),
-  'rotate-dot': lazy(() => {
-    return import('@tabler/icons/rotate-dot.svg?react');
-  }),
-  'rotate-rectangle': lazy(() => {
-    return import('@tabler/icons/rotate-rectangle.svg?react');
-  }),
-  rotate: lazy(() => {
-    return import('@tabler/icons/rotate.svg?react');
-  }),
-  'route-2': lazy(() => {
-    return import('@tabler/icons/route-2.svg?react');
-  }),
-  'route-alt-left': lazy(() => {
-    return import('@tabler/icons/route-alt-left.svg?react');
-  }),
-  'route-alt-right': lazy(() => {
-    return import('@tabler/icons/route-alt-right.svg?react');
-  }),
-  'route-off': lazy(() => {
-    return import('@tabler/icons/route-off.svg?react');
-  }),
-  'route-scan': lazy(() => {
-    return import('@tabler/icons/route-scan.svg?react');
-  }),
-  'route-square-2': lazy(() => {
-    return import('@tabler/icons/route-square-2.svg?react');
-  }),
-  'route-square': lazy(() => {
-    return import('@tabler/icons/route-square.svg?react');
-  }),
-  'route-x-2': lazy(() => {
-    return import('@tabler/icons/route-x-2.svg?react');
-  }),
-  'route-x': lazy(() => {
-    return import('@tabler/icons/route-x.svg?react');
-  }),
-  route: lazy(() => {
-    return import('@tabler/icons/route.svg?react');
-  }),
-  'router-off': lazy(() => {
-    return import('@tabler/icons/router-off.svg?react');
-  }),
-  router: lazy(() => {
-    return import('@tabler/icons/router.svg?react');
-  }),
-  'row-insert-bottom': lazy(() => {
-    return import('@tabler/icons/row-insert-bottom.svg?react');
-  }),
-  'row-insert-top': lazy(() => {
-    return import('@tabler/icons/row-insert-top.svg?react');
-  }),
-  'row-remove': lazy(() => {
-    return import('@tabler/icons/row-remove.svg?react');
-  }),
-  rss: lazy(() => {
-    return import('@tabler/icons/rss.svg?react');
-  }),
-  'rubber-stamp-off': lazy(() => {
-    return import('@tabler/icons/rubber-stamp-off.svg?react');
-  }),
-  'rubber-stamp': lazy(() => {
-    return import('@tabler/icons/rubber-stamp.svg?react');
-  }),
-  'ruler-2-off': lazy(() => {
-    return import('@tabler/icons/ruler-2-off.svg?react');
-  }),
-  'ruler-2': lazy(() => {
-    return import('@tabler/icons/ruler-2.svg?react');
-  }),
-  'ruler-3': lazy(() => {
-    return import('@tabler/icons/ruler-3.svg?react');
-  }),
-  'ruler-measure': lazy(() => {
-    return import('@tabler/icons/ruler-measure.svg?react');
-  }),
-  'ruler-off': lazy(() => {
-    return import('@tabler/icons/ruler-off.svg?react');
-  }),
-  ruler: lazy(() => {
-    return import('@tabler/icons/ruler.svg?react');
-  }),
-  run: lazy(() => {
-    return import('@tabler/icons/run.svg?react');
-  }),
-  'rv-truck': lazy(() => {
-    return import('@tabler/icons/rv-truck.svg?react');
-  }),
-  's-turn-down': lazy(() => {
-    return import('@tabler/icons/s-turn-down.svg?react');
-  }),
-  's-turn-left': lazy(() => {
-    return import('@tabler/icons/s-turn-left.svg?react');
-  }),
-  's-turn-right': lazy(() => {
-    return import('@tabler/icons/s-turn-right.svg?react');
-  }),
-  's-turn-up': lazy(() => {
-    return import('@tabler/icons/s-turn-up.svg?react');
-  }),
-  'sailboat-2': lazy(() => {
-    return import('@tabler/icons/sailboat-2.svg?react');
-  }),
-  'sailboat-off': lazy(() => {
-    return import('@tabler/icons/sailboat-off.svg?react');
-  }),
-  sailboat: lazy(() => {
-    return import('@tabler/icons/sailboat.svg?react');
-  }),
-  salad: lazy(() => {
-    return import('@tabler/icons/salad.svg?react');
-  }),
-  salt: lazy(() => {
-    return import('@tabler/icons/salt.svg?react');
-  }),
-  'satellite-off': lazy(() => {
-    return import('@tabler/icons/satellite-off.svg?react');
-  }),
-  satellite: lazy(() => {
-    return import('@tabler/icons/satellite.svg?react');
-  }),
-  sausage: lazy(() => {
-    return import('@tabler/icons/sausage.svg?react');
-  }),
-  'scale-off': lazy(() => {
-    return import('@tabler/icons/scale-off.svg?react');
-  }),
-  'scale-outline-off': lazy(() => {
-    return import('@tabler/icons/scale-outline-off.svg?react');
-  }),
-  'scale-outline': lazy(() => {
-    return import('@tabler/icons/scale-outline.svg?react');
-  }),
-  scale: lazy(() => {
-    return import('@tabler/icons/scale.svg?react');
-  }),
-  'scan-eye': lazy(() => {
-    return import('@tabler/icons/scan-eye.svg?react');
-  }),
-  scan: lazy(() => {
-    return import('@tabler/icons/scan.svg?react');
-  }),
-  'schema-off': lazy(() => {
-    return import('@tabler/icons/schema-off.svg?react');
-  }),
-  schema: lazy(() => {
-    return import('@tabler/icons/schema.svg?react');
-  }),
-  'school-bell': lazy(() => {
-    return import('@tabler/icons/school-bell.svg?react');
-  }),
-  'school-off': lazy(() => {
-    return import('@tabler/icons/school-off.svg?react');
-  }),
-  school: lazy(() => {
-    return import('@tabler/icons/school.svg?react');
-  }),
-  'scissors-off': lazy(() => {
-    return import('@tabler/icons/scissors-off.svg?react');
-  }),
-  scissors: lazy(() => {
-    return import('@tabler/icons/scissors.svg?react');
-  }),
-  'scooter-electric': lazy(() => {
-    return import('@tabler/icons/scooter-electric.svg?react');
-  }),
-  scooter: lazy(() => {
-    return import('@tabler/icons/scooter.svg?react');
-  }),
-  scoreboard: lazy(() => {
-    return import('@tabler/icons/scoreboard.svg?react');
-  }),
-  'screen-share-off': lazy(() => {
-    return import('@tabler/icons/screen-share-off.svg?react');
-  }),
-  'screen-share': lazy(() => {
-    return import('@tabler/icons/screen-share.svg?react');
-  }),
-  screenshot: lazy(() => {
-    return import('@tabler/icons/screenshot.svg?react');
-  }),
-  'scribble-off': lazy(() => {
-    return import('@tabler/icons/scribble-off.svg?react');
-  }),
-  scribble: lazy(() => {
-    return import('@tabler/icons/scribble.svg?react');
-  }),
-  'script-minus': lazy(() => {
-    return import('@tabler/icons/script-minus.svg?react');
-  }),
-  'script-plus': lazy(() => {
-    return import('@tabler/icons/script-plus.svg?react');
-  }),
-  'script-x': lazy(() => {
-    return import('@tabler/icons/script-x.svg?react');
-  }),
-  script: lazy(() => {
-    return import('@tabler/icons/script.svg?react');
-  }),
-  'scuba-mask-off': lazy(() => {
-    return import('@tabler/icons/scuba-mask-off.svg?react');
-  }),
-  'scuba-mask': lazy(() => {
-    return import('@tabler/icons/scuba-mask.svg?react');
-  }),
-  sdk: lazy(() => {
-    return import('@tabler/icons/sdk.svg?react');
-  }),
-  'search-off': lazy(() => {
-    return import('@tabler/icons/search-off.svg?react');
-  }),
-  search: lazy(() => {
-    return import('@tabler/icons/search.svg?react');
-  }),
-  'section-sign': lazy(() => {
-    return import('@tabler/icons/section-sign.svg?react');
-  }),
-  section: lazy(() => {
-    return import('@tabler/icons/section.svg?react');
-  }),
-  'seeding-off': lazy(() => {
-    return import('@tabler/icons/seeding-off.svg?react');
-  }),
-  seeding: lazy(() => {
-    return import('@tabler/icons/seeding.svg?react');
-  }),
-  'select-all': lazy(() => {
-    return import('@tabler/icons/select-all.svg?react');
-  }),
-  select: lazy(() => {
-    return import('@tabler/icons/select.svg?react');
-  }),
-  selector: lazy(() => {
-    return import('@tabler/icons/selector.svg?react');
-  }),
-  'send-off': lazy(() => {
-    return import('@tabler/icons/send-off.svg?react');
-  }),
-  send: lazy(() => {
-    return import('@tabler/icons/send.svg?react');
-  }),
-  seo: lazy(() => {
-    return import('@tabler/icons/seo.svg?react');
-  }),
-  'separator-horizontal': lazy(() => {
-    return import('@tabler/icons/separator-horizontal.svg?react');
-  }),
-  'separator-vertical': lazy(() => {
-    return import('@tabler/icons/separator-vertical.svg?react');
-  }),
-  separator: lazy(() => {
-    return import('@tabler/icons/separator.svg?react');
-  }),
-  'server-2': lazy(() => {
-    return import('@tabler/icons/server-2.svg?react');
-  }),
-  'server-bolt': lazy(() => {
-    return import('@tabler/icons/server-bolt.svg?react');
-  }),
-  'server-cog': lazy(() => {
-    return import('@tabler/icons/server-cog.svg?react');
-  }),
-  'server-off': lazy(() => {
-    return import('@tabler/icons/server-off.svg?react');
-  }),
-  server: lazy(() => {
-    return import('@tabler/icons/server.svg?react');
-  }),
-  servicemark: lazy(() => {
-    return import('@tabler/icons/servicemark.svg?react');
-  }),
-  'settings-2': lazy(() => {
-    return import('@tabler/icons/settings-2.svg?react');
-  }),
-  'settings-automation': lazy(() => {
-    return import('@tabler/icons/settings-automation.svg?react');
-  }),
-  'settings-bolt': lazy(() => {
-    return import('@tabler/icons/settings-bolt.svg?react');
-  }),
-  'settings-cancel': lazy(() => {
-    return import('@tabler/icons/settings-cancel.svg?react');
-  }),
-  'settings-check': lazy(() => {
-    return import('@tabler/icons/settings-check.svg?react');
-  }),
-  'settings-code': lazy(() => {
-    return import('@tabler/icons/settings-code.svg?react');
-  }),
-  'settings-cog': lazy(() => {
-    return import('@tabler/icons/settings-cog.svg?react');
-  }),
-  'settings-dollar': lazy(() => {
-    return import('@tabler/icons/settings-dollar.svg?react');
-  }),
-  'settings-down': lazy(() => {
-    return import('@tabler/icons/settings-down.svg?react');
-  }),
-  'settings-exclamation': lazy(() => {
-    return import('@tabler/icons/settings-exclamation.svg?react');
-  }),
-  'settings-filled': lazy(() => {
-    return import('@tabler/icons/settings-filled.svg?react');
-  }),
-  'settings-heart': lazy(() => {
-    return import('@tabler/icons/settings-heart.svg?react');
-  }),
-  'settings-minus': lazy(() => {
-    return import('@tabler/icons/settings-minus.svg?react');
-  }),
-  'settings-off': lazy(() => {
-    return import('@tabler/icons/settings-off.svg?react');
-  }),
-  'settings-pause': lazy(() => {
-    return import('@tabler/icons/settings-pause.svg?react');
-  }),
-  'settings-pin': lazy(() => {
-    return import('@tabler/icons/settings-pin.svg?react');
-  }),
-  'settings-plus': lazy(() => {
-    return import('@tabler/icons/settings-plus.svg?react');
-  }),
-  'settings-question': lazy(() => {
-    return import('@tabler/icons/settings-question.svg?react');
-  }),
-  'settings-search': lazy(() => {
-    return import('@tabler/icons/settings-search.svg?react');
-  }),
-  'settings-share': lazy(() => {
-    return import('@tabler/icons/settings-share.svg?react');
-  }),
-  'settings-star': lazy(() => {
-    return import('@tabler/icons/settings-star.svg?react');
-  }),
-  'settings-up': lazy(() => {
-    return import('@tabler/icons/settings-up.svg?react');
-  }),
-  'settings-x': lazy(() => {
-    return import('@tabler/icons/settings-x.svg?react');
-  }),
-  settings: lazy(() => {
-    return import('@tabler/icons/settings.svg?react');
-  }),
-  'shadow-off': lazy(() => {
-    return import('@tabler/icons/shadow-off.svg?react');
-  }),
-  shadow: lazy(() => {
-    return import('@tabler/icons/shadow.svg?react');
-  }),
-  'shape-2': lazy(() => {
-    return import('@tabler/icons/shape-2.svg?react');
-  }),
-  'shape-3': lazy(() => {
-    return import('@tabler/icons/shape-3.svg?react');
-  }),
-  'shape-off': lazy(() => {
-    return import('@tabler/icons/shape-off.svg?react');
-  }),
-  shape: lazy(() => {
-    return import('@tabler/icons/shape.svg?react');
-  }),
-  'share-2': lazy(() => {
-    return import('@tabler/icons/share-2.svg?react');
-  }),
-  'share-3': lazy(() => {
-    return import('@tabler/icons/share-3.svg?react');
-  }),
-  'share-off': lazy(() => {
-    return import('@tabler/icons/share-off.svg?react');
-  }),
-  share: lazy(() => {
-    return import('@tabler/icons/share.svg?react');
-  }),
-  'shi-jumping': lazy(() => {
-    return import('@tabler/icons/shi-jumping.svg?react');
-  }),
-  'shield-bolt': lazy(() => {
-    return import('@tabler/icons/shield-bolt.svg?react');
-  }),
-  'shield-cancel': lazy(() => {
-    return import('@tabler/icons/shield-cancel.svg?react');
-  }),
-  'shield-check-filled': lazy(() => {
-    return import('@tabler/icons/shield-check-filled.svg?react');
-  }),
-  'shield-check': lazy(() => {
-    return import('@tabler/icons/shield-check.svg?react');
-  }),
-  'shield-checkered-filled': lazy(() => {
-    return import('@tabler/icons/shield-checkered-filled.svg?react');
-  }),
-  'shield-checkered': lazy(() => {
-    return import('@tabler/icons/shield-checkered.svg?react');
-  }),
-  'shield-chevron': lazy(() => {
-    return import('@tabler/icons/shield-chevron.svg?react');
-  }),
-  'shield-code': lazy(() => {
-    return import('@tabler/icons/shield-code.svg?react');
-  }),
-  'shield-cog': lazy(() => {
-    return import('@tabler/icons/shield-cog.svg?react');
-  }),
-  'shield-dollar': lazy(() => {
-    return import('@tabler/icons/shield-dollar.svg?react');
-  }),
-  'shield-down': lazy(() => {
-    return import('@tabler/icons/shield-down.svg?react');
-  }),
-  'shield-exclamation': lazy(() => {
-    return import('@tabler/icons/shield-exclamation.svg?react');
-  }),
-  'shield-filled': lazy(() => {
-    return import('@tabler/icons/shield-filled.svg?react');
-  }),
-  'shield-half-filled': lazy(() => {
-    return import('@tabler/icons/shield-half-filled.svg?react');
-  }),
-  'shield-half': lazy(() => {
-    return import('@tabler/icons/shield-half.svg?react');
-  }),
-  'shield-heart': lazy(() => {
-    return import('@tabler/icons/shield-heart.svg?react');
-  }),
-  'shield-lock-filled': lazy(() => {
-    return import('@tabler/icons/shield-lock-filled.svg?react');
-  }),
-  'shield-lock': lazy(() => {
-    return import('@tabler/icons/shield-lock.svg?react');
-  }),
-  'shield-minus': lazy(() => {
-    return import('@tabler/icons/shield-minus.svg?react');
-  }),
-  'shield-off': lazy(() => {
-    return import('@tabler/icons/shield-off.svg?react');
-  }),
-  'shield-pause': lazy(() => {
-    return import('@tabler/icons/shield-pause.svg?react');
-  }),
-  'shield-pin': lazy(() => {
-    return import('@tabler/icons/shield-pin.svg?react');
-  }),
-  'shield-plus': lazy(() => {
-    return import('@tabler/icons/shield-plus.svg?react');
-  }),
-  'shield-question': lazy(() => {
-    return import('@tabler/icons/shield-question.svg?react');
-  }),
-  'shield-search': lazy(() => {
-    return import('@tabler/icons/shield-search.svg?react');
-  }),
-  'shield-share': lazy(() => {
-    return import('@tabler/icons/shield-share.svg?react');
-  }),
-  'shield-star': lazy(() => {
-    return import('@tabler/icons/shield-star.svg?react');
-  }),
-  'shield-up': lazy(() => {
-    return import('@tabler/icons/shield-up.svg?react');
-  }),
-  'shield-x': lazy(() => {
-    return import('@tabler/icons/shield-x.svg?react');
-  }),
-  shield: lazy(() => {
-    return import('@tabler/icons/shield.svg?react');
-  }),
-  'ship-off': lazy(() => {
-    return import('@tabler/icons/ship-off.svg?react');
-  }),
-  ship: lazy(() => {
-    return import('@tabler/icons/ship.svg?react');
-  }),
-  'shirt-filled': lazy(() => {
-    return import('@tabler/icons/shirt-filled.svg?react');
-  }),
-  'shirt-off': lazy(() => {
-    return import('@tabler/icons/shirt-off.svg?react');
-  }),
-  'shirt-sport': lazy(() => {
-    return import('@tabler/icons/shirt-sport.svg?react');
-  }),
-  shirt: lazy(() => {
-    return import('@tabler/icons/shirt.svg?react');
-  }),
-  'shoe-off': lazy(() => {
-    return import('@tabler/icons/shoe-off.svg?react');
-  }),
-  shoe: lazy(() => {
-    return import('@tabler/icons/shoe.svg?react');
-  }),
-  'shopping-bag-check': lazy(() => {
-    return import('@tabler/icons/shopping-bag-check.svg?react');
-  }),
-  'shopping-bag-discount': lazy(() => {
-    return import('@tabler/icons/shopping-bag-discount.svg?react');
-  }),
-  'shopping-bag-edit': lazy(() => {
-    return import('@tabler/icons/shopping-bag-edit.svg?react');
-  }),
-  'shopping-bag-exclamation': lazy(() => {
-    return import('@tabler/icons/shopping-bag-exclamation.svg?react');
-  }),
-  'shopping-bag-minus': lazy(() => {
-    return import('@tabler/icons/shopping-bag-minus.svg?react');
-  }),
-  'shopping-bag-plus': lazy(() => {
-    return import('@tabler/icons/shopping-bag-plus.svg?react');
-  }),
-  'shopping-bag-search': lazy(() => {
-    return import('@tabler/icons/shopping-bag-search.svg?react');
-  }),
-  'shopping-bag-x': lazy(() => {
-    return import('@tabler/icons/shopping-bag-x.svg?react');
-  }),
-  'shopping-bag': lazy(() => {
-    return import('@tabler/icons/shopping-bag.svg?react');
-  }),
-  'shopping-cart-bolt': lazy(() => {
-    return import('@tabler/icons/shopping-cart-bolt.svg?react');
-  }),
-  'shopping-cart-cancel': lazy(() => {
-    return import('@tabler/icons/shopping-cart-cancel.svg?react');
-  }),
-  'shopping-cart-check': lazy(() => {
-    return import('@tabler/icons/shopping-cart-check.svg?react');
-  }),
-  'shopping-cart-code': lazy(() => {
-    return import('@tabler/icons/shopping-cart-code.svg?react');
-  }),
-  'shopping-cart-cog': lazy(() => {
-    return import('@tabler/icons/shopping-cart-cog.svg?react');
-  }),
-  'shopping-cart-copy': lazy(() => {
-    return import('@tabler/icons/shopping-cart-copy.svg?react');
-  }),
-  'shopping-cart-discount': lazy(() => {
-    return import('@tabler/icons/shopping-cart-discount.svg?react');
-  }),
-  'shopping-cart-dollar': lazy(() => {
-    return import('@tabler/icons/shopping-cart-dollar.svg?react');
-  }),
-  'shopping-cart-down': lazy(() => {
-    return import('@tabler/icons/shopping-cart-down.svg?react');
-  }),
-  'shopping-cart-exclamation': lazy(() => {
-    return import('@tabler/icons/shopping-cart-exclamation.svg?react');
-  }),
-  'shopping-cart-filled': lazy(() => {
-    return import('@tabler/icons/shopping-cart-filled.svg?react');
-  }),
-  'shopping-cart-heart': lazy(() => {
-    return import('@tabler/icons/shopping-cart-heart.svg?react');
-  }),
-  'shopping-cart-minus': lazy(() => {
-    return import('@tabler/icons/shopping-cart-minus.svg?react');
-  }),
-  'shopping-cart-off': lazy(() => {
-    return import('@tabler/icons/shopping-cart-off.svg?react');
-  }),
-  'shopping-cart-pause': lazy(() => {
-    return import('@tabler/icons/shopping-cart-pause.svg?react');
-  }),
-  'shopping-cart-pin': lazy(() => {
-    return import('@tabler/icons/shopping-cart-pin.svg?react');
-  }),
-  'shopping-cart-plus': lazy(() => {
-    return import('@tabler/icons/shopping-cart-plus.svg?react');
-  }),
-  'shopping-cart-question': lazy(() => {
-    return import('@tabler/icons/shopping-cart-question.svg?react');
-  }),
-  'shopping-cart-search': lazy(() => {
-    return import('@tabler/icons/shopping-cart-search.svg?react');
-  }),
-  'shopping-cart-share': lazy(() => {
-    return import('@tabler/icons/shopping-cart-share.svg?react');
-  }),
-  'shopping-cart-star': lazy(() => {
-    return import('@tabler/icons/shopping-cart-star.svg?react');
-  }),
-  'shopping-cart-up': lazy(() => {
-    return import('@tabler/icons/shopping-cart-up.svg?react');
-  }),
-  'shopping-cart-x': lazy(() => {
-    return import('@tabler/icons/shopping-cart-x.svg?react');
-  }),
-  'shopping-cart': lazy(() => {
-    return import('@tabler/icons/shopping-cart.svg?react');
-  }),
-  shovel: lazy(() => {
-    return import('@tabler/icons/shovel.svg?react');
-  }),
-  shredder: lazy(() => {
-    return import('@tabler/icons/shredder.svg?react');
-  }),
-  'sign-left-filled': lazy(() => {
-    return import('@tabler/icons/sign-left-filled.svg?react');
-  }),
-  'sign-left': lazy(() => {
-    return import('@tabler/icons/sign-left.svg?react');
-  }),
-  'sign-right-filled': lazy(() => {
-    return import('@tabler/icons/sign-right-filled.svg?react');
-  }),
-  'sign-right': lazy(() => {
-    return import('@tabler/icons/sign-right.svg?react');
-  }),
-  'signal-2g': lazy(() => {
-    return import('@tabler/icons/signal-2g.svg?react');
-  }),
-  'signal-3g': lazy(() => {
-    return import('@tabler/icons/signal-3g.svg?react');
-  }),
-  'signal-4g-plus': lazy(() => {
-    return import('@tabler/icons/signal-4g-plus.svg?react');
-  }),
-  'signal-4g': lazy(() => {
-    return import('@tabler/icons/signal-4g.svg?react');
-  }),
-  'signal-5g': lazy(() => {
-    return import('@tabler/icons/signal-5g.svg?react');
-  }),
-  'signal-6g': lazy(() => {
-    return import('@tabler/icons/signal-6g.svg?react');
-  }),
-  'signal-e': lazy(() => {
-    return import('@tabler/icons/signal-e.svg?react');
-  }),
-  'signal-g': lazy(() => {
-    return import('@tabler/icons/signal-g.svg?react');
-  }),
-  'signal-h-plus': lazy(() => {
-    return import('@tabler/icons/signal-h-plus.svg?react');
-  }),
-  'signal-h': lazy(() => {
-    return import('@tabler/icons/signal-h.svg?react');
-  }),
-  'signal-lte': lazy(() => {
-    return import('@tabler/icons/signal-lte.svg?react');
-  }),
-  'signature-off': lazy(() => {
-    return import('@tabler/icons/signature-off.svg?react');
-  }),
-  signature: lazy(() => {
-    return import('@tabler/icons/signature.svg?react');
-  }),
-  'sitemap-off': lazy(() => {
-    return import('@tabler/icons/sitemap-off.svg?react');
-  }),
-  sitemap: lazy(() => {
-    return import('@tabler/icons/sitemap.svg?react');
-  }),
-  'skateboard-off': lazy(() => {
-    return import('@tabler/icons/skateboard-off.svg?react');
-  }),
-  skateboard: lazy(() => {
-    return import('@tabler/icons/skateboard.svg?react');
-  }),
-  skateboarding: lazy(() => {
-    return import('@tabler/icons/skateboarding.svg?react');
-  }),
-  skull: lazy(() => {
-    return import('@tabler/icons/skull.svg?react');
-  }),
-  slash: lazy(() => {
-    return import('@tabler/icons/slash.svg?react');
-  }),
-  slashes: lazy(() => {
-    return import('@tabler/icons/slashes.svg?react');
-  }),
-  sleigh: lazy(() => {
-    return import('@tabler/icons/sleigh.svg?react');
-  }),
-  slice: lazy(() => {
-    return import('@tabler/icons/slice.svg?react');
-  }),
-  slideshow: lazy(() => {
-    return import('@tabler/icons/slideshow.svg?react');
-  }),
-  'smart-home-off': lazy(() => {
-    return import('@tabler/icons/smart-home-off.svg?react');
-  }),
-  'smart-home': lazy(() => {
-    return import('@tabler/icons/smart-home.svg?react');
-  }),
-  'smoking-no': lazy(() => {
-    return import('@tabler/icons/smoking-no.svg?react');
-  }),
-  smoking: lazy(() => {
-    return import('@tabler/icons/smoking.svg?react');
-  }),
-  'snowflake-off': lazy(() => {
-    return import('@tabler/icons/snowflake-off.svg?react');
-  }),
-  snowflake: lazy(() => {
-    return import('@tabler/icons/snowflake.svg?react');
-  }),
-  snowman: lazy(() => {
-    return import('@tabler/icons/snowman.svg?react');
-  }),
-  'soccer-field': lazy(() => {
-    return import('@tabler/icons/soccer-field.svg?react');
-  }),
-  'social-off': lazy(() => {
-    return import('@tabler/icons/social-off.svg?react');
-  }),
-  social: lazy(() => {
-    return import('@tabler/icons/social.svg?react');
-  }),
-  sock: lazy(() => {
-    return import('@tabler/icons/sock.svg?react');
-  }),
-  'sofa-off': lazy(() => {
-    return import('@tabler/icons/sofa-off.svg?react');
-  }),
-  sofa: lazy(() => {
-    return import('@tabler/icons/sofa.svg?react');
-  }),
-  'solar-electricity': lazy(() => {
-    return import('@tabler/icons/solar-electricity.svg?react');
-  }),
-  'solar-panel-2': lazy(() => {
-    return import('@tabler/icons/solar-panel-2.svg?react');
-  }),
-  'solar-panel': lazy(() => {
-    return import('@tabler/icons/solar-panel.svg?react');
-  }),
-  'sort-0-9': lazy(() => {
-    return import('@tabler/icons/sort-0-9.svg?react');
-  }),
-  'sort-9-0': lazy(() => {
-    return import('@tabler/icons/sort-9-0.svg?react');
-  }),
-  'sort-a-z': lazy(() => {
-    return import('@tabler/icons/sort-a-z.svg?react');
-  }),
-  'sort-ascending-2': lazy(() => {
-    return import('@tabler/icons/sort-ascending-2.svg?react');
-  }),
-  'sort-ascending-letters': lazy(() => {
-    return import('@tabler/icons/sort-ascending-letters.svg?react');
-  }),
-  'sort-ascending-numbers': lazy(() => {
-    return import('@tabler/icons/sort-ascending-numbers.svg?react');
-  }),
-  'sort-ascending': lazy(() => {
-    return import('@tabler/icons/sort-ascending.svg?react');
-  }),
-  'sort-descending-2': lazy(() => {
-    return import('@tabler/icons/sort-descending-2.svg?react');
-  }),
-  'sort-descending-letters': lazy(() => {
-    return import('@tabler/icons/sort-descending-letters.svg?react');
-  }),
-  'sort-descending-numbers': lazy(() => {
-    return import('@tabler/icons/sort-descending-numbers.svg?react');
-  }),
-  'sort-descending': lazy(() => {
-    return import('@tabler/icons/sort-descending.svg?react');
-  }),
-  'sort-z-a': lazy(() => {
-    return import('@tabler/icons/sort-z-a.svg?react');
-  }),
-  sos: lazy(() => {
-    return import('@tabler/icons/sos.svg?react');
-  }),
-  'soup-off': lazy(() => {
-    return import('@tabler/icons/soup-off.svg?react');
-  }),
-  soup: lazy(() => {
-    return import('@tabler/icons/soup.svg?react');
-  }),
-  'source-code': lazy(() => {
-    return import('@tabler/icons/source-code.svg?react');
-  }),
-  'space-off': lazy(() => {
-    return import('@tabler/icons/space-off.svg?react');
-  }),
-  space: lazy(() => {
-    return import('@tabler/icons/space.svg?react');
-  }),
-  'spacing-horizontal': lazy(() => {
-    return import('@tabler/icons/spacing-horizontal.svg?react');
-  }),
-  'spacing-vertical': lazy(() => {
-    return import('@tabler/icons/spacing-vertical.svg?react');
-  }),
-  'spade-filled': lazy(() => {
-    return import('@tabler/icons/spade-filled.svg?react');
-  }),
-  spade: lazy(() => {
-    return import('@tabler/icons/spade.svg?react');
-  }),
-  sparkles: lazy(() => {
-    return import('@tabler/icons/sparkles.svg?react');
-  }),
-  speakerphone: lazy(() => {
-    return import('@tabler/icons/speakerphone.svg?react');
-  }),
-  speedboat: lazy(() => {
-    return import('@tabler/icons/speedboat.svg?react');
-  }),
-  'sphere-off': lazy(() => {
-    return import('@tabler/icons/sphere-off.svg?react');
-  }),
-  'sphere-plus': lazy(() => {
-    return import('@tabler/icons/sphere-plus.svg?react');
-  }),
-  sphere: lazy(() => {
-    return import('@tabler/icons/sphere.svg?react');
-  }),
-  spider: lazy(() => {
-    return import('@tabler/icons/spider.svg?react');
-  }),
-  'spiral-off': lazy(() => {
-    return import('@tabler/icons/spiral-off.svg?react');
-  }),
-  spiral: lazy(() => {
-    return import('@tabler/icons/spiral.svg?react');
-  }),
-  'sport-billard': lazy(() => {
-    return import('@tabler/icons/sport-billard.svg?react');
-  }),
-  spray: lazy(() => {
-    return import('@tabler/icons/spray.svg?react');
-  }),
-  'spy-off': lazy(() => {
-    return import('@tabler/icons/spy-off.svg?react');
-  }),
-  spy: lazy(() => {
-    return import('@tabler/icons/spy.svg?react');
-  }),
-  sql: lazy(() => {
-    return import('@tabler/icons/sql.svg?react');
-  }),
-  'square-0-filled': lazy(() => {
-    return import('@tabler/icons/square-0-filled.svg?react');
-  }),
-  'square-1-filled': lazy(() => {
-    return import('@tabler/icons/square-1-filled.svg?react');
-  }),
-  'square-2-filled': lazy(() => {
-    return import('@tabler/icons/square-2-filled.svg?react');
-  }),
-  'square-3-filled': lazy(() => {
-    return import('@tabler/icons/square-3-filled.svg?react');
-  }),
-  'square-4-filled': lazy(() => {
-    return import('@tabler/icons/square-4-filled.svg?react');
-  }),
-  'square-5-filled': lazy(() => {
-    return import('@tabler/icons/square-5-filled.svg?react');
-  }),
-  'square-6-filled': lazy(() => {
-    return import('@tabler/icons/square-6-filled.svg?react');
-  }),
-  'square-7-filled': lazy(() => {
-    return import('@tabler/icons/square-7-filled.svg?react');
-  }),
-  'square-8-filled': lazy(() => {
-    return import('@tabler/icons/square-8-filled.svg?react');
-  }),
-  'square-9-filled': lazy(() => {
-    return import('@tabler/icons/square-9-filled.svg?react');
-  }),
-  'square-arrow-down-filled': lazy(() => {
-    return import('@tabler/icons/square-arrow-down-filled.svg?react');
-  }),
-  'square-arrow-down': lazy(() => {
-    return import('@tabler/icons/square-arrow-down.svg?react');
-  }),
-  'square-arrow-left-filled': lazy(() => {
-    return import('@tabler/icons/square-arrow-left-filled.svg?react');
-  }),
-  'square-arrow-left': lazy(() => {
-    return import('@tabler/icons/square-arrow-left.svg?react');
-  }),
-  'square-arrow-right-filled': lazy(() => {
-    return import('@tabler/icons/square-arrow-right-filled.svg?react');
-  }),
-  'square-arrow-right': lazy(() => {
-    return import('@tabler/icons/square-arrow-right.svg?react');
-  }),
-  'square-arrow-up-filled': lazy(() => {
-    return import('@tabler/icons/square-arrow-up-filled.svg?react');
-  }),
-  'square-arrow-up': lazy(() => {
-    return import('@tabler/icons/square-arrow-up.svg?react');
-  }),
-  'square-asterisk-filled': lazy(() => {
-    return import('@tabler/icons/square-asterisk-filled.svg?react');
-  }),
-  'square-asterisk': lazy(() => {
-    return import('@tabler/icons/square-asterisk.svg?react');
-  }),
-  'square-check-filled': lazy(() => {
-    return import('@tabler/icons/square-check-filled.svg?react');
-  }),
-  'square-check': lazy(() => {
-    return import('@tabler/icons/square-check.svg?react');
-  }),
-  'square-chevron-down-filled': lazy(() => {
-    return import('@tabler/icons/square-chevron-down-filled.svg?react');
-  }),
-  'square-chevron-down': lazy(() => {
-    return import('@tabler/icons/square-chevron-down.svg?react');
-  }),
-  'square-chevron-left-filled': lazy(() => {
-    return import('@tabler/icons/square-chevron-left-filled.svg?react');
-  }),
-  'square-chevron-left': lazy(() => {
-    return import('@tabler/icons/square-chevron-left.svg?react');
-  }),
-  'square-chevron-right-filled': lazy(() => {
-    return import('@tabler/icons/square-chevron-right-filled.svg?react');
-  }),
-  'square-chevron-right': lazy(() => {
-    return import('@tabler/icons/square-chevron-right.svg?react');
-  }),
-  'square-chevron-up-filled': lazy(() => {
-    return import('@tabler/icons/square-chevron-up-filled.svg?react');
-  }),
-  'square-chevron-up': lazy(() => {
-    return import('@tabler/icons/square-chevron-up.svg?react');
-  }),
-  'square-chevrons-down-filled': lazy(() => {
-    return import('@tabler/icons/square-chevrons-down-filled.svg?react');
-  }),
-  'square-chevrons-down': lazy(() => {
-    return import('@tabler/icons/square-chevrons-down.svg?react');
-  }),
-  'square-chevrons-left-filled': lazy(() => {
-    return import('@tabler/icons/square-chevrons-left-filled.svg?react');
-  }),
-  'square-chevrons-left': lazy(() => {
-    return import('@tabler/icons/square-chevrons-left.svg?react');
-  }),
-  'square-chevrons-right-filled': lazy(() => {
-    return import('@tabler/icons/square-chevrons-right-filled.svg?react');
-  }),
-  'square-chevrons-right': lazy(() => {
-    return import('@tabler/icons/square-chevrons-right.svg?react');
-  }),
-  'square-chevrons-up-filled': lazy(() => {
-    return import('@tabler/icons/square-chevrons-up-filled.svg?react');
-  }),
-  'square-chevrons-up': lazy(() => {
-    return import('@tabler/icons/square-chevrons-up.svg?react');
-  }),
-  'square-dot-filled': lazy(() => {
-    return import('@tabler/icons/square-dot-filled.svg?react');
-  }),
-  'square-dot': lazy(() => {
-    return import('@tabler/icons/square-dot.svg?react');
-  }),
-  'square-f0-filled': lazy(() => {
-    return import('@tabler/icons/square-f0-filled.svg?react');
-  }),
-  'square-f0': lazy(() => {
-    return import('@tabler/icons/square-f0.svg?react');
-  }),
-  'square-f1-filled': lazy(() => {
-    return import('@tabler/icons/square-f1-filled.svg?react');
-  }),
-  'square-f1': lazy(() => {
-    return import('@tabler/icons/square-f1.svg?react');
-  }),
-  'square-f2-filled': lazy(() => {
-    return import('@tabler/icons/square-f2-filled.svg?react');
-  }),
-  'square-f2': lazy(() => {
-    return import('@tabler/icons/square-f2.svg?react');
-  }),
-  'square-f3-filled': lazy(() => {
-    return import('@tabler/icons/square-f3-filled.svg?react');
-  }),
-  'square-f3': lazy(() => {
-    return import('@tabler/icons/square-f3.svg?react');
-  }),
-  'square-f4-filled': lazy(() => {
-    return import('@tabler/icons/square-f4-filled.svg?react');
-  }),
-  'square-f4': lazy(() => {
-    return import('@tabler/icons/square-f4.svg?react');
-  }),
-  'square-f5-filled': lazy(() => {
-    return import('@tabler/icons/square-f5-filled.svg?react');
-  }),
-  'square-f5': lazy(() => {
-    return import('@tabler/icons/square-f5.svg?react');
-  }),
-  'square-f6-filled': lazy(() => {
-    return import('@tabler/icons/square-f6-filled.svg?react');
-  }),
-  'square-f6': lazy(() => {
-    return import('@tabler/icons/square-f6.svg?react');
-  }),
-  'square-f7-filled': lazy(() => {
-    return import('@tabler/icons/square-f7-filled.svg?react');
-  }),
-  'square-f7': lazy(() => {
-    return import('@tabler/icons/square-f7.svg?react');
-  }),
-  'square-f8-filled': lazy(() => {
-    return import('@tabler/icons/square-f8-filled.svg?react');
-  }),
-  'square-f8': lazy(() => {
-    return import('@tabler/icons/square-f8.svg?react');
-  }),
-  'square-f9-filled': lazy(() => {
-    return import('@tabler/icons/square-f9-filled.svg?react');
-  }),
-  'square-f9': lazy(() => {
-    return import('@tabler/icons/square-f9.svg?react');
-  }),
-  'square-filled': lazy(() => {
-    return import('@tabler/icons/square-filled.svg?react');
-  }),
-  'square-forbid-2': lazy(() => {
-    return import('@tabler/icons/square-forbid-2.svg?react');
-  }),
-  'square-forbid': lazy(() => {
-    return import('@tabler/icons/square-forbid.svg?react');
-  }),
-  'square-half': lazy(() => {
-    return import('@tabler/icons/square-half.svg?react');
-  }),
-  'square-key': lazy(() => {
-    return import('@tabler/icons/square-key.svg?react');
-  }),
-  'square-letter-a': lazy(() => {
-    return import('@tabler/icons/square-letter-a.svg?react');
-  }),
-  'square-letter-b': lazy(() => {
-    return import('@tabler/icons/square-letter-b.svg?react');
-  }),
-  'square-letter-c': lazy(() => {
-    return import('@tabler/icons/square-letter-c.svg?react');
-  }),
-  'square-letter-d': lazy(() => {
-    return import('@tabler/icons/square-letter-d.svg?react');
-  }),
-  'square-letter-e': lazy(() => {
-    return import('@tabler/icons/square-letter-e.svg?react');
-  }),
-  'square-letter-f': lazy(() => {
-    return import('@tabler/icons/square-letter-f.svg?react');
-  }),
-  'square-letter-g': lazy(() => {
-    return import('@tabler/icons/square-letter-g.svg?react');
-  }),
-  'square-letter-h': lazy(() => {
-    return import('@tabler/icons/square-letter-h.svg?react');
-  }),
-  'square-letter-i': lazy(() => {
-    return import('@tabler/icons/square-letter-i.svg?react');
-  }),
-  'square-letter-j': lazy(() => {
-    return import('@tabler/icons/square-letter-j.svg?react');
-  }),
-  'square-letter-k': lazy(() => {
-    return import('@tabler/icons/square-letter-k.svg?react');
-  }),
-  'square-letter-l': lazy(() => {
-    return import('@tabler/icons/square-letter-l.svg?react');
-  }),
-  'square-letter-m': lazy(() => {
-    return import('@tabler/icons/square-letter-m.svg?react');
-  }),
-  'square-letter-n': lazy(() => {
-    return import('@tabler/icons/square-letter-n.svg?react');
-  }),
-  'square-letter-o': lazy(() => {
-    return import('@tabler/icons/square-letter-o.svg?react');
-  }),
-  'square-letter-p': lazy(() => {
-    return import('@tabler/icons/square-letter-p.svg?react');
-  }),
-  'square-letter-q': lazy(() => {
-    return import('@tabler/icons/square-letter-q.svg?react');
-  }),
-  'square-letter-r': lazy(() => {
-    return import('@tabler/icons/square-letter-r.svg?react');
-  }),
-  'square-letter-s': lazy(() => {
-    return import('@tabler/icons/square-letter-s.svg?react');
-  }),
-  'square-letter-t': lazy(() => {
-    return import('@tabler/icons/square-letter-t.svg?react');
-  }),
-  'square-letter-u': lazy(() => {
-    return import('@tabler/icons/square-letter-u.svg?react');
-  }),
-  'square-letter-v': lazy(() => {
-    return import('@tabler/icons/square-letter-v.svg?react');
-  }),
-  'square-letter-w': lazy(() => {
-    return import('@tabler/icons/square-letter-w.svg?react');
-  }),
-  'square-letter-x': lazy(() => {
-    return import('@tabler/icons/square-letter-x.svg?react');
-  }),
-  'square-letter-y': lazy(() => {
-    return import('@tabler/icons/square-letter-y.svg?react');
-  }),
-  'square-letter-z': lazy(() => {
-    return import('@tabler/icons/square-letter-z.svg?react');
-  }),
-  'square-minus-filled': lazy(() => {
-    return import('@tabler/icons/square-minus-filled.svg?react');
-  }),
-  'square-minus': lazy(() => {
-    return import('@tabler/icons/square-minus.svg?react');
-  }),
-  'square-number-0': lazy(() => {
-    return import('@tabler/icons/square-number-0.svg?react');
-  }),
-  'square-number-1': lazy(() => {
-    return import('@tabler/icons/square-number-1.svg?react');
-  }),
-  'square-number-2': lazy(() => {
-    return import('@tabler/icons/square-number-2.svg?react');
-  }),
-  'square-number-3': lazy(() => {
-    return import('@tabler/icons/square-number-3.svg?react');
-  }),
-  'square-number-4': lazy(() => {
-    return import('@tabler/icons/square-number-4.svg?react');
-  }),
-  'square-number-5': lazy(() => {
-    return import('@tabler/icons/square-number-5.svg?react');
-  }),
-  'square-number-6': lazy(() => {
-    return import('@tabler/icons/square-number-6.svg?react');
-  }),
-  'square-number-7': lazy(() => {
-    return import('@tabler/icons/square-number-7.svg?react');
-  }),
-  'square-number-8': lazy(() => {
-    return import('@tabler/icons/square-number-8.svg?react');
-  }),
-  'square-number-9': lazy(() => {
-    return import('@tabler/icons/square-number-9.svg?react');
-  }),
-  'square-off': lazy(() => {
-    return import('@tabler/icons/square-off.svg?react');
-  }),
-  'square-plus-2': lazy(() => {
-    return import('@tabler/icons/square-plus-2.svg?react');
-  }),
-  'square-plus': lazy(() => {
-    return import('@tabler/icons/square-plus.svg?react');
-  }),
-  'square-root-2': lazy(() => {
-    return import('@tabler/icons/square-root-2.svg?react');
-  }),
-  'square-root': lazy(() => {
-    return import('@tabler/icons/square-root.svg?react');
-  }),
-  'square-rotated-filled': lazy(() => {
-    return import('@tabler/icons/square-rotated-filled.svg?react');
-  }),
-  'square-rotated-forbid-2': lazy(() => {
-    return import('@tabler/icons/square-rotated-forbid-2.svg?react');
-  }),
-  'square-rotated-forbid': lazy(() => {
-    return import('@tabler/icons/square-rotated-forbid.svg?react');
-  }),
-  'square-rotated-off': lazy(() => {
-    return import('@tabler/icons/square-rotated-off.svg?react');
-  }),
-  'square-rotated': lazy(() => {
-    return import('@tabler/icons/square-rotated.svg?react');
-  }),
-  'square-rounded-arrow-down-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-down-filled.svg?react');
-  }),
-  'square-rounded-arrow-down': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-down.svg?react');
-  }),
-  'square-rounded-arrow-left-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-left-filled.svg?react');
-  }),
-  'square-rounded-arrow-left': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-left.svg?react');
-  }),
-  'square-rounded-arrow-right-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-right-filled.svg?react');
-  }),
-  'square-rounded-arrow-right': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-right.svg?react');
-  }),
-  'square-rounded-arrow-up-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-up-filled.svg?react');
-  }),
-  'square-rounded-arrow-up': lazy(() => {
-    return import('@tabler/icons/square-rounded-arrow-up.svg?react');
-  }),
-  'square-rounded-check-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-check-filled.svg?react');
-  }),
-  'square-rounded-check': lazy(() => {
-    return import('@tabler/icons/square-rounded-check.svg?react');
-  }),
-  'square-rounded-chevron-down-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-down-filled.svg?react');
-  }),
-  'square-rounded-chevron-down': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-down.svg?react');
-  }),
-  'square-rounded-chevron-left-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-left-filled.svg?react');
-  }),
-  'square-rounded-chevron-left': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-left.svg?react');
-  }),
-  'square-rounded-chevron-right-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-right-filled.svg?react');
-  }),
-  'square-rounded-chevron-right': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-right.svg?react');
-  }),
-  'square-rounded-chevron-up-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-up-filled.svg?react');
-  }),
-  'square-rounded-chevron-up': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevron-up.svg?react');
-  }),
-  'square-rounded-chevrons-down-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-down-filled.svg?react');
-  }),
-  'square-rounded-chevrons-down': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-down.svg?react');
-  }),
-  'square-rounded-chevrons-left-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-left-filled.svg?react');
-  }),
-  'square-rounded-chevrons-left': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-left.svg?react');
-  }),
-  'square-rounded-chevrons-right-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-right-filled.svg?react');
-  }),
-  'square-rounded-chevrons-right': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-right.svg?react');
-  }),
-  'square-rounded-chevrons-up-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-up-filled.svg?react');
-  }),
-  'square-rounded-chevrons-up': lazy(() => {
-    return import('@tabler/icons/square-rounded-chevrons-up.svg?react');
-  }),
-  'square-rounded-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-filled.svg?react');
-  }),
-  'square-rounded-letter-a': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-a.svg?react');
-  }),
-  'square-rounded-letter-b': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-b.svg?react');
-  }),
-  'square-rounded-letter-c': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-c.svg?react');
-  }),
-  'square-rounded-letter-d': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-d.svg?react');
-  }),
-  'square-rounded-letter-e': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-e.svg?react');
-  }),
-  'square-rounded-letter-f': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-f.svg?react');
-  }),
-  'square-rounded-letter-g': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-g.svg?react');
-  }),
-  'square-rounded-letter-h': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-h.svg?react');
-  }),
-  'square-rounded-letter-i': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-i.svg?react');
-  }),
-  'square-rounded-letter-j': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-j.svg?react');
-  }),
-  'square-rounded-letter-k': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-k.svg?react');
-  }),
-  'square-rounded-letter-l': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-l.svg?react');
-  }),
-  'square-rounded-letter-m': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-m.svg?react');
-  }),
-  'square-rounded-letter-n': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-n.svg?react');
-  }),
-  'square-rounded-letter-o': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-o.svg?react');
-  }),
-  'square-rounded-letter-p': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-p.svg?react');
-  }),
-  'square-rounded-letter-q': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-q.svg?react');
-  }),
-  'square-rounded-letter-r': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-r.svg?react');
-  }),
-  'square-rounded-letter-s': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-s.svg?react');
-  }),
-  'square-rounded-letter-t': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-t.svg?react');
-  }),
-  'square-rounded-letter-u': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-u.svg?react');
-  }),
-  'square-rounded-letter-v': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-v.svg?react');
-  }),
-  'square-rounded-letter-w': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-w.svg?react');
-  }),
-  'square-rounded-letter-x': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-x.svg?react');
-  }),
-  'square-rounded-letter-y': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-y.svg?react');
-  }),
-  'square-rounded-letter-z': lazy(() => {
-    return import('@tabler/icons/square-rounded-letter-z.svg?react');
-  }),
-  'square-rounded-minus-2': lazy(() => {
-    return import('@tabler/icons/square-rounded-minus-2.svg?react');
-  }),
-  'square-rounded-minus-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-minus-filled.svg?react');
-  }),
-  'square-rounded-minus': lazy(() => {
-    return import('@tabler/icons/square-rounded-minus.svg?react');
-  }),
-  'square-rounded-number-0-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-0-filled.svg?react');
-  }),
-  'square-rounded-number-0': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-0.svg?react');
-  }),
-  'square-rounded-number-1-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-1-filled.svg?react');
-  }),
-  'square-rounded-number-1': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-1.svg?react');
-  }),
-  'square-rounded-number-2-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-2-filled.svg?react');
-  }),
-  'square-rounded-number-2': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-2.svg?react');
-  }),
-  'square-rounded-number-3-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-3-filled.svg?react');
-  }),
-  'square-rounded-number-3': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-3.svg?react');
-  }),
-  'square-rounded-number-4-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-4-filled.svg?react');
-  }),
-  'square-rounded-number-4': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-4.svg?react');
-  }),
-  'square-rounded-number-5-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-5-filled.svg?react');
-  }),
-  'square-rounded-number-5': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-5.svg?react');
-  }),
-  'square-rounded-number-6-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-6-filled.svg?react');
-  }),
-  'square-rounded-number-6': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-6.svg?react');
-  }),
-  'square-rounded-number-7-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-7-filled.svg?react');
-  }),
-  'square-rounded-number-7': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-7.svg?react');
-  }),
-  'square-rounded-number-8-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-8-filled.svg?react');
-  }),
-  'square-rounded-number-8': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-8.svg?react');
-  }),
-  'square-rounded-number-9-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-9-filled.svg?react');
-  }),
-  'square-rounded-number-9': lazy(() => {
-    return import('@tabler/icons/square-rounded-number-9.svg?react');
-  }),
-  'square-rounded-plus-2': lazy(() => {
-    return import('@tabler/icons/square-rounded-plus-2.svg?react');
-  }),
-  'square-rounded-plus-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-plus-filled.svg?react');
-  }),
-  'square-rounded-plus': lazy(() => {
-    return import('@tabler/icons/square-rounded-plus.svg?react');
-  }),
-  'square-rounded-x-filled': lazy(() => {
-    return import('@tabler/icons/square-rounded-x-filled.svg?react');
-  }),
-  'square-rounded-x': lazy(() => {
-    return import('@tabler/icons/square-rounded-x.svg?react');
-  }),
-  'square-rounded': lazy(() => {
-    return import('@tabler/icons/square-rounded.svg?react');
-  }),
-  'square-toggle-horizontal': lazy(() => {
-    return import('@tabler/icons/square-toggle-horizontal.svg?react');
-  }),
-  'square-toggle': lazy(() => {
-    return import('@tabler/icons/square-toggle.svg?react');
-  }),
-  'square-x-filled': lazy(() => {
-    return import('@tabler/icons/square-x-filled.svg?react');
-  }),
-  'square-x': lazy(() => {
-    return import('@tabler/icons/square-x.svg?react');
-  }),
-  square: lazy(() => {
-    return import('@tabler/icons/square.svg?react');
-  }),
-  'squares-diagonal': lazy(() => {
-    return import('@tabler/icons/squares-diagonal.svg?react');
-  }),
-  'squares-filled': lazy(() => {
-    return import('@tabler/icons/squares-filled.svg?react');
-  }),
-  'stack-2': lazy(() => {
-    return import('@tabler/icons/stack-2.svg?react');
-  }),
-  'stack-3': lazy(() => {
-    return import('@tabler/icons/stack-3.svg?react');
-  }),
-  'stack-pop': lazy(() => {
-    return import('@tabler/icons/stack-pop.svg?react');
-  }),
-  'stack-push': lazy(() => {
-    return import('@tabler/icons/stack-push.svg?react');
-  }),
-  stack: lazy(() => {
-    return import('@tabler/icons/stack.svg?react');
-  }),
-  'stairs-down': lazy(() => {
-    return import('@tabler/icons/stairs-down.svg?react');
-  }),
-  'stairs-up': lazy(() => {
-    return import('@tabler/icons/stairs-up.svg?react');
-  }),
-  stairs: lazy(() => {
-    return import('@tabler/icons/stairs.svg?react');
-  }),
-  'star-filled': lazy(() => {
-    return import('@tabler/icons/star-filled.svg?react');
-  }),
-  'star-half-filled': lazy(() => {
-    return import('@tabler/icons/star-half-filled.svg?react');
-  }),
-  'star-half': lazy(() => {
-    return import('@tabler/icons/star-half.svg?react');
-  }),
-  'star-off': lazy(() => {
-    return import('@tabler/icons/star-off.svg?react');
-  }),
-  star: lazy(() => {
-    return import('@tabler/icons/star.svg?react');
-  }),
-  'stars-filled': lazy(() => {
-    return import('@tabler/icons/stars-filled.svg?react');
-  }),
-  'stars-off': lazy(() => {
-    return import('@tabler/icons/stars-off.svg?react');
-  }),
-  stars: lazy(() => {
-    return import('@tabler/icons/stars.svg?react');
-  }),
-  'status-change': lazy(() => {
-    return import('@tabler/icons/status-change.svg?react');
-  }),
-  steam: lazy(() => {
-    return import('@tabler/icons/steam.svg?react');
-  }),
-  'steering-wheel-off': lazy(() => {
-    return import('@tabler/icons/steering-wheel-off.svg?react');
-  }),
-  'steering-wheel': lazy(() => {
-    return import('@tabler/icons/steering-wheel.svg?react');
-  }),
-  'step-into': lazy(() => {
-    return import('@tabler/icons/step-into.svg?react');
-  }),
-  'step-out': lazy(() => {
-    return import('@tabler/icons/step-out.svg?react');
-  }),
-  'stereo-glasses': lazy(() => {
-    return import('@tabler/icons/stereo-glasses.svg?react');
-  }),
-  'stethoscope-off': lazy(() => {
-    return import('@tabler/icons/stethoscope-off.svg?react');
-  }),
-  stethoscope: lazy(() => {
-    return import('@tabler/icons/stethoscope.svg?react');
-  }),
-  sticker: lazy(() => {
-    return import('@tabler/icons/sticker.svg?react');
-  }),
-  'storm-off': lazy(() => {
-    return import('@tabler/icons/storm-off.svg?react');
-  }),
-  storm: lazy(() => {
-    return import('@tabler/icons/storm.svg?react');
-  }),
-  'stretching-2': lazy(() => {
-    return import('@tabler/icons/stretching-2.svg?react');
-  }),
-  stretching: lazy(() => {
-    return import('@tabler/icons/stretching.svg?react');
-  }),
-  strikethrough: lazy(() => {
-    return import('@tabler/icons/strikethrough.svg?react');
-  }),
-  submarine: lazy(() => {
-    return import('@tabler/icons/submarine.svg?react');
-  }),
-  subscript: lazy(() => {
-    return import('@tabler/icons/subscript.svg?react');
-  }),
-  subtask: lazy(() => {
-    return import('@tabler/icons/subtask.svg?react');
-  }),
-  'sum-off': lazy(() => {
-    return import('@tabler/icons/sum-off.svg?react');
-  }),
-  sum: lazy(() => {
-    return import('@tabler/icons/sum.svg?react');
-  }),
-  'sun-electricity': lazy(() => {
-    return import('@tabler/icons/sun-electricity.svg?react');
-  }),
-  'sun-filled': lazy(() => {
-    return import('@tabler/icons/sun-filled.svg?react');
-  }),
-  'sun-high': lazy(() => {
-    return import('@tabler/icons/sun-high.svg?react');
-  }),
-  'sun-low': lazy(() => {
-    return import('@tabler/icons/sun-low.svg?react');
-  }),
-  'sun-moon': lazy(() => {
-    return import('@tabler/icons/sun-moon.svg?react');
-  }),
-  'sun-off': lazy(() => {
-    return import('@tabler/icons/sun-off.svg?react');
-  }),
-  'sun-wind': lazy(() => {
-    return import('@tabler/icons/sun-wind.svg?react');
-  }),
-  sun: lazy(() => {
-    return import('@tabler/icons/sun.svg?react');
-  }),
-  sunglasses: lazy(() => {
-    return import('@tabler/icons/sunglasses.svg?react');
-  }),
-  sunrise: lazy(() => {
-    return import('@tabler/icons/sunrise.svg?react');
-  }),
-  'sunset-2': lazy(() => {
-    return import('@tabler/icons/sunset-2.svg?react');
-  }),
-  sunset: lazy(() => {
-    return import('@tabler/icons/sunset.svg?react');
-  }),
-  superscript: lazy(() => {
-    return import('@tabler/icons/superscript.svg?react');
-  }),
-  svg: lazy(() => {
-    return import('@tabler/icons/svg.svg?react');
-  }),
-  swimming: lazy(() => {
-    return import('@tabler/icons/swimming.svg?react');
-  }),
-  swipe: lazy(() => {
-    return import('@tabler/icons/swipe.svg?react');
-  }),
-  'switch-2': lazy(() => {
-    return import('@tabler/icons/switch-2.svg?react');
-  }),
-  'switch-3': lazy(() => {
-    return import('@tabler/icons/switch-3.svg?react');
-  }),
-  'switch-horizontal': lazy(() => {
-    return import('@tabler/icons/switch-horizontal.svg?react');
-  }),
-  'switch-vertical': lazy(() => {
-    return import('@tabler/icons/switch-vertical.svg?react');
-  }),
-  switch: lazy(() => {
-    return import('@tabler/icons/switch.svg?react');
-  }),
-  'sword-off': lazy(() => {
-    return import('@tabler/icons/sword-off.svg?react');
-  }),
-  sword: lazy(() => {
-    return import('@tabler/icons/sword.svg?react');
-  }),
-  swords: lazy(() => {
-    return import('@tabler/icons/swords.svg?react');
-  }),
-  'table-alias': lazy(() => {
-    return import('@tabler/icons/table-alias.svg?react');
-  }),
-  'table-column': lazy(() => {
-    return import('@tabler/icons/table-column.svg?react');
-  }),
-  'table-down': lazy(() => {
-    return import('@tabler/icons/table-down.svg?react');
-  }),
-  'table-export': lazy(() => {
-    return import('@tabler/icons/table-export.svg?react');
-  }),
-  'table-filled': lazy(() => {
-    return import('@tabler/icons/table-filled.svg?react');
-  }),
-  'table-heart': lazy(() => {
-    return import('@tabler/icons/table-heart.svg?react');
-  }),
-  'table-import': lazy(() => {
-    return import('@tabler/icons/table-import.svg?react');
-  }),
-  'table-minus': lazy(() => {
-    return import('@tabler/icons/table-minus.svg?react');
-  }),
-  'table-off': lazy(() => {
-    return import('@tabler/icons/table-off.svg?react');
-  }),
-  'table-options': lazy(() => {
-    return import('@tabler/icons/table-options.svg?react');
-  }),
-  'table-plus': lazy(() => {
-    return import('@tabler/icons/table-plus.svg?react');
-  }),
-  'table-row': lazy(() => {
-    return import('@tabler/icons/table-row.svg?react');
-  }),
-  'table-share': lazy(() => {
-    return import('@tabler/icons/table-share.svg?react');
-  }),
-  'table-shortcut': lazy(() => {
-    return import('@tabler/icons/table-shortcut.svg?react');
-  }),
-  table: lazy(() => {
-    return import('@tabler/icons/table.svg?react');
-  }),
-  'tag-off': lazy(() => {
-    return import('@tabler/icons/tag-off.svg?react');
-  }),
-  'tag-starred': lazy(() => {
-    return import('@tabler/icons/tag-starred.svg?react');
-  }),
-  tag: lazy(() => {
-    return import('@tabler/icons/tag.svg?react');
-  }),
-  'tags-off': lazy(() => {
-    return import('@tabler/icons/tags-off.svg?react');
-  }),
-  tags: lazy(() => {
-    return import('@tabler/icons/tags.svg?react');
-  }),
-  'tallymark-1': lazy(() => {
-    return import('@tabler/icons/tallymark-1.svg?react');
-  }),
-  'tallymark-2': lazy(() => {
-    return import('@tabler/icons/tallymark-2.svg?react');
-  }),
-  'tallymark-3': lazy(() => {
-    return import('@tabler/icons/tallymark-3.svg?react');
-  }),
-  'tallymark-4': lazy(() => {
-    return import('@tabler/icons/tallymark-4.svg?react');
-  }),
-  tallymarks: lazy(() => {
-    return import('@tabler/icons/tallymarks.svg?react');
-  }),
-  tank: lazy(() => {
-    return import('@tabler/icons/tank.svg?react');
-  }),
-  'target-arrow': lazy(() => {
-    return import('@tabler/icons/target-arrow.svg?react');
-  }),
-  'target-off': lazy(() => {
-    return import('@tabler/icons/target-off.svg?react');
-  }),
-  target: lazy(() => {
-    return import('@tabler/icons/target.svg?react');
-  }),
-  teapot: lazy(() => {
-    return import('@tabler/icons/teapot.svg?react');
-  }),
-  'telescope-off': lazy(() => {
-    return import('@tabler/icons/telescope-off.svg?react');
-  }),
-  telescope: lazy(() => {
-    return import('@tabler/icons/telescope.svg?react');
-  }),
-  'temperature-celsius': lazy(() => {
-    return import('@tabler/icons/temperature-celsius.svg?react');
-  }),
-  'temperature-fahrenheit': lazy(() => {
-    return import('@tabler/icons/temperature-fahrenheit.svg?react');
-  }),
-  'temperature-minus': lazy(() => {
-    return import('@tabler/icons/temperature-minus.svg?react');
-  }),
-  'temperature-off': lazy(() => {
-    return import('@tabler/icons/temperature-off.svg?react');
-  }),
-  'temperature-plus': lazy(() => {
-    return import('@tabler/icons/temperature-plus.svg?react');
-  }),
-  temperature: lazy(() => {
-    return import('@tabler/icons/temperature.svg?react');
-  }),
-  'template-off': lazy(() => {
-    return import('@tabler/icons/template-off.svg?react');
-  }),
-  template: lazy(() => {
-    return import('@tabler/icons/template.svg?react');
-  }),
-  'tent-off': lazy(() => {
-    return import('@tabler/icons/tent-off.svg?react');
-  }),
-  tent: lazy(() => {
-    return import('@tabler/icons/tent.svg?react');
-  }),
-  'terminal-2': lazy(() => {
-    return import('@tabler/icons/terminal-2.svg?react');
-  }),
-  terminal: lazy(() => {
-    return import('@tabler/icons/terminal.svg?react');
-  }),
-  'test-pipe-2': lazy(() => {
-    return import('@tabler/icons/test-pipe-2.svg?react');
-  }),
-  'test-pipe-off': lazy(() => {
-    return import('@tabler/icons/test-pipe-off.svg?react');
-  }),
-  'test-pipe': lazy(() => {
-    return import('@tabler/icons/test-pipe.svg?react');
-  }),
-  tex: lazy(() => {
-    return import('@tabler/icons/tex.svg?react');
-  }),
-  'text-caption': lazy(() => {
-    return import('@tabler/icons/text-caption.svg?react');
-  }),
-  'text-color': lazy(() => {
-    return import('@tabler/icons/text-color.svg?react');
-  }),
-  'text-decrease': lazy(() => {
-    return import('@tabler/icons/text-decrease.svg?react');
-  }),
-  'text-direction-ltr': lazy(() => {
-    return import('@tabler/icons/text-direction-ltr.svg?react');
-  }),
-  'text-direction-rtl': lazy(() => {
-    return import('@tabler/icons/text-direction-rtl.svg?react');
-  }),
-  'text-increase': lazy(() => {
-    return import('@tabler/icons/text-increase.svg?react');
-  }),
-  'text-orientation': lazy(() => {
-    return import('@tabler/icons/text-orientation.svg?react');
-  }),
-  'text-plus': lazy(() => {
-    return import('@tabler/icons/text-plus.svg?react');
-  }),
-  'text-recognition': lazy(() => {
-    return import('@tabler/icons/text-recognition.svg?react');
-  }),
-  'text-resize': lazy(() => {
-    return import('@tabler/icons/text-resize.svg?react');
-  }),
-  'text-scan-2': lazy(() => {
-    return import('@tabler/icons/text-scan-2.svg?react');
-  }),
-  'text-size': lazy(() => {
-    return import('@tabler/icons/text-size.svg?react');
-  }),
-  'text-spellcheck': lazy(() => {
-    return import('@tabler/icons/text-spellcheck.svg?react');
-  }),
-  'text-wrap-disabled': lazy(() => {
-    return import('@tabler/icons/text-wrap-disabled.svg?react');
-  }),
-  'text-wrap': lazy(() => {
-    return import('@tabler/icons/text-wrap.svg?react');
-  }),
-  texture: lazy(() => {
-    return import('@tabler/icons/texture.svg?react');
-  }),
-  theater: lazy(() => {
-    return import('@tabler/icons/theater.svg?react');
-  }),
-  thermometer: lazy(() => {
-    return import('@tabler/icons/thermometer.svg?react');
-  }),
-  'thumb-down-filled': lazy(() => {
-    return import('@tabler/icons/thumb-down-filled.svg?react');
-  }),
-  'thumb-down-off': lazy(() => {
-    return import('@tabler/icons/thumb-down-off.svg?react');
-  }),
-  'thumb-down': lazy(() => {
-    return import('@tabler/icons/thumb-down.svg?react');
-  }),
-  'thumb-up-filled': lazy(() => {
-    return import('@tabler/icons/thumb-up-filled.svg?react');
-  }),
-  'thumb-up-off': lazy(() => {
-    return import('@tabler/icons/thumb-up-off.svg?react');
-  }),
-  'thumb-up': lazy(() => {
-    return import('@tabler/icons/thumb-up.svg?react');
-  }),
-  'tic-tac': lazy(() => {
-    return import('@tabler/icons/tic-tac.svg?react');
-  }),
-  'ticket-off': lazy(() => {
-    return import('@tabler/icons/ticket-off.svg?react');
-  }),
-  ticket: lazy(() => {
-    return import('@tabler/icons/ticket.svg?react');
-  }),
-  tie: lazy(() => {
-    return import('@tabler/icons/tie.svg?react');
-  }),
-  tilde: lazy(() => {
-    return import('@tabler/icons/tilde.svg?react');
-  }),
-  'tilt-shift-off': lazy(() => {
-    return import('@tabler/icons/tilt-shift-off.svg?react');
-  }),
-  'tilt-shift': lazy(() => {
-    return import('@tabler/icons/tilt-shift.svg?react');
-  }),
-  'time-duration-0': lazy(() => {
-    return import('@tabler/icons/time-duration-0.svg?react');
-  }),
-  'time-duration-10': lazy(() => {
-    return import('@tabler/icons/time-duration-10.svg?react');
-  }),
-  'time-duration-15': lazy(() => {
-    return import('@tabler/icons/time-duration-15.svg?react');
-  }),
-  'time-duration-30': lazy(() => {
-    return import('@tabler/icons/time-duration-30.svg?react');
-  }),
-  'time-duration-45': lazy(() => {
-    return import('@tabler/icons/time-duration-45.svg?react');
-  }),
-  'time-duration-5': lazy(() => {
-    return import('@tabler/icons/time-duration-5.svg?react');
-  }),
-  'time-duration-60': lazy(() => {
-    return import('@tabler/icons/time-duration-60.svg?react');
-  }),
-  'time-duration-90': lazy(() => {
-    return import('@tabler/icons/time-duration-90.svg?react');
-  }),
-  'time-duration-off': lazy(() => {
-    return import('@tabler/icons/time-duration-off.svg?react');
-  }),
-  'timeline-event-exclamation': lazy(() => {
-    return import('@tabler/icons/timeline-event-exclamation.svg?react');
-  }),
-  'timeline-event-minus': lazy(() => {
-    return import('@tabler/icons/timeline-event-minus.svg?react');
-  }),
-  'timeline-event-plus': lazy(() => {
-    return import('@tabler/icons/timeline-event-plus.svg?react');
-  }),
-  'timeline-event-text': lazy(() => {
-    return import('@tabler/icons/timeline-event-text.svg?react');
-  }),
-  'timeline-event-x': lazy(() => {
-    return import('@tabler/icons/timeline-event-x.svg?react');
-  }),
-  'timeline-event': lazy(() => {
-    return import('@tabler/icons/timeline-event.svg?react');
-  }),
-  timeline: lazy(() => {
-    return import('@tabler/icons/timeline.svg?react');
-  }),
-  tir: lazy(() => {
-    return import('@tabler/icons/tir.svg?react');
-  }),
-  'toggle-left': lazy(() => {
-    return import('@tabler/icons/toggle-left.svg?react');
-  }),
-  'toggle-right': lazy(() => {
-    return import('@tabler/icons/toggle-right.svg?react');
-  }),
-  'toilet-paper-off': lazy(() => {
-    return import('@tabler/icons/toilet-paper-off.svg?react');
-  }),
-  'toilet-paper': lazy(() => {
-    return import('@tabler/icons/toilet-paper.svg?react');
-  }),
-  toml: lazy(() => {
-    return import('@tabler/icons/toml.svg?react');
-  }),
-  tool: lazy(() => {
-    return import('@tabler/icons/tool.svg?react');
-  }),
-  'tools-kitchen-2-off': lazy(() => {
-    return import('@tabler/icons/tools-kitchen-2-off.svg?react');
-  }),
-  'tools-kitchen-2': lazy(() => {
-    return import('@tabler/icons/tools-kitchen-2.svg?react');
-  }),
-  'tools-kitchen-off': lazy(() => {
-    return import('@tabler/icons/tools-kitchen-off.svg?react');
-  }),
-  'tools-kitchen': lazy(() => {
-    return import('@tabler/icons/tools-kitchen.svg?react');
-  }),
-  'tools-off': lazy(() => {
-    return import('@tabler/icons/tools-off.svg?react');
-  }),
-  tools: lazy(() => {
-    return import('@tabler/icons/tools.svg?react');
-  }),
-  tooltip: lazy(() => {
-    return import('@tabler/icons/tooltip.svg?react');
-  }),
-  'topology-bus': lazy(() => {
-    return import('@tabler/icons/topology-bus.svg?react');
-  }),
-  'topology-complex': lazy(() => {
-    return import('@tabler/icons/topology-complex.svg?react');
-  }),
-  'topology-full-hierarchy': lazy(() => {
-    return import('@tabler/icons/topology-full-hierarchy.svg?react');
-  }),
-  'topology-full': lazy(() => {
-    return import('@tabler/icons/topology-full.svg?react');
-  }),
-  'topology-ring-2': lazy(() => {
-    return import('@tabler/icons/topology-ring-2.svg?react');
-  }),
-  'topology-ring-3': lazy(() => {
-    return import('@tabler/icons/topology-ring-3.svg?react');
-  }),
-  'topology-ring': lazy(() => {
-    return import('@tabler/icons/topology-ring.svg?react');
-  }),
-  'topology-star-2': lazy(() => {
-    return import('@tabler/icons/topology-star-2.svg?react');
-  }),
-  'topology-star-3': lazy(() => {
-    return import('@tabler/icons/topology-star-3.svg?react');
-  }),
-  'topology-star-ring-2': lazy(() => {
-    return import('@tabler/icons/topology-star-ring-2.svg?react');
-  }),
-  'topology-star-ring-3': lazy(() => {
-    return import('@tabler/icons/topology-star-ring-3.svg?react');
-  }),
-  'topology-star-ring': lazy(() => {
-    return import('@tabler/icons/topology-star-ring.svg?react');
-  }),
-  'topology-star': lazy(() => {
-    return import('@tabler/icons/topology-star.svg?react');
-  }),
-  torii: lazy(() => {
-    return import('@tabler/icons/torii.svg?react');
-  }),
-  tornado: lazy(() => {
-    return import('@tabler/icons/tornado.svg?react');
-  }),
-  tournament: lazy(() => {
-    return import('@tabler/icons/tournament.svg?react');
-  }),
-  'tower-off': lazy(() => {
-    return import('@tabler/icons/tower-off.svg?react');
-  }),
-  tower: lazy(() => {
-    return import('@tabler/icons/tower.svg?react');
-  }),
-  track: lazy(() => {
-    return import('@tabler/icons/track.svg?react');
-  }),
-  tractor: lazy(() => {
-    return import('@tabler/icons/tractor.svg?react');
-  }),
-  trademark: lazy(() => {
-    return import('@tabler/icons/trademark.svg?react');
-  }),
-  'traffic-cone-off': lazy(() => {
-    return import('@tabler/icons/traffic-cone-off.svg?react');
-  }),
-  'traffic-cone': lazy(() => {
-    return import('@tabler/icons/traffic-cone.svg?react');
-  }),
-  'traffic-lights-off': lazy(() => {
-    return import('@tabler/icons/traffic-lights-off.svg?react');
-  }),
-  'traffic-lights': lazy(() => {
-    return import('@tabler/icons/traffic-lights.svg?react');
-  }),
-  train: lazy(() => {
-    return import('@tabler/icons/train.svg?react');
-  }),
-  'transfer-in': lazy(() => {
-    return import('@tabler/icons/transfer-in.svg?react');
-  }),
-  'transfer-out': lazy(() => {
-    return import('@tabler/icons/transfer-out.svg?react');
-  }),
-  'transfer-vertical': lazy(() => {
-    return import('@tabler/icons/transfer-vertical.svg?react');
-  }),
-  transfer: lazy(() => {
-    return import('@tabler/icons/transfer.svg?react');
-  }),
-  'transform-filled': lazy(() => {
-    return import('@tabler/icons/transform-filled.svg?react');
-  }),
-  transform: lazy(() => {
-    return import('@tabler/icons/transform.svg?react');
-  }),
-  'transition-bottom': lazy(() => {
-    return import('@tabler/icons/transition-bottom.svg?react');
-  }),
-  'transition-left': lazy(() => {
-    return import('@tabler/icons/transition-left.svg?react');
-  }),
-  'transition-right': lazy(() => {
-    return import('@tabler/icons/transition-right.svg?react');
-  }),
-  'transition-top': lazy(() => {
-    return import('@tabler/icons/transition-top.svg?react');
-  }),
-  'trash-filled': lazy(() => {
-    return import('@tabler/icons/trash-filled.svg?react');
-  }),
-  'trash-off': lazy(() => {
-    return import('@tabler/icons/trash-off.svg?react');
-  }),
-  'trash-x-filled': lazy(() => {
-    return import('@tabler/icons/trash-x-filled.svg?react');
-  }),
-  'trash-x': lazy(() => {
-    return import('@tabler/icons/trash-x.svg?react');
-  }),
-  trash: lazy(() => {
-    return import('@tabler/icons/trash.svg?react');
-  }),
-  treadmill: lazy(() => {
-    return import('@tabler/icons/treadmill.svg?react');
-  }),
-  tree: lazy(() => {
-    return import('@tabler/icons/tree.svg?react');
-  }),
-  trees: lazy(() => {
-    return import('@tabler/icons/trees.svg?react');
-  }),
-  trekking: lazy(() => {
-    return import('@tabler/icons/trekking.svg?react');
-  }),
-  'trending-down-2': lazy(() => {
-    return import('@tabler/icons/trending-down-2.svg?react');
-  }),
-  'trending-down-3': lazy(() => {
-    return import('@tabler/icons/trending-down-3.svg?react');
-  }),
-  'trending-down': lazy(() => {
-    return import('@tabler/icons/trending-down.svg?react');
-  }),
-  'trending-up-2': lazy(() => {
-    return import('@tabler/icons/trending-up-2.svg?react');
-  }),
-  'trending-up-3': lazy(() => {
-    return import('@tabler/icons/trending-up-3.svg?react');
-  }),
-  'trending-up': lazy(() => {
-    return import('@tabler/icons/trending-up.svg?react');
-  }),
-  'triangle-filled': lazy(() => {
-    return import('@tabler/icons/triangle-filled.svg?react');
-  }),
-  'triangle-inverted-filled': lazy(() => {
-    return import('@tabler/icons/triangle-inverted-filled.svg?react');
-  }),
-  'triangle-inverted': lazy(() => {
-    return import('@tabler/icons/triangle-inverted.svg?react');
-  }),
-  'triangle-minus-2': lazy(() => {
-    return import('@tabler/icons/triangle-minus-2.svg?react');
-  }),
-  'triangle-minus': lazy(() => {
-    return import('@tabler/icons/triangle-minus.svg?react');
-  }),
-  'triangle-off': lazy(() => {
-    return import('@tabler/icons/triangle-off.svg?react');
-  }),
-  'triangle-plus-2': lazy(() => {
-    return import('@tabler/icons/triangle-plus-2.svg?react');
-  }),
-  'triangle-plus': lazy(() => {
-    return import('@tabler/icons/triangle-plus.svg?react');
-  }),
-  'triangle-square-circle-filled': lazy(() => {
-    return import('@tabler/icons/triangle-square-circle-filled.svg?react');
-  }),
-  'triangle-square-circle': lazy(() => {
-    return import('@tabler/icons/triangle-square-circle.svg?react');
-  }),
-  triangle: lazy(() => {
-    return import('@tabler/icons/triangle.svg?react');
-  }),
-  triangles: lazy(() => {
-    return import('@tabler/icons/triangles.svg?react');
-  }),
-  trident: lazy(() => {
-    return import('@tabler/icons/trident.svg?react');
-  }),
-  trolley: lazy(() => {
-    return import('@tabler/icons/trolley.svg?react');
-  }),
-  'trophy-filled': lazy(() => {
-    return import('@tabler/icons/trophy-filled.svg?react');
-  }),
-  'trophy-off': lazy(() => {
-    return import('@tabler/icons/trophy-off.svg?react');
-  }),
-  trophy: lazy(() => {
-    return import('@tabler/icons/trophy.svg?react');
-  }),
-  trowel: lazy(() => {
-    return import('@tabler/icons/trowel.svg?react');
-  }),
-  'truck-delivery': lazy(() => {
-    return import('@tabler/icons/truck-delivery.svg?react');
-  }),
-  'truck-loading': lazy(() => {
-    return import('@tabler/icons/truck-loading.svg?react');
-  }),
-  'truck-off': lazy(() => {
-    return import('@tabler/icons/truck-off.svg?react');
-  }),
-  'truck-return': lazy(() => {
-    return import('@tabler/icons/truck-return.svg?react');
-  }),
-  truck: lazy(() => {
-    return import('@tabler/icons/truck.svg?react');
-  }),
-  txt: lazy(() => {
-    return import('@tabler/icons/txt.svg?react');
-  }),
-  'typography-off': lazy(() => {
-    return import('@tabler/icons/typography-off.svg?react');
-  }),
-  typography: lazy(() => {
-    return import('@tabler/icons/typography.svg?react');
-  }),
-  'ufo-off': lazy(() => {
-    return import('@tabler/icons/ufo-off.svg?react');
-  }),
-  ufo: lazy(() => {
-    return import('@tabler/icons/ufo.svg?react');
-  }),
-  'umbrella-filled': lazy(() => {
-    return import('@tabler/icons/umbrella-filled.svg?react');
-  }),
-  'umbrella-off': lazy(() => {
-    return import('@tabler/icons/umbrella-off.svg?react');
-  }),
-  umbrella: lazy(() => {
-    return import('@tabler/icons/umbrella.svg?react');
-  }),
-  underline: lazy(() => {
-    return import('@tabler/icons/underline.svg?react');
-  }),
-  universe: lazy(() => {
-    return import('@tabler/icons/universe.svg?react');
-  }),
-  unlink: lazy(() => {
-    return import('@tabler/icons/unlink.svg?react');
-  }),
-  upload: lazy(() => {
-    return import('@tabler/icons/upload.svg?react');
-  }),
-  urgent: lazy(() => {
-    return import('@tabler/icons/urgent.svg?react');
-  }),
-  usb: lazy(() => {
-    return import('@tabler/icons/usb.svg?react');
-  }),
-  'user-bolt': lazy(() => {
-    return import('@tabler/icons/user-bolt.svg?react');
-  }),
-  'user-cancel': lazy(() => {
-    return import('@tabler/icons/user-cancel.svg?react');
-  }),
-  'user-check': lazy(() => {
-    return import('@tabler/icons/user-check.svg?react');
-  }),
-  'user-circle': lazy(() => {
-    return import('@tabler/icons/user-circle.svg?react');
-  }),
-  'user-code': lazy(() => {
-    return import('@tabler/icons/user-code.svg?react');
-  }),
-  'user-cog': lazy(() => {
-    return import('@tabler/icons/user-cog.svg?react');
-  }),
-  'user-dollar': lazy(() => {
-    return import('@tabler/icons/user-dollar.svg?react');
-  }),
-  'user-down': lazy(() => {
-    return import('@tabler/icons/user-down.svg?react');
-  }),
-  'user-edit': lazy(() => {
-    return import('@tabler/icons/user-edit.svg?react');
-  }),
-  'user-exclamation': lazy(() => {
-    return import('@tabler/icons/user-exclamation.svg?react');
-  }),
-  'user-heart': lazy(() => {
-    return import('@tabler/icons/user-heart.svg?react');
-  }),
-  'user-hexagon': lazy(() => {
-    return import('@tabler/icons/user-hexagon.svg?react');
-  }),
-  'user-minus': lazy(() => {
-    return import('@tabler/icons/user-minus.svg?react');
-  }),
-  'user-off': lazy(() => {
-    return import('@tabler/icons/user-off.svg?react');
-  }),
-  'user-pause': lazy(() => {
-    return import('@tabler/icons/user-pause.svg?react');
-  }),
-  'user-pentagon': lazy(() => {
-    return import('@tabler/icons/user-pentagon.svg?react');
-  }),
-  'user-pin': lazy(() => {
-    return import('@tabler/icons/user-pin.svg?react');
-  }),
-  'user-plus': lazy(() => {
-    return import('@tabler/icons/user-plus.svg?react');
-  }),
-  'user-question': lazy(() => {
-    return import('@tabler/icons/user-question.svg?react');
-  }),
-  'user-scan': lazy(() => {
-    return import('@tabler/icons/user-scan.svg?react');
-  }),
-  'user-search': lazy(() => {
-    return import('@tabler/icons/user-search.svg?react');
-  }),
-  'user-share': lazy(() => {
-    return import('@tabler/icons/user-share.svg?react');
-  }),
-  'user-shield': lazy(() => {
-    return import('@tabler/icons/user-shield.svg?react');
-  }),
-  'user-square-rounded': lazy(() => {
-    return import('@tabler/icons/user-square-rounded.svg?react');
-  }),
-  'user-square': lazy(() => {
-    return import('@tabler/icons/user-square.svg?react');
-  }),
-  'user-star': lazy(() => {
-    return import('@tabler/icons/user-star.svg?react');
-  }),
-  'user-up': lazy(() => {
-    return import('@tabler/icons/user-up.svg?react');
-  }),
-  'user-x': lazy(() => {
-    return import('@tabler/icons/user-x.svg?react');
-  }),
-  user: lazy(() => {
-    return import('@tabler/icons/user.svg?react');
-  }),
-  'users-group': lazy(() => {
-    return import('@tabler/icons/users-group.svg?react');
-  }),
-  'users-minus': lazy(() => {
-    return import('@tabler/icons/users-minus.svg?react');
-  }),
-  'users-plus': lazy(() => {
-    return import('@tabler/icons/users-plus.svg?react');
-  }),
-  users: lazy(() => {
-    return import('@tabler/icons/users.svg?react');
-  }),
-  'uv-index': lazy(() => {
-    return import('@tabler/icons/uv-index.svg?react');
-  }),
-  'ux-circle': lazy(() => {
-    return import('@tabler/icons/ux-circle.svg?react');
-  }),
-  'vaccine-bottle-off': lazy(() => {
-    return import('@tabler/icons/vaccine-bottle-off.svg?react');
-  }),
-  'vaccine-bottle': lazy(() => {
-    return import('@tabler/icons/vaccine-bottle.svg?react');
-  }),
-  'vaccine-off': lazy(() => {
-    return import('@tabler/icons/vaccine-off.svg?react');
-  }),
-  vaccine: lazy(() => {
-    return import('@tabler/icons/vaccine.svg?react');
-  }),
-  'vacuum-cleaner': lazy(() => {
-    return import('@tabler/icons/vacuum-cleaner.svg?react');
-  }),
-  'variable-minus': lazy(() => {
-    return import('@tabler/icons/variable-minus.svg?react');
-  }),
-  'variable-off': lazy(() => {
-    return import('@tabler/icons/variable-off.svg?react');
-  }),
-  'variable-plus': lazy(() => {
-    return import('@tabler/icons/variable-plus.svg?react');
-  }),
-  variable: lazy(() => {
-    return import('@tabler/icons/variable.svg?react');
-  }),
-  'vector-bezier-2': lazy(() => {
-    return import('@tabler/icons/vector-bezier-2.svg?react');
-  }),
-  'vector-bezier-arc': lazy(() => {
-    return import('@tabler/icons/vector-bezier-arc.svg?react');
-  }),
-  'vector-bezier-circle': lazy(() => {
-    return import('@tabler/icons/vector-bezier-circle.svg?react');
-  }),
-  'vector-bezier': lazy(() => {
-    return import('@tabler/icons/vector-bezier.svg?react');
-  }),
-  'vector-off': lazy(() => {
-    return import('@tabler/icons/vector-off.svg?react');
-  }),
-  'vector-spline': lazy(() => {
-    return import('@tabler/icons/vector-spline.svg?react');
-  }),
-  'vector-triangle-off': lazy(() => {
-    return import('@tabler/icons/vector-triangle-off.svg?react');
-  }),
-  'vector-triangle': lazy(() => {
-    return import('@tabler/icons/vector-triangle.svg?react');
-  }),
-  vector: lazy(() => {
-    return import('@tabler/icons/vector.svg?react');
-  }),
-  venus: lazy(() => {
-    return import('@tabler/icons/venus.svg?react');
-  }),
-  'versions-filled': lazy(() => {
-    return import('@tabler/icons/versions-filled.svg?react');
-  }),
-  'versions-off': lazy(() => {
-    return import('@tabler/icons/versions-off.svg?react');
-  }),
-  versions: lazy(() => {
-    return import('@tabler/icons/versions.svg?react');
-  }),
-  'video-minus': lazy(() => {
-    return import('@tabler/icons/video-minus.svg?react');
-  }),
-  'video-off': lazy(() => {
-    return import('@tabler/icons/video-off.svg?react');
-  }),
-  'video-plus': lazy(() => {
-    return import('@tabler/icons/video-plus.svg?react');
-  }),
-  video: lazy(() => {
-    return import('@tabler/icons/video.svg?react');
-  }),
-  'view-360-off': lazy(() => {
-    return import('@tabler/icons/view-360-off.svg?react');
-  }),
-  'view-360': lazy(() => {
-    return import('@tabler/icons/view-360.svg?react');
-  }),
-  'viewfinder-off': lazy(() => {
-    return import('@tabler/icons/viewfinder-off.svg?react');
-  }),
-  viewfinder: lazy(() => {
-    return import('@tabler/icons/viewfinder.svg?react');
-  }),
-  'viewport-narrow': lazy(() => {
-    return import('@tabler/icons/viewport-narrow.svg?react');
-  }),
-  'viewport-wide': lazy(() => {
-    return import('@tabler/icons/viewport-wide.svg?react');
-  }),
-  vinyl: lazy(() => {
-    return import('@tabler/icons/vinyl.svg?react');
-  }),
-  'vip-off': lazy(() => {
-    return import('@tabler/icons/vip-off.svg?react');
-  }),
-  vip: lazy(() => {
-    return import('@tabler/icons/vip.svg?react');
-  }),
-  'virus-off': lazy(() => {
-    return import('@tabler/icons/virus-off.svg?react');
-  }),
-  'virus-search': lazy(() => {
-    return import('@tabler/icons/virus-search.svg?react');
-  }),
-  virus: lazy(() => {
-    return import('@tabler/icons/virus.svg?react');
-  }),
-  'vocabulary-off': lazy(() => {
-    return import('@tabler/icons/vocabulary-off.svg?react');
-  }),
-  vocabulary: lazy(() => {
-    return import('@tabler/icons/vocabulary.svg?react');
-  }),
-  volcano: lazy(() => {
-    return import('@tabler/icons/volcano.svg?react');
-  }),
-  'volume-2': lazy(() => {
-    return import('@tabler/icons/volume-2.svg?react');
-  }),
-  'volume-3': lazy(() => {
-    return import('@tabler/icons/volume-3.svg?react');
-  }),
-  'volume-off': lazy(() => {
-    return import('@tabler/icons/volume-off.svg?react');
-  }),
-  volume: lazy(() => {
-    return import('@tabler/icons/volume.svg?react');
-  }),
-  vs: lazy(() => {
-    return import('@tabler/icons/vs.svg?react');
-  }),
-  walk: lazy(() => {
-    return import('@tabler/icons/walk.svg?react');
-  }),
-  'wall-off': lazy(() => {
-    return import('@tabler/icons/wall-off.svg?react');
-  }),
-  wall: lazy(() => {
-    return import('@tabler/icons/wall.svg?react');
-  }),
-  'wallet-off': lazy(() => {
-    return import('@tabler/icons/wallet-off.svg?react');
-  }),
-  wallet: lazy(() => {
-    return import('@tabler/icons/wallet.svg?react');
-  }),
-  'wallpaper-off': lazy(() => {
-    return import('@tabler/icons/wallpaper-off.svg?react');
-  }),
-  wallpaper: lazy(() => {
-    return import('@tabler/icons/wallpaper.svg?react');
-  }),
-  'wand-off': lazy(() => {
-    return import('@tabler/icons/wand-off.svg?react');
-  }),
-  wand: lazy(() => {
-    return import('@tabler/icons/wand.svg?react');
-  }),
-  'wash-dry-1': lazy(() => {
-    return import('@tabler/icons/wash-dry-1.svg?react');
-  }),
-  'wash-dry-2': lazy(() => {
-    return import('@tabler/icons/wash-dry-2.svg?react');
-  }),
-  'wash-dry-3': lazy(() => {
-    return import('@tabler/icons/wash-dry-3.svg?react');
-  }),
-  'wash-dry-a': lazy(() => {
-    return import('@tabler/icons/wash-dry-a.svg?react');
-  }),
-  'wash-dry-dip': lazy(() => {
-    return import('@tabler/icons/wash-dry-dip.svg?react');
-  }),
-  'wash-dry-f': lazy(() => {
-    return import('@tabler/icons/wash-dry-f.svg?react');
-  }),
-  'wash-dry-flat': lazy(() => {
-    return import('@tabler/icons/wash-dry-flat.svg?react');
-  }),
-  'wash-dry-hang': lazy(() => {
-    return import('@tabler/icons/wash-dry-hang.svg?react');
-  }),
-  'wash-dry-off': lazy(() => {
-    return import('@tabler/icons/wash-dry-off.svg?react');
-  }),
-  'wash-dry-p': lazy(() => {
-    return import('@tabler/icons/wash-dry-p.svg?react');
-  }),
-  'wash-dry-shade': lazy(() => {
-    return import('@tabler/icons/wash-dry-shade.svg?react');
-  }),
-  'wash-dry-w': lazy(() => {
-    return import('@tabler/icons/wash-dry-w.svg?react');
-  }),
-  'wash-dry': lazy(() => {
-    return import('@tabler/icons/wash-dry.svg?react');
-  }),
-  'wash-dryclean-off': lazy(() => {
-    return import('@tabler/icons/wash-dryclean-off.svg?react');
-  }),
-  'wash-dryclean': lazy(() => {
-    return import('@tabler/icons/wash-dryclean.svg?react');
-  }),
-  'wash-eco': lazy(() => {
-    return import('@tabler/icons/wash-eco.svg?react');
-  }),
-  'wash-gentle': lazy(() => {
-    return import('@tabler/icons/wash-gentle.svg?react');
-  }),
-  'wash-hand': lazy(() => {
-    return import('@tabler/icons/wash-hand.svg?react');
-  }),
-  'wash-machine': lazy(() => {
-    return import('@tabler/icons/wash-machine.svg?react');
-  }),
-  'wash-off': lazy(() => {
-    return import('@tabler/icons/wash-off.svg?react');
-  }),
-  'wash-press': lazy(() => {
-    return import('@tabler/icons/wash-press.svg?react');
-  }),
-  'wash-temperature-1': lazy(() => {
-    return import('@tabler/icons/wash-temperature-1.svg?react');
-  }),
-  'wash-temperature-2': lazy(() => {
-    return import('@tabler/icons/wash-temperature-2.svg?react');
-  }),
-  'wash-temperature-3': lazy(() => {
-    return import('@tabler/icons/wash-temperature-3.svg?react');
-  }),
-  'wash-temperature-4': lazy(() => {
-    return import('@tabler/icons/wash-temperature-4.svg?react');
-  }),
-  'wash-temperature-5': lazy(() => {
-    return import('@tabler/icons/wash-temperature-5.svg?react');
-  }),
-  'wash-temperature-6': lazy(() => {
-    return import('@tabler/icons/wash-temperature-6.svg?react');
-  }),
-  'wash-tumble-dry': lazy(() => {
-    return import('@tabler/icons/wash-tumble-dry.svg?react');
-  }),
-  'wash-tumble-off': lazy(() => {
-    return import('@tabler/icons/wash-tumble-off.svg?react');
-  }),
-  wash: lazy(() => {
-    return import('@tabler/icons/wash.svg?react');
-  }),
-  waterpolo: lazy(() => {
-    return import('@tabler/icons/waterpolo.svg?react');
-  }),
-  'wave-saw-tool': lazy(() => {
-    return import('@tabler/icons/wave-saw-tool.svg?react');
-  }),
-  'wave-sine': lazy(() => {
-    return import('@tabler/icons/wave-sine.svg?react');
-  }),
-  'wave-square': lazy(() => {
-    return import('@tabler/icons/wave-square.svg?react');
-  }),
-  'waves-electricity': lazy(() => {
-    return import('@tabler/icons/waves-electricity.svg?react');
-  }),
-  'webhook-off': lazy(() => {
-    return import('@tabler/icons/webhook-off.svg?react');
-  }),
-  webhook: lazy(() => {
-    return import('@tabler/icons/webhook.svg?react');
-  }),
-  weight: lazy(() => {
-    return import('@tabler/icons/weight.svg?react');
-  }),
-  wheel: lazy(() => {
-    return import('@tabler/icons/wheel.svg?react');
-  }),
-  'wheelchair-off': lazy(() => {
-    return import('@tabler/icons/wheelchair-off.svg?react');
-  }),
-  wheelchair: lazy(() => {
-    return import('@tabler/icons/wheelchair.svg?react');
-  }),
-  whirl: lazy(() => {
-    return import('@tabler/icons/whirl.svg?react');
-  }),
-  'wifi-0': lazy(() => {
-    return import('@tabler/icons/wifi-0.svg?react');
-  }),
-  'wifi-1': lazy(() => {
-    return import('@tabler/icons/wifi-1.svg?react');
-  }),
-  'wifi-2': lazy(() => {
-    return import('@tabler/icons/wifi-2.svg?react');
-  }),
-  'wifi-off': lazy(() => {
-    return import('@tabler/icons/wifi-off.svg?react');
-  }),
-  wifi: lazy(() => {
-    return import('@tabler/icons/wifi.svg?react');
-  }),
-  'wind-electricity': lazy(() => {
-    return import('@tabler/icons/wind-electricity.svg?react');
-  }),
-  'wind-off': lazy(() => {
-    return import('@tabler/icons/wind-off.svg?react');
-  }),
-  wind: lazy(() => {
-    return import('@tabler/icons/wind.svg?react');
-  }),
-  'windmill-filled': lazy(() => {
-    return import('@tabler/icons/windmill-filled.svg?react');
-  }),
-  'windmill-off': lazy(() => {
-    return import('@tabler/icons/windmill-off.svg?react');
-  }),
-  windmill: lazy(() => {
-    return import('@tabler/icons/windmill.svg?react');
-  }),
-  'window-maximize': lazy(() => {
-    return import('@tabler/icons/window-maximize.svg?react');
-  }),
-  'window-minimize': lazy(() => {
-    return import('@tabler/icons/window-minimize.svg?react');
-  }),
-  'window-off': lazy(() => {
-    return import('@tabler/icons/window-off.svg?react');
-  }),
-  window: lazy(() => {
-    return import('@tabler/icons/window.svg?react');
-  }),
-  windsock: lazy(() => {
-    return import('@tabler/icons/windsock.svg?react');
-  }),
-  'wiper-wash': lazy(() => {
-    return import('@tabler/icons/wiper-wash.svg?react');
-  }),
-  wiper: lazy(() => {
-    return import('@tabler/icons/wiper.svg?react');
-  }),
-  woman: lazy(() => {
-    return import('@tabler/icons/woman.svg?react');
-  }),
-  wood: lazy(() => {
-    return import('@tabler/icons/wood.svg?react');
-  }),
-  'world-bolt': lazy(() => {
-    return import('@tabler/icons/world-bolt.svg?react');
-  }),
-  'world-cancel': lazy(() => {
-    return import('@tabler/icons/world-cancel.svg?react');
-  }),
-  'world-check': lazy(() => {
-    return import('@tabler/icons/world-check.svg?react');
-  }),
-  'world-code': lazy(() => {
-    return import('@tabler/icons/world-code.svg?react');
-  }),
-  'world-cog': lazy(() => {
-    return import('@tabler/icons/world-cog.svg?react');
-  }),
-  'world-dollar': lazy(() => {
-    return import('@tabler/icons/world-dollar.svg?react');
-  }),
-  'world-down': lazy(() => {
-    return import('@tabler/icons/world-down.svg?react');
-  }),
-  'world-download': lazy(() => {
-    return import('@tabler/icons/world-download.svg?react');
-  }),
-  'world-exclamation': lazy(() => {
-    return import('@tabler/icons/world-exclamation.svg?react');
-  }),
-  'world-heart': lazy(() => {
-    return import('@tabler/icons/world-heart.svg?react');
-  }),
-  'world-latitude': lazy(() => {
-    return import('@tabler/icons/world-latitude.svg?react');
-  }),
-  'world-longitude': lazy(() => {
-    return import('@tabler/icons/world-longitude.svg?react');
-  }),
-  'world-minus': lazy(() => {
-    return import('@tabler/icons/world-minus.svg?react');
-  }),
-  'world-off': lazy(() => {
-    return import('@tabler/icons/world-off.svg?react');
-  }),
-  'world-pause': lazy(() => {
-    return import('@tabler/icons/world-pause.svg?react');
-  }),
-  'world-pin': lazy(() => {
-    return import('@tabler/icons/world-pin.svg?react');
-  }),
-  'world-plus': lazy(() => {
-    return import('@tabler/icons/world-plus.svg?react');
-  }),
-  'world-question': lazy(() => {
-    return import('@tabler/icons/world-question.svg?react');
-  }),
-  'world-search': lazy(() => {
-    return import('@tabler/icons/world-search.svg?react');
-  }),
-  'world-share': lazy(() => {
-    return import('@tabler/icons/world-share.svg?react');
-  }),
-  'world-star': lazy(() => {
-    return import('@tabler/icons/world-star.svg?react');
-  }),
-  'world-up': lazy(() => {
-    return import('@tabler/icons/world-up.svg?react');
-  }),
-  'world-upload': lazy(() => {
-    return import('@tabler/icons/world-upload.svg?react');
-  }),
-  'world-www': lazy(() => {
-    return import('@tabler/icons/world-www.svg?react');
-  }),
-  'world-x': lazy(() => {
-    return import('@tabler/icons/world-x.svg?react');
-  }),
-  world: lazy(() => {
-    return import('@tabler/icons/world.svg?react');
-  }),
-  'wrecking-ball': lazy(() => {
-    return import('@tabler/icons/wrecking-ball.svg?react');
-  }),
-  'writing-off': lazy(() => {
-    return import('@tabler/icons/writing-off.svg?react');
-  }),
-  'writing-sign-off': lazy(() => {
-    return import('@tabler/icons/writing-sign-off.svg?react');
-  }),
-  'writing-sign': lazy(() => {
-    return import('@tabler/icons/writing-sign.svg?react');
-  }),
-  writing: lazy(() => {
-    return import('@tabler/icons/writing.svg?react');
-  }),
-  x: lazy(() => {
-    return import('@tabler/icons/x.svg?react');
-  }),
-  'xbox-a': lazy(() => {
-    return import('@tabler/icons/xbox-a.svg?react');
-  }),
-  'xbox-b': lazy(() => {
-    return import('@tabler/icons/xbox-b.svg?react');
-  }),
-  'xbox-x': lazy(() => {
-    return import('@tabler/icons/xbox-x.svg?react');
-  }),
-  'xbox-y': lazy(() => {
-    return import('@tabler/icons/xbox-y.svg?react');
-  }),
-  xd: lazy(() => {
-    return import('@tabler/icons/xd.svg?react');
-  }),
-  xxx: lazy(() => {
-    return import('@tabler/icons/xxx.svg?react');
-  }),
-  'yin-yang-filled': lazy(() => {
-    return import('@tabler/icons/yin-yang-filled.svg?react');
-  }),
-  'yin-yang': lazy(() => {
-    return import('@tabler/icons/yin-yang.svg?react');
-  }),
-  yoga: lazy(() => {
-    return import('@tabler/icons/yoga.svg?react');
-  }),
-  'zeppelin-off': lazy(() => {
-    return import('@tabler/icons/zeppelin-off.svg?react');
-  }),
-  zeppelin: lazy(() => {
-    return import('@tabler/icons/zeppelin.svg?react');
-  }),
-  zip: lazy(() => {
-    return import('@tabler/icons/zip.svg?react');
-  }),
-  'zodiac-aquarius': lazy(() => {
-    return import('@tabler/icons/zodiac-aquarius.svg?react');
-  }),
-  'zodiac-aries': lazy(() => {
-    return import('@tabler/icons/zodiac-aries.svg?react');
-  }),
-  'zodiac-cancer': lazy(() => {
-    return import('@tabler/icons/zodiac-cancer.svg?react');
-  }),
-  'zodiac-capricorn': lazy(() => {
-    return import('@tabler/icons/zodiac-capricorn.svg?react');
-  }),
-  'zodiac-gemini': lazy(() => {
-    return import('@tabler/icons/zodiac-gemini.svg?react');
-  }),
-  'zodiac-leo': lazy(() => {
-    return import('@tabler/icons/zodiac-leo.svg?react');
-  }),
-  'zodiac-libra': lazy(() => {
-    return import('@tabler/icons/zodiac-libra.svg?react');
-  }),
-  'zodiac-pisces': lazy(() => {
-    return import('@tabler/icons/zodiac-pisces.svg?react');
-  }),
-  'zodiac-sagittarius': lazy(() => {
-    return import('@tabler/icons/zodiac-sagittarius.svg?react');
-  }),
-  'zodiac-scorpio': lazy(() => {
-    return import('@tabler/icons/zodiac-scorpio.svg?react');
-  }),
-  'zodiac-taurus': lazy(() => {
-    return import('@tabler/icons/zodiac-taurus.svg?react');
-  }),
-  'zodiac-virgo': lazy(() => {
-    return import('@tabler/icons/zodiac-virgo.svg?react');
-  }),
-  'zoom-cancel': lazy(() => {
-    return import('@tabler/icons/zoom-cancel.svg?react');
-  }),
-  'zoom-check-filled': lazy(() => {
-    return import('@tabler/icons/zoom-check-filled.svg?react');
-  }),
-  'zoom-check': lazy(() => {
-    return import('@tabler/icons/zoom-check.svg?react');
-  }),
-  'zoom-code': lazy(() => {
-    return import('@tabler/icons/zoom-code.svg?react');
-  }),
-  'zoom-exclamation': lazy(() => {
-    return import('@tabler/icons/zoom-exclamation.svg?react');
-  }),
-  'zoom-filled': lazy(() => {
-    return import('@tabler/icons/zoom-filled.svg?react');
-  }),
-  'zoom-in-area-filled': lazy(() => {
-    return import('@tabler/icons/zoom-in-area-filled.svg?react');
-  }),
-  'zoom-in-area': lazy(() => {
-    return import('@tabler/icons/zoom-in-area.svg?react');
-  }),
-  'zoom-in-filled': lazy(() => {
-    return import('@tabler/icons/zoom-in-filled.svg?react');
-  }),
-  'zoom-in': lazy(() => {
-    return import('@tabler/icons/zoom-in.svg?react');
-  }),
-  'zoom-money': lazy(() => {
-    return import('@tabler/icons/zoom-money.svg?react');
-  }),
-  'zoom-out-area': lazy(() => {
-    return import('@tabler/icons/zoom-out-area.svg?react');
-  }),
-  'zoom-out-filled': lazy(() => {
-    return import('@tabler/icons/zoom-out-filled.svg?react');
-  }),
-  'zoom-out': lazy(() => {
-    return import('@tabler/icons/zoom-out.svg?react');
-  }),
-  'zoom-pan': lazy(() => {
-    return import('@tabler/icons/zoom-pan.svg?react');
-  }),
-  'zoom-question': lazy(() => {
-    return import('@tabler/icons/zoom-question.svg?react');
-  }),
-  'zoom-replace': lazy(() => {
-    return import('@tabler/icons/zoom-replace.svg?react');
-  }),
-  'zoom-reset': lazy(() => {
-    return import('@tabler/icons/zoom-reset.svg?react');
-  }),
-  'zoom-scan': lazy(() => {
-    return import('@tabler/icons/zoom-scan.svg?react');
-  }),
-  'zzz-off': lazy(() => {
-    return import('@tabler/icons/zzz-off.svg?react');
-  }),
-  zzz: lazy(() => {
-    return import('@tabler/icons/zzz.svg?react');
-  }),
-};
+/* eslint-disable unicorn/no-abusive-eslint-disable */
+/* eslint-disable */
+export { default as Icon123 } from './icons/123.js';
+export { default as Icon12Hours } from './icons/12-hours.js';
+export { default as Icon24Hours } from './icons/24-hours.js';
+export { default as Icon2fa } from './icons/2fa.js';
+export { default as Icon360 } from './icons/360.js';
+export { default as Icon360View } from './icons/360-view.js';
+export { default as Icon3dCubeSphere } from './icons/3d-cube-sphere.js';
+export { default as Icon3dCubeSphereOff } from './icons/3d-cube-sphere-off.js';
+export { default as Icon3dRotate } from './icons/3d-rotate.js';
+export { default as IconAB } from './icons/ab.js';
+export { default as IconAB2 } from './icons/ab-2.js';
+export { default as IconABOff } from './icons/aboff.js';
+export { default as IconAbacus } from './icons/abacus.js';
+export { default as IconAbacusOff } from './icons/abacus-off.js';
+export { default as IconAbc } from './icons/abc.js';
+export { default as IconAccessPoint } from './icons/access-point.js';
+export { default as IconAccessPointOff } from './icons/access-point-off.js';
+export { default as IconAccessible } from './icons/accessible.js';
+export { default as IconAccessibleOff } from './icons/accessible-off.js';
+export { default as IconAccessibleOffFilled } from './icons/accessible-off-filled.js';
+export { default as IconActivity } from './icons/activity.js';
+export { default as IconActivityHeartbeat } from './icons/activity-heartbeat.js';
+export { default as IconAd } from './icons/ad.js';
+export { default as IconAd2 } from './icons/ad-2.js';
+export { default as IconAdCircle } from './icons/ad-circle.js';
+export { default as IconAdCircleFilled } from './icons/ad-circle-filled.js';
+export { default as IconAdCircleOff } from './icons/ad-circle-off.js';
+export { default as IconAdFilled } from './icons/ad-filled.js';
+export { default as IconAdOff } from './icons/ad-off.js';
+export { default as IconAddressBook } from './icons/address-book.js';
+export { default as IconAddressBookOff } from './icons/address-book-off.js';
+export { default as IconAdjustments } from './icons/adjustments.js';
+export { default as IconAdjustmentsAlt } from './icons/adjustments-alt.js';
+export { default as IconAdjustmentsBolt } from './icons/adjustments-bolt.js';
+export { default as IconAdjustmentsCancel } from './icons/adjustments-cancel.js';
+export { default as IconAdjustmentsCheck } from './icons/adjustments-check.js';
+export { default as IconAdjustmentsCode } from './icons/adjustments-code.js';
+export { default as IconAdjustmentsCog } from './icons/adjustments-cog.js';
+export { default as IconAdjustmentsDollar } from './icons/adjustments-dollar.js';
+export { default as IconAdjustmentsDown } from './icons/adjustments-down.js';
+export { default as IconAdjustmentsExclamation } from './icons/adjustments-exclamation.js';
+export { default as IconAdjustmentsFilled } from './icons/adjustments-filled.js';
+export { default as IconAdjustmentsHeart } from './icons/adjustments-heart.js';
+export { default as IconAdjustmentsHorizontal } from './icons/adjustments-horizontal.js';
+export { default as IconAdjustmentsMinus } from './icons/adjustments-minus.js';
+export { default as IconAdjustmentsOff } from './icons/adjustments-off.js';
+export { default as IconAdjustmentsPause } from './icons/adjustments-pause.js';
+export { default as IconAdjustmentsPin } from './icons/adjustments-pin.js';
+export { default as IconAdjustmentsPlus } from './icons/adjustments-plus.js';
+export { default as IconAdjustmentsQuestion } from './icons/adjustments-question.js';
+export { default as IconAdjustmentsSearch } from './icons/adjustments-search.js';
+export { default as IconAdjustmentsShare } from './icons/adjustments-share.js';
+export { default as IconAdjustmentsStar } from './icons/adjustments-star.js';
+export { default as IconAdjustmentsUp } from './icons/adjustments-up.js';
+export { default as IconAdjustmentsX } from './icons/adjustments-x.js';
+export { default as IconAerialLift } from './icons/aerial-lift.js';
+export { default as IconAffiliate } from './icons/affiliate.js';
+export { default as IconAffiliateFilled } from './icons/affiliate-filled.js';
+export { default as IconAirBalloon } from './icons/air-balloon.js';
+export { default as IconAirConditioning } from './icons/air-conditioning.js';
+export { default as IconAirConditioningDisabled } from './icons/air-conditioning-disabled.js';
+export { default as IconAirTrafficControl } from './icons/air-traffic-control.js';
+export { default as IconAlarm } from './icons/alarm.js';
+export { default as IconAlarmAverage } from './icons/alarm-average.js';
+export { default as IconAlarmFilled } from './icons/alarm-filled.js';
+export { default as IconAlarmMinus } from './icons/alarm-minus.js';
+export { default as IconAlarmMinusFilled } from './icons/alarm-minus-filled.js';
+export { default as IconAlarmOff } from './icons/alarm-off.js';
+export { default as IconAlarmPlus } from './icons/alarm-plus.js';
+export { default as IconAlarmPlusFilled } from './icons/alarm-plus-filled.js';
+export { default as IconAlarmSnooze } from './icons/alarm-snooze.js';
+export { default as IconAlarmSnoozeFilled } from './icons/alarm-snooze-filled.js';
+export { default as IconAlbum } from './icons/album.js';
+export { default as IconAlbumOff } from './icons/album-off.js';
+export { default as IconAlertCircle } from './icons/alert-circle.js';
+export { default as IconAlertCircleFilled } from './icons/alert-circle-filled.js';
+export { default as IconAlertCircleOff } from './icons/alert-circle-off.js';
+export { default as IconAlertHexagon } from './icons/alert-hexagon.js';
+export { default as IconAlertHexagonFilled } from './icons/alert-hexagon-filled.js';
+export { default as IconAlertHexagonOff } from './icons/alert-hexagon-off.js';
+export { default as IconAlertOctagon } from './icons/alert-octagon.js';
+export { default as IconAlertOctagonFilled } from './icons/alert-octagon-filled.js';
+export { default as IconAlertSmall } from './icons/alert-small.js';
+export { default as IconAlertSmallOff } from './icons/alert-small-off.js';
+export { default as IconAlertSquare } from './icons/alert-square.js';
+export { default as IconAlertSquareFilled } from './icons/alert-square-filled.js';
+export { default as IconAlertSquareRounded } from './icons/alert-square-rounded.js';
+export { default as IconAlertSquareRoundedFilled } from './icons/alert-square-rounded-filled.js';
+export { default as IconAlertSquareRoundedOff } from './icons/alert-square-rounded-off.js';
+export { default as IconAlertTriangle } from './icons/alert-triangle.js';
+export { default as IconAlertTriangleFilled } from './icons/alert-triangle-filled.js';
+export { default as IconAlertTriangleOff } from './icons/alert-triangle-off.js';
+export { default as IconAlien } from './icons/alien.js';
+export { default as IconAlienFilled } from './icons/alien-filled.js';
+export { default as IconAlignBoxBottomCenter } from './icons/align-box-bottom-center.js';
+export { default as IconAlignBoxBottomCenterFilled } from './icons/align-box-bottom-center-filled.js';
+export { default as IconAlignBoxBottomLeft } from './icons/align-box-bottom-left.js';
+export { default as IconAlignBoxBottomLeftFilled } from './icons/align-box-bottom-left-filled.js';
+export { default as IconAlignBoxBottomRight } from './icons/align-box-bottom-right.js';
+export { default as IconAlignBoxBottomRightFilled } from './icons/align-box-bottom-right-filled.js';
+export { default as IconAlignBoxCenterBottom } from './icons/align-box-center-bottom.js';
+export { default as IconAlignBoxCenterMiddle } from './icons/align-box-center-middle.js';
+export { default as IconAlignBoxCenterMiddleFilled } from './icons/align-box-center-middle-filled.js';
+export { default as IconAlignBoxCenterStretch } from './icons/align-box-center-stretch.js';
+export { default as IconAlignBoxCenterTop } from './icons/align-box-center-top.js';
+export { default as IconAlignBoxLeftBottom } from './icons/align-box-left-bottom.js';
+export { default as IconAlignBoxLeftBottomFilled } from './icons/align-box-left-bottom-filled.js';
+export { default as IconAlignBoxLeftMiddle } from './icons/align-box-left-middle.js';
+export { default as IconAlignBoxLeftMiddleFilled } from './icons/align-box-left-middle-filled.js';
+export { default as IconAlignBoxLeftStretch } from './icons/align-box-left-stretch.js';
+export { default as IconAlignBoxLeftTop } from './icons/align-box-left-top.js';
+export { default as IconAlignBoxLeftTopFilled } from './icons/align-box-left-top-filled.js';
+export { default as IconAlignBoxRightBottom } from './icons/align-box-right-bottom.js';
+export { default as IconAlignBoxRightBottomFilled } from './icons/align-box-right-bottom-filled.js';
+export { default as IconAlignBoxRightMiddle } from './icons/align-box-right-middle.js';
+export { default as IconAlignBoxRightMiddleFilled } from './icons/align-box-right-middle-filled.js';
+export { default as IconAlignBoxRightStretch } from './icons/align-box-right-stretch.js';
+export { default as IconAlignBoxRightTop } from './icons/align-box-right-top.js';
+export { default as IconAlignBoxRightTopFilled } from './icons/align-box-right-top-filled.js';
+export { default as IconAlignBoxTopCenter } from './icons/align-box-top-center.js';
+export { default as IconAlignBoxTopCenterFilled } from './icons/align-box-top-center-filled.js';
+export { default as IconAlignBoxTopLeft } from './icons/align-box-top-left.js';
+export { default as IconAlignBoxTopLeftFilled } from './icons/align-box-top-left-filled.js';
+export { default as IconAlignBoxTopRight } from './icons/align-box-top-right.js';
+export { default as IconAlignBoxTopRightFilled } from './icons/align-box-top-right-filled.js';
+export { default as IconAlignCenter } from './icons/align-center.js';
+export { default as IconAlignJustified } from './icons/align-justified.js';
+export { default as IconAlignLeft } from './icons/align-left.js';
+export { default as IconAlignRight } from './icons/align-right.js';
+export { default as IconAlpha } from './icons/alpha.js';
+export { default as IconAlphabetCyrillic } from './icons/alphabet-cyrillic.js';
+export { default as IconAlphabetGreek } from './icons/alphabet-greek.js';
+export { default as IconAlphabetLatin } from './icons/alphabet-latin.js';
+export { default as IconAlt } from './icons/alt.js';
+export { default as IconAmbulance } from './icons/ambulance.js';
+export { default as IconAmpersand } from './icons/ampersand.js';
+export { default as IconAnalyze } from './icons/analyze.js';
+export { default as IconAnalyzeFilled } from './icons/analyze-filled.js';
+export { default as IconAnalyzeOff } from './icons/analyze-off.js';
+export { default as IconAnchor } from './icons/anchor.js';
+export { default as IconAnchorOff } from './icons/anchor-off.js';
+export { default as IconAngle } from './icons/angle.js';
+export { default as IconAnkh } from './icons/ankh.js';
+export { default as IconAntenna } from './icons/antenna.js';
+export { default as IconAntennaBars1 } from './icons/antenna-bars-1.js';
+export { default as IconAntennaBars2 } from './icons/antenna-bars-2.js';
+export { default as IconAntennaBars3 } from './icons/antenna-bars-3.js';
+export { default as IconAntennaBars4 } from './icons/antenna-bars-4.js';
+export { default as IconAntennaBars5 } from './icons/antenna-bars-5.js';
+export { default as IconAntennaBarsOff } from './icons/antenna-bars-off.js';
+export { default as IconAntennaOff } from './icons/antenna-off.js';
+export { default as IconAperture } from './icons/aperture.js';
+export { default as IconApertureOff } from './icons/aperture-off.js';
+export { default as IconApi } from './icons/api.js';
+export { default as IconApiApp } from './icons/api-app.js';
+export { default as IconApiAppOff } from './icons/api-app-off.js';
+export { default as IconApiOff } from './icons/api-off.js';
+export { default as IconAppWindow } from './icons/app-window.js';
+export { default as IconAppWindowFilled } from './icons/app-window-filled.js';
+export { default as IconApple } from './icons/apple.js';
+export { default as IconApps } from './icons/apps.js';
+export { default as IconAppsFilled } from './icons/apps-filled.js';
+export { default as IconAppsOff } from './icons/apps-off.js';
+export { default as IconArcheryArrow } from './icons/archery-arrow.js';
+export { default as IconArchive } from './icons/archive.js';
+export { default as IconArchiveFilled } from './icons/archive-filled.js';
+export { default as IconArchiveOff } from './icons/archive-off.js';
+export { default as IconArmchair } from './icons/armchair.js';
+export { default as IconArmchair2 } from './icons/armchair-2.js';
+export { default as IconArmchair2Off } from './icons/armchair-2-off.js';
+export { default as IconArmchairOff } from './icons/armchair-off.js';
+export { default as IconArrowAutofitContent } from './icons/arrow-autofit-content.js';
+export { default as IconArrowAutofitContentFilled } from './icons/arrow-autofit-content-filled.js';
+export { default as IconArrowAutofitDown } from './icons/arrow-autofit-down.js';
+export { default as IconArrowAutofitHeight } from './icons/arrow-autofit-height.js';
+export { default as IconArrowAutofitLeft } from './icons/arrow-autofit-left.js';
+export { default as IconArrowAutofitRight } from './icons/arrow-autofit-right.js';
+export { default as IconArrowAutofitUp } from './icons/arrow-autofit-up.js';
+export { default as IconArrowAutofitWidth } from './icons/arrow-autofit-width.js';
+export { default as IconArrowBack } from './icons/arrow-back.js';
+export { default as IconArrowBackUp } from './icons/arrow-back-up.js';
+export { default as IconArrowBackUpDouble } from './icons/arrow-back-up-double.js';
+export { default as IconArrowBadgeDown } from './icons/arrow-badge-down.js';
+export { default as IconArrowBadgeDownFilled } from './icons/arrow-badge-down-filled.js';
+export { default as IconArrowBadgeLeft } from './icons/arrow-badge-left.js';
+export { default as IconArrowBadgeLeftFilled } from './icons/arrow-badge-left-filled.js';
+export { default as IconArrowBadgeRight } from './icons/arrow-badge-right.js';
+export { default as IconArrowBadgeRightFilled } from './icons/arrow-badge-right-filled.js';
+export { default as IconArrowBadgeUp } from './icons/arrow-badge-up.js';
+export { default as IconArrowBadgeUpFilled } from './icons/arrow-badge-up-filled.js';
+export { default as IconArrowBarBoth } from './icons/arrow-bar-both.js';
+export { default as IconArrowBarDown } from './icons/arrow-bar-down.js';
+export { default as IconArrowBarLeft } from './icons/arrow-bar-left.js';
+export { default as IconArrowBarRight } from './icons/arrow-bar-right.js';
+export { default as IconArrowBarToDown } from './icons/arrow-bar-to-down.js';
+export { default as IconArrowBarToLeft } from './icons/arrow-bar-to-left.js';
+export { default as IconArrowBarToRight } from './icons/arrow-bar-to-right.js';
+export { default as IconArrowBarToUp } from './icons/arrow-bar-to-up.js';
+export { default as IconArrowBarUp } from './icons/arrow-bar-up.js';
+export { default as IconArrowBearLeft } from './icons/arrow-bear-left.js';
+export { default as IconArrowBearLeft2 } from './icons/arrow-bear-left-2.js';
+export { default as IconArrowBearRight } from './icons/arrow-bear-right.js';
+export { default as IconArrowBearRight2 } from './icons/arrow-bear-right-2.js';
+export { default as IconArrowBigDown } from './icons/arrow-big-down.js';
+export { default as IconArrowBigDownFilled } from './icons/arrow-big-down-filled.js';
+export { default as IconArrowBigDownLine } from './icons/arrow-big-down-line.js';
+export { default as IconArrowBigDownLineFilled } from './icons/arrow-big-down-line-filled.js';
+export { default as IconArrowBigDownLines } from './icons/arrow-big-down-lines.js';
+export { default as IconArrowBigDownLinesFilled } from './icons/arrow-big-down-lines-filled.js';
+export { default as IconArrowBigLeft } from './icons/arrow-big-left.js';
+export { default as IconArrowBigLeftFilled } from './icons/arrow-big-left-filled.js';
+export { default as IconArrowBigLeftLine } from './icons/arrow-big-left-line.js';
+export { default as IconArrowBigLeftLineFilled } from './icons/arrow-big-left-line-filled.js';
+export { default as IconArrowBigLeftLines } from './icons/arrow-big-left-lines.js';
+export { default as IconArrowBigLeftLinesFilled } from './icons/arrow-big-left-lines-filled.js';
+export { default as IconArrowBigRight } from './icons/arrow-big-right.js';
+export { default as IconArrowBigRightFilled } from './icons/arrow-big-right-filled.js';
+export { default as IconArrowBigRightLine } from './icons/arrow-big-right-line.js';
+export { default as IconArrowBigRightLineFilled } from './icons/arrow-big-right-line-filled.js';
+export { default as IconArrowBigRightLines } from './icons/arrow-big-right-lines.js';
+export { default as IconArrowBigRightLinesFilled } from './icons/arrow-big-right-lines-filled.js';
+export { default as IconArrowBigUp } from './icons/arrow-big-up.js';
+export { default as IconArrowBigUpFilled } from './icons/arrow-big-up-filled.js';
+export { default as IconArrowBigUpLine } from './icons/arrow-big-up-line.js';
+export { default as IconArrowBigUpLineFilled } from './icons/arrow-big-up-line-filled.js';
+export { default as IconArrowBigUpLines } from './icons/arrow-big-up-lines.js';
+export { default as IconArrowBigUpLinesFilled } from './icons/arrow-big-up-lines-filled.js';
+export { default as IconArrowBounce } from './icons/arrow-bounce.js';
+export { default as IconArrowCapsule } from './icons/arrow-capsule.js';
+export { default as IconArrowCurveLeft } from './icons/arrow-curve-left.js';
+export { default as IconArrowCurveRight } from './icons/arrow-curve-right.js';
+export { default as IconArrowDown } from './icons/arrow-down.js';
+export { default as IconArrowDownBar } from './icons/arrow-down-bar.js';
+export { default as IconArrowDownCircle } from './icons/arrow-down-circle.js';
+export { default as IconArrowDownLeft } from './icons/arrow-down-left.js';
+export { default as IconArrowDownLeftCircle } from './icons/arrow-down-left-circle.js';
+export { default as IconArrowDownRhombus } from './icons/arrow-down-rhombus.js';
+export { default as IconArrowDownRight } from './icons/arrow-down-right.js';
+export { default as IconArrowDownRightCircle } from './icons/arrow-down-right-circle.js';
+export { default as IconArrowDownSquare } from './icons/arrow-down-square.js';
+export { default as IconArrowDownTail } from './icons/arrow-down-tail.js';
+export { default as IconArrowElbowLeft } from './icons/arrow-elbow-left.js';
+export { default as IconArrowElbowRight } from './icons/arrow-elbow-right.js';
+export { default as IconArrowFork } from './icons/arrow-fork.js';
+export { default as IconArrowForward } from './icons/arrow-forward.js';
+export { default as IconArrowForwardUp } from './icons/arrow-forward-up.js';
+export { default as IconArrowForwardUpDouble } from './icons/arrow-forward-up-double.js';
+export { default as IconArrowGuide } from './icons/arrow-guide.js';
+export { default as IconArrowIteration } from './icons/arrow-iteration.js';
+export { default as IconArrowLeft } from './icons/arrow-left.js';
+export { default as IconArrowLeftBar } from './icons/arrow-left-bar.js';
+export { default as IconArrowLeftCircle } from './icons/arrow-left-circle.js';
+export { default as IconArrowLeftRhombus } from './icons/arrow-left-rhombus.js';
+export { default as IconArrowLeftRight } from './icons/arrow-left-right.js';
+export { default as IconArrowLeftSquare } from './icons/arrow-left-square.js';
+export { default as IconArrowLeftTail } from './icons/arrow-left-tail.js';
+export { default as IconArrowLoopLeft } from './icons/arrow-loop-left.js';
+export { default as IconArrowLoopLeft2 } from './icons/arrow-loop-left-2.js';
+export { default as IconArrowLoopRight } from './icons/arrow-loop-right.js';
+export { default as IconArrowLoopRight2 } from './icons/arrow-loop-right-2.js';
+export { default as IconArrowMerge } from './icons/arrow-merge.js';
+export { default as IconArrowMergeAltLeft } from './icons/arrow-merge-alt-left.js';
+export { default as IconArrowMergeAltRight } from './icons/arrow-merge-alt-right.js';
+export { default as IconArrowMergeBoth } from './icons/arrow-merge-both.js';
+export { default as IconArrowMergeLeft } from './icons/arrow-merge-left.js';
+export { default as IconArrowMergeRight } from './icons/arrow-merge-right.js';
+export { default as IconArrowMoveDown } from './icons/arrow-move-down.js';
+export { default as IconArrowMoveLeft } from './icons/arrow-move-left.js';
+export { default as IconArrowMoveRight } from './icons/arrow-move-right.js';
+export { default as IconArrowMoveUp } from './icons/arrow-move-up.js';
+export { default as IconArrowNarrowDown } from './icons/arrow-narrow-down.js';
+export { default as IconArrowNarrowLeft } from './icons/arrow-narrow-left.js';
+export { default as IconArrowNarrowRight } from './icons/arrow-narrow-right.js';
+export { default as IconArrowNarrowUp } from './icons/arrow-narrow-up.js';
+export { default as IconArrowRampLeft } from './icons/arrow-ramp-left.js';
+export { default as IconArrowRampLeft2 } from './icons/arrow-ramp-left-2.js';
+export { default as IconArrowRampLeft3 } from './icons/arrow-ramp-left-3.js';
+export { default as IconArrowRampRight } from './icons/arrow-ramp-right.js';
+export { default as IconArrowRampRight2 } from './icons/arrow-ramp-right-2.js';
+export { default as IconArrowRampRight3 } from './icons/arrow-ramp-right-3.js';
+export { default as IconArrowRight } from './icons/arrow-right.js';
+export { default as IconArrowRightBar } from './icons/arrow-right-bar.js';
+export { default as IconArrowRightCircle } from './icons/arrow-right-circle.js';
+export { default as IconArrowRightRhombus } from './icons/arrow-right-rhombus.js';
+export { default as IconArrowRightSquare } from './icons/arrow-right-square.js';
+export { default as IconArrowRightTail } from './icons/arrow-right-tail.js';
+export { default as IconArrowRotaryFirstLeft } from './icons/arrow-rotary-first-left.js';
+export { default as IconArrowRotaryFirstRight } from './icons/arrow-rotary-first-right.js';
+export { default as IconArrowRotaryLastLeft } from './icons/arrow-rotary-last-left.js';
+export { default as IconArrowRotaryLastRight } from './icons/arrow-rotary-last-right.js';
+export { default as IconArrowRotaryLeft } from './icons/arrow-rotary-left.js';
+export { default as IconArrowRotaryRight } from './icons/arrow-rotary-right.js';
+export { default as IconArrowRotaryStraight } from './icons/arrow-rotary-straight.js';
+export { default as IconArrowRoundaboutLeft } from './icons/arrow-roundabout-left.js';
+export { default as IconArrowRoundaboutRight } from './icons/arrow-roundabout-right.js';
+export { default as IconArrowSharpTurnLeft } from './icons/arrow-sharp-turn-left.js';
+export { default as IconArrowSharpTurnRight } from './icons/arrow-sharp-turn-right.js';
+export { default as IconArrowUp } from './icons/arrow-up.js';
+export { default as IconArrowUpBar } from './icons/arrow-up-bar.js';
+export { default as IconArrowUpCircle } from './icons/arrow-up-circle.js';
+export { default as IconArrowUpLeft } from './icons/arrow-up-left.js';
+export { default as IconArrowUpLeftCircle } from './icons/arrow-up-left-circle.js';
+export { default as IconArrowUpRhombus } from './icons/arrow-up-rhombus.js';
+export { default as IconArrowUpRight } from './icons/arrow-up-right.js';
+export { default as IconArrowUpRightCircle } from './icons/arrow-up-right-circle.js';
+export { default as IconArrowUpSquare } from './icons/arrow-up-square.js';
+export { default as IconArrowUpTail } from './icons/arrow-up-tail.js';
+export { default as IconArrowWaveLeftDown } from './icons/arrow-wave-left-down.js';
+export { default as IconArrowWaveLeftUp } from './icons/arrow-wave-left-up.js';
+export { default as IconArrowWaveRightDown } from './icons/arrow-wave-right-down.js';
+export { default as IconArrowWaveRightUp } from './icons/arrow-wave-right-up.js';
+export { default as IconArrowZigZag } from './icons/arrow-zig-zag.js';
+export { default as IconArrowsCross } from './icons/arrows-cross.js';
+export { default as IconArrowsDiagonal } from './icons/arrows-diagonal.js';
+export { default as IconArrowsDiagonal2 } from './icons/arrows-diagonal-2.js';
+export { default as IconArrowsDiagonalMinimize } from './icons/arrows-diagonal-minimize.js';
+export { default as IconArrowsDiagonalMinimize2 } from './icons/arrows-diagonal-minimize-2.js';
+export { default as IconArrowsDiff } from './icons/arrows-diff.js';
+export { default as IconArrowsDoubleNeSw } from './icons/arrows-double-ne-sw.js';
+export { default as IconArrowsDoubleNwSe } from './icons/arrows-double-nw-se.js';
+export { default as IconArrowsDoubleSeNw } from './icons/arrows-double-se-nw.js';
+export { default as IconArrowsDoubleSwNe } from './icons/arrows-double-sw-ne.js';
+export { default as IconArrowsDown } from './icons/arrows-down.js';
+export { default as IconArrowsDownUp } from './icons/arrows-down-up.js';
+export { default as IconArrowsExchange } from './icons/arrows-exchange.js';
+export { default as IconArrowsExchange2 } from './icons/arrows-exchange-2.js';
+export { default as IconArrowsHorizontal } from './icons/arrows-horizontal.js';
+export { default as IconArrowsJoin } from './icons/arrows-join.js';
+export { default as IconArrowsJoin2 } from './icons/arrows-join-2.js';
+export { default as IconArrowsLeft } from './icons/arrows-left.js';
+export { default as IconArrowsLeftDown } from './icons/arrows-left-down.js';
+export { default as IconArrowsLeftRight } from './icons/arrows-left-right.js';
+export { default as IconArrowsMaximize } from './icons/arrows-maximize.js';
+export { default as IconArrowsMinimize } from './icons/arrows-minimize.js';
+export { default as IconArrowsMove } from './icons/arrows-move.js';
+export { default as IconArrowsMoveHorizontal } from './icons/arrows-move-horizontal.js';
+export { default as IconArrowsMoveVertical } from './icons/arrows-move-vertical.js';
+export { default as IconArrowsRandom } from './icons/arrows-random.js';
+export { default as IconArrowsRight } from './icons/arrows-right.js';
+export { default as IconArrowsRightDown } from './icons/arrows-right-down.js';
+export { default as IconArrowsRightLeft } from './icons/arrows-right-left.js';
+export { default as IconArrowsShuffle } from './icons/arrows-shuffle.js';
+export { default as IconArrowsShuffle2 } from './icons/arrows-shuffle-2.js';
+export { default as IconArrowsSort } from './icons/arrows-sort.js';
+export { default as IconArrowsSplit } from './icons/arrows-split.js';
+export { default as IconArrowsSplit2 } from './icons/arrows-split-2.js';
+export { default as IconArrowsTransferDown } from './icons/arrows-transfer-down.js';
+export { default as IconArrowsTransferUp } from './icons/arrows-transfer-up.js';
+export { default as IconArrowsUp } from './icons/arrows-up.js';
+export { default as IconArrowsUpDown } from './icons/arrows-up-down.js';
+export { default as IconArrowsUpLeft } from './icons/arrows-up-left.js';
+export { default as IconArrowsUpRight } from './icons/arrows-up-right.js';
+export { default as IconArrowsVertical } from './icons/arrows-vertical.js';
+export { default as IconArtboard } from './icons/artboard.js';
+export { default as IconArtboardFilled } from './icons/artboard-filled.js';
+export { default as IconArtboardOff } from './icons/artboard-off.js';
+export { default as IconArticle } from './icons/article.js';
+export { default as IconArticleFilledFilled } from './icons/article-filled-filled.js';
+export { default as IconArticleOff } from './icons/article-off.js';
+export { default as IconAspectRatio } from './icons/aspect-ratio.js';
+export { default as IconAspectRatioFilled } from './icons/aspect-ratio-filled.js';
+export { default as IconAspectRatioOff } from './icons/aspect-ratio-off.js';
+export { default as IconAssembly } from './icons/assembly.js';
+export { default as IconAssemblyOff } from './icons/assembly-off.js';
+export { default as IconAsset } from './icons/asset.js';
+export { default as IconAsterisk } from './icons/asterisk.js';
+export { default as IconAsteriskSimple } from './icons/asterisk-simple.js';
+export { default as IconAt } from './icons/at.js';
+export { default as IconAtOff } from './icons/at-off.js';
+export { default as IconAtom } from './icons/atom.js';
+export { default as IconAtom2 } from './icons/atom-2.js';
+export { default as IconAtom2Filled } from './icons/atom-2-filled.js';
+export { default as IconAtomOff } from './icons/atom-off.js';
+export { default as IconAugmentedReality } from './icons/augmented-reality.js';
+export { default as IconAugmentedReality2 } from './icons/augmented-reality-2.js';
+export { default as IconAugmentedRealityOff } from './icons/augmented-reality-off.js';
+export { default as IconAutomaticGearbox } from './icons/automatic-gearbox.js';
+export { default as IconAward } from './icons/award.js';
+export { default as IconAwardFilled } from './icons/award-filled.js';
+export { default as IconAwardOff } from './icons/award-off.js';
+export { default as IconAxe } from './icons/axe.js';
+export { default as IconAxisX } from './icons/axis-x.js';
+export { default as IconAxisY } from './icons/axis-y.js';
+export { default as IconBabyBottle } from './icons/baby-bottle.js';
+export { default as IconBabyCarriage } from './icons/baby-carriage.js';
+export { default as IconBackhoe } from './icons/backhoe.js';
+export { default as IconBackpack } from './icons/backpack.js';
+export { default as IconBackpackOff } from './icons/backpack-off.js';
+export { default as IconBackslash } from './icons/backslash.js';
+export { default as IconBackspace } from './icons/backspace.js';
+export { default as IconBackspaceFilled } from './icons/backspace-filled.js';
+export { default as IconBadge } from './icons/badge.js';
+export { default as IconBadge3d } from './icons/badge-3d.js';
+export { default as IconBadge4k } from './icons/badge-4k.js';
+export { default as IconBadge8k } from './icons/badge-8k.js';
+export { default as IconBadgeAd } from './icons/badge-ad.js';
+export { default as IconBadgeAr } from './icons/badge-ar.js';
+export { default as IconBadgeCc } from './icons/badge-cc.js';
+export { default as IconBadgeFilled } from './icons/badge-filled.js';
+export { default as IconBadgeHd } from './icons/badge-hd.js';
+export { default as IconBadgeOff } from './icons/badge-off.js';
+export { default as IconBadgeSd } from './icons/badge-sd.js';
+export { default as IconBadgeTm } from './icons/badge-tm.js';
+export { default as IconBadgeVo } from './icons/badge-vo.js';
+export { default as IconBadgeVr } from './icons/badge-vr.js';
+export { default as IconBadgeWc } from './icons/badge-wc.js';
+export { default as IconBadges } from './icons/badges.js';
+export { default as IconBadgesFilled } from './icons/badges-filled.js';
+export { default as IconBadgesOff } from './icons/badges-off.js';
+export { default as IconBaguette } from './icons/baguette.js';
+export { default as IconBallAmericanFootball } from './icons/ball-american-football.js';
+export { default as IconBallAmericanFootballOff } from './icons/ball-american-football-off.js';
+export { default as IconBallBaseball } from './icons/ball-baseball.js';
+export { default as IconBallBasketball } from './icons/ball-basketball.js';
+export { default as IconBallBowling } from './icons/ball-bowling.js';
+export { default as IconBallFootball } from './icons/ball-football.js';
+export { default as IconBallFootballOff } from './icons/ball-football-off.js';
+export { default as IconBallTennis } from './icons/ball-tennis.js';
+export { default as IconBallVolleyball } from './icons/ball-volleyball.js';
+export { default as IconBalloon } from './icons/balloon.js';
+export { default as IconBalloonFilled } from './icons/balloon-filled.js';
+export { default as IconBalloonOff } from './icons/balloon-off.js';
+export { default as IconBallpen } from './icons/ballpen.js';
+export { default as IconBallpenFilled } from './icons/ballpen-filled.js';
+export { default as IconBallpenOff } from './icons/ballpen-off.js';
+export { default as IconBan } from './icons/ban.js';
+export { default as IconBandage } from './icons/bandage.js';
+export { default as IconBandageFilled } from './icons/bandage-filled.js';
+export { default as IconBandageOff } from './icons/bandage-off.js';
+export { default as IconBarbell } from './icons/barbell.js';
+export { default as IconBarbellOff } from './icons/barbell-off.js';
+export { default as IconBarcode } from './icons/barcode.js';
+export { default as IconBarcodeOff } from './icons/barcode-off.js';
+export { default as IconBarrel } from './icons/barrel.js';
+export { default as IconBarrelOff } from './icons/barrel-off.js';
+export { default as IconBarrierBlock } from './icons/barrier-block.js';
+export { default as IconBarrierBlockOff } from './icons/barrier-block-off.js';
+export { default as IconBaseline } from './icons/baseline.js';
+export { default as IconBaselineDensityLarge } from './icons/baseline-density-large.js';
+export { default as IconBaselineDensityMedium } from './icons/baseline-density-medium.js';
+export { default as IconBaselineDensitySmall } from './icons/baseline-density-small.js';
+export { default as IconBasket } from './icons/basket.js';
+export { default as IconBasketBolt } from './icons/basket-bolt.js';
+export { default as IconBasketCancel } from './icons/basket-cancel.js';
+export { default as IconBasketCheck } from './icons/basket-check.js';
+export { default as IconBasketCode } from './icons/basket-code.js';
+export { default as IconBasketCog } from './icons/basket-cog.js';
+export { default as IconBasketDiscount } from './icons/basket-discount.js';
+export { default as IconBasketDollar } from './icons/basket-dollar.js';
+export { default as IconBasketDown } from './icons/basket-down.js';
+export { default as IconBasketExclamation } from './icons/basket-exclamation.js';
+export { default as IconBasketFilled } from './icons/basket-filled.js';
+export { default as IconBasketHeart } from './icons/basket-heart.js';
+export { default as IconBasketMinus } from './icons/basket-minus.js';
+export { default as IconBasketOff } from './icons/basket-off.js';
+export { default as IconBasketPause } from './icons/basket-pause.js';
+export { default as IconBasketPin } from './icons/basket-pin.js';
+export { default as IconBasketPlus } from './icons/basket-plus.js';
+export { default as IconBasketQuestion } from './icons/basket-question.js';
+export { default as IconBasketSearch } from './icons/basket-search.js';
+export { default as IconBasketShare } from './icons/basket-share.js';
+export { default as IconBasketStar } from './icons/basket-star.js';
+export { default as IconBasketUp } from './icons/basket-up.js';
+export { default as IconBasketX } from './icons/basket-x.js';
+export { default as IconBat } from './icons/bat.js';
+export { default as IconBath } from './icons/bath.js';
+export { default as IconBathFilled } from './icons/bath-filled.js';
+export { default as IconBathOff } from './icons/bath-off.js';
+export { default as IconBattery } from './icons/battery.js';
+export { default as IconBattery1 } from './icons/battery-1.js';
+export { default as IconBattery1Filled } from './icons/battery-1-filled.js';
+export { default as IconBattery2 } from './icons/battery-2.js';
+export { default as IconBattery2Filled } from './icons/battery-2-filled.js';
+export { default as IconBattery3 } from './icons/battery-3.js';
+export { default as IconBattery3Filled } from './icons/battery-3-filled.js';
+export { default as IconBattery4 } from './icons/battery-4.js';
+export { default as IconBattery4Filled } from './icons/battery-4-filled.js';
+export { default as IconBatteryAutomotive } from './icons/battery-automotive.js';
+export { default as IconBatteryCharging } from './icons/battery-charging.js';
+export { default as IconBatteryCharging2 } from './icons/battery-charging-2.js';
+export { default as IconBatteryEco } from './icons/battery-eco.js';
+export { default as IconBatteryFilled } from './icons/battery-filled.js';
+export { default as IconBatteryOff } from './icons/battery-off.js';
+export { default as IconBeach } from './icons/beach.js';
+export { default as IconBeachOff } from './icons/beach-off.js';
+export { default as IconBed } from './icons/bed.js';
+export { default as IconBedFilled } from './icons/bed-filled.js';
+export { default as IconBedFlat } from './icons/bed-flat.js';
+export { default as IconBedOff } from './icons/bed-off.js';
+export { default as IconBeer } from './icons/beer.js';
+export { default as IconBeerFilled } from './icons/beer-filled.js';
+export { default as IconBeerOff } from './icons/beer-off.js';
+export { default as IconBell } from './icons/bell.js';
+export { default as IconBellBolt } from './icons/bell-bolt.js';
+export { default as IconBellCancel } from './icons/bell-cancel.js';
+export { default as IconBellCheck } from './icons/bell-check.js';
+export { default as IconBellCode } from './icons/bell-code.js';
+export { default as IconBellCog } from './icons/bell-cog.js';
+export { default as IconBellDollar } from './icons/bell-dollar.js';
+export { default as IconBellDown } from './icons/bell-down.js';
+export { default as IconBellExclamation } from './icons/bell-exclamation.js';
+export { default as IconBellFilled } from './icons/bell-filled.js';
+export { default as IconBellHeart } from './icons/bell-heart.js';
+export { default as IconBellMinus } from './icons/bell-minus.js';
+export { default as IconBellMinusFilled } from './icons/bell-minus-filled.js';
+export { default as IconBellOff } from './icons/bell-off.js';
+export { default as IconBellPause } from './icons/bell-pause.js';
+export { default as IconBellPin } from './icons/bell-pin.js';
+export { default as IconBellPlus } from './icons/bell-plus.js';
+export { default as IconBellPlusFilled } from './icons/bell-plus-filled.js';
+export { default as IconBellQuestion } from './icons/bell-question.js';
+export { default as IconBellRinging } from './icons/bell-ringing.js';
+export { default as IconBellRinging2 } from './icons/bell-ringing-2.js';
+export { default as IconBellRinging2Filled } from './icons/bell-ringing-2-filled.js';
+export { default as IconBellRingingFilled } from './icons/bell-ringing-filled.js';
+export { default as IconBellSchool } from './icons/bell-school.js';
+export { default as IconBellSearch } from './icons/bell-search.js';
+export { default as IconBellShare } from './icons/bell-share.js';
+export { default as IconBellStar } from './icons/bell-star.js';
+export { default as IconBellUp } from './icons/bell-up.js';
+export { default as IconBellX } from './icons/bell-x.js';
+export { default as IconBellXFilled } from './icons/bell-xfilled.js';
+export { default as IconBellZ } from './icons/bell-z.js';
+export { default as IconBellZFilled } from './icons/bell-zfilled.js';
+export { default as IconBeta } from './icons/beta.js';
+export { default as IconBible } from './icons/bible.js';
+export { default as IconBike } from './icons/bike.js';
+export { default as IconBikeOff } from './icons/bike-off.js';
+export { default as IconBinary } from './icons/binary.js';
+export { default as IconBinaryOff } from './icons/binary-off.js';
+export { default as IconBinaryTree } from './icons/binary-tree.js';
+export { default as IconBinaryTree2 } from './icons/binary-tree-2.js';
+export { default as IconBiohazard } from './icons/biohazard.js';
+export { default as IconBiohazardOff } from './icons/biohazard-off.js';
+export { default as IconBlade } from './icons/blade.js';
+export { default as IconBladeFilled } from './icons/blade-filled.js';
+export { default as IconBleach } from './icons/bleach.js';
+export { default as IconBleachChlorine } from './icons/bleach-chlorine.js';
+export { default as IconBleachNoChlorine } from './icons/bleach-no-chlorine.js';
+export { default as IconBleachOff } from './icons/bleach-off.js';
+export { default as IconBlender } from './icons/blender.js';
+export { default as IconBlockquote } from './icons/blockquote.js';
+export { default as IconBluetooth } from './icons/bluetooth.js';
+export { default as IconBluetoothConnected } from './icons/bluetooth-connected.js';
+export { default as IconBluetoothOff } from './icons/bluetooth-off.js';
+export { default as IconBluetoothX } from './icons/bluetooth-x.js';
+export { default as IconBlur } from './icons/blur.js';
+export { default as IconBlurOff } from './icons/blur-off.js';
+export { default as IconBmp } from './icons/bmp.js';
+export { default as IconBodyScan } from './icons/body-scan.js';
+export { default as IconBold } from './icons/bold.js';
+export { default as IconBoldOff } from './icons/bold-off.js';
+export { default as IconBolt } from './icons/bolt.js';
+export { default as IconBoltOff } from './icons/bolt-off.js';
+export { default as IconBomb } from './icons/bomb.js';
+export { default as IconBombFilled } from './icons/bomb-filled.js';
+export { default as IconBone } from './icons/bone.js';
+export { default as IconBoneOff } from './icons/bone-off.js';
+export { default as IconBong } from './icons/bong.js';
+export { default as IconBongOff } from './icons/bong-off.js';
+export { default as IconBook } from './icons/book.js';
+export { default as IconBook2 } from './icons/book-2.js';
+export { default as IconBookDownload } from './icons/book-download.js';
+export { default as IconBookFilled } from './icons/book-filled.js';
+export { default as IconBookOff } from './icons/book-off.js';
+export { default as IconBookUpload } from './icons/book-upload.js';
+export { default as IconBookmark } from './icons/bookmark.js';
+export { default as IconBookmarkAi } from './icons/bookmark-ai.js';
+export { default as IconBookmarkEdit } from './icons/bookmark-edit.js';
+export { default as IconBookmarkFilled } from './icons/bookmark-filled.js';
+export { default as IconBookmarkMinus } from './icons/bookmark-minus.js';
+export { default as IconBookmarkOff } from './icons/bookmark-off.js';
+export { default as IconBookmarkPlus } from './icons/bookmark-plus.js';
+export { default as IconBookmarkQuestion } from './icons/bookmark-question.js';
+export { default as IconBookmarks } from './icons/bookmarks.js';
+export { default as IconBookmarksFilled } from './icons/bookmarks-filled.js';
+export { default as IconBookmarksOff } from './icons/bookmarks-off.js';
+export { default as IconBooks } from './icons/books.js';
+export { default as IconBooksOff } from './icons/books-off.js';
+export { default as IconBorderAll } from './icons/border-all.js';
+export { default as IconBorderBottom } from './icons/border-bottom.js';
+export { default as IconBorderCorners } from './icons/border-corners.js';
+export { default as IconBorderHorizontal } from './icons/border-horizontal.js';
+export { default as IconBorderInner } from './icons/border-inner.js';
+export { default as IconBorderLeft } from './icons/border-left.js';
+export { default as IconBorderNone } from './icons/border-none.js';
+export { default as IconBorderOuter } from './icons/border-outer.js';
+export { default as IconBorderRadius } from './icons/border-radius.js';
+export { default as IconBorderRight } from './icons/border-right.js';
+export { default as IconBorderSides } from './icons/border-sides.js';
+export { default as IconBorderStyle } from './icons/border-style.js';
+export { default as IconBorderStyle2 } from './icons/border-style-2.js';
+export { default as IconBorderTop } from './icons/border-top.js';
+export { default as IconBorderVertical } from './icons/border-vertical.js';
+export { default as IconBottle } from './icons/bottle.js';
+export { default as IconBottleFilled } from './icons/bottle-filled.js';
+export { default as IconBottleOff } from './icons/bottle-off.js';
+export { default as IconBounceLeft } from './icons/bounce-left.js';
+export { default as IconBounceLeftFilled } from './icons/bounce-left-filled.js';
+export { default as IconBounceRight } from './icons/bounce-right.js';
+export { default as IconBounceRightFilled } from './icons/bounce-right-filled.js';
+export { default as IconBow } from './icons/bow.js';
+export { default as IconBowl } from './icons/bowl.js';
+export { default as IconBowlFilled } from './icons/bowl-filled.js';
+export { default as IconBox } from './icons/box.js';
+export { default as IconBoxAlignBottom } from './icons/box-align-bottom.js';
+export { default as IconBoxAlignBottomFilled } from './icons/box-align-bottom-filled.js';
+export { default as IconBoxAlignBottomLeft } from './icons/box-align-bottom-left.js';
+export { default as IconBoxAlignBottomLeftFilled } from './icons/box-align-bottom-left-filled.js';
+export { default as IconBoxAlignBottomRight } from './icons/box-align-bottom-right.js';
+export { default as IconBoxAlignBottomRightFilled } from './icons/box-align-bottom-right-filled.js';
+export { default as IconBoxAlignLeft } from './icons/box-align-left.js';
+export { default as IconBoxAlignLeftFilled } from './icons/box-align-left-filled.js';
+export { default as IconBoxAlignRight } from './icons/box-align-right.js';
+export { default as IconBoxAlignRightFilled } from './icons/box-align-right-filled.js';
+export { default as IconBoxAlignTop } from './icons/box-align-top.js';
+export { default as IconBoxAlignTopFilled } from './icons/box-align-top-filled.js';
+export { default as IconBoxAlignTopLeft } from './icons/box-align-top-left.js';
+export { default as IconBoxAlignTopLeftFilled } from './icons/box-align-top-left-filled.js';
+export { default as IconBoxAlignTopRight } from './icons/box-align-top-right.js';
+export { default as IconBoxAlignTopRightFilled } from './icons/box-align-top-right-filled.js';
+export { default as IconBoxMargin } from './icons/box-margin.js';
+export { default as IconBoxModel } from './icons/box-model.js';
+export { default as IconBoxModel2 } from './icons/box-model-2.js';
+export { default as IconBoxModel2Off } from './icons/box-model-2-off.js';
+export { default as IconBoxModelOff } from './icons/box-model-off.js';
+export { default as IconBoxMultiple } from './icons/box-multiple.js';
+export { default as IconBoxMultiple0 } from './icons/box-multiple-0.js';
+export { default as IconBoxMultiple1 } from './icons/box-multiple-1.js';
+export { default as IconBoxMultiple2 } from './icons/box-multiple-2.js';
+export { default as IconBoxMultiple3 } from './icons/box-multiple-3.js';
+export { default as IconBoxMultiple4 } from './icons/box-multiple-4.js';
+export { default as IconBoxMultiple5 } from './icons/box-multiple-5.js';
+export { default as IconBoxMultiple6 } from './icons/box-multiple-6.js';
+export { default as IconBoxMultiple7 } from './icons/box-multiple-7.js';
+export { default as IconBoxMultiple8 } from './icons/box-multiple-8.js';
+export { default as IconBoxMultiple9 } from './icons/box-multiple-9.js';
+export { default as IconBoxOff } from './icons/box-off.js';
+export { default as IconBoxPadding } from './icons/box-padding.js';
+export { default as IconBoxSeam } from './icons/box-seam.js';
+export { default as IconBraces } from './icons/braces.js';
+export { default as IconBracesOff } from './icons/braces-off.js';
+export { default as IconBrackets } from './icons/brackets.js';
+export { default as IconBracketsAngle } from './icons/brackets-angle.js';
+export { default as IconBracketsAngleOff } from './icons/brackets-angle-off.js';
+export { default as IconBracketsContain } from './icons/brackets-contain.js';
+export { default as IconBracketsContainEnd } from './icons/brackets-contain-end.js';
+export { default as IconBracketsContainStart } from './icons/brackets-contain-start.js';
+export { default as IconBracketsOff } from './icons/brackets-off.js';
+export { default as IconBraille } from './icons/braille.js';
+export { default as IconBrain } from './icons/brain.js';
+export { default as IconBrand4chan } from './icons/brand-4chan.js';
+export { default as IconBrandAbstract } from './icons/brand-abstract.js';
+export { default as IconBrandAdobe } from './icons/brand-adobe.js';
+export { default as IconBrandAdonisJs } from './icons/brand-adonis-js.js';
+export { default as IconBrandAirbnb } from './icons/brand-airbnb.js';
+export { default as IconBrandAirtable } from './icons/brand-airtable.js';
+export { default as IconBrandAlgolia } from './icons/brand-algolia.js';
+export { default as IconBrandAlipay } from './icons/brand-alipay.js';
+export { default as IconBrandAlpineJs } from './icons/brand-alpine-js.js';
+export { default as IconBrandAmazon } from './icons/brand-amazon.js';
+export { default as IconBrandAmd } from './icons/brand-amd.js';
+export { default as IconBrandAmigo } from './icons/brand-amigo.js';
+export { default as IconBrandAmongUs } from './icons/brand-among-us.js';
+export { default as IconBrandAndroid } from './icons/brand-android.js';
+export { default as IconBrandAngular } from './icons/brand-angular.js';
+export { default as IconBrandAnsible } from './icons/brand-ansible.js';
+export { default as IconBrandAo3 } from './icons/brand-ao-3.js';
+export { default as IconBrandAppgallery } from './icons/brand-appgallery.js';
+export { default as IconBrandApple } from './icons/brand-apple.js';
+export { default as IconBrandAppleArcade } from './icons/brand-apple-arcade.js';
+export { default as IconBrandApplePodcast } from './icons/brand-apple-podcast.js';
+export { default as IconBrandAppstore } from './icons/brand-appstore.js';
+export { default as IconBrandAsana } from './icons/brand-asana.js';
+export { default as IconBrandAuth0 } from './icons/brand-auth-0.js';
+export { default as IconBrandAws } from './icons/brand-aws.js';
+export { default as IconBrandAzure } from './icons/brand-azure.js';
+export { default as IconBrandBackbone } from './icons/brand-backbone.js';
+export { default as IconBrandBadoo } from './icons/brand-badoo.js';
+export { default as IconBrandBaidu } from './icons/brand-baidu.js';
+export { default as IconBrandBandcamp } from './icons/brand-bandcamp.js';
+export { default as IconBrandBandlab } from './icons/brand-bandlab.js';
+export { default as IconBrandBeats } from './icons/brand-beats.js';
+export { default as IconBrandBehance } from './icons/brand-behance.js';
+export { default as IconBrandBilibili } from './icons/brand-bilibili.js';
+export { default as IconBrandBinance } from './icons/brand-binance.js';
+export { default as IconBrandBing } from './icons/brand-bing.js';
+export { default as IconBrandBitbucket } from './icons/brand-bitbucket.js';
+export { default as IconBrandBlackberry } from './icons/brand-blackberry.js';
+export { default as IconBrandBlender } from './icons/brand-blender.js';
+export { default as IconBrandBlogger } from './icons/brand-blogger.js';
+export { default as IconBrandBooking } from './icons/brand-booking.js';
+export { default as IconBrandBootstrap } from './icons/brand-bootstrap.js';
+export { default as IconBrandBulma } from './icons/brand-bulma.js';
+export { default as IconBrandBumble } from './icons/brand-bumble.js';
+export { default as IconBrandBunpo } from './icons/brand-bunpo.js';
+export { default as IconBrandCSharp } from './icons/brand-csharp.js';
+export { default as IconBrandCake } from './icons/brand-cake.js';
+export { default as IconBrandCakephp } from './icons/brand-cakephp.js';
+export { default as IconBrandCampaignmonitor } from './icons/brand-campaignmonitor.js';
+export { default as IconBrandCarbon } from './icons/brand-carbon.js';
+export { default as IconBrandCashapp } from './icons/brand-cashapp.js';
+export { default as IconBrandChrome } from './icons/brand-chrome.js';
+export { default as IconBrandCinema4d } from './icons/brand-cinema-4d.js';
+export { default as IconBrandCitymapper } from './icons/brand-citymapper.js';
+export { default as IconBrandCloudflare } from './icons/brand-cloudflare.js';
+export { default as IconBrandCodecov } from './icons/brand-codecov.js';
+export { default as IconBrandCodepen } from './icons/brand-codepen.js';
+export { default as IconBrandCodesandbox } from './icons/brand-codesandbox.js';
+export { default as IconBrandCohost } from './icons/brand-cohost.js';
+export { default as IconBrandCoinbase } from './icons/brand-coinbase.js';
+export { default as IconBrandComedyCentral } from './icons/brand-comedy-central.js';
+export { default as IconBrandCoreos } from './icons/brand-coreos.js';
+export { default as IconBrandCouchdb } from './icons/brand-couchdb.js';
+export { default as IconBrandCouchsurfing } from './icons/brand-couchsurfing.js';
+export { default as IconBrandCpp } from './icons/brand-cpp.js';
+export { default as IconBrandCraft } from './icons/brand-craft.js';
+export { default as IconBrandCrunchbase } from './icons/brand-crunchbase.js';
+export { default as IconBrandCss3 } from './icons/brand-css-3.js';
+export { default as IconBrandCtemplar } from './icons/brand-ctemplar.js';
+export { default as IconBrandCucumber } from './icons/brand-cucumber.js';
+export { default as IconBrandCupra } from './icons/brand-cupra.js';
+export { default as IconBrandCypress } from './icons/brand-cypress.js';
+export { default as IconBrandD3 } from './icons/brand-d-3.js';
+export { default as IconBrandDatabricks } from './icons/brand-databricks.js';
+export { default as IconBrandDaysCounter } from './icons/brand-days-counter.js';
+export { default as IconBrandDcos } from './icons/brand-dcos.js';
+export { default as IconBrandDebian } from './icons/brand-debian.js';
+export { default as IconBrandDeezer } from './icons/brand-deezer.js';
+export { default as IconBrandDeliveroo } from './icons/brand-deliveroo.js';
+export { default as IconBrandDeno } from './icons/brand-deno.js';
+export { default as IconBrandDenodo } from './icons/brand-denodo.js';
+export { default as IconBrandDeviantart } from './icons/brand-deviantart.js';
+export { default as IconBrandDigg } from './icons/brand-digg.js';
+export { default as IconBrandDingtalk } from './icons/brand-dingtalk.js';
+export { default as IconBrandDiscord } from './icons/brand-discord.js';
+export { default as IconBrandDiscordFilled } from './icons/brand-discord-filled.js';
+export { default as IconBrandDisney } from './icons/brand-disney.js';
+export { default as IconBrandDisqus } from './icons/brand-disqus.js';
+export { default as IconBrandDjango } from './icons/brand-django.js';
+export { default as IconBrandDocker } from './icons/brand-docker.js';
+export { default as IconBrandDoctrine } from './icons/brand-doctrine.js';
+export { default as IconBrandDolbyDigital } from './icons/brand-dolby-digital.js';
+export { default as IconBrandDouban } from './icons/brand-douban.js';
+export { default as IconBrandDribbble } from './icons/brand-dribbble.js';
+export { default as IconBrandDribbbleFilled } from './icons/brand-dribbble-filled.js';
+export { default as IconBrandDrops } from './icons/brand-drops.js';
+export { default as IconBrandDrupal } from './icons/brand-drupal.js';
+export { default as IconBrandEdge } from './icons/brand-edge.js';
+export { default as IconBrandElastic } from './icons/brand-elastic.js';
+export { default as IconBrandElectronicArts } from './icons/brand-electronic-arts.js';
+export { default as IconBrandEmber } from './icons/brand-ember.js';
+export { default as IconBrandEnvato } from './icons/brand-envato.js';
+export { default as IconBrandEtsy } from './icons/brand-etsy.js';
+export { default as IconBrandEvernote } from './icons/brand-evernote.js';
+export { default as IconBrandFacebook } from './icons/brand-facebook.js';
+export { default as IconBrandFacebookFilled } from './icons/brand-facebook-filled.js';
+export { default as IconBrandFeedly } from './icons/brand-feedly.js';
+export { default as IconBrandFigma } from './icons/brand-figma.js';
+export { default as IconBrandFilezilla } from './icons/brand-filezilla.js';
+export { default as IconBrandFinder } from './icons/brand-finder.js';
+export { default as IconBrandFirebase } from './icons/brand-firebase.js';
+export { default as IconBrandFirefox } from './icons/brand-firefox.js';
+export { default as IconBrandFiverr } from './icons/brand-fiverr.js';
+export { default as IconBrandFlickr } from './icons/brand-flickr.js';
+export { default as IconBrandFlightradar24 } from './icons/brand-flightradar-24.js';
+export { default as IconBrandFlipboard } from './icons/brand-flipboard.js';
+export { default as IconBrandFlutter } from './icons/brand-flutter.js';
+export { default as IconBrandFortnite } from './icons/brand-fortnite.js';
+export { default as IconBrandFoursquare } from './icons/brand-foursquare.js';
+export { default as IconBrandFramer } from './icons/brand-framer.js';
+export { default as IconBrandFramerMotion } from './icons/brand-framer-motion.js';
+export { default as IconBrandFunimation } from './icons/brand-funimation.js';
+export { default as IconBrandGatsby } from './icons/brand-gatsby.js';
+export { default as IconBrandGit } from './icons/brand-git.js';
+export { default as IconBrandGithub } from './icons/brand-github.js';
+export { default as IconBrandGithubCopilot } from './icons/brand-github-copilot.js';
+export { default as IconBrandGithubFilled } from './icons/brand-github-filled.js';
+export { default as IconBrandGitlab } from './icons/brand-gitlab.js';
+export { default as IconBrandGmail } from './icons/brand-gmail.js';
+export { default as IconBrandGolang } from './icons/brand-golang.js';
+export { default as IconBrandGoogle } from './icons/brand-google.js';
+export { default as IconBrandGoogleAnalytics } from './icons/brand-google-analytics.js';
+export { default as IconBrandGoogleBigQuery } from './icons/brand-google-big-query.js';
+export { default as IconBrandGoogleDrive } from './icons/brand-google-drive.js';
+export { default as IconBrandGoogleFit } from './icons/brand-google-fit.js';
+export { default as IconBrandGoogleHome } from './icons/brand-google-home.js';
+export { default as IconBrandGoogleMaps } from './icons/brand-google-maps.js';
+export { default as IconBrandGoogleOne } from './icons/brand-google-one.js';
+export { default as IconBrandGooglePhotos } from './icons/brand-google-photos.js';
+export { default as IconBrandGooglePlay } from './icons/brand-google-play.js';
+export { default as IconBrandGooglePodcasts } from './icons/brand-google-podcasts.js';
+export { default as IconBrandGrammarly } from './icons/brand-grammarly.js';
+export { default as IconBrandGraphql } from './icons/brand-graphql.js';
+export { default as IconBrandGravatar } from './icons/brand-gravatar.js';
+export { default as IconBrandGrindr } from './icons/brand-grindr.js';
+export { default as IconBrandGuardian } from './icons/brand-guardian.js';
+export { default as IconBrandGumroad } from './icons/brand-gumroad.js';
+export { default as IconBrandHbo } from './icons/brand-hbo.js';
+export { default as IconBrandHeadlessui } from './icons/brand-headlessui.js';
+export { default as IconBrandHexo } from './icons/brand-hexo.js';
+export { default as IconBrandHipchat } from './icons/brand-hipchat.js';
+export { default as IconBrandHtml5 } from './icons/brand-html-5.js';
+export { default as IconBrandInertia } from './icons/brand-inertia.js';
+export { default as IconBrandInstagram } from './icons/brand-instagram.js';
+export { default as IconBrandIntercom } from './icons/brand-intercom.js';
+export { default as IconBrandItch } from './icons/brand-itch.js';
+export { default as IconBrandJavascript } from './icons/brand-javascript.js';
+export { default as IconBrandJuejin } from './icons/brand-juejin.js';
+export { default as IconBrandKbin } from './icons/brand-kbin.js';
+export { default as IconBrandKick } from './icons/brand-kick.js';
+export { default as IconBrandKickstarter } from './icons/brand-kickstarter.js';
+export { default as IconBrandKotlin } from './icons/brand-kotlin.js';
+export { default as IconBrandLaravel } from './icons/brand-laravel.js';
+export { default as IconBrandLastfm } from './icons/brand-lastfm.js';
+export { default as IconBrandLeetcode } from './icons/brand-leetcode.js';
+export { default as IconBrandLetterboxd } from './icons/brand-letterboxd.js';
+export { default as IconBrandLine } from './icons/brand-line.js';
+export { default as IconBrandLinkedin } from './icons/brand-linkedin.js';
+export { default as IconBrandLinktree } from './icons/brand-linktree.js';
+export { default as IconBrandLinqpad } from './icons/brand-linqpad.js';
+export { default as IconBrandLoom } from './icons/brand-loom.js';
+export { default as IconBrandMailgun } from './icons/brand-mailgun.js';
+export { default as IconBrandMantine } from './icons/brand-mantine.js';
+export { default as IconBrandMastercard } from './icons/brand-mastercard.js';
+export { default as IconBrandMastodon } from './icons/brand-mastodon.js';
+export { default as IconBrandMatrix } from './icons/brand-matrix.js';
+export { default as IconBrandMcdonalds } from './icons/brand-mcdonalds.js';
+export { default as IconBrandMedium } from './icons/brand-medium.js';
+export { default as IconBrandMeetup } from './icons/brand-meetup.js';
+export { default as IconBrandMercedes } from './icons/brand-mercedes.js';
+export { default as IconBrandMessenger } from './icons/brand-messenger.js';
+export { default as IconBrandMeta } from './icons/brand-meta.js';
+export { default as IconBrandMinecraft } from './icons/brand-minecraft.js';
+export { default as IconBrandMiniprogram } from './icons/brand-miniprogram.js';
+export { default as IconBrandMixpanel } from './icons/brand-mixpanel.js';
+export { default as IconBrandMonday } from './icons/brand-monday.js';
+export { default as IconBrandMongodb } from './icons/brand-mongodb.js';
+export { default as IconBrandMyOppo } from './icons/brand-my-oppo.js';
+export { default as IconBrandMysql } from './icons/brand-mysql.js';
+export { default as IconBrandNationalGeographic } from './icons/brand-national-geographic.js';
+export { default as IconBrandNem } from './icons/brand-nem.js';
+export { default as IconBrandNetbeans } from './icons/brand-netbeans.js';
+export { default as IconBrandNeteaseMusic } from './icons/brand-netease-music.js';
+export { default as IconBrandNetflix } from './icons/brand-netflix.js';
+export { default as IconBrandNexo } from './icons/brand-nexo.js';
+export { default as IconBrandNextcloud } from './icons/brand-nextcloud.js';
+export { default as IconBrandNextjs } from './icons/brand-nextjs.js';
+export { default as IconBrandNodejs } from './icons/brand-nodejs.js';
+export { default as IconBrandNordVpn } from './icons/brand-nord-vpn.js';
+export { default as IconBrandNotion } from './icons/brand-notion.js';
+export { default as IconBrandNpm } from './icons/brand-npm.js';
+export { default as IconBrandNuxt } from './icons/brand-nuxt.js';
+export { default as IconBrandNytimes } from './icons/brand-nytimes.js';
+export { default as IconBrandOauth } from './icons/brand-oauth.js';
+export { default as IconBrandOffice } from './icons/brand-office.js';
+export { default as IconBrandOkRu } from './icons/brand-ok-ru.js';
+export { default as IconBrandOnedrive } from './icons/brand-onedrive.js';
+export { default as IconBrandOnlyfans } from './icons/brand-onlyfans.js';
+export { default as IconBrandOpenSource } from './icons/brand-open-source.js';
+export { default as IconBrandOpenai } from './icons/brand-openai.js';
+export { default as IconBrandOpenvpn } from './icons/brand-openvpn.js';
+export { default as IconBrandOpera } from './icons/brand-opera.js';
+export { default as IconBrandPagekit } from './icons/brand-pagekit.js';
+export { default as IconBrandParsinta } from './icons/brand-parsinta.js';
+export { default as IconBrandPatreon } from './icons/brand-patreon.js';
+export { default as IconBrandPaypal } from './icons/brand-paypal.js';
+export { default as IconBrandPaypalFilled } from './icons/brand-paypal-filled.js';
+export { default as IconBrandPaypay } from './icons/brand-paypay.js';
+export { default as IconBrandPeanut } from './icons/brand-peanut.js';
+export { default as IconBrandPepsi } from './icons/brand-pepsi.js';
+export { default as IconBrandPhp } from './icons/brand-php.js';
+export { default as IconBrandPicsart } from './icons/brand-picsart.js';
+export { default as IconBrandPinterest } from './icons/brand-pinterest.js';
+export { default as IconBrandPlanetscale } from './icons/brand-planetscale.js';
+export { default as IconBrandPocket } from './icons/brand-pocket.js';
+export { default as IconBrandPolymer } from './icons/brand-polymer.js';
+export { default as IconBrandPowershell } from './icons/brand-powershell.js';
+export { default as IconBrandPrisma } from './icons/brand-prisma.js';
+export { default as IconBrandProducthunt } from './icons/brand-producthunt.js';
+export { default as IconBrandPushbullet } from './icons/brand-pushbullet.js';
+export { default as IconBrandPushover } from './icons/brand-pushover.js';
+export { default as IconBrandPython } from './icons/brand-python.js';
+export { default as IconBrandQq } from './icons/brand-qq.js';
+export { default as IconBrandRadixUi } from './icons/brand-radix-ui.js';
+export { default as IconBrandReact } from './icons/brand-react.js';
+export { default as IconBrandReactNative } from './icons/brand-react-native.js';
+export { default as IconBrandReason } from './icons/brand-reason.js';
+export { default as IconBrandReddit } from './icons/brand-reddit.js';
+export { default as IconBrandRedhat } from './icons/brand-redhat.js';
+export { default as IconBrandRedux } from './icons/brand-redux.js';
+export { default as IconBrandRevolut } from './icons/brand-revolut.js';
+export { default as IconBrandRumble } from './icons/brand-rumble.js';
+export { default as IconBrandRust } from './icons/brand-rust.js';
+export { default as IconBrandSafari } from './icons/brand-safari.js';
+export { default as IconBrandSamsungpass } from './icons/brand-samsungpass.js';
+export { default as IconBrandSass } from './icons/brand-sass.js';
+export { default as IconBrandSentry } from './icons/brand-sentry.js';
+export { default as IconBrandSharik } from './icons/brand-sharik.js';
+export { default as IconBrandShazam } from './icons/brand-shazam.js';
+export { default as IconBrandShopee } from './icons/brand-shopee.js';
+export { default as IconBrandSketch } from './icons/brand-sketch.js';
+export { default as IconBrandSkype } from './icons/brand-skype.js';
+export { default as IconBrandSlack } from './icons/brand-slack.js';
+export { default as IconBrandSnapchat } from './icons/brand-snapchat.js';
+export { default as IconBrandSnapseed } from './icons/brand-snapseed.js';
+export { default as IconBrandSnowflake } from './icons/brand-snowflake.js';
+export { default as IconBrandSocketIo } from './icons/brand-socket-io.js';
+export { default as IconBrandSolidjs } from './icons/brand-solidjs.js';
+export { default as IconBrandSoundcloud } from './icons/brand-soundcloud.js';
+export { default as IconBrandSpacehey } from './icons/brand-spacehey.js';
+export { default as IconBrandSpeedtest } from './icons/brand-speedtest.js';
+export { default as IconBrandSpotify } from './icons/brand-spotify.js';
+export { default as IconBrandStackoverflow } from './icons/brand-stackoverflow.js';
+export { default as IconBrandStackshare } from './icons/brand-stackshare.js';
+export { default as IconBrandSteam } from './icons/brand-steam.js';
+export { default as IconBrandStorj } from './icons/brand-storj.js';
+export { default as IconBrandStorybook } from './icons/brand-storybook.js';
+export { default as IconBrandStorytel } from './icons/brand-storytel.js';
+export { default as IconBrandStrava } from './icons/brand-strava.js';
+export { default as IconBrandStripe } from './icons/brand-stripe.js';
+export { default as IconBrandSublimeText } from './icons/brand-sublime-text.js';
+export { default as IconBrandSugarizer } from './icons/brand-sugarizer.js';
+export { default as IconBrandSupabase } from './icons/brand-supabase.js';
+export { default as IconBrandSuperhuman } from './icons/brand-superhuman.js';
+export { default as IconBrandSupernova } from './icons/brand-supernova.js';
+export { default as IconBrandSurfshark } from './icons/brand-surfshark.js';
+export { default as IconBrandSvelte } from './icons/brand-svelte.js';
+export { default as IconBrandSwift } from './icons/brand-swift.js';
+export { default as IconBrandSymfony } from './icons/brand-symfony.js';
+export { default as IconBrandTabler } from './icons/brand-tabler.js';
+export { default as IconBrandTailwind } from './icons/brand-tailwind.js';
+export { default as IconBrandTaobao } from './icons/brand-taobao.js';
+export { default as IconBrandTeams } from './icons/brand-teams.js';
+export { default as IconBrandTed } from './icons/brand-ted.js';
+export { default as IconBrandTelegram } from './icons/brand-telegram.js';
+export { default as IconBrandTerraform } from './icons/brand-terraform.js';
+export { default as IconBrandTether } from './icons/brand-tether.js';
+export { default as IconBrandThreads } from './icons/brand-threads.js';
+export { default as IconBrandThreejs } from './icons/brand-threejs.js';
+export { default as IconBrandTidal } from './icons/brand-tidal.js';
+export { default as IconBrandTiktok } from './icons/brand-tiktok.js';
+export { default as IconBrandTiktokFilled } from './icons/brand-tiktok-filled.js';
+export { default as IconBrandTinder } from './icons/brand-tinder.js';
+export { default as IconBrandTopbuzz } from './icons/brand-topbuzz.js';
+export { default as IconBrandTorchain } from './icons/brand-torchain.js';
+export { default as IconBrandToyota } from './icons/brand-toyota.js';
+export { default as IconBrandTrello } from './icons/brand-trello.js';
+export { default as IconBrandTripadvisor } from './icons/brand-tripadvisor.js';
+export { default as IconBrandTumblr } from './icons/brand-tumblr.js';
+export { default as IconBrandTwilio } from './icons/brand-twilio.js';
+export { default as IconBrandTwitch } from './icons/brand-twitch.js';
+export { default as IconBrandTwitter } from './icons/brand-twitter.js';
+export { default as IconBrandTwitterFilled } from './icons/brand-twitter-filled.js';
+export { default as IconBrandTypescript } from './icons/brand-typescript.js';
+export { default as IconBrandUber } from './icons/brand-uber.js';
+export { default as IconBrandUbuntu } from './icons/brand-ubuntu.js';
+export { default as IconBrandUnity } from './icons/brand-unity.js';
+export { default as IconBrandUnsplash } from './icons/brand-unsplash.js';
+export { default as IconBrandUpwork } from './icons/brand-upwork.js';
+export { default as IconBrandValorant } from './icons/brand-valorant.js';
+export { default as IconBrandVercel } from './icons/brand-vercel.js';
+export { default as IconBrandVimeo } from './icons/brand-vimeo.js';
+export { default as IconBrandVinted } from './icons/brand-vinted.js';
+export { default as IconBrandVisa } from './icons/brand-visa.js';
+export { default as IconBrandVisualStudio } from './icons/brand-visual-studio.js';
+export { default as IconBrandVite } from './icons/brand-vite.js';
+export { default as IconBrandVivaldi } from './icons/brand-vivaldi.js';
+export { default as IconBrandVk } from './icons/brand-vk.js';
+export { default as IconBrandVlc } from './icons/brand-vlc.js';
+export { default as IconBrandVolkswagen } from './icons/brand-volkswagen.js';
+export { default as IconBrandVsco } from './icons/brand-vsco.js';
+export { default as IconBrandVscode } from './icons/brand-vscode.js';
+export { default as IconBrandVue } from './icons/brand-vue.js';
+export { default as IconBrandWalmart } from './icons/brand-walmart.js';
+export { default as IconBrandWaze } from './icons/brand-waze.js';
+export { default as IconBrandWebflow } from './icons/brand-webflow.js';
+export { default as IconBrandWechat } from './icons/brand-wechat.js';
+export { default as IconBrandWeibo } from './icons/brand-weibo.js';
+export { default as IconBrandWhatsapp } from './icons/brand-whatsapp.js';
+export { default as IconBrandWikipedia } from './icons/brand-wikipedia.js';
+export { default as IconBrandWindows } from './icons/brand-windows.js';
+export { default as IconBrandWindy } from './icons/brand-windy.js';
+export { default as IconBrandWish } from './icons/brand-wish.js';
+export { default as IconBrandWix } from './icons/brand-wix.js';
+export { default as IconBrandWordpress } from './icons/brand-wordpress.js';
+export { default as IconBrandX } from './icons/brand-x.js';
+export { default as IconBrandXFilled } from './icons/brand-xfilled.js';
+export { default as IconBrandXamarin } from './icons/brand-xamarin.js';
+export { default as IconBrandXbox } from './icons/brand-xbox.js';
+export { default as IconBrandXdeep } from './icons/brand-xdeep.js';
+export { default as IconBrandXing } from './icons/brand-xing.js';
+export { default as IconBrandYahoo } from './icons/brand-yahoo.js';
+export { default as IconBrandYandex } from './icons/brand-yandex.js';
+export { default as IconBrandYatse } from './icons/brand-yatse.js';
+export { default as IconBrandYcombinator } from './icons/brand-ycombinator.js';
+export { default as IconBrandYoutube } from './icons/brand-youtube.js';
+export { default as IconBrandYoutubeFilled } from './icons/brand-youtube-filled.js';
+export { default as IconBrandYoutubeKids } from './icons/brand-youtube-kids.js';
+export { default as IconBrandZalando } from './icons/brand-zalando.js';
+export { default as IconBrandZapier } from './icons/brand-zapier.js';
+export { default as IconBrandZeit } from './icons/brand-zeit.js';
+export { default as IconBrandZhihu } from './icons/brand-zhihu.js';
+export { default as IconBrandZoom } from './icons/brand-zoom.js';
+export { default as IconBrandZulip } from './icons/brand-zulip.js';
+export { default as IconBrandZwift } from './icons/brand-zwift.js';
+export { default as IconBread } from './icons/bread.js';
+export { default as IconBreadOff } from './icons/bread-off.js';
+export { default as IconBriefcase } from './icons/briefcase.js';
+export { default as IconBriefcase2 } from './icons/briefcase-2.js';
+export { default as IconBriefcaseOff } from './icons/briefcase-off.js';
+export { default as IconBrightness } from './icons/brightness.js';
+export { default as IconBrightness2 } from './icons/brightness-2.js';
+export { default as IconBrightnessDown } from './icons/brightness-down.js';
+export { default as IconBrightnessDownFilled } from './icons/brightness-down-filled.js';
+export { default as IconBrightnessHalf } from './icons/brightness-half.js';
+export { default as IconBrightnessOff } from './icons/brightness-off.js';
+export { default as IconBrightnessUp } from './icons/brightness-up.js';
+export { default as IconBrightnessUpFilled } from './icons/brightness-up-filled.js';
+export { default as IconBroadcast } from './icons/broadcast.js';
+export { default as IconBroadcastOff } from './icons/broadcast-off.js';
+export { default as IconBrowser } from './icons/browser.js';
+export { default as IconBrowserCheck } from './icons/browser-check.js';
+export { default as IconBrowserOff } from './icons/browser-off.js';
+export { default as IconBrowserPlus } from './icons/browser-plus.js';
+export { default as IconBrowserX } from './icons/browser-x.js';
+export { default as IconBrush } from './icons/brush.js';
+export { default as IconBrushOff } from './icons/brush-off.js';
+export { default as IconBucket } from './icons/bucket.js';
+export { default as IconBucketDroplet } from './icons/bucket-droplet.js';
+export { default as IconBucketOff } from './icons/bucket-off.js';
+export { default as IconBug } from './icons/bug.js';
+export { default as IconBugOff } from './icons/bug-off.js';
+export { default as IconBuilding } from './icons/building.js';
+export { default as IconBuildingArch } from './icons/building-arch.js';
+export { default as IconBuildingBank } from './icons/building-bank.js';
+export { default as IconBuildingBridge } from './icons/building-bridge.js';
+export { default as IconBuildingBridge2 } from './icons/building-bridge-2.js';
+export { default as IconBuildingBroadcastTower } from './icons/building-broadcast-tower.js';
+export { default as IconBuildingCarousel } from './icons/building-carousel.js';
+export { default as IconBuildingCastle } from './icons/building-castle.js';
+export { default as IconBuildingChurch } from './icons/building-church.js';
+export { default as IconBuildingCircus } from './icons/building-circus.js';
+export { default as IconBuildingCommunity } from './icons/building-community.js';
+export { default as IconBuildingCottage } from './icons/building-cottage.js';
+export { default as IconBuildingEstate } from './icons/building-estate.js';
+export { default as IconBuildingFactory } from './icons/building-factory.js';
+export { default as IconBuildingFactory2 } from './icons/building-factory-2.js';
+export { default as IconBuildingFortress } from './icons/building-fortress.js';
+export { default as IconBuildingHospital } from './icons/building-hospital.js';
+export { default as IconBuildingLighthouse } from './icons/building-lighthouse.js';
+export { default as IconBuildingMonument } from './icons/building-monument.js';
+export { default as IconBuildingMosque } from './icons/building-mosque.js';
+export { default as IconBuildingPavilion } from './icons/building-pavilion.js';
+export { default as IconBuildingSkyscraper } from './icons/building-skyscraper.js';
+export { default as IconBuildingStadium } from './icons/building-stadium.js';
+export { default as IconBuildingStore } from './icons/building-store.js';
+export { default as IconBuildingTunnel } from './icons/building-tunnel.js';
+export { default as IconBuildingWarehouse } from './icons/building-warehouse.js';
+export { default as IconBuildingWindTurbine } from './icons/building-wind-turbine.js';
+export { default as IconBulb } from './icons/bulb.js';
+export { default as IconBulbFilled } from './icons/bulb-filled.js';
+export { default as IconBulbOff } from './icons/bulb-off.js';
+export { default as IconBulldozer } from './icons/bulldozer.js';
+export { default as IconBurger } from './icons/burger.js';
+export { default as IconBus } from './icons/bus.js';
+export { default as IconBusOff } from './icons/bus-off.js';
+export { default as IconBusStop } from './icons/bus-stop.js';
+export { default as IconBusinessplan } from './icons/businessplan.js';
+export { default as IconButterfly } from './icons/butterfly.js';
+export { default as IconCactus } from './icons/cactus.js';
+export { default as IconCactusFilled } from './icons/cactus-filled.js';
+export { default as IconCactusOff } from './icons/cactus-off.js';
+export { default as IconCake } from './icons/cake.js';
+export { default as IconCakeOff } from './icons/cake-off.js';
+export { default as IconCalculator } from './icons/calculator.js';
+export { default as IconCalculatorFilled } from './icons/calculator-filled.js';
+export { default as IconCalculatorOff } from './icons/calculator-off.js';
+export { default as IconCalendar } from './icons/calendar.js';
+export { default as IconCalendarBolt } from './icons/calendar-bolt.js';
+export { default as IconCalendarCancel } from './icons/calendar-cancel.js';
+export { default as IconCalendarCheck } from './icons/calendar-check.js';
+export { default as IconCalendarCode } from './icons/calendar-code.js';
+export { default as IconCalendarCog } from './icons/calendar-cog.js';
+export { default as IconCalendarDollar } from './icons/calendar-dollar.js';
+export { default as IconCalendarDown } from './icons/calendar-down.js';
+export { default as IconCalendarDue } from './icons/calendar-due.js';
+export { default as IconCalendarEvent } from './icons/calendar-event.js';
+export { default as IconCalendarExclamation } from './icons/calendar-exclamation.js';
+export { default as IconCalendarFilled } from './icons/calendar-filled.js';
+export { default as IconCalendarHeart } from './icons/calendar-heart.js';
+export { default as IconCalendarMinus } from './icons/calendar-minus.js';
+export { default as IconCalendarOff } from './icons/calendar-off.js';
+export { default as IconCalendarPause } from './icons/calendar-pause.js';
+export { default as IconCalendarPin } from './icons/calendar-pin.js';
+export { default as IconCalendarPlus } from './icons/calendar-plus.js';
+export { default as IconCalendarQuestion } from './icons/calendar-question.js';
+export { default as IconCalendarRepeat } from './icons/calendar-repeat.js';
+export { default as IconCalendarSearch } from './icons/calendar-search.js';
+export { default as IconCalendarShare } from './icons/calendar-share.js';
+export { default as IconCalendarStar } from './icons/calendar-star.js';
+export { default as IconCalendarStats } from './icons/calendar-stats.js';
+export { default as IconCalendarTime } from './icons/calendar-time.js';
+export { default as IconCalendarUp } from './icons/calendar-up.js';
+export { default as IconCalendarX } from './icons/calendar-x.js';
+export { default as IconCamera } from './icons/camera.js';
+export { default as IconCameraBolt } from './icons/camera-bolt.js';
+export { default as IconCameraCancel } from './icons/camera-cancel.js';
+export { default as IconCameraCheck } from './icons/camera-check.js';
+export { default as IconCameraCode } from './icons/camera-code.js';
+export { default as IconCameraCog } from './icons/camera-cog.js';
+export { default as IconCameraDollar } from './icons/camera-dollar.js';
+export { default as IconCameraDown } from './icons/camera-down.js';
+export { default as IconCameraExclamation } from './icons/camera-exclamation.js';
+export { default as IconCameraFilled } from './icons/camera-filled.js';
+export { default as IconCameraHeart } from './icons/camera-heart.js';
+export { default as IconCameraMinus } from './icons/camera-minus.js';
+export { default as IconCameraOff } from './icons/camera-off.js';
+export { default as IconCameraPause } from './icons/camera-pause.js';
+export { default as IconCameraPin } from './icons/camera-pin.js';
+export { default as IconCameraPlus } from './icons/camera-plus.js';
+export { default as IconCameraQuestion } from './icons/camera-question.js';
+export { default as IconCameraRotate } from './icons/camera-rotate.js';
+export { default as IconCameraSearch } from './icons/camera-search.js';
+export { default as IconCameraSelfie } from './icons/camera-selfie.js';
+export { default as IconCameraShare } from './icons/camera-share.js';
+export { default as IconCameraStar } from './icons/camera-star.js';
+export { default as IconCameraUp } from './icons/camera-up.js';
+export { default as IconCameraX } from './icons/camera-x.js';
+export { default as IconCamper } from './icons/camper.js';
+export { default as IconCampfire } from './icons/campfire.js';
+export { default as IconCampfireFilled } from './icons/campfire-filled.js';
+export { default as IconCandle } from './icons/candle.js';
+export { default as IconCandleFilled } from './icons/candle-filled.js';
+export { default as IconCandy } from './icons/candy.js';
+export { default as IconCandyOff } from './icons/candy-off.js';
+export { default as IconCane } from './icons/cane.js';
+export { default as IconCannabis } from './icons/cannabis.js';
+export { default as IconCapsule } from './icons/capsule.js';
+export { default as IconCapsuleFilled } from './icons/capsule-filled.js';
+export { default as IconCapsuleHorizontal } from './icons/capsule-horizontal.js';
+export { default as IconCapsuleHorizontalFilled } from './icons/capsule-horizontal-filled.js';
+export { default as IconCapture } from './icons/capture.js';
+export { default as IconCaptureFilled } from './icons/capture-filled.js';
+export { default as IconCaptureOff } from './icons/capture-off.js';
+export { default as IconCar } from './icons/car.js';
+export { default as IconCarCrane } from './icons/car-crane.js';
+export { default as IconCarCrash } from './icons/car-crash.js';
+export { default as IconCarGarage } from './icons/car-garage.js';
+export { default as IconCarOff } from './icons/car-off.js';
+export { default as IconCarSuv } from './icons/car-suv.js';
+export { default as IconCarTurbine } from './icons/car-turbine.js';
+export { default as IconCaravan } from './icons/caravan.js';
+export { default as IconCardboards } from './icons/cardboards.js';
+export { default as IconCardboardsOff } from './icons/cardboards-off.js';
+export { default as IconCards } from './icons/cards.js';
+export { default as IconCardsFilled } from './icons/cards-filled.js';
+export { default as IconCaretDown } from './icons/caret-down.js';
+export { default as IconCaretDownFilled } from './icons/caret-down-filled.js';
+export { default as IconCaretLeft } from './icons/caret-left.js';
+export { default as IconCaretLeftFilled } from './icons/caret-left-filled.js';
+export { default as IconCaretLeftRight } from './icons/caret-left-right.js';
+export { default as IconCaretRight } from './icons/caret-right.js';
+export { default as IconCaretRightFilled } from './icons/caret-right-filled.js';
+export { default as IconCaretUp } from './icons/caret-up.js';
+export { default as IconCaretUpDown } from './icons/caret-up-down.js';
+export { default as IconCaretUpFilled } from './icons/caret-up-filled.js';
+export { default as IconCarouselHorizontal } from './icons/carousel-horizontal.js';
+export { default as IconCarouselHorizontalFilled } from './icons/carousel-horizontal-filled.js';
+export { default as IconCarouselVertical } from './icons/carousel-vertical.js';
+export { default as IconCarouselVerticalFilled } from './icons/carousel-vertical-filled.js';
+export { default as IconCarrot } from './icons/carrot.js';
+export { default as IconCarrotOff } from './icons/carrot-off.js';
+export { default as IconCash } from './icons/cash.js';
+export { default as IconCashBanknote } from './icons/cash-banknote.js';
+export { default as IconCashBanknoteOff } from './icons/cash-banknote-off.js';
+export { default as IconCashOff } from './icons/cash-off.js';
+export { default as IconCast } from './icons/cast.js';
+export { default as IconCastOff } from './icons/cast-off.js';
+export { default as IconCat } from './icons/cat.js';
+export { default as IconCategory } from './icons/category.js';
+export { default as IconCategory2 } from './icons/category-2.js';
+export { default as IconCategoryFilled } from './icons/category-filled.js';
+export { default as IconCe } from './icons/ce.js';
+export { default as IconCeOff } from './icons/ce-off.js';
+export { default as IconCell } from './icons/cell.js';
+export { default as IconCellSignal1 } from './icons/cell-signal-1.js';
+export { default as IconCellSignal2 } from './icons/cell-signal-2.js';
+export { default as IconCellSignal3 } from './icons/cell-signal-3.js';
+export { default as IconCellSignal4 } from './icons/cell-signal-4.js';
+export { default as IconCellSignal5 } from './icons/cell-signal-5.js';
+export { default as IconCellSignalOff } from './icons/cell-signal-off.js';
+export { default as IconCertificate } from './icons/certificate.js';
+export { default as IconCertificate2 } from './icons/certificate-2.js';
+export { default as IconCertificate2Off } from './icons/certificate-2-off.js';
+export { default as IconCertificateOff } from './icons/certificate-off.js';
+export { default as IconChairDirector } from './icons/chair-director.js';
+export { default as IconChalkboard } from './icons/chalkboard.js';
+export { default as IconChalkboardOff } from './icons/chalkboard-off.js';
+export { default as IconChargingPile } from './icons/charging-pile.js';
+export { default as IconChartArcs } from './icons/chart-arcs.js';
+export { default as IconChartArcs3 } from './icons/chart-arcs-3.js';
+export { default as IconChartArea } from './icons/chart-area.js';
+export { default as IconChartAreaFilled } from './icons/chart-area-filled.js';
+export { default as IconChartAreaLine } from './icons/chart-area-line.js';
+export { default as IconChartAreaLineFilled } from './icons/chart-area-line-filled.js';
+export { default as IconChartArrows } from './icons/chart-arrows.js';
+export { default as IconChartArrowsVertical } from './icons/chart-arrows-vertical.js';
+export { default as IconChartBar } from './icons/chart-bar.js';
+export { default as IconChartBarOff } from './icons/chart-bar-off.js';
+export { default as IconChartBubble } from './icons/chart-bubble.js';
+export { default as IconChartBubbleFilled } from './icons/chart-bubble-filled.js';
+export { default as IconChartCandle } from './icons/chart-candle.js';
+export { default as IconChartCandleFilled } from './icons/chart-candle-filled.js';
+export { default as IconChartCircles } from './icons/chart-circles.js';
+export { default as IconChartDonut } from './icons/chart-donut.js';
+export { default as IconChartDonut2 } from './icons/chart-donut-2.js';
+export { default as IconChartDonut3 } from './icons/chart-donut-3.js';
+export { default as IconChartDonut4 } from './icons/chart-donut-4.js';
+export { default as IconChartDonutFilled } from './icons/chart-donut-filled.js';
+export { default as IconChartDots } from './icons/chart-dots.js';
+export { default as IconChartDots2 } from './icons/chart-dots-2.js';
+export { default as IconChartDots3 } from './icons/chart-dots-3.js';
+export { default as IconChartGridDots } from './icons/chart-grid-dots.js';
+export { default as IconChartHistogram } from './icons/chart-histogram.js';
+export { default as IconChartInfographic } from './icons/chart-infographic.js';
+export { default as IconChartLine } from './icons/chart-line.js';
+export { default as IconChartPie } from './icons/chart-pie.js';
+export { default as IconChartPie2 } from './icons/chart-pie-2.js';
+export { default as IconChartPie3 } from './icons/chart-pie-3.js';
+export { default as IconChartPie4 } from './icons/chart-pie-4.js';
+export { default as IconChartPieFilled } from './icons/chart-pie-filled.js';
+export { default as IconChartPieOff } from './icons/chart-pie-off.js';
+export { default as IconChartPpf } from './icons/chart-ppf.js';
+export { default as IconChartRadar } from './icons/chart-radar.js';
+export { default as IconChartSankey } from './icons/chart-sankey.js';
+export { default as IconChartTreemap } from './icons/chart-treemap.js';
+export { default as IconCheck } from './icons/check.js';
+export { default as IconCheckbox } from './icons/checkbox.js';
+export { default as IconChecklist } from './icons/checklist.js';
+export { default as IconChecks } from './icons/checks.js';
+export { default as IconCheckupList } from './icons/checkup-list.js';
+export { default as IconCheese } from './icons/cheese.js';
+export { default as IconChefHat } from './icons/chef-hat.js';
+export { default as IconChefHatOff } from './icons/chef-hat-off.js';
+export { default as IconCherry } from './icons/cherry.js';
+export { default as IconCherryFilled } from './icons/cherry-filled.js';
+export { default as IconChess } from './icons/chess.js';
+export { default as IconChessBishop } from './icons/chess-bishop.js';
+export { default as IconChessBishopFilled } from './icons/chess-bishop-filled.js';
+export { default as IconChessFilled } from './icons/chess-filled.js';
+export { default as IconChessKing } from './icons/chess-king.js';
+export { default as IconChessKingFilled } from './icons/chess-king-filled.js';
+export { default as IconChessKnight } from './icons/chess-knight.js';
+export { default as IconChessKnightFilled } from './icons/chess-knight-filled.js';
+export { default as IconChessQueen } from './icons/chess-queen.js';
+export { default as IconChessQueenFilled } from './icons/chess-queen-filled.js';
+export { default as IconChessRook } from './icons/chess-rook.js';
+export { default as IconChessRookFilled } from './icons/chess-rook-filled.js';
+export { default as IconChevronCompactDown } from './icons/chevron-compact-down.js';
+export { default as IconChevronCompactLeft } from './icons/chevron-compact-left.js';
+export { default as IconChevronCompactRight } from './icons/chevron-compact-right.js';
+export { default as IconChevronCompactUp } from './icons/chevron-compact-up.js';
+export { default as IconChevronDown } from './icons/chevron-down.js';
+export { default as IconChevronDownLeft } from './icons/chevron-down-left.js';
+export { default as IconChevronDownRight } from './icons/chevron-down-right.js';
+export { default as IconChevronLeft } from './icons/chevron-left.js';
+export { default as IconChevronLeftPipe } from './icons/chevron-left-pipe.js';
+export { default as IconChevronRight } from './icons/chevron-right.js';
+export { default as IconChevronRightPipe } from './icons/chevron-right-pipe.js';
+export { default as IconChevronUp } from './icons/chevron-up.js';
+export { default as IconChevronUpLeft } from './icons/chevron-up-left.js';
+export { default as IconChevronUpRight } from './icons/chevron-up-right.js';
+export { default as IconChevronsDown } from './icons/chevrons-down.js';
+export { default as IconChevronsDownLeft } from './icons/chevrons-down-left.js';
+export { default as IconChevronsDownRight } from './icons/chevrons-down-right.js';
+export { default as IconChevronsLeft } from './icons/chevrons-left.js';
+export { default as IconChevronsRight } from './icons/chevrons-right.js';
+export { default as IconChevronsUp } from './icons/chevrons-up.js';
+export { default as IconChevronsUpLeft } from './icons/chevrons-up-left.js';
+export { default as IconChevronsUpRight } from './icons/chevrons-up-right.js';
+export { default as IconChisel } from './icons/chisel.js';
+export { default as IconChristmasTree } from './icons/christmas-tree.js';
+export { default as IconChristmasTreeOff } from './icons/christmas-tree-off.js';
+export { default as IconCircle } from './icons/circle.js';
+export { default as IconCircle0Filled } from './icons/circle-0-filled.js';
+export { default as IconCircle1Filled } from './icons/circle-1-filled.js';
+export { default as IconCircle2Filled } from './icons/circle-2-filled.js';
+export { default as IconCircle3Filled } from './icons/circle-3-filled.js';
+export { default as IconCircle4Filled } from './icons/circle-4-filled.js';
+export { default as IconCircle5Filled } from './icons/circle-5-filled.js';
+export { default as IconCircle6Filled } from './icons/circle-6-filled.js';
+export { default as IconCircle7Filled } from './icons/circle-7-filled.js';
+export { default as IconCircle8Filled } from './icons/circle-8-filled.js';
+export { default as IconCircle9Filled } from './icons/circle-9-filled.js';
+export { default as IconCircleArrowDown } from './icons/circle-arrow-down.js';
+export { default as IconCircleArrowDownFilled } from './icons/circle-arrow-down-filled.js';
+export { default as IconCircleArrowDownLeft } from './icons/circle-arrow-down-left.js';
+export { default as IconCircleArrowDownLeftFilled } from './icons/circle-arrow-down-left-filled.js';
+export { default as IconCircleArrowDownRight } from './icons/circle-arrow-down-right.js';
+export { default as IconCircleArrowDownRightFilled } from './icons/circle-arrow-down-right-filled.js';
+export { default as IconCircleArrowLeft } from './icons/circle-arrow-left.js';
+export { default as IconCircleArrowLeftFilled } from './icons/circle-arrow-left-filled.js';
+export { default as IconCircleArrowRight } from './icons/circle-arrow-right.js';
+export { default as IconCircleArrowRightFilled } from './icons/circle-arrow-right-filled.js';
+export { default as IconCircleArrowUp } from './icons/circle-arrow-up.js';
+export { default as IconCircleArrowUpFilled } from './icons/circle-arrow-up-filled.js';
+export { default as IconCircleArrowUpLeft } from './icons/circle-arrow-up-left.js';
+export { default as IconCircleArrowUpLeftFilled } from './icons/circle-arrow-up-left-filled.js';
+export { default as IconCircleArrowUpRight } from './icons/circle-arrow-up-right.js';
+export { default as IconCircleArrowUpRightFilled } from './icons/circle-arrow-up-right-filled.js';
+export { default as IconCircleCaretDown } from './icons/circle-caret-down.js';
+export { default as IconCircleCaretLeft } from './icons/circle-caret-left.js';
+export { default as IconCircleCaretRight } from './icons/circle-caret-right.js';
+export { default as IconCircleCaretUp } from './icons/circle-caret-up.js';
+export { default as IconCircleCheck } from './icons/circle-check.js';
+export { default as IconCircleCheckFilled } from './icons/circle-check-filled.js';
+export { default as IconCircleChevronDown } from './icons/circle-chevron-down.js';
+export { default as IconCircleChevronLeft } from './icons/circle-chevron-left.js';
+export { default as IconCircleChevronRight } from './icons/circle-chevron-right.js';
+export { default as IconCircleChevronUp } from './icons/circle-chevron-up.js';
+export { default as IconCircleChevronsDown } from './icons/circle-chevrons-down.js';
+export { default as IconCircleChevronsLeft } from './icons/circle-chevrons-left.js';
+export { default as IconCircleChevronsRight } from './icons/circle-chevrons-right.js';
+export { default as IconCircleChevronsUp } from './icons/circle-chevrons-up.js';
+export { default as IconCircleDashed } from './icons/circle-dashed.js';
+export { default as IconCircleDashedNumber0 } from './icons/circle-dashed-number-0.js';
+export { default as IconCircleDashedNumber1 } from './icons/circle-dashed-number-1.js';
+export { default as IconCircleDashedNumber2 } from './icons/circle-dashed-number-2.js';
+export { default as IconCircleDashedNumber3 } from './icons/circle-dashed-number-3.js';
+export { default as IconCircleDashedNumber4 } from './icons/circle-dashed-number-4.js';
+export { default as IconCircleDashedNumber5 } from './icons/circle-dashed-number-5.js';
+export { default as IconCircleDashedNumber6 } from './icons/circle-dashed-number-6.js';
+export { default as IconCircleDashedNumber7 } from './icons/circle-dashed-number-7.js';
+export { default as IconCircleDashedNumber8 } from './icons/circle-dashed-number-8.js';
+export { default as IconCircleDashedNumber9 } from './icons/circle-dashed-number-9.js';
+export { default as IconCircleDashedX } from './icons/circle-dashed-x.js';
+export { default as IconCircleDot } from './icons/circle-dot.js';
+export { default as IconCircleDotFilled } from './icons/circle-dot-filled.js';
+export { default as IconCircleDotted } from './icons/circle-dotted.js';
+export { default as IconCircleFilled } from './icons/circle-filled.js';
+export { default as IconCircleHalf } from './icons/circle-half.js';
+export { default as IconCircleHalf2 } from './icons/circle-half-2.js';
+export { default as IconCircleHalfVertical } from './icons/circle-half-vertical.js';
+export { default as IconCircleKey } from './icons/circle-key.js';
+export { default as IconCircleKeyFilled } from './icons/circle-key-filled.js';
+export { default as IconCircleLetterA } from './icons/circle-letter-a.js';
+export { default as IconCircleLetterB } from './icons/circle-letter-b.js';
+export { default as IconCircleLetterC } from './icons/circle-letter-c.js';
+export { default as IconCircleLetterD } from './icons/circle-letter-d.js';
+export { default as IconCircleLetterE } from './icons/circle-letter-e.js';
+export { default as IconCircleLetterF } from './icons/circle-letter-f.js';
+export { default as IconCircleLetterG } from './icons/circle-letter-g.js';
+export { default as IconCircleLetterH } from './icons/circle-letter-h.js';
+export { default as IconCircleLetterI } from './icons/circle-letter-i.js';
+export { default as IconCircleLetterJ } from './icons/circle-letter-j.js';
+export { default as IconCircleLetterK } from './icons/circle-letter-k.js';
+export { default as IconCircleLetterL } from './icons/circle-letter-l.js';
+export { default as IconCircleLetterM } from './icons/circle-letter-m.js';
+export { default as IconCircleLetterN } from './icons/circle-letter-n.js';
+export { default as IconCircleLetterO } from './icons/circle-letter-o.js';
+export { default as IconCircleLetterP } from './icons/circle-letter-p.js';
+export { default as IconCircleLetterQ } from './icons/circle-letter-q.js';
+export { default as IconCircleLetterR } from './icons/circle-letter-r.js';
+export { default as IconCircleLetterS } from './icons/circle-letter-s.js';
+export { default as IconCircleLetterT } from './icons/circle-letter-t.js';
+export { default as IconCircleLetterU } from './icons/circle-letter-u.js';
+export { default as IconCircleLetterV } from './icons/circle-letter-v.js';
+export { default as IconCircleLetterW } from './icons/circle-letter-w.js';
+export { default as IconCircleLetterX } from './icons/circle-letter-x.js';
+export { default as IconCircleLetterY } from './icons/circle-letter-y.js';
+export { default as IconCircleLetterZ } from './icons/circle-letter-z.js';
+export { default as IconCircleMinus } from './icons/circle-minus.js';
+export { default as IconCircleMinus2 } from './icons/circle-minus-2.js';
+export { default as IconCircleNumber0 } from './icons/circle-number-0.js';
+export { default as IconCircleNumber1 } from './icons/circle-number-1.js';
+export { default as IconCircleNumber2 } from './icons/circle-number-2.js';
+export { default as IconCircleNumber3 } from './icons/circle-number-3.js';
+export { default as IconCircleNumber4 } from './icons/circle-number-4.js';
+export { default as IconCircleNumber5 } from './icons/circle-number-5.js';
+export { default as IconCircleNumber6 } from './icons/circle-number-6.js';
+export { default as IconCircleNumber7 } from './icons/circle-number-7.js';
+export { default as IconCircleNumber8 } from './icons/circle-number-8.js';
+export { default as IconCircleNumber9 } from './icons/circle-number-9.js';
+export { default as IconCircleOff } from './icons/circle-off.js';
+export { default as IconCirclePlus } from './icons/circle-plus.js';
+export { default as IconCirclePlus2 } from './icons/circle-plus-2.js';
+export { default as IconCircleRectangle } from './icons/circle-rectangle.js';
+export { default as IconCircleRectangleOff } from './icons/circle-rectangle-off.js';
+export { default as IconCircleSquare } from './icons/circle-square.js';
+export { default as IconCircleTriangle } from './icons/circle-triangle.js';
+export { default as IconCircleX } from './icons/circle-x.js';
+export { default as IconCircleXFilled } from './icons/circle-xfilled.js';
+export { default as IconCircles } from './icons/circles.js';
+export { default as IconCirclesFilled } from './icons/circles-filled.js';
+export { default as IconCirclesRelation } from './icons/circles-relation.js';
+export { default as IconCircuitAmmeter } from './icons/circuit-ammeter.js';
+export { default as IconCircuitBattery } from './icons/circuit-battery.js';
+export { default as IconCircuitBulb } from './icons/circuit-bulb.js';
+export { default as IconCircuitCapacitor } from './icons/circuit-capacitor.js';
+export { default as IconCircuitCapacitorPolarized } from './icons/circuit-capacitor-polarized.js';
+export { default as IconCircuitCell } from './icons/circuit-cell.js';
+export { default as IconCircuitCellPlus } from './icons/circuit-cell-plus.js';
+export { default as IconCircuitChangeover } from './icons/circuit-changeover.js';
+export { default as IconCircuitDiode } from './icons/circuit-diode.js';
+export { default as IconCircuitDiodeZener } from './icons/circuit-diode-zener.js';
+export { default as IconCircuitGround } from './icons/circuit-ground.js';
+export { default as IconCircuitGroundDigital } from './icons/circuit-ground-digital.js';
+export { default as IconCircuitInductor } from './icons/circuit-inductor.js';
+export { default as IconCircuitMotor } from './icons/circuit-motor.js';
+export { default as IconCircuitPushbutton } from './icons/circuit-pushbutton.js';
+export { default as IconCircuitResistor } from './icons/circuit-resistor.js';
+export { default as IconCircuitSwitchClosed } from './icons/circuit-switch-closed.js';
+export { default as IconCircuitSwitchOpen } from './icons/circuit-switch-open.js';
+export { default as IconCircuitVoltmeter } from './icons/circuit-voltmeter.js';
+export { default as IconClearAll } from './icons/clear-all.js';
+export { default as IconClearFormatting } from './icons/clear-formatting.js';
+export { default as IconClick } from './icons/click.js';
+export { default as IconClipboard } from './icons/clipboard.js';
+export { default as IconClipboardCheck } from './icons/clipboard-check.js';
+export { default as IconClipboardCopy } from './icons/clipboard-copy.js';
+export { default as IconClipboardData } from './icons/clipboard-data.js';
+export { default as IconClipboardHeart } from './icons/clipboard-heart.js';
+export { default as IconClipboardList } from './icons/clipboard-list.js';
+export { default as IconClipboardOff } from './icons/clipboard-off.js';
+export { default as IconClipboardPlus } from './icons/clipboard-plus.js';
+export { default as IconClipboardText } from './icons/clipboard-text.js';
+export { default as IconClipboardTypography } from './icons/clipboard-typography.js';
+export { default as IconClipboardX } from './icons/clipboard-x.js';
+export { default as IconClock } from './icons/clock.js';
+export { default as IconClock12 } from './icons/clock-12.js';
+export { default as IconClock2 } from './icons/clock-2.js';
+export { default as IconClock24 } from './icons/clock-24.js';
+export { default as IconClockBolt } from './icons/clock-bolt.js';
+export { default as IconClockCancel } from './icons/clock-cancel.js';
+export { default as IconClockCheck } from './icons/clock-check.js';
+export { default as IconClockCode } from './icons/clock-code.js';
+export { default as IconClockCog } from './icons/clock-cog.js';
+export { default as IconClockDollar } from './icons/clock-dollar.js';
+export { default as IconClockDown } from './icons/clock-down.js';
+export { default as IconClockEdit } from './icons/clock-edit.js';
+export { default as IconClockExclamation } from './icons/clock-exclamation.js';
+export { default as IconClockFilled } from './icons/clock-filled.js';
+export { default as IconClockHeart } from './icons/clock-heart.js';
+export { default as IconClockHour1 } from './icons/clock-hour-1.js';
+export { default as IconClockHour10 } from './icons/clock-hour-10.js';
+export { default as IconClockHour11 } from './icons/clock-hour-11.js';
+export { default as IconClockHour12 } from './icons/clock-hour-12.js';
+export { default as IconClockHour2 } from './icons/clock-hour-2.js';
+export { default as IconClockHour3 } from './icons/clock-hour-3.js';
+export { default as IconClockHour4 } from './icons/clock-hour-4.js';
+export { default as IconClockHour5 } from './icons/clock-hour-5.js';
+export { default as IconClockHour6 } from './icons/clock-hour-6.js';
+export { default as IconClockHour7 } from './icons/clock-hour-7.js';
+export { default as IconClockHour8 } from './icons/clock-hour-8.js';
+export { default as IconClockHour9 } from './icons/clock-hour-9.js';
+export { default as IconClockMinus } from './icons/clock-minus.js';
+export { default as IconClockOff } from './icons/clock-off.js';
+export { default as IconClockPause } from './icons/clock-pause.js';
+export { default as IconClockPin } from './icons/clock-pin.js';
+export { default as IconClockPlay } from './icons/clock-play.js';
+export { default as IconClockPlus } from './icons/clock-plus.js';
+export { default as IconClockQuestion } from './icons/clock-question.js';
+export { default as IconClockRecord } from './icons/clock-record.js';
+export { default as IconClockSearch } from './icons/clock-search.js';
+export { default as IconClockShare } from './icons/clock-share.js';
+export { default as IconClockShield } from './icons/clock-shield.js';
+export { default as IconClockStar } from './icons/clock-star.js';
+export { default as IconClockStop } from './icons/clock-stop.js';
+export { default as IconClockUp } from './icons/clock-up.js';
+export { default as IconClockX } from './icons/clock-x.js';
+export { default as IconClothesRack } from './icons/clothes-rack.js';
+export { default as IconClothesRackOff } from './icons/clothes-rack-off.js';
+export { default as IconCloud } from './icons/cloud.js';
+export { default as IconCloudBolt } from './icons/cloud-bolt.js';
+export { default as IconCloudCancel } from './icons/cloud-cancel.js';
+export { default as IconCloudCheck } from './icons/cloud-check.js';
+export { default as IconCloudCode } from './icons/cloud-code.js';
+export { default as IconCloudCog } from './icons/cloud-cog.js';
+export { default as IconCloudComputing } from './icons/cloud-computing.js';
+export { default as IconCloudDataConnection } from './icons/cloud-data-connection.js';
+export { default as IconCloudDollar } from './icons/cloud-dollar.js';
+export { default as IconCloudDown } from './icons/cloud-down.js';
+export { default as IconCloudDownload } from './icons/cloud-download.js';
+export { default as IconCloudExclamation } from './icons/cloud-exclamation.js';
+export { default as IconCloudFilled } from './icons/cloud-filled.js';
+export { default as IconCloudFog } from './icons/cloud-fog.js';
+export { default as IconCloudHeart } from './icons/cloud-heart.js';
+export { default as IconCloudLock } from './icons/cloud-lock.js';
+export { default as IconCloudLockOpen } from './icons/cloud-lock-open.js';
+export { default as IconCloudMinus } from './icons/cloud-minus.js';
+export { default as IconCloudNetwork } from './icons/cloud-network.js';
+export { default as IconCloudOff } from './icons/cloud-off.js';
+export { default as IconCloudPause } from './icons/cloud-pause.js';
+export { default as IconCloudPin } from './icons/cloud-pin.js';
+export { default as IconCloudPlus } from './icons/cloud-plus.js';
+export { default as IconCloudQuestion } from './icons/cloud-question.js';
+export { default as IconCloudRain } from './icons/cloud-rain.js';
+export { default as IconCloudSearch } from './icons/cloud-search.js';
+export { default as IconCloudShare } from './icons/cloud-share.js';
+export { default as IconCloudSnow } from './icons/cloud-snow.js';
+export { default as IconCloudStar } from './icons/cloud-star.js';
+export { default as IconCloudStorm } from './icons/cloud-storm.js';
+export { default as IconCloudUp } from './icons/cloud-up.js';
+export { default as IconCloudUpload } from './icons/cloud-upload.js';
+export { default as IconCloudX } from './icons/cloud-x.js';
+export { default as IconClover } from './icons/clover.js';
+export { default as IconClover2 } from './icons/clover-2.js';
+export { default as IconClubs } from './icons/clubs.js';
+export { default as IconClubsFilled } from './icons/clubs-filled.js';
+export { default as IconCode } from './icons/code.js';
+export { default as IconCodeAsterix } from './icons/code-asterix.js';
+export { default as IconCodeCircle } from './icons/code-circle.js';
+export { default as IconCodeCircle2 } from './icons/code-circle-2.js';
+export { default as IconCodeDots } from './icons/code-dots.js';
+export { default as IconCodeMinus } from './icons/code-minus.js';
+export { default as IconCodeOff } from './icons/code-off.js';
+export { default as IconCodePlus } from './icons/code-plus.js';
+export { default as IconCoffee } from './icons/coffee.js';
+export { default as IconCoffeeOff } from './icons/coffee-off.js';
+export { default as IconCoffin } from './icons/coffin.js';
+export { default as IconCoin } from './icons/coin.js';
+export { default as IconCoinBitcoin } from './icons/coin-bitcoin.js';
+export { default as IconCoinEuro } from './icons/coin-euro.js';
+export { default as IconCoinMonero } from './icons/coin-monero.js';
+export { default as IconCoinOff } from './icons/coin-off.js';
+export { default as IconCoinPound } from './icons/coin-pound.js';
+export { default as IconCoinRupee } from './icons/coin-rupee.js';
+export { default as IconCoinYen } from './icons/coin-yen.js';
+export { default as IconCoinYuan } from './icons/coin-yuan.js';
+export { default as IconCoins } from './icons/coins.js';
+export { default as IconColorFilter } from './icons/color-filter.js';
+export { default as IconColorPicker } from './icons/color-picker.js';
+export { default as IconColorPickerOff } from './icons/color-picker-off.js';
+export { default as IconColorSwatch } from './icons/color-swatch.js';
+export { default as IconColorSwatchOff } from './icons/color-swatch-off.js';
+export { default as IconColumnInsertLeft } from './icons/column-insert-left.js';
+export { default as IconColumnInsertRight } from './icons/column-insert-right.js';
+export { default as IconColumnRemove } from './icons/column-remove.js';
+export { default as IconColumns } from './icons/columns.js';
+export { default as IconColumns1 } from './icons/columns-1.js';
+export { default as IconColumns2 } from './icons/columns-2.js';
+export { default as IconColumns3 } from './icons/columns-3.js';
+export { default as IconColumnsOff } from './icons/columns-off.js';
+export { default as IconComet } from './icons/comet.js';
+export { default as IconCommand } from './icons/command.js';
+export { default as IconCommandOff } from './icons/command-off.js';
+export { default as IconCompass } from './icons/compass.js';
+export { default as IconCompassOff } from './icons/compass-off.js';
+export { default as IconComponents } from './icons/components.js';
+export { default as IconComponentsOff } from './icons/components-off.js';
+export { default as IconCone } from './icons/cone.js';
+export { default as IconCone2 } from './icons/cone-2.js';
+export { default as IconConeOff } from './icons/cone-off.js';
+export { default as IconConePlus } from './icons/cone-plus.js';
+export { default as IconConfetti } from './icons/confetti.js';
+export { default as IconConfettiOff } from './icons/confetti-off.js';
+export { default as IconConfucius } from './icons/confucius.js';
+export { default as IconContainer } from './icons/container.js';
+export { default as IconContainerOff } from './icons/container-off.js';
+export { default as IconContrast } from './icons/contrast.js';
+export { default as IconContrast2 } from './icons/contrast-2.js';
+export { default as IconContrast2Off } from './icons/contrast-2-off.js';
+export { default as IconContrastOff } from './icons/contrast-off.js';
+export { default as IconCooker } from './icons/cooker.js';
+export { default as IconCookie } from './icons/cookie.js';
+export { default as IconCookieMan } from './icons/cookie-man.js';
+export { default as IconCookieOff } from './icons/cookie-off.js';
+export { default as IconCopy } from './icons/copy.js';
+export { default as IconCopyOff } from './icons/copy-off.js';
+export { default as IconCopyleft } from './icons/copyleft.js';
+export { default as IconCopyleftFilled } from './icons/copyleft-filled.js';
+export { default as IconCopyleftOff } from './icons/copyleft-off.js';
+export { default as IconCopyright } from './icons/copyright.js';
+export { default as IconCopyrightFilled } from './icons/copyright-filled.js';
+export { default as IconCopyrightOff } from './icons/copyright-off.js';
+export { default as IconCornerDownLeft } from './icons/corner-down-left.js';
+export { default as IconCornerDownLeftDouble } from './icons/corner-down-left-double.js';
+export { default as IconCornerDownRight } from './icons/corner-down-right.js';
+export { default as IconCornerDownRightDouble } from './icons/corner-down-right-double.js';
+export { default as IconCornerLeftDown } from './icons/corner-left-down.js';
+export { default as IconCornerLeftDownDouble } from './icons/corner-left-down-double.js';
+export { default as IconCornerLeftUp } from './icons/corner-left-up.js';
+export { default as IconCornerLeftUpDouble } from './icons/corner-left-up-double.js';
+export { default as IconCornerRightDown } from './icons/corner-right-down.js';
+export { default as IconCornerRightDownDouble } from './icons/corner-right-down-double.js';
+export { default as IconCornerRightUp } from './icons/corner-right-up.js';
+export { default as IconCornerRightUpDouble } from './icons/corner-right-up-double.js';
+export { default as IconCornerUpLeft } from './icons/corner-up-left.js';
+export { default as IconCornerUpLeftDouble } from './icons/corner-up-left-double.js';
+export { default as IconCornerUpRight } from './icons/corner-up-right.js';
+export { default as IconCornerUpRightDouble } from './icons/corner-up-right-double.js';
+export { default as IconCpu } from './icons/cpu.js';
+export { default as IconCpu2 } from './icons/cpu-2.js';
+export { default as IconCpuOff } from './icons/cpu-off.js';
+export { default as IconCrane } from './icons/crane.js';
+export { default as IconCraneOff } from './icons/crane-off.js';
+export { default as IconCreativeCommons } from './icons/creative-commons.js';
+export { default as IconCreativeCommonsBy } from './icons/creative-commons-by.js';
+export { default as IconCreativeCommonsNc } from './icons/creative-commons-nc.js';
+export { default as IconCreativeCommonsNd } from './icons/creative-commons-nd.js';
+export { default as IconCreativeCommonsOff } from './icons/creative-commons-off.js';
+export { default as IconCreativeCommonsSa } from './icons/creative-commons-sa.js';
+export { default as IconCreativeCommonsZero } from './icons/creative-commons-zero.js';
+export { default as IconCreditCard } from './icons/credit-card.js';
+export { default as IconCreditCardOff } from './icons/credit-card-off.js';
+export { default as IconCricket } from './icons/cricket.js';
+export { default as IconCrop } from './icons/crop.js';
+export { default as IconCross } from './icons/cross.js';
+export { default as IconCrossFilled } from './icons/cross-filled.js';
+export { default as IconCrossOff } from './icons/cross-off.js';
+export { default as IconCrosshair } from './icons/crosshair.js';
+export { default as IconCrown } from './icons/crown.js';
+export { default as IconCrownOff } from './icons/crown-off.js';
+export { default as IconCrutches } from './icons/crutches.js';
+export { default as IconCrutchesOff } from './icons/crutches-off.js';
+export { default as IconCrystalBall } from './icons/crystal-ball.js';
+export { default as IconCsv } from './icons/csv.js';
+export { default as IconCube } from './icons/cube.js';
+export { default as IconCubeOff } from './icons/cube-off.js';
+export { default as IconCubePlus } from './icons/cube-plus.js';
+export { default as IconCubeSend } from './icons/cube-send.js';
+export { default as IconCubeUnfolded } from './icons/cube-unfolded.js';
+export { default as IconCup } from './icons/cup.js';
+export { default as IconCupOff } from './icons/cup-off.js';
+export { default as IconCurling } from './icons/curling.js';
+export { default as IconCurlyLoop } from './icons/curly-loop.js';
+export { default as IconCurrency } from './icons/currency.js';
+export { default as IconCurrencyAfghani } from './icons/currency-afghani.js';
+export { default as IconCurrencyBahraini } from './icons/currency-bahraini.js';
+export { default as IconCurrencyBaht } from './icons/currency-baht.js';
+export { default as IconCurrencyBitcoin } from './icons/currency-bitcoin.js';
+export { default as IconCurrencyCent } from './icons/currency-cent.js';
+export { default as IconCurrencyDinar } from './icons/currency-dinar.js';
+export { default as IconCurrencyDirham } from './icons/currency-dirham.js';
+export { default as IconCurrencyDogecoin } from './icons/currency-dogecoin.js';
+export { default as IconCurrencyDollar } from './icons/currency-dollar.js';
+export { default as IconCurrencyDollarAustralian } from './icons/currency-dollar-australian.js';
+export { default as IconCurrencyDollarBrunei } from './icons/currency-dollar-brunei.js';
+export { default as IconCurrencyDollarCanadian } from './icons/currency-dollar-canadian.js';
+export { default as IconCurrencyDollarGuyanese } from './icons/currency-dollar-guyanese.js';
+export { default as IconCurrencyDollarOff } from './icons/currency-dollar-off.js';
+export { default as IconCurrencyDollarSingapore } from './icons/currency-dollar-singapore.js';
+export { default as IconCurrencyDollarZimbabwean } from './icons/currency-dollar-zimbabwean.js';
+export { default as IconCurrencyDong } from './icons/currency-dong.js';
+export { default as IconCurrencyDram } from './icons/currency-dram.js';
+export { default as IconCurrencyEthereum } from './icons/currency-ethereum.js';
+export { default as IconCurrencyEuro } from './icons/currency-euro.js';
+export { default as IconCurrencyEuroOff } from './icons/currency-euro-off.js';
+export { default as IconCurrencyFlorin } from './icons/currency-florin.js';
+export { default as IconCurrencyForint } from './icons/currency-forint.js';
+export { default as IconCurrencyFrank } from './icons/currency-frank.js';
+export { default as IconCurrencyGuarani } from './icons/currency-guarani.js';
+export { default as IconCurrencyHryvnia } from './icons/currency-hryvnia.js';
+export { default as IconCurrencyIranianRial } from './icons/currency-iranian-rial.js';
+export { default as IconCurrencyKip } from './icons/currency-kip.js';
+export { default as IconCurrencyKroneCzech } from './icons/currency-krone-czech.js';
+export { default as IconCurrencyKroneDanish } from './icons/currency-krone-danish.js';
+export { default as IconCurrencyKroneSwedish } from './icons/currency-krone-swedish.js';
+export { default as IconCurrencyLari } from './icons/currency-lari.js';
+export { default as IconCurrencyLeu } from './icons/currency-leu.js';
+export { default as IconCurrencyLira } from './icons/currency-lira.js';
+export { default as IconCurrencyLitecoin } from './icons/currency-litecoin.js';
+export { default as IconCurrencyLyd } from './icons/currency-lyd.js';
+export { default as IconCurrencyManat } from './icons/currency-manat.js';
+export { default as IconCurrencyMonero } from './icons/currency-monero.js';
+export { default as IconCurrencyNaira } from './icons/currency-naira.js';
+export { default as IconCurrencyNano } from './icons/currency-nano.js';
+export { default as IconCurrencyOff } from './icons/currency-off.js';
+export { default as IconCurrencyPaanga } from './icons/currency-paanga.js';
+export { default as IconCurrencyPeso } from './icons/currency-peso.js';
+export { default as IconCurrencyPound } from './icons/currency-pound.js';
+export { default as IconCurrencyPoundOff } from './icons/currency-pound-off.js';
+export { default as IconCurrencyQuetzal } from './icons/currency-quetzal.js';
+export { default as IconCurrencyReal } from './icons/currency-real.js';
+export { default as IconCurrencyRenminbi } from './icons/currency-renminbi.js';
+export { default as IconCurrencyRipple } from './icons/currency-ripple.js';
+export { default as IconCurrencyRiyal } from './icons/currency-riyal.js';
+export { default as IconCurrencyRubel } from './icons/currency-rubel.js';
+export { default as IconCurrencyRufiyaa } from './icons/currency-rufiyaa.js';
+export { default as IconCurrencyRupee } from './icons/currency-rupee.js';
+export { default as IconCurrencyRupeeNepalese } from './icons/currency-rupee-nepalese.js';
+export { default as IconCurrencyShekel } from './icons/currency-shekel.js';
+export { default as IconCurrencySolana } from './icons/currency-solana.js';
+export { default as IconCurrencySom } from './icons/currency-som.js';
+export { default as IconCurrencyTaka } from './icons/currency-taka.js';
+export { default as IconCurrencyTenge } from './icons/currency-tenge.js';
+export { default as IconCurrencyTugrik } from './icons/currency-tugrik.js';
+export { default as IconCurrencyWon } from './icons/currency-won.js';
+export { default as IconCurrencyYen } from './icons/currency-yen.js';
+export { default as IconCurrencyYenOff } from './icons/currency-yen-off.js';
+export { default as IconCurrencyYuan } from './icons/currency-yuan.js';
+export { default as IconCurrencyZloty } from './icons/currency-zloty.js';
+export { default as IconCurrentLocation } from './icons/current-location.js';
+export { default as IconCurrentLocationOff } from './icons/current-location-off.js';
+export { default as IconCursorOff } from './icons/cursor-off.js';
+export { default as IconCursorText } from './icons/cursor-text.js';
+export { default as IconCut } from './icons/cut.js';
+export { default as IconCylinder } from './icons/cylinder.js';
+export { default as IconCylinderOff } from './icons/cylinder-off.js';
+export { default as IconCylinderPlus } from './icons/cylinder-plus.js';
+export { default as IconDashboard } from './icons/dashboard.js';
+export { default as IconDashboardOff } from './icons/dashboard-off.js';
+export { default as IconDatabase } from './icons/database.js';
+export { default as IconDatabaseCog } from './icons/database-cog.js';
+export { default as IconDatabaseDollar } from './icons/database-dollar.js';
+export { default as IconDatabaseEdit } from './icons/database-edit.js';
+export { default as IconDatabaseExclamation } from './icons/database-exclamation.js';
+export { default as IconDatabaseExport } from './icons/database-export.js';
+export { default as IconDatabaseHeart } from './icons/database-heart.js';
+export { default as IconDatabaseImport } from './icons/database-import.js';
+export { default as IconDatabaseLeak } from './icons/database-leak.js';
+export { default as IconDatabaseMinus } from './icons/database-minus.js';
+export { default as IconDatabaseOff } from './icons/database-off.js';
+export { default as IconDatabasePlus } from './icons/database-plus.js';
+export { default as IconDatabaseSearch } from './icons/database-search.js';
+export { default as IconDatabaseShare } from './icons/database-share.js';
+export { default as IconDatabaseStar } from './icons/database-star.js';
+export { default as IconDatabaseX } from './icons/database-x.js';
+export { default as IconDecimal } from './icons/decimal.js';
+export { default as IconDeer } from './icons/deer.js';
+export { default as IconDelta } from './icons/delta.js';
+export { default as IconDental } from './icons/dental.js';
+export { default as IconDentalBroken } from './icons/dental-broken.js';
+export { default as IconDentalOff } from './icons/dental-off.js';
+export { default as IconDeselect } from './icons/deselect.js';
+export { default as IconDetails } from './icons/details.js';
+export { default as IconDetailsOff } from './icons/details-off.js';
+export { default as IconDeviceAirpods } from './icons/device-airpods.js';
+export { default as IconDeviceAirpodsCase } from './icons/device-airpods-case.js';
+export { default as IconDeviceAirtag } from './icons/device-airtag.js';
+export { default as IconDeviceAnalytics } from './icons/device-analytics.js';
+export { default as IconDeviceAudioTape } from './icons/device-audio-tape.js';
+export { default as IconDeviceCameraPhone } from './icons/device-camera-phone.js';
+export { default as IconDeviceCctv } from './icons/device-cctv.js';
+export { default as IconDeviceCctvOff } from './icons/device-cctv-off.js';
+export { default as IconDeviceComputerCamera } from './icons/device-computer-camera.js';
+export { default as IconDeviceComputerCameraOff } from './icons/device-computer-camera-off.js';
+export { default as IconDeviceDesktop } from './icons/device-desktop.js';
+export { default as IconDeviceDesktopAnalytics } from './icons/device-desktop-analytics.js';
+export { default as IconDeviceDesktopBolt } from './icons/device-desktop-bolt.js';
+export { default as IconDeviceDesktopCancel } from './icons/device-desktop-cancel.js';
+export { default as IconDeviceDesktopCheck } from './icons/device-desktop-check.js';
+export { default as IconDeviceDesktopCode } from './icons/device-desktop-code.js';
+export { default as IconDeviceDesktopCog } from './icons/device-desktop-cog.js';
+export { default as IconDeviceDesktopDollar } from './icons/device-desktop-dollar.js';
+export { default as IconDeviceDesktopDown } from './icons/device-desktop-down.js';
+export { default as IconDeviceDesktopExclamation } from './icons/device-desktop-exclamation.js';
+export { default as IconDeviceDesktopHeart } from './icons/device-desktop-heart.js';
+export { default as IconDeviceDesktopMinus } from './icons/device-desktop-minus.js';
+export { default as IconDeviceDesktopOff } from './icons/device-desktop-off.js';
+export { default as IconDeviceDesktopPause } from './icons/device-desktop-pause.js';
+export { default as IconDeviceDesktopPin } from './icons/device-desktop-pin.js';
+export { default as IconDeviceDesktopPlus } from './icons/device-desktop-plus.js';
+export { default as IconDeviceDesktopQuestion } from './icons/device-desktop-question.js';
+export { default as IconDeviceDesktopSearch } from './icons/device-desktop-search.js';
+export { default as IconDeviceDesktopShare } from './icons/device-desktop-share.js';
+export { default as IconDeviceDesktopStar } from './icons/device-desktop-star.js';
+export { default as IconDeviceDesktopUp } from './icons/device-desktop-up.js';
+export { default as IconDeviceDesktopX } from './icons/device-desktop-x.js';
+export { default as IconDeviceFloppy } from './icons/device-floppy.js';
+export { default as IconDeviceGamepad } from './icons/device-gamepad.js';
+export { default as IconDeviceGamepad2 } from './icons/device-gamepad-2.js';
+export { default as IconDeviceGamepad3 } from './icons/device-gamepad-3.js';
+export { default as IconDeviceHeartMonitor } from './icons/device-heart-monitor.js';
+export { default as IconDeviceHeartMonitorFilled } from './icons/device-heart-monitor-filled.js';
+export { default as IconDeviceImac } from './icons/device-imac.js';
+export { default as IconDeviceImacBolt } from './icons/device-imac-bolt.js';
+export { default as IconDeviceImacCancel } from './icons/device-imac-cancel.js';
+export { default as IconDeviceImacCheck } from './icons/device-imac-check.js';
+export { default as IconDeviceImacCode } from './icons/device-imac-code.js';
+export { default as IconDeviceImacCog } from './icons/device-imac-cog.js';
+export { default as IconDeviceImacDollar } from './icons/device-imac-dollar.js';
+export { default as IconDeviceImacDown } from './icons/device-imac-down.js';
+export { default as IconDeviceImacExclamation } from './icons/device-imac-exclamation.js';
+export { default as IconDeviceImacHeart } from './icons/device-imac-heart.js';
+export { default as IconDeviceImacMinus } from './icons/device-imac-minus.js';
+export { default as IconDeviceImacOff } from './icons/device-imac-off.js';
+export { default as IconDeviceImacPause } from './icons/device-imac-pause.js';
+export { default as IconDeviceImacPin } from './icons/device-imac-pin.js';
+export { default as IconDeviceImacPlus } from './icons/device-imac-plus.js';
+export { default as IconDeviceImacQuestion } from './icons/device-imac-question.js';
+export { default as IconDeviceImacSearch } from './icons/device-imac-search.js';
+export { default as IconDeviceImacShare } from './icons/device-imac-share.js';
+export { default as IconDeviceImacStar } from './icons/device-imac-star.js';
+export { default as IconDeviceImacUp } from './icons/device-imac-up.js';
+export { default as IconDeviceImacX } from './icons/device-imac-x.js';
+export { default as IconDeviceIpad } from './icons/device-ipad.js';
+export { default as IconDeviceIpadBolt } from './icons/device-ipad-bolt.js';
+export { default as IconDeviceIpadCancel } from './icons/device-ipad-cancel.js';
+export { default as IconDeviceIpadCheck } from './icons/device-ipad-check.js';
+export { default as IconDeviceIpadCode } from './icons/device-ipad-code.js';
+export { default as IconDeviceIpadCog } from './icons/device-ipad-cog.js';
+export { default as IconDeviceIpadDollar } from './icons/device-ipad-dollar.js';
+export { default as IconDeviceIpadDown } from './icons/device-ipad-down.js';
+export { default as IconDeviceIpadExclamation } from './icons/device-ipad-exclamation.js';
+export { default as IconDeviceIpadHeart } from './icons/device-ipad-heart.js';
+export { default as IconDeviceIpadHorizontal } from './icons/device-ipad-horizontal.js';
+export { default as IconDeviceIpadHorizontalBolt } from './icons/device-ipad-horizontal-bolt.js';
+export { default as IconDeviceIpadHorizontalCancel } from './icons/device-ipad-horizontal-cancel.js';
+export { default as IconDeviceIpadHorizontalCheck } from './icons/device-ipad-horizontal-check.js';
+export { default as IconDeviceIpadHorizontalCode } from './icons/device-ipad-horizontal-code.js';
+export { default as IconDeviceIpadHorizontalCog } from './icons/device-ipad-horizontal-cog.js';
+export { default as IconDeviceIpadHorizontalDollar } from './icons/device-ipad-horizontal-dollar.js';
+export { default as IconDeviceIpadHorizontalDown } from './icons/device-ipad-horizontal-down.js';
+export { default as IconDeviceIpadHorizontalExclamation } from './icons/device-ipad-horizontal-exclamation.js';
+export { default as IconDeviceIpadHorizontalHeart } from './icons/device-ipad-horizontal-heart.js';
+export { default as IconDeviceIpadHorizontalMinus } from './icons/device-ipad-horizontal-minus.js';
+export { default as IconDeviceIpadHorizontalOff } from './icons/device-ipad-horizontal-off.js';
+export { default as IconDeviceIpadHorizontalPause } from './icons/device-ipad-horizontal-pause.js';
+export { default as IconDeviceIpadHorizontalPin } from './icons/device-ipad-horizontal-pin.js';
+export { default as IconDeviceIpadHorizontalPlus } from './icons/device-ipad-horizontal-plus.js';
+export { default as IconDeviceIpadHorizontalQuestion } from './icons/device-ipad-horizontal-question.js';
+export { default as IconDeviceIpadHorizontalSearch } from './icons/device-ipad-horizontal-search.js';
+export { default as IconDeviceIpadHorizontalShare } from './icons/device-ipad-horizontal-share.js';
+export { default as IconDeviceIpadHorizontalStar } from './icons/device-ipad-horizontal-star.js';
+export { default as IconDeviceIpadHorizontalUp } from './icons/device-ipad-horizontal-up.js';
+export { default as IconDeviceIpadHorizontalX } from './icons/device-ipad-horizontal-x.js';
+export { default as IconDeviceIpadMinus } from './icons/device-ipad-minus.js';
+export { default as IconDeviceIpadOff } from './icons/device-ipad-off.js';
+export { default as IconDeviceIpadPause } from './icons/device-ipad-pause.js';
+export { default as IconDeviceIpadPin } from './icons/device-ipad-pin.js';
+export { default as IconDeviceIpadPlus } from './icons/device-ipad-plus.js';
+export { default as IconDeviceIpadQuestion } from './icons/device-ipad-question.js';
+export { default as IconDeviceIpadSearch } from './icons/device-ipad-search.js';
+export { default as IconDeviceIpadShare } from './icons/device-ipad-share.js';
+export { default as IconDeviceIpadStar } from './icons/device-ipad-star.js';
+export { default as IconDeviceIpadUp } from './icons/device-ipad-up.js';
+export { default as IconDeviceIpadX } from './icons/device-ipad-x.js';
+export { default as IconDeviceLandlinePhone } from './icons/device-landline-phone.js';
+export { default as IconDeviceLaptop } from './icons/device-laptop.js';
+export { default as IconDeviceLaptopOff } from './icons/device-laptop-off.js';
+export { default as IconDeviceMobile } from './icons/device-mobile.js';
+export { default as IconDeviceMobileBolt } from './icons/device-mobile-bolt.js';
+export { default as IconDeviceMobileCancel } from './icons/device-mobile-cancel.js';
+export { default as IconDeviceMobileCharging } from './icons/device-mobile-charging.js';
+export { default as IconDeviceMobileCheck } from './icons/device-mobile-check.js';
+export { default as IconDeviceMobileCode } from './icons/device-mobile-code.js';
+export { default as IconDeviceMobileCog } from './icons/device-mobile-cog.js';
+export { default as IconDeviceMobileDollar } from './icons/device-mobile-dollar.js';
+export { default as IconDeviceMobileDown } from './icons/device-mobile-down.js';
+export { default as IconDeviceMobileExclamation } from './icons/device-mobile-exclamation.js';
+export { default as IconDeviceMobileFilled } from './icons/device-mobile-filled.js';
+export { default as IconDeviceMobileHeart } from './icons/device-mobile-heart.js';
+export { default as IconDeviceMobileMessage } from './icons/device-mobile-message.js';
+export { default as IconDeviceMobileMinus } from './icons/device-mobile-minus.js';
+export { default as IconDeviceMobileOff } from './icons/device-mobile-off.js';
+export { default as IconDeviceMobilePause } from './icons/device-mobile-pause.js';
+export { default as IconDeviceMobilePin } from './icons/device-mobile-pin.js';
+export { default as IconDeviceMobilePlus } from './icons/device-mobile-plus.js';
+export { default as IconDeviceMobileQuestion } from './icons/device-mobile-question.js';
+export { default as IconDeviceMobileRotated } from './icons/device-mobile-rotated.js';
+export { default as IconDeviceMobileSearch } from './icons/device-mobile-search.js';
+export { default as IconDeviceMobileShare } from './icons/device-mobile-share.js';
+export { default as IconDeviceMobileStar } from './icons/device-mobile-star.js';
+export { default as IconDeviceMobileUp } from './icons/device-mobile-up.js';
+export { default as IconDeviceMobileVibration } from './icons/device-mobile-vibration.js';
+export { default as IconDeviceMobileX } from './icons/device-mobile-x.js';
+export { default as IconDeviceNintendo } from './icons/device-nintendo.js';
+export { default as IconDeviceNintendoOff } from './icons/device-nintendo-off.js';
+export { default as IconDeviceProjector } from './icons/device-projector.js';
+export { default as IconDeviceRemote } from './icons/device-remote.js';
+export { default as IconDeviceSdCard } from './icons/device-sd-card.js';
+export { default as IconDeviceSim } from './icons/device-sim.js';
+export { default as IconDeviceSim1 } from './icons/device-sim-1.js';
+export { default as IconDeviceSim2 } from './icons/device-sim-2.js';
+export { default as IconDeviceSim3 } from './icons/device-sim-3.js';
+export { default as IconDeviceSpeaker } from './icons/device-speaker.js';
+export { default as IconDeviceSpeakerOff } from './icons/device-speaker-off.js';
+export { default as IconDeviceTablet } from './icons/device-tablet.js';
+export { default as IconDeviceTabletBolt } from './icons/device-tablet-bolt.js';
+export { default as IconDeviceTabletCancel } from './icons/device-tablet-cancel.js';
+export { default as IconDeviceTabletCheck } from './icons/device-tablet-check.js';
+export { default as IconDeviceTabletCode } from './icons/device-tablet-code.js';
+export { default as IconDeviceTabletCog } from './icons/device-tablet-cog.js';
+export { default as IconDeviceTabletDollar } from './icons/device-tablet-dollar.js';
+export { default as IconDeviceTabletDown } from './icons/device-tablet-down.js';
+export { default as IconDeviceTabletExclamation } from './icons/device-tablet-exclamation.js';
+export { default as IconDeviceTabletFilled } from './icons/device-tablet-filled.js';
+export { default as IconDeviceTabletHeart } from './icons/device-tablet-heart.js';
+export { default as IconDeviceTabletMinus } from './icons/device-tablet-minus.js';
+export { default as IconDeviceTabletOff } from './icons/device-tablet-off.js';
+export { default as IconDeviceTabletPause } from './icons/device-tablet-pause.js';
+export { default as IconDeviceTabletPin } from './icons/device-tablet-pin.js';
+export { default as IconDeviceTabletPlus } from './icons/device-tablet-plus.js';
+export { default as IconDeviceTabletQuestion } from './icons/device-tablet-question.js';
+export { default as IconDeviceTabletSearch } from './icons/device-tablet-search.js';
+export { default as IconDeviceTabletShare } from './icons/device-tablet-share.js';
+export { default as IconDeviceTabletStar } from './icons/device-tablet-star.js';
+export { default as IconDeviceTabletUp } from './icons/device-tablet-up.js';
+export { default as IconDeviceTabletX } from './icons/device-tablet-x.js';
+export { default as IconDeviceTv } from './icons/device-tv.js';
+export { default as IconDeviceTvOff } from './icons/device-tv-off.js';
+export { default as IconDeviceTvOld } from './icons/device-tv-old.js';
+export { default as IconDeviceUsb } from './icons/device-usb.js';
+export { default as IconDeviceVisionPro } from './icons/device-vision-pro.js';
+export { default as IconDeviceWatch } from './icons/device-watch.js';
+export { default as IconDeviceWatchBolt } from './icons/device-watch-bolt.js';
+export { default as IconDeviceWatchCancel } from './icons/device-watch-cancel.js';
+export { default as IconDeviceWatchCheck } from './icons/device-watch-check.js';
+export { default as IconDeviceWatchCode } from './icons/device-watch-code.js';
+export { default as IconDeviceWatchCog } from './icons/device-watch-cog.js';
+export { default as IconDeviceWatchDollar } from './icons/device-watch-dollar.js';
+export { default as IconDeviceWatchDown } from './icons/device-watch-down.js';
+export { default as IconDeviceWatchExclamation } from './icons/device-watch-exclamation.js';
+export { default as IconDeviceWatchHeart } from './icons/device-watch-heart.js';
+export { default as IconDeviceWatchMinus } from './icons/device-watch-minus.js';
+export { default as IconDeviceWatchOff } from './icons/device-watch-off.js';
+export { default as IconDeviceWatchPause } from './icons/device-watch-pause.js';
+export { default as IconDeviceWatchPin } from './icons/device-watch-pin.js';
+export { default as IconDeviceWatchPlus } from './icons/device-watch-plus.js';
+export { default as IconDeviceWatchQuestion } from './icons/device-watch-question.js';
+export { default as IconDeviceWatchSearch } from './icons/device-watch-search.js';
+export { default as IconDeviceWatchShare } from './icons/device-watch-share.js';
+export { default as IconDeviceWatchStar } from './icons/device-watch-star.js';
+export { default as IconDeviceWatchStats } from './icons/device-watch-stats.js';
+export { default as IconDeviceWatchStats2 } from './icons/device-watch-stats-2.js';
+export { default as IconDeviceWatchUp } from './icons/device-watch-up.js';
+export { default as IconDeviceWatchX } from './icons/device-watch-x.js';
+export { default as IconDevices } from './icons/devices.js';
+export { default as IconDevices2 } from './icons/devices-2.js';
+export { default as IconDevicesBolt } from './icons/devices-bolt.js';
+export { default as IconDevicesCancel } from './icons/devices-cancel.js';
+export { default as IconDevicesCheck } from './icons/devices-check.js';
+export { default as IconDevicesCode } from './icons/devices-code.js';
+export { default as IconDevicesCog } from './icons/devices-cog.js';
+export { default as IconDevicesDollar } from './icons/devices-dollar.js';
+export { default as IconDevicesDown } from './icons/devices-down.js';
+export { default as IconDevicesExclamation } from './icons/devices-exclamation.js';
+export { default as IconDevicesHeart } from './icons/devices-heart.js';
+export { default as IconDevicesMinus } from './icons/devices-minus.js';
+export { default as IconDevicesOff } from './icons/devices-off.js';
+export { default as IconDevicesPause } from './icons/devices-pause.js';
+export { default as IconDevicesPc } from './icons/devices-pc.js';
+export { default as IconDevicesPcOff } from './icons/devices-pc-off.js';
+export { default as IconDevicesPin } from './icons/devices-pin.js';
+export { default as IconDevicesPlus } from './icons/devices-plus.js';
+export { default as IconDevicesQuestion } from './icons/devices-question.js';
+export { default as IconDevicesSearch } from './icons/devices-search.js';
+export { default as IconDevicesShare } from './icons/devices-share.js';
+export { default as IconDevicesStar } from './icons/devices-star.js';
+export { default as IconDevicesUp } from './icons/devices-up.js';
+export { default as IconDevicesX } from './icons/devices-x.js';
+export { default as IconDiabolo } from './icons/diabolo.js';
+export { default as IconDiaboloOff } from './icons/diabolo-off.js';
+export { default as IconDiaboloPlus } from './icons/diabolo-plus.js';
+export { default as IconDialpad } from './icons/dialpad.js';
+export { default as IconDialpadFilled } from './icons/dialpad-filled.js';
+export { default as IconDialpadOff } from './icons/dialpad-off.js';
+export { default as IconDiamond } from './icons/diamond.js';
+export { default as IconDiamondFilled } from './icons/diamond-filled.js';
+export { default as IconDiamondOff } from './icons/diamond-off.js';
+export { default as IconDiamonds } from './icons/diamonds.js';
+export { default as IconDiamondsFilled } from './icons/diamonds-filled.js';
+export { default as IconDice } from './icons/dice.js';
+export { default as IconDice1 } from './icons/dice-1.js';
+export { default as IconDice1Filled } from './icons/dice-1-filled.js';
+export { default as IconDice2 } from './icons/dice-2.js';
+export { default as IconDice2Filled } from './icons/dice-2-filled.js';
+export { default as IconDice3 } from './icons/dice-3.js';
+export { default as IconDice3Filled } from './icons/dice-3-filled.js';
+export { default as IconDice4 } from './icons/dice-4.js';
+export { default as IconDice4Filled } from './icons/dice-4-filled.js';
+export { default as IconDice5 } from './icons/dice-5.js';
+export { default as IconDice5Filled } from './icons/dice-5-filled.js';
+export { default as IconDice6 } from './icons/dice-6.js';
+export { default as IconDice6Filled } from './icons/dice-6-filled.js';
+export { default as IconDiceFilled } from './icons/dice-filled.js';
+export { default as IconDimensions } from './icons/dimensions.js';
+export { default as IconDirection } from './icons/direction.js';
+export { default as IconDirectionHorizontal } from './icons/direction-horizontal.js';
+export { default as IconDirectionSign } from './icons/direction-sign.js';
+export { default as IconDirectionSignFilled } from './icons/direction-sign-filled.js';
+export { default as IconDirectionSignOff } from './icons/direction-sign-off.js';
+export { default as IconDirections } from './icons/directions.js';
+export { default as IconDirectionsOff } from './icons/directions-off.js';
+export { default as IconDisabled } from './icons/disabled.js';
+export { default as IconDisabled2 } from './icons/disabled-2.js';
+export { default as IconDisabledOff } from './icons/disabled-off.js';
+export { default as IconDisc } from './icons/disc.js';
+export { default as IconDiscGolf } from './icons/disc-golf.js';
+export { default as IconDiscOff } from './icons/disc-off.js';
+export { default as IconDiscount } from './icons/discount.js';
+export { default as IconDiscount2 } from './icons/discount-2.js';
+export { default as IconDiscount2Off } from './icons/discount-2-off.js';
+export { default as IconDiscountCheck } from './icons/discount-check.js';
+export { default as IconDiscountCheckFilled } from './icons/discount-check-filled.js';
+export { default as IconDiscountOff } from './icons/discount-off.js';
+export { default as IconDivide } from './icons/divide.js';
+export { default as IconDna } from './icons/dna.js';
+export { default as IconDna2 } from './icons/dna-2.js';
+export { default as IconDna2Off } from './icons/dna-2-off.js';
+export { default as IconDnaOff } from './icons/dna-off.js';
+export { default as IconDog } from './icons/dog.js';
+export { default as IconDogBowl } from './icons/dog-bowl.js';
+export { default as IconDoor } from './icons/door.js';
+export { default as IconDoorEnter } from './icons/door-enter.js';
+export { default as IconDoorExit } from './icons/door-exit.js';
+export { default as IconDoorOff } from './icons/door-off.js';
+export { default as IconDots } from './icons/dots.js';
+export { default as IconDotsCircleHorizontal } from './icons/dots-circle-horizontal.js';
+export { default as IconDotsDiagonal } from './icons/dots-diagonal.js';
+export { default as IconDotsDiagonal2 } from './icons/dots-diagonal-2.js';
+export { default as IconDotsVertical } from './icons/dots-vertical.js';
+export { default as IconDownload } from './icons/download.js';
+export { default as IconDownloadOff } from './icons/download-off.js';
+export { default as IconDragDrop } from './icons/drag-drop.js';
+export { default as IconDragDrop2 } from './icons/drag-drop-2.js';
+export { default as IconDrone } from './icons/drone.js';
+export { default as IconDroneOff } from './icons/drone-off.js';
+export { default as IconDropCircle } from './icons/drop-circle.js';
+export { default as IconDroplet } from './icons/droplet.js';
+export { default as IconDropletBolt } from './icons/droplet-bolt.js';
+export { default as IconDropletCancel } from './icons/droplet-cancel.js';
+export { default as IconDropletCheck } from './icons/droplet-check.js';
+export { default as IconDropletCode } from './icons/droplet-code.js';
+export { default as IconDropletCog } from './icons/droplet-cog.js';
+export { default as IconDropletDollar } from './icons/droplet-dollar.js';
+export { default as IconDropletDown } from './icons/droplet-down.js';
+export { default as IconDropletExclamation } from './icons/droplet-exclamation.js';
+export { default as IconDropletFilled } from './icons/droplet-filled.js';
+export { default as IconDropletHalf } from './icons/droplet-half.js';
+export { default as IconDropletHalf2 } from './icons/droplet-half-2.js';
+export { default as IconDropletHalf2Filled } from './icons/droplet-half-2-filled.js';
+export { default as IconDropletHalfFilled } from './icons/droplet-half-filled.js';
+export { default as IconDropletHeart } from './icons/droplet-heart.js';
+export { default as IconDropletMinus } from './icons/droplet-minus.js';
+export { default as IconDropletOff } from './icons/droplet-off.js';
+export { default as IconDropletPause } from './icons/droplet-pause.js';
+export { default as IconDropletPin } from './icons/droplet-pin.js';
+export { default as IconDropletPlus } from './icons/droplet-plus.js';
+export { default as IconDropletQuestion } from './icons/droplet-question.js';
+export { default as IconDropletSearch } from './icons/droplet-search.js';
+export { default as IconDropletShare } from './icons/droplet-share.js';
+export { default as IconDropletStar } from './icons/droplet-star.js';
+export { default as IconDropletUp } from './icons/droplet-up.js';
+export { default as IconDropletX } from './icons/droplet-x.js';
+export { default as IconDroplets } from './icons/droplets.js';
+export { default as IconDualScreen } from './icons/dual-screen.js';
+export { default as IconEPassport } from './icons/epassport.js';
+export { default as IconEar } from './icons/ear.js';
+export { default as IconEarOff } from './icons/ear-off.js';
+export { default as IconEaseIn } from './icons/ease-in.js';
+export { default as IconEaseInControlPoint } from './icons/ease-in-control-point.js';
+export { default as IconEaseInOut } from './icons/ease-in-out.js';
+export { default as IconEaseInOutControlPoints } from './icons/ease-in-out-control-points.js';
+export { default as IconEaseOut } from './icons/ease-out.js';
+export { default as IconEaseOutControlPoint } from './icons/ease-out-control-point.js';
+export { default as IconEdit } from './icons/edit.js';
+export { default as IconEditCircle } from './icons/edit-circle.js';
+export { default as IconEditCircleOff } from './icons/edit-circle-off.js';
+export { default as IconEditOff } from './icons/edit-off.js';
+export { default as IconEgg } from './icons/egg.js';
+export { default as IconEggCracked } from './icons/egg-cracked.js';
+export { default as IconEggFilled } from './icons/egg-filled.js';
+export { default as IconEggFried } from './icons/egg-fried.js';
+export { default as IconEggOff } from './icons/egg-off.js';
+export { default as IconEggs } from './icons/eggs.js';
+export { default as IconElevator } from './icons/elevator.js';
+export { default as IconElevatorOff } from './icons/elevator-off.js';
+export { default as IconEmergencyBed } from './icons/emergency-bed.js';
+export { default as IconEmpathize } from './icons/empathize.js';
+export { default as IconEmpathizeOff } from './icons/empathize-off.js';
+export { default as IconEmphasis } from './icons/emphasis.js';
+export { default as IconEngine } from './icons/engine.js';
+export { default as IconEngineOff } from './icons/engine-off.js';
+export { default as IconEqual } from './icons/equal.js';
+export { default as IconEqualDouble } from './icons/equal-double.js';
+export { default as IconEqualNot } from './icons/equal-not.js';
+export { default as IconEraser } from './icons/eraser.js';
+export { default as IconEraserOff } from './icons/eraser-off.js';
+export { default as IconError404 } from './icons/error-404.js';
+export { default as IconError404Off } from './icons/error-404-off.js';
+export { default as IconEscalator } from './icons/escalator.js';
+export { default as IconEscalatorDown } from './icons/escalator-down.js';
+export { default as IconEscalatorUp } from './icons/escalator-up.js';
+export { default as IconExchange } from './icons/exchange.js';
+export { default as IconExchangeOff } from './icons/exchange-off.js';
+export { default as IconExclamationCircle } from './icons/exclamation-circle.js';
+export { default as IconExclamationMark } from './icons/exclamation-mark.js';
+export { default as IconExclamationMarkOff } from './icons/exclamation-mark-off.js';
+export { default as IconExplicit } from './icons/explicit.js';
+export { default as IconExplicitOff } from './icons/explicit-off.js';
+export { default as IconExposure } from './icons/exposure.js';
+export { default as IconExposure0 } from './icons/exposure-0.js';
+export { default as IconExposureMinus1 } from './icons/exposure-minus-1.js';
+export { default as IconExposureMinus2 } from './icons/exposure-minus-2.js';
+export { default as IconExposureOff } from './icons/exposure-off.js';
+export { default as IconExposurePlus1 } from './icons/exposure-plus-1.js';
+export { default as IconExposurePlus2 } from './icons/exposure-plus-2.js';
+export { default as IconExternalLink } from './icons/external-link.js';
+export { default as IconExternalLinkOff } from './icons/external-link-off.js';
+export { default as IconEye } from './icons/eye.js';
+export { default as IconEyeBolt } from './icons/eye-bolt.js';
+export { default as IconEyeCancel } from './icons/eye-cancel.js';
+export { default as IconEyeCheck } from './icons/eye-check.js';
+export { default as IconEyeClosed } from './icons/eye-closed.js';
+export { default as IconEyeCode } from './icons/eye-code.js';
+export { default as IconEyeCog } from './icons/eye-cog.js';
+export { default as IconEyeDiscount } from './icons/eye-discount.js';
+export { default as IconEyeDollar } from './icons/eye-dollar.js';
+export { default as IconEyeDown } from './icons/eye-down.js';
+export { default as IconEyeEdit } from './icons/eye-edit.js';
+export { default as IconEyeExclamation } from './icons/eye-exclamation.js';
+export { default as IconEyeFilled } from './icons/eye-filled.js';
+export { default as IconEyeHeart } from './icons/eye-heart.js';
+export { default as IconEyeMinus } from './icons/eye-minus.js';
+export { default as IconEyeOff } from './icons/eye-off.js';
+export { default as IconEyePause } from './icons/eye-pause.js';
+export { default as IconEyePin } from './icons/eye-pin.js';
+export { default as IconEyePlus } from './icons/eye-plus.js';
+export { default as IconEyeQuestion } from './icons/eye-question.js';
+export { default as IconEyeSearch } from './icons/eye-search.js';
+export { default as IconEyeShare } from './icons/eye-share.js';
+export { default as IconEyeStar } from './icons/eye-star.js';
+export { default as IconEyeTable } from './icons/eye-table.js';
+export { default as IconEyeUp } from './icons/eye-up.js';
+export { default as IconEyeX } from './icons/eye-x.js';
+export { default as IconEyeglass } from './icons/eyeglass.js';
+export { default as IconEyeglass2 } from './icons/eyeglass-2.js';
+export { default as IconEyeglassOff } from './icons/eyeglass-off.js';
+export { default as IconFaceId } from './icons/face-id.js';
+export { default as IconFaceIdError } from './icons/face-id-error.js';
+export { default as IconFaceMask } from './icons/face-mask.js';
+export { default as IconFaceMaskOff } from './icons/face-mask-off.js';
+export { default as IconFall } from './icons/fall.js';
+export { default as IconFeather } from './icons/feather.js';
+export { default as IconFeatherOff } from './icons/feather-off.js';
+export { default as IconFence } from './icons/fence.js';
+export { default as IconFenceOff } from './icons/fence-off.js';
+export { default as IconFidgetSpinner } from './icons/fidget-spinner.js';
+export { default as IconFile } from './icons/file.js';
+export { default as IconFile3d } from './icons/file-3d.js';
+export { default as IconFileAlert } from './icons/file-alert.js';
+export { default as IconFileAnalytics } from './icons/file-analytics.js';
+export { default as IconFileArrowLeft } from './icons/file-arrow-left.js';
+export { default as IconFileArrowRight } from './icons/file-arrow-right.js';
+export { default as IconFileBarcode } from './icons/file-barcode.js';
+export { default as IconFileBroken } from './icons/file-broken.js';
+export { default as IconFileCertificate } from './icons/file-certificate.js';
+export { default as IconFileChart } from './icons/file-chart.js';
+export { default as IconFileCheck } from './icons/file-check.js';
+export { default as IconFileCode } from './icons/file-code.js';
+export { default as IconFileCode2 } from './icons/file-code-2.js';
+export { default as IconFileCv } from './icons/file-cv.js';
+export { default as IconFileDatabase } from './icons/file-database.js';
+export { default as IconFileDelta } from './icons/file-delta.js';
+export { default as IconFileDescription } from './icons/file-description.js';
+export { default as IconFileDiff } from './icons/file-diff.js';
+export { default as IconFileDigit } from './icons/file-digit.js';
+export { default as IconFileDislike } from './icons/file-dislike.js';
+export { default as IconFileDollar } from './icons/file-dollar.js';
+export { default as IconFileDots } from './icons/file-dots.js';
+export { default as IconFileDownload } from './icons/file-download.js';
+export { default as IconFileEuro } from './icons/file-euro.js';
+export { default as IconFileExport } from './icons/file-export.js';
+export { default as IconFileFilled } from './icons/file-filled.js';
+export { default as IconFileFunction } from './icons/file-function.js';
+export { default as IconFileHorizontal } from './icons/file-horizontal.js';
+export { default as IconFileImport } from './icons/file-import.js';
+export { default as IconFileInfinity } from './icons/file-infinity.js';
+export { default as IconFileInfo } from './icons/file-info.js';
+export { default as IconFileInvoice } from './icons/file-invoice.js';
+export { default as IconFileLambda } from './icons/file-lambda.js';
+export { default as IconFileLike } from './icons/file-like.js';
+export { default as IconFileMinus } from './icons/file-minus.js';
+export { default as IconFileMusic } from './icons/file-music.js';
+export { default as IconFileOff } from './icons/file-off.js';
+export { default as IconFileOrientation } from './icons/file-orientation.js';
+export { default as IconFilePencil } from './icons/file-pencil.js';
+export { default as IconFilePercent } from './icons/file-percent.js';
+export { default as IconFilePhone } from './icons/file-phone.js';
+export { default as IconFilePlus } from './icons/file-plus.js';
+export { default as IconFilePower } from './icons/file-power.js';
+export { default as IconFileReport } from './icons/file-report.js';
+export { default as IconFileRss } from './icons/file-rss.js';
+export { default as IconFileScissors } from './icons/file-scissors.js';
+export { default as IconFileSearch } from './icons/file-search.js';
+export { default as IconFileSettings } from './icons/file-settings.js';
+export { default as IconFileShredder } from './icons/file-shredder.js';
+export { default as IconFileSignal } from './icons/file-signal.js';
+export { default as IconFileSpreadsheet } from './icons/file-spreadsheet.js';
+export { default as IconFileStack } from './icons/file-stack.js';
+export { default as IconFileStar } from './icons/file-star.js';
+export { default as IconFileSymlink } from './icons/file-symlink.js';
+export { default as IconFileText } from './icons/file-text.js';
+export { default as IconFileTextAi } from './icons/file-text-ai.js';
+export { default as IconFileTime } from './icons/file-time.js';
+export { default as IconFileTypeBmp } from './icons/file-type-bmp.js';
+export { default as IconFileTypeCss } from './icons/file-type-css.js';
+export { default as IconFileTypeCsv } from './icons/file-type-csv.js';
+export { default as IconFileTypeDoc } from './icons/file-type-doc.js';
+export { default as IconFileTypeDocx } from './icons/file-type-docx.js';
+export { default as IconFileTypeHtml } from './icons/file-type-html.js';
+export { default as IconFileTypeJpg } from './icons/file-type-jpg.js';
+export { default as IconFileTypeJs } from './icons/file-type-js.js';
+export { default as IconFileTypeJsx } from './icons/file-type-jsx.js';
+export { default as IconFileTypePdf } from './icons/file-type-pdf.js';
+export { default as IconFileTypePhp } from './icons/file-type-php.js';
+export { default as IconFileTypePng } from './icons/file-type-png.js';
+export { default as IconFileTypePpt } from './icons/file-type-ppt.js';
+export { default as IconFileTypeRs } from './icons/file-type-rs.js';
+export { default as IconFileTypeSql } from './icons/file-type-sql.js';
+export { default as IconFileTypeSvg } from './icons/file-type-svg.js';
+export { default as IconFileTypeTs } from './icons/file-type-ts.js';
+export { default as IconFileTypeTsx } from './icons/file-type-tsx.js';
+export { default as IconFileTypeTxt } from './icons/file-type-txt.js';
+export { default as IconFileTypeVue } from './icons/file-type-vue.js';
+export { default as IconFileTypeXls } from './icons/file-type-xls.js';
+export { default as IconFileTypeXml } from './icons/file-type-xml.js';
+export { default as IconFileTypeZip } from './icons/file-type-zip.js';
+export { default as IconFileTypography } from './icons/file-typography.js';
+export { default as IconFileUnknown } from './icons/file-unknown.js';
+export { default as IconFileUpload } from './icons/file-upload.js';
+export { default as IconFileVector } from './icons/file-vector.js';
+export { default as IconFileX } from './icons/file-x.js';
+export { default as IconFileXFilled } from './icons/file-xfilled.js';
+export { default as IconFileZip } from './icons/file-zip.js';
+export { default as IconFiles } from './icons/files.js';
+export { default as IconFilesOff } from './icons/files-off.js';
+export { default as IconFilter } from './icons/filter.js';
+export { default as IconFilterBolt } from './icons/filter-bolt.js';
+export { default as IconFilterCancel } from './icons/filter-cancel.js';
+export { default as IconFilterCheck } from './icons/filter-check.js';
+export { default as IconFilterCode } from './icons/filter-code.js';
+export { default as IconFilterCog } from './icons/filter-cog.js';
+export { default as IconFilterDiscount } from './icons/filter-discount.js';
+export { default as IconFilterDollar } from './icons/filter-dollar.js';
+export { default as IconFilterDown } from './icons/filter-down.js';
+export { default as IconFilterEdit } from './icons/filter-edit.js';
+export { default as IconFilterExclamation } from './icons/filter-exclamation.js';
+export { default as IconFilterFilled } from './icons/filter-filled.js';
+export { default as IconFilterHeart } from './icons/filter-heart.js';
+export { default as IconFilterMinus } from './icons/filter-minus.js';
+export { default as IconFilterOff } from './icons/filter-off.js';
+export { default as IconFilterPause } from './icons/filter-pause.js';
+export { default as IconFilterPin } from './icons/filter-pin.js';
+export { default as IconFilterPlus } from './icons/filter-plus.js';
+export { default as IconFilterQuestion } from './icons/filter-question.js';
+export { default as IconFilterSearch } from './icons/filter-search.js';
+export { default as IconFilterShare } from './icons/filter-share.js';
+export { default as IconFilterStar } from './icons/filter-star.js';
+export { default as IconFilterUp } from './icons/filter-up.js';
+export { default as IconFilterX } from './icons/filter-x.js';
+export { default as IconFilters } from './icons/filters.js';
+export { default as IconFingerprint } from './icons/fingerprint.js';
+export { default as IconFingerprintOff } from './icons/fingerprint-off.js';
+export { default as IconFingerprintScan } from './icons/fingerprint-scan.js';
+export { default as IconFireExtinguisher } from './icons/fire-extinguisher.js';
+export { default as IconFireHydrant } from './icons/fire-hydrant.js';
+export { default as IconFireHydrantOff } from './icons/fire-hydrant-off.js';
+export { default as IconFiretruck } from './icons/firetruck.js';
+export { default as IconFirstAidKit } from './icons/first-aid-kit.js';
+export { default as IconFirstAidKitOff } from './icons/first-aid-kit-off.js';
+export { default as IconFish } from './icons/fish.js';
+export { default as IconFishBone } from './icons/fish-bone.js';
+export { default as IconFishChristianity } from './icons/fish-christianity.js';
+export { default as IconFishHook } from './icons/fish-hook.js';
+export { default as IconFishHookOff } from './icons/fish-hook-off.js';
+export { default as IconFishOff } from './icons/fish-off.js';
+export { default as IconFlag } from './icons/flag.js';
+export { default as IconFlag2 } from './icons/flag-2.js';
+export { default as IconFlag2Filled } from './icons/flag-2-filled.js';
+export { default as IconFlag2Off } from './icons/flag-2-off.js';
+export { default as IconFlag3 } from './icons/flag-3.js';
+export { default as IconFlag3Filled } from './icons/flag-3-filled.js';
+export { default as IconFlagBolt } from './icons/flag-bolt.js';
+export { default as IconFlagCancel } from './icons/flag-cancel.js';
+export { default as IconFlagCheck } from './icons/flag-check.js';
+export { default as IconFlagCode } from './icons/flag-code.js';
+export { default as IconFlagCog } from './icons/flag-cog.js';
+export { default as IconFlagDiscount } from './icons/flag-discount.js';
+export { default as IconFlagDollar } from './icons/flag-dollar.js';
+export { default as IconFlagDown } from './icons/flag-down.js';
+export { default as IconFlagExclamation } from './icons/flag-exclamation.js';
+export { default as IconFlagFilled } from './icons/flag-filled.js';
+export { default as IconFlagHeart } from './icons/flag-heart.js';
+export { default as IconFlagMinus } from './icons/flag-minus.js';
+export { default as IconFlagOff } from './icons/flag-off.js';
+export { default as IconFlagPause } from './icons/flag-pause.js';
+export { default as IconFlagPin } from './icons/flag-pin.js';
+export { default as IconFlagPlus } from './icons/flag-plus.js';
+export { default as IconFlagQuestion } from './icons/flag-question.js';
+export { default as IconFlagSearch } from './icons/flag-search.js';
+export { default as IconFlagShare } from './icons/flag-share.js';
+export { default as IconFlagStar } from './icons/flag-star.js';
+export { default as IconFlagUp } from './icons/flag-up.js';
+export { default as IconFlagX } from './icons/flag-x.js';
+export { default as IconFlame } from './icons/flame.js';
+export { default as IconFlameOff } from './icons/flame-off.js';
+export { default as IconFlare } from './icons/flare.js';
+export { default as IconFlask } from './icons/flask.js';
+export { default as IconFlask2 } from './icons/flask-2.js';
+export { default as IconFlask2Off } from './icons/flask-2-off.js';
+export { default as IconFlaskOff } from './icons/flask-off.js';
+export { default as IconFlipFlops } from './icons/flip-flops.js';
+export { default as IconFlipHorizontal } from './icons/flip-horizontal.js';
+export { default as IconFlipVertical } from './icons/flip-vertical.js';
+export { default as IconFloatCenter } from './icons/float-center.js';
+export { default as IconFloatLeft } from './icons/float-left.js';
+export { default as IconFloatNone } from './icons/float-none.js';
+export { default as IconFloatRight } from './icons/float-right.js';
+export { default as IconFlower } from './icons/flower.js';
+export { default as IconFlowerOff } from './icons/flower-off.js';
+export { default as IconFocus } from './icons/focus.js';
+export { default as IconFocus2 } from './icons/focus-2.js';
+export { default as IconFocusAuto } from './icons/focus-auto.js';
+export { default as IconFocusCentered } from './icons/focus-centered.js';
+export { default as IconFold } from './icons/fold.js';
+export { default as IconFoldDown } from './icons/fold-down.js';
+export { default as IconFoldUp } from './icons/fold-up.js';
+export { default as IconFolder } from './icons/folder.js';
+export { default as IconFolderBolt } from './icons/folder-bolt.js';
+export { default as IconFolderCancel } from './icons/folder-cancel.js';
+export { default as IconFolderCheck } from './icons/folder-check.js';
+export { default as IconFolderCode } from './icons/folder-code.js';
+export { default as IconFolderCog } from './icons/folder-cog.js';
+export { default as IconFolderDollar } from './icons/folder-dollar.js';
+export { default as IconFolderDown } from './icons/folder-down.js';
+export { default as IconFolderExclamation } from './icons/folder-exclamation.js';
+export { default as IconFolderFilled } from './icons/folder-filled.js';
+export { default as IconFolderHeart } from './icons/folder-heart.js';
+export { default as IconFolderMinus } from './icons/folder-minus.js';
+export { default as IconFolderOff } from './icons/folder-off.js';
+export { default as IconFolderOpen } from './icons/folder-open.js';
+export { default as IconFolderPause } from './icons/folder-pause.js';
+export { default as IconFolderPin } from './icons/folder-pin.js';
+export { default as IconFolderPlus } from './icons/folder-plus.js';
+export { default as IconFolderQuestion } from './icons/folder-question.js';
+export { default as IconFolderSearch } from './icons/folder-search.js';
+export { default as IconFolderShare } from './icons/folder-share.js';
+export { default as IconFolderStar } from './icons/folder-star.js';
+export { default as IconFolderSymlink } from './icons/folder-symlink.js';
+export { default as IconFolderUp } from './icons/folder-up.js';
+export { default as IconFolderX } from './icons/folder-x.js';
+export { default as IconFolders } from './icons/folders.js';
+export { default as IconFoldersOff } from './icons/folders-off.js';
+export { default as IconForbid } from './icons/forbid.js';
+export { default as IconForbid2 } from './icons/forbid-2.js';
+export { default as IconForbid2Filled } from './icons/forbid-2-filled.js';
+export { default as IconForbidFilled } from './icons/forbid-filled.js';
+export { default as IconForklift } from './icons/forklift.js';
+export { default as IconForms } from './icons/forms.js';
+export { default as IconFountain } from './icons/fountain.js';
+export { default as IconFountainFilled } from './icons/fountain-filled.js';
+export { default as IconFountainOff } from './icons/fountain-off.js';
+export { default as IconFrame } from './icons/frame.js';
+export { default as IconFrameOff } from './icons/frame-off.js';
+export { default as IconFreeRights } from './icons/free-rights.js';
+export { default as IconFreezeColumn } from './icons/freeze-column.js';
+export { default as IconFreezeRow } from './icons/freeze-row.js';
+export { default as IconFreezeRowColumn } from './icons/freeze-row-column.js';
+export { default as IconFridge } from './icons/fridge.js';
+export { default as IconFridgeOff } from './icons/fridge-off.js';
+export { default as IconFriends } from './icons/friends.js';
+export { default as IconFriendsOff } from './icons/friends-off.js';
+export { default as IconFrustum } from './icons/frustum.js';
+export { default as IconFrustumOff } from './icons/frustum-off.js';
+export { default as IconFrustumPlus } from './icons/frustum-plus.js';
+export { default as IconFunction } from './icons/function.js';
+export { default as IconFunctionFilled } from './icons/function-filled.js';
+export { default as IconFunctionOff } from './icons/function-off.js';
+export { default as IconGalaxy } from './icons/galaxy.js';
+export { default as IconGardenCart } from './icons/garden-cart.js';
+export { default as IconGardenCartOff } from './icons/garden-cart-off.js';
+export { default as IconGasStation } from './icons/gas-station.js';
+export { default as IconGasStationOff } from './icons/gas-station-off.js';
+export { default as IconGauge } from './icons/gauge.js';
+export { default as IconGaugeFilled } from './icons/gauge-filled.js';
+export { default as IconGaugeOff } from './icons/gauge-off.js';
+export { default as IconGavel } from './icons/gavel.js';
+export { default as IconGenderAgender } from './icons/gender-agender.js';
+export { default as IconGenderAndrogyne } from './icons/gender-androgyne.js';
+export { default as IconGenderBigender } from './icons/gender-bigender.js';
+export { default as IconGenderDemiboy } from './icons/gender-demiboy.js';
+export { default as IconGenderDemigirl } from './icons/gender-demigirl.js';
+export { default as IconGenderEpicene } from './icons/gender-epicene.js';
+export { default as IconGenderFemale } from './icons/gender-female.js';
+export { default as IconGenderFemme } from './icons/gender-femme.js';
+export { default as IconGenderGenderfluid } from './icons/gender-genderfluid.js';
+export { default as IconGenderGenderless } from './icons/gender-genderless.js';
+export { default as IconGenderGenderqueer } from './icons/gender-genderqueer.js';
+export { default as IconGenderHermaphrodite } from './icons/gender-hermaphrodite.js';
+export { default as IconGenderIntergender } from './icons/gender-intergender.js';
+export { default as IconGenderMale } from './icons/gender-male.js';
+export { default as IconGenderNeutrois } from './icons/gender-neutrois.js';
+export { default as IconGenderThird } from './icons/gender-third.js';
+export { default as IconGenderTransgender } from './icons/gender-transgender.js';
+export { default as IconGenderTrasvesti } from './icons/gender-trasvesti.js';
+export { default as IconGeometry } from './icons/geometry.js';
+export { default as IconGhost } from './icons/ghost.js';
+export { default as IconGhost2 } from './icons/ghost-2.js';
+export { default as IconGhost2Filled } from './icons/ghost-2-filled.js';
+export { default as IconGhost3 } from './icons/ghost-3.js';
+export { default as IconGhostFilled } from './icons/ghost-filled.js';
+export { default as IconGhostOff } from './icons/ghost-off.js';
+export { default as IconGif } from './icons/gif.js';
+export { default as IconGift } from './icons/gift.js';
+export { default as IconGiftCard } from './icons/gift-card.js';
+export { default as IconGiftCardFilled } from './icons/gift-card-filled.js';
+export { default as IconGiftOff } from './icons/gift-off.js';
+export { default as IconGitBranch } from './icons/git-branch.js';
+export { default as IconGitBranchDeleted } from './icons/git-branch-deleted.js';
+export { default as IconGitCherryPick } from './icons/git-cherry-pick.js';
+export { default as IconGitCommit } from './icons/git-commit.js';
+export { default as IconGitCompare } from './icons/git-compare.js';
+export { default as IconGitFork } from './icons/git-fork.js';
+export { default as IconGitMerge } from './icons/git-merge.js';
+export { default as IconGitPullRequest } from './icons/git-pull-request.js';
+export { default as IconGitPullRequestClosed } from './icons/git-pull-request-closed.js';
+export { default as IconGitPullRequestDraft } from './icons/git-pull-request-draft.js';
+export { default as IconGizmo } from './icons/gizmo.js';
+export { default as IconGlass } from './icons/glass.js';
+export { default as IconGlassFull } from './icons/glass-full.js';
+export { default as IconGlassFullFilled } from './icons/glass-full-filled.js';
+export { default as IconGlassOff } from './icons/glass-off.js';
+export { default as IconGlobe } from './icons/globe.js';
+export { default as IconGlobeFilled } from './icons/globe-filled.js';
+export { default as IconGlobeOff } from './icons/globe-off.js';
+export { default as IconGoGame } from './icons/go-game.js';
+export { default as IconGolf } from './icons/golf.js';
+export { default as IconGolfOff } from './icons/golf-off.js';
+export { default as IconGps } from './icons/gps.js';
+export { default as IconGradienter } from './icons/gradienter.js';
+export { default as IconGrain } from './icons/grain.js';
+export { default as IconGraph } from './icons/graph.js';
+export { default as IconGraphOff } from './icons/graph-off.js';
+export { default as IconGrave } from './icons/grave.js';
+export { default as IconGrave2 } from './icons/grave-2.js';
+export { default as IconGrid3x3 } from './icons/grid-3x-3.js';
+export { default as IconGrid4x4 } from './icons/grid-4x-4.js';
+export { default as IconGridDots } from './icons/grid-dots.js';
+export { default as IconGridGoldenratio } from './icons/grid-goldenratio.js';
+export { default as IconGridPattern } from './icons/grid-pattern.js';
+export { default as IconGridScan } from './icons/grid-scan.js';
+export { default as IconGrill } from './icons/grill.js';
+export { default as IconGrillFork } from './icons/grill-fork.js';
+export { default as IconGrillOff } from './icons/grill-off.js';
+export { default as IconGrillSpatula } from './icons/grill-spatula.js';
+export { default as IconGripHorizontal } from './icons/grip-horizontal.js';
+export { default as IconGripVertical } from './icons/grip-vertical.js';
+export { default as IconGrowth } from './icons/growth.js';
+export { default as IconGuitarPick } from './icons/guitar-pick.js';
+export { default as IconGuitarPickFilled } from './icons/guitar-pick-filled.js';
+export { default as IconH1 } from './icons/h-1.js';
+export { default as IconH2 } from './icons/h-2.js';
+export { default as IconH3 } from './icons/h-3.js';
+export { default as IconH4 } from './icons/h-4.js';
+export { default as IconH5 } from './icons/h-5.js';
+export { default as IconH6 } from './icons/h-6.js';
+export { default as IconHammer } from './icons/hammer.js';
+export { default as IconHammerOff } from './icons/hammer-off.js';
+export { default as IconHandClick } from './icons/hand-click.js';
+export { default as IconHandFinger } from './icons/hand-finger.js';
+export { default as IconHandFingerOff } from './icons/hand-finger-off.js';
+export { default as IconHandGrab } from './icons/hand-grab.js';
+export { default as IconHandLittleFinger } from './icons/hand-little-finger.js';
+export { default as IconHandMiddleFinger } from './icons/hand-middle-finger.js';
+export { default as IconHandMove } from './icons/hand-move.js';
+export { default as IconHandOff } from './icons/hand-off.js';
+export { default as IconHandRingFinger } from './icons/hand-ring-finger.js';
+export { default as IconHandRock } from './icons/hand-rock.js';
+export { default as IconHandSanitizer } from './icons/hand-sanitizer.js';
+export { default as IconHandStop } from './icons/hand-stop.js';
+export { default as IconHandThreeFingers } from './icons/hand-three-fingers.js';
+export { default as IconHandTwoFingers } from './icons/hand-two-fingers.js';
+export { default as IconHanger } from './icons/hanger.js';
+export { default as IconHanger2 } from './icons/hanger-2.js';
+export { default as IconHangerOff } from './icons/hanger-off.js';
+export { default as IconHash } from './icons/hash.js';
+export { default as IconHaze } from './icons/haze.js';
+export { default as IconHazeMoon } from './icons/haze-moon.js';
+export { default as IconHdr } from './icons/hdr.js';
+export { default as IconHeading } from './icons/heading.js';
+export { default as IconHeadingOff } from './icons/heading-off.js';
+export { default as IconHeadphones } from './icons/headphones.js';
+export { default as IconHeadphonesFilled } from './icons/headphones-filled.js';
+export { default as IconHeadphonesOff } from './icons/headphones-off.js';
+export { default as IconHeadset } from './icons/headset.js';
+export { default as IconHeadsetOff } from './icons/headset-off.js';
+export { default as IconHealthRecognition } from './icons/health-recognition.js';
+export { default as IconHeart } from './icons/heart.js';
+export { default as IconHeartBolt } from './icons/heart-bolt.js';
+export { default as IconHeartBroken } from './icons/heart-broken.js';
+export { default as IconHeartCancel } from './icons/heart-cancel.js';
+export { default as IconHeartCheck } from './icons/heart-check.js';
+export { default as IconHeartCode } from './icons/heart-code.js';
+export { default as IconHeartCog } from './icons/heart-cog.js';
+export { default as IconHeartDiscount } from './icons/heart-discount.js';
+export { default as IconHeartDollar } from './icons/heart-dollar.js';
+export { default as IconHeartDown } from './icons/heart-down.js';
+export { default as IconHeartExclamation } from './icons/heart-exclamation.js';
+export { default as IconHeartFilled } from './icons/heart-filled.js';
+export { default as IconHeartHandshake } from './icons/heart-handshake.js';
+export { default as IconHeartMinus } from './icons/heart-minus.js';
+export { default as IconHeartOff } from './icons/heart-off.js';
+export { default as IconHeartPause } from './icons/heart-pause.js';
+export { default as IconHeartPin } from './icons/heart-pin.js';
+export { default as IconHeartPlus } from './icons/heart-plus.js';
+export { default as IconHeartQuestion } from './icons/heart-question.js';
+export { default as IconHeartRateMonitor } from './icons/heart-rate-monitor.js';
+export { default as IconHeartSearch } from './icons/heart-search.js';
+export { default as IconHeartShare } from './icons/heart-share.js';
+export { default as IconHeartStar } from './icons/heart-star.js';
+export { default as IconHeartUp } from './icons/heart-up.js';
+export { default as IconHeartX } from './icons/heart-x.js';
+export { default as IconHeartbeat } from './icons/heartbeat.js';
+export { default as IconHearts } from './icons/hearts.js';
+export { default as IconHeartsOff } from './icons/hearts-off.js';
+export { default as IconHelicopter } from './icons/helicopter.js';
+export { default as IconHelicopterLanding } from './icons/helicopter-landing.js';
+export { default as IconHelmet } from './icons/helmet.js';
+export { default as IconHelmetOff } from './icons/helmet-off.js';
+export { default as IconHelp } from './icons/help.js';
+export { default as IconHelpCircle } from './icons/help-circle.js';
+export { default as IconHelpCircleFilled } from './icons/help-circle-filled.js';
+export { default as IconHelpHexagon } from './icons/help-hexagon.js';
+export { default as IconHelpHexagonFilled } from './icons/help-hexagon-filled.js';
+export { default as IconHelpOctagon } from './icons/help-octagon.js';
+export { default as IconHelpOctagonFilled } from './icons/help-octagon-filled.js';
+export { default as IconHelpOff } from './icons/help-off.js';
+export { default as IconHelpSmall } from './icons/help-small.js';
+export { default as IconHelpSquare } from './icons/help-square.js';
+export { default as IconHelpSquareFilled } from './icons/help-square-filled.js';
+export { default as IconHelpSquareRounded } from './icons/help-square-rounded.js';
+export { default as IconHelpSquareRoundedFilled } from './icons/help-square-rounded-filled.js';
+export { default as IconHelpTriangle } from './icons/help-triangle.js';
+export { default as IconHelpTriangleFilled } from './icons/help-triangle-filled.js';
+export { default as IconHemisphere } from './icons/hemisphere.js';
+export { default as IconHemisphereOff } from './icons/hemisphere-off.js';
+export { default as IconHemispherePlus } from './icons/hemisphere-plus.js';
+export { default as IconHexagon } from './icons/hexagon.js';
+export { default as IconHexagon0Filled } from './icons/hexagon-0-filled.js';
+export { default as IconHexagon1Filled } from './icons/hexagon-1-filled.js';
+export { default as IconHexagon2Filled } from './icons/hexagon-2-filled.js';
+export { default as IconHexagon3Filled } from './icons/hexagon-3-filled.js';
+export { default as IconHexagon3d } from './icons/hexagon-3d.js';
+export { default as IconHexagon4Filled } from './icons/hexagon-4-filled.js';
+export { default as IconHexagon5Filled } from './icons/hexagon-5-filled.js';
+export { default as IconHexagon6Filled } from './icons/hexagon-6-filled.js';
+export { default as IconHexagon7Filled } from './icons/hexagon-7-filled.js';
+export { default as IconHexagon8Filled } from './icons/hexagon-8-filled.js';
+export { default as IconHexagon9Filled } from './icons/hexagon-9-filled.js';
+export { default as IconHexagonFilled } from './icons/hexagon-filled.js';
+export { default as IconHexagonLetterA } from './icons/hexagon-letter-a.js';
+export { default as IconHexagonLetterB } from './icons/hexagon-letter-b.js';
+export { default as IconHexagonLetterC } from './icons/hexagon-letter-c.js';
+export { default as IconHexagonLetterD } from './icons/hexagon-letter-d.js';
+export { default as IconHexagonLetterE } from './icons/hexagon-letter-e.js';
+export { default as IconHexagonLetterF } from './icons/hexagon-letter-f.js';
+export { default as IconHexagonLetterG } from './icons/hexagon-letter-g.js';
+export { default as IconHexagonLetterH } from './icons/hexagon-letter-h.js';
+export { default as IconHexagonLetterI } from './icons/hexagon-letter-i.js';
+export { default as IconHexagonLetterJ } from './icons/hexagon-letter-j.js';
+export { default as IconHexagonLetterK } from './icons/hexagon-letter-k.js';
+export { default as IconHexagonLetterL } from './icons/hexagon-letter-l.js';
+export { default as IconHexagonLetterM } from './icons/hexagon-letter-m.js';
+export { default as IconHexagonLetterN } from './icons/hexagon-letter-n.js';
+export { default as IconHexagonLetterO } from './icons/hexagon-letter-o.js';
+export { default as IconHexagonLetterP } from './icons/hexagon-letter-p.js';
+export { default as IconHexagonLetterQ } from './icons/hexagon-letter-q.js';
+export { default as IconHexagonLetterR } from './icons/hexagon-letter-r.js';
+export { default as IconHexagonLetterS } from './icons/hexagon-letter-s.js';
+export { default as IconHexagonLetterT } from './icons/hexagon-letter-t.js';
+export { default as IconHexagonLetterU } from './icons/hexagon-letter-u.js';
+export { default as IconHexagonLetterV } from './icons/hexagon-letter-v.js';
+export { default as IconHexagonLetterW } from './icons/hexagon-letter-w.js';
+export { default as IconHexagonLetterX } from './icons/hexagon-letter-x.js';
+export { default as IconHexagonLetterY } from './icons/hexagon-letter-y.js';
+export { default as IconHexagonLetterZ } from './icons/hexagon-letter-z.js';
+export { default as IconHexagonMinus } from './icons/hexagon-minus.js';
+export { default as IconHexagonMinus2 } from './icons/hexagon-minus-2.js';
+export { default as IconHexagonNumber0 } from './icons/hexagon-number-0.js';
+export { default as IconHexagonNumber1 } from './icons/hexagon-number-1.js';
+export { default as IconHexagonNumber2 } from './icons/hexagon-number-2.js';
+export { default as IconHexagonNumber3 } from './icons/hexagon-number-3.js';
+export { default as IconHexagonNumber4 } from './icons/hexagon-number-4.js';
+export { default as IconHexagonNumber5 } from './icons/hexagon-number-5.js';
+export { default as IconHexagonNumber6 } from './icons/hexagon-number-6.js';
+export { default as IconHexagonNumber7 } from './icons/hexagon-number-7.js';
+export { default as IconHexagonNumber8 } from './icons/hexagon-number-8.js';
+export { default as IconHexagonNumber9 } from './icons/hexagon-number-9.js';
+export { default as IconHexagonOff } from './icons/hexagon-off.js';
+export { default as IconHexagonPlus } from './icons/hexagon-plus.js';
+export { default as IconHexagonPlus2 } from './icons/hexagon-plus-2.js';
+export { default as IconHexagonalPrism } from './icons/hexagonal-prism.js';
+export { default as IconHexagonalPrismOff } from './icons/hexagonal-prism-off.js';
+export { default as IconHexagonalPrismPlus } from './icons/hexagonal-prism-plus.js';
+export { default as IconHexagonalPyramid } from './icons/hexagonal-pyramid.js';
+export { default as IconHexagonalPyramidOff } from './icons/hexagonal-pyramid-off.js';
+export { default as IconHexagonalPyramidPlus } from './icons/hexagonal-pyramid-plus.js';
+export { default as IconHexagons } from './icons/hexagons.js';
+export { default as IconHexagonsOff } from './icons/hexagons-off.js';
+export { default as IconHierarchy } from './icons/hierarchy.js';
+export { default as IconHierarchy2 } from './icons/hierarchy-2.js';
+export { default as IconHierarchy3 } from './icons/hierarchy-3.js';
+export { default as IconHierarchyOff } from './icons/hierarchy-off.js';
+export { default as IconHighlight } from './icons/highlight.js';
+export { default as IconHighlightOff } from './icons/highlight-off.js';
+export { default as IconHistory } from './icons/history.js';
+export { default as IconHistoryOff } from './icons/history-off.js';
+export { default as IconHistoryToggle } from './icons/history-toggle.js';
+export { default as IconHome } from './icons/home.js';
+export { default as IconHome2 } from './icons/home-2.js';
+export { default as IconHomeBolt } from './icons/home-bolt.js';
+export { default as IconHomeCancel } from './icons/home-cancel.js';
+export { default as IconHomeCheck } from './icons/home-check.js';
+export { default as IconHomeCog } from './icons/home-cog.js';
+export { default as IconHomeDollar } from './icons/home-dollar.js';
+export { default as IconHomeDot } from './icons/home-dot.js';
+export { default as IconHomeDown } from './icons/home-down.js';
+export { default as IconHomeEco } from './icons/home-eco.js';
+export { default as IconHomeEdit } from './icons/home-edit.js';
+export { default as IconHomeExclamation } from './icons/home-exclamation.js';
+export { default as IconHomeHand } from './icons/home-hand.js';
+export { default as IconHomeHeart } from './icons/home-heart.js';
+export { default as IconHomeInfinity } from './icons/home-infinity.js';
+export { default as IconHomeLink } from './icons/home-link.js';
+export { default as IconHomeMinus } from './icons/home-minus.js';
+export { default as IconHomeMove } from './icons/home-move.js';
+export { default as IconHomeOff } from './icons/home-off.js';
+export { default as IconHomePlus } from './icons/home-plus.js';
+export { default as IconHomeQuestion } from './icons/home-question.js';
+export { default as IconHomeRibbon } from './icons/home-ribbon.js';
+export { default as IconHomeSearch } from './icons/home-search.js';
+export { default as IconHomeShare } from './icons/home-share.js';
+export { default as IconHomeShield } from './icons/home-shield.js';
+export { default as IconHomeSignal } from './icons/home-signal.js';
+export { default as IconHomeStar } from './icons/home-star.js';
+export { default as IconHomeStats } from './icons/home-stats.js';
+export { default as IconHomeUp } from './icons/home-up.js';
+export { default as IconHomeX } from './icons/home-x.js';
+export { default as IconHorse } from './icons/horse.js';
+export { default as IconHorseToy } from './icons/horse-toy.js';
+export { default as IconHorseshoe } from './icons/horseshoe.js';
+export { default as IconHotelService } from './icons/hotel-service.js';
+export { default as IconHourglass } from './icons/hourglass.js';
+export { default as IconHourglassEmpty } from './icons/hourglass-empty.js';
+export { default as IconHourglassFilled } from './icons/hourglass-filled.js';
+export { default as IconHourglassHigh } from './icons/hourglass-high.js';
+export { default as IconHourglassLow } from './icons/hourglass-low.js';
+export { default as IconHourglassOff } from './icons/hourglass-off.js';
+export { default as IconHtml } from './icons/html.js';
+export { default as IconHttpConnect } from './icons/http-connect.js';
+export { default as IconHttpDelete } from './icons/http-delete.js';
+export { default as IconHttpGet } from './icons/http-get.js';
+export { default as IconHttpHead } from './icons/http-head.js';
+export { default as IconHttpOptions } from './icons/http-options.js';
+export { default as IconHttpPatch } from './icons/http-patch.js';
+export { default as IconHttpPost } from './icons/http-post.js';
+export { default as IconHttpPut } from './icons/http-put.js';
+export { default as IconHttpQue } from './icons/http-que.js';
+export { default as IconHttpTrace } from './icons/http-trace.js';
+export { default as IconIceCream } from './icons/ice-cream.js';
+export { default as IconIceCream2 } from './icons/ice-cream-2.js';
+export { default as IconIceCreamOff } from './icons/ice-cream-off.js';
+export { default as IconIceSkating } from './icons/ice-skating.js';
+export { default as IconIcons } from './icons/icons.js';
+export { default as IconIconsOff } from './icons/icons-off.js';
+export { default as IconId } from './icons/id.js';
+export { default as IconIdBadge } from './icons/id-badge.js';
+export { default as IconIdBadge2 } from './icons/id-badge-2.js';
+export { default as IconIdBadgeOff } from './icons/id-badge-off.js';
+export { default as IconIdOff } from './icons/id-off.js';
+export { default as IconInbox } from './icons/inbox.js';
+export { default as IconInboxOff } from './icons/inbox-off.js';
+export { default as IconIndentDecrease } from './icons/indent-decrease.js';
+export { default as IconIndentIncrease } from './icons/indent-increase.js';
+export { default as IconInfinity } from './icons/infinity.js';
+export { default as IconInfinityOff } from './icons/infinity-off.js';
+export { default as IconInfoCircle } from './icons/info-circle.js';
+export { default as IconInfoCircleFilled } from './icons/info-circle-filled.js';
+export { default as IconInfoHexagon } from './icons/info-hexagon.js';
+export { default as IconInfoHexagonFilled } from './icons/info-hexagon-filled.js';
+export { default as IconInfoOctagon } from './icons/info-octagon.js';
+export { default as IconInfoOctagonFilled } from './icons/info-octagon-filled.js';
+export { default as IconInfoSmall } from './icons/info-small.js';
+export { default as IconInfoSquare } from './icons/info-square.js';
+export { default as IconInfoSquareFilled } from './icons/info-square-filled.js';
+export { default as IconInfoSquareRounded } from './icons/info-square-rounded.js';
+export { default as IconInfoSquareRoundedFilled } from './icons/info-square-rounded-filled.js';
+export { default as IconInfoTriangle } from './icons/info-triangle.js';
+export { default as IconInfoTriangleFilled } from './icons/info-triangle-filled.js';
+export { default as IconInnerShadowBottom } from './icons/inner-shadow-bottom.js';
+export { default as IconInnerShadowBottomFilled } from './icons/inner-shadow-bottom-filled.js';
+export { default as IconInnerShadowBottomLeft } from './icons/inner-shadow-bottom-left.js';
+export { default as IconInnerShadowBottomLeftFilled } from './icons/inner-shadow-bottom-left-filled.js';
+export { default as IconInnerShadowBottomRight } from './icons/inner-shadow-bottom-right.js';
+export { default as IconInnerShadowBottomRightFilled } from './icons/inner-shadow-bottom-right-filled.js';
+export { default as IconInnerShadowLeft } from './icons/inner-shadow-left.js';
+export { default as IconInnerShadowLeftFilled } from './icons/inner-shadow-left-filled.js';
+export { default as IconInnerShadowRight } from './icons/inner-shadow-right.js';
+export { default as IconInnerShadowRightFilled } from './icons/inner-shadow-right-filled.js';
+export { default as IconInnerShadowTop } from './icons/inner-shadow-top.js';
+export { default as IconInnerShadowTopFilled } from './icons/inner-shadow-top-filled.js';
+export { default as IconInnerShadowTopLeft } from './icons/inner-shadow-top-left.js';
+export { default as IconInnerShadowTopLeftFilled } from './icons/inner-shadow-top-left-filled.js';
+export { default as IconInnerShadowTopRight } from './icons/inner-shadow-top-right.js';
+export { default as IconInnerShadowTopRightFilled } from './icons/inner-shadow-top-right-filled.js';
+export { default as IconInputAi } from './icons/input-ai.js';
+export { default as IconInputCheck } from './icons/input-check.js';
+export { default as IconInputSearch } from './icons/input-search.js';
+export { default as IconInputX } from './icons/input-x.js';
+export { default as IconIroning } from './icons/ironing.js';
+export { default as IconIroning1 } from './icons/ironing-1.js';
+export { default as IconIroning2 } from './icons/ironing-2.js';
+export { default as IconIroning3 } from './icons/ironing-3.js';
+export { default as IconIroningOff } from './icons/ironing-off.js';
+export { default as IconIroningSteam } from './icons/ironing-steam.js';
+export { default as IconIroningSteamOff } from './icons/ironing-steam-off.js';
+export { default as IconIrregularPolyhedron } from './icons/irregular-polyhedron.js';
+export { default as IconIrregularPolyhedronOff } from './icons/irregular-polyhedron-off.js';
+export { default as IconIrregularPolyhedronPlus } from './icons/irregular-polyhedron-plus.js';
+export { default as IconItalic } from './icons/italic.js';
+export { default as IconJacket } from './icons/jacket.js';
+export { default as IconJetpack } from './icons/jetpack.js';
+export { default as IconJewishStar } from './icons/jewish-star.js';
+export { default as IconJewishStarFilled } from './icons/jewish-star-filled.js';
+export { default as IconJpg } from './icons/jpg.js';
+export { default as IconJson } from './icons/json.js';
+export { default as IconJumpRope } from './icons/jump-rope.js';
+export { default as IconKarate } from './icons/karate.js';
+export { default as IconKayak } from './icons/kayak.js';
+export { default as IconKering } from './icons/kering.js';
+export { default as IconKey } from './icons/key.js';
+export { default as IconKeyOff } from './icons/key-off.js';
+export { default as IconKeyboard } from './icons/keyboard.js';
+export { default as IconKeyboardHide } from './icons/keyboard-hide.js';
+export { default as IconKeyboardOff } from './icons/keyboard-off.js';
+export { default as IconKeyboardShow } from './icons/keyboard-show.js';
+export { default as IconKeyframe } from './icons/keyframe.js';
+export { default as IconKeyframeAlignCenter } from './icons/keyframe-align-center.js';
+export { default as IconKeyframeAlignCenterFilled } from './icons/keyframe-align-center-filled.js';
+export { default as IconKeyframeAlignHorizontal } from './icons/keyframe-align-horizontal.js';
+export { default as IconKeyframeAlignHorizontalFilled } from './icons/keyframe-align-horizontal-filled.js';
+export { default as IconKeyframeAlignVertical } from './icons/keyframe-align-vertical.js';
+export { default as IconKeyframeAlignVerticalFilled } from './icons/keyframe-align-vertical-filled.js';
+export { default as IconKeyframeFilled } from './icons/keyframe-filled.js';
+export { default as IconKeyframes } from './icons/keyframes.js';
+export { default as IconKeyframesFilled } from './icons/keyframes-filled.js';
+export { default as IconLadder } from './icons/ladder.js';
+export { default as IconLadderOff } from './icons/ladder-off.js';
+export { default as IconLadle } from './icons/ladle.js';
+export { default as IconLambda } from './icons/lambda.js';
+export { default as IconLamp } from './icons/lamp.js';
+export { default as IconLamp2 } from './icons/lamp-2.js';
+export { default as IconLampOff } from './icons/lamp-off.js';
+export { default as IconLane } from './icons/lane.js';
+export { default as IconLanguage } from './icons/language.js';
+export { default as IconLanguageHiragana } from './icons/language-hiragana.js';
+export { default as IconLanguageKatakana } from './icons/language-katakana.js';
+export { default as IconLanguageOff } from './icons/language-off.js';
+export { default as IconLasso } from './icons/lasso.js';
+export { default as IconLassoOff } from './icons/lasso-off.js';
+export { default as IconLassoPolygon } from './icons/lasso-polygon.js';
+export { default as IconLayersDifference } from './icons/layers-difference.js';
+export { default as IconLayersIntersect } from './icons/layers-intersect.js';
+export { default as IconLayersIntersect2 } from './icons/layers-intersect-2.js';
+export { default as IconLayersLinked } from './icons/layers-linked.js';
+export { default as IconLayersOff } from './icons/layers-off.js';
+export { default as IconLayersSubtract } from './icons/layers-subtract.js';
+export { default as IconLayersUnion } from './icons/layers-union.js';
+export { default as IconLayout } from './icons/layout.js';
+export { default as IconLayout2 } from './icons/layout-2.js';
+export { default as IconLayoutAlignBottom } from './icons/layout-align-bottom.js';
+export { default as IconLayoutAlignCenter } from './icons/layout-align-center.js';
+export { default as IconLayoutAlignLeft } from './icons/layout-align-left.js';
+export { default as IconLayoutAlignMiddle } from './icons/layout-align-middle.js';
+export { default as IconLayoutAlignRight } from './icons/layout-align-right.js';
+export { default as IconLayoutAlignTop } from './icons/layout-align-top.js';
+export { default as IconLayoutBoard } from './icons/layout-board.js';
+export { default as IconLayoutBoardSplit } from './icons/layout-board-split.js';
+export { default as IconLayoutBottombar } from './icons/layout-bottombar.js';
+export { default as IconLayoutBottombarCollapse } from './icons/layout-bottombar-collapse.js';
+export { default as IconLayoutBottombarCollapseFilled } from './icons/layout-bottombar-collapse-filled.js';
+export { default as IconLayoutBottombarExpand } from './icons/layout-bottombar-expand.js';
+export { default as IconLayoutBottombarExpandFilled } from './icons/layout-bottombar-expand-filled.js';
+export { default as IconLayoutBottombarFilled } from './icons/layout-bottombar-filled.js';
+export { default as IconLayoutCards } from './icons/layout-cards.js';
+export { default as IconLayoutCollage } from './icons/layout-collage.js';
+export { default as IconLayoutColumns } from './icons/layout-columns.js';
+export { default as IconLayoutDashboard } from './icons/layout-dashboard.js';
+export { default as IconLayoutDistributeHorizontal } from './icons/layout-distribute-horizontal.js';
+export { default as IconLayoutDistributeVertical } from './icons/layout-distribute-vertical.js';
+export { default as IconLayoutGrid } from './icons/layout-grid.js';
+export { default as IconLayoutGridAdd } from './icons/layout-grid-add.js';
+export { default as IconLayoutGridRemove } from './icons/layout-grid-remove.js';
+export { default as IconLayoutKanban } from './icons/layout-kanban.js';
+export { default as IconLayoutList } from './icons/layout-list.js';
+export { default as IconLayoutNavbar } from './icons/layout-navbar.js';
+export { default as IconLayoutNavbarCollapse } from './icons/layout-navbar-collapse.js';
+export { default as IconLayoutNavbarCollapseFilled } from './icons/layout-navbar-collapse-filled.js';
+export { default as IconLayoutNavbarExpand } from './icons/layout-navbar-expand.js';
+export { default as IconLayoutNavbarExpandFilled } from './icons/layout-navbar-expand-filled.js';
+export { default as IconLayoutNavbarFilled } from './icons/layout-navbar-filled.js';
+export { default as IconLayoutOff } from './icons/layout-off.js';
+export { default as IconLayoutRows } from './icons/layout-rows.js';
+export { default as IconLayoutSidebar } from './icons/layout-sidebar.js';
+export { default as IconLayoutSidebarLeftCollapse } from './icons/layout-sidebar-left-collapse.js';
+export { default as IconLayoutSidebarLeftCollapseFilled } from './icons/layout-sidebar-left-collapse-filled.js';
+export { default as IconLayoutSidebarLeftExpand } from './icons/layout-sidebar-left-expand.js';
+export { default as IconLayoutSidebarLeftExpandFilled } from './icons/layout-sidebar-left-expand-filled.js';
+export { default as IconLayoutSidebarRight } from './icons/layout-sidebar-right.js';
+export { default as IconLayoutSidebarRightCollapse } from './icons/layout-sidebar-right-collapse.js';
+export { default as IconLayoutSidebarRightCollapseFilled } from './icons/layout-sidebar-right-collapse-filled.js';
+export { default as IconLayoutSidebarRightExpand } from './icons/layout-sidebar-right-expand.js';
+export { default as IconLayoutSidebarRightExpandFilled } from './icons/layout-sidebar-right-expand-filled.js';
+export { default as IconLeaf } from './icons/leaf.js';
+export { default as IconLeafOff } from './icons/leaf-off.js';
+export { default as IconLego } from './icons/lego.js';
+export { default as IconLegoOff } from './icons/lego-off.js';
+export { default as IconLemon } from './icons/lemon.js';
+export { default as IconLemon2 } from './icons/lemon-2.js';
+export { default as IconLetterA } from './icons/letter-a.js';
+export { default as IconLetterASmall } from './icons/letter-asmall.js';
+export { default as IconLetterB } from './icons/letter-b.js';
+export { default as IconLetterBSmall } from './icons/letter-bsmall.js';
+export { default as IconLetterC } from './icons/letter-c.js';
+export { default as IconLetterCSmall } from './icons/letter-csmall.js';
+export { default as IconLetterCase } from './icons/letter-case.js';
+export { default as IconLetterCaseLower } from './icons/letter-case-lower.js';
+export { default as IconLetterCaseToggle } from './icons/letter-case-toggle.js';
+export { default as IconLetterCaseUpper } from './icons/letter-case-upper.js';
+export { default as IconLetterD } from './icons/letter-d.js';
+export { default as IconLetterDSmall } from './icons/letter-dsmall.js';
+export { default as IconLetterE } from './icons/letter-e.js';
+export { default as IconLetterESmall } from './icons/letter-esmall.js';
+export { default as IconLetterF } from './icons/letter-f.js';
+export { default as IconLetterFSmall } from './icons/letter-fsmall.js';
+export { default as IconLetterG } from './icons/letter-g.js';
+export { default as IconLetterGSmall } from './icons/letter-gsmall.js';
+export { default as IconLetterH } from './icons/letter-h.js';
+export { default as IconLetterHSmall } from './icons/letter-hsmall.js';
+export { default as IconLetterI } from './icons/letter-i.js';
+export { default as IconLetterISmall } from './icons/letter-ismall.js';
+export { default as IconLetterJ } from './icons/letter-j.js';
+export { default as IconLetterJSmall } from './icons/letter-jsmall.js';
+export { default as IconLetterK } from './icons/letter-k.js';
+export { default as IconLetterKSmall } from './icons/letter-ksmall.js';
+export { default as IconLetterL } from './icons/letter-l.js';
+export { default as IconLetterLSmall } from './icons/letter-lsmall.js';
+export { default as IconLetterM } from './icons/letter-m.js';
+export { default as IconLetterMSmall } from './icons/letter-msmall.js';
+export { default as IconLetterN } from './icons/letter-n.js';
+export { default as IconLetterNSmall } from './icons/letter-nsmall.js';
+export { default as IconLetterO } from './icons/letter-o.js';
+export { default as IconLetterOSmall } from './icons/letter-osmall.js';
+export { default as IconLetterP } from './icons/letter-p.js';
+export { default as IconLetterPSmall } from './icons/letter-psmall.js';
+export { default as IconLetterQ } from './icons/letter-q.js';
+export { default as IconLetterQSmall } from './icons/letter-qsmall.js';
+export { default as IconLetterR } from './icons/letter-r.js';
+export { default as IconLetterRSmall } from './icons/letter-rsmall.js';
+export { default as IconLetterS } from './icons/letter-s.js';
+export { default as IconLetterSSmall } from './icons/letter-ssmall.js';
+export { default as IconLetterSpacing } from './icons/letter-spacing.js';
+export { default as IconLetterT } from './icons/letter-t.js';
+export { default as IconLetterTSmall } from './icons/letter-tsmall.js';
+export { default as IconLetterU } from './icons/letter-u.js';
+export { default as IconLetterUSmall } from './icons/letter-usmall.js';
+export { default as IconLetterV } from './icons/letter-v.js';
+export { default as IconLetterVSmall } from './icons/letter-vsmall.js';
+export { default as IconLetterW } from './icons/letter-w.js';
+export { default as IconLetterWSmall } from './icons/letter-wsmall.js';
+export { default as IconLetterX } from './icons/letter-x.js';
+export { default as IconLetterXSmall } from './icons/letter-xsmall.js';
+export { default as IconLetterY } from './icons/letter-y.js';
+export { default as IconLetterYSmall } from './icons/letter-ysmall.js';
+export { default as IconLetterZ } from './icons/letter-z.js';
+export { default as IconLetterZSmall } from './icons/letter-zsmall.js';
+export { default as IconLicense } from './icons/license.js';
+export { default as IconLicenseOff } from './icons/license-off.js';
+export { default as IconLifebuoy } from './icons/lifebuoy.js';
+export { default as IconLifebuoyOff } from './icons/lifebuoy-off.js';
+export { default as IconLighter } from './icons/lighter.js';
+export { default as IconLine } from './icons/line.js';
+export { default as IconLineDashed } from './icons/line-dashed.js';
+export { default as IconLineDotted } from './icons/line-dotted.js';
+export { default as IconLineHeight } from './icons/line-height.js';
+export { default as IconLineScan } from './icons/line-scan.js';
+export { default as IconLink } from './icons/link.js';
+export { default as IconLinkOff } from './icons/link-off.js';
+export { default as IconList } from './icons/list.js';
+export { default as IconListCheck } from './icons/list-check.js';
+export { default as IconListDetails } from './icons/list-details.js';
+export { default as IconListLetters } from './icons/list-letters.js';
+export { default as IconListNumbers } from './icons/list-numbers.js';
+export { default as IconListSearch } from './icons/list-search.js';
+export { default as IconListTree } from './icons/list-tree.js';
+export { default as IconLivePhoto } from './icons/live-photo.js';
+export { default as IconLivePhotoOff } from './icons/live-photo-off.js';
+export { default as IconLiveView } from './icons/live-view.js';
+export { default as IconLoadBalancer } from './icons/load-balancer.js';
+export { default as IconLoader } from './icons/loader.js';
+export { default as IconLoader2 } from './icons/loader-2.js';
+export { default as IconLoader3 } from './icons/loader-3.js';
+export { default as IconLoaderQuarter } from './icons/loader-quarter.js';
+export { default as IconLocation } from './icons/location.js';
+export { default as IconLocationBolt } from './icons/location-bolt.js';
+export { default as IconLocationBroken } from './icons/location-broken.js';
+export { default as IconLocationCancel } from './icons/location-cancel.js';
+export { default as IconLocationCheck } from './icons/location-check.js';
+export { default as IconLocationCode } from './icons/location-code.js';
+export { default as IconLocationCog } from './icons/location-cog.js';
+export { default as IconLocationDiscount } from './icons/location-discount.js';
+export { default as IconLocationDollar } from './icons/location-dollar.js';
+export { default as IconLocationDown } from './icons/location-down.js';
+export { default as IconLocationExclamation } from './icons/location-exclamation.js';
+export { default as IconLocationFilled } from './icons/location-filled.js';
+export { default as IconLocationHeart } from './icons/location-heart.js';
+export { default as IconLocationMinus } from './icons/location-minus.js';
+export { default as IconLocationOff } from './icons/location-off.js';
+export { default as IconLocationPause } from './icons/location-pause.js';
+export { default as IconLocationPin } from './icons/location-pin.js';
+export { default as IconLocationPlus } from './icons/location-plus.js';
+export { default as IconLocationQuestion } from './icons/location-question.js';
+export { default as IconLocationSearch } from './icons/location-search.js';
+export { default as IconLocationShare } from './icons/location-share.js';
+export { default as IconLocationStar } from './icons/location-star.js';
+export { default as IconLocationUp } from './icons/location-up.js';
+export { default as IconLocationX } from './icons/location-x.js';
+export { default as IconLock } from './icons/lock.js';
+export { default as IconLockAccess } from './icons/lock-access.js';
+export { default as IconLockAccessOff } from './icons/lock-access-off.js';
+export { default as IconLockBolt } from './icons/lock-bolt.js';
+export { default as IconLockCancel } from './icons/lock-cancel.js';
+export { default as IconLockCheck } from './icons/lock-check.js';
+export { default as IconLockCode } from './icons/lock-code.js';
+export { default as IconLockCog } from './icons/lock-cog.js';
+export { default as IconLockDollar } from './icons/lock-dollar.js';
+export { default as IconLockDown } from './icons/lock-down.js';
+export { default as IconLockExclamation } from './icons/lock-exclamation.js';
+export { default as IconLockHeart } from './icons/lock-heart.js';
+export { default as IconLockMinus } from './icons/lock-minus.js';
+export { default as IconLockOff } from './icons/lock-off.js';
+export { default as IconLockOpen } from './icons/lock-open.js';
+export { default as IconLockOpenOff } from './icons/lock-open-off.js';
+export { default as IconLockPause } from './icons/lock-pause.js';
+export { default as IconLockPin } from './icons/lock-pin.js';
+export { default as IconLockPlus } from './icons/lock-plus.js';
+export { default as IconLockQuestion } from './icons/lock-question.js';
+export { default as IconLockSearch } from './icons/lock-search.js';
+export { default as IconLockShare } from './icons/lock-share.js';
+export { default as IconLockSquare } from './icons/lock-square.js';
+export { default as IconLockSquareRounded } from './icons/lock-square-rounded.js';
+export { default as IconLockSquareRoundedFilled } from './icons/lock-square-rounded-filled.js';
+export { default as IconLockStar } from './icons/lock-star.js';
+export { default as IconLockUp } from './icons/lock-up.js';
+export { default as IconLockX } from './icons/lock-x.js';
+export { default as IconLogicAnd } from './icons/logic-and.js';
+export { default as IconLogicBuffer } from './icons/logic-buffer.js';
+export { default as IconLogicNand } from './icons/logic-nand.js';
+export { default as IconLogicNor } from './icons/logic-nor.js';
+export { default as IconLogicNot } from './icons/logic-not.js';
+export { default as IconLogicOr } from './icons/logic-or.js';
+export { default as IconLogicXnor } from './icons/logic-xnor.js';
+export { default as IconLogicXor } from './icons/logic-xor.js';
+export { default as IconLogin } from './icons/login.js';
+export { default as IconLogin2 } from './icons/login-2.js';
+export { default as IconLogout } from './icons/logout.js';
+export { default as IconLogout2 } from './icons/logout-2.js';
+export { default as IconLollipop } from './icons/lollipop.js';
+export { default as IconLollipopOff } from './icons/lollipop-off.js';
+export { default as IconLuggage } from './icons/luggage.js';
+export { default as IconLuggageOff } from './icons/luggage-off.js';
+export { default as IconLungs } from './icons/lungs.js';
+export { default as IconLungsOff } from './icons/lungs-off.js';
+export { default as IconMacro } from './icons/macro.js';
+export { default as IconMacroOff } from './icons/macro-off.js';
+export { default as IconMagnet } from './icons/magnet.js';
+export { default as IconMagnetOff } from './icons/magnet-off.js';
+export { default as IconMagnetic } from './icons/magnetic.js';
+export { default as IconMail } from './icons/mail.js';
+export { default as IconMailAi } from './icons/mail-ai.js';
+export { default as IconMailBolt } from './icons/mail-bolt.js';
+export { default as IconMailCancel } from './icons/mail-cancel.js';
+export { default as IconMailCheck } from './icons/mail-check.js';
+export { default as IconMailCode } from './icons/mail-code.js';
+export { default as IconMailCog } from './icons/mail-cog.js';
+export { default as IconMailDollar } from './icons/mail-dollar.js';
+export { default as IconMailDown } from './icons/mail-down.js';
+export { default as IconMailExclamation } from './icons/mail-exclamation.js';
+export { default as IconMailFast } from './icons/mail-fast.js';
+export { default as IconMailFilled } from './icons/mail-filled.js';
+export { default as IconMailForward } from './icons/mail-forward.js';
+export { default as IconMailHeart } from './icons/mail-heart.js';
+export { default as IconMailMinus } from './icons/mail-minus.js';
+export { default as IconMailOff } from './icons/mail-off.js';
+export { default as IconMailOpened } from './icons/mail-opened.js';
+export { default as IconMailOpenedFilled } from './icons/mail-opened-filled.js';
+export { default as IconMailPause } from './icons/mail-pause.js';
+export { default as IconMailPin } from './icons/mail-pin.js';
+export { default as IconMailPlus } from './icons/mail-plus.js';
+export { default as IconMailQuestion } from './icons/mail-question.js';
+export { default as IconMailSearch } from './icons/mail-search.js';
+export { default as IconMailShare } from './icons/mail-share.js';
+export { default as IconMailStar } from './icons/mail-star.js';
+export { default as IconMailUp } from './icons/mail-up.js';
+export { default as IconMailX } from './icons/mail-x.js';
+export { default as IconMailbox } from './icons/mailbox.js';
+export { default as IconMailboxOff } from './icons/mailbox-off.js';
+export { default as IconMan } from './icons/man.js';
+export { default as IconManualGearbox } from './icons/manual-gearbox.js';
+export { default as IconMap } from './icons/map.js';
+export { default as IconMap2 } from './icons/map-2.js';
+export { default as IconMapBolt } from './icons/map-bolt.js';
+export { default as IconMapCancel } from './icons/map-cancel.js';
+export { default as IconMapCheck } from './icons/map-check.js';
+export { default as IconMapCode } from './icons/map-code.js';
+export { default as IconMapCog } from './icons/map-cog.js';
+export { default as IconMapDiscount } from './icons/map-discount.js';
+export { default as IconMapDollar } from './icons/map-dollar.js';
+export { default as IconMapDown } from './icons/map-down.js';
+export { default as IconMapEast } from './icons/map-east.js';
+export { default as IconMapExclamation } from './icons/map-exclamation.js';
+export { default as IconMapHeart } from './icons/map-heart.js';
+export { default as IconMapMinus } from './icons/map-minus.js';
+export { default as IconMapNorth } from './icons/map-north.js';
+export { default as IconMapOff } from './icons/map-off.js';
+export { default as IconMapPause } from './icons/map-pause.js';
+export { default as IconMapPin } from './icons/map-pin.js';
+export { default as IconMapPin2 } from './icons/map-pin-2.js';
+export { default as IconMapPinBolt } from './icons/map-pin-bolt.js';
+export { default as IconMapPinCancel } from './icons/map-pin-cancel.js';
+export { default as IconMapPinCheck } from './icons/map-pin-check.js';
+export { default as IconMapPinCode } from './icons/map-pin-code.js';
+export { default as IconMapPinCog } from './icons/map-pin-cog.js';
+export { default as IconMapPinDollar } from './icons/map-pin-dollar.js';
+export { default as IconMapPinDown } from './icons/map-pin-down.js';
+export { default as IconMapPinExclamation } from './icons/map-pin-exclamation.js';
+export { default as IconMapPinFilled } from './icons/map-pin-filled.js';
+export { default as IconMapPinHeart } from './icons/map-pin-heart.js';
+export { default as IconMapPinMinus } from './icons/map-pin-minus.js';
+export { default as IconMapPinOff } from './icons/map-pin-off.js';
+export { default as IconMapPinPause } from './icons/map-pin-pause.js';
+export { default as IconMapPinPin } from './icons/map-pin-pin.js';
+export { default as IconMapPinPlus } from './icons/map-pin-plus.js';
+export { default as IconMapPinQuestion } from './icons/map-pin-question.js';
+export { default as IconMapPinSearch } from './icons/map-pin-search.js';
+export { default as IconMapPinShare } from './icons/map-pin-share.js';
+export { default as IconMapPinStar } from './icons/map-pin-star.js';
+export { default as IconMapPinUp } from './icons/map-pin-up.js';
+export { default as IconMapPinX } from './icons/map-pin-x.js';
+export { default as IconMapPins } from './icons/map-pins.js';
+export { default as IconMapPlus } from './icons/map-plus.js';
+export { default as IconMapQuestion } from './icons/map-question.js';
+export { default as IconMapRoute } from './icons/map-route.js';
+export { default as IconMapSearch } from './icons/map-search.js';
+export { default as IconMapShare } from './icons/map-share.js';
+export { default as IconMapSouth } from './icons/map-south.js';
+export { default as IconMapStar } from './icons/map-star.js';
+export { default as IconMapUp } from './icons/map-up.js';
+export { default as IconMapWest } from './icons/map-west.js';
+export { default as IconMapX } from './icons/map-x.js';
+export { default as IconMarkdown } from './icons/markdown.js';
+export { default as IconMarkdownOff } from './icons/markdown-off.js';
+export { default as IconMarquee } from './icons/marquee.js';
+export { default as IconMarquee2 } from './icons/marquee-2.js';
+export { default as IconMarqueeOff } from './icons/marquee-off.js';
+export { default as IconMars } from './icons/mars.js';
+export { default as IconMask } from './icons/mask.js';
+export { default as IconMaskOff } from './icons/mask-off.js';
+export { default as IconMasksTheater } from './icons/masks-theater.js';
+export { default as IconMasksTheaterOff } from './icons/masks-theater-off.js';
+export { default as IconMassage } from './icons/massage.js';
+export { default as IconMatchstick } from './icons/matchstick.js';
+export { default as IconMath } from './icons/math.js';
+export { default as IconMath1Divide2 } from './icons/math-1-divide-2.js';
+export { default as IconMath1Divide3 } from './icons/math-1-divide-3.js';
+export { default as IconMathAvg } from './icons/math-avg.js';
+export { default as IconMathEqualGreater } from './icons/math-equal-greater.js';
+export { default as IconMathEqualLower } from './icons/math-equal-lower.js';
+export { default as IconMathFunction } from './icons/math-function.js';
+export { default as IconMathFunctionOff } from './icons/math-function-off.js';
+export { default as IconMathFunctionY } from './icons/math-function-y.js';
+export { default as IconMathGreater } from './icons/math-greater.js';
+export { default as IconMathIntegral } from './icons/math-integral.js';
+export { default as IconMathIntegralX } from './icons/math-integral-x.js';
+export { default as IconMathIntegrals } from './icons/math-integrals.js';
+export { default as IconMathLower } from './icons/math-lower.js';
+export { default as IconMathMax } from './icons/math-max.js';
+export { default as IconMathMin } from './icons/math-min.js';
+export { default as IconMathNot } from './icons/math-not.js';
+export { default as IconMathOff } from './icons/math-off.js';
+export { default as IconMathPi } from './icons/math-pi.js';
+export { default as IconMathPiDivide2 } from './icons/math-pi-divide-2.js';
+export { default as IconMathSymbols } from './icons/math-symbols.js';
+export { default as IconMathXDivide2 } from './icons/math-xdivide-2.js';
+export { default as IconMathXDivideY } from './icons/math-xdivide-y.js';
+export { default as IconMathXDivideY2 } from './icons/math-xdivide-y-2.js';
+export { default as IconMathXMinusX } from './icons/math-xminus-x.js';
+export { default as IconMathXMinusY } from './icons/math-xminus-y.js';
+export { default as IconMathXPlusX } from './icons/math-xplus-x.js';
+export { default as IconMathXPlusY } from './icons/math-xplus-y.js';
+export { default as IconMathXy } from './icons/math-xy.js';
+export { default as IconMathYMinusY } from './icons/math-yminus-y.js';
+export { default as IconMathYPlusY } from './icons/math-yplus-y.js';
+export { default as IconMaximize } from './icons/maximize.js';
+export { default as IconMaximizeOff } from './icons/maximize-off.js';
+export { default as IconMeat } from './icons/meat.js';
+export { default as IconMeatOff } from './icons/meat-off.js';
+export { default as IconMedal } from './icons/medal.js';
+export { default as IconMedal2 } from './icons/medal-2.js';
+export { default as IconMedicalCross } from './icons/medical-cross.js';
+export { default as IconMedicalCrossCircle } from './icons/medical-cross-circle.js';
+export { default as IconMedicalCrossFilled } from './icons/medical-cross-filled.js';
+export { default as IconMedicalCrossOff } from './icons/medical-cross-off.js';
+export { default as IconMedicineSyrup } from './icons/medicine-syrup.js';
+export { default as IconMeeple } from './icons/meeple.js';
+export { default as IconMelon } from './icons/melon.js';
+export { default as IconMenorah } from './icons/menorah.js';
+export { default as IconMenu } from './icons/menu.js';
+export { default as IconMenu2 } from './icons/menu-2.js';
+export { default as IconMenuDeep } from './icons/menu-deep.js';
+export { default as IconMenuOrder } from './icons/menu-order.js';
+export { default as IconMessage } from './icons/message.js';
+export { default as IconMessage2 } from './icons/message-2.js';
+export { default as IconMessage2Bolt } from './icons/message-2-bolt.js';
+export { default as IconMessage2Cancel } from './icons/message-2-cancel.js';
+export { default as IconMessage2Check } from './icons/message-2-check.js';
+export { default as IconMessage2Code } from './icons/message-2-code.js';
+export { default as IconMessage2Cog } from './icons/message-2-cog.js';
+export { default as IconMessage2Dollar } from './icons/message-2-dollar.js';
+export { default as IconMessage2Down } from './icons/message-2-down.js';
+export { default as IconMessage2Exclamation } from './icons/message-2-exclamation.js';
+export { default as IconMessage2Heart } from './icons/message-2-heart.js';
+export { default as IconMessage2Minus } from './icons/message-2-minus.js';
+export { default as IconMessage2Off } from './icons/message-2-off.js';
+export { default as IconMessage2Pause } from './icons/message-2-pause.js';
+export { default as IconMessage2Pin } from './icons/message-2-pin.js';
+export { default as IconMessage2Plus } from './icons/message-2-plus.js';
+export { default as IconMessage2Question } from './icons/message-2-question.js';
+export { default as IconMessage2Search } from './icons/message-2-search.js';
+export { default as IconMessage2Share } from './icons/message-2-share.js';
+export { default as IconMessage2Star } from './icons/message-2-star.js';
+export { default as IconMessage2Up } from './icons/message-2-up.js';
+export { default as IconMessage2X } from './icons/message-2-x.js';
+export { default as IconMessageBolt } from './icons/message-bolt.js';
+export { default as IconMessageCancel } from './icons/message-cancel.js';
+export { default as IconMessageChatbot } from './icons/message-chatbot.js';
+export { default as IconMessageCheck } from './icons/message-check.js';
+export { default as IconMessageCircle } from './icons/message-circle.js';
+export { default as IconMessageCircle2 } from './icons/message-circle-2.js';
+export { default as IconMessageCircle2Filled } from './icons/message-circle-2-filled.js';
+export { default as IconMessageCircleBolt } from './icons/message-circle-bolt.js';
+export { default as IconMessageCircleCancel } from './icons/message-circle-cancel.js';
+export { default as IconMessageCircleCheck } from './icons/message-circle-check.js';
+export { default as IconMessageCircleCode } from './icons/message-circle-code.js';
+export { default as IconMessageCircleCog } from './icons/message-circle-cog.js';
+export { default as IconMessageCircleDollar } from './icons/message-circle-dollar.js';
+export { default as IconMessageCircleDown } from './icons/message-circle-down.js';
+export { default as IconMessageCircleExclamation } from './icons/message-circle-exclamation.js';
+export { default as IconMessageCircleHeart } from './icons/message-circle-heart.js';
+export { default as IconMessageCircleMinus } from './icons/message-circle-minus.js';
+export { default as IconMessageCircleOff } from './icons/message-circle-off.js';
+export { default as IconMessageCirclePause } from './icons/message-circle-pause.js';
+export { default as IconMessageCirclePin } from './icons/message-circle-pin.js';
+export { default as IconMessageCirclePlus } from './icons/message-circle-plus.js';
+export { default as IconMessageCircleQuestion } from './icons/message-circle-question.js';
+export { default as IconMessageCircleSearch } from './icons/message-circle-search.js';
+export { default as IconMessageCircleShare } from './icons/message-circle-share.js';
+export { default as IconMessageCircleStar } from './icons/message-circle-star.js';
+export { default as IconMessageCircleUp } from './icons/message-circle-up.js';
+export { default as IconMessageCircleX } from './icons/message-circle-x.js';
+export { default as IconMessageCode } from './icons/message-code.js';
+export { default as IconMessageCog } from './icons/message-cog.js';
+export { default as IconMessageDollar } from './icons/message-dollar.js';
+export { default as IconMessageDots } from './icons/message-dots.js';
+export { default as IconMessageDown } from './icons/message-down.js';
+export { default as IconMessageExclamation } from './icons/message-exclamation.js';
+export { default as IconMessageForward } from './icons/message-forward.js';
+export { default as IconMessageHeart } from './icons/message-heart.js';
+export { default as IconMessageLanguage } from './icons/message-language.js';
+export { default as IconMessageMinus } from './icons/message-minus.js';
+export { default as IconMessageOff } from './icons/message-off.js';
+export { default as IconMessagePause } from './icons/message-pause.js';
+export { default as IconMessagePin } from './icons/message-pin.js';
+export { default as IconMessagePlus } from './icons/message-plus.js';
+export { default as IconMessageQuestion } from './icons/message-question.js';
+export { default as IconMessageReport } from './icons/message-report.js';
+export { default as IconMessageSearch } from './icons/message-search.js';
+export { default as IconMessageShare } from './icons/message-share.js';
+export { default as IconMessageStar } from './icons/message-star.js';
+export { default as IconMessageUp } from './icons/message-up.js';
+export { default as IconMessageX } from './icons/message-x.js';
+export { default as IconMessages } from './icons/messages.js';
+export { default as IconMessagesOff } from './icons/messages-off.js';
+export { default as IconMeteor } from './icons/meteor.js';
+export { default as IconMeteorOff } from './icons/meteor-off.js';
+export { default as IconMichelinBibGourmand } from './icons/michelin-bib-gourmand.js';
+export { default as IconMichelinStar } from './icons/michelin-star.js';
+export { default as IconMichelinStarGreen } from './icons/michelin-star-green.js';
+export { default as IconMickey } from './icons/mickey.js';
+export { default as IconMickeyFilled } from './icons/mickey-filled.js';
+export { default as IconMicrophone } from './icons/microphone.js';
+export { default as IconMicrophone2 } from './icons/microphone-2.js';
+export { default as IconMicrophone2Off } from './icons/microphone-2-off.js';
+export { default as IconMicrophoneOff } from './icons/microphone-off.js';
+export { default as IconMicroscope } from './icons/microscope.js';
+export { default as IconMicroscopeOff } from './icons/microscope-off.js';
+export { default as IconMicrowave } from './icons/microwave.js';
+export { default as IconMicrowaveOff } from './icons/microwave-off.js';
+export { default as IconMilitaryAward } from './icons/military-award.js';
+export { default as IconMilitaryRank } from './icons/military-rank.js';
+export { default as IconMilk } from './icons/milk.js';
+export { default as IconMilkOff } from './icons/milk-off.js';
+export { default as IconMilkshake } from './icons/milkshake.js';
+export { default as IconMinimize } from './icons/minimize.js';
+export { default as IconMinus } from './icons/minus.js';
+export { default as IconMinusVertical } from './icons/minus-vertical.js';
+export { default as IconMist } from './icons/mist.js';
+export { default as IconMistOff } from './icons/mist-off.js';
+export { default as IconMobiledata } from './icons/mobiledata.js';
+export { default as IconMobiledataOff } from './icons/mobiledata-off.js';
+export { default as IconMoneybag } from './icons/moneybag.js';
+export { default as IconMoodAngry } from './icons/mood-angry.js';
+export { default as IconMoodAnnoyed } from './icons/mood-annoyed.js';
+export { default as IconMoodAnnoyed2 } from './icons/mood-annoyed-2.js';
+export { default as IconMoodBoy } from './icons/mood-boy.js';
+export { default as IconMoodCheck } from './icons/mood-check.js';
+export { default as IconMoodCog } from './icons/mood-cog.js';
+export { default as IconMoodConfuzed } from './icons/mood-confuzed.js';
+export { default as IconMoodConfuzedFilled } from './icons/mood-confuzed-filled.js';
+export { default as IconMoodCrazyHappy } from './icons/mood-crazy-happy.js';
+export { default as IconMoodCry } from './icons/mood-cry.js';
+export { default as IconMoodDollar } from './icons/mood-dollar.js';
+export { default as IconMoodEdit } from './icons/mood-edit.js';
+export { default as IconMoodEmpty } from './icons/mood-empty.js';
+export { default as IconMoodEmptyFilled } from './icons/mood-empty-filled.js';
+export { default as IconMoodHappy } from './icons/mood-happy.js';
+export { default as IconMoodHappyFilled } from './icons/mood-happy-filled.js';
+export { default as IconMoodHeart } from './icons/mood-heart.js';
+export { default as IconMoodKid } from './icons/mood-kid.js';
+export { default as IconMoodKidFilled } from './icons/mood-kid-filled.js';
+export { default as IconMoodLookLeft } from './icons/mood-look-left.js';
+export { default as IconMoodLookRight } from './icons/mood-look-right.js';
+export { default as IconMoodMinus } from './icons/mood-minus.js';
+export { default as IconMoodNerd } from './icons/mood-nerd.js';
+export { default as IconMoodNervous } from './icons/mood-nervous.js';
+export { default as IconMoodNeutral } from './icons/mood-neutral.js';
+export { default as IconMoodNeutralFilled } from './icons/mood-neutral-filled.js';
+export { default as IconMoodOff } from './icons/mood-off.js';
+export { default as IconMoodPin } from './icons/mood-pin.js';
+export { default as IconMoodPlus } from './icons/mood-plus.js';
+export { default as IconMoodSad } from './icons/mood-sad.js';
+export { default as IconMoodSad2 } from './icons/mood-sad-2.js';
+export { default as IconMoodSadDizzy } from './icons/mood-sad-dizzy.js';
+export { default as IconMoodSadFilled } from './icons/mood-sad-filled.js';
+export { default as IconMoodSadSquint } from './icons/mood-sad-squint.js';
+export { default as IconMoodSearch } from './icons/mood-search.js';
+export { default as IconMoodShare } from './icons/mood-share.js';
+export { default as IconMoodSick } from './icons/mood-sick.js';
+export { default as IconMoodSilence } from './icons/mood-silence.js';
+export { default as IconMoodSing } from './icons/mood-sing.js';
+export { default as IconMoodSmile } from './icons/mood-smile.js';
+export { default as IconMoodSmileBeam } from './icons/mood-smile-beam.js';
+export { default as IconMoodSmileDizzy } from './icons/mood-smile-dizzy.js';
+export { default as IconMoodSmileFilled } from './icons/mood-smile-filled.js';
+export { default as IconMoodSuprised } from './icons/mood-suprised.js';
+export { default as IconMoodTongue } from './icons/mood-tongue.js';
+export { default as IconMoodTongueWink } from './icons/mood-tongue-wink.js';
+export { default as IconMoodTongueWink2 } from './icons/mood-tongue-wink-2.js';
+export { default as IconMoodUnamused } from './icons/mood-unamused.js';
+export { default as IconMoodUp } from './icons/mood-up.js';
+export { default as IconMoodWink } from './icons/mood-wink.js';
+export { default as IconMoodWink2 } from './icons/mood-wink-2.js';
+export { default as IconMoodWrrr } from './icons/mood-wrrr.js';
+export { default as IconMoodX } from './icons/mood-x.js';
+export { default as IconMoodXd } from './icons/mood-xd.js';
+export { default as IconMoon } from './icons/moon.js';
+export { default as IconMoon2 } from './icons/moon-2.js';
+export { default as IconMoonFilled } from './icons/moon-filled.js';
+export { default as IconMoonOff } from './icons/moon-off.js';
+export { default as IconMoonStars } from './icons/moon-stars.js';
+export { default as IconMoped } from './icons/moped.js';
+export { default as IconMotorbike } from './icons/motorbike.js';
+export { default as IconMountain } from './icons/mountain.js';
+export { default as IconMountainOff } from './icons/mountain-off.js';
+export { default as IconMouse } from './icons/mouse.js';
+export { default as IconMouse2 } from './icons/mouse-2.js';
+export { default as IconMouseFilled } from './icons/mouse-filled.js';
+export { default as IconMouseOff } from './icons/mouse-off.js';
+export { default as IconMoustache } from './icons/moustache.js';
+export { default as IconMovie } from './icons/movie.js';
+export { default as IconMovieOff } from './icons/movie-off.js';
+export { default as IconMug } from './icons/mug.js';
+export { default as IconMugOff } from './icons/mug-off.js';
+export { default as IconMultiplier05x } from './icons/multiplier-05x.js';
+export { default as IconMultiplier15x } from './icons/multiplier-15x.js';
+export { default as IconMultiplier1x } from './icons/multiplier-1x.js';
+export { default as IconMultiplier2x } from './icons/multiplier-2x.js';
+export { default as IconMushroom } from './icons/mushroom.js';
+export { default as IconMushroomFilled } from './icons/mushroom-filled.js';
+export { default as IconMushroomOff } from './icons/mushroom-off.js';
+export { default as IconMusic } from './icons/music.js';
+export { default as IconMusicBolt } from './icons/music-bolt.js';
+export { default as IconMusicCancel } from './icons/music-cancel.js';
+export { default as IconMusicCheck } from './icons/music-check.js';
+export { default as IconMusicCode } from './icons/music-code.js';
+export { default as IconMusicCog } from './icons/music-cog.js';
+export { default as IconMusicDiscount } from './icons/music-discount.js';
+export { default as IconMusicDollar } from './icons/music-dollar.js';
+export { default as IconMusicDown } from './icons/music-down.js';
+export { default as IconMusicExclamation } from './icons/music-exclamation.js';
+export { default as IconMusicHeart } from './icons/music-heart.js';
+export { default as IconMusicMinus } from './icons/music-minus.js';
+export { default as IconMusicOff } from './icons/music-off.js';
+export { default as IconMusicPause } from './icons/music-pause.js';
+export { default as IconMusicPin } from './icons/music-pin.js';
+export { default as IconMusicPlus } from './icons/music-plus.js';
+export { default as IconMusicQuestion } from './icons/music-question.js';
+export { default as IconMusicSearch } from './icons/music-search.js';
+export { default as IconMusicShare } from './icons/music-share.js';
+export { default as IconMusicStar } from './icons/music-star.js';
+export { default as IconMusicUp } from './icons/music-up.js';
+export { default as IconMusicX } from './icons/music-x.js';
+export { default as IconNavigation } from './icons/navigation.js';
+export { default as IconNavigationBolt } from './icons/navigation-bolt.js';
+export { default as IconNavigationCancel } from './icons/navigation-cancel.js';
+export { default as IconNavigationCheck } from './icons/navigation-check.js';
+export { default as IconNavigationCode } from './icons/navigation-code.js';
+export { default as IconNavigationCog } from './icons/navigation-cog.js';
+export { default as IconNavigationDiscount } from './icons/navigation-discount.js';
+export { default as IconNavigationDollar } from './icons/navigation-dollar.js';
+export { default as IconNavigationDown } from './icons/navigation-down.js';
+export { default as IconNavigationEast } from './icons/navigation-east.js';
+export { default as IconNavigationExclamation } from './icons/navigation-exclamation.js';
+export { default as IconNavigationFilled } from './icons/navigation-filled.js';
+export { default as IconNavigationHeart } from './icons/navigation-heart.js';
+export { default as IconNavigationMinus } from './icons/navigation-minus.js';
+export { default as IconNavigationNorth } from './icons/navigation-north.js';
+export { default as IconNavigationOff } from './icons/navigation-off.js';
+export { default as IconNavigationPause } from './icons/navigation-pause.js';
+export { default as IconNavigationPin } from './icons/navigation-pin.js';
+export { default as IconNavigationPlus } from './icons/navigation-plus.js';
+export { default as IconNavigationQuestion } from './icons/navigation-question.js';
+export { default as IconNavigationSearch } from './icons/navigation-search.js';
+export { default as IconNavigationShare } from './icons/navigation-share.js';
+export { default as IconNavigationSouth } from './icons/navigation-south.js';
+export { default as IconNavigationStar } from './icons/navigation-star.js';
+export { default as IconNavigationTop } from './icons/navigation-top.js';
+export { default as IconNavigationUp } from './icons/navigation-up.js';
+export { default as IconNavigationWest } from './icons/navigation-west.js';
+export { default as IconNavigationX } from './icons/navigation-x.js';
+export { default as IconNeedle } from './icons/needle.js';
+export { default as IconNeedleThread } from './icons/needle-thread.js';
+export { default as IconNetwork } from './icons/network.js';
+export { default as IconNetworkOff } from './icons/network-off.js';
+export { default as IconNewSection } from './icons/new-section.js';
+export { default as IconNews } from './icons/news.js';
+export { default as IconNewsOff } from './icons/news-off.js';
+export { default as IconNfc } from './icons/nfc.js';
+export { default as IconNfcOff } from './icons/nfc-off.js';
+export { default as IconNoCopyright } from './icons/no-copyright.js';
+export { default as IconNoCreativeCommons } from './icons/no-creative-commons.js';
+export { default as IconNoDerivatives } from './icons/no-derivatives.js';
+export { default as IconNorthStar } from './icons/north-star.js';
+export { default as IconNote } from './icons/note.js';
+export { default as IconNoteOff } from './icons/note-off.js';
+export { default as IconNotebook } from './icons/notebook.js';
+export { default as IconNotebookOff } from './icons/notebook-off.js';
+export { default as IconNotes } from './icons/notes.js';
+export { default as IconNotesOff } from './icons/notes-off.js';
+export { default as IconNotification } from './icons/notification.js';
+export { default as IconNotificationOff } from './icons/notification-off.js';
+export { default as IconNumber } from './icons/number.js';
+export { default as IconNumber0 } from './icons/number-0.js';
+export { default as IconNumber0Small } from './icons/number-0-small.js';
+export { default as IconNumber1 } from './icons/number-1.js';
+export { default as IconNumber10Small } from './icons/number-10-small.js';
+export { default as IconNumber11Small } from './icons/number-11-small.js';
+export { default as IconNumber12Small } from './icons/number-12-small.js';
+export { default as IconNumber13Small } from './icons/number-13-small.js';
+export { default as IconNumber14Small } from './icons/number-14-small.js';
+export { default as IconNumber15Small } from './icons/number-15-small.js';
+export { default as IconNumber16Small } from './icons/number-16-small.js';
+export { default as IconNumber17Small } from './icons/number-17-small.js';
+export { default as IconNumber18Small } from './icons/number-18-small.js';
+export { default as IconNumber19Small } from './icons/number-19-small.js';
+export { default as IconNumber1Small } from './icons/number-1-small.js';
+export { default as IconNumber2 } from './icons/number-2.js';
+export { default as IconNumber20Small } from './icons/number-20-small.js';
+export { default as IconNumber21Small } from './icons/number-21-small.js';
+export { default as IconNumber22Small } from './icons/number-22-small.js';
+export { default as IconNumber23Small } from './icons/number-23-small.js';
+export { default as IconNumber24Small } from './icons/number-24-small.js';
+export { default as IconNumber25Small } from './icons/number-25-small.js';
+export { default as IconNumber26Small } from './icons/number-26-small.js';
+export { default as IconNumber27Small } from './icons/number-27-small.js';
+export { default as IconNumber28Small } from './icons/number-28-small.js';
+export { default as IconNumber29Small } from './icons/number-29-small.js';
+export { default as IconNumber2Small } from './icons/number-2-small.js';
+export { default as IconNumber3 } from './icons/number-3.js';
+export { default as IconNumber3Small } from './icons/number-3-small.js';
+export { default as IconNumber4 } from './icons/number-4.js';
+export { default as IconNumber4Small } from './icons/number-4-small.js';
+export { default as IconNumber5 } from './icons/number-5.js';
+export { default as IconNumber5Small } from './icons/number-5-small.js';
+export { default as IconNumber6 } from './icons/number-6.js';
+export { default as IconNumber6Small } from './icons/number-6-small.js';
+export { default as IconNumber7 } from './icons/number-7.js';
+export { default as IconNumber7Small } from './icons/number-7-small.js';
+export { default as IconNumber8 } from './icons/number-8.js';
+export { default as IconNumber8Small } from './icons/number-8-small.js';
+export { default as IconNumber9 } from './icons/number-9.js';
+export { default as IconNumber9Small } from './icons/number-9-small.js';
+export { default as IconNumbers } from './icons/numbers.js';
+export { default as IconNurse } from './icons/nurse.js';
+export { default as IconNut } from './icons/nut.js';
+export { default as IconOctagon } from './icons/octagon.js';
+export { default as IconOctagonFilled } from './icons/octagon-filled.js';
+export { default as IconOctagonMinus } from './icons/octagon-minus.js';
+export { default as IconOctagonMinus2 } from './icons/octagon-minus-2.js';
+export { default as IconOctagonOff } from './icons/octagon-off.js';
+export { default as IconOctagonPlus } from './icons/octagon-plus.js';
+export { default as IconOctagonPlus2 } from './icons/octagon-plus-2.js';
+export { default as IconOctahedron } from './icons/octahedron.js';
+export { default as IconOctahedronOff } from './icons/octahedron-off.js';
+export { default as IconOctahedronPlus } from './icons/octahedron-plus.js';
+export { default as IconOld } from './icons/old.js';
+export { default as IconOlympics } from './icons/olympics.js';
+export { default as IconOlympicsOff } from './icons/olympics-off.js';
+export { default as IconOm } from './icons/om.js';
+export { default as IconOmega } from './icons/omega.js';
+export { default as IconOutbound } from './icons/outbound.js';
+export { default as IconOutlet } from './icons/outlet.js';
+export { default as IconOval } from './icons/oval.js';
+export { default as IconOvalFilled } from './icons/oval-filled.js';
+export { default as IconOvalVertical } from './icons/oval-vertical.js';
+export { default as IconOvalVerticalFilled } from './icons/oval-vertical-filled.js';
+export { default as IconOverline } from './icons/overline.js';
+export { default as IconPackage } from './icons/package.js';
+export { default as IconPackageExport } from './icons/package-export.js';
+export { default as IconPackageImport } from './icons/package-import.js';
+export { default as IconPackageOff } from './icons/package-off.js';
+export { default as IconPackages } from './icons/packages.js';
+export { default as IconPacman } from './icons/pacman.js';
+export { default as IconPageBreak } from './icons/page-break.js';
+export { default as IconPaint } from './icons/paint.js';
+export { default as IconPaintFilled } from './icons/paint-filled.js';
+export { default as IconPaintOff } from './icons/paint-off.js';
+export { default as IconPalette } from './icons/palette.js';
+export { default as IconPaletteOff } from './icons/palette-off.js';
+export { default as IconPanoramaHorizontal } from './icons/panorama-horizontal.js';
+export { default as IconPanoramaHorizontalOff } from './icons/panorama-horizontal-off.js';
+export { default as IconPanoramaVertical } from './icons/panorama-vertical.js';
+export { default as IconPanoramaVerticalOff } from './icons/panorama-vertical-off.js';
+export { default as IconPaperBag } from './icons/paper-bag.js';
+export { default as IconPaperBagOff } from './icons/paper-bag-off.js';
+export { default as IconPaperclip } from './icons/paperclip.js';
+export { default as IconParachute } from './icons/parachute.js';
+export { default as IconParachuteOff } from './icons/parachute-off.js';
+export { default as IconParentheses } from './icons/parentheses.js';
+export { default as IconParenthesesOff } from './icons/parentheses-off.js';
+export { default as IconParking } from './icons/parking.js';
+export { default as IconParkingOff } from './icons/parking-off.js';
+export { default as IconPassword } from './icons/password.js';
+export { default as IconPasswordFingerprint } from './icons/password-fingerprint.js';
+export { default as IconPasswordMobilePhone } from './icons/password-mobile-phone.js';
+export { default as IconPasswordUser } from './icons/password-user.js';
+export { default as IconPaw } from './icons/paw.js';
+export { default as IconPawFilled } from './icons/paw-filled.js';
+export { default as IconPawOff } from './icons/paw-off.js';
+export { default as IconPdf } from './icons/pdf.js';
+export { default as IconPeace } from './icons/peace.js';
+export { default as IconPencil } from './icons/pencil.js';
+export { default as IconPencilBolt } from './icons/pencil-bolt.js';
+export { default as IconPencilCancel } from './icons/pencil-cancel.js';
+export { default as IconPencilCheck } from './icons/pencil-check.js';
+export { default as IconPencilCode } from './icons/pencil-code.js';
+export { default as IconPencilCog } from './icons/pencil-cog.js';
+export { default as IconPencilDiscount } from './icons/pencil-discount.js';
+export { default as IconPencilDollar } from './icons/pencil-dollar.js';
+export { default as IconPencilDown } from './icons/pencil-down.js';
+export { default as IconPencilExclamation } from './icons/pencil-exclamation.js';
+export { default as IconPencilHeart } from './icons/pencil-heart.js';
+export { default as IconPencilMinus } from './icons/pencil-minus.js';
+export { default as IconPencilOff } from './icons/pencil-off.js';
+export { default as IconPencilPause } from './icons/pencil-pause.js';
+export { default as IconPencilPin } from './icons/pencil-pin.js';
+export { default as IconPencilPlus } from './icons/pencil-plus.js';
+export { default as IconPencilQuestion } from './icons/pencil-question.js';
+export { default as IconPencilSearch } from './icons/pencil-search.js';
+export { default as IconPencilShare } from './icons/pencil-share.js';
+export { default as IconPencilStar } from './icons/pencil-star.js';
+export { default as IconPencilUp } from './icons/pencil-up.js';
+export { default as IconPencilX } from './icons/pencil-x.js';
+export { default as IconPennant } from './icons/pennant.js';
+export { default as IconPennant2 } from './icons/pennant-2.js';
+export { default as IconPennant2Filled } from './icons/pennant-2-filled.js';
+export { default as IconPennantFilled } from './icons/pennant-filled.js';
+export { default as IconPennantOff } from './icons/pennant-off.js';
+export { default as IconPentagon } from './icons/pentagon.js';
+export { default as IconPentagonFilled } from './icons/pentagon-filled.js';
+export { default as IconPentagonNumber0 } from './icons/pentagon-number-0.js';
+export { default as IconPentagonNumber1 } from './icons/pentagon-number-1.js';
+export { default as IconPentagonNumber2 } from './icons/pentagon-number-2.js';
+export { default as IconPentagonNumber3 } from './icons/pentagon-number-3.js';
+export { default as IconPentagonNumber4 } from './icons/pentagon-number-4.js';
+export { default as IconPentagonNumber5 } from './icons/pentagon-number-5.js';
+export { default as IconPentagonNumber6 } from './icons/pentagon-number-6.js';
+export { default as IconPentagonNumber7 } from './icons/pentagon-number-7.js';
+export { default as IconPentagonNumber8 } from './icons/pentagon-number-8.js';
+export { default as IconPentagonNumber9 } from './icons/pentagon-number-9.js';
+export { default as IconPentagonOff } from './icons/pentagon-off.js';
+export { default as IconPentagonPlus } from './icons/pentagon-plus.js';
+export { default as IconPentagonX } from './icons/pentagon-x.js';
+export { default as IconPentagram } from './icons/pentagram.js';
+export { default as IconPepper } from './icons/pepper.js';
+export { default as IconPepperOff } from './icons/pepper-off.js';
+export { default as IconPercentage } from './icons/percentage.js';
+export { default as IconPerfume } from './icons/perfume.js';
+export { default as IconPerspective } from './icons/perspective.js';
+export { default as IconPerspectiveOff } from './icons/perspective-off.js';
+export { default as IconPhone } from './icons/phone.js';
+export { default as IconPhoneCall } from './icons/phone-call.js';
+export { default as IconPhoneCalling } from './icons/phone-calling.js';
+export { default as IconPhoneCheck } from './icons/phone-check.js';
+export { default as IconPhoneFilled } from './icons/phone-filled.js';
+export { default as IconPhoneIncoming } from './icons/phone-incoming.js';
+export { default as IconPhoneOff } from './icons/phone-off.js';
+export { default as IconPhoneOutgoing } from './icons/phone-outgoing.js';
+export { default as IconPhonePause } from './icons/phone-pause.js';
+export { default as IconPhonePlus } from './icons/phone-plus.js';
+export { default as IconPhoneX } from './icons/phone-x.js';
+export { default as IconPhoto } from './icons/photo.js';
+export { default as IconPhotoAi } from './icons/photo-ai.js';
+export { default as IconPhotoBolt } from './icons/photo-bolt.js';
+export { default as IconPhotoCancel } from './icons/photo-cancel.js';
+export { default as IconPhotoCheck } from './icons/photo-check.js';
+export { default as IconPhotoCircle } from './icons/photo-circle.js';
+export { default as IconPhotoCircleMinus } from './icons/photo-circle-minus.js';
+export { default as IconPhotoCirclePlus } from './icons/photo-circle-plus.js';
+export { default as IconPhotoCode } from './icons/photo-code.js';
+export { default as IconPhotoCog } from './icons/photo-cog.js';
+export { default as IconPhotoDollar } from './icons/photo-dollar.js';
+export { default as IconPhotoDown } from './icons/photo-down.js';
+export { default as IconPhotoEdit } from './icons/photo-edit.js';
+export { default as IconPhotoExclamation } from './icons/photo-exclamation.js';
+export { default as IconPhotoFilled } from './icons/photo-filled.js';
+export { default as IconPhotoHeart } from './icons/photo-heart.js';
+export { default as IconPhotoHexagon } from './icons/photo-hexagon.js';
+export { default as IconPhotoMinus } from './icons/photo-minus.js';
+export { default as IconPhotoOff } from './icons/photo-off.js';
+export { default as IconPhotoPause } from './icons/photo-pause.js';
+export { default as IconPhotoPentagon } from './icons/photo-pentagon.js';
+export { default as IconPhotoPin } from './icons/photo-pin.js';
+export { default as IconPhotoPlus } from './icons/photo-plus.js';
+export { default as IconPhotoQuestion } from './icons/photo-question.js';
+export { default as IconPhotoScan } from './icons/photo-scan.js';
+export { default as IconPhotoSearch } from './icons/photo-search.js';
+export { default as IconPhotoSensor } from './icons/photo-sensor.js';
+export { default as IconPhotoSensor2 } from './icons/photo-sensor-2.js';
+export { default as IconPhotoSensor3 } from './icons/photo-sensor-3.js';
+export { default as IconPhotoShare } from './icons/photo-share.js';
+export { default as IconPhotoShield } from './icons/photo-shield.js';
+export { default as IconPhotoSquareRounded } from './icons/photo-square-rounded.js';
+export { default as IconPhotoStar } from './icons/photo-star.js';
+export { default as IconPhotoUp } from './icons/photo-up.js';
+export { default as IconPhotoVideo } from './icons/photo-video.js';
+export { default as IconPhotoX } from './icons/photo-x.js';
+export { default as IconPhysotherapist } from './icons/physotherapist.js';
+export { default as IconPiano } from './icons/piano.js';
+export { default as IconPick } from './icons/pick.js';
+export { default as IconPictureInPicture } from './icons/picture-in-picture.js';
+export { default as IconPictureInPictureOff } from './icons/picture-in-picture-off.js';
+export { default as IconPictureInPictureOn } from './icons/picture-in-picture-on.js';
+export { default as IconPictureInPictureTop } from './icons/picture-in-picture-top.js';
+export { default as IconPig } from './icons/pig.js';
+export { default as IconPigMoney } from './icons/pig-money.js';
+export { default as IconPigOff } from './icons/pig-off.js';
+export { default as IconPilcrow } from './icons/pilcrow.js';
+export { default as IconPill } from './icons/pill.js';
+export { default as IconPillOff } from './icons/pill-off.js';
+export { default as IconPills } from './icons/pills.js';
+export { default as IconPin } from './icons/pin.js';
+export { default as IconPinFilled } from './icons/pin-filled.js';
+export { default as IconPingPong } from './icons/ping-pong.js';
+export { default as IconPinned } from './icons/pinned.js';
+export { default as IconPinnedFilled } from './icons/pinned-filled.js';
+export { default as IconPinnedOff } from './icons/pinned-off.js';
+export { default as IconPizza } from './icons/pizza.js';
+export { default as IconPizzaOff } from './icons/pizza-off.js';
+export { default as IconPlaceholder } from './icons/placeholder.js';
+export { default as IconPlane } from './icons/plane.js';
+export { default as IconPlaneArrival } from './icons/plane-arrival.js';
+export { default as IconPlaneDeparture } from './icons/plane-departure.js';
+export { default as IconPlaneInflight } from './icons/plane-inflight.js';
+export { default as IconPlaneOff } from './icons/plane-off.js';
+export { default as IconPlaneTilt } from './icons/plane-tilt.js';
+export { default as IconPlanet } from './icons/planet.js';
+export { default as IconPlanetOff } from './icons/planet-off.js';
+export { default as IconPlant } from './icons/plant.js';
+export { default as IconPlant2 } from './icons/plant-2.js';
+export { default as IconPlant2Off } from './icons/plant-2-off.js';
+export { default as IconPlantOff } from './icons/plant-off.js';
+export { default as IconPlayBasketball } from './icons/play-basketball.js';
+export { default as IconPlayCard } from './icons/play-card.js';
+export { default as IconPlayCardOff } from './icons/play-card-off.js';
+export { default as IconPlayFootball } from './icons/play-football.js';
+export { default as IconPlayHandball } from './icons/play-handball.js';
+export { default as IconPlayVolleyball } from './icons/play-volleyball.js';
+export { default as IconPlayerEject } from './icons/player-eject.js';
+export { default as IconPlayerEjectFilled } from './icons/player-eject-filled.js';
+export { default as IconPlayerPause } from './icons/player-pause.js';
+export { default as IconPlayerPauseFilled } from './icons/player-pause-filled.js';
+export { default as IconPlayerPlay } from './icons/player-play.js';
+export { default as IconPlayerPlayFilled } from './icons/player-play-filled.js';
+export { default as IconPlayerRecord } from './icons/player-record.js';
+export { default as IconPlayerRecordFilled } from './icons/player-record-filled.js';
+export { default as IconPlayerSkipBack } from './icons/player-skip-back.js';
+export { default as IconPlayerSkipBackFilled } from './icons/player-skip-back-filled.js';
+export { default as IconPlayerSkipForward } from './icons/player-skip-forward.js';
+export { default as IconPlayerSkipForwardFilled } from './icons/player-skip-forward-filled.js';
+export { default as IconPlayerStop } from './icons/player-stop.js';
+export { default as IconPlayerStopFilled } from './icons/player-stop-filled.js';
+export { default as IconPlayerTrackNext } from './icons/player-track-next.js';
+export { default as IconPlayerTrackNextFilled } from './icons/player-track-next-filled.js';
+export { default as IconPlayerTrackPrev } from './icons/player-track-prev.js';
+export { default as IconPlayerTrackPrevFilled } from './icons/player-track-prev-filled.js';
+export { default as IconPlaylist } from './icons/playlist.js';
+export { default as IconPlaylistAdd } from './icons/playlist-add.js';
+export { default as IconPlaylistOff } from './icons/playlist-off.js';
+export { default as IconPlaylistX } from './icons/playlist-x.js';
+export { default as IconPlaystationCircle } from './icons/playstation-circle.js';
+export { default as IconPlaystationSquare } from './icons/playstation-square.js';
+export { default as IconPlaystationTriangle } from './icons/playstation-triangle.js';
+export { default as IconPlaystationX } from './icons/playstation-x.js';
+export { default as IconPlug } from './icons/plug.js';
+export { default as IconPlugConnected } from './icons/plug-connected.js';
+export { default as IconPlugConnectedX } from './icons/plug-connected-x.js';
+export { default as IconPlugOff } from './icons/plug-off.js';
+export { default as IconPlugX } from './icons/plug-x.js';
+export { default as IconPlus } from './icons/plus.js';
+export { default as IconPlusEqual } from './icons/plus-equal.js';
+export { default as IconPlusMinus } from './icons/plus-minus.js';
+export { default as IconPng } from './icons/png.js';
+export { default as IconPodium } from './icons/podium.js';
+export { default as IconPodiumOff } from './icons/podium-off.js';
+export { default as IconPoint } from './icons/point.js';
+export { default as IconPointFilled } from './icons/point-filled.js';
+export { default as IconPointOff } from './icons/point-off.js';
+export { default as IconPointer } from './icons/pointer.js';
+export { default as IconPointerBolt } from './icons/pointer-bolt.js';
+export { default as IconPointerCancel } from './icons/pointer-cancel.js';
+export { default as IconPointerCheck } from './icons/pointer-check.js';
+export { default as IconPointerCode } from './icons/pointer-code.js';
+export { default as IconPointerCog } from './icons/pointer-cog.js';
+export { default as IconPointerDollar } from './icons/pointer-dollar.js';
+export { default as IconPointerDown } from './icons/pointer-down.js';
+export { default as IconPointerExclamation } from './icons/pointer-exclamation.js';
+export { default as IconPointerFilled } from './icons/pointer-filled.js';
+export { default as IconPointerHeart } from './icons/pointer-heart.js';
+export { default as IconPointerMinus } from './icons/pointer-minus.js';
+export { default as IconPointerOff } from './icons/pointer-off.js';
+export { default as IconPointerPause } from './icons/pointer-pause.js';
+export { default as IconPointerPin } from './icons/pointer-pin.js';
+export { default as IconPointerPlus } from './icons/pointer-plus.js';
+export { default as IconPointerQuestion } from './icons/pointer-question.js';
+export { default as IconPointerSearch } from './icons/pointer-search.js';
+export { default as IconPointerShare } from './icons/pointer-share.js';
+export { default as IconPointerStar } from './icons/pointer-star.js';
+export { default as IconPointerUp } from './icons/pointer-up.js';
+export { default as IconPointerX } from './icons/pointer-x.js';
+export { default as IconPokeball } from './icons/pokeball.js';
+export { default as IconPokeballOff } from './icons/pokeball-off.js';
+export { default as IconPokerChip } from './icons/poker-chip.js';
+export { default as IconPolaroid } from './icons/polaroid.js';
+export { default as IconPolaroidFilled } from './icons/polaroid-filled.js';
+export { default as IconPolygon } from './icons/polygon.js';
+export { default as IconPolygonOff } from './icons/polygon-off.js';
+export { default as IconPoo } from './icons/poo.js';
+export { default as IconPool } from './icons/pool.js';
+export { default as IconPoolOff } from './icons/pool-off.js';
+export { default as IconPower } from './icons/power.js';
+export { default as IconPray } from './icons/pray.js';
+export { default as IconPremiumRights } from './icons/premium-rights.js';
+export { default as IconPrescription } from './icons/prescription.js';
+export { default as IconPresentation } from './icons/presentation.js';
+export { default as IconPresentationAnalytics } from './icons/presentation-analytics.js';
+export { default as IconPresentationOff } from './icons/presentation-off.js';
+export { default as IconPrinter } from './icons/printer.js';
+export { default as IconPrinterOff } from './icons/printer-off.js';
+export { default as IconPrism } from './icons/prism.js';
+export { default as IconPrismOff } from './icons/prism-off.js';
+export { default as IconPrismPlus } from './icons/prism-plus.js';
+export { default as IconPrison } from './icons/prison.js';
+export { default as IconProgress } from './icons/progress.js';
+export { default as IconProgressAlert } from './icons/progress-alert.js';
+export { default as IconProgressBolt } from './icons/progress-bolt.js';
+export { default as IconProgressCheck } from './icons/progress-check.js';
+export { default as IconProgressDown } from './icons/progress-down.js';
+export { default as IconProgressHelp } from './icons/progress-help.js';
+export { default as IconProgressX } from './icons/progress-x.js';
+export { default as IconPrompt } from './icons/prompt.js';
+export { default as IconPropeller } from './icons/propeller.js';
+export { default as IconPropellerOff } from './icons/propeller-off.js';
+export { default as IconPumpkinScary } from './icons/pumpkin-scary.js';
+export { default as IconPuzzle } from './icons/puzzle.js';
+export { default as IconPuzzle2 } from './icons/puzzle-2.js';
+export { default as IconPuzzleFilled } from './icons/puzzle-filled.js';
+export { default as IconPuzzleOff } from './icons/puzzle-off.js';
+export { default as IconPyramid } from './icons/pyramid.js';
+export { default as IconPyramidOff } from './icons/pyramid-off.js';
+export { default as IconPyramidPlus } from './icons/pyramid-plus.js';
+export { default as IconQrcode } from './icons/qrcode.js';
+export { default as IconQrcodeOff } from './icons/qrcode-off.js';
+export { default as IconQuestionMark } from './icons/question-mark.js';
+export { default as IconQuote } from './icons/quote.js';
+export { default as IconQuoteOff } from './icons/quote-off.js';
+export { default as IconQuotes } from './icons/quotes.js';
+export { default as IconRadar } from './icons/radar.js';
+export { default as IconRadar2 } from './icons/radar-2.js';
+export { default as IconRadarOff } from './icons/radar-off.js';
+export { default as IconRadio } from './icons/radio.js';
+export { default as IconRadioOff } from './icons/radio-off.js';
+export { default as IconRadioactive } from './icons/radioactive.js';
+export { default as IconRadioactiveFilled } from './icons/radioactive-filled.js';
+export { default as IconRadioactiveOff } from './icons/radioactive-off.js';
+export { default as IconRadiusBottomLeft } from './icons/radius-bottom-left.js';
+export { default as IconRadiusBottomRight } from './icons/radius-bottom-right.js';
+export { default as IconRadiusTopLeft } from './icons/radius-top-left.js';
+export { default as IconRadiusTopRight } from './icons/radius-top-right.js';
+export { default as IconRainbow } from './icons/rainbow.js';
+export { default as IconRainbowOff } from './icons/rainbow-off.js';
+export { default as IconRating12Plus } from './icons/rating-12-plus.js';
+export { default as IconRating14Plus } from './icons/rating-14-plus.js';
+export { default as IconRating16Plus } from './icons/rating-16-plus.js';
+export { default as IconRating18Plus } from './icons/rating-18-plus.js';
+export { default as IconRating21Plus } from './icons/rating-21-plus.js';
+export { default as IconRazor } from './icons/razor.js';
+export { default as IconRazorElectric } from './icons/razor-electric.js';
+export { default as IconReceipt } from './icons/receipt.js';
+export { default as IconReceipt2 } from './icons/receipt-2.js';
+export { default as IconReceiptOff } from './icons/receipt-off.js';
+export { default as IconReceiptRefund } from './icons/receipt-refund.js';
+export { default as IconReceiptTax } from './icons/receipt-tax.js';
+export { default as IconRecharging } from './icons/recharging.js';
+export { default as IconRecordMail } from './icons/record-mail.js';
+export { default as IconRecordMailOff } from './icons/record-mail-off.js';
+export { default as IconRectangle } from './icons/rectangle.js';
+export { default as IconRectangleFilled } from './icons/rectangle-filled.js';
+export { default as IconRectangleRoundedBottom } from './icons/rectangle-rounded-bottom.js';
+export { default as IconRectangleRoundedTop } from './icons/rectangle-rounded-top.js';
+export { default as IconRectangleVertical } from './icons/rectangle-vertical.js';
+export { default as IconRectangleVerticalFilled } from './icons/rectangle-vertical-filled.js';
+export { default as IconRectangularPrism } from './icons/rectangular-prism.js';
+export { default as IconRectangularPrismOff } from './icons/rectangular-prism-off.js';
+export { default as IconRectangularPrismPlus } from './icons/rectangular-prism-plus.js';
+export { default as IconRecycle } from './icons/recycle.js';
+export { default as IconRecycleOff } from './icons/recycle-off.js';
+export { default as IconRefresh } from './icons/refresh.js';
+export { default as IconRefreshAlert } from './icons/refresh-alert.js';
+export { default as IconRefreshDot } from './icons/refresh-dot.js';
+export { default as IconRefreshOff } from './icons/refresh-off.js';
+export { default as IconRegex } from './icons/regex.js';
+export { default as IconRegexOff } from './icons/regex-off.js';
+export { default as IconRegistered } from './icons/registered.js';
+export { default as IconRelationManyToMany } from './icons/relation-many-to-many.js';
+export { default as IconRelationOneToMany } from './icons/relation-one-to-many.js';
+export { default as IconRelationOneToOne } from './icons/relation-one-to-one.js';
+export { default as IconReload } from './icons/reload.js';
+export { default as IconReorder } from './icons/reorder.js';
+export { default as IconRepeat } from './icons/repeat.js';
+export { default as IconRepeatOff } from './icons/repeat-off.js';
+export { default as IconRepeatOnce } from './icons/repeat-once.js';
+export { default as IconReplace } from './icons/replace.js';
+export { default as IconReplaceFilled } from './icons/replace-filled.js';
+export { default as IconReplaceOff } from './icons/replace-off.js';
+export { default as IconReport } from './icons/report.js';
+export { default as IconReportAnalytics } from './icons/report-analytics.js';
+export { default as IconReportMedical } from './icons/report-medical.js';
+export { default as IconReportMoney } from './icons/report-money.js';
+export { default as IconReportOff } from './icons/report-off.js';
+export { default as IconReportSearch } from './icons/report-search.js';
+export { default as IconReservedLine } from './icons/reserved-line.js';
+export { default as IconResize } from './icons/resize.js';
+export { default as IconRestore } from './icons/restore.js';
+export { default as IconRewindBackward10 } from './icons/rewind-backward-10.js';
+export { default as IconRewindBackward15 } from './icons/rewind-backward-15.js';
+export { default as IconRewindBackward20 } from './icons/rewind-backward-20.js';
+export { default as IconRewindBackward30 } from './icons/rewind-backward-30.js';
+export { default as IconRewindBackward40 } from './icons/rewind-backward-40.js';
+export { default as IconRewindBackward5 } from './icons/rewind-backward-5.js';
+export { default as IconRewindBackward50 } from './icons/rewind-backward-50.js';
+export { default as IconRewindBackward60 } from './icons/rewind-backward-60.js';
+export { default as IconRewindForward10 } from './icons/rewind-forward-10.js';
+export { default as IconRewindForward15 } from './icons/rewind-forward-15.js';
+export { default as IconRewindForward20 } from './icons/rewind-forward-20.js';
+export { default as IconRewindForward30 } from './icons/rewind-forward-30.js';
+export { default as IconRewindForward40 } from './icons/rewind-forward-40.js';
+export { default as IconRewindForward5 } from './icons/rewind-forward-5.js';
+export { default as IconRewindForward50 } from './icons/rewind-forward-50.js';
+export { default as IconRewindForward60 } from './icons/rewind-forward-60.js';
+export { default as IconRibbonHealth } from './icons/ribbon-health.js';
+export { default as IconRings } from './icons/rings.js';
+export { default as IconRipple } from './icons/ripple.js';
+export { default as IconRippleOff } from './icons/ripple-off.js';
+export { default as IconRoad } from './icons/road.js';
+export { default as IconRoadOff } from './icons/road-off.js';
+export { default as IconRoadSign } from './icons/road-sign.js';
+export { default as IconRobot } from './icons/robot.js';
+export { default as IconRobotFace } from './icons/robot-face.js';
+export { default as IconRobotOff } from './icons/robot-off.js';
+export { default as IconRocket } from './icons/rocket.js';
+export { default as IconRocketOff } from './icons/rocket-off.js';
+export { default as IconRollerSkating } from './icons/roller-skating.js';
+export { default as IconRollercoaster } from './icons/rollercoaster.js';
+export { default as IconRollercoasterOff } from './icons/rollercoaster-off.js';
+export { default as IconRosette } from './icons/rosette.js';
+export { default as IconRosetteFilled } from './icons/rosette-filled.js';
+export { default as IconRosetteNumber0 } from './icons/rosette-number-0.js';
+export { default as IconRosetteNumber1 } from './icons/rosette-number-1.js';
+export { default as IconRosetteNumber2 } from './icons/rosette-number-2.js';
+export { default as IconRosetteNumber3 } from './icons/rosette-number-3.js';
+export { default as IconRosetteNumber4 } from './icons/rosette-number-4.js';
+export { default as IconRosetteNumber5 } from './icons/rosette-number-5.js';
+export { default as IconRosetteNumber6 } from './icons/rosette-number-6.js';
+export { default as IconRosetteNumber7 } from './icons/rosette-number-7.js';
+export { default as IconRosetteNumber8 } from './icons/rosette-number-8.js';
+export { default as IconRosetteNumber9 } from './icons/rosette-number-9.js';
+export { default as IconRotate } from './icons/rotate.js';
+export { default as IconRotate2 } from './icons/rotate-2.js';
+export { default as IconRotate360 } from './icons/rotate-360.js';
+export { default as IconRotateClockwise } from './icons/rotate-clockwise.js';
+export { default as IconRotateClockwise2 } from './icons/rotate-clockwise-2.js';
+export { default as IconRotateDot } from './icons/rotate-dot.js';
+export { default as IconRotateRectangle } from './icons/rotate-rectangle.js';
+export { default as IconRoute } from './icons/route.js';
+export { default as IconRoute2 } from './icons/route-2.js';
+export { default as IconRouteAltLeft } from './icons/route-alt-left.js';
+export { default as IconRouteAltRight } from './icons/route-alt-right.js';
+export { default as IconRouteOff } from './icons/route-off.js';
+export { default as IconRouteScan } from './icons/route-scan.js';
+export { default as IconRouteSquare } from './icons/route-square.js';
+export { default as IconRouteSquare2 } from './icons/route-square-2.js';
+export { default as IconRouteX } from './icons/route-x.js';
+export { default as IconRouteX2 } from './icons/route-x-2.js';
+export { default as IconRouter } from './icons/router.js';
+export { default as IconRouterOff } from './icons/router-off.js';
+export { default as IconRowInsertBottom } from './icons/row-insert-bottom.js';
+export { default as IconRowInsertTop } from './icons/row-insert-top.js';
+export { default as IconRowRemove } from './icons/row-remove.js';
+export { default as IconRss } from './icons/rss.js';
+export { default as IconRubberStamp } from './icons/rubber-stamp.js';
+export { default as IconRubberStampOff } from './icons/rubber-stamp-off.js';
+export { default as IconRuler } from './icons/ruler.js';
+export { default as IconRuler2 } from './icons/ruler-2.js';
+export { default as IconRuler2Off } from './icons/ruler-2-off.js';
+export { default as IconRuler3 } from './icons/ruler-3.js';
+export { default as IconRulerMeasure } from './icons/ruler-measure.js';
+export { default as IconRulerOff } from './icons/ruler-off.js';
+export { default as IconRun } from './icons/run.js';
+export { default as IconRvTruck } from './icons/rv-truck.js';
+export { default as IconSTurnDown } from './icons/sturn-down.js';
+export { default as IconSTurnLeft } from './icons/sturn-left.js';
+export { default as IconSTurnRight } from './icons/sturn-right.js';
+export { default as IconSTurnUp } from './icons/sturn-up.js';
+export { default as IconSailboat } from './icons/sailboat.js';
+export { default as IconSailboat2 } from './icons/sailboat-2.js';
+export { default as IconSailboatOff } from './icons/sailboat-off.js';
+export { default as IconSalad } from './icons/salad.js';
+export { default as IconSalt } from './icons/salt.js';
+export { default as IconSatellite } from './icons/satellite.js';
+export { default as IconSatelliteOff } from './icons/satellite-off.js';
+export { default as IconSausage } from './icons/sausage.js';
+export { default as IconScale } from './icons/scale.js';
+export { default as IconScaleOff } from './icons/scale-off.js';
+export { default as IconScaleOutline } from './icons/scale-outline.js';
+export { default as IconScaleOutlineOff } from './icons/scale-outline-off.js';
+export { default as IconScan } from './icons/scan.js';
+export { default as IconScanEye } from './icons/scan-eye.js';
+export { default as IconSchema } from './icons/schema.js';
+export { default as IconSchemaOff } from './icons/schema-off.js';
+export { default as IconSchool } from './icons/school.js';
+export { default as IconSchoolBell } from './icons/school-bell.js';
+export { default as IconSchoolOff } from './icons/school-off.js';
+export { default as IconScissors } from './icons/scissors.js';
+export { default as IconScissorsOff } from './icons/scissors-off.js';
+export { default as IconScooter } from './icons/scooter.js';
+export { default as IconScooterElectric } from './icons/scooter-electric.js';
+export { default as IconScoreboard } from './icons/scoreboard.js';
+export { default as IconScreenShare } from './icons/screen-share.js';
+export { default as IconScreenShareOff } from './icons/screen-share-off.js';
+export { default as IconScreenshot } from './icons/screenshot.js';
+export { default as IconScribble } from './icons/scribble.js';
+export { default as IconScribbleOff } from './icons/scribble-off.js';
+export { default as IconScript } from './icons/script.js';
+export { default as IconScriptMinus } from './icons/script-minus.js';
+export { default as IconScriptPlus } from './icons/script-plus.js';
+export { default as IconScriptX } from './icons/script-x.js';
+export { default as IconScubaMask } from './icons/scuba-mask.js';
+export { default as IconScubaMaskOff } from './icons/scuba-mask-off.js';
+export { default as IconSdk } from './icons/sdk.js';
+export { default as IconSearch } from './icons/search.js';
+export { default as IconSearchOff } from './icons/search-off.js';
+export { default as IconSection } from './icons/section.js';
+export { default as IconSectionSign } from './icons/section-sign.js';
+export { default as IconSeeding } from './icons/seeding.js';
+export { default as IconSeedingOff } from './icons/seeding-off.js';
+export { default as IconSelect } from './icons/select.js';
+export { default as IconSelectAll } from './icons/select-all.js';
+export { default as IconSelector } from './icons/selector.js';
+export { default as IconSend } from './icons/send.js';
+export { default as IconSendOff } from './icons/send-off.js';
+export { default as IconSeo } from './icons/seo.js';
+export { default as IconSeparator } from './icons/separator.js';
+export { default as IconSeparatorHorizontal } from './icons/separator-horizontal.js';
+export { default as IconSeparatorVertical } from './icons/separator-vertical.js';
+export { default as IconServer } from './icons/server.js';
+export { default as IconServer2 } from './icons/server-2.js';
+export { default as IconServerBolt } from './icons/server-bolt.js';
+export { default as IconServerCog } from './icons/server-cog.js';
+export { default as IconServerOff } from './icons/server-off.js';
+export { default as IconServicemark } from './icons/servicemark.js';
+export { default as IconSettings } from './icons/settings.js';
+export { default as IconSettings2 } from './icons/settings-2.js';
+export { default as IconSettingsAutomation } from './icons/settings-automation.js';
+export { default as IconSettingsBolt } from './icons/settings-bolt.js';
+export { default as IconSettingsCancel } from './icons/settings-cancel.js';
+export { default as IconSettingsCheck } from './icons/settings-check.js';
+export { default as IconSettingsCode } from './icons/settings-code.js';
+export { default as IconSettingsCog } from './icons/settings-cog.js';
+export { default as IconSettingsDollar } from './icons/settings-dollar.js';
+export { default as IconSettingsDown } from './icons/settings-down.js';
+export { default as IconSettingsExclamation } from './icons/settings-exclamation.js';
+export { default as IconSettingsFilled } from './icons/settings-filled.js';
+export { default as IconSettingsHeart } from './icons/settings-heart.js';
+export { default as IconSettingsMinus } from './icons/settings-minus.js';
+export { default as IconSettingsOff } from './icons/settings-off.js';
+export { default as IconSettingsPause } from './icons/settings-pause.js';
+export { default as IconSettingsPin } from './icons/settings-pin.js';
+export { default as IconSettingsPlus } from './icons/settings-plus.js';
+export { default as IconSettingsQuestion } from './icons/settings-question.js';
+export { default as IconSettingsSearch } from './icons/settings-search.js';
+export { default as IconSettingsShare } from './icons/settings-share.js';
+export { default as IconSettingsStar } from './icons/settings-star.js';
+export { default as IconSettingsUp } from './icons/settings-up.js';
+export { default as IconSettingsX } from './icons/settings-x.js';
+export { default as IconShadow } from './icons/shadow.js';
+export { default as IconShadowOff } from './icons/shadow-off.js';
+export { default as IconShape } from './icons/shape.js';
+export { default as IconShape2 } from './icons/shape-2.js';
+export { default as IconShape3 } from './icons/shape-3.js';
+export { default as IconShapeOff } from './icons/shape-off.js';
+export { default as IconShare } from './icons/share.js';
+export { default as IconShare2 } from './icons/share-2.js';
+export { default as IconShare3 } from './icons/share-3.js';
+export { default as IconShareOff } from './icons/share-off.js';
+export { default as IconShiJumping } from './icons/shi-jumping.js';
+export { default as IconShield } from './icons/shield.js';
+export { default as IconShieldBolt } from './icons/shield-bolt.js';
+export { default as IconShieldCancel } from './icons/shield-cancel.js';
+export { default as IconShieldCheck } from './icons/shield-check.js';
+export { default as IconShieldCheckFilled } from './icons/shield-check-filled.js';
+export { default as IconShieldCheckered } from './icons/shield-checkered.js';
+export { default as IconShieldCheckeredFilled } from './icons/shield-checkered-filled.js';
+export { default as IconShieldChevron } from './icons/shield-chevron.js';
+export { default as IconShieldCode } from './icons/shield-code.js';
+export { default as IconShieldCog } from './icons/shield-cog.js';
+export { default as IconShieldDollar } from './icons/shield-dollar.js';
+export { default as IconShieldDown } from './icons/shield-down.js';
+export { default as IconShieldExclamation } from './icons/shield-exclamation.js';
+export { default as IconShieldFilled } from './icons/shield-filled.js';
+export { default as IconShieldHalf } from './icons/shield-half.js';
+export { default as IconShieldHalfFilled } from './icons/shield-half-filled.js';
+export { default as IconShieldHeart } from './icons/shield-heart.js';
+export { default as IconShieldLock } from './icons/shield-lock.js';
+export { default as IconShieldLockFilled } from './icons/shield-lock-filled.js';
+export { default as IconShieldMinus } from './icons/shield-minus.js';
+export { default as IconShieldOff } from './icons/shield-off.js';
+export { default as IconShieldPause } from './icons/shield-pause.js';
+export { default as IconShieldPin } from './icons/shield-pin.js';
+export { default as IconShieldPlus } from './icons/shield-plus.js';
+export { default as IconShieldQuestion } from './icons/shield-question.js';
+export { default as IconShieldSearch } from './icons/shield-search.js';
+export { default as IconShieldShare } from './icons/shield-share.js';
+export { default as IconShieldStar } from './icons/shield-star.js';
+export { default as IconShieldUp } from './icons/shield-up.js';
+export { default as IconShieldX } from './icons/shield-x.js';
+export { default as IconShip } from './icons/ship.js';
+export { default as IconShipOff } from './icons/ship-off.js';
+export { default as IconShirt } from './icons/shirt.js';
+export { default as IconShirtFilled } from './icons/shirt-filled.js';
+export { default as IconShirtOff } from './icons/shirt-off.js';
+export { default as IconShirtSport } from './icons/shirt-sport.js';
+export { default as IconShoe } from './icons/shoe.js';
+export { default as IconShoeOff } from './icons/shoe-off.js';
+export { default as IconShoppingBag } from './icons/shopping-bag.js';
+export { default as IconShoppingBagCheck } from './icons/shopping-bag-check.js';
+export { default as IconShoppingBagDiscount } from './icons/shopping-bag-discount.js';
+export { default as IconShoppingBagEdit } from './icons/shopping-bag-edit.js';
+export { default as IconShoppingBagExclamation } from './icons/shopping-bag-exclamation.js';
+export { default as IconShoppingBagMinus } from './icons/shopping-bag-minus.js';
+export { default as IconShoppingBagPlus } from './icons/shopping-bag-plus.js';
+export { default as IconShoppingBagSearch } from './icons/shopping-bag-search.js';
+export { default as IconShoppingBagX } from './icons/shopping-bag-x.js';
+export { default as IconShoppingCart } from './icons/shopping-cart.js';
+export { default as IconShoppingCartBolt } from './icons/shopping-cart-bolt.js';
+export { default as IconShoppingCartCancel } from './icons/shopping-cart-cancel.js';
+export { default as IconShoppingCartCheck } from './icons/shopping-cart-check.js';
+export { default as IconShoppingCartCode } from './icons/shopping-cart-code.js';
+export { default as IconShoppingCartCog } from './icons/shopping-cart-cog.js';
+export { default as IconShoppingCartCopy } from './icons/shopping-cart-copy.js';
+export { default as IconShoppingCartDiscount } from './icons/shopping-cart-discount.js';
+export { default as IconShoppingCartDollar } from './icons/shopping-cart-dollar.js';
+export { default as IconShoppingCartDown } from './icons/shopping-cart-down.js';
+export { default as IconShoppingCartExclamation } from './icons/shopping-cart-exclamation.js';
+export { default as IconShoppingCartFilled } from './icons/shopping-cart-filled.js';
+export { default as IconShoppingCartHeart } from './icons/shopping-cart-heart.js';
+export { default as IconShoppingCartMinus } from './icons/shopping-cart-minus.js';
+export { default as IconShoppingCartOff } from './icons/shopping-cart-off.js';
+export { default as IconShoppingCartPause } from './icons/shopping-cart-pause.js';
+export { default as IconShoppingCartPin } from './icons/shopping-cart-pin.js';
+export { default as IconShoppingCartPlus } from './icons/shopping-cart-plus.js';
+export { default as IconShoppingCartQuestion } from './icons/shopping-cart-question.js';
+export { default as IconShoppingCartSearch } from './icons/shopping-cart-search.js';
+export { default as IconShoppingCartShare } from './icons/shopping-cart-share.js';
+export { default as IconShoppingCartStar } from './icons/shopping-cart-star.js';
+export { default as IconShoppingCartUp } from './icons/shopping-cart-up.js';
+export { default as IconShoppingCartX } from './icons/shopping-cart-x.js';
+export { default as IconShovel } from './icons/shovel.js';
+export { default as IconShredder } from './icons/shredder.js';
+export { default as IconSignLeft } from './icons/sign-left.js';
+export { default as IconSignLeftFilled } from './icons/sign-left-filled.js';
+export { default as IconSignRight } from './icons/sign-right.js';
+export { default as IconSignRightFilled } from './icons/sign-right-filled.js';
+export { default as IconSignal2g } from './icons/signal-2g.js';
+export { default as IconSignal3g } from './icons/signal-3g.js';
+export { default as IconSignal4g } from './icons/signal-4g.js';
+export { default as IconSignal4gPlus } from './icons/signal-4g-plus.js';
+export { default as IconSignal5g } from './icons/signal-5g.js';
+export { default as IconSignal6g } from './icons/signal-6g.js';
+export { default as IconSignalE } from './icons/signal-e.js';
+export { default as IconSignalG } from './icons/signal-g.js';
+export { default as IconSignalH } from './icons/signal-h.js';
+export { default as IconSignalHPlus } from './icons/signal-hplus.js';
+export { default as IconSignalLte } from './icons/signal-lte.js';
+export { default as IconSignature } from './icons/signature.js';
+export { default as IconSignatureOff } from './icons/signature-off.js';
+export { default as IconSitemap } from './icons/sitemap.js';
+export { default as IconSitemapOff } from './icons/sitemap-off.js';
+export { default as IconSkateboard } from './icons/skateboard.js';
+export { default as IconSkateboardOff } from './icons/skateboard-off.js';
+export { default as IconSkateboarding } from './icons/skateboarding.js';
+export { default as IconSkull } from './icons/skull.js';
+export { default as IconSlash } from './icons/slash.js';
+export { default as IconSlashes } from './icons/slashes.js';
+export { default as IconSleigh } from './icons/sleigh.js';
+export { default as IconSlice } from './icons/slice.js';
+export { default as IconSlideshow } from './icons/slideshow.js';
+export { default as IconSmartHome } from './icons/smart-home.js';
+export { default as IconSmartHomeOff } from './icons/smart-home-off.js';
+export { default as IconSmoking } from './icons/smoking.js';
+export { default as IconSmokingNo } from './icons/smoking-no.js';
+export { default as IconSnowflake } from './icons/snowflake.js';
+export { default as IconSnowflakeOff } from './icons/snowflake-off.js';
+export { default as IconSnowman } from './icons/snowman.js';
+export { default as IconSoccerField } from './icons/soccer-field.js';
+export { default as IconSocial } from './icons/social.js';
+export { default as IconSocialOff } from './icons/social-off.js';
+export { default as IconSock } from './icons/sock.js';
+export { default as IconSofa } from './icons/sofa.js';
+export { default as IconSofaOff } from './icons/sofa-off.js';
+export { default as IconSolarElectricity } from './icons/solar-electricity.js';
+export { default as IconSolarPanel } from './icons/solar-panel.js';
+export { default as IconSolarPanel2 } from './icons/solar-panel-2.js';
+export { default as IconSort09 } from './icons/sort-09.js';
+export { default as IconSort90 } from './icons/sort-90.js';
+export { default as IconSortAZ } from './icons/sort-az.js';
+export { default as IconSortAscending } from './icons/sort-ascending.js';
+export { default as IconSortAscending2 } from './icons/sort-ascending-2.js';
+export { default as IconSortAscendingLetters } from './icons/sort-ascending-letters.js';
+export { default as IconSortAscendingNumbers } from './icons/sort-ascending-numbers.js';
+export { default as IconSortDescending } from './icons/sort-descending.js';
+export { default as IconSortDescending2 } from './icons/sort-descending-2.js';
+export { default as IconSortDescendingLetters } from './icons/sort-descending-letters.js';
+export { default as IconSortDescendingNumbers } from './icons/sort-descending-numbers.js';
+export { default as IconSortZA } from './icons/sort-za.js';
+export { default as IconSos } from './icons/sos.js';
+export { default as IconSoup } from './icons/soup.js';
+export { default as IconSoupOff } from './icons/soup-off.js';
+export { default as IconSourceCode } from './icons/source-code.js';
+export { default as IconSpace } from './icons/space.js';
+export { default as IconSpaceOff } from './icons/space-off.js';
+export { default as IconSpacingHorizontal } from './icons/spacing-horizontal.js';
+export { default as IconSpacingVertical } from './icons/spacing-vertical.js';
+export { default as IconSpade } from './icons/spade.js';
+export { default as IconSpadeFilled } from './icons/spade-filled.js';
+export { default as IconSparkles } from './icons/sparkles.js';
+export { default as IconSpeakerphone } from './icons/speakerphone.js';
+export { default as IconSpeedboat } from './icons/speedboat.js';
+export { default as IconSphere } from './icons/sphere.js';
+export { default as IconSphereOff } from './icons/sphere-off.js';
+export { default as IconSpherePlus } from './icons/sphere-plus.js';
+export { default as IconSpider } from './icons/spider.js';
+export { default as IconSpiral } from './icons/spiral.js';
+export { default as IconSpiralOff } from './icons/spiral-off.js';
+export { default as IconSportBillard } from './icons/sport-billard.js';
+export { default as IconSpray } from './icons/spray.js';
+export { default as IconSpy } from './icons/spy.js';
+export { default as IconSpyOff } from './icons/spy-off.js';
+export { default as IconSql } from './icons/sql.js';
+export { default as IconSquare } from './icons/square.js';
+export { default as IconSquare0Filled } from './icons/square-0-filled.js';
+export { default as IconSquare1Filled } from './icons/square-1-filled.js';
+export { default as IconSquare2Filled } from './icons/square-2-filled.js';
+export { default as IconSquare3Filled } from './icons/square-3-filled.js';
+export { default as IconSquare4Filled } from './icons/square-4-filled.js';
+export { default as IconSquare5Filled } from './icons/square-5-filled.js';
+export { default as IconSquare6Filled } from './icons/square-6-filled.js';
+export { default as IconSquare7Filled } from './icons/square-7-filled.js';
+export { default as IconSquare8Filled } from './icons/square-8-filled.js';
+export { default as IconSquare9Filled } from './icons/square-9-filled.js';
+export { default as IconSquareArrowDown } from './icons/square-arrow-down.js';
+export { default as IconSquareArrowDownFilled } from './icons/square-arrow-down-filled.js';
+export { default as IconSquareArrowLeft } from './icons/square-arrow-left.js';
+export { default as IconSquareArrowLeftFilled } from './icons/square-arrow-left-filled.js';
+export { default as IconSquareArrowRight } from './icons/square-arrow-right.js';
+export { default as IconSquareArrowRightFilled } from './icons/square-arrow-right-filled.js';
+export { default as IconSquareArrowUp } from './icons/square-arrow-up.js';
+export { default as IconSquareArrowUpFilled } from './icons/square-arrow-up-filled.js';
+export { default as IconSquareAsterisk } from './icons/square-asterisk.js';
+export { default as IconSquareAsteriskFilled } from './icons/square-asterisk-filled.js';
+export { default as IconSquareCheck } from './icons/square-check.js';
+export { default as IconSquareCheckFilled } from './icons/square-check-filled.js';
+export { default as IconSquareChevronDown } from './icons/square-chevron-down.js';
+export { default as IconSquareChevronDownFilled } from './icons/square-chevron-down-filled.js';
+export { default as IconSquareChevronLeft } from './icons/square-chevron-left.js';
+export { default as IconSquareChevronLeftFilled } from './icons/square-chevron-left-filled.js';
+export { default as IconSquareChevronRight } from './icons/square-chevron-right.js';
+export { default as IconSquareChevronRightFilled } from './icons/square-chevron-right-filled.js';
+export { default as IconSquareChevronUp } from './icons/square-chevron-up.js';
+export { default as IconSquareChevronUpFilled } from './icons/square-chevron-up-filled.js';
+export { default as IconSquareChevronsDown } from './icons/square-chevrons-down.js';
+export { default as IconSquareChevronsDownFilled } from './icons/square-chevrons-down-filled.js';
+export { default as IconSquareChevronsLeft } from './icons/square-chevrons-left.js';
+export { default as IconSquareChevronsLeftFilled } from './icons/square-chevrons-left-filled.js';
+export { default as IconSquareChevronsRight } from './icons/square-chevrons-right.js';
+export { default as IconSquareChevronsRightFilled } from './icons/square-chevrons-right-filled.js';
+export { default as IconSquareChevronsUp } from './icons/square-chevrons-up.js';
+export { default as IconSquareChevronsUpFilled } from './icons/square-chevrons-up-filled.js';
+export { default as IconSquareDot } from './icons/square-dot.js';
+export { default as IconSquareDotFilled } from './icons/square-dot-filled.js';
+export { default as IconSquareF0 } from './icons/square-f-0.js';
+export { default as IconSquareF0Filled } from './icons/square-f-0-filled.js';
+export { default as IconSquareF1 } from './icons/square-f-1.js';
+export { default as IconSquareF1Filled } from './icons/square-f-1-filled.js';
+export { default as IconSquareF2 } from './icons/square-f-2.js';
+export { default as IconSquareF2Filled } from './icons/square-f-2-filled.js';
+export { default as IconSquareF3 } from './icons/square-f-3.js';
+export { default as IconSquareF3Filled } from './icons/square-f-3-filled.js';
+export { default as IconSquareF4 } from './icons/square-f-4.js';
+export { default as IconSquareF4Filled } from './icons/square-f-4-filled.js';
+export { default as IconSquareF5 } from './icons/square-f-5.js';
+export { default as IconSquareF5Filled } from './icons/square-f-5-filled.js';
+export { default as IconSquareF6 } from './icons/square-f-6.js';
+export { default as IconSquareF6Filled } from './icons/square-f-6-filled.js';
+export { default as IconSquareF7 } from './icons/square-f-7.js';
+export { default as IconSquareF7Filled } from './icons/square-f-7-filled.js';
+export { default as IconSquareF8 } from './icons/square-f-8.js';
+export { default as IconSquareF8Filled } from './icons/square-f-8-filled.js';
+export { default as IconSquareF9 } from './icons/square-f-9.js';
+export { default as IconSquareF9Filled } from './icons/square-f-9-filled.js';
+export { default as IconSquareFilled } from './icons/square-filled.js';
+export { default as IconSquareForbid } from './icons/square-forbid.js';
+export { default as IconSquareForbid2 } from './icons/square-forbid-2.js';
+export { default as IconSquareHalf } from './icons/square-half.js';
+export { default as IconSquareKey } from './icons/square-key.js';
+export { default as IconSquareLetterA } from './icons/square-letter-a.js';
+export { default as IconSquareLetterB } from './icons/square-letter-b.js';
+export { default as IconSquareLetterC } from './icons/square-letter-c.js';
+export { default as IconSquareLetterD } from './icons/square-letter-d.js';
+export { default as IconSquareLetterE } from './icons/square-letter-e.js';
+export { default as IconSquareLetterF } from './icons/square-letter-f.js';
+export { default as IconSquareLetterG } from './icons/square-letter-g.js';
+export { default as IconSquareLetterH } from './icons/square-letter-h.js';
+export { default as IconSquareLetterI } from './icons/square-letter-i.js';
+export { default as IconSquareLetterJ } from './icons/square-letter-j.js';
+export { default as IconSquareLetterK } from './icons/square-letter-k.js';
+export { default as IconSquareLetterL } from './icons/square-letter-l.js';
+export { default as IconSquareLetterM } from './icons/square-letter-m.js';
+export { default as IconSquareLetterN } from './icons/square-letter-n.js';
+export { default as IconSquareLetterO } from './icons/square-letter-o.js';
+export { default as IconSquareLetterP } from './icons/square-letter-p.js';
+export { default as IconSquareLetterQ } from './icons/square-letter-q.js';
+export { default as IconSquareLetterR } from './icons/square-letter-r.js';
+export { default as IconSquareLetterS } from './icons/square-letter-s.js';
+export { default as IconSquareLetterT } from './icons/square-letter-t.js';
+export { default as IconSquareLetterU } from './icons/square-letter-u.js';
+export { default as IconSquareLetterV } from './icons/square-letter-v.js';
+export { default as IconSquareLetterW } from './icons/square-letter-w.js';
+export { default as IconSquareLetterX } from './icons/square-letter-x.js';
+export { default as IconSquareLetterY } from './icons/square-letter-y.js';
+export { default as IconSquareLetterZ } from './icons/square-letter-z.js';
+export { default as IconSquareMinus } from './icons/square-minus.js';
+export { default as IconSquareMinusFilled } from './icons/square-minus-filled.js';
+export { default as IconSquareNumber0 } from './icons/square-number-0.js';
+export { default as IconSquareNumber1 } from './icons/square-number-1.js';
+export { default as IconSquareNumber2 } from './icons/square-number-2.js';
+export { default as IconSquareNumber3 } from './icons/square-number-3.js';
+export { default as IconSquareNumber4 } from './icons/square-number-4.js';
+export { default as IconSquareNumber5 } from './icons/square-number-5.js';
+export { default as IconSquareNumber6 } from './icons/square-number-6.js';
+export { default as IconSquareNumber7 } from './icons/square-number-7.js';
+export { default as IconSquareNumber8 } from './icons/square-number-8.js';
+export { default as IconSquareNumber9 } from './icons/square-number-9.js';
+export { default as IconSquareOff } from './icons/square-off.js';
+export { default as IconSquarePlus } from './icons/square-plus.js';
+export { default as IconSquarePlus2 } from './icons/square-plus-2.js';
+export { default as IconSquareRoot } from './icons/square-root.js';
+export { default as IconSquareRoot2 } from './icons/square-root-2.js';
+export { default as IconSquareRotated } from './icons/square-rotated.js';
+export { default as IconSquareRotatedFilled } from './icons/square-rotated-filled.js';
+export { default as IconSquareRotatedForbid } from './icons/square-rotated-forbid.js';
+export { default as IconSquareRotatedForbid2 } from './icons/square-rotated-forbid-2.js';
+export { default as IconSquareRotatedOff } from './icons/square-rotated-off.js';
+export { default as IconSquareRounded } from './icons/square-rounded.js';
+export { default as IconSquareRoundedArrowDown } from './icons/square-rounded-arrow-down.js';
+export { default as IconSquareRoundedArrowDownFilled } from './icons/square-rounded-arrow-down-filled.js';
+export { default as IconSquareRoundedArrowLeft } from './icons/square-rounded-arrow-left.js';
+export { default as IconSquareRoundedArrowLeftFilled } from './icons/square-rounded-arrow-left-filled.js';
+export { default as IconSquareRoundedArrowRight } from './icons/square-rounded-arrow-right.js';
+export { default as IconSquareRoundedArrowRightFilled } from './icons/square-rounded-arrow-right-filled.js';
+export { default as IconSquareRoundedArrowUp } from './icons/square-rounded-arrow-up.js';
+export { default as IconSquareRoundedArrowUpFilled } from './icons/square-rounded-arrow-up-filled.js';
+export { default as IconSquareRoundedCheck } from './icons/square-rounded-check.js';
+export { default as IconSquareRoundedCheckFilled } from './icons/square-rounded-check-filled.js';
+export { default as IconSquareRoundedChevronDown } from './icons/square-rounded-chevron-down.js';
+export { default as IconSquareRoundedChevronDownFilled } from './icons/square-rounded-chevron-down-filled.js';
+export { default as IconSquareRoundedChevronLeft } from './icons/square-rounded-chevron-left.js';
+export { default as IconSquareRoundedChevronLeftFilled } from './icons/square-rounded-chevron-left-filled.js';
+export { default as IconSquareRoundedChevronRight } from './icons/square-rounded-chevron-right.js';
+export { default as IconSquareRoundedChevronRightFilled } from './icons/square-rounded-chevron-right-filled.js';
+export { default as IconSquareRoundedChevronUp } from './icons/square-rounded-chevron-up.js';
+export { default as IconSquareRoundedChevronUpFilled } from './icons/square-rounded-chevron-up-filled.js';
+export { default as IconSquareRoundedChevronsDown } from './icons/square-rounded-chevrons-down.js';
+export { default as IconSquareRoundedChevronsDownFilled } from './icons/square-rounded-chevrons-down-filled.js';
+export { default as IconSquareRoundedChevronsLeft } from './icons/square-rounded-chevrons-left.js';
+export { default as IconSquareRoundedChevronsLeftFilled } from './icons/square-rounded-chevrons-left-filled.js';
+export { default as IconSquareRoundedChevronsRight } from './icons/square-rounded-chevrons-right.js';
+export { default as IconSquareRoundedChevronsRightFilled } from './icons/square-rounded-chevrons-right-filled.js';
+export { default as IconSquareRoundedChevronsUp } from './icons/square-rounded-chevrons-up.js';
+export { default as IconSquareRoundedChevronsUpFilled } from './icons/square-rounded-chevrons-up-filled.js';
+export { default as IconSquareRoundedFilled } from './icons/square-rounded-filled.js';
+export { default as IconSquareRoundedLetterA } from './icons/square-rounded-letter-a.js';
+export { default as IconSquareRoundedLetterB } from './icons/square-rounded-letter-b.js';
+export { default as IconSquareRoundedLetterC } from './icons/square-rounded-letter-c.js';
+export { default as IconSquareRoundedLetterD } from './icons/square-rounded-letter-d.js';
+export { default as IconSquareRoundedLetterE } from './icons/square-rounded-letter-e.js';
+export { default as IconSquareRoundedLetterF } from './icons/square-rounded-letter-f.js';
+export { default as IconSquareRoundedLetterG } from './icons/square-rounded-letter-g.js';
+export { default as IconSquareRoundedLetterH } from './icons/square-rounded-letter-h.js';
+export { default as IconSquareRoundedLetterI } from './icons/square-rounded-letter-i.js';
+export { default as IconSquareRoundedLetterJ } from './icons/square-rounded-letter-j.js';
+export { default as IconSquareRoundedLetterK } from './icons/square-rounded-letter-k.js';
+export { default as IconSquareRoundedLetterL } from './icons/square-rounded-letter-l.js';
+export { default as IconSquareRoundedLetterM } from './icons/square-rounded-letter-m.js';
+export { default as IconSquareRoundedLetterN } from './icons/square-rounded-letter-n.js';
+export { default as IconSquareRoundedLetterO } from './icons/square-rounded-letter-o.js';
+export { default as IconSquareRoundedLetterP } from './icons/square-rounded-letter-p.js';
+export { default as IconSquareRoundedLetterQ } from './icons/square-rounded-letter-q.js';
+export { default as IconSquareRoundedLetterR } from './icons/square-rounded-letter-r.js';
+export { default as IconSquareRoundedLetterS } from './icons/square-rounded-letter-s.js';
+export { default as IconSquareRoundedLetterT } from './icons/square-rounded-letter-t.js';
+export { default as IconSquareRoundedLetterU } from './icons/square-rounded-letter-u.js';
+export { default as IconSquareRoundedLetterV } from './icons/square-rounded-letter-v.js';
+export { default as IconSquareRoundedLetterW } from './icons/square-rounded-letter-w.js';
+export { default as IconSquareRoundedLetterX } from './icons/square-rounded-letter-x.js';
+export { default as IconSquareRoundedLetterY } from './icons/square-rounded-letter-y.js';
+export { default as IconSquareRoundedLetterZ } from './icons/square-rounded-letter-z.js';
+export { default as IconSquareRoundedMinus } from './icons/square-rounded-minus.js';
+export { default as IconSquareRoundedMinus2 } from './icons/square-rounded-minus-2.js';
+export { default as IconSquareRoundedMinusFilled } from './icons/square-rounded-minus-filled.js';
+export { default as IconSquareRoundedNumber0 } from './icons/square-rounded-number-0.js';
+export { default as IconSquareRoundedNumber0Filled } from './icons/square-rounded-number-0-filled.js';
+export { default as IconSquareRoundedNumber1 } from './icons/square-rounded-number-1.js';
+export { default as IconSquareRoundedNumber1Filled } from './icons/square-rounded-number-1-filled.js';
+export { default as IconSquareRoundedNumber2 } from './icons/square-rounded-number-2.js';
+export { default as IconSquareRoundedNumber2Filled } from './icons/square-rounded-number-2-filled.js';
+export { default as IconSquareRoundedNumber3 } from './icons/square-rounded-number-3.js';
+export { default as IconSquareRoundedNumber3Filled } from './icons/square-rounded-number-3-filled.js';
+export { default as IconSquareRoundedNumber4 } from './icons/square-rounded-number-4.js';
+export { default as IconSquareRoundedNumber4Filled } from './icons/square-rounded-number-4-filled.js';
+export { default as IconSquareRoundedNumber5 } from './icons/square-rounded-number-5.js';
+export { default as IconSquareRoundedNumber5Filled } from './icons/square-rounded-number-5-filled.js';
+export { default as IconSquareRoundedNumber6 } from './icons/square-rounded-number-6.js';
+export { default as IconSquareRoundedNumber6Filled } from './icons/square-rounded-number-6-filled.js';
+export { default as IconSquareRoundedNumber7 } from './icons/square-rounded-number-7.js';
+export { default as IconSquareRoundedNumber7Filled } from './icons/square-rounded-number-7-filled.js';
+export { default as IconSquareRoundedNumber8 } from './icons/square-rounded-number-8.js';
+export { default as IconSquareRoundedNumber8Filled } from './icons/square-rounded-number-8-filled.js';
+export { default as IconSquareRoundedNumber9 } from './icons/square-rounded-number-9.js';
+export { default as IconSquareRoundedNumber9Filled } from './icons/square-rounded-number-9-filled.js';
+export { default as IconSquareRoundedPlus } from './icons/square-rounded-plus.js';
+export { default as IconSquareRoundedPlus2 } from './icons/square-rounded-plus-2.js';
+export { default as IconSquareRoundedPlusFilled } from './icons/square-rounded-plus-filled.js';
+export { default as IconSquareRoundedX } from './icons/square-rounded-x.js';
+export { default as IconSquareRoundedXFilled } from './icons/square-rounded-xfilled.js';
+export { default as IconSquareToggle } from './icons/square-toggle.js';
+export { default as IconSquareToggleHorizontal } from './icons/square-toggle-horizontal.js';
+export { default as IconSquareX } from './icons/square-x.js';
+export { default as IconSquareXFilled } from './icons/square-xfilled.js';
+export { default as IconSquaresDiagonal } from './icons/squares-diagonal.js';
+export { default as IconSquaresFilled } from './icons/squares-filled.js';
+export { default as IconStack } from './icons/stack.js';
+export { default as IconStack2 } from './icons/stack-2.js';
+export { default as IconStack3 } from './icons/stack-3.js';
+export { default as IconStackPop } from './icons/stack-pop.js';
+export { default as IconStackPush } from './icons/stack-push.js';
+export { default as IconStairs } from './icons/stairs.js';
+export { default as IconStairsDown } from './icons/stairs-down.js';
+export { default as IconStairsUp } from './icons/stairs-up.js';
+export { default as IconStar } from './icons/star.js';
+export { default as IconStarFilled } from './icons/star-filled.js';
+export { default as IconStarHalf } from './icons/star-half.js';
+export { default as IconStarHalfFilled } from './icons/star-half-filled.js';
+export { default as IconStarOff } from './icons/star-off.js';
+export { default as IconStars } from './icons/stars.js';
+export { default as IconStarsFilled } from './icons/stars-filled.js';
+export { default as IconStarsOff } from './icons/stars-off.js';
+export { default as IconStatusChange } from './icons/status-change.js';
+export { default as IconSteam } from './icons/steam.js';
+export { default as IconSteeringWheel } from './icons/steering-wheel.js';
+export { default as IconSteeringWheelOff } from './icons/steering-wheel-off.js';
+export { default as IconStepInto } from './icons/step-into.js';
+export { default as IconStepOut } from './icons/step-out.js';
+export { default as IconStereoGlasses } from './icons/stereo-glasses.js';
+export { default as IconStethoscope } from './icons/stethoscope.js';
+export { default as IconStethoscopeOff } from './icons/stethoscope-off.js';
+export { default as IconSticker } from './icons/sticker.js';
+export { default as IconStorm } from './icons/storm.js';
+export { default as IconStormOff } from './icons/storm-off.js';
+export { default as IconStretching } from './icons/stretching.js';
+export { default as IconStretching2 } from './icons/stretching-2.js';
+export { default as IconStrikethrough } from './icons/strikethrough.js';
+export { default as IconSubmarine } from './icons/submarine.js';
+export { default as IconSubscript } from './icons/subscript.js';
+export { default as IconSubtask } from './icons/subtask.js';
+export { default as IconSum } from './icons/sum.js';
+export { default as IconSumOff } from './icons/sum-off.js';
+export { default as IconSun } from './icons/sun.js';
+export { default as IconSunElectricity } from './icons/sun-electricity.js';
+export { default as IconSunFilled } from './icons/sun-filled.js';
+export { default as IconSunHigh } from './icons/sun-high.js';
+export { default as IconSunLow } from './icons/sun-low.js';
+export { default as IconSunMoon } from './icons/sun-moon.js';
+export { default as IconSunOff } from './icons/sun-off.js';
+export { default as IconSunWind } from './icons/sun-wind.js';
+export { default as IconSunglasses } from './icons/sunglasses.js';
+export { default as IconSunrise } from './icons/sunrise.js';
+export { default as IconSunset } from './icons/sunset.js';
+export { default as IconSunset2 } from './icons/sunset-2.js';
+export { default as IconSuperscript } from './icons/superscript.js';
+export { default as IconSvg } from './icons/svg.js';
+export { default as IconSwimming } from './icons/swimming.js';
+export { default as IconSwipe } from './icons/swipe.js';
+export { default as IconSwitch } from './icons/switch.js';
+export { default as IconSwitch2 } from './icons/switch-2.js';
+export { default as IconSwitch3 } from './icons/switch-3.js';
+export { default as IconSwitchHorizontal } from './icons/switch-horizontal.js';
+export { default as IconSwitchVertical } from './icons/switch-vertical.js';
+export { default as IconSword } from './icons/sword.js';
+export { default as IconSwordOff } from './icons/sword-off.js';
+export { default as IconSwords } from './icons/swords.js';
+export { default as IconTable } from './icons/table.js';
+export { default as IconTableAlias } from './icons/table-alias.js';
+export { default as IconTableColumn } from './icons/table-column.js';
+export { default as IconTableDown } from './icons/table-down.js';
+export { default as IconTableExport } from './icons/table-export.js';
+export { default as IconTableFilled } from './icons/table-filled.js';
+export { default as IconTableHeart } from './icons/table-heart.js';
+export { default as IconTableImport } from './icons/table-import.js';
+export { default as IconTableMinus } from './icons/table-minus.js';
+export { default as IconTableOff } from './icons/table-off.js';
+export { default as IconTableOptions } from './icons/table-options.js';
+export { default as IconTablePlus } from './icons/table-plus.js';
+export { default as IconTableRow } from './icons/table-row.js';
+export { default as IconTableShare } from './icons/table-share.js';
+export { default as IconTableShortcut } from './icons/table-shortcut.js';
+export { default as IconTag } from './icons/tag.js';
+export { default as IconTagOff } from './icons/tag-off.js';
+export { default as IconTagStarred } from './icons/tag-starred.js';
+export { default as IconTags } from './icons/tags.js';
+export { default as IconTagsOff } from './icons/tags-off.js';
+export { default as IconTallymark1 } from './icons/tallymark-1.js';
+export { default as IconTallymark2 } from './icons/tallymark-2.js';
+export { default as IconTallymark3 } from './icons/tallymark-3.js';
+export { default as IconTallymark4 } from './icons/tallymark-4.js';
+export { default as IconTallymarks } from './icons/tallymarks.js';
+export { default as IconTank } from './icons/tank.js';
+export { default as IconTarget } from './icons/target.js';
+export { default as IconTargetArrow } from './icons/target-arrow.js';
+export { default as IconTargetOff } from './icons/target-off.js';
+export { default as IconTeapot } from './icons/teapot.js';
+export { default as IconTelescope } from './icons/telescope.js';
+export { default as IconTelescopeOff } from './icons/telescope-off.js';
+export { default as IconTemperature } from './icons/temperature.js';
+export { default as IconTemperatureCelsius } from './icons/temperature-celsius.js';
+export { default as IconTemperatureFahrenheit } from './icons/temperature-fahrenheit.js';
+export { default as IconTemperatureMinus } from './icons/temperature-minus.js';
+export { default as IconTemperatureOff } from './icons/temperature-off.js';
+export { default as IconTemperaturePlus } from './icons/temperature-plus.js';
+export { default as IconTemplate } from './icons/template.js';
+export { default as IconTemplateOff } from './icons/template-off.js';
+export { default as IconTent } from './icons/tent.js';
+export { default as IconTentOff } from './icons/tent-off.js';
+export { default as IconTerminal } from './icons/terminal.js';
+export { default as IconTerminal2 } from './icons/terminal-2.js';
+export { default as IconTestPipe } from './icons/test-pipe.js';
+export { default as IconTestPipe2 } from './icons/test-pipe-2.js';
+export { default as IconTestPipeOff } from './icons/test-pipe-off.js';
+export { default as IconTex } from './icons/tex.js';
+export { default as IconTextCaption } from './icons/text-caption.js';
+export { default as IconTextColor } from './icons/text-color.js';
+export { default as IconTextDecrease } from './icons/text-decrease.js';
+export { default as IconTextDirectionLtr } from './icons/text-direction-ltr.js';
+export { default as IconTextDirectionRtl } from './icons/text-direction-rtl.js';
+export { default as IconTextIncrease } from './icons/text-increase.js';
+export { default as IconTextOrientation } from './icons/text-orientation.js';
+export { default as IconTextPlus } from './icons/text-plus.js';
+export { default as IconTextRecognition } from './icons/text-recognition.js';
+export { default as IconTextResize } from './icons/text-resize.js';
+export { default as IconTextScan2 } from './icons/text-scan-2.js';
+export { default as IconTextSize } from './icons/text-size.js';
+export { default as IconTextSpellcheck } from './icons/text-spellcheck.js';
+export { default as IconTextWrap } from './icons/text-wrap.js';
+export { default as IconTextWrapDisabled } from './icons/text-wrap-disabled.js';
+export { default as IconTexture } from './icons/texture.js';
+export { default as IconTheater } from './icons/theater.js';
+export { default as IconThermometer } from './icons/thermometer.js';
+export { default as IconThumbDown } from './icons/thumb-down.js';
+export { default as IconThumbDownFilled } from './icons/thumb-down-filled.js';
+export { default as IconThumbDownOff } from './icons/thumb-down-off.js';
+export { default as IconThumbUp } from './icons/thumb-up.js';
+export { default as IconThumbUpFilled } from './icons/thumb-up-filled.js';
+export { default as IconThumbUpOff } from './icons/thumb-up-off.js';
+export { default as IconTicTac } from './icons/tic-tac.js';
+export { default as IconTicket } from './icons/ticket.js';
+export { default as IconTicketOff } from './icons/ticket-off.js';
+export { default as IconTie } from './icons/tie.js';
+export { default as IconTilde } from './icons/tilde.js';
+export { default as IconTiltShift } from './icons/tilt-shift.js';
+export { default as IconTiltShiftOff } from './icons/tilt-shift-off.js';
+export { default as IconTimeDuration0 } from './icons/time-duration-0.js';
+export { default as IconTimeDuration10 } from './icons/time-duration-10.js';
+export { default as IconTimeDuration15 } from './icons/time-duration-15.js';
+export { default as IconTimeDuration30 } from './icons/time-duration-30.js';
+export { default as IconTimeDuration45 } from './icons/time-duration-45.js';
+export { default as IconTimeDuration5 } from './icons/time-duration-5.js';
+export { default as IconTimeDuration60 } from './icons/time-duration-60.js';
+export { default as IconTimeDuration90 } from './icons/time-duration-90.js';
+export { default as IconTimeDurationOff } from './icons/time-duration-off.js';
+export { default as IconTimeline } from './icons/timeline.js';
+export { default as IconTimelineEvent } from './icons/timeline-event.js';
+export { default as IconTimelineEventExclamation } from './icons/timeline-event-exclamation.js';
+export { default as IconTimelineEventMinus } from './icons/timeline-event-minus.js';
+export { default as IconTimelineEventPlus } from './icons/timeline-event-plus.js';
+export { default as IconTimelineEventText } from './icons/timeline-event-text.js';
+export { default as IconTimelineEventX } from './icons/timeline-event-x.js';
+export { default as IconTir } from './icons/tir.js';
+export { default as IconToggleLeft } from './icons/toggle-left.js';
+export { default as IconToggleRight } from './icons/toggle-right.js';
+export { default as IconToiletPaper } from './icons/toilet-paper.js';
+export { default as IconToiletPaperOff } from './icons/toilet-paper-off.js';
+export { default as IconToml } from './icons/toml.js';
+export { default as IconTool } from './icons/tool.js';
+export { default as IconTools } from './icons/tools.js';
+export { default as IconToolsKitchen } from './icons/tools-kitchen.js';
+export { default as IconToolsKitchen2 } from './icons/tools-kitchen-2.js';
+export { default as IconToolsKitchen2Off } from './icons/tools-kitchen-2-off.js';
+export { default as IconToolsKitchenOff } from './icons/tools-kitchen-off.js';
+export { default as IconToolsOff } from './icons/tools-off.js';
+export { default as IconTooltip } from './icons/tooltip.js';
+export { default as IconTopologyBus } from './icons/topology-bus.js';
+export { default as IconTopologyComplex } from './icons/topology-complex.js';
+export { default as IconTopologyFull } from './icons/topology-full.js';
+export { default as IconTopologyFullHierarchy } from './icons/topology-full-hierarchy.js';
+export { default as IconTopologyRing } from './icons/topology-ring.js';
+export { default as IconTopologyRing2 } from './icons/topology-ring-2.js';
+export { default as IconTopologyRing3 } from './icons/topology-ring-3.js';
+export { default as IconTopologyStar } from './icons/topology-star.js';
+export { default as IconTopologyStar2 } from './icons/topology-star-2.js';
+export { default as IconTopologyStar3 } from './icons/topology-star-3.js';
+export { default as IconTopologyStarRing } from './icons/topology-star-ring.js';
+export { default as IconTopologyStarRing2 } from './icons/topology-star-ring-2.js';
+export { default as IconTopologyStarRing3 } from './icons/topology-star-ring-3.js';
+export { default as IconTorii } from './icons/torii.js';
+export { default as IconTornado } from './icons/tornado.js';
+export { default as IconTournament } from './icons/tournament.js';
+export { default as IconTower } from './icons/tower.js';
+export { default as IconTowerOff } from './icons/tower-off.js';
+export { default as IconTrack } from './icons/track.js';
+export { default as IconTractor } from './icons/tractor.js';
+export { default as IconTrademark } from './icons/trademark.js';
+export { default as IconTrafficCone } from './icons/traffic-cone.js';
+export { default as IconTrafficConeOff } from './icons/traffic-cone-off.js';
+export { default as IconTrafficLights } from './icons/traffic-lights.js';
+export { default as IconTrafficLightsOff } from './icons/traffic-lights-off.js';
+export { default as IconTrain } from './icons/train.js';
+export { default as IconTransfer } from './icons/transfer.js';
+export { default as IconTransferIn } from './icons/transfer-in.js';
+export { default as IconTransferOut } from './icons/transfer-out.js';
+export { default as IconTransferVertical } from './icons/transfer-vertical.js';
+export { default as IconTransform } from './icons/transform.js';
+export { default as IconTransformFilled } from './icons/transform-filled.js';
+export { default as IconTransitionBottom } from './icons/transition-bottom.js';
+export { default as IconTransitionLeft } from './icons/transition-left.js';
+export { default as IconTransitionRight } from './icons/transition-right.js';
+export { default as IconTransitionTop } from './icons/transition-top.js';
+export { default as IconTrash } from './icons/trash.js';
+export { default as IconTrashFilled } from './icons/trash-filled.js';
+export { default as IconTrashOff } from './icons/trash-off.js';
+export { default as IconTrashX } from './icons/trash-x.js';
+export { default as IconTrashXFilled } from './icons/trash-xfilled.js';
+export { default as IconTreadmill } from './icons/treadmill.js';
+export { default as IconTree } from './icons/tree.js';
+export { default as IconTrees } from './icons/trees.js';
+export { default as IconTrekking } from './icons/trekking.js';
+export { default as IconTrendingDown } from './icons/trending-down.js';
+export { default as IconTrendingDown2 } from './icons/trending-down-2.js';
+export { default as IconTrendingDown3 } from './icons/trending-down-3.js';
+export { default as IconTrendingUp } from './icons/trending-up.js';
+export { default as IconTrendingUp2 } from './icons/trending-up-2.js';
+export { default as IconTrendingUp3 } from './icons/trending-up-3.js';
+export { default as IconTriangle } from './icons/triangle.js';
+export { default as IconTriangleFilled } from './icons/triangle-filled.js';
+export { default as IconTriangleInverted } from './icons/triangle-inverted.js';
+export { default as IconTriangleInvertedFilled } from './icons/triangle-inverted-filled.js';
+export { default as IconTriangleMinus } from './icons/triangle-minus.js';
+export { default as IconTriangleMinus2 } from './icons/triangle-minus-2.js';
+export { default as IconTriangleOff } from './icons/triangle-off.js';
+export { default as IconTrianglePlus } from './icons/triangle-plus.js';
+export { default as IconTrianglePlus2 } from './icons/triangle-plus-2.js';
+export { default as IconTriangleSquareCircle } from './icons/triangle-square-circle.js';
+export { default as IconTriangleSquareCircleFilled } from './icons/triangle-square-circle-filled.js';
+export { default as IconTriangles } from './icons/triangles.js';
+export { default as IconTrident } from './icons/trident.js';
+export { default as IconTrolley } from './icons/trolley.js';
+export { default as IconTrophy } from './icons/trophy.js';
+export { default as IconTrophyFilled } from './icons/trophy-filled.js';
+export { default as IconTrophyOff } from './icons/trophy-off.js';
+export { default as IconTrowel } from './icons/trowel.js';
+export { default as IconTruck } from './icons/truck.js';
+export { default as IconTruckDelivery } from './icons/truck-delivery.js';
+export { default as IconTruckLoading } from './icons/truck-loading.js';
+export { default as IconTruckOff } from './icons/truck-off.js';
+export { default as IconTruckReturn } from './icons/truck-return.js';
+export { default as IconTxt } from './icons/txt.js';
+export { default as IconTypography } from './icons/typography.js';
+export { default as IconTypographyOff } from './icons/typography-off.js';
+export { default as IconUfo } from './icons/ufo.js';
+export { default as IconUfoOff } from './icons/ufo-off.js';
+export { default as IconUmbrella } from './icons/umbrella.js';
+export { default as IconUmbrellaFilled } from './icons/umbrella-filled.js';
+export { default as IconUmbrellaOff } from './icons/umbrella-off.js';
+export { default as IconUnderline } from './icons/underline.js';
+export { default as IconUniverse } from './icons/universe.js';
+export { default as IconUnlink } from './icons/unlink.js';
+export { default as IconUpload } from './icons/upload.js';
+export { default as IconUrgent } from './icons/urgent.js';
+export { default as IconUsb } from './icons/usb.js';
+export { default as IconUser } from './icons/user.js';
+export { default as IconUserBolt } from './icons/user-bolt.js';
+export { default as IconUserCancel } from './icons/user-cancel.js';
+export { default as IconUserCheck } from './icons/user-check.js';
+export { default as IconUserCircle } from './icons/user-circle.js';
+export { default as IconUserCode } from './icons/user-code.js';
+export { default as IconUserCog } from './icons/user-cog.js';
+export { default as IconUserDollar } from './icons/user-dollar.js';
+export { default as IconUserDown } from './icons/user-down.js';
+export { default as IconUserEdit } from './icons/user-edit.js';
+export { default as IconUserExclamation } from './icons/user-exclamation.js';
+export { default as IconUserHeart } from './icons/user-heart.js';
+export { default as IconUserHexagon } from './icons/user-hexagon.js';
+export { default as IconUserMinus } from './icons/user-minus.js';
+export { default as IconUserOff } from './icons/user-off.js';
+export { default as IconUserPause } from './icons/user-pause.js';
+export { default as IconUserPentagon } from './icons/user-pentagon.js';
+export { default as IconUserPin } from './icons/user-pin.js';
+export { default as IconUserPlus } from './icons/user-plus.js';
+export { default as IconUserQuestion } from './icons/user-question.js';
+export { default as IconUserScan } from './icons/user-scan.js';
+export { default as IconUserSearch } from './icons/user-search.js';
+export { default as IconUserShare } from './icons/user-share.js';
+export { default as IconUserShield } from './icons/user-shield.js';
+export { default as IconUserSquare } from './icons/user-square.js';
+export { default as IconUserSquareRounded } from './icons/user-square-rounded.js';
+export { default as IconUserStar } from './icons/user-star.js';
+export { default as IconUserUp } from './icons/user-up.js';
+export { default as IconUserX } from './icons/user-x.js';
+export { default as IconUsers } from './icons/users.js';
+export { default as IconUsersGroup } from './icons/users-group.js';
+export { default as IconUsersMinus } from './icons/users-minus.js';
+export { default as IconUsersPlus } from './icons/users-plus.js';
+export { default as IconUvIndex } from './icons/uv-index.js';
+export { default as IconUxCircle } from './icons/ux-circle.js';
+export { default as IconVaccine } from './icons/vaccine.js';
+export { default as IconVaccineBottle } from './icons/vaccine-bottle.js';
+export { default as IconVaccineBottleOff } from './icons/vaccine-bottle-off.js';
+export { default as IconVaccineOff } from './icons/vaccine-off.js';
+export { default as IconVacuumCleaner } from './icons/vacuum-cleaner.js';
+export { default as IconVariable } from './icons/variable.js';
+export { default as IconVariableMinus } from './icons/variable-minus.js';
+export { default as IconVariableOff } from './icons/variable-off.js';
+export { default as IconVariablePlus } from './icons/variable-plus.js';
+export { default as IconVector } from './icons/vector.js';
+export { default as IconVectorBezier } from './icons/vector-bezier.js';
+export { default as IconVectorBezier2 } from './icons/vector-bezier-2.js';
+export { default as IconVectorBezierArc } from './icons/vector-bezier-arc.js';
+export { default as IconVectorBezierCircle } from './icons/vector-bezier-circle.js';
+export { default as IconVectorOff } from './icons/vector-off.js';
+export { default as IconVectorSpline } from './icons/vector-spline.js';
+export { default as IconVectorTriangle } from './icons/vector-triangle.js';
+export { default as IconVectorTriangleOff } from './icons/vector-triangle-off.js';
+export { default as IconVenus } from './icons/venus.js';
+export { default as IconVersions } from './icons/versions.js';
+export { default as IconVersionsFilled } from './icons/versions-filled.js';
+export { default as IconVersionsOff } from './icons/versions-off.js';
+export { default as IconVideo } from './icons/video.js';
+export { default as IconVideoMinus } from './icons/video-minus.js';
+export { default as IconVideoOff } from './icons/video-off.js';
+export { default as IconVideoPlus } from './icons/video-plus.js';
+export { default as IconView360 } from './icons/view-360.js';
+export { default as IconView360Off } from './icons/view-360-off.js';
+export { default as IconViewfinder } from './icons/viewfinder.js';
+export { default as IconViewfinderOff } from './icons/viewfinder-off.js';
+export { default as IconViewportNarrow } from './icons/viewport-narrow.js';
+export { default as IconViewportWide } from './icons/viewport-wide.js';
+export { default as IconVinyl } from './icons/vinyl.js';
+export { default as IconVip } from './icons/vip.js';
+export { default as IconVipOff } from './icons/vip-off.js';
+export { default as IconVirus } from './icons/virus.js';
+export { default as IconVirusOff } from './icons/virus-off.js';
+export { default as IconVirusSearch } from './icons/virus-search.js';
+export { default as IconVocabulary } from './icons/vocabulary.js';
+export { default as IconVocabularyOff } from './icons/vocabulary-off.js';
+export { default as IconVolcano } from './icons/volcano.js';
+export { default as IconVolume } from './icons/volume.js';
+export { default as IconVolume2 } from './icons/volume-2.js';
+export { default as IconVolume3 } from './icons/volume-3.js';
+export { default as IconVolumeOff } from './icons/volume-off.js';
+export { default as IconVs } from './icons/vs.js';
+export { default as IconWalk } from './icons/walk.js';
+export { default as IconWall } from './icons/wall.js';
+export { default as IconWallOff } from './icons/wall-off.js';
+export { default as IconWallet } from './icons/wallet.js';
+export { default as IconWalletOff } from './icons/wallet-off.js';
+export { default as IconWallpaper } from './icons/wallpaper.js';
+export { default as IconWallpaperOff } from './icons/wallpaper-off.js';
+export { default as IconWand } from './icons/wand.js';
+export { default as IconWandOff } from './icons/wand-off.js';
+export { default as IconWash } from './icons/wash.js';
+export { default as IconWashDry } from './icons/wash-dry.js';
+export { default as IconWashDry1 } from './icons/wash-dry-1.js';
+export { default as IconWashDry2 } from './icons/wash-dry-2.js';
+export { default as IconWashDry3 } from './icons/wash-dry-3.js';
+export { default as IconWashDryA } from './icons/wash-dry-a.js';
+export { default as IconWashDryDip } from './icons/wash-dry-dip.js';
+export { default as IconWashDryF } from './icons/wash-dry-f.js';
+export { default as IconWashDryFlat } from './icons/wash-dry-flat.js';
+export { default as IconWashDryHang } from './icons/wash-dry-hang.js';
+export { default as IconWashDryOff } from './icons/wash-dry-off.js';
+export { default as IconWashDryP } from './icons/wash-dry-p.js';
+export { default as IconWashDryShade } from './icons/wash-dry-shade.js';
+export { default as IconWashDryW } from './icons/wash-dry-w.js';
+export { default as IconWashDryclean } from './icons/wash-dryclean.js';
+export { default as IconWashDrycleanOff } from './icons/wash-dryclean-off.js';
+export { default as IconWashEco } from './icons/wash-eco.js';
+export { default as IconWashGentle } from './icons/wash-gentle.js';
+export { default as IconWashHand } from './icons/wash-hand.js';
+export { default as IconWashMachine } from './icons/wash-machine.js';
+export { default as IconWashOff } from './icons/wash-off.js';
+export { default as IconWashPress } from './icons/wash-press.js';
+export { default as IconWashTemperature1 } from './icons/wash-temperature-1.js';
+export { default as IconWashTemperature2 } from './icons/wash-temperature-2.js';
+export { default as IconWashTemperature3 } from './icons/wash-temperature-3.js';
+export { default as IconWashTemperature4 } from './icons/wash-temperature-4.js';
+export { default as IconWashTemperature5 } from './icons/wash-temperature-5.js';
+export { default as IconWashTemperature6 } from './icons/wash-temperature-6.js';
+export { default as IconWashTumbleDry } from './icons/wash-tumble-dry.js';
+export { default as IconWashTumbleOff } from './icons/wash-tumble-off.js';
+export { default as IconWaterpolo } from './icons/waterpolo.js';
+export { default as IconWaveSawTool } from './icons/wave-saw-tool.js';
+export { default as IconWaveSine } from './icons/wave-sine.js';
+export { default as IconWaveSquare } from './icons/wave-square.js';
+export { default as IconWavesElectricity } from './icons/waves-electricity.js';
+export { default as IconWebhook } from './icons/webhook.js';
+export { default as IconWebhookOff } from './icons/webhook-off.js';
+export { default as IconWeight } from './icons/weight.js';
+export { default as IconWheel } from './icons/wheel.js';
+export { default as IconWheelchair } from './icons/wheelchair.js';
+export { default as IconWheelchairOff } from './icons/wheelchair-off.js';
+export { default as IconWhirl } from './icons/whirl.js';
+export { default as IconWifi } from './icons/wifi.js';
+export { default as IconWifi0 } from './icons/wifi-0.js';
+export { default as IconWifi1 } from './icons/wifi-1.js';
+export { default as IconWifi2 } from './icons/wifi-2.js';
+export { default as IconWifiOff } from './icons/wifi-off.js';
+export { default as IconWind } from './icons/wind.js';
+export { default as IconWindElectricity } from './icons/wind-electricity.js';
+export { default as IconWindOff } from './icons/wind-off.js';
+export { default as IconWindmill } from './icons/windmill.js';
+export { default as IconWindmillFilled } from './icons/windmill-filled.js';
+export { default as IconWindmillOff } from './icons/windmill-off.js';
+export { default as IconWindow } from './icons/window.js';
+export { default as IconWindowMaximize } from './icons/window-maximize.js';
+export { default as IconWindowMinimize } from './icons/window-minimize.js';
+export { default as IconWindowOff } from './icons/window-off.js';
+export { default as IconWindsock } from './icons/windsock.js';
+export { default as IconWiper } from './icons/wiper.js';
+export { default as IconWiperWash } from './icons/wiper-wash.js';
+export { default as IconWoman } from './icons/woman.js';
+export { default as IconWood } from './icons/wood.js';
+export { default as IconWorld } from './icons/world.js';
+export { default as IconWorldBolt } from './icons/world-bolt.js';
+export { default as IconWorldCancel } from './icons/world-cancel.js';
+export { default as IconWorldCheck } from './icons/world-check.js';
+export { default as IconWorldCode } from './icons/world-code.js';
+export { default as IconWorldCog } from './icons/world-cog.js';
+export { default as IconWorldDollar } from './icons/world-dollar.js';
+export { default as IconWorldDown } from './icons/world-down.js';
+export { default as IconWorldDownload } from './icons/world-download.js';
+export { default as IconWorldExclamation } from './icons/world-exclamation.js';
+export { default as IconWorldHeart } from './icons/world-heart.js';
+export { default as IconWorldLatitude } from './icons/world-latitude.js';
+export { default as IconWorldLongitude } from './icons/world-longitude.js';
+export { default as IconWorldMinus } from './icons/world-minus.js';
+export { default as IconWorldOff } from './icons/world-off.js';
+export { default as IconWorldPause } from './icons/world-pause.js';
+export { default as IconWorldPin } from './icons/world-pin.js';
+export { default as IconWorldPlus } from './icons/world-plus.js';
+export { default as IconWorldQuestion } from './icons/world-question.js';
+export { default as IconWorldSearch } from './icons/world-search.js';
+export { default as IconWorldShare } from './icons/world-share.js';
+export { default as IconWorldStar } from './icons/world-star.js';
+export { default as IconWorldUp } from './icons/world-up.js';
+export { default as IconWorldUpload } from './icons/world-upload.js';
+export { default as IconWorldWww } from './icons/world-www.js';
+export { default as IconWorldX } from './icons/world-x.js';
+export { default as IconWreckingBall } from './icons/wrecking-ball.js';
+export { default as IconWriting } from './icons/writing.js';
+export { default as IconWritingOff } from './icons/writing-off.js';
+export { default as IconWritingSign } from './icons/writing-sign.js';
+export { default as IconWritingSignOff } from './icons/writing-sign-off.js';
+export { default as IconX } from './icons/x.js';
+export { default as IconXboxA } from './icons/xbox-a.js';
+export { default as IconXboxB } from './icons/xbox-b.js';
+export { default as IconXboxX } from './icons/xbox-x.js';
+export { default as IconXboxY } from './icons/xbox-y.js';
+export { default as IconXd } from './icons/xd.js';
+export { default as IconXxx } from './icons/xxx.js';
+export { default as IconYinYang } from './icons/yin-yang.js';
+export { default as IconYinYangFilled } from './icons/yin-yang-filled.js';
+export { default as IconYoga } from './icons/yoga.js';
+export { default as IconZeppelin } from './icons/zeppelin.js';
+export { default as IconZeppelinOff } from './icons/zeppelin-off.js';
+export { default as IconZip } from './icons/zip.js';
+export { default as IconZodiacAquarius } from './icons/zodiac-aquarius.js';
+export { default as IconZodiacAries } from './icons/zodiac-aries.js';
+export { default as IconZodiacCancer } from './icons/zodiac-cancer.js';
+export { default as IconZodiacCapricorn } from './icons/zodiac-capricorn.js';
+export { default as IconZodiacGemini } from './icons/zodiac-gemini.js';
+export { default as IconZodiacLeo } from './icons/zodiac-leo.js';
+export { default as IconZodiacLibra } from './icons/zodiac-libra.js';
+export { default as IconZodiacPisces } from './icons/zodiac-pisces.js';
+export { default as IconZodiacSagittarius } from './icons/zodiac-sagittarius.js';
+export { default as IconZodiacScorpio } from './icons/zodiac-scorpio.js';
+export { default as IconZodiacTaurus } from './icons/zodiac-taurus.js';
+export { default as IconZodiacVirgo } from './icons/zodiac-virgo.js';
+export { default as IconZoomCancel } from './icons/zoom-cancel.js';
+export { default as IconZoomCheck } from './icons/zoom-check.js';
+export { default as IconZoomCheckFilled } from './icons/zoom-check-filled.js';
+export { default as IconZoomCode } from './icons/zoom-code.js';
+export { default as IconZoomExclamation } from './icons/zoom-exclamation.js';
+export { default as IconZoomFilled } from './icons/zoom-filled.js';
+export { default as IconZoomIn } from './icons/zoom-in.js';
+export { default as IconZoomInArea } from './icons/zoom-in-area.js';
+export { default as IconZoomInAreaFilled } from './icons/zoom-in-area-filled.js';
+export { default as IconZoomInFilled } from './icons/zoom-in-filled.js';
+export { default as IconZoomMoney } from './icons/zoom-money.js';
+export { default as IconZoomOut } from './icons/zoom-out.js';
+export { default as IconZoomOutArea } from './icons/zoom-out-area.js';
+export { default as IconZoomOutFilled } from './icons/zoom-out-filled.js';
+export { default as IconZoomPan } from './icons/zoom-pan.js';
+export { default as IconZoomQuestion } from './icons/zoom-question.js';
+export { default as IconZoomReplace } from './icons/zoom-replace.js';
+export { default as IconZoomReset } from './icons/zoom-reset.js';
+export { default as IconZoomScan } from './icons/zoom-scan.js';
+export { default as IconZzz } from './icons/zzz.js';
+export { default as IconZzzOff } from './icons/zzz-off.js';

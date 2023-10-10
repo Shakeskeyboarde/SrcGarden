@@ -4,4 +4,7 @@ set -e
 source .creds-aws
 werk build
 npm test
-terraform -chdir=terraform init
+credenv terraform -chdir=terraform init
+credenv terraform -chdir=terraform apply
+credenv aws s3 sync s3://cloudfront-src-garden-homepage/primary s3://cloudfront-src-garden-homepage/secondary
+credenv aws s3 sync --delete packages/app/dist s3://cloudfront-src-garden-homepage/primary

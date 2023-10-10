@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
-import { Icon } from 'app-icons';
+import IconAlertTriangle from 'app-icons/icon/alert-triangle.js';
+import IconInfoCircle from 'app-icons/icon/info-circle.js';
+import IconMessageReport from 'app-icons/icon/message-report.js';
 import { type FC, type HTMLAttributes } from 'react';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   readonly type?: 'note' | 'important' | 'warning';
 }
 
-const AlertContainer = styled('div')<{
-  type: 'note' | 'important' | 'warning';
-}>`
+const AlertContainer = styled.div<{ type: 'note' | 'important' | 'warning' }>`
   background-color: ${({ theme, type }) => theme.palette[`${type}Background`]};
   padding-inline-start: 0.5625rem;
   border-inline-start: 0.1875rem solid ${({ theme, type }) => theme.palette[type]};
@@ -20,12 +20,9 @@ const AlertContainer = styled('div')<{
   }
 `;
 
-const AlertHeading = styled('div', { shouldForwardProp: (prop) => prop !== 'type' })<{
-  type: 'note' | 'important' | 'warning';
-}>`
+const AlertHeading = styled.div<{ type: 'note' | 'important' | 'warning' }>`
   color: ${({ theme, type }) => theme.palette[type]};
   font-weight: 500;
-  text-transform: capitalize;
   margin-block-end: 0.125rem;
 
   & + * {
@@ -37,41 +34,49 @@ const AlertHeading = styled('div', { shouldForwardProp: (prop) => prop !== 'type
   }
 `;
 
-export const Alert: FC<Props> = ({ type = 'note', children, ...props }) => {
-  const iconName: string =
-    type === 'warning' ? 'alert-triangle' : type === 'important' ? 'message-report' : 'info-circle';
-
+export const AlertNote: FC<Omit<Props, 'type'>> = ({ children, ...props }) => {
   return (
-    <AlertContainer type={type} {...props}>
-      <AlertHeading type={type}>
-        <Icon name={iconName} strokeWidth={2.5} />
-        {type}
+    <AlertContainer type={'note'} {...props}>
+      <AlertHeading type={'note'}>
+        <IconInfoCircle strokeWidth={2.5} />
+        Note
       </AlertHeading>
       {children}
     </AlertContainer>
   );
 };
 
-export const AlertNote: FC<Omit<Props, 'type'>> = ({ children, ...props }) => {
-  return (
-    <Alert type="note" {...props}>
-      {children}
-    </Alert>
-  );
-};
-
 export const AlertImportant: FC<Omit<Props, 'type'>> = ({ children, ...props }) => {
   return (
-    <Alert type="important" {...props}>
+    <AlertContainer type={'important'} {...props}>
+      <AlertHeading type={'important'}>
+        <IconMessageReport strokeWidth={2.5} />
+        Important
+      </AlertHeading>
       {children}
-    </Alert>
+    </AlertContainer>
   );
 };
 
 export const AlertWarning: FC<Omit<Props, 'type'>> = ({ children, ...props }) => {
   return (
-    <Alert type="warning" {...props}>
+    <AlertContainer type={'warning'} {...props}>
+      <AlertHeading type={'warning'}>
+        <IconAlertTriangle strokeWidth={2.5} />
+        Warning
+      </AlertHeading>
       {children}
-    </Alert>
+    </AlertContainer>
   );
+};
+
+export const Alert: FC<Props> = ({ type = 'note', children, ...props }) => {
+  switch (type) {
+    case 'warning':
+      return <AlertImportant {...props}>{children}</AlertImportant>;
+    case 'important':
+      return <AlertImportant {...props}>{children}</AlertImportant>;
+    default:
+      return <AlertNote {...props}>{children}</AlertNote>;
+  }
 };

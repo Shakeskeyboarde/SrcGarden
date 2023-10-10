@@ -1,9 +1,14 @@
 #!/usr/bin/env node
-import console from 'node:console';
 import { existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
+
+const ESLINT_DISABLE =
+  `
+/* eslint-disable unicorn/no-abusive-eslint-disable */
+/* eslint-disable */
+  `.trim() + '\n';
 
 const findPackageRoot = (name, dir = process.cwd()) => {
   const root = join(dir, 'node_modules', name);
@@ -18,28 +23,33 @@ const findPackageRoot = (name, dir = process.cwd()) => {
 };
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const packageRoot = findPackageRoot('@tabler/icons');
-console.log(packageRoot);
-const filesRoot = join(packageRoot, 'icons');
-const files = readdirSync(filesRoot).filter((value) => value.endsWith('.svg'));
+const srcRoot = resolve(__dirname, '..', 'src');
+const outputRoot = join(srcRoot, 'icons');
+const packageRoot = findPackageRoot('@tabler/icons-react');
+const filesRoot = join(packageRoot, 'dist', 'esm', 'icons');
+const files = readdirSync(filesRoot).filter((value) => value.startsWith('Icon') && value.endsWith('.js'));
 const entries = [];
 
 for (const file of files) {
-  let key = basename(file, '.svg');
-  if (!/^(?!\d)\w+$/u.test(key)) key = `'${key}'`;
-  entries.push(`\n  ${key}: lazy(() => {\n    return import('@tabler/icons/${file}?react');\n  }),`);
+  const name = basename(file, '.js');
+  const snakeCase = name
+    .replace(/^Icon/u, '')
+    .replace(/(?<=[a-z\d])[A-Z]|(?<=[A-Za-z])\d/gu, (match) => `-${match}`)
+    .toLowerCase();
+
+  writeFileSync(
+    join(outputRoot, `${snakeCase}.tsx`),
+    `
+${ESLINT_DISABLE}
+import { type ForwardRefExoticComponent, type SVGProps } from 'react';
+
+import { createLazyIcon, type IconType } from '../icon.js';
+
+export default createLazyIcon('${name}', () => import('@tabler/icons-react/dist/esm/icons/${file}')) as IconType<ForwardRefExoticComponent<SVGProps<SVGSVGElement>>>;
+    `.trim() + '\n',
+  );
+
+  entries.push(`export { default as ${name} } from './icons/${snakeCase}.js';\n`);
 }
 
-const updated = new Date().toLocaleString();
-const entriesText = entries.join('');
-const script = `/* eslint-disable max-lines, import/no-extraneous-dependencies */
-/* Updated: ${updated} */
-import { type FC, lazy, type LazyExoticComponent, type SVGProps } from 'react';
-
-type Icon = LazyExoticComponent<FC<SVGProps<SVGSVGElement> & { title?: string | undefined }>>;
-
-export const icons: Record<string, Icon> = {${entriesText}
-};
-`;
-
-writeFileSync(resolve(__dirname, '..', 'src', 'icons.ts'), script);
+writeFileSync(join(srcRoot, 'icons.ts'), ESLINT_DISABLE + entries.join(''));

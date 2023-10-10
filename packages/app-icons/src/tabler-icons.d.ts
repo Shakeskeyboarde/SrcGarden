@@ -1,7 +1,5 @@
-declare module '@tabler/icons/*.svg?react' {
-  import type { ComponentProps, FunctionComponent } from 'react';
-
-  const ReactComponent: FunctionComponent<ComponentProps<'svg'> & { title?: string }>;
-
+declare module '@tabler/icons-react/dist/esm/*.js' {
+  import type { ForwardRefExoticComponent, RefAttributes } from 'react';
+  const ReactComponent: ForwardRefExoticComponent<RefAttributes<any>>;
   export default ReactComponent;
 }

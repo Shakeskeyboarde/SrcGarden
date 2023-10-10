@@ -32,38 +32,6 @@ export const Root: FC = () => {
               backgroundColor: palette.background,
               color: palette.text,
             },
-            table: {
-              borderCollapse: 'collapse',
-              borderSpacing: 0,
-            },
-            th: {
-              fontWeight: 500,
-            },
-            'th, td': {
-              border: `1px solid ${palette.border}`,
-              paddingInline: '0.5em',
-            },
-            'tbody > tr:nth-of-type(odd)': {
-              backgroundColor: palette.backgroundAlt,
-            },
-            li: {
-              paddingBlock: '0.25em',
-            },
-            'li > ul, li > ol, li > dl': {
-              paddingBlockStart: '0.25em',
-            },
-            'li.task': {
-              listStyleType: '"\u2610 "',
-
-              '&::marker': {
-                fontSize: '1.25em',
-                lineHeight: 1,
-              },
-
-              '&.checked': {
-                listStyleType: '"\u2611 "',
-              },
-            },
           })}
         />
         <QueryClientProvider client={queryClient}>

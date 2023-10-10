@@ -4,7 +4,6 @@ export const markedAlert = (): MarkedExtension => {
   return {
     renderer: {
       blockquote: (quote: string) => {
-        console.log(quote);
         const match = quote.match(
           /^\s*<p>\s*(?:\[!(NOTE|IMPORTANT|WARNING)\]|<strong>(Note|Important|Warning):<\/strong>)(.*?)<\/p>(.*)/isu,
         );

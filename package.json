@@ -21,8 +21,10 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@werk/command-build": "^2.1.6",
+    "@werk/cli": "^8.0.6",
+    "@werk/command-build": "^2.1.7",
     "@werk/command-depcheck": "^1.0.5",
+    "credenv": "^1.0.2",
     "eslint": "^8.51.0",
     "eslint-config-rational": "^3.0.9",
     "prettier": "^3.0.3",

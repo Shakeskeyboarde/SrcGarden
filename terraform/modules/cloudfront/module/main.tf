@@ -55,6 +55,7 @@ module "acm" {
   zone_id                   = data.aws_route53_zone.this.zone_id
   domain_name               = local.route53-aliases-fqdn[0]
   subject_alternative_names = slice(local.route53-aliases-fqdn, 1, length(local.route53-aliases-fqdn))
+  validation_method         = "DNS"
   wait_for_validation       = true
   tags                      = { S3Bucket = var.s3-bucket }
 }
@@ -121,7 +122,7 @@ resource "aws_cloudfront_response_headers_policy" "this" {
     }
     content_security_policy {
       content_security_policy = join("; ", [
-        "default-src 'self'",
+        "default-src 'self' data:",
         "connect-src ${join(" ", compact(["'self'", var.csp-connect-src]))}",
         "style-src 'self' 'unsafe-inline'",
         "object-src 'none'",
