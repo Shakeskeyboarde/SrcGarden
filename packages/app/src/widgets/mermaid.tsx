@@ -9,7 +9,13 @@ interface Props extends CodeProps {}
 export const Mermaid: FC<Props> = ({ children, ...props }) => {
   const source = typeof children === 'string' ? children : undefined;
   const result = useMermaid(source);
-  const formatted = useHtml(result?.svg, { allowUnsafe: true });
+  const formatted = useHtml(result?.svg, {
+    replace: (node) => {
+      if (node.tagName === 'style') {
+        return true;
+      }
+    },
+  });
 
   return (
     <div {...props} ref={(element) => void (element && result?.bindFunctions?.(element))}>

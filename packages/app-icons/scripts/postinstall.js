@@ -24,7 +24,6 @@ const findPackageRoot = (name, dir = process.cwd()) => {
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const srcRoot = resolve(__dirname, '..', 'src');
-const outputRoot = join(srcRoot, 'icons');
 const packageRoot = findPackageRoot('@tabler/icons-react');
 const filesRoot = join(packageRoot, 'dist', 'esm', 'icons');
 const files = readdirSync(filesRoot).filter((value) => value.startsWith('Icon') && value.endsWith('.js'));
@@ -32,24 +31,19 @@ const entries = [];
 
 for (const file of files) {
   const name = basename(file, '.js');
-  const snakeCase = name
-    .replace(/^Icon/u, '')
-    .replace(/(?<=[a-z\d])[A-Z]|(?<=[A-Za-z])\d/gu, (match) => `-${match}`)
-    .toLowerCase();
+  entries.push(
+    `export const ${name} = createLazyIcon('${name}', () => import('@tabler/icons-react/dist/esm/icons/${file}')) as IconType<ForwardRefExoticComponent<SVGProps<SVGSVGElement>>>;\n`,
+  );
+}
 
-  writeFileSync(
-    join(outputRoot, `${snakeCase}.tsx`),
-    `
+writeFileSync(
+  join(srcRoot, 'icons.ts'),
+  `
 ${ESLINT_DISABLE}
 import { type ForwardRefExoticComponent, type SVGProps } from 'react';
 
-import { createLazyIcon, type IconType } from '../icon.js';
+import { createLazyIcon, type IconType } from './icon.js';
 
-export default createLazyIcon('${name}', () => import('@tabler/icons-react/dist/esm/icons/${file}')) as IconType<ForwardRefExoticComponent<SVGProps<SVGSVGElement>>>;
-    `.trim() + '\n',
-  );
-
-  entries.push(`export { default as ${name} } from './icons/${snakeCase}.js';\n`);
-}
-
-writeFileSync(join(srcRoot, 'icons.ts'), ESLINT_DISABLE + entries.join(''));
+${entries.join('')}
+  `.trim() + '\n',
+);

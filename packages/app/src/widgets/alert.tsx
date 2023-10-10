@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
-import IconAlertTriangle from 'app-icons/icon/alert-triangle.js';
-import IconInfoCircle from 'app-icons/icon/info-circle.js';
-import IconMessageReport from 'app-icons/icon/message-report.js';
+import { IconAlertTriangle, IconInfoCircle, IconMessageReport } from 'app-icons';
 import { type FC, type HTMLAttributes } from 'react';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
