@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "moduleDetection": "auto",
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowJs": false
+  },
+  "include": ["src"],
+  "exclude": ["**/*.test.*", "**/*.spec.*", "**/*.stories.*"]
+}

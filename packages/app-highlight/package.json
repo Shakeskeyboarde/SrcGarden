@@ -29,7 +29,6 @@
     "highlight.js": "^11.9.0"
   },
   "devDependencies": {
-    "@werk/command-build": "*",
     "vite": "^4.4.11",
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-dts": "^3.6.0"

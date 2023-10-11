@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { IconAlertTriangle, IconInfoCircle, IconMessageReport } from 'app-icons';
+import { Icon } from 'app-icons';
 import { type FC, type HTMLAttributes } from 'react';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
@@ -36,7 +36,7 @@ export const AlertNote: FC<Omit<Props, 'type'>> = ({ children, ...props }) => {
   return (
     <AlertContainer type={'note'} {...props}>
       <AlertHeading type={'note'}>
-        <IconInfoCircle strokeWidth={2.5} />
+        <Icon name={'InfoCircle'} strokeWidth={2.5} />
         Note
       </AlertHeading>
       {children}
@@ -48,7 +48,7 @@ export const AlertImportant: FC<Omit<Props, 'type'>> = ({ children, ...props }) 
   return (
     <AlertContainer type={'important'} {...props}>
       <AlertHeading type={'important'}>
-        <IconMessageReport strokeWidth={2.5} />
+        <Icon name={'MessageReport'} strokeWidth={2.5} />
         Important
       </AlertHeading>
       {children}
@@ -60,7 +60,7 @@ export const AlertWarning: FC<Omit<Props, 'type'>> = ({ children, ...props }) =>
   return (
     <AlertContainer type={'warning'} {...props}>
       <AlertHeading type={'warning'}>
-        <IconAlertTriangle strokeWidth={2.5} />
+        <Icon name={'AlertTriangle'} strokeWidth={2.5} />
         Warning
       </AlertHeading>
       {children}

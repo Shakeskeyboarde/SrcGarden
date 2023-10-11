@@ -13,7 +13,8 @@
   "homepage": "https://github.com/Shakeskeyboarde/SrcGarden/blob/main/packages/app-icons/README.md",
   "type": "module",
   "scripts": {
-    "postinstall": "node ./scripts/postinstall.js"
+    "postinstall": "node ./scripts/postinstall.js",
+    "build": "rm -rf lib/* && tsc -p tsconfig.build.json && cp src/icons.* lib/"
   },
   "files": [
     "lib"
@@ -23,10 +24,6 @@
     ".": {
       "types": "./lib/index.d.ts",
       "default": "./lib/index.js"
-    },
-    "./icon/*.js": {
-      "types": "./lib/icons/*.d.ts",
-      "default": "./lib/icons/*.js"
     }
   },
   "peerDependencies": {
