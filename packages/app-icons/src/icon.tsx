@@ -5,6 +5,7 @@ import { getIconName, type IconName, type IconNameKebab } from './name.js';
 
 interface Props extends ComponentPropsWithoutRef<'svg'> {
   name: IconName | IconNameKebab;
+  size?: number | string;
 }
 
 export const Icon: FC<Props> = ({ name, ...props }) => {

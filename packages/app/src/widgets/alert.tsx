@@ -21,7 +21,7 @@ const AlertContainer = styled.div<{ type: 'note' | 'important' | 'warning' }>`
 const AlertHeading = styled.div<{ type: 'note' | 'important' | 'warning' }>`
   color: ${({ theme, type }) => theme.palette[type]};
   font-weight: 500;
-  margin-block-end: 0.125rem;
+  margin-block-end: 0.25rem;
 
   & + * {
     margin-block-start: 0;
@@ -36,7 +36,7 @@ export const AlertNote: FC<Omit<Props, 'type'>> = ({ children, ...props }) => {
   return (
     <AlertContainer type={'note'} {...props}>
       <AlertHeading type={'note'}>
-        <Icon name={'InfoCircle'} strokeWidth={2.5} />
+        <Icon name={'info-circle'} />
         Note
       </AlertHeading>
       {children}
@@ -48,7 +48,7 @@ export const AlertImportant: FC<Omit<Props, 'type'>> = ({ children, ...props }) 
   return (
     <AlertContainer type={'important'} {...props}>
       <AlertHeading type={'important'}>
-        <Icon name={'MessageReport'} strokeWidth={2.5} />
+        <Icon name={'message-report'} />
         Important
       </AlertHeading>
       {children}
@@ -60,7 +60,7 @@ export const AlertWarning: FC<Omit<Props, 'type'>> = ({ children, ...props }) =>
   return (
     <AlertContainer type={'warning'} {...props}>
       <AlertHeading type={'warning'}>
-        <Icon name={'AlertTriangle'} strokeWidth={2.5} />
+        <Icon name={'alert-triangle'} />
         Warning
       </AlertHeading>
       {children}

@@ -1,4 +1,4 @@
-import { createLazyIcon } from './create-icon.js';
+import { createLazyIcon } from './create.js';
 
 export const icons = {
   '123': createLazyIcon('123', () => import('@tabler/icons-react/dist/esm/icons/Icon123.js')),

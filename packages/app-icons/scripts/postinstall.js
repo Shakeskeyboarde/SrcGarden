@@ -33,12 +33,7 @@ for (const file of files) {
 
 writeFileSync(
   join(srcRoot, 'icons.js'),
-  `
-import { createLazyIcon } from './create-icon.js';
-
-export const icons = {${entries.join('')}
-};
-  `.trim() + '\n',
+  `import { createLazyIcon } from './create.js';\n\nexport const icons = {${entries.join('')}\n};\n`,
 );
 
 writeFileSync(

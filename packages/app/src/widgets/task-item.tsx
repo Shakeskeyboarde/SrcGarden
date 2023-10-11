@@ -11,7 +11,6 @@ const TaskListItem = styled(ListItem)`
 const TaskIcon = styled(Icon)`
   position: absolute;
   right: 100%;
-  margin-block-start: 0.1875em;
   margin-inline-end: 0.25em;
 `;
 
@@ -23,7 +22,7 @@ export const TaskItem: FC<ComponentPropsWithoutRef<typeof TaskListItem> & { chec
 }) => {
   return (
     <TaskListItem className={className} {...props}>
-      <TaskIcon name={checked ? 'SquareCheck' : 'Square'} />
+      <TaskIcon name={checked ? 'square-check' : 'square'} />
       {children}
     </TaskListItem>
   );
