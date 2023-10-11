@@ -11,7 +11,7 @@ const AlertContainer = styled.div<{ type: 'note' | 'important' | 'warning' }>`
   padding-inline-start: 0.5625rem;
   border-inline-start: 0.1875rem solid ${({ theme, type }) => theme.palette[type]};
   margin-block: 1rem;
-  padding-block: 0.25rem;
+  padding-block: 0.5rem;
 
   & > :last-child {
     margin-block-end: 0;

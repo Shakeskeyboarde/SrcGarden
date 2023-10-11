@@ -7,7 +7,8 @@ export const Table = styled.table`
   th,
   td {
     border: 1px solid ${({ theme }) => theme.palette.border};
-    padding-inline: 0.5em;
+    padding-inline: calc(0.75em - 1px);
+    padding-block: 0.125em;
   }
 
   th {
