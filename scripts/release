@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -e
-cd "$(dirname -- "$(readlink -f -- "$0")")"
-cd ..
+[ -z "$npm_execpath" ] && exit 1;
 
 werk build
 npm test

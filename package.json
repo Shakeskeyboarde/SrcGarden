@@ -13,7 +13,7 @@
     "postinstall": "npm -ws --if-present run postinstall",
     "lint": "NODE_OPTIONS='--max-old-space-size=8192' eslint 'packages/*/src/**/*.{js,cjs,ts,tsx}'",
     "test": "npm run lint --max-warnings=0 && werk depcheck",
-    "release": "./scripts/release",
+    "release": "bash ./scripts/release",
     "modernize": "npx npm-check-updates@latest -i --workspaces --root --format group"
   },
   "type": "module",
