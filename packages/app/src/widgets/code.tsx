@@ -11,7 +11,7 @@ export const Code = styled.code<CodeProps>`
 
   pre > & {
     display: block;
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: unset;
   }
 `;

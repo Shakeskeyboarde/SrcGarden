@@ -40,3 +40,7 @@ module "this" {
   route53-aliases = var.route53-aliases
   csp-connect-src = var.csp-connect-src
 }
+
+output "cloudfront_distribution_id" {
+  value = module.this[0].cloudfront_distribution_id
+}

@@ -22,3 +22,7 @@ module "homepage" {
   route53-zone    = "src.garden"
   csp-connect-src = "https://raw.githubusercontent.com/"
 }
+
+output "cloudfront_distribution_id" {
+  value = module.homepage.cloudfront_distribution_id
+}

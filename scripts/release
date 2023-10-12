@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 set -e
+cd "$(dirname -- "$(readlink -f -- "$0")")"
+cd ..
 
-source .creds-aws
 werk build
 npm test
-credenv terraform -chdir=terraform init
-credenv terraform -chdir=terraform apply
-credenv aws s3 sync s3://cloudfront-src-garden-homepage/primary s3://cloudfront-src-garden-homepage/secondary
-credenv aws s3 sync --delete packages/app/dist s3://cloudfront-src-garden-homepage/primary
+
+source .creds-aws
+
+terraform -chdir=terraform init
+terraform -chdir=terraform apply
+
+CLOUDFRONT_DISTRIBUTION_ID=$(terraform -chdir=terraform output -raw cloudfront_distribution_id)
+
+aws s3 sync s3://cloudfront-src-garden-homepage/primary s3://cloudfront-src-garden-homepage/secondary
+aws s3 sync --delete packages/app/dist s3://cloudfront-src-garden-homepage/primary
+aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/index.html" >/dev/null
