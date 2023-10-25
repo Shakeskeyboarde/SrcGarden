@@ -73,7 +73,7 @@ const Github: FC = () => {
   const url = useGithubUrl(user, repo, branch, repoPath);
 
   // Redirect to Github for non-markdown files.
-  if (!url.pathname.endsWith('/') && !url.pathname.endsWith('.md')) {
+  if (url.pathname.endsWith('/LICENSE') || (!url.pathname.endsWith('/') && !url.pathname.endsWith('.md'))) {
     const to = `https://github.com/${user}/${repo}/blob/${branch || 'main'}/${repoPath}`;
     return (
       <Container border fillHeight>
