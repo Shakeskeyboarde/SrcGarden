@@ -1,56 +1,77 @@
 import { attributesToProps, Comment, Element, htmlToDOM, Text } from 'html-react-parser';
-import { type ComponentType, createElement, Fragment, useMemo } from 'react';
+import { createElement, Fragment, type ReactNode, useMemo } from 'react';
 
-interface Options {
-  readonly replace?: (node: Element) => ComponentType | string | true | null | undefined;
-  readonly allowUnsafe?: boolean;
+interface Node {
+  readonly tagName?: string;
+  readonly props?: Readonly<Record<string, unknown>>;
+  readonly children?: ReactNode;
 }
 
-const UNSAFE_TAG_NAMES = new Set([
-  'iframe',
-  'noembed',
-  'noframes',
-  'plaintext',
-  'script',
-  'style',
-  'title',
-  'textarea',
-  'xmp',
-  'link',
-]) satisfies ReadonlySet<string>;
+type RenderNext = (node: Node) => JSX.Element | string | null | undefined;
 
-const getJsx = (nodes: (Comment | Text | Element | {})[], options: Options): (JSX.Element | string | null)[] => {
-  const { replace, allowUnsafe = false } = options;
+export type Render = (node: Node, next: RenderNext) => JSX.Element | string | null | undefined;
 
-  return [...nodes].flatMap((node) => {
+interface Options {
+  readonly render?: Render | (Render | undefined)[];
+}
+
+const renderDefault: RenderNext = ({ tagName, props, children }) => {
+  switch (tagName) {
+    // These tags are not allowed by default in SrcGarden markdown.
+    case 'title':
+    case 'script':
+    case 'style':
+    case 'link':
+      return;
+    // The `nobr` tag is deprecated and breaks rendering.
+    case 'nobr':
+    case undefined:
+      return createElement(Fragment, undefined, children);
+    default:
+      break;
+  }
+
+  return createElement(tagName, props, children);
+};
+
+const renderRecursive = (
+  nodes: (Comment | Text | Node | {})[],
+  render: RenderNext,
+): JSX.Element | string | undefined => {
+  const childElements = [...nodes].flatMap((node) => {
     if (node instanceof Comment) {
       // TODO: Handle configuration comments.
       return [];
     }
 
-    if (node instanceof Text) {
-      return node.data;
-    }
-
+    if (node instanceof Text) return node.data || [];
     if (!(node instanceof Element)) return [];
 
-    const replacement = replace?.(node);
+    const { tagName, attribs, childNodes } = node;
+    const props = attributesToProps(attribs);
+    const children = renderRecursive(childNodes, render);
 
-    if (!allowUnsafe && !replacement && UNSAFE_TAG_NAMES.has(node.tagName)) return [];
-
-    const attributes = Object.fromEntries([...node.attributes].map((attr) => [attr.name, attr.value]));
-    const props: Record<string, any> = attributesToProps(attributes);
-    const children = getJsx(node.children, options);
-
-    return createElement(replacement && replacement !== true ? replacement : node.tagName, props, ...children);
+    return render({ tagName, props, children }) || [];
   });
+
+  if (childElements.length <= 1) return childElements[0];
+
+  return createElement(Fragment, undefined, ...childElements);
 };
 
-const parseHtml = (html: string, options: Options = {}): JSX.Element => {
-  return createElement(Fragment, null, ...getJsx(htmlToDOM(html), options));
+const renderHtml = (html: string, renderers: Render | (Render | undefined)[] | undefined): JSX.Element => {
+  const roots = htmlToDOM(html);
+  const stack = (Array.isArray(renderers) ? renderers : [renderers]).filter((it): it is Render => Boolean(it));
+  const render = stack.reduce<RenderNext>((next, current) => (node) => current(node, next), renderDefault);
+  const children = renderRecursive(roots, render);
+
+  return createElement(Fragment, null, children);
 };
 
-export const useHtml = (html: string | undefined | null, options?: Options): JSX.Element | null => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  return useMemo(() => (html ? parseHtml(html, options) : null), [html]);
+export const useHtml = (html: string | undefined | null, { render }: Options = {}): JSX.Element | null => {
+  return useMemo(
+    () => (html ? renderHtml(html, render) : null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [html],
+  );
 };

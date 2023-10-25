@@ -1,19 +1,98 @@
-import { type ComponentPropsWithoutRef, type FC } from 'react';
+import styled from '@emotion/styled';
+import { type ComponentPropsWithoutRef, type FC, useEffect } from 'react';
 
-import { useHtml } from '../hooks/use-html.js';
+import { type Render, useHtml } from '../hooks/use-html.js';
 import { useMarkdown } from '../hooks/use-markdown.js';
 import { AlertImportant, AlertNote, AlertWarning } from './alert.js';
-import { DescriptionList } from './description-list.js';
 import { FormattedCode } from './formatted-code.js';
-import { ListItem } from './list-item.js';
-import { OrderedList } from './ordered-list.js';
-import { Table } from './table.js';
 import { TaskItem } from './task-item.js';
-import { UnorderedList } from './unordered-list.js';
 
 interface Props {
+  readonly render?: Render;
   readonly children?: string | null;
 }
+
+const renderDefault: Render = (node, next) => {
+  if (node.tagName === 'code') {
+    return <FormattedCode {...node.props}>{node.children}</FormattedCode>;
+  }
+
+  if (node.tagName === 'li' && typeof node.props?.className === 'string' && /\btask\b/u.test(node.props.className)) {
+    return <MarkdownTaskItem {...node.props}>{node.children}</MarkdownTaskItem>;
+  }
+
+  if (node.tagName === 'div' && typeof node.props?.className === 'string' && /\balert\b/u.test(node.props.className)) {
+    if (/\balert-warning\b/u.test(node.props.className)) {
+      return <AlertWarning {...node.props}>{node.children}</AlertWarning>;
+    } else if (/\balert-important\b/u.test(node.props.className)) {
+      return <AlertImportant {...node.props}>{node.children}</AlertImportant>;
+    } else {
+      return <AlertNote {...node.props}>{node.children}</AlertNote>;
+    }
+  }
+
+  return next(node);
+};
+
+const MarkdownContainer = styled.div`
+  & > br {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p > img:first-child:last-child {
+    display: block;
+  }
+
+  li {
+    position: relative;
+    margin-block: 0.5em;
+  }
+
+  li > ul,
+  li > ol,
+  li > dl {
+    margin-block: 0;
+  }
+
+  blockquote {
+    color: ${({ theme }) => theme.palette.textDim};
+    padding-inline-start: 0.5625rem;
+    border-inline-start: 0.1875rem solid ${({ theme }) => theme.palette.border};
+    margin-inline: 0;
+  }
+
+  blockquote > :first-child {
+    margin-block-start: 0;
+  }
+
+  blockquote > :last-child {
+    margin-block-end: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  th,
+  td {
+    border: 1px solid ${({ theme }) => theme.palette.border};
+    padding-inline: calc(0.75em - 1px);
+    padding-block: 0.125em;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  tbody > tr:nth-of-type(odd) {
+    background-color: ${({ theme }) => theme.palette.backgroundAlt};
+  }
+`;
 
 const MarkdownTaskItem: FC<ComponentPropsWithoutRef<typeof TaskItem>> = ({ className = '', children, ...props }) => {
   const checked = /\btask-complete\b/u.test(className);
@@ -25,33 +104,15 @@ const MarkdownTaskItem: FC<ComponentPropsWithoutRef<typeof TaskItem>> = ({ class
   );
 };
 
-export const Markdown: FC<Props> = ({ children }) => {
-  const html = useMarkdown(children);
-  const formatted = useHtml(html, {
-    replace: (node) => {
-      if (node.tagName === 'code') {
-        return FormattedCode;
-      } else if (node.tagName === 'ul') {
-        return UnorderedList;
-      } else if (node.tagName === 'ol') {
-        return OrderedList;
-      } else if (node.tagName === 'dl') {
-        return DescriptionList;
-      } else if (node.tagName === 'li') {
-        return node.attribs.class && /\btask\b/u.test(node.attribs.class) ? MarkdownTaskItem : ListItem;
-      } else if (node.tagName === 'table') {
-        return Table;
-      } else if (node.tagName === 'div' && node.attribs.class && /\balert\b/u.test(node.attribs.class)) {
-        if (/\balert-warning\b/u.test(node.attribs.class)) {
-          return AlertWarning;
-        } else if (/\balert-important\b/u.test(node.attribs.class)) {
-          return AlertImportant;
-        } else {
-          return AlertNote;
-        }
-      }
-    },
-  });
+export const Markdown: FC<Props> = ({ render, children: markdown }) => {
+  const html = useMarkdown(markdown);
+  const children = useHtml(html, { render: [render, renderDefault] });
+  const isRendered = Boolean(children);
 
-  return <>{formatted}</>;
+  useEffect(() => {
+    if (!isRendered || !window.location.hash) return;
+    window.document.querySelector(window.location.hash)?.scrollIntoView({ behavior: 'instant' });
+  }, [isRendered]);
+
+  return <MarkdownContainer>{children}</MarkdownContainer>;
 };

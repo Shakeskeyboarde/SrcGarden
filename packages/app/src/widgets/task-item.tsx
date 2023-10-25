@@ -2,9 +2,7 @@ import styled from '@emotion/styled';
 import { Icon } from 'app-icons';
 import { type ComponentPropsWithoutRef, type FC } from 'react';
 
-import { ListItem } from './list-item.js';
-
-const TaskListItem = styled(ListItem)`
+const TaskListItem = styled.li`
   list-style-type: none;
 `;
 

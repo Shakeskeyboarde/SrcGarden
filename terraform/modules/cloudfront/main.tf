@@ -26,9 +26,9 @@ variable "route53-aliases" {
   default = ["", "www"]
 }
 
-variable "csp-connect-src" {
-  type    = string
-  default = null
+variable "csp" {
+  type    = list(string)
+  default = []
 }
 
 module "this" {
@@ -38,7 +38,7 @@ module "this" {
   s3-bucket       = var.s3-bucket
   route53-zone    = var.route53-zone
   route53-aliases = var.route53-aliases
-  csp-connect-src = var.csp-connect-src
+  csp             = var.csp
 }
 
 output "cloudfront_distribution_id" {

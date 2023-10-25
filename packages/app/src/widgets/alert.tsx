@@ -2,16 +2,19 @@ import styled from '@emotion/styled';
 import { Icon } from 'app-icons';
 import { type FC, type HTMLAttributes } from 'react';
 
-interface Props extends HTMLAttributes<HTMLDivElement> {
+interface Props extends HTMLAttributes<HTMLElement> {
   readonly type?: 'note' | 'important' | 'warning';
 }
 
-const AlertContainer = styled.div<{ type: 'note' | 'important' | 'warning' }>`
-  background-color: ${({ theme, type }) => theme.palette[`${type}Background`]};
+const AlertContainer = styled.blockquote<{ type: 'note' | 'important' | 'warning' }>`
   padding-inline-start: 0.5625rem;
-  border-inline-start: 0.1875rem solid ${({ theme, type }) => theme.palette[type]};
-  margin-block: 1rem;
   padding-block: 0.5rem;
+
+  && {
+    color: ${({ theme }) => theme.palette.text};
+    background-color: ${({ theme, type }) => theme.palette[`${type}Background`]};
+    border-inline-start: 0.1875rem solid ${({ theme, type }) => theme.palette[type]};
+  }
 
   & > :last-child {
     margin-block-end: 0;
@@ -21,7 +24,7 @@ const AlertContainer = styled.div<{ type: 'note' | 'important' | 'warning' }>`
 const AlertHeading = styled.div<{ type: 'note' | 'important' | 'warning' }>`
   color: ${({ theme, type }) => theme.palette[type]};
   font-weight: 500;
-  margin-block-end: 0.25rem;
+  margin-block-end: 0.375rem;
 
   & + * {
     margin-block-start: 0;

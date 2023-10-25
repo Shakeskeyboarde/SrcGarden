@@ -1,61 +1,106 @@
-import { useQuery } from '@tanstack/react-query';
 import { type FC } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { FetchError, useGithubRawContent } from '../hooks/use-github-raw-content.js';
+import { useGithubUrl } from '../hooks/use-github-url.js';
+import { dirname } from '../utils/dirname.js';
+import { join } from '../utils/join.js';
+import { Container } from '../widgets/container.js';
 import { Markdown } from '../widgets/markdown.js';
 import { Redirect } from '../widgets/redirect.js';
 
-const fetchFromGithub = async (user: string, repo: string, dir: string, file: string): Promise<string | null> => {
-  const path = [user, repo, 'HEAD', dir, file, file.includes('.') ? '' : 'README.md'].filter(Boolean).join('/');
-  const url = `https://raw.githubusercontent.com/${path}`;
-  const res = await fetch(url, {
-    headers: {
-      accept: 'text/plain',
-    },
-  });
+const GithubMarkdown: FC<{ path: string }> = ({ path }) => {
+  const [data, error] = useGithubRawContent(path);
 
-  // TODO: Handle errors.
+  if (error) {
+    if (!(error instanceof FetchError)) {
+      throw error;
+    }
 
-  if (!res.ok) {
-    return `
-# ${res.status}: ${res.statusText || 'Error'}
-
-The [file](${url}) you requested could not be fetched. Refresh the page to try again, or return to the repository [home page](/${user}/${repo}/).
-    `.trim();
+    return (
+      <Markdown>{`
+        # ${error.status}: ${error.statusText}
+        
+        Failed to load content from: ${error.url}
+      `}</Markdown>
+    );
   }
 
-  return res.ok ? await res.text() : null;
+  if (!data) return null;
+
+  return (
+    <Markdown
+      render={(node, next) => {
+        if (node.tagName === 'img' && typeof node.props?.src === 'string' && !/^\w+:\/{2}/u.test(node.props.src)) {
+          const dir = dirname(path);
+          const src = `https://raw.githubusercontent.com${join('/', dir, node.props.src)}`;
+
+          return next({ ...node, props: { ...node.props, src } });
+        }
+
+        if (
+          node.tagName === 'a' &&
+          typeof node.props?.href === 'string' &&
+          node.props.href.startsWith('https://github.com/')
+        ) {
+          const url = new URL(node.props.href);
+
+          // Leave github links alone if they have query parameters.
+          if (url.search) return next(node);
+
+          const match = url.pathname.match(/^(\/[^/]+\/[^/]*)(?:\/blob(\/[^/]+)(\/.*)?)?$/u);
+
+          // Leave github links alone if they don't match the expected format.
+          if (!match) return next(node);
+
+          const [, repo = '', branch = '', repoPath = ''] = match;
+          const href = `${repo}${branch}${repoPath}`;
+
+          return next({ ...node, props: { ...node.props, href } });
+        }
+
+        return next(node);
+      }}
+    >
+      {data}
+    </Markdown>
+  );
 };
 
-const GithubMarkdown: FC<{ user: string; repo: string; dir: string; file: string }> = ({ user, repo, dir, file }) => {
-  const { data } = useQuery([user, repo, dir, file] as const, ({ queryKey }) => fetchFromGithub(...queryKey));
+const Github: FC = () => {
+  const { user = '', repo = '', branch = '', '*': repoPath } = useParams();
 
-  return <Markdown>{data}</Markdown>;
-};
-
-const GithubRoute: FC = () => {
-  const { user = '', repo = '', '*': path } = useParams();
-
-  return <Github user={user} repo={repo} path={path} />;
-};
-
-export const Github: FC<{ user: string; repo: string; path?: string }> = ({ user, repo, path = '' }) => {
-  const [, dir = '', file = ''] = path.match(/^(.*?)(?:\/([^/]*))?$/u)!;
+  const url = useGithubUrl(user, repo, branch, repoPath);
 
   // Redirect to Github for non-markdown files.
-  if (file.includes('.') && !file.endsWith('.md')) {
-    const to = `https://github.com/${user}/${repo}/blob/HEAD/${path}`;
-    return <Redirect to={to} />;
+  if (!url.pathname.endsWith('/') && !url.pathname.endsWith('.md')) {
+    const to = `https://github.com/${user}/${repo}/blob/${branch || 'main'}/${repoPath}`;
+    return (
+      <Container border fillHeight>
+        <Redirect to={to} />
+      </Container>
+    );
   }
 
-  // Add trailing slash to directories.
-  if (/\/[^./]+$/u.test(window.location.pathname)) {
-    const to = new URL(window.location.href);
-    to.pathname += '/';
-    return <Redirect to={to} />;
+  // Redirect to normalized path if necessary.
+  if (url.pathname !== window.location.pathname) {
+    const to = `${url.pathname}${window.location.search}${window.location.hash}`;
+    return (
+      <Container border fillHeight>
+        <Redirect to={to} />
+      </Container>
+    );
   }
 
-  return <GithubMarkdown user={user} repo={repo} dir={dir} file={file} />;
+  if (url.pathname.endsWith('/')) {
+    url.pathname += 'README.md';
+  }
+
+  return (
+    <Container border fillHeight>
+      <GithubMarkdown path={url.pathname} />
+    </Container>
+  );
 };
 
-export default GithubRoute;
+export default Github;

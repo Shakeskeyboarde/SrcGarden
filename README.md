@@ -10,7 +10,6 @@ Beautiful, zero configuration, project homepages.
   - [Support extended markdown.](#support-extended-markdown)
     - [Tables](#tables)
     - [Highlighted code](#highlighted-code)
-    - [Diagrams](#diagrams)
     - [Math](#math)
     - [Task lists](#task-lists)
     - [Alert boxes](#alert-boxes)
@@ -47,7 +46,6 @@ Here are some examples of home/documentation pages that will be possible in the 
 - [ ] Support extended markdown.
   - [x] Tables.
   - [x] Highlighted code using [Highlight.js](https://highlightjs.org/) (all languages).
-  - [x] Diagrams using [Mermaid](https://mermaid.js.org).
   - [x] Math (TeX) using [KaTeX](https://katex.org/).
   - [x] Task lists.
   - [x] Alert boxes.
@@ -85,7 +83,7 @@ Navigate to `https://src.garden/<ghuser>/<ghrepo>/<path?>` to see the rendered v
 
 ### Support extended markdown.
 
-Source garden supports a number of extended markdown features, including tables, highlighted code, diagrams, and math. Additional support for alert boxes and emoji tags is planned.
+Source garden supports a number of extended markdown features, including tables, highlighted code, and math. Additional support for alert boxes and emoji tags is planned.
 
 <!-- sg:tab(v=true) -->
 
@@ -104,17 +102,6 @@ Source garden supports a number of extended markdown features, including tables,
 function hello(name: string) {
   console.log(`Hello, ${name}!`);
 }
-```
-
-<!-- sg:tab(v=true) -->
-
-#### Diagrams
-
-```mermaid
-pie title What Voldemort doesn't have?
-  "FRIENDS" : 2
-  "FAMILY" : 3
-  "NOSE" : 45
 ```
 
 <!-- sg:tab(v=true) -->

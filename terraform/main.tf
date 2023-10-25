@@ -15,12 +15,19 @@ provider "aws" {
 }
 
 module "homepage" {
-  source          = "./modules/cloudfront"
-  enabled         = true
-  production      = true
-  s3-bucket       = "cloudfront-src-garden-homepage"
-  route53-zone    = "src.garden"
-  csp-connect-src = "https://raw.githubusercontent.com/"
+  source       = "./modules/cloudfront"
+  enabled      = true
+  production   = true
+  s3-bucket    = "cloudfront-src-garden-homepage"
+  route53-zone = "src.garden"
+  csp = [
+    "default-src 'self' data: https://raw.githubusercontent.com/",
+    "img-src *",
+    "style-src 'self' 'unsafe-inline'",
+    "object-src 'none'",
+    "frame-ancestors 'none'",
+    "base-uri 'none'"
+  ]
 }
 
 output "cloudfront_distribution_id" {

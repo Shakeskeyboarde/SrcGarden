@@ -13,6 +13,7 @@ declare module '@emotion/react' {
       readonly background: string;
       readonly backgroundAlt: string;
       readonly text: string;
+      readonly textDim: string;
       readonly paper: string;
       readonly border: string;
       readonly note: string;

@@ -21,9 +21,9 @@ variable "route53-aliases" {
   default = ["", "www"]
 }
 
-variable "csp-connect-src" {
-  type    = string
-  default = null
+variable "csp" {
+  type    = list(string)
+  default = []
 }
 
 locals {
@@ -120,16 +120,13 @@ resource "aws_cloudfront_response_headers_policy" "this" {
       preload                    = true
       override                   = true
     }
-    content_security_policy {
-      content_security_policy = join("; ", [
-        "default-src 'self' data:",
-        "connect-src ${join(" ", compact(["'self'", var.csp-connect-src]))}",
-        "style-src 'self' 'unsafe-inline'",
-        "object-src 'none'",
-        "frame-ancestors 'none'",
-        "base-uri 'none'"
-      ])
-      override = true
+    dynamic "content_security_policy" {
+      for_each = length(compact(var.csp)) > 0 ? [join("; ", compact(var.csp))] : []
+
+      content {
+        content_security_policy = content_security_policy.value
+        override                = true
+      }
     }
   }
 }

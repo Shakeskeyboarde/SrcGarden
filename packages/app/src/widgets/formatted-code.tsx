@@ -4,7 +4,6 @@ import { type FC, type HTMLAttributes, useMemo } from 'react';
 
 import { Highlight } from './highlight.js';
 import { Katex } from './katex.js';
-import { Mermaid } from './mermaid.js';
 
 interface Props extends HTMLAttributes<HTMLElement> {}
 
@@ -26,8 +25,6 @@ export const FormattedCode: FC<Props> = ({ children, ...props }) => {
   const language = useLanguage(className);
 
   switch (language) {
-    case 'mermaid':
-      return <Mermaid {...props}>{children}</Mermaid>;
     case 'math':
       return (
         <Katex {...props} inline={/\bmathspan\b/u.test(className)}>
