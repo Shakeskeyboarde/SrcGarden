@@ -9,6 +9,24 @@ import { Container } from '../widgets/container.js';
 import { Markdown } from '../widgets/markdown.js';
 import { Redirect } from '../widgets/redirect.js';
 
+const isFullyQualified = (url: string): boolean => {
+  return /^(?:\w+:|\/{2})/u.test(url);
+};
+
+const getUrl = (url: string, basePath: string): URL => {
+  if (isFullyQualified(url)) return new URL(url, window.location.origin);
+
+  if (url.startsWith('/')) {
+    const match = basePath.match(/^(?:\/[^/]+){3}(?=\/)/u);
+
+    if (match) {
+      return new URL(join(match[0], url), window.location.origin);
+    }
+  }
+
+  return new URL(join(dirname(basePath), url), window.location.origin);
+};
+
 const GithubMarkdown: FC<{ path: string }> = ({ path }) => {
   const [data, error] = useGithubRawContent(path);
 
@@ -31,32 +49,55 @@ const GithubMarkdown: FC<{ path: string }> = ({ path }) => {
   return (
     <Markdown
       render={(node, next) => {
-        if (node.tagName === 'img' && typeof node.props?.src === 'string' && !/^\w+:\/{2}/u.test(node.props.src)) {
-          const dir = dirname(path);
-          const src = `https://raw.githubusercontent.com${join('/', dir, node.props.src)}`;
+        if (node.tagName === 'img' && typeof node.props?.src === 'string' && !isFullyQualified(node.props.src)) {
+          const url = getUrl(node.props.src, path);
+          const src =
+            url.origin === window.location.origin
+              ? `https://raw.githubusercontent.com${url.pathname}${url.search}`
+              : url.href;
 
           return next({ ...node, props: { ...node.props, src } });
         }
 
-        if (
-          node.tagName === 'a' &&
-          typeof node.props?.href === 'string' &&
-          node.props.href.startsWith('https://github.com/')
-        ) {
-          const url = new URL(node.props.href);
+        if (node.tagName === 'a' && typeof node.props?.href === 'string') {
+          const url = getUrl(node.props.href, path);
 
-          // Leave github links alone if they have query parameters.
-          if (url.search) return next(node);
+          // Leave links alone if they are fully qualified to an origin other than self or GitHub.
+          if (url.origin !== window.location.origin && url.origin !== 'https://github.com') return next(node);
 
-          const match = url.pathname.match(/^(\/[^/]+\/[^/]*)(?:\/blob(\/[^/]+)(\/.*)?)?$/u);
+          const match = url.pathname.match(
+            url.origin === window.location.origin
+              ? /^((?:\/[^/]+){2})(?:(\/[^/]+)(\/.*)?)?/u
+              : /^((?:\/[^/]+){2})(?:(?:\/blob)?(\/[^/]+)(\/.*)?)?/u,
+          );
 
-          // Leave github links alone if they don't match the expected format.
-          if (!match) return next(node);
+          // Leave links alone if they don't start with a repo slug.
+          if (!match) {
+            return next(node);
+          }
 
-          const [, repo = '', branch = '', repoPath = ''] = match;
-          const href = `${repo}${branch}${repoPath}`;
+          const [repo = '', branch = '', repoPath = ''] = match.slice(1);
 
-          return next({ ...node, props: { ...node.props, href } });
+          // If the filename is not something that Source Garden can/should render, then redirect to github.
+          if (repoPath.endsWith('/LICENSE') || !/(?:\.md|(?:^|\/)[^/.]*)$/u.test(repoPath)) {
+            return next({
+              ...node,
+              props: {
+                ...node.props,
+                href: `https://github.com${join('/', repo, branch && 'blob', branch, repoPath)}${url.search}${
+                  url.hash
+                }`,
+              },
+            });
+          }
+
+          return next({
+            ...node,
+            props: {
+              ...node.props,
+              href: `${window.location.origin}${join(repo, branch || 'HEAD', repoPath || '/')}${url.search}${url.hash}`,
+            },
+          });
         }
 
         return next(node);
@@ -68,13 +109,14 @@ const GithubMarkdown: FC<{ path: string }> = ({ path }) => {
 };
 
 const Github: FC = () => {
-  const { user = '', repo = '', branch = '', '*': repoPath } = useParams();
+  const { user = '', repo = '', branch = '', '*': repoPath = '' } = useParams();
 
   const url = useGithubUrl(user, repo, branch, repoPath);
 
   // Redirect to Github for non-markdown files.
   if (url.pathname.endsWith('/LICENSE') || (!url.pathname.endsWith('/') && !url.pathname.endsWith('.md'))) {
-    const to = `https://github.com/${user}/${repo}/blob/${branch || 'main'}/${repoPath}`;
+    const to = `https://github.com${join('/', user, repo, 'blob', branch || 'main', repoPath)}`;
+
     return (
       <Container border fillHeight>
         <Redirect to={to} />
